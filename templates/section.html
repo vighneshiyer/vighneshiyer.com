@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{# {% block title %}{{ page.title }} &middot; {{ config.title }}{% endblock title %} #}
+{# {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %} #}
+
+{# {% block ogtitle %}{{ page.title }}{% endblock ogtitle %} #}
+{# {% block ogdesc %}{{ page.description }}{% endblock ogdesc %} #}
+{# {% block ogurl %}{{ page.permalink | safe }}{% endblock ogurl%} #}
+{% block ogimage -%}
+  {%- if page.extra.image -%}{{ get_url(path=page.extra.image) | safe }}
+  {%- elif config.extra.ogimage -%}{{ get_url(path=config.extra.ogimage) | safe }}
+  {%- endif -%}
+{%- endblock ogimage %}
+
+{% block content %}
+<ul class="homepage-list">
+  {% for post in section.pages %}
+    {{ macros::post_in_list(post=post) }}
+  {% endfor %}
+</ul>
+{% endblock content %}
