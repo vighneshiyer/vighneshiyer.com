@@ -13,6 +13,18 @@
     {% set data = load_data(path="public/style.css", format="plain") -%}
     <style>{{ data | safe }}</style>
 
+    <base href="/">
+    <script type="module">
+      import PhotoSwipeLightbox from './photoswipe-lightbox.esm.min.js';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: document.querySelectorAll('[id^="gallery"]'), //'#gallery--getting-started',
+        children: 'a',
+        pswpModule: () => import('./photoswipe.esm.min.js')
+      });
+      lightbox.init();
+    </script>
+    <link rel="stylesheet" href="photoswipe.css">
+
     {% block seo -%}
       <meta property="og:site_name" content="{% block ogsitename %}{{config.title}}{% endblock ogsitename %}">
       {% if config.extra.author -%}
@@ -43,7 +55,7 @@
   {% endblock head %}
 
   <body>
-    <main id="main" role="main">
+    <main class="container" role="main">
 
       {% block header %}
       <header role="banner">
