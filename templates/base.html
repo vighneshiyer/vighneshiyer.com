@@ -88,6 +88,7 @@
           {% endfor %}
         </nav>
         {% endif %}
+        {#
         {% block taglines %}
         <small>
           {%- if config.extra.zola or config.extra.zola is undefined -%}Built with <a href="https://www.getzola.org/">Zola</a>{%- endif -%}
@@ -96,7 +97,8 @@
           {% if config.extra.maintained_with_love or config.extra.maintained_with_love is undefined%}Maintained with &hearts; for the web.<br />{% endif %}
           {% if config.extra.footer_tagline %}{{ config.extra.footer_tagline }}{% endif %}
         </small>
-        {% endblock taglines %}
+      {% endblock taglines %}
+      #}
       </footer>
       {% endblock footer %}
 
