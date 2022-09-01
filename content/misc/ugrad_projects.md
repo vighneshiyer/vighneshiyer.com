@@ -161,7 +161,7 @@ In this project, we will implement a coverage specification API for Chisel defin
 We will lower the coverage specification to basic primitives for coverage collection that work across RTL simulation, formal, and FPGA emulation.
 In doing so, we will develop a major verification feature for Chisel that has been frequently requested.
 
-### Integration of Coverage Merging and Report Generation into chiseltest
+### Integration of Coverage Passes, Coverage Merging, and Report Generation into chiseltest
 
 - **Skills**: web frontend development, general purpose data wrangling
 - **Outcome**: a coverage report viewer designed specifically for hardware verification
@@ -252,6 +252,8 @@ If you're interested in any of these, email me and I'll be happy to elaborate.
 >     - reference power from Joules (using RTL VCD, rtlstim2gate, Joules synthesized circuit)
 
 This writeup is inspired by [Kevin Laeufer's undergrad research info document](misc/ugrad-projects/Kevin_Laeufer_Undergraduate_Research_Project_Info.pdf) ([drive link](https://docs.google.com/presentation/d/1Tt3lf3G8HVGeqw_Ocha_-6l9IdUESixWX4t3oNUjPv0/edit?usp=sharing)).
+
+The single pager I laid out at the research fair [can be found here](misc/ugrad-projects/2022_09-Ugrad_Research_Fair_Sheet.pdf).
 
 ## My Verification Agenda for 2022/23
 
