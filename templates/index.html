@@ -1,14 +1,40 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
 
 {% block content %}
-<h1 class="title">
-  Vighnesh Iyer
-</h1>
-<h2>Conference Reviews</h2>
-{% set conf_reviews = get_section(path="conference_reviews/_index.md") %}
+
+<p>I'm a PhD student in the EECS department at UC Berkeley advised by Prof. Bora Nikolic.</p>
+
+<p>I work in the areas of <a href="https://github.com/ucb-bar/chipyard">design</a> <a href="https://github.com/ucb-bar/hammer">methodology</a>, hardware modeling and verification, ML for DV, and power modeling. In the past, I have built a <a href="https://github.com/vighneshiyer/simcommand">high-performance monadic RTL testbench API</a>, designed a <a href="https://github.com/TsaiAnson/verif">VIP and random generator library</a> for a <a href="https://github.com/ucb-bar/chiseltest">testing framework for Chisel circuits</a>, built RTL coverage prediction models, and explored specification mining for bug localization.</p>
+
+{{ macros::listing(title="Conference Reviews", section_path="conference_reviews/_index.md") }}
+{{ macros::listing(title="Random Stuff", section_path="misc/_index.md") }}
+
+<h2>Research Agenda</h2>
+
+<h3>High performance testbench APIs and a SystemVerilog/UVM parity DV environment</h3>
 <ul>
-  {% for review in conf_reviews.pages %}
-    <li><a href="{{ review.permalink }}">{{ review.title }}</a></li>
-{% endfor %}
+  <li>Use a high-level general-purpose language (Scala) to describe testbench logic, VIPs, scoreboards, and constrained random stimulus generators. Prove that we don't need to be tied down to the crippled and poorly supported SystemVerilog language, and we don't have to sacrifice performance either.</li>
+  <li>First-class support for polyglot testbenches (e.g. using Python libraries for linear algebra or ML, C/C++ for driver/kernel code for co-simulation) on a unified runtime (e.g. GraalVM)</li>
+  <li>March towards feature parity with the industry standard toolchain (UVM + SystemVerilog + VCS/Xcelium): temporal property specification language and functional coverage APIs in Scala for Chisel</li>
+  <li>Particular focus in Fall 2023:</li>
+  <ul>
+    <li>Extending our prior work in <a href="https://github.com/vighneshiyer/simcommand">SimCommand</a> to improve the feature set and testbench performance, and make performance optimizations within chiseltest</li>
+    <li>Standardizing interfaces throughout Chisel RTL codebases to enable unified VIPs and test environments</li>
+    <li>Reviving cosimulation infrastructure for accelerators, such as Gemmini, to evaluate large workloads accurately without resorting to FPGA simulation</li>
+  </ul>
 </ul>
+
+<h3>Machine learning for coverage closure, bug hunting, constraint tuning, and regression suite construction + intelligent fuzzing</h3>
+<ul>
+  <li>Investigating techniques for predicting RTL-level coverage from stimulus / random generator features</li>
+  <li>Evaluating different methods for solving the 'missing data problem' associated with blackbox supervised learning approaches</li>
+  <li>Investigating the utility of fine-grained input features in predicting complex output features such as time-domain coverage metrics</li>
+  <li>Evaluating coverage model-guided bug hunting / state exploration techniques and constraint tuning approaches for targeting specific coverpoints (e.g. semantic fuzzing using constrained random)</li>
+</ul>
+
+<p>The first area is about demonstrating that verification can be more ergonomic and performant than the status quo. It is engineering focused, but still has many unanswered research questions.</p>
+
+<p>The second area is research focused: we are working on techniques that may not pan out. ML has been very successful in continuous domain problems and learning fuzzy relationships, but not as successful in discrete domain problems with strict combinatorial relationships.</p>
+
 {% endblock content %}

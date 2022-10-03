@@ -10,8 +10,10 @@
     <link rel="shortcut icon"  href="{{ get_url(path="favicon.ico") | safe }}" />
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml") | safe }}">
 
-    {% set data = load_data(path="public/style.css", format="plain") -%}
-    <style>{{ data | safe }}</style>
+    {#{% set data = load_data(path="public/style.css", format="plain") -%}#}
+    {% set css_path = get_url(path="style.css") -%}
+    {#<style>{{ data | safe }}</style>#}
+    <link rel="stylesheet" href="{{ css_path | safe}}">
 
     <base href="/">
     <script type="module">
@@ -59,10 +61,12 @@
 
       {% block header %}
       <header role="banner">
-        <h3 style="margin-top:0;">
+        <h1>
           <a href="{{ config.base_url | safe }}" title="Home">{{ config.title }}</a>
-          <br /><small>{{ config.description }}</small>
-        </h3>
+          <!--<br /><small>{{ config.description }}</small>-->
+        </h1>
+        <!--<h2>PhD Student, UC Berkeley</h2>-->
+        <p>vighnesh.iyer@berkeley.edu<br /><a href="https://github.com/vighneshiyer">Github</a>, <a href="https://linkedin.com/in/vighneshiyer">LinkedIn</a></p>
       </header>
       <hr />
       {% endblock header %}
@@ -88,17 +92,12 @@
           {% endfor %}
         </nav>
         {% endif %}
-        {#
         {% block taglines %}
         <small>
-          {%- if config.extra.zola or config.extra.zola is undefined -%}Built with <a href="https://www.getzola.org/">Zola</a>{%- endif -%}
-          {%- if config.extra.netlify %} & hosted on <a href="https://netlify.com">Netlify</a>{%- endif -%}
-          {%- if config.extra.zola or config.extra.zola is undefined -%}.<br />{%- endif %}
-          {% if config.extra.maintained_with_love or config.extra.maintained_with_love is undefined%}Maintained with &hearts; for the web.<br />{% endif %}
+          Built with <a href="https://www.getzola.org/">Zola</a>. <a href="sitemap.xml">Sitemap</a>. Styling <a href="https://www.cs.utexas.edu/~bornholt/">inspired by</a>.
           {% if config.extra.footer_tagline %}{{ config.extra.footer_tagline }}{% endif %}
         </small>
       {% endblock taglines %}
-      #}
       </footer>
       {% endblock footer %}
 

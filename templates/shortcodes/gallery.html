@@ -1,4 +1,4 @@
-<div class="photoswipe-gallery" id="{{ id }}">
+<div class="photoswipe-gallery" id="{{ id }}" style="margin-bottom: 1rem;">
   {% for image in images %}
   {% set meta = get_image_metadata(path=image) %}
   {% set thumb = resize_image(path=image, width=300, height=300, op="fit_height", format="webp", quality=60) %}

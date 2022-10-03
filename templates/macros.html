@@ -1,7 +1,16 @@
 {% macro post_in_list(post) %}
 <li>
   <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-  <time style="font-size:90%;" datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+  <time class="post-time" datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
 </li>
 {% endmacro post_in_list %}
 
+{% macro listing(title, section_path) %}
+{% set section = get_section(path=section_path) %}
+<h2>{{ section.title }}<a href="{{section.permalink}}" class="header-link">[Listing]</a></h2>
+<ul>
+  {% for article in section.pages %}
+    {{ macros::post_in_list(post=article) }}
+  {% endfor %}
+</ul>
+{% endmacro listing %}

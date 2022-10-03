@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
-{# {% block title %}{{ page.title }} &middot; {{ config.title }}{% endblock title %} #}
+{% block title %}{{ section.title }} &middot; {{ config.title }}{% endblock title %}
 {# {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %} #}
 
 {# {% block ogtitle %}{{ page.title }}{% endblock ogtitle %} #}

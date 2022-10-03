@@ -18,7 +18,7 @@ date = 2022-08-30
 
 ## SLICE Lab Tooling
 
-In the SLICE lab, we work on hardware accelerator design, system-level integration and analysis, and design methodology.
+In the [SLICE lab](https://slice.eecs.berkeley.edu/), we work on hardware accelerator design, system-level integration and analysis, and design methodology.
 I focus on the verification aspect of our design work.
 In particular, I work on testing libraries that are specialized for our [hardware design language, Chisel](https://github.com/chipsalliance/chisel3).
 
@@ -125,7 +125,7 @@ This information is hidden away in the internals of the solver, but it may prove
 We aim to develop a constrained random solver which offers *instrumentation as a first-class construct* so that it is easy to extract these stimulus features as the stimulus is being generated.
 
 The best way to tackle this problem, is to use techniques from functional programming.
-In particular, we can be inspired by prior work in [pure-functional Scala random generators](https://github.com/NICTA/rng) and the [property testing library for Scala: ScalaCheck](https://github.com/typelevel/scalacheck).
+In particular, we can be inspired by prior work in [pure-functional Scala random generators](https://github.com/NICTA/rng) and the [property testing library for Scala: ScalaCheck](https://github.com/typelevel/scalacheck) ([ScalaCheck docs](https://github.com/typelevel/scalacheck/blob/main/doc/UserGuide.md)) ([QuickCheck overview](https://www.dcc.fc.up.pt/~pbv/aulas/tapf/handouts/quickcheck.html)).
 In this project, we will study how to apply principled FP techniques along with domain-specific knowledge about hardware stimulus generators to produce an introspectable constrained random library.
 
 See my presentation for details: [Functional Random Stimulus Generators and Their Applications](https://docs.google.com/presentation/d/10dLaAaFjYCly3EufSh-FFrO5ZMZyib2CFwhFaazXQeQ/edit?usp=sharing)

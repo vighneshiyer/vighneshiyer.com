@@ -18,7 +18,7 @@
   <h1>{{ page.title }}</h1>
 
   {% if page.date %}
-    <p style="font-size:90%;">Posted on <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time></p>
+    <p class="post-time-article"><time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time></p>
   {% endif %}
 
   {{ page.content | safe }}
