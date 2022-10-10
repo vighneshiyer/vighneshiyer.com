@@ -10,7 +10,7 @@ date = 2022-08-30
 
 - 5th year PhD student advised by [Prof. Bora Nikolic](https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html)
 - Part of the [SLICE lab](https://slice.eecs.berkeley.edu/) and [Berkeley Architecture Research](https://bar.eecs.berkeley.edu/) ([github](https://github.com/ucb-bar))
-- Working on machine larning for hardware verification and power modeling
+- Working on machine learning for hardware verification and power modeling
 - I've advised two 5th year MS students and a handful of undergrads
 - I'm planning to graduate by the end of 2023 (you will be able to do research with me for at least 3 semesters)
 - Undergraduate research is a great way to get to know professors, work on and read papers, present posters at our lab retreats, get industry contacts and introductions, and get feedback on your work!

@@ -157,6 +157,16 @@ Well clearly someone is right: it is either Krste (RISC-V compressed instruction
 
 From my impression, Tesla is a great place to work. The hierarchy doesn't just exist for its own benefit / governance, but actually enables downstream engineers to do what needs to be done. No annoying or incompetent managers. Musk hand-selects the best people to lead each team. Only recently have they been opening up their silicon team to new hires vs poaching. Tesla doesn't seem to be interested in 'maintenance' of software - people are expected to adapt to new APIs, remove deprecated ones, and rewrite often.
 
+A few days later, I saw this conversation [from here](https://twitter.com/TechEmails/status/1575598387335901190):
+
+> Parag Agrawal texts Elon Musk
+>
+> April 9, 2022
+
+{{ image(path="misc/tesla-talk/musk_parag_convo.jpg", width="50%") }}
+
+This just confirms to me that Tesla is the place to be.
+
 ## Un-Asked Questions
 
 - What is the SOTA of industry-tier perf and power models? Do they also consider floorplans / have congestion models?
