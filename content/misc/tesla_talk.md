@@ -32,7 +32,8 @@ What you're saying is that the relatively small code density improvements from t
 - Yes, variable length encoding has marginal code density improvements and icache fetches can be easily prefetched anyways using the branch predictor to guide prefetching.
 - The overhead shows up in latency of fetch and decode as well as the maximum width of both of them (and area density) - keep it simple, stupid.
 - When we're dealing with large programs with 100 Mb of instructions, we will anyways have to make roundtrips from L1 to system cache all the time - so trying to keep just a few insts resident in L1 via compression is a bad tradeoff.
-- The simple RISC CPU always wins ([P6](https://en.wikipedia.org/wiki/P6_(microarchitecture)) is the golden uArch) - more complication leads to bloat and misleading benchmarks. Eventually you will get fat and stupid and lazy and a stronger, younger competitior will come along that starts from scratch and destroys you. This is why the Mongols kept engaging in war and conquering lands - if they settled down, they would get soft and be conquered themselves - this plays out in 10 year cycles in semiconductors esp in CPU uarch.
+- The simple RISC CPU always wins ([P6](https://en.wikipedia.org/wiki/P6_(microarchitecture)) is the golden uArch model that is rediscovered over and over again) - more complication leads to bloat and misleading benchmarks.
+    - Eventually you will get fat and stupid and lazy and a stronger, younger competitior will come along that starts from scratch and destroys you. This is why the Mongols kept engaging in war and conquering lands - if they settled down, they would get soft and be conquered themselves - this plays out in 10 year cycles in semiconductors especially in CPU uarch.
 - He is bullish on Rivos - those Apple engineers know what they're doing and they will replicate the M1 uArch with RISC-V. They will scratch variable length instructions and variable vector length (RVV / SVE) and will produce a very wide fixed width powerhouse, and will destroy SiFive and others competing in the RISC-V high-end market (HPC and servers).
     - Criticism of RVV: most vector units are used as memcpy accelerators (in the majority of general workloads, specialized ML workloads use dedicated ML accelerators). The FP pipes are used to perform the copies while the int pipes are used to predicate partial copies (at byte-level) on the FP pipe. Variable length vector ISAs need this kind of predication frequently for small data length operations (smaller than the maximum vector length), which show up often. NEON is successful due to its fixed width SIMD model, SVE probably will never catch on (or will be niche).
 - What are the actual workloads you are designing for? For phones it is JIT'ed VMs (Javascript) and for servers it is *also* JIT'ed VMs (JVM). Indirect threading -> branch prediction needs to speculate often -> variable length fetch complicates matters.
@@ -69,9 +70,9 @@ When will FSD work?
 
 Proper engineering culture is what makes or breaks a team / company and its innovation
 
-- The person at the top (and all the way down) has to let the engineers do what is necessary (break things and make a mess and screw over people who are lagging behind (low IQ and low agency individuals and teams))
+- The person at the top (and all the way down) has to let the engineers do what is necessary (break things and make a mess and screw over people who are lagging behind (low agency individuals and teams))
     - Jensen and Jobs and Musk are good examples of this, in contrast Intel leadership and Tim Cook nowadays is the opposite of this
-- Musk is willing to fund any insane idea and doesn't hold back the engineering talent. The top performers bubble to the top and no effort is made to 'raise' normie engineers up - they are just tossed aside. Excellence in engineering is how you are judged - no upper management arbitrary goals and meaningless benchmarks.
+- Musk is willing to fund any insane idea and doesn't hold back the engineering talent. The top performers bubble to the top and no effort is made to 'raise' normie engineers up - they are just tossed aside (they can work at Intel). Excellence in engineering is how you are judged - no upper management arbitrary goals and meaningless benchmarks.
 - Being controlled by outside forces leads to death. Intel still has to support the A20 bit (https://en.wikipedia.org/wiki/A20_line) only because of external pressure and a culture of not breaking obviously bad mistakes. Of course, if their leadership was sufficiently visionary, they could tell their customers that they are doing a clean design and deleting things and they will just have to recompile - but they can't - that's their whole business model. Apple is different - they can make these sweeping changes and force compliance to move forward.
 
 
@@ -105,7 +106,7 @@ Academic and industry uarch collaboration fell through due to a [UW-Intel patent
 
 ### Ethernet Superiority
 
-Ethernet's physical layer has been progressing faster than PCIe. We prefer to use Ethernet for chip-to-chip and board-to-board communication. DOJO fabric is all Ethernet - no PCIe used, even for host-accelerator communication (which is all on chip anyways). PCIe requires retimers for long traces unlike Ethernet too. They use a combination of copper and optical physical channels.
+Ethernet's physical layer has been progressing faster than PCIe (see upcoming 800Gbps links). We prefer to use Ethernet for chip-to-chip and board-to-board communication. DOJO fabric is all Ethernet - to namely avoid PCIe used as much as possible for host-accelerator communication. PCIe requires complexity for long traces due to latency requirements, while Ethernet has no such restriction. They use a combination of copper and optical physical channels.
 
 ### On Publish or Perish
 
@@ -152,6 +153,14 @@ Well clearly someone is right: it is either Krste (RISC-V compressed instruction
 - Question: Does a variable length ISA overall harm IPC and critical path on HPC workloads?
 - Platforms: (1) A 4-wide RV64GC BOOM (and all the usual variable length perf optimizations). (2) A 8/10-wide RV64G BOOM (stamped out parallel decoders).
 - Benchmark: Some typical phone-user JITed workload (e.g. Javascript) and some server workload (e.g. JVM-based webserver) + physical design evaluation.
+
+In mid-October, Eric gave me some clarification on an experiment we could set up (see below):
+
+> On Krste or me being right, for my thought experiment add insane numbers of ALUs to your 8-10 wide fixed decoder and the 3x LDs or so to feed it. Cluster the ALUs in big honkin groups and +1 fwd cycle for all I care between clusters, just try to keep alu/agens fast fwd if possible. This may overweight one cluster with early binding bc of dependencies, but y’all can clever your way of of that pretty easily at branch boundaries.
+>
+> Don’t universal schedule, do dedicated per ALU pls -keep it simple stupid. My assertion is the dumber, wider uarch wins. Width of decode is not about sustained IPC, it’s about burstiness of JIT code so have the junk ALUs to eat the bursts. This WILL require you to fetch >1 basic block, so on brp you’ll need target-of-target redundant storage (just write down BIAS or whatever, always/mostly taken is the common case, will fetch you 2 basic blocks most of the time. See ISCA 2020 Samsung paper for ZAT/ZOT implementation)
+>
+> Also rename of 8-10 wide — just speculate the common case (2 in, 1 out) and if some op breaks that model (e.g. 3 input, 2 dest, etc), just skid 1 cycle and lose the extra width.
 
 ### Working at Tesla
 
