@@ -107,7 +107,7 @@ Use python to set configurations. Get rid of meta-language inside yaml.
 - custom language vs embedded in another language
 
 Be able to describe a build graph either using or outside of hammer itself. We should consider: doit, scons, siliconcompiler, ...
-Take inspiration from: make, bazel, mill
+Take inspiration from: make, bazel, mill, waf
 
 - Shake is a build system that supports recursive dependencies (also see [wake - Sifive](https://github.com/sifive/wake))
     - https://shakebuild.com/manual
