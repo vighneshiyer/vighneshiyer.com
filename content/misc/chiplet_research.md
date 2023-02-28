@@ -136,18 +136,29 @@ There are several reasons:
     - The scale at which chiplets make sense to use and model is very far away from the scale examined in academic research.
     - A side note is that RTL level evaluation of system-level PPA for architecture exploration of chiplet designs is unreasonable - such an analysis must be undertaken at a higher level of abstraction.
 2. **Cost modeling is difficult**
-    - The primary motivating factors for chiplet-based architectures are related to yield and minimizing NRE/RE costs
-    - As academics, we have 
-    - We also have little idea about the costs associated with die-to-die communication (pJ/bit is too coarse)
-
+    - The primary motivating factors for chiplet-based architectures are related to yield and minimizing NRE/RE costs.
+    - As academics, we have no clue about the true relationship of silicon area and complexity to yield (this is a closely guarded trade secret), and little understanding about the financial constraints of product portfolios.
+    - We also have little idea about the PPA costs associated with die-to-die communication in each of the many proposed schemes (AIB, BoW, UCIe)
+        - While we may have top-line pJ/bit and latency numbers, if that is all the fidelity required to model chiplet IO, then a high-level algorithm communication analysis (not RTL-level) is sufficient
 3. **Understanding feasibility**
-    
+    - It is easy to speculate about chiplet architectures and 3D stacking possibilities, but the physical feasibility of any of these is not clear to academics
+    - This is in contrast to RTL-level accelerator design within a monolithic chip where the vanilla RTL will give us real PPA numbers and guaranteed feasibility
 4. **Chiplets don't change the basic software story**
-    - The illusion of a big chip remains to software
-    - Chiplets are actually a smaller step than SSDs or fast DRAM
-- We never operate at their scale to see benefits on any of these axes
- (problem: physical feasibility is not clear vs plain vanilla RTL in monolithic chip integration)
+    - The core compute die is still designed such that software sees a monolithic system (notwithstanding multi-socket NUMA systems). Software will always see the illusion of a big chip no matter how it is partitioned physically.
+    - For example, AMD's V-Cache just shows up as a larger LLC to software. Nothing about the software execution changes.
+        - In terms of what the software sees, chiplets architectures are less visible evolutions than the transition to SSDs, for example
+    - While there is a story about how to maintain this illusion in partitioned systems (by distributing work to multiple dies in a way to minimize die-to-die communication), such work is just an extension of multi-socket and multi-node work distribution schemes (albeit with another more fine-grained cost model)
 
-## How Should Chiplet Systems Be Modeled?
+## How Should Chiplet Systems Be Modeled + Designed?
 
-The scale at which chiplets make sense (reticle limit, cache stacking) is so large that RTL level evaluation of system-level PPA for architecture exploration is unreasonable.
+Having said all this, I can be convinced that academics have a role to play in chiplet modeling and design methodology.
+
+Right now, industry seems to have a hard time with the physical design of chiplets - many different foundry-specific standards and design rules, in addition to the designer's own PPA optimization have to be taken into account when deciding IO pad mappings.
+Perhaps academics can help with a design methodology that is physically-aware and drives top-level RTL design with physical intent in mind.
+
+On the modeling side, I agree that an architectural simulator with a native understanding of chiplets (just as gem5 has a native understanding of NUMA) might be useful.
+Getting hard numbers for all the model parameters (for the PPA overheads of the chiplet IO components) is hard, but even a coarse guess might be sufficient to show how algorithms would perform given a specific chiplet architecture.
+However, validating such a model is very difficult, unlike validating CPU and GPU arch simulators, since CAD-based simulation of chip-to-chip communication is difficult and there is little chiplet-based silicon either.
+Also, trying to rely on RTL level simulation for chiplet architectures is nonsensical - the scale of a real chiplet-based system is so large that this level of fidelity would yield ultra-slow simulations and for very little purpose (since die-to-die communication has a relatively simple model).
+
+I welcome feedback on research avenues in chiplet architectures that are academically viable for computer architects.
