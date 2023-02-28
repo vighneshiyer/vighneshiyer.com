@@ -67,35 +67,86 @@ Ultimately will companies be OK with standardizing chiplet interfaces at the cos
 
 ## The Benefits of Chiplets
 
-All of this discussion would be moot if chiplet architectures didn't have benefits.
-I group the benefits into two categories: 
+All of this discussion would be moot if chiplet architectures didn't have benefits over monolithic dies.
+I group the benefits into two categories: 1) reducing cost and 2) improving integration.
 
-### Improving Cost
+### Reducing Cost
 
-- Better yield, cost savings
-- Modularity of chiplets within a company (different products with the same base chiplets)
-- Modularity as in using chiplet IP (buying chiplets from other companies and assembling a package-level SoC)
-    - Potential cost and integration savings
-- Easier test
+1. **Better yield** to minimize RE
+    - Chiplets are smaller than monolithic dies and therefore have higher yield.
+    - Chiplets and stacked dies can be tested independently before integration to avoid building defective products that are thrown away.
+2. **Fewer unique tapeouts** to minimize NRE
+    - A small collection of chiplets can be integrated in different ways at the package-level, leading to a diverse product portfolio with minimal per-chiplet design effort.
+3. **Easier external IP integration** to minimize NRE
+    - Integrating chiplet IP versus hard IP might be easier due to standardized interfaces and outsourcing chiplet testing
+    - It might also be possible to use cheaper process nodes for certain IPs
+4. **Smaller footprint** to minimize RE
+    - 3D stacking can reduce the PCB area consumed by the main package
 
-### Mitigating Integration Limiters
+### Improving Integration
 
-- Process mixing, can enable typically non-viable integrations
-- Reticle limit
-- Greater integration (at package level vs PCB level) (e.g. on-package photonics) (and cache stacking)
-    - Enables higher performance with e.g. cache stacking (preventing DRAM access) (problem: physical feasibility is not clear vs plain vanilla RTL in monolithic chip integration)
+1. **Bypassing the reticle limit**
+    - The modern reticle limit of 800 mm2 is a limiting factor for large datacenter chips
+    - Chiplets enable building package-level systems with 2-3x more silicon area than the reticle limit
+2. **Process mixing**
+    - Forcing RF, analog, SERDES, photonics, memory, and digital logic on one process can lead to inferior design points
+    - By allowing each domain to use the most optimal technology, better system-level performance can be achieved
+    - Chiplets also provide some level of electrical and RF isolation between dies
+3. **Higher bandwidth / lower power communication**
+    - If more components can be moved from the PCB to the package, communication overheads can be reduced
+    - 3D stacking in particular enables high bandwidth and low power communication between dies due to shorter wirelengths, tighter pitches, and fewer material transitions
+    - A good example is 3D stacking of cache which moves more memory from off-package DRAM to on-package stacked SRAM
+4. **Novel integrations**
+    - Devices that would normally be at the PCB-level can be moved to the package
+        - Electrical-optical interfaces, PHYs for various protocols (e.g. Ethernet), discrete accelerators
+    - Enables design points that wouldn't exist in the monolithic die universe
+
+## The Downsides of 2D/2.5D Integration
+
+If you *aren't running into a fundamental limitation of monolithic chip design* (reticle limit, multi-process integration), moving to a chiplet architecture isn't a clear advantage, since it does come with downsides:
+
+1. **Worse PPA**
+    - Splitting a monolithic chip into multiple chiplets doesn't buy you anything, and in fact performance, power, and area will all suffer
+    - Performance will be hindered by the latency and bandwidth overhead of die-to-die communication
+    - Extra power will be burned from die-to-die links
+    - The area of a chiplet design will be slightly greater than its equivalent monolithic design due to bump pitch limits and halos
+2. **Larger integration burden**
+    - On-die signals are easy to handle using the regular VLSI CAD flow
+    - Off-die signals require careful physical design and routing. You will also need additional test circuitry.
+    - Deciding the boundaries on which to split a large monolithic chip isn't easy. Architectural modeling is required.
 
 ## Potential Avenues of Chiplet Research
 
-Downsides of chiplets (compared to monolithic):
+Given all of the above, what are the pressing research areas in package-level integration and chiplet design from the computer architect's perspective?
+The goal is to maximally exploit the advantages of chiplets, while mitigating the overheads and disadvantages.
 
-- Worse PPA (over a monolithic design)
-- Complicates integration burden
-- Splitting a large design means you have to decide the boundaries - not easy to architect
+1. How should a product portfolio be split into a chiplet and package portfolio in such a way as to minimize cost (NRE and RE) and maximize yield?
+2. What are the tradeoffs between standardizing chiplet interfaces and using custom interfaces?
+3. Can we model the PPA of a chiplet-based system including the impacts of process mixing and die-to-die communication? How does the PPA compare to monolithic architectures?
+4. How do we exploit chiplet architectures for existing datacenter applications? How should applications be partitioned and scheduled differently on a chiplet-based system vs a monolithic die + DRAM system?
+5. What are the end-to-end PPA benefits we can expect to see as more PCB-level components are brought into the package?
 
-- What topics here can academics research?
-    - None of them
-    - We never operate at their scale to see benefits on any of these axes
+### What can academics research?
+
+I believe that few of these avenues of research are truly open to academics and nearly all chiplet oriented research belongs in the realm of industry.
+There are several reasons:
+
+1. **Mismatch of scale**
+    - Academics never work on chips that run into the same constraints as industry silicon. Most critically, chiplet disaggregation of a large silicon die is only desirable when we run up against the reticle limit.
+    - The scale at which chiplets make sense to use and model is very far away from the scale examined in academic research.
+    - A side note is that RTL level evaluation of system-level PPA for architecture exploration of chiplet designs is unreasonable - such an analysis must be undertaken at a higher level of abstraction.
+2. **Cost modeling is difficult**
+    - The primary motivating factors for chiplet-based architectures are related to yield and minimizing NRE/RE costs
+    - As academics, we have 
+    - We also have little idea about the costs associated with die-to-die communication (pJ/bit is too coarse)
+
+3. **Understanding feasibility**
+    
+4. **Chiplets don't change the basic software story**
+    - The illusion of a big chip remains to software
+    - Chiplets are actually a smaller step than SSDs or fast DRAM
+- We never operate at their scale to see benefits on any of these axes
+ (problem: physical feasibility is not clear vs plain vanilla RTL in monolithic chip integration)
 
 ## How Should Chiplet Systems Be Modeled?
 
