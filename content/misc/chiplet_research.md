@@ -189,7 +189,7 @@ These asymmetries are actually being *reduced* with the advent of package-level 
 I concede that in the interim, some API may need to be exposed to partition a chiplet cache such that different compute chiplets can minimize communication to far away compute chiplets through the shared cache.
 There might be a bit of research here, but it is mostly system-level and doesn't require RTL-level fidelity.
 
-### Isn't Spiltting a Monolithic Chip Trivial?
+### Isn't Splitting a Monolithic Chip Trivial?
 
 I mentioned above that automatic splitting of a monolithic chip that's reaching the reticle limit is an open research question.
 For academic SoCs this isn't even a question: you would just split the chip on cache boundaries! EZ.
