@@ -94,7 +94,7 @@
         {% endif %}
         {% block taglines %}
         <small>
-          Built with <a href="https://www.getzola.org/">Zola</a>. Styling <a href="https://www.cs.utexas.edu/~bornholt/">inspired by</a>. Hosted on <a href="https://buyvm.net">BuyVM</a>. <a href="https://github.com/vighneshiyer/vighneshiyer.com">Source</a> of this website. <a href="sitemap.xml">Sitemap</a>. 
+          Built with <a href="https://www.getzola.org/">Zola</a> | Styling <a href="https://www.cs.utexas.edu/~bornholt/">inspired by</a> | Hosted on <a href="https://buyvm.net">BuyVM</a> | <a href="https://github.com/vighneshiyer/vighneshiyer.com">Source of this website</a> | <a href="{{ get_url(path="sitemap.xml") | safe }}">Sitemap</a> | <a href="{{ get_url(path="atom.xml") | safe }}">Atom Feed</a>
           {% if config.extra.footer_tagline %}{{ config.extra.footer_tagline }}{% endif %}
         </small>
       {% endblock taglines %}
