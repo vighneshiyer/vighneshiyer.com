@@ -1,6 +1,6 @@
 +++
 title = "Chiplet Research in Academia: Is it Sensible?"
-date = 2023-02-25
+date = 2023-02-28
 +++
 
 ## What Are Chiplets?
@@ -26,18 +26,18 @@ A big limitation of 2D integration is the low density / large pitch of connectio
 Clearly, a bridge layer between the logic dies and the package substrate is required to achieve high inter-die bandwidth, while still being able to route top-level signals to the package bumps.
 
 2.5D integration uses a *silicon interposer* on which chiplets connect via microbumps (10 um), while the interposer connects to the package substrate via regular bumps (100 um).
-This enables high density die-to-die interconnect and brings the off-die bandwidth and latency closer to on-die communication.
+This enables high density die-to-die interconnect and brings the off-die bandwidth and latency closer to that of on-die communication.
 
 Examples: Xilinx [Virtex-7](https://semiaccurate.com/2012/11/08/a-look-at-how-xilinx-uses-stacking-on-the-virtex-7-ht/) and beyond FPGAs with SLRs (Super Logic Regions), TSMC CoWoS (NVIDIA V100, AMD Vega), Intel [EM](https://spectrum.ieee.org/intels-view-of-the-chiplet-revolution)[IB](https://semiwiki.com/semiconductor-manufacturers/intel/298674-intels-emib-packaging-technology-a-deep-dive/) ([Kaby Lake G](https://en.wikichip.org/wiki/intel/cores/kaby_lake_g)), AMD Fiji GPU, Intel [Sapphire Rapids](https://en.wikipedia.org/wiki/Sapphire_Rapids)
 
 ### 3D Integration
 
 For even higher integration density, dies can be [stacked on top of each other](https://en.wikipedia.org/wiki/Three-dimensional_integrated_circuit).
-While stacking logic dies has only been shown in research chips, stacking memory dies is common practice nowdays.
-The limiting factor in logic die stacking is thermal dissipation.
+While stacking logic dies is still in the realm of in research chips, stacking memory dies (or stacking a memory die on top of a logic die) is common practice nowdays.
+The limiting factor in logic die stacking is thermal dissipation, since logic dies consume substantially more power.
 
 A key enabling technology is the [through-silicon via](https://en.wikipedia.org/wiki/Through-silicon_via) (TSV), which enables signals (and power/ground) to be tunneled completely or partially through a silicon die.
-TSVs increase the [die-to-die connection density](https://semiwiki.com/semiconductor-manufacturers/tsmc/306329-advanced-2-5d-3d-packaging-roadmap/) by avoiding the pitch limitations of microbumps and directly bonding copper pillars.
+TSVs enable vias to cut through the interposer, and can increase the [die-to-die connection density](https://semiwiki.com/semiconductor-manufacturers/tsmc/306329-advanced-2-5d-3d-packaging-roadmap/) by avoiding the pitch limitations of microbumps and directly bonding copper pillars.
 Other somewhat related technologies include backside power delivery and package-integrated photonics.
 
 Examples: Intel [Fove](https://www.anandtech.com/show/16823/intel-accelerated-offensive-process-roadmap-updates-to-10nm-7nm-4nm-3nm-20a-18a-packaging-foundry-emib-foveros/4)[ros](https://en.wikichip.org/wiki/intel/foveros) ([Lakefield mobile SoC](https://en.wikichip.org/wiki/intel/microarchitectures/lakefield)), TSMC SoIC - AMD [Zen 3/4 Stacked](https://fuse.wikichip.org/news/5531/amd-3d-stacks-sram-bumplessly/) [3D V-Cache](https://semiaccurate.com/2021/06/01/amds-3d-v-cache-takes-the-advanced-packaging-lead/), [HBM](https://en.wikipedia.org/wiki/High_Bandwidth_Memory), [3D NAND flash](https://en.wikipedia.org/wiki/Flash_memory#Vertical_NAND)
@@ -109,7 +109,7 @@ If you *aren't running into a fundamental limitation of monolithic chip design* 
     - Splitting a monolithic chip into multiple chiplets doesn't buy you anything, and in fact performance, power, and area will all suffer
     - Performance will be hindered by the latency and bandwidth overhead of die-to-die communication
     - Extra power will be burned from die-to-die links
-    - The area of a chiplet design will be slightly greater than its equivalent monolithic design due to bump pitch limits and halos
+    - The area of a chiplet design will be slightly greater than its equivalent monolithic design due to bump pitch limits and interposer design rules
 2. **Larger integration burden**
     - On-die signals are easy to handle using the regular VLSI CAD flow
     - Off-die signals require careful physical design and routing. You will also need additional test circuitry.
@@ -126,7 +126,7 @@ The goal is to maximally exploit the advantages of chiplets, while mitigating th
 4. How do we exploit chiplet architectures for existing datacenter applications? How should applications be partitioned and scheduled differently on a chiplet-based system vs a monolithic die + DRAM system?
 5. What are the end-to-end PPA benefits we can expect to see as more PCB-level components are brought into the package?
 
-### What can academics research?
+### What Can Academics Research?
 
 I believe that few of these avenues of research are truly open to academics and nearly all chiplet oriented research belongs in the realm of industry.
 There are several reasons:
@@ -146,19 +146,62 @@ There are several reasons:
 4. **Chiplets don't change the basic software story**
     - The core compute die is still designed such that software sees a monolithic system (notwithstanding multi-socket NUMA systems). Software will always see the illusion of a big chip no matter how it is partitioned physically.
     - For example, AMD's V-Cache just shows up as a larger LLC to software. Nothing about the software execution changes.
-        - In terms of what the software sees, chiplets architectures are less visible evolutions than the transition to SSDs, for example
-    - While there is a story about how to maintain this illusion in partitioned systems (by distributing work to multiple dies in a way to minimize die-to-die communication), such work is just an extension of multi-socket and multi-node work distribution schemes (albeit with another more fine-grained cost model)
+        - In terms of what the software sees, chiplet architectures are less visible evolutions than the transition from HDDs to SSDs, for example
+    - While there is a story about how to maintain this illusion in partitioned systems (by distributing work to multiple dies in a way to minimize die-to-die communication), such work is just an extension of multi-socket and multi-node work distribution and communication avoiding schemes (albeit with another, more fine-grained, cost model)
 
 ## How Should Chiplet Systems Be Modeled + Designed?
 
 Having said all this, I can be convinced that academics have a role to play in chiplet modeling and design methodology.
 
-Right now, industry seems to have a hard time with the physical design of chiplets - many different foundry-specific standards and design rules, in addition to the designer's own PPA optimization have to be taken into account when deciding IO pad mappings.
+Right now, industry seems to have a hard time with the physical design of chiplets - many different foundry-specific standards and design rules, in addition to the designer's own PPA optimization have to be taken into account when deciding IO bump mappings.
 Perhaps academics can help with a design methodology that is physically-aware and drives top-level RTL design with physical intent in mind.
 
 On the modeling side, I agree that an architectural simulator with a native understanding of chiplets (just as gem5 has a native understanding of NUMA) might be useful.
 Getting hard numbers for all the model parameters (for the PPA overheads of the chiplet IO components) is hard, but even a coarse guess might be sufficient to show how algorithms would perform given a specific chiplet architecture.
-However, validating such a model is very difficult, unlike validating CPU and GPU arch simulators, since CAD-based simulation of chip-to-chip communication is difficult and there is little chiplet-based silicon either.
-Also, trying to rely on RTL level simulation for chiplet architectures is nonsensical - the scale of a real chiplet-based system is so large that this level of fidelity would yield ultra-slow simulations and for very little purpose (since die-to-die communication has a relatively simple model).
+However, validating such a model is very difficult since, unlike validating CPU and GPU arch simulators, CAD-based simulation of chip-to-chip communication is difficult and there is little chiplet-based silicon either.
+Also, trying to rely on RTL level simulation for modeling chiplet architectures is nonsensical - the scale of a real chiplet-based system is so large that this level of fidelity would yield ultra-slow simulations and for very little gain (since die-to-die communication has a relatively simple model).
 
 I welcome feedback on research avenues in chiplet architectures that are academically viable for computer architects.
+
+## Responses to Objections
+
+Since writing this, I have heard some objections I'd like to address.
+
+### Isn't Chiplet Modeling as Interesting as NUMA Optimization?
+
+During the early multi-socket era, it was recognized that having a pool of DIMMs that could be accessed by every socket could lead to poor performance as the accesses would have to be serialized.
+The solution was to split the DIMMs so that each socket could access its own pool separately from the other socket, and add some special hardware to enable data sharing between the pools.
+However, software does not want to deal with these implmentation details and would just like to see a big cache-coherent computer with double the memory and cores as a single socket system.
+
+This lead to *a bunch of research* in cache-coherent NUMA (ccNUMA) and OS/software support for colocating processes near their memory, sharing pages across NUMA regions, and so forth.
+At a high level, the **asymmetry** in memory access latencies motivated work in adapting algorithms/runtimes/kernels to accomodate this constraint.
+
+The question is: is there *asymmetry* in chiplet architectures that we have to design algorithms/runtimes/kernels around? For example, does having a large LLC implemented as a stacked 3D cache introduce asymmetries in per-core memory latency that our OS should know about?
+
+The reality is that chiplets and package-level integration are *erasing* as many asymmetries as possible.
+The illusion of "one big machine" for software will continue to improve because of this trend.
+
+We can already see that package-integrated HBM has reduced asymmetry in memory access times and bandwidth (vs off-chip DRAM), and accessing any HBM stack on the package has pretty much uniform latency for any core.
+The next step will be integrating multiple CPU dies on a single interposer instead of multiple sockets on a motherboard.
+Moving SSD flash stacks to the package is also coming up.
+These asymmetries are actually being *reduced* with the advent of package-level integration.
+
+I concede that in the interim, some API may need to be exposed to partition a chiplet cache such that different compute chiplets can minimize communication to far away compute chiplets through the shared cache.
+There might be a bit of research here, but it is mostly system-level and doesn't require RTL-level fidelity.
+
+### Isn't Spiltting a Monolithic Chip Trivial?
+
+I mentioned above that automatic splitting of a monolithic chip that's reaching the reticle limit is an open research question.
+For academic SoCs this isn't even a question: you would just split the chip on cache boundaries! EZ.
+
+Industry SoCs are not just a bunch of core-coupled accelerators arranged in a multi-core cache hierarchy.
+Yes, they contain core complexes, but they also contain *10s of unique accelerators, radio blocks, data converters, and so forth*, many of which are scattered ad-hoc around the SoC.
+Many of these components are placed close to the IO bumps that they need (e.g. ISP placed near the camera IOs, radio baseband placed near the antenna IOs, HR unit placed near the accelerometer and HR sensor IOs, etc.).
+So splitting an SoC isn't so easy, because real chips are blobs (not trees) and have a bunch of constraints driven by the package, PCB, and product design.
+
+### But Chiplets Are So Cool!
+
+I concede. They are cool.
+
+Taping out a chiplet-based system in academia is worthwhile even if there is no fundamental research agenda.
+It could motivate research based on annoyances encountered during the tapeout, and it will be the first academic 2.5D integration of many large RISC-V SoCs.
