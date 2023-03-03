@@ -1,5 +1,5 @@
 +++
-title = "Chiplet Research in Academia: Is it Sensible?"
+title = "Chiplet (CompArch) Research in Academia: Is it Sensible?"
 date = 2023-02-28
 +++
 
@@ -82,6 +82,7 @@ I group the benefits into two categories: 1) reducing cost and 2) improving inte
     - It might also be possible to use cheaper process nodes for certain IPs
 4. **Smaller footprint** to minimize RE
     - 3D stacking can reduce the PCB area consumed by the main package
+    - Moving PCB components into the package to reduce PCB area / off-package communication
 
 ### Improving Integration
 
@@ -103,10 +104,10 @@ I group the benefits into two categories: 1) reducing cost and 2) improving inte
 
 ## The Downsides of 2D/2.5D Integration
 
-If you *aren't running into a fundamental limitation of monolithic chip design* (reticle limit, multi-process integration), moving to a chiplet architecture isn't a clear advantage, since it does come with downsides:
+If you *aren't running into a fundamental limitation of monolithic chip design* (reticle limit, multi-process integration, insufficient yield), moving to a chiplet architecture isn't a clear advantage, since it does come with downsides:
 
 1. **Worse PPA**
-    - Splitting a monolithic chip into multiple chiplets doesn't buy you anything, and in fact performance, power, and area will all suffer
+    - Splitting a monolithic chip into multiple chiplets doesn't buy you anything, rather performance, power, and area will all suffer
     - Performance will be hindered by the latency and bandwidth overhead of die-to-die communication
     - Extra power will be burned from die-to-die links
     - The area of a chiplet design will be slightly greater than its equivalent monolithic design due to bump pitch limits and interposer design rules
@@ -126,13 +127,13 @@ The goal is to maximally exploit the advantages of chiplets, while mitigating th
 4. How do we exploit chiplet architectures for existing datacenter applications? How should applications be partitioned and scheduled differently on a chiplet-based system vs a monolithic die + DRAM system?
 5. What are the end-to-end PPA benefits we can expect to see as more PCB-level components are brought into the package?
 
-### What Can Academics Research?
+### What Can (CompArch) Academics Research?
 
-I believe that few of these avenues of research are truly open to academics and nearly all chiplet oriented research belongs in the realm of industry.
+I believe that few of these avenues of research are truly open to academics (in computer architecture) and nearly all chiplet oriented research belongs in the realm of industry.
 There are several reasons:
 
 1. **Mismatch of scale**
-    - Academics never work on chips that run into the same constraints as industry silicon. Most critically, chiplet disaggregation of a large silicon die is only desirable when we run up against the reticle limit.
+    - Academics never work on chips that run into the same constraints as industry silicon. Most critically, chiplet disaggregation of a large silicon die is only desirable when we run up against the reticle limit or want to improve yield.
     - The scale at which chiplets make sense to use and model is very far away from the scale examined in academic research.
     - A side note is that RTL level evaluation of system-level PPA for architecture exploration of chiplet designs is unreasonable - such an analysis must be undertaken at a higher level of abstraction.
 2. **Cost modeling is difficult**
@@ -205,3 +206,17 @@ I concede. They are cool.
 
 Taping out a chiplet-based system in academia is worthwhile even if there is no fundamental research agenda.
 It could motivate research based on annoyances encountered during the tapeout, and it will be the first academic 2.5D integration of many large RISC-V SoCs.
+
+### Can We Model Thermal Effects of 3D Stacking?
+
+A potentially feasible research avenue is to model the dynamic thermal profile of stacked logic dies.
+Such modeling might reveal ways to physically stagger core and cache logic from die to die to mitigate hot spots and make traditional cooling techniques viable.
+This is an area that academics have worked on in the past: building thermal models from detailed CAD simulations of a die that is activity-driven.
+
+This area might be suitable for a lab that already has background in thermal modeling, but it is difficult to start from scratch.
+Furthermore, modeling the effects of thermal activity between 2 dies requires knowledge of materials and low-level physics simulations, which would require external collaboration.
+
+### Can we Model the Performance Implications of 3D Die Stacking?
+
+Modeling performance benefits of die stacking is reasonable, as long as the hypothesized physical stack is confirmed to be viable, manufacturable, and a good thermal and die-to-die IO model exists.
+This is not much different than modeling a multi-socket system, except with lower latencies to communicate between the two sockets.
