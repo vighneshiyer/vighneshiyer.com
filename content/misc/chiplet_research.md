@@ -207,7 +207,10 @@ I concede. They are cool.
 Taping out a chiplet-based system in academia is worthwhile even if there is no fundamental research agenda.
 It could motivate research based on annoyances encountered during the tapeout, and it will be the first academic 2.5D integration of many large RISC-V SoCs.
 
-### Can We Model Thermal Effects of 3D Stacking?
+I was shown that there were only a handful of papers related to chiplets that were published at ASPLOS, MICRO, and ISCA.
+This means, there is little prior work to compare new chiplet modeling or tapeout papers to and 'chiplet research' is a *good paper target* (although not an interesting real academic research direction).
+
+### Can We Model Thermal Effects of 3D Die Stacking?
 
 A potentially feasible research avenue is to model the dynamic thermal profile of stacked logic dies.
 Such modeling might reveal ways to physically stagger core and cache logic from die to die to mitigate hot spots and make traditional cooling techniques viable.
@@ -220,3 +223,14 @@ Furthermore, modeling the effects of thermal activity between 2 dies requires kn
 
 Modeling performance benefits of die stacking is reasonable, as long as the hypothesized physical stack is confirmed to be viable, manufacturable, and a good thermal and die-to-die IO model exists.
 This is not much different than modeling a multi-socket system, except with lower latencies to communicate between the two sockets.
+
+### Cache Partitioning Strategies Seem Interesting
+
+- [Chips and Cheese: A Peek at Sapphire Rapids](https://chipsandcheese.com/2023/03/12/a-peek-at-sapphire-rapids/)
+
+> On Intel DevCloud, the chip appears to be set up to expose all four chiplets as a monolithic entity, with a single large L3 instance. Interconnect optimization gets harder when you have to connect more nodes, and SPR is a showcase of this. Intel’s mesh has to connect 56 cores with 56 L3 slices. Because L3 accesses are evenly hashed across all slices, there’s a lot of traffic going across that mesh.
+
+> In contrast, AMD has opted to avoid the giant interconnect problem entirely. EPYC and Ryzen split cores into clusters, and each cluster gets its own L3. Cross-cluster cache accesses are avoided except when necessary to ensure cache coherency. That means the L3 interconnect only has to link eight cache slices with eight cores. The result is a very high performance L3, enabled by solving a much simpler interconnect problem than Intel. On standard SKUs, AMD can’t get anywhere near as much capacity. But AMD can employ 3D stacking on “V-Cache” SKUs, which gets a 64 MB cache die on top of the regular core cluster. Obviously this comes at additional cost, but it gives AMD high L3 capacity with much better L3 performance than SPR.
+
+This tradeoff between finely-distributed coherence (Intel) and cluster-level coherence (AMD) seems interesting and worth investigating at the arch modeling level.
+It can be investigated at a much smaller scale (in terms of number of cores and cache sizes) and we should be able to come to the same conclusions as with a larger system.
