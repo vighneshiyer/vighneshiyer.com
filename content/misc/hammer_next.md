@@ -1,40 +1,41 @@
 +++
-title = "Ideas for HAMMER's Next API"
-date = 2022-09-05
+title = "Ideas for Hammer's Next API"
+date = 2023-03-01
 +++
 
 I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/conference_reviews/dac_2022.md#cad-flow-tools) and what I think the good parts of each tool are.
-In this document I'll try to integrate those good parts into what the next-generation API for HAMMER should look like.
-To be clear, HAMMER's code base as it exists is valuable and nearly all the core code has to be preserved, however I think the 'wrapper' around that core should incorporate learnings from these other CAD flow tools.
+In this document I'll try to integrate those good parts into what the next API iteration for Hammer (or a VLSI CAD build flow tool in general) should look like.
+To be clear, Hammer's code base as it exists is valuable and nearly all the core code has to be preserved, however I think the 'wrapper' around that core should incorporate learnings from these other CAD flow tools.
 
 - [Hammer meeting notes](https://docs.google.com/document/d/1nFXj-F26YS9GGl0igWOnuv0uaLlI9wcTRfKYwjU3S4k/edit#)
 - [Harrison's SiliconCompiler Review](https://docs.google.com/presentation/d/1TwwHfEv5FyEZyY0Wwj8M4ltuM14dNI93JDCWACtDDA0/edit#slide=id.p)
 
-## HAMMER Today
+## Hammer Today
 
-Currently, HAMMER has abstractions to split tool, PDK, and design specific concerns.
-There is a global key-value store (the HAMMER database) which holds data about which tools, PDK, and design is being worked on by the HAMMER driver - this store is initialized by a user-provided JSON/yaml file or using the emitted database from a run of a CAD flow step.
+Currently, Hammer has abstractions to split tool, PDK, and design specific concerns.
+There is a global key-value store (the Hammer database) which holds data about which tools, PDK, and design is being worked on by the Hammer driver - this store is initialized by a user-provided JSON/yaml file or using the emitted database from a run of a CAD flow step.
+The Hammer database has a priority for what value is returned when queried with a key: tool values are overridden by PDK values, which are overridden by design values, which are overridden by runtime values.
 
-HAMMER tools are defined by a sequence of steps, where each step represents some major step within a CAD tool invocation (e.g. read Verilog, synthesize clock tree, perform power opt, etc.).
-Each step usually emits some TCL that operates with the tool's context.
-After each step, it is customary to write out a design database so each intermediary step can be inspected manually.
-The design database can also be used to restart tool execution from a given step, after having modified the subsequent steps.
+Hammer tools are defined by a sequence of steps, where each step corresponds to an action within a CAD tool invocation (e.g. in the case of synthesis: read Verilog, elaborate, techmap, synthesize clock tree, perform power opt, etc.).
+Each step emits a TCL fragment, and all the fragments are concatenated to build a complete TCL script which is passed into the CAD tool.
+In each step's TCL fragment, it is customary to write out a design database so each step's output can be inspected manually.
+The design database can also be used to restart tool execution from a given step, after having modified the TCL produced by the subsequent steps.
 
 The PDK and design specific concerns are allowed to bleed into the tool TCL emission by the use of 'hooks' whereby a PDK or design can register functions that do something (usually emit TCL) between existing tool steps, or replace a tool step entirely.
 
-So the abstractions used by HAMMER today are:
+So the abstractions used by Hammer today are:
 
-- Tool: tool types (synthesis, drc, pnr) are specified explicitly and their schemas
+- Tool: tool types (synthesis, drc, pnr) are specified explicitly and their input/output schemas
 - Technology: each technology (PDK) specifies its libraries and other tech specific metadata
-- Database: a global key-value map that is used to represent a state of execution
+- Database: a global key-value map that is used to represent a state in the CAD flow
 - Hooks: a function injection mechanism that a technology or design can use to influence tool TCL emission
 
-A practical note: while tool types are abstracted away and in theory you could, for instance, swap one synthesis tool for another, practically this is very difficult and not done during a tapeout.
+A practical note: while tool types are abstract and in theory you could, for instance, swap one synthesis tool for another, practically, this is very difficult and not done during a tapeout.
 Furthermore, benchmarking commercial tools against each other is verboten anyways.
 
 ## Fundamental Abstractions
 
-Let's start from first principles, build in HAMMER's abstractions, and see where we can slot in ideas from the other tools.
+Let's start from first principles, build in Hammer's abstractions, and see where we can slot in ideas from the other tools.
 
 At its core, a CAD flow tool is a set of data schemas and functions to transform one schema to another by invoking a CAD tool, script, or Python function.
 For example, we can define a naive flat synthesis operation like this (details are left out):
@@ -49,6 +50,8 @@ class SynInputs():
 class SynOutputs():
     mapped_netlist: Path
     output_constraints: Path
+    timing_log_file: Path
+    timing: TimingReport(tns, wns, ...)
 
 class PDK(abc):
     libraries: List[Library]
@@ -88,6 +91,8 @@ pdk = ASAP7(
 
 #### PDK to Tool Hooks
 
+### What About (Tool -> PDK -> Design) Parameter Overrides?
+
 ## Python-First Data Structures
 
 Already done by SiliconCompiler, but wrongly IMO (stringly typed, IDE not usable, schema defined separately from Python code, dependencies of a function are unknown without scouring through source).
@@ -105,19 +110,26 @@ Use python to set configurations. Get rid of meta-language inside yaml.
 - frontend vs build backend (ninja)
 - recursive / dynamic depdendencies vs strict DAG dependencies (w/ some restrictive looping operators?)
 - custom language vs embedded in another language
+- Microsoft's comprehensive survey of build systems and a unified theory for them: [Build Systems à la Carte: Theory and Practice (2020)](https://www.microsoft.com/en-us/research/uploads/prod/2020/04/build-systems-jfp.pdf)
 
 Be able to describe a build graph either using or outside of hammer itself. We should consider: doit, scons, siliconcompiler, ...
-Take inspiration from: make, bazel, mill, waf
+Take inspiration from: make, bazel, mill, waf (this seems quite nice compared to SCons, but the same high-level idea)
 
 - Shake is a build system that supports recursive dependencies (also see [wake - Sifive](https://github.com/sifive/wake))
     - https://shakebuild.com/manual
     - [Shake Before Building: Replacing Make with Haskell - Slides](https://pdfs.semanticscholar.org/309f/beaa395906cd5c5554f8e3b5742f17656a22.pdf)
     - [Shake Before Building: Replacing Make with Haskell - ICFP 2012](https://ndmitchell.com/downloads/paper-shake_before_building-10_sep_2012.pdf)
     - [Non-recursive Make Considered Harmful - Haskell 16](http://simonmar.github.io/bib/papers/shake.pdf)
-- Microsoft's comprehensive survey of build systems and a unified theory for them: [Build Systems à la Carte: Theory and Practice (2020)](https://www.microsoft.com/en-us/research/uploads/prod/2020/04/build-systems-jfp.pdf)
 
 https://calyxir.org/post/one-year/
 https://docs.calyxir.org/fud/index.html
+
+- Buck2 (https://news.ycombinator.com/item?id=35470371) (https://engineering.fb.com/2023/04/06/open-source/buck2-open-source-large-scale-build-system/)
+    - "Paper: Implementing Applicative Build Systems Monadically" (https://ndmitchell.com/downloads/paper-implementing_applicative_build_systems_monadically-01_jan_2022.pdf)
+    - Buck supports a form of 'dynamic' dependencies where runtime outputs of a task determine future tasks
+    - Remote execution with BuildBarn
+    - Concepts: https://buck2.build/docs/concepts/concept_map/
+- Profiling via traces (https://profiler.firefox.com/) (chrome://tracing)
 
 ## Remote Execution
 
