@@ -1,6 +1,6 @@
 +++
-title = "Machine Learning for Chip Placement: The Ongoing Saga"
-date = 2023-04-04
+title = "Machine Learning for Chip Placement: The Saga"
+date = 2023-04-08
 +++
 
 ## Background on Chip Placement
@@ -138,7 +138,7 @@ The author of the rebuttal was fired by Google, but that's irrelevant - let's ex
 
 ### The Rebuttal
 
-Since the proliferation of ML in various problem domains, ML practioners have often claimed a benefit using their approach, while not 
+Since the proliferation of ML in various problem domains, ML practioners have often claimed a benefit using their approach, while not
 RL papers haven't evaluated themselves against reasonable baselines, and when properly compared against a good baseline, the RL method usually comes out much worse in terms of compute efficiency.
 This rebuttal claims that when more traditional mixed placement algorithms are unconstrained and compared to the RL method - they come out ahead in terms of QoR, runtime, and required compute.
 
@@ -217,32 +217,101 @@ But first, let's examine the key findings from the ISPD paper.
 
 #### The Critical Findings
 
-1. The proxy cost computed after placement of macros and standard cell clusters has a very poor correlation to **both** the post-place (postPlaceOpt) metrics from as well as the golden post-route (postRouteOpt) metrics from the CAD tools.
+1. The proxy cost computed after placement of macros and standard cell clusters has a very poor correlation to **both** the post-place (postPlaceOpt) metrics as well as the golden post-route (postRouteOpt) metrics from the CAD tools.
 
 See the [detailed results here for Ariane133](https://github.com/TILOS-AI-Institute/MacroPlacement/blob/main/Docs/OurProgress/README.md#Question10).
 While wirelength and worst slack have slightly positive correlations to the proxy cost, standard cell area, power, and TNS are not correlated at all.
 This calls into question the construction of the proxy metric, and whether a better one (similar to the one presumably used internally by CMP) could make SA/CT stronger.
 This also calls into question the comparison of placement algorithms using postPlaceOpt proxy cost by prior works (the Nature paper, its rebuttal, and many placement algorithm papers).
 
-2. The data from the rebuttal paper is accurate. SA/RePLAce *does* consistenly outperform CT on the IBM benchmarks with significantly less compute cost. However, the results on the modern benchmarks are mixed.
+2. The data from the rebuttal paper is accurate. SA/RePLAce *does* consistenly outperform CT on the IBM benchmarks with significantly less compute cost. However, the results on the modern benchmarks are more mixed, with different algorithms being more optimal on particular metrics for a particular design (but CT is still worse than the best alternative in nearly all cases).
 
-3. The choice of PDK doesn't affect the performance of placement algorithms as much as the design type
+> Comparison of CT with SA and RePlAce. Table 6 presents re-sults for CT, SA and RePlAce on ICCAD04 testcases. We observe the following. (i) In terms of proxy cost, RePlAce is always better than SA, and SA is always better than CT. (ii) In terms of HPWL, RePlAce is better than SA for 15 of 17 testcases, and SA is better than CT in 16 of 17 testcases.
 
-- Initial placement of macros matters for how well the model can learn to refine over its training routine (it seems to be bootstrapped by physical synthesis)
-- Data seems reasonable, there is no clear winner, humans do decently well, CMP should be better than the others due to investment which actually matches the results
-- Look at the placements of Ariane133 - CT and SA are quite similar, while CMP and AutoDMP are similar (this really tells the story)
+3. The choice of PDK doesn't affect the performance of placement algorithms as much as the design type.
 
+Looking at the results table, for Nangate45, CMP is the clear winner for most designs and metrics, but for GF12, CMP and AutoDMP are both competitive.
+However, looking at the big picture, it is clear that the *complexity* of the design (in terms of number of macros, macro variety, and number of stdcells) affects the runtime and QoR for the algorithm rather than the choice of PDK.
 
+4. AutoDMP and CMP consistently outperform Circuit Training.
 
-> To keep the runtime per iteration small, we apply several approximations to the calculation of the reward function:
->
-> (1) We group millions of standard cells into a few thousand clusters using hMETIS32, a partitioning technique based on the minimum cut objective. Once all macros are placed, we use an FD method to place the standard cell clusters. Doing so enables us to generate an approximate but fast standard cell placement that facilitates policy network optimization.
+Again, look at the results table, and it is clear that these algorithms perform better.
+It can be argued that CMP and AutoDMP have 3 years of development ahead of CT, but the large differences in compute cost and runtime would make it hard to argue that CT could ever catch up in efficiency, let alone QoR.
+Also, the results in this paper are reasonable - in aggregate, there is no clear winner; humans can beat algorithms in particular cases; and it does make sense that CMP would perform the best (being the SOTA in commercial fully-integrated CAD tools).
+The Nature paper was suspect since it claimed an absolute advantage in all cases for CT over humans, SA, or RePLAce.
+
+{{ image(path="misc/ml-for-placement/placement_comparison.png", width="100%") }}
+
+This image is very telling: notice how the results from CT and SA are quite similar, but are distinct from the CMP and AutoDMP placements?
+This seems to suggest that CT is refining an initial placement in a similar manner to SA, rather than truly exploring the entire placement space like the other two algorithms.
+
+5. The initial placement of stdcells/macros makes a big difference in CT's performance. CT seems to be bootstrapped by physical synthesis, rather than learning placement strategies based on the stdcell/macro graph embedding.
+
+> CT is helped by placement from physical synthesis. As noted in Sec. 3.1, CT relies on placement locations in its input, though this is not mentioned in Nature. To test the effect of initial placement on the CT outcome, we generate three “vacuous” input placements for the Ariane-NG45 design. Cases (1), (2) and (3) respectively have all standard cells and macros located at (600, 600), at the lower-left corner (0, 0), and at the upper-right corner (1347.1, 1346.8). For each case, we generate the clustered netlist, run CT and collect Ta- ble 1 metrics, following the evaluation flow of Sec. 4.2. We find that placement information in the input provides significant benefit to CT: given locations from Cadence CMP and Genus iSpatial (Steps 2 and 3 of Figure 2), CT’s solution has rWL that is 10.32%, 7.24% and 8.17% less than in Cases (1), (2) and (3), respectively
+
+This is a substantial point.
+In the original Nature paper, the authors commented:
 
 > We use a commercial tool to synthesize the netlist from RTL. Synthesis is physical-aware, in the sense that it has access to the floorplan size and the locations of the input/output pins, which were informed by inter- and intra-block-level information.
 
-> To quickly place standard cells to provide a signal to our RL policy, we first cluster millions of standard cells into a few thousand clusters. There has been a large body of work on clustering for chip netlists33,34,35,36,37,38. As has been suggested in the literature39, such clustering helps not only with reducing the problem size, but also helps to ‘prevent mistakes’ (for example, prevents timing paths from being split apart). We also provide the clustered netlist to each of the baseline methods with which we compare. To perform this clustering, we employed a standard open-source library, hMETIS39, which is based on multilevel hypergraph partitioning schemes with two important phases: (1) coarsening phase, and 2) uncoarsening and refinement phase.
+But they never said that the preprocessing steps of CT used the rough placement information from physical synthesis.
 
-> To cluster the standard cells for each chip block, we used hMETIS32, which partitions millions of standard cells into thousands of clusters. The hyperparameters for hMETIS are listed in Extended Data Table 3. For all other hMETIS hyperparameters, we simply use the default settings (see the hMETIS manual49 for the values of these defaults and for more detailed information about each hyperparameter). We note that we use a licensed version of hMETIS but, to our knowledge, the same features are available in the open-source version.
+6. Google didn't really open source everything needed for a full reproduction. The UCSD team had to reverse engineer several pieces of the flow and confirm with Google that their implementation was consistent with theirs.
 
-- [Statement on Reinforcement Learning for Chip Design](https://drive.google.com/file/d/1jWUw6rUDcc7fuHu_iGeVDUkBxNJjhHdd/view)
+> We now explain two key “blackbox” elements of CT: force-directed placement and proxy cost calculation. Neither is clearly documented in Nature, nor visible in CT. These examples are representative of the reverse-engineering needed to understand and reimplement methods that to date are visible only through APIs in the plc_client of [23].
+
+## One More Rebuttal
+
+The original Nature authors weren't too happy with the ISPD paper.
+A spate of articles describing the debate were published.
+
+- [More Details, but Not Enough - Communications of the ACM](https://cacm.acm.org/news/271439-more-details-but-not-enough/fulltext)
+- [Google's claims of super-human AI chip layout back under the microscope - The Register](https://www.theregister.com/2023/03/27/google_ai_chip_paper_nature/)
+- [Ending an Ugly Chapter in Chip Design - IEEE Spectrum](https://spectrum.ieee.org/chip-design-controversy)
+
+The Nature authors published their own rebuttal of the ISPD paper titled ["Statement on Reinforcement Learning for Chip Design"](https://drive.google.com/file/d/1jWUw6rUDcc7fuHu_iGeVDUkBxNJjhHdd/view).
+These are the key points and the [responses from the UCSD group](https://github.com/TILOS-AI-Institute/MacroPlacement#new-faqs-after-the-release-of-our-ispd-2023-paper-here-and-on-arxiv):
+
+1. "The ISPD paper performed no pre-training for our method, Circuit Training (CT), meaning that the RL agent was reset each time it saw a new chip."
+
+> We did not use pre-trained models in our study. Note that it is impossible to replicate the pre-training described in the Nature paper, for two reasons: (1) the data set used for pre-training consists of 20 TPU blocks which are not open-sourced, and (2) the code for pre-training is not released either.
+
+> In the Circuit Training repo, Google engineers write: “Our results training from scratch are comparable or better than the reported results in the paper (on page 22) which used fine-tuning from a pre-trained model. We are training from scratch because we cannot publish the pre-trained model at this time and the released code can provide comparable results.” (link)
+
+In my opinion, this complaint has been properly refuted by the UCSD team.
+
+2. "Far fewer compute resources were applied to training CT than described in our Nature paper (half the number of GPUs and an order of magnitude fewer RL environments)."
+
+> We use two collect servers each running 13 collect jobs, i.e., a total of 26 collect jobs are used for data collection. By contrast, the Nature authors run 512 collect jobs for data collection. The number of collect servers used to run 512 collect jobs is not clear from the description given in the Nature paper. We expect our runtimes to be higher than what Nature reports – and we account for this in our experiments.
+
+Again, the UCSD team provides sufficient justification for their evaluation, substituting more compute time for fewer resources.
+A case can be made that the RL model wasn't given enough time to converge, but this is just pendantic at this point: RL is already way more cost intensive than the other algorithms and performs worse.
+
+Even if there is a runtime benefit when fine-tuning a pre-trained model, the Nature authors still claim 6 hours of fine-tuning is required before the proxy cost is comparable to a from-scratch trained model for 24 hours.
+The runtime of CT without pre-training already reaches 30-80 hours on 8 GPUs, while CMP and AutoDMP take less than 2 hours in the largest benchmark with far fewer compute resources.
+
+3. "The ISPD paper focuses on the use of the initial placement from physical synthesis to cluster standard cells, but this is of no practical concern."
+
+The UCSD team clearly showed that initial placement of standard cell clusters provides a big benefit to CT, but that same benefit is afforded to the other placement algorithms.
+Perhaps, this isn't as big a deal as the UCSD team makes it out to be.
+
+4. "Although the study is entitled “Assessment of Reinforcement Learning for Macro Placement”, it does not compare against or even acknowledge any of the recent RL methods building on our work (link). Instead, the ISPD paper compares CT against AutoDMP (ISPD 2023) and (presumably) the latest version of CMP, a black-box, closed-source commercial autoplacer. Neither of these methods were available when we released our paper in 2020."
+
+This is fair point, however, SA and RePLAce do still beat CT on certain metrics and benchmarks.
+The results are a wash, rather than a clear win for CT like the Nature authors suggest.
+
 ## What's Next
+
+This debate is probably over for now.
+The Nature authors have abandoned EDA CAD research, and the UCSD team seems to be taking a victory lap (even though both parties are gracious in "victory" and "defeat").
+I would say that Alberto Sangiovanni-Vincentelli (a father of EDA CAD) and Anirudh Devgan (CEO of Cadence) have been vindicated to some extent, in relying on fundamental algorithmic and constrained solver-based approaches to CAD problems rather than magic ML blackboxes.
+
+Another interesting tidbit is that the man who wrote the original rebuttal to the Nature paper claims that Google tried to woo Synopsys with the RL placer work to secure a cloud contract.
+
+> In his complaint against Google, which was amended [PDF] last month, Chatterjee's lawyers claimed the web giant was thinking about commercializing its AI-based floorplan-generating software with "Company S" while it was negotiating a Google Cloud deal reportedly worth $120 million with S at the time. Chatterjee claimed Google championed the floorplan paper to help convince Company S to get onboard with this significant commercial pact.
+>
+> "The study was done in part as a first step toward potential commercialization with [Company S] (and conducted with resources from [Company S]). Since it was done in the context of a large potential Cloud deal, it would have been unethical to imply that we had revolutionary technology when our tests showed otherwise," Chatterjee wrote in an email to Google's CEO Sundar Pichai, Vice President and Engineering Fellow Jay Yagnik, and VP of Google Research Rahul Sukthankar, which was disclosed as part of the lawsuit.
+>
+> His court filings accused Google of "overstating" its study's results, and "deliberately withholding material information from Company S to induce it to sign a cloud computing deal," effectively wooing the other business using what he saw as questionable technology.
+
+The moral of the story is to always be skeptical of magical results in CAD, and to learn the fundamental algorithms at work rather than generating tons of data to train some model.
