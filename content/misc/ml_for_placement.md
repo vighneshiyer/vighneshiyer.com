@@ -7,33 +7,35 @@ date = 2023-04-04
 
 Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal (do not violate any DRCs, snap to a grid, no overlaps) and feasible (routing is likely to succeed with no overlapping wires and a DRC clean layout).
 Traditionally, hard macro placement is done manually, while standard cell placement is done automatically by the PnR tool.
-This is considered reasonable since hard macros include SRAMs and other hard IP blocks (e.g. PLLs, PHYs) whose placement is critical to achieving good routability, and the number of such macros is usually small (under 100) for a unit of RTL that is PnRed flat.
+Hard macros, such as SRAMs and other hard IP blocks (e.g. PLLs, PHYs), need to be placed with knowledge of the pin locations to ensure good routability.
+Since the number of hard macros per RTL unit is usually small (under 100) and their placement is critical, manual placement is seen as reasonable.
 
 ### Placement Metrics
 
 **Question**: How can we calculate the quality of a proposed macro and standard cell placement?
 
-The most accurate way is to take that placement, run the routing algorithm to connect the macros and standard cells, and compute the relevant metrics using the CAD tools.
+The most accurate way is to take that placement, run the routing algorithm to connect the macros and standard cells, and compute the metrics related to QoR (quality of results) using the CAD tools.
 The most important metrics are:
 
 - Total Area (in µm²)
-- Cell Density (proportion of stdcells vs filler/tap/cap cells per unit area) (~0.8 is considered an upper limit for density)
+- Utilization / Density (proportion of stdcells vs filler/tap/cap cells per unit area) (~0.7 is considered an upper limit)
 - Number of DRC violations
-- Number of LVS violations (including shorts)
+- Number of LVS violations (such as shorts)
 - TNS (total negative slack), WNS (worst negative slack) (both ideally zero)
-- Worst case clock skew / jitter
+<!--- Worst case clock skew / jitter-->
 - Worst case IR drop
-- Power when running dynamic stimulus
+- Power draw when running dynamic stimulus
 
-Generating these metrics is very time consuming, often taking 6+ hours for routing to complete on medium-sized RTL blocks, and many more hours to run DRC, LVS, rail analysis, and power simulation.
+Computing these metrics is time consuming, often taking 6+ hours for routing to complete on medium-sized RTL blocks, and many more hours to run DRC, LVS, rail analysis, and power simulation.
 
-Therefore, the CAD placer cannot run routing on every proposed placement, so it uses a proprietary *proxy metric* that correlates to the metrics above.
-It is critical that these proxy metrics correlate with the actual final metrics since they control what the placer determines is an optimal placement (with respect to other proposed placements).
+Therefore, the placement algorithm cannot run routing on every proposed placement.
+Instead, it uses a proprietary *proxy metric* that *correlates* to the metrics above.
+It is critical that any proxy metric correlates with the final metric since it controls what the placer determines is an optimal placement (with respect to other proposed placements).
 
 There are many proxy metrics including:
 
-- Wirelength (assuming point to point, Manhattan distance, potentially overlapping connections)
-- Cell density
+- Wirelength (point to point routing, Manhattan distance)
+- Utilization
 - Congestion (an approximation of the number of overlapping routes)
 
 ### Placement Algorithms
@@ -41,19 +43,20 @@ There are many proxy metrics including:
 Placement algorithms have been studied for many decades and there are many variations; I don't know much about the inner workings of these algorithms.
 At a high-level the algorithm is usually split into two parts: coarse placement and detailed placement.
 
-Trying to place each hard macro and stdcell by individually placing each instance is not viable since there are often *millions* of instances to place.
-So, as a first step, the placer will cluster standard cells, based on a min-cut clustering algorithm, into a total of ~1k clusters.
+Trying to place each hard macro and stdcell individually is not viable since there are often *millions* of instances to place.
+So, as a first step, the placer will group standard cells, based on a min-cut clustering algorithm, into a small number of clusters (usually around ~1k).
 These clusters of stdcells are called soft macros.
 
-After clustering, the hard macros are placed according to a manual floorplan.
-Then, the soft macros are placed with some allowances for overlaps between them and the hard macros (this is coarse placement).
-Finally, the clusters of standard cells are exploded, and their placements are legalized (snapped to the placement grid, no overlaps) (this is detailed placement).
+After stdcell clustering, the hard macros are placed on manually provided coordinates.
+*Coarse placement* places the soft macros with some allowances for overlaps between them and the hard macros.
+Finally, during *detailed placement*, the clusters of standard cells are exploded, and their placements are legalized (snapped to the placement grid, no overlaps).
 
 #### Modern Algorithms
 
 Modern EDA CAD placement algorithms have some additional features.
 For one, they constantly track the proxy metrics as they make placement decisions to avoid exploring bad placements.
-Modern synthesis is placement-aware and will come up with a standard cell floorplan as its deciding what PDK cells to use considering the timing constraints (see [Synopsys' overview of "Physical Synthesis"](https://www.synopsys.com/glossary/what-is-physical-synthesis.html)).
+Modern synthesis is placement-aware and will come up with a standard cell floorplan as its deciding what PDK cells to use considering the timing constraints (see [Synopsys' overview of "Physical Synthesis"](https://www.synopsys.com/glossary/what-is-physical-synthesis.html), see Cadence Genus iSpatial).
+This floorplan from physical synthesis is fed into the PnR algorithm to seed its initial coarse placements.
 
 Also, placement isn't part of a linear (synthesis → placement → routing) flow, rather every algorithm in the flow is aware of the others, and they constantly call back to each other.
 For instance, if placement determines that a timing constraint will be violated based on the proposed hardened placement of a few standard cells, it may call back to synthesis to see if those cells can be upsized (or use a different Vt flavor) or if a logic path can be further optimized.
@@ -61,19 +64,185 @@ The most modern tools do not even have clean distinctions between the steps of t
 
 #### Mixed Placement Algorithms
 
-It has been recognized that manual macro placement is a bottleneck when iterating on RTL in the early stages.
-Most engineers manually calculate macro (x, y) coordinates using a spreadsheet or by hand, using knowledge about the connections between macros and logic.
-This is still how things are done in most semiconductor design houses, since physical design engineers are quite stubborn and superstitious.
+Manual macro placement is a bottleneck when iterating on physical design.
+Most engineers manually calculate macro (x, y) coordinates by hand, using knowledge about the connections between macros, logic, and pins.
+Macro placement is resistant to automation because physical design engineers are quite stubborn and superstitious, notwithstanding the algorithmic complexity.
 
-However, people are beginning to recognize the value of automating macro placement too (just like standard cell placement is fully automatic).
+However, as the number of memory macros per RTL block continues to grow (into the 100s), there is interest in automating macro placement.
+As of 2020, mixed placers, such as [Cadence's GigaPlace XL (in Innovus)](https://community.cadence.com/cadence_blogs_8/b/breakfast-bytes/posts/innovus-mixed-placer) became mature, and are able to [concurrently place hard macros and standard cells](https://semiwiki.com/eda/cadence/293055-cadence-is-making-floorplanning-easier-by-changing-the-rules/) with no designer input.
 
+> The mixed placement technology, GigaPlace XL within the Innovus Implementation System, is an extension of the powerful multi-objective standard cell placement GigaPlace engine. The GigaPlace XL engine can handle the placement of these macros together with the standard cells and I/Os in the same step, concurrently. In reality, macro placement is a combinatorial problem, while standard cell placement is a numerical one. The breakthrough achieved by the GigaPlace XL engine inside Innovus Implementation is that, with its solver-based placement technology, it can solve continuous optimization and combinatorial optimization simultaneously.
 
-## The Magical Story from Google
+## Google's Claimed Breakthrough
 
+As commercial concurrent macro placers (CMPs) were becoming mature, Google was internally working on solving the macro placement problem via reinforcement learning.
+Although they couldn't compare their RL-based macro placer to Innovus' GigaPlace XL, they claimed to achieve faster runtime and better final QoR than academic macro placers, commercial auto-floorplanning tools, and, of course, manual macro placement.
 
+Their work was initially posted in April 2020 as an [arXiv preprint titled "Chip Placement with Deep Reinforcement Learning"](https://arxiv.org/abs/2004.10746).
+It was later published in June 2021 in a [Nature article titled "A graph placement methodology for fast chip design"](https://www.nature.com/articles/s41586-021-03544-w).
+The [Nature article's peer review file](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03544-w/MediaObjects/41586_2021_3544_MOESM1_ESM.pdf) was also made open in April 2022.
+The authors also [open sourced their code](https://github.com/google-research/circuit_training), although there may be gaps when it comes to full reproduction.
+
+### The Proposed RL Placer
+
+They cast the macro placement problem as a Markov decision process (rather than the typical optimization approach).
+
+> (1) States encode information about the partial placement, including the netlist (adjacency matrix), node features (width, height, type), edge features (number of connections), current node (macro) to be placed, and metadata of the netlist graph (routing allocations, total number of wires, macros and standard cell clusters).
+>
+> (2) Actions are all possible locations (grid cells of the chip canvas) onto which the current macro can be placed without violating any hard constraints on density or blockages.
+>
+> (3) State transitions define the probability distribution over next states, given a state and an action.
+>
+> (4) Rewards are 0 for all actions except the last action, where the reward is a negative weighted sum of proxy wirelength, congestion and density, as described below.
+
+{{ image(path="misc/ml-for-placement/rl_placement.webp", width="80%") }}
+
+The RL agent receives an embedding of a particular placement and the current macro that the agent should act upon.
+The details of the embedding aren't that clear, but the rough idea is that a GNN can capture relationships between macros and stdcell clusters with regards to connectivity and overlaps, and is able to estimate a proxy metric for the agent to use.
+The encoder network is trained on 10000 generated floorplans to predict the proxy metric based on the netlist and placement embedding.
+The encoder is replaced with the policy network once it is trained.
+
+The RL agent places macros one by one, and once all are placed, a force-directed method is used to place the standard cell clusters.
+A commercial CAD tool seems to take care of the detailed placement and the rest of the flow (including routing and post-place optimization).
+
+{{ image(path="misc/ml-for-placement/embedding_and_policy_network.webp", width="100%") }}
+
+For a given target block they are evaluating, they train the policy network on all the other blocks in their dataset, and then evaluate the policy on the unseen block.
+They demonstrate that pre-training on blocks before doing fine-tuning for the unseen block gives better and faster results than training a policy from scratch (indicating that transfer learning is a viable approach for macro placement).
+They claim that with a trained policy network, they can place all the macros for a new block in under one second, with decent results.
+
+{{ image(path="misc/ml-for-placement/transfer_learning.webp", width="50%") }}
+
+They compare their technique against manual macro placement and the academic RePLAce tool and show superior QoR for their placer.
+
+> Once each method finishes placing the netlist, the macro locations are frozen and snapped to the power grid. Next, the EDA tool performs standard cell placement. The settings for the EDA tool are drawn directly from our production flow and thus we cannot share all details. The final metrics in Table 1 are reported after PlaceOpt, meaning that global routing has been performed by the EDA tool.
+
+> Our method was used in the product tapeout of a recent Google TPU. We fully automated the placement process through PlaceOpt, at which point the design was sent to a third party for post-placement optimization, including detailed routing, clock tree synthesis and post-clock optimization.
+
+Note that they aren't using the final output from PnR to compute the design metrics, rather only looking at post-place optimization metrics (no detailed routing has been performed).
+But overall, this was a very promising result that could supplement the upcoming mixed placement algorithms.
 
 ## Something's Off
 
-## A New Rebuttal
+At the time (mid-2021), this paper caused a stir in the EDA CAD community.
+Jeff Dean went around broadcasting the good news: the tagline was "using ML to design ML accelerators".
+The authors also went on speaking circuits, delivering seminars at companies, universities, and conferences showcasing their work and the promise of using ML for other difficult combinational optimization problems.
 
+There was a lot of skepticism about the reported results.
+At the time, the code was closed source, and the only evaluation of RL for placement was on secret TPU blocks.
+Furthermore, Nature is a very odd venue to publish such a work - a CAD conference would have been appropriate, but I suspect the reviewers would have grilled the authors too much for their liking.
+
+Even inside Google, there was a rebuttal to this work on RL for placement that was floating around.
+The rebuttal was [eventually leaked](http://47.190.89.225/pub/education/MLcontra.pdf) and is titled "Stronger Baselines for Evaluating Deep Reinforcement Learning in Chip Placement".
+The author of the rebuttal was fired by Google, but that's irrelevant - let's examine its claims.
+
+### The Rebuttal
+
+Since the proliferation of ML in various problem domains, ML practioners have often claimed a benefit using their approach, while not 
+RL papers haven't evaluated themselves against reasonable baselines, and when properly compared against a good baseline, the RL method usually comes out much worse in terms of compute efficiency.
+This rebuttal claims that when more traditional mixed placement algorithms are unconstrained and compared to the RL method - they come out ahead in terms of QoR, runtime, and required compute.
+
+The rebuttal starts off by clarifying the methodology used in the RL paper, pointing out 3 important facts:
+
+1. The standard cells are grouped by a clustering algorithm to shrink the graph the GNN has to embed, rather than working with the full netlist directly
+2. The macro placement grid is as fine as 128 X 128, which is rather coarse; a larger grid would make RL harder to train
+3. The macros are placed first, and then the standard cell clusters are placed after the macro placement is fully hardened (the placement of macros and standard cells is not simultaneous)
+
+{{ image(path="misc/ml-for-placement/reconstructed_flow.png", width="90%") }}
+
+Note these implementation details from the Nature paper:
+
+> Given the dimensions of the chip canvas, there are many choices to discretize the two-dimensional canvas into grid cells. This decision affects the difficulty of optimization and the quality of the final placement. We limit the maximum number of rows and columns to 128. We treat choosing the optimal number of rows and columns as a bin-packing problem and rank different combinations of rows and columns by the amount of wasted space that they incur. We use an average of 30 rows and columns in our experiments.
+
+> To prepare the placements for evaluation by a commercial EDA tool, we perform a simple legalization step to snap macros to the nearest power grid. We then fix the macro placements and use an EDA tool to place the standard cells and evaluate the placement.
+
+#### Two Questions Asked by the Rebuttal
+
+In response to only evaluating on Ariane and proprietary TPU blocks no one else has access to:
+
+> How does the novel RL method perform on circuit benchmarks commonly used in academic research to evaluate new placement algorithms?
+
+In response to using a limited "place macros, then stdcell clusters" technique in constrast to simultaneous mixed placement:
+
+> How does the two-step methodology proposed in the Nature paper compare to a modern mixed-size methodology in terms of an established objective that (1) the corresponding tools can model and optimize explicitly, and (2) is commonly reported in the literature?
+
+#### Results
+
+The results are interesting.
+
+{{ image(path="misc/ml-for-placement/rebuttal_results.png", width="80%") }}
+
+They suggest that RePLAce was handicapped in the original evaluation, by forcing it to place standard cells only after macro placements were hardened.
+The rebuttal also contains evidence that the coarse placement grid used by RL fares poorly when a netlist contains many small macros, while RePLAce still performs appreciably.
+Finally, the difference in compute requirements of SA/RePLAce vs RL are staggering, with RL using 4-5 orders of magnitude more compute resources.
+
+The proxy metrics (wirelength and congestion) in the results table may not match those reported by a commercial tool (since they were generated with open source tools), but they should correlate directionally.
+
+The rebuttal concludes stating that there is no reason to believe that humans can outperform algorithms in macro placement, so not only are the RL placer results not surprising, but the rebuttal has shown that SOTA academic placers are even better.
+
+## A Lull
+
+After the Nature paper and rebuttal were published, there was some minor debate, but no resolution, since Google's benchmarks and RL agent code were closed source.
+There were a few spinoff papers, but nothing substantial.
+Since then, the Nature authors published their code on Github, and a team at UCSD began to reproduce the results.
+
+## Another Examination of RL for Placement
+
+The UCSD reproduction is [completely open source](https://github.com/TILOS-AI-Institute/MacroPlacement) and is hosted by the TILOS AI Institute.
+They have published writeups of many of the implementation details, so I recommend reading through their READMEs detailing the [preprocessing steps for the RL agent](https://github.com/TILOS-AI-Institute/MacroPlacement/blob/main/Docs/CodeElements/README.md), [proxy cost computation](https://github.com/TILOS-AI-Institute/MacroPlacement/blob/main/Docs/ProxyCost/README.md), [progress log](https://github.com/TILOS-AI-Institute/MacroPlacement/blob/main/Docs/OurProgress/README.md), and [simulated annealing details](https://github.com/TILOS-AI-Institute/MacroPlacement/blob/main/CodeElements/SimulatedAnnealing/README.md).
+Overall, this reproduction is of very high quality and probably the best documented EDA CAD evaluation I have ever seen.
+
+The algorithms being compared:
+
+- **Circuit Training (CT)**: the RL agent described in the Nature paper, based on Google's open-source implementation
+- [**RePLAce**](https://github.com/The-OpenROAD-Project/RePlAce): a CPU-based mixed-placer
+- **Simulated annealing (SA)**: for macro placement with a similar implementation as the rebuttal paper
+- [**AutoDMP**](https://github.com/NVlabs/AutoDMP): a GPU-accelerated mixed placer based on [DREAMPlace](https://github.com/limbo018/DREAMPlace)
+- **Concurrent Macro Placement (CMP)**: a proprietary mixed-placer used within a commercial RTL → GDS flow (Cadence Genus iSpatial + Innovus GigaPlace / Synopsys DC Topographical physical synthesis)
+
+The PDKs being evaluated:
+
+- **Sky130HD** with a fake 9 metal stack and fake SRAMs from bsg_fakeram
+- **Nangate45** with fake SRAMs from bsg_fakeram
+- **ASAP7** with fake SRAMs from FakeRAM 2.0
+- **GF12** with PDK SRAMs
+
+The benchmark circuits were Ariane (small RISC-V core), BlackParrot (quad-core RISC-V SoC), MemPool (256 RISC-V core mesh with large shared L1), a partition of NVDLA, and the IBM placement benchmarks (ICCAD04).
+
+### The ISPD Paper
+
+After more than one year of hammering on this reproduction, the UCSD group submitted an [invited paper at ISPD 2023](https://vlsicad.ucsd.edu/Publications/Conferences/396/c396.pdf) and also released the [paper on arXiv](https://arxiv.org/abs/2302.11014) titled "Assessment of Reinforcement Learning for Macro Placement".
+It was met with praise for its systematic review of the prior work, but also received criticism from the original Nature paper authors, calling out deficiencies in their evaluation of Circuit Training.
+But first, let's examine the key findings from the ISPD paper.
+
+#### The Critical Findings
+
+1. The proxy cost computed after placement of macros and standard cell clusters has a very poor correlation to **both** the post-place (postPlaceOpt) metrics from as well as the golden post-route (postRouteOpt) metrics from the CAD tools.
+
+See the [detailed results here for Ariane133](https://github.com/TILOS-AI-Institute/MacroPlacement/blob/main/Docs/OurProgress/README.md#Question10).
+While wirelength and worst slack have slightly positive correlations to the proxy cost, standard cell area, power, and TNS are not correlated at all.
+This calls into question the construction of the proxy metric, and whether a better one (similar to the one presumably used internally by CMP) could make SA/CT stronger.
+This also calls into question the comparison of placement algorithms using postPlaceOpt proxy cost by prior works (the Nature paper, its rebuttal, and many placement algorithm papers).
+
+2. The data from the rebuttal paper is accurate. SA/RePLAce *does* consistenly outperform CT on the IBM benchmarks with significantly less compute cost. However, the results on the modern benchmarks are mixed.
+
+3. The choice of PDK doesn't affect the performance of placement algorithms as much as the design type
+
+- Initial placement of macros matters for how well the model can learn to refine over its training routine (it seems to be bootstrapped by physical synthesis)
+- Data seems reasonable, there is no clear winner, humans do decently well, CMP should be better than the others due to investment which actually matches the results
+- Look at the placements of Ariane133 - CT and SA are quite similar, while CMP and AutoDMP are similar (this really tells the story)
+
+
+
+> To keep the runtime per iteration small, we apply several approximations to the calculation of the reward function:
+>
+> (1) We group millions of standard cells into a few thousand clusters using hMETIS32, a partitioning technique based on the minimum cut objective. Once all macros are placed, we use an FD method to place the standard cell clusters. Doing so enables us to generate an approximate but fast standard cell placement that facilitates policy network optimization.
+
+> We use a commercial tool to synthesize the netlist from RTL. Synthesis is physical-aware, in the sense that it has access to the floorplan size and the locations of the input/output pins, which were informed by inter- and intra-block-level information.
+
+> To quickly place standard cells to provide a signal to our RL policy, we first cluster millions of standard cells into a few thousand clusters. There has been a large body of work on clustering for chip netlists33,34,35,36,37,38. As has been suggested in the literature39, such clustering helps not only with reducing the problem size, but also helps to ‘prevent mistakes’ (for example, prevents timing paths from being split apart). We also provide the clustered netlist to each of the baseline methods with which we compare. To perform this clustering, we employed a standard open-source library, hMETIS39, which is based on multilevel hypergraph partitioning schemes with two important phases: (1) coarsening phase, and 2) uncoarsening and refinement phase.
+
+> To cluster the standard cells for each chip block, we used hMETIS32, which partitions millions of standard cells into thousands of clusters. The hyperparameters for hMETIS are listed in Extended Data Table 3. For all other hMETIS hyperparameters, we simply use the default settings (see the hMETIS manual49 for the values of these defaults and for more detailed information about each hyperparameter). We note that we use a licensed version of hMETIS but, to our knowledge, the same features are available in the open-source version.
+
+- [Statement on Reinforcement Learning for Chip Design](https://drive.google.com/file/d/1jWUw6rUDcc7fuHu_iGeVDUkBxNJjhHdd/view)
 ## What's Next
