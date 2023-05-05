@@ -81,6 +81,9 @@ env = Env(envvars={"CDS_LIC_FILE": "asdf@flexlm.thing.com"}, submit_option=Local
 pdk = ASAP7(
 ```
 
+Ease of memoizing and hashing artifacts
+tcl file emission as part of running synthesis / splitting into phases (emission and shell execution)
+
 ### What About PDK Setup / Hacks?
 
 ### What About Steps?
@@ -129,6 +132,8 @@ https://docs.calyxir.org/fud/index.html
     - Buck supports a form of 'dynamic' dependencies where runtime outputs of a task determine future tasks
     - Remote execution with BuildBarn
     - Concepts: https://buck2.build/docs/concepts/concept_map/
+- https://en.liujiacai.net/2023/04/13/zig-build-system/
+    - Zig's build system is built on `steps`, and is quite like an explicit execution graph
 - Profiling via traces (https://profiler.firefox.com/) (chrome://tracing)
 
 ## Remote Execution

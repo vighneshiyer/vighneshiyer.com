@@ -22,9 +22,9 @@ The most important metrics are:
 - Number of DRC violations
 - Number of LVS violations (such as shorts)
 - TNS (total negative slack), WNS (worst negative slack) (both ideally zero)
-<!--- Worst case clock skew / jitter-->
 - Worst case IR drop
 - Power draw when running dynamic stimulus
+<!--- Worst case clock skew / jitter-->
 
 Computing these metrics is time consuming, often taking 6+ hours for routing to complete on medium-sized RTL blocks, and many more hours to run DRC, LVS, rail analysis, and power simulation.
 

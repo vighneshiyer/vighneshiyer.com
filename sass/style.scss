@@ -1,3 +1,4 @@
+@use "sass:color";
 // Config
 @import "../node_modules/@picocss/pico/scss/variables";
 
@@ -198,4 +199,48 @@ blockquote {
 }
 code {
     padding: 0.1rem 0.3rem;
+}
+
+// https://flowbite.com/docs/components/badge/
+@mixin badge {
+    padding-bottom: .125rem;
+    padding-top: .125rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.grey-badge {
+    @include badge;
+    background: $grey-100;
+    color: color.scale($grey-900, $blackness: 25%);
+}
+
+.blue-badge {
+    @include badge;
+    background: $primary-100;
+    color: color.scale($primary-900, $blackness: 25%);
+}
+
+.amber-badge {
+    @include badge;
+    background: $amber-100;
+    color: color.scale($amber-900, $blackness: 25%);
+}
+
+.green-badge {
+    @include badge;
+    background: $green-100;
+    color: color.scale($green-900, $blackness: 50%);
+}
+
+.red-badge {
+    @include badge;
+    background: $red-100;
+    color: color.scale($red-900, $blackness: 50%);
 }
