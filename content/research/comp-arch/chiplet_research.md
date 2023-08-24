@@ -1,6 +1,7 @@
 +++
 title = "Chiplet (CompArch) Research in Academia: Is it Sensible?"
 date = 2023-02-28
+aliases = ["misc/chiplet-research"]
 +++
 
 ## What Are Chiplets?

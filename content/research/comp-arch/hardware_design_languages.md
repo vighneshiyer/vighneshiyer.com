@@ -2,6 +2,7 @@
 title = "An Overview of Hardware Design Languages"
 date = 2023-05-04
 draft = false
+aliases = ["research_topics/hardware-design-languages"]
 +++
 
 Over the past several decades, the tools for designing digital circuits have gone from [hand-cutting Rubylith](https://en.wikipedia.org/wiki/Rubylith#VLSI_production) tape to manually lay out transistors and wires, to 

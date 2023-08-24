@@ -1,6 +1,7 @@
 +++
 title = "Machine Learning for Chip Placement: The Saga"
 date = 2023-04-08
+aliases = ["misc/ml-for-placement"]
 +++
 
 ## Background on Chip Placement

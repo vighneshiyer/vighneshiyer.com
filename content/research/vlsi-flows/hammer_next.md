@@ -1,6 +1,7 @@
 +++
 title = "Ideas for Hammer's Next API"
 date = 2023-03-01
+aliases = ["misc/hammer-next"]
 +++
 
 I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/reviews/dac_2022.md#cad-flow-tools) and what I think the good parts of each tool are.

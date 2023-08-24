@@ -1,6 +1,7 @@
 +++
 title = "Discussion with Eric Quinnell from Tesla"
 date = 2022-09-29
+aliases = ["misc/tesla-talk"]
 +++
 
 **Disclaimer**: these are my words, not Eric's. I have used some creative license.
