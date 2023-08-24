@@ -3,7 +3,7 @@ title = "Ideas for Hammer's Next API"
 date = 2023-03-01
 +++
 
-I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/conference_reviews/dac_2022.md#cad-flow-tools) and what I think the good parts of each tool are.
+I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/reviews/dac_2022.md#cad-flow-tools) and what I think the good parts of each tool are.
 In this document I'll try to integrate those good parts into what the next API iteration for Hammer (or a VLSI CAD build flow tool in general) should look like.
 To be clear, Hammer's code base as it exists is valuable and nearly all the core code has to be preserved, however I think the 'wrapper' around that core should incorporate learnings from these other CAD flow tools.
 
@@ -163,3 +163,5 @@ Consider using Ray's remote execution model or look to bazel too.
 - Blog post writeup of the same content: [Infusing AI and ML into integrated circuit design for faster chip delivery, better chip performance (IBM)](https://www.anyscale.com/blog/infusing-ai-and-ml-into-integrated-circuit-design-for-faster-chip-delivery)
 
 </details>
+
+- https://taskflow.github.io/taskflow/index.html (See the taskflow API and C++ library)

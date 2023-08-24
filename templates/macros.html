@@ -14,3 +14,14 @@
   {% endfor %}
 </ul>
 {% endmacro listing %}
+
+{% macro section(section_path) %}
+{% set section = get_section(path=section_path) %}
+{#<h2><a href="{{section.permalink}}">{{ section.title }}</a></h2>#}
+<h2>{{ section.title }}</h2>
+<ul>
+  {% for article in section.pages %}
+    {{ macros::post_in_list(post=article) }}
+  {% endfor %}
+</ul>
+{% endmacro section %}

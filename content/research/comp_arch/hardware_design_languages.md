@@ -4,6 +4,21 @@ date = 2023-05-04
 draft = false
 +++
 
+Over the past several decades, the tools for designing digital circuits have gone from [hand-cutting Rubylith](https://en.wikipedia.org/wiki/Rubylith#VLSI_production) tape to manually lay out transistors and wires, to 
+A *hardware design language* is:
+
+## Axes of HDL Design
+
+### Abstraction
+
+### Implementation
+
+### Elaboration-Time Verification
+
+### API
+
+Imperative constructs vs purely functional (monadic)
+
 {{ badge(text="Implementation: eDSL",class="grey") }}
 
 https://mlir.llvm.org/users/
