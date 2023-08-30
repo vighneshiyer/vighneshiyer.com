@@ -316,3 +316,7 @@ Another interesting tidbit is that the man who wrote the original rebuttal to th
 > His court filings accused Google of "overstating" its study's results, and "deliberately withholding material information from Company S to induce it to sign a cloud computing deal," effectively wooing the other business using what he saw as questionable technology.
 
 The moral of the story is to always be skeptical of magical results in CAD, and to learn the fundamental algorithms at work rather than generating tons of data to train some model.
+
+## PS
+
+One more article was published in August 2023 which runs through the ML for placement saga and provides an accurate critique of the RL placement algorithm: [The False Dawn: Reevaluating Google's Reinforcement Learning for Chip Macro Placement](https://arxiv.org/abs/2306.09633).
