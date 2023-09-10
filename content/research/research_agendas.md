@@ -28,6 +28,12 @@ draft = true
 - Multi-level simulation -> MICRO/HPCA 24
 - Hammer build flow / API redux -> DAC tool paper
 
+- Chris Batten's comments on a verification direction for the lab:
+    - Make it easier to actually extract block level modules from a top without doing the whole elaboration (or mock the interfaces as they exist in the top, but this is hard)
+        - Limitation of diplomacy,...
+        - The complaint isn't really about unit testing - a real selling point would be a methodology to write block level tests and then have it applied with many types of testing strategies (random, fuzzing, unit, directed, property based, etc.)
+    - Incentivize people to write tests not just by making it easy - but also making it the default to have statistics to measure how good you're doing - coverage dashboard, coverage in CI by default - people will look at this and then have another motivation to write tests (it is like gamification)
+
 ## Spring 2023
 
 ### High performance testbench APIs and a SystemVerilog/UVM parity DV environment
