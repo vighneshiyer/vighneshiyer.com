@@ -251,9 +251,9 @@ If you're interested in any of these, email me and I'll be happy to elaborate.
 >         - later: derive generic cell power model from process .lib (undergrad project)
 >     - reference power from Joules (using RTL VCD, rtlstim2gate, Joules synthesized circuit)
 
-This writeup is inspired by [Kevin Laeufer's undergrad research info document](misc/ugrad-projects/Kevin_Laeufer_Undergraduate_Research_Project_Info.pdf) ([drive link](https://docs.google.com/presentation/d/1Tt3lf3G8HVGeqw_Ocha_-6l9IdUESixWX4t3oNUjPv0/edit?usp=sharing)).
+This writeup is inspired by [Kevin Laeufer's undergrad research info document](/misc/ugrad-projects/Kevin_Laeufer_Undergraduate_Research_Project_Info.pdf) ([drive link](https://docs.google.com/presentation/d/1Tt3lf3G8HVGeqw_Ocha_-6l9IdUESixWX4t3oNUjPv0/edit?usp=sharing)).
 
-The single pager I laid out at the research fair [can be found here](misc/ugrad-projects/2022_09-Ugrad_Research_Fair_Sheet.pdf).
+The single pager I laid out at the research fair [can be found here](/misc/ugrad-projects/2022_09-Ugrad_Research_Fair_Sheet.pdf).
 
 ## My Verification Agenda for 2022/23
 

@@ -5,7 +5,7 @@ date = 2022-09-29
 
 **Disclaimer**: these are my words, not Eric's. I have used some creative license.
 
-Eric Quinnell from Tesla came to speak to the SLICE lab on 9/28/2022. [Download his slides here.](misc/tesla-talk/Eric_Quinnell_Tesla_Talk.pdf)
+Eric Quinnell from Tesla came to speak to the SLICE lab on 9/28/2022. [Download his slides here.](/misc/tesla-talk/Eric_Quinnell_Tesla_Talk.pdf)
 
 > Title: Industrial Ranting about Current Computer Micro-Architectures
 >
