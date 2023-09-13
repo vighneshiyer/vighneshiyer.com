@@ -25,8 +25,10 @@ draft = true
 - CS 264 -> new HDL investigation / multi-abstraction -> rewriting of RTL / workshop paper
 - SimCommand + High perf Sim APIs + other stuff -> ASPLOS 24
 - Parametric Fuzzing + ML mutation -> Qual in November
+    - rtl2graph + coverage extrapolation -> Qual
 - Multi-level simulation -> MICRO/HPCA 24
 - Hammer build flow / API redux -> DAC tool paper
+- Formal power modeling -> Bump Animesh for publication
 
 - Chris Batten's comments on a verification direction for the lab:
     - Make it easier to actually extract block level modules from a top without doing the whole elaboration (or mock the interfaces as they exist in the top, but this is hard)

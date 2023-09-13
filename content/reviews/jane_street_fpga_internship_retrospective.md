@@ -1,5 +1,5 @@
 +++
-title = "My Experience as an FPGA Intern at Jane Street"
+title = "An FPGA Internship at Jane Street"
 date = 2023-08-23
 draft = true
 +++
@@ -11,6 +11,16 @@ draft = true
 ### My Background
 
 ### The Office
+
+### The Culture
+
+Game and betting heavy
+
+### OCaml and the Tech Stack
+
+### HardCaml
+
+### The FPGA Team
 
 ## My Trip
 

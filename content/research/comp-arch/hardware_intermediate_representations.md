@@ -17,3 +17,6 @@ Views that allow flat (no module hierarchy), low-level (no behavioral constructs
     1. Per-language internal (in-memory) representation. This can be adjacancy list + node attribute table and a regular graph manipulation library (e.g. Rust petgraph) or something like FGL (https://stackoverflow.com/questions/9732084/how-do-you-represent-a-graph-in-haskell)
         - An Applicative Control-Flow Graph based on Huet's Zipper (http://www.cs.tufts.edu/~nr/pubs/zipcfg.pdf)
     2. Language-independent on-disk representation. Ideally we want both 1 and 2 to be the same, but that might be impossible. Instead the focus should be on a format that is easy to parse into the appropriate data structure for each language. Maybe just a messagepack of JSON that NetworkX can parse too.
+
+- Incremental elaboration of the front-end HDL needs to be coupled with incremental emission of the graph format as well as incremental IR compiler passes too (how can we decide the minimal things to run when the netlist changes?)
+- Direct serialization of in-memory objects is a very nice-to-have feature in a host language (Unison), but it does make polyglot difficult, which is a real requirement
