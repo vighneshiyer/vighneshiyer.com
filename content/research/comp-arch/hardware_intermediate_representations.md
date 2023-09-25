@@ -20,3 +20,12 @@ Views that allow flat (no module hierarchy), low-level (no behavioral constructs
 
 - Incremental elaboration of the front-end HDL needs to be coupled with incremental emission of the graph format as well as incremental IR compiler passes too (how can we decide the minimal things to run when the netlist changes?)
 - Direct serialization of in-memory objects is a very nice-to-have feature in a host language (Unison), but it does make polyglot difficult, which is a real requirement
+
+- Sea-of-nodes in-memory representation ([lgraph](https://woset-workshop.github.io/PDFs/2019/a7.pdf), [lnast](http://masc.soe.ucsc.edu/docs/woset19b.pdf)) of a hardware circuit vs statement-oriented [three-address code](https://en.wikipedia.org/wiki/Three-address_code) representation (FIRRTL, Circt IR, LLHD)
+    - https://darksi.de/d.sea-of-nodes/ (very nice practical intro to sea-of-nodes in the context of JS)
+    - https://stackoverflow.com/questions/69061268/is-llvm-ir-a-graph - LLVM IR isn't a graph, but the compiler passes might use analysis passes that construct graphs that correspond to the IR (CFG, DFG)
+        - SelectionDAG is a true graph IR used for instruction selection within LLVM's pipeline (https://llvm.org/docs/CodeGenerator.html#introduction-to-selectiondags)
+    - Semantic Reasoning about the Sea of Nodes (https://inria.hal.science/hal-01723236/file/sea-of-nodes-hal.pdf)
+    - Original paper by Click [A Simple Graph-Based Intermediate Representation](https://www.oracle.com/technetwork/java/javase/tech/c2-ir95-150110.pdf)
+    - GraalVM JIT optimizer (https://medium.com/graalvm/under-the-hood-of-graalvm-jit-optimizations-d6e931394797) - uses sea-of-nodes representation under the hood
+        - [Graal IR: An Extensible Declarative Intermediate Representation](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.726.5496&rep=rep1&type=pdf)

@@ -22,7 +22,7 @@ draft = true
 ### Overall Agenda
 
 - CS 294 -> semantic compression with application to NoCs -> ISCA 24
-- CS 264 -> new HDL investigation / multi-abstraction -> rewriting of RTL / workshop paper
+- CS 264 -> new HDL investigation / multi-abstraction / better graph IR -> rewriting of RTL / workshop paper
 - SimCommand + High perf Sim APIs + other stuff -> ASPLOS 24
 - Parametric Fuzzing + ML mutation -> Qual in November
     - rtl2graph + coverage extrapolation -> Qual
