@@ -317,6 +317,22 @@ Another interesting tidbit is that the man who wrote the original rebuttal to th
 
 The moral of the story is to always be skeptical of magical results in CAD, and to learn the fundamental algorithms at work rather than generating tons of data to train some model.
 
-## PS
+## P.S.
 
 One more article was published in August 2023 which runs through the ML for placement saga and provides an accurate critique of the RL placement algorithm: [The False Dawn: Reevaluating Google's Reinforcement Learning for Chip Macro Placement](https://arxiv.org/abs/2306.09633).
+
+## P.P.S.
+
+As of September 2023, an editor's note was placed on the [original Nature paper](https://www.nature.com/articles/s41586-021-03544-w).
+
+> 20 September 2023 Editor’s Note: Readers are alerted that the performance claims in this article have been called into question. The Editors are investigating these concerns, and, if appropriate, editorial action will be taken once this investigation is complete.
+
+Hmm, an investigation?
+
+Also Andrew Kahng's article in Nature's "News and Views" ([AI system outperforms humans in designing floorplans for microchips](https://www.nature.com/articles/d41586-021-01515-9)) on the original Nature paper was retracted on September 21, 2023.
+
+> Retraction 21 September 2023: The author has retracted this article because new information about the methods used in the reported paper (A. Mirhoseini et al. Nature 594, 207–212; 2021) has become available since publication, and that has changed the author’s assessment of, and conclusions about, the paper’s contributions. Nature is also doing an independent investigation of the performance claims in the paper.
+
+Igor Markov, the author of one of the rebuttal papers, presented a talk to the [Fall 2023 CS 294 class at UC Berkeley (ML for Hardware Design)](https://ucb-cs294-256.github.io/).
+See his [review of the original Nature paper](https://drive.google.com/file/d/1bhz0LfBvzwA7UaALZxCcNk3d5bFxmimc/view) and [his rebuttal](https://drive.google.com/file/d/1krf1w-pNV5BfO9S2OrlVy6Dcr6cPzOzC/view).
+TODO TODO TODO: attach local static links
