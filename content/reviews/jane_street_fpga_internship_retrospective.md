@@ -15,6 +15,7 @@ draft = true
 ### The Culture
 
 Game and betting heavy
+Compensation
 
 ### OCaml and the Tech Stack
 

@@ -1,5 +1,5 @@
 +++
-title = "Discussion with Eric Quinnell from Tesla"
+title = "Discussion on Variable Length ISAs, High Performance CPUs, FSD, Dojo, and Academic CompArch Research with Eric Quinnell from Tesla"
 date = 2022-09-29
 aliases = ["misc/tesla-talk"]
 +++
