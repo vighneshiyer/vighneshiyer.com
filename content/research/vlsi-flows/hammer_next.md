@@ -166,3 +166,17 @@ Consider using Ray's remote execution model or look to bazel too.
 </details>
 
 - https://taskflow.github.io/taskflow/index.html (See the taskflow API and C++ library)
+
+
+
+# HAMMER
+
+## Sky Lab Stuff
+
+- The new thing: Skypilot: https://skypilot.readthedocs.io/en/latest/examples/grid-search.html
+    - Uses ray under the hood, but handles all the VM provisioning stuff and cloud selection for you (cost optimized)
+- https://github.com/skyplane-project/skyplane (Skyplane for fast and optimized inter-cloud and local to cloud data transfers)
+
+## Remote Job Execution
+
+
