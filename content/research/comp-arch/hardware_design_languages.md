@@ -161,3 +161,339 @@ These can represent circuits at one or more of the above levels of abstraction
     - HLS-like dialects: `handshake` + `esi`, `pipeline` + `ssp`
 - FIRRTL (https://github.com/chipsalliance/firrtl) / RTLIL (https://github.com/YosysHQ/yosys/blob/master/kernel/rtlil.h)
 - LGraph (https://github.com/masc-ucsc/livehd)
+
+- Chisel treats these as the same (At least originally, now changing), but they have always been different in SV. Is there a common thread here?
+    - instance vs module type
+    - literal vs signal
+    - struct vs interface
+
+- clock generation done by library vs testbench (https://github.com/amaranth-lang/amaranth/blob/a9d03805fff8c3d4f6769320323dbf44619fe422/tests/test_lib_fifo.py#L334)
+    - in amaranth, clocks are bound to testbench processes, they only run as needed
+    - move this to the simulator API document
+    - Clocks should be special constructs in both the frontend and testbench
+        - For the design, the enables of a clock are critical to be understood by the simulator
+        - Don't use event driven constructs to design a clock and try to re-infer the clock based on those - just have the clock be a primitive in the first place!
+        - For the testbench it should be the same
+
+### Discussion with Satnam Singh - 9/13/2023, Wed
+
+- modern day traction of edsls for hw design
+- what is the new lava
+- what features are missing?
+
+lack of incremental dv holds us back
+make verif, spec, and design move together
+use sv better
+develop quality of vcs, code review, ci, testing, fuzzing, quickcheck, for hardware (like software)
+
+I just talked to Satnam Singh (https://fpcastle.com/satnam/) and he was still a bit salty that Chisel never cited Lava :laughing: . It seems like he has mostly given up on new HDL evangelism and is just doing more type-level proofs in embedded DSLs for hardware (https://github.com/project-oak/silveroak). I think a common thread between him and Jin Yang is the idea that hardware design and verification should be done in lockstep (incrementally) - the verification collateral, design, and specification should move together.
+
+He also commented on the difficulties of adopting new HDLs in existing semi design houses - Google X allowed him to try out BlueSpec for TPU and SilverOak for OpenTitan, but both efforts didn't have any upper management advocacy and fell apart. That's why he now works for a startup - but it seems he's still frustrated by how poor the software engineering is on the hardware design team. He mentioned that just using SystemVerilog better would be a big improvement - it seems many companies restrict its feature usage (e.g. no structs as ports) in ways that make the language seem a lot less capable. Overall a very interesting person and he has a lot of perspective on using and advocating for formal in industry
+
+Also on the topic of semantically analyzing the host language in order to prove properties about 'for all' X this circuit satisfies property Y:
+this can be done if 1) the host language is very restricted and we can use quantified proof techniques or 2) we can analyze all the semantics of the host language and build a higher-order proof manually.
+The former can be a very restricted subset of Verilog and the latter must be a proof assistant: dafny coq lean agda (maybe idris) (forget about the rest, and certainly OCaml/Haskell/Scala don't fall in this category - their semantics mixed with the generator semantics are just too much to handle)
+    - critically the syntax for type-level manipulation should be the same as value-level manipulation (idris is good here, but not haskell or other macro oriented languages for type-level metaprogramming, including Scala)
+    - see SilverOak and Kami and all of Adam Chlipala's work as moving in this direction
+    - In general, Satnam wants to push PL type-level features to the max (dependent, linear, refinement types) to verify circuits at the type-level across all parameterizations
+
+### Letter to Chris' Student
+
+Hi Peitian,
+
+This is the paper I was talking about from LATTE 21: https://capra.cs.cornell.edu/latte21/paper/19.pdf
+
+I think the high-level directions for HDLs I'm interested in are:
+
+    Preserving semantics down the stack into synthesis, but doing so in a way that we can write passes on the IR that operate on a small set of primitives and have them translated by the compiler framework to operate on a high-level IR
+    Formalizing semantics for HDLs. Especially dealing with X's in an intelligent way that's integrated into the design language/frontend. For X's that we can prove never escape past reset and N number of cycles, allowing zeroed initial state; for X's that we can't prove don't escape, either use explicit resets, or randomize state sufficiently to have confidence that nothing will break, or strengthen the formal methods with dynamic information, or pick out certain paths for the simulation tool to use a more-realistic X-prop mode on (VCS doesn't have this level of granularity, the X-prop mode must be set for the entire simulation).
+    Encoding more VLSI/FPGA constructs in the frontend HDL and furthermore as IR primitives. Clocks, resets, power domains should be first-class objects. Checks that composition of these primitives should happen as part of the frontend and IR compilation. Functional things like retention flops should have formal checks for whether they can restore the state of a block correctly. Power domain crossings should be aware of the power state of each domain. UPF/CPF/SDC generation should come from the frontend. This information should propagate to the simulation tool to perform power-aware/DVFS-capable simulation, without relying on the UPF format and VCS/Xcelium.
+    Incrementally elaborated HDLs. A trend that has emerged for build systems (see Bazel, Buck2) is that not only are the builds executed incrementally (as they did from the days of Make lol), but also the build *descriptions* themselves are being compiled incrementally. This is because reading build descriptions themselves takes a long time. Same problem shows up in HDLs when circuits get really large. Within-run caching in HDL elaboration is easy enough - just have an API for creating an instance and creating several instances of them (see the Chisel Instance API). But run-to-run caching is much more difficult since it requires us to know what source code changed and what it could affect. One solution is a content-addressed language (e.g. Unison), but more practically we could analyze the incremental compilation output of e.g. the Scala compiler and understand what cache entries to invalidate.
+
+Hope to talk with you again soon! Especially interested in the work you and Chris are doing for evolving PyMTL in the coming year.
+
+Thanks,
+Vighnesh
+
+
+# Chisel Warts
+## SpinalHDL Cool Stuff
+- Zero width wires are supported
+- [Design of VexRISCV core with plugins blog post](https://tomverbeure.github.io/rtl/2018/12/06/The-VexRiscV-CPU-A-New-Way-To-Design.html)
+- Check out all the SpinalHDL standard library stuff, the Flow and Stream primitives are nice along with the BusMapper library which is easy to use and simple
+- The FSM library is also very nice and makes the FSM code really easy to read versus explicitly encoding stuff inside each state switch statement
+- Look at how cases are emitted from SpinalHDL, makes a lot of sense and looks like a human written case
+- The simulation construct uses verilator only and scala-continuations for fork-join implementation
+- The SpinalHDL guy wrote a [critique of Chisel here](https://www.reddit.com/r/chisel/comments/4ivevd/spinalhdl_a_chisel_fork/), which raises many good points and is similar to Google's issues
+- [Critique of MyHDL from SpinalHDL creator](https://www.reddit.com/r/FPGA/comments/4lgfvn/tired_of_vhdlverilog_limitation_for_rtl_spinal_hdl/d3ok9yo/)
+## MyHDL
+- [Examples of generated MyHDL netlists](http://docs.myhdl.org/en/stable/manual/conversion_examples.html#optimizations-for-finite-state-machines)
+    - This is very impressive since this is what people want. Easy to read and debug, looks like a human wrote it.
+- [Chisel critique from MyHDL creator](http://www.jandecaluwe.com/blog/chisel-flawed-approach.htm)
+- MyHDL has a very different and a very nice (in my opinion) approach for hardware modeling in the form of 'reactive' streams (in particular Python yield-based generators) - this can also map nicely to automatic hardware synthesis, but is not so straightforward. It is ideal for modeling concurrency without threading primitives nevertheless.
+## Etc
+- Chisel 2 to 3 regressions
+    - No C++ backend which was faster to emit and compile AND faster to execute than verilator
+        - This was a killer feature because the C++ backend was fast and cycle-accurate
+    - No explicit compile flow for FPGA vs ASIC
+        - Things like clock muxes, clock gating, DVFS, negedge clocking, etc. have very different implementations and cell instantiations
+        on FPGA vs ASIC; they are natural to either blackbox generically or add to the FIRRTL IR explicitly and emit correctly.
+    - Speed of elaboration and Verilog emission. Chisel 2 was at SpinalHDL speed, while Chisel3 has regressed significantly and is 2-5x slower.
+
+## Chisel Stdlib Circuits
+
+### Priority Queue
+
+- https://github.com/joey0320/chisel-priorityqueue
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9730477
+- https://ieeexplore.ieee.org/document/895938
+- http://fmdb.cs.ucla.edu/Treports/140013.pdf
+- Joonho asked me to put something like this, properly verified and generic, into the chisel standard library in November 2022
+- I asked Sungwoong (an undergrad) to take a look at it, but he is way too new to digital design to understand what to do - so I asked him to take 151 next semester and maybe we can get back to this later
+- I also met Robert P. at the BWRC retreat on Nov 15 2022 and he was currently working with Rebekah on some digital test circuitry for an analog tapeout - he seemed interested in working on more digital stuff (potentially with me) - if so, he would be ideal for this project, he is a competent digital designer
+
+
+# HW Libraries
+- [ ] Look into extraction of diplomacy and bus interfaces from Rocketchip
+- [ ] Add tests to ucb-bar/asyncqueues and mill build support along with documentation
+- Chisel3 stdlib (so far only a Barrel shifter: https://github.com/chipsalliance/chisel3/commit/6d4e6edc9a62c166af95b41b6aea9634d34275ed)
+- Other things
+    - Async queue
+    - Priority queue w/ various fancy flags
+    - Queue with element removal support
+    - Queue with tagging support
+    - SHA256
+    - All the stuff here: https://github.com/freechipsproject/ip-contributions
+        - Bitonic sorter, CORDIC, AES, UART, FIFO variations, SPI to Wishbone, DecoupledIO component helpers, ECC
+    - CAM (emulated for FPGA) (or multicycle) (existing impl: https://github.com/sifive/sifive-blocks/blob/master/src/main/scala/devices/chiplink/CAM.scala)
+    - Hash tables
+    - Bloom filters
+    - DSP tools (porting to new Chisel or rewriting completely)
+- Write formal / dynamic tests for each of these
+    - e.g. explore how to port the ZipCPU formal harness for an async queue to Chisel using our formal support (and perhaps the clock stuttering transform)
+- A careful study of these structures against their Verilog equivalents in the context of post-synthesis PPA (perhaps for FPGA first, then ASIC)
+    - I think there is significant Chisel to Verilog emission issues that prevent optimization that's as good as hand-written Verilog
+- fifo, queue
+- arbiter, priority arbiter, hold arbiter (control over an interface for multiple cycles)
+- circular buffer
+- cam
+- designware divider / multiplier
+- get dsptools maintained again
+    - rewrite all the components one by one
+    - each chunk is relatively independent
+- sha256
+- md5
+- merseene twister
+    - see rand blocks from Jingyi, compressed sensing
+- Mempress, add pointer chasing
+- firrtl ppa estimator
+- width converter at byte level (dynamically select N bytes from N byte input)
+- hardware hash table
+- banked memory w/ throughput sustainability
+- max / min circuits (general reduction circuits / tree style)
+- aggregation circuits (cumulative sums w/ prefixes / tree sum)
+
+# Hardware Libraries
+- There is a nice FPGA-optimized floating-point operator library which is a C++ VHDL generator caled [flopoco](http://flopoco.gforge.inria.fr/)
+    - Originally linked from [here](https://www.reddit.com/r/FPGA/comments/alewi7/highquality_verilog_math_libraries/)
+    - It would be nice to port this to Chisel to potentially compete against hardfloat
+    - Also useful to have a way of spitting out Verilog from a webapp maybe
+- There are a bunch of VLSI CAD courses on Coursera offered by UIUC on digital CAD flows and some analog stuff, worth checking out if planning to build a tool
+
+
+# Chisel Experimental
+- [ ] X propagation analysis due to partial case statements (have a pass which compiles all register input logic cones to see if there's any setting of the inputs which could yield an unknown state, use some SAT solver)
+    - [ ] More general analysis of X propagation (see [Cliff's paper](http://www.sutherland-hdl.com/papers/2013-DVCon_In-love-with-my-X_paper.pdf) for reasons why X prop ignorance in the Chisel style could be an issue, and set out to prove it)
+    - See [Prakash's X-prop pessimism correction tool](http://www.deepchip.com/items/0583-02.html)
+    - Need a good balance between RTL X-optimism (just fake results) and gate-level X-pessimism (which sometimes needs formal technique to fix)
+- [ ] FIRRTL pass to add assertions on overflow prevention to annotated or all registers (would have been very useful when debugging CORDIC)
+    - This could work at the UInt() or SInt() level on native add/sub operations at the HiFIRRTL level
+- [ ] Look at how Cadence autoformal (formal apps) adds assertions to the design via static analysis (like `parallel_case` automatically assert that cases are exclusive, like bounds/address checkers on memories, check dynamic addressing of bitvectors, etc.)
+    - [ ] Theres some [stuff here](https://www.electronicdesign.com/industrial-automation/11-myths-about-formal-verification) on formal apps
+        - Connectivity checking, tracing clock and reset networks, avoiding propagation of unknown values (x-prop assertions and initialization), fault analysis passes and assertion analysis
+    - Analysis of assertion coverage (what design state spaces have been covered by assertions?)
+- [ ] Chisel coverage analysis (look at what has been done in RFUZZ and see if we can extend coverage from RTL to lines of Scala code)
+    - UCIS (Unified Coverage Interoperability Standard)
+
+# What things should be fixed? (Chisel 4)
+
+- literal construction should be unified with hardware binding (for base types, bundles, records, vectors, and enums)
+    - use a functional API
+- hardware construction outside a module context
+- re-use of the same hardware construction code to build hardware as well as interpret it in memory (see JAX which supports autograd via an internal Python language representation as well as eager, but slow evaluation on the same representation via interpretation)
+- prevent re-elaboration of modules already constructed in memory (be able to automatically memoize things by enforcing immutable and serializable configurations)
+- downstream usage of the RTL - serialize all the hardware construction metadata automatically to be used in ASIC tool scripting and RTL testbenches
+- software (Scala)-based hardware simulation and hardware elaboration contexts should be unified in user-facing API but be compiled down to different forms based on context
+- width checking and other sanity checks should be done as early as possible (and be reported as errors) - in very high level firrtl ideally
+- x-propagation needs to be handled correctly
+    - for rtl simulation - only randomize the few registers that don't need a reset, but cause downstream failures due to (too pessimistic) x-propagation
+    - for asic - build in a formal analysis pass that verifies that the few marked registers actually do not permit x escape
+    - for x-injection - add assertions that none of the inputs are x's via a compiler flag
+- built-in boolean optimization to mitigate x emission in synthesis flows
+
+- What about Clash? What are the primitives there? Can this be the basis for Chisel 4? https://www.youtube.com/watch?v=HAhfWsvpt7E
+    - Clash uses compiler approach vs Lava which uses deep embedding approach similar to Chisel
+
+- built in modeling language (SystemC TLM level)
+- automatic verification of refinements
+- ability to inject HLS (simulated as imperative code initially, then refined) in RTL via a unified API
+    - use HLS for control flow, use RTL for state declaration
+    - be able to generate simulators at every level
+    - be able to swap in/out software models or hardware RTL at module granularity
+    - use a unified HLS IR (e.g. Calyx)
+    - write the testharness using the same HLS IR (w/ SimCommand)
+
+- direct reduction to MLIR HW dialect
+    - Can we lower nearly everything, including the modeling dialect into the MLIR framework and use it to emit hybrid compiled models?
+
+- built-in general purpose diplomacy like library - be able to use a general purpose constraint solver to resolve module connectivity (at higher level of abstraction than RTL level modules, but probably transaction interfaces, or even function calls - just like PyMTL3, PyMTL)
+
+- subword assignment
+- incremental synthesis / elaboration for IDE viz (connectivity analysis, clock propagation)
+- incremental elaboration in general
+    - this means that generators need explicit parameterization
+    - type ModuleP[P] = P: Serializable => Module
+    - then memoize on P for module construction - this should be built into the Chisel frontend and elaboration - right now a major hack is required with Instance and so forth
+        - https://vigoo.github.io/desert/docs/codecs/
+    - see the Module abstraction Dan uses in hdl21, clearly separating the Generator and a named Parameter struct enables this clean memoization
+
+- https://hackage.haskell.org/package/clash-prelude-1.6.4/docs/Clash-Signal.html#g:1
+- Can the HDL directly emit a sea-of-nodes IR representation and later passes can 'group' these into 'modules' logically?
+    - This way the optimizations like duplicate instance identification, DCE, and so forth can directly be performed on the CDFG and nodes simply have source markers which we can use for grouping later
+    - This also enables easy 'boring' through modules without explicit boring and without a boring pass - simply adjust the module node marker itself!
+
+- https://github.com/blarney-lang/blarney (Blarney - Haskell Lava-like DSL for hardware construction - very nice!)
+
+- Chisel 4 - integrated design environment - modeling, perf correlation, verification, formal, RTL
+    - SoC level and chiplet-level and package-level and PCB-level construction are baked in primitives
+    - native notion of "HLS" or something higher level than RTL (TLM or even higher)
+    - FPGA prototyping and bringup are first-class concerns
+    - PPA evaluation baked into the language and the design iteration loop
+        - Incremental first flow
+    - Basically a RTL design language that isn't just about RTL design
+    - All aspects of design and verification and validation, including ECOs, and physical design, and power and clocks, must be part of the language itself
+    - emulation first
+    - semantic preserving - only at synthesis time should semantics be blasted away - as much as possible hold onto high level constructs (including parameterization and aggregates and potentially even looping constructs)
+        - this might have implications on how restricted the hardware design language is - and how much of the host language facilities you can use
+    - graph first representation - value driven API (no functions returning Unit)
+        - module boundaries are a later addition to a netlist
+        - boundaries can be RTL signals, analog signals, event driven signals, TLM signals, etc.
+
+- The evolution of HDL and the future of more integration
+    - 1st gen language: SPICE
+    - 2nd gen language: Verilog (event driven, discrete events, discrete state)
+    - 3rd gen language: SystemVerilog
+    - 4th gen language: Chisel, Clash, Lava, SpinalHDL, ... (this is still RTL-level design ONLY, but using a general purpose language + deep embedding / custom compiler)
+    - 5th gen language: SystemC (higher-than-RTL), SystemVerilog for DV + UVM / Vera / specman e (tighter verification integration), Kami (formal first hardware generators), LiveHD (incremental first RTL design)
+    - 6th gen environment: ???
+- Host languages:
+    - DSL ergonomics
+    - Desirability of type system
+    - Ecosystem and testbench integration
+    - Candidates: Python, Scala 3 (strongest metaprogramming imo), Haskell, Kotlin, Julia
+        - Graal AOT compilation (LLVM flow + JIT for JVM bytecode)
+        - In-line JIT (like JAX or others)
+- Multi-stage elaboration, each stage should be able to mutate the design a bit in a controlled way, multi-stage macros where the macros aren't operating on a Scala AST directly, but the circuit ADT, but with access to the ADT's construction objects (e.g. intermediary variables in the function)
+    - Diplomacy is an example of high level elaboration
+    - Chisel aspects is a low-level example (https://github.com/chipsalliance/chisel/blob/v3.6.0/core/src/main/scala/chisel3/ModuleAspect.scala#L15) (https://javadoc.io/doc/edu.berkeley.cs/chisel3_2.13/latest/index.html?search=aspect)
+    - We want something like aspects, but with a functional API - this is critical for being able to make small changes (instrumentation) to IPs once they have already been stamped out without changing their code. e.g. adding printf instrumentation for perf counters, or adding test instrumentation for BIST
+    - Also could be used for stubbing out / substituting a module for another one within a larger module without having to rewrite it in a separate codebase
+
+- fine grained human parallelism for hardware design
+    - how can many people collatborate on a small project and actually get more done?
+    - automatic model to RTL correlation for verification, power and perf
+    - unified design and PD-aware environment
+    - this is just the next-generation hardware design environment
+    - issue: you have a block you want to develop - there are five people ready to work on it - however, more than one person working on the block will likely lead to worse productivity since early stage design needs to be in the head of one person - no opportunity to exploit human parallelism
+    - I argue this is mainly a tooling problem rather than something intrinsic to the hardware development process itself
+
+
+
+
+
+## Standard Library
+
+- chisel3.std
+- ip-contributions
+- priority queue from joonho
+- rocket-chip util folder
+
+
+
+## Chisel Bootcamp / Docs
+
+- [ ] Fix up the chisel-bootcamp
+    - [ ] Get bootcamp running locally with specific almond version
+    - [ ] Go through FIRRTL section in anticipation of statevec prediction extraction of control state vector
+    - [ ] Try to bump bootcamp to Chisel 3.5 (along with bumping almond to the latest version and using the latest JVM and Scala versions)
+    - [ ] PR my changes to bump
+
+- Bump to the latest Chisel and Scala versions.
+- Remove all deprecated stuff.
+- Make the examples easier to understand (especially the DSPtools stuff).
+- Fix link to firrtl spec in chisel-bootcamp (see Ch 4.1)
+
+- [ ] Can we just make a better 'bootcamp'? Anyways, no one really enters code in the bootcamp and tries it out and iterates. It is just intended for reading.
+
+- I'm thinking a revamped Chisel documentation based on an executable Jupyter book
+- Cover all the common things to do right away
+    - Write a unit test, emit a VCD, select a simulator
+    - Generate RTL
+    - Generate HiFIRRTL, CHIRRTL, LoFIRRTL
+    - Maximize amount of Verilog overlap so people know the equivalent constructs between SV and Chisel
+
+
+- https://github.com/chipsalliance/firrtl/wiki/transform-writing-manual
+- https://gist.github.com/seldridge/0959d714fba6857c5f71ebc7c9044fcf
+## Chisel Bugs
+
+- [ ] Look into Chisel Vivado SRAM inference not working correctly
+    - https://github.com/eugene-tarassov/vivado-risc-v/commit/8c2d236b2349d6edee625a393f90f6a323e2c637
+    - See Tianrui's workaround using BlackBox'ed Verilog (the vlog is in his assertions repo): https://github.com/tianrui-wei/chisel-memory/blob/master/src/main/scala/SinglePortMemoryWrapper.scala
+
+- [ ] Investigate Tianrui's Chisel v SV synthesis showdown
+
+- Potential things to benchmark between Chisel and SV:
+    - x's for synthesis comb opt vs Chisel DontCare (Chisel decoder via espresso is an alternative, but requires specific user intervention)
+    - unique case/if vs chisel mux chain (see Tianrui's example)
+    - SV enum vs raw localparam / constant encoding (supposedly using Enums may be better than inlining constants when it comes to Enum typed nets and synthesis being able to convert them to one-hot coded under the hood)
+
+- Comparison papers:
+    - A Comparative Study of Chisel for FPGA Design (ISSC 2018) https://ieeexplore.ieee.org/document/8585292
+    - Comparative Analysis between Verilog and Chisel in RISC-V Core Design and Verification (ISOCC 2021) https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9614007
+    - A Comparative Study of Chisel and SystemVerilog, based on Logical Equivalent SweRV-EL2 RISCV Core (DVCon 2022) https://dvcon-proceedings.org/wp-content/uploads/A-Comparative-Study-of-CHISEL-and-SystemVerilog-Based-on-Logical-Equivalent-SweRV-EL2-RISCV-Core.pdf
+
+## Chisel Features
+
+- [ ] Type support for onehot nets?
+    - Make onehot an opaque type
+    - Addition on one-hot nets becomes shifting
+    - Can cast to UInt
+    - Indexing is converted to a direct lookup via mask
+- [ ] chisel formal support for reset checking + dont care propagation
+    - Jasper has functionality to check which registers genuinely need resets
+    - Can we integrate this as a pre-processing formal pass?
+    - And just emit regular SV with only selective resets (everything else is verified good being non-reset or with a hardcoded initial value)?
+    - Requires some deep understanding of x-prop
+    - Also can integrate this with dont-cares for synthesis for better combinational optimization
+- [ ] Chisel CDC (Clock-Aware) Integration
+    - [ ] Create dummy Chisel project repo
+    - [ ] Add a few circuits that use a CDC internally
+    - [ ] Add some CDC specific circuits (synchronizer, grey code annotation, etc.)
+    - [ ] Think about what needs to be emitted (e.g. xdc/sdc clock constraints)
+    - [ ] Send to Kevin for more ideas
+    - https://docs.google.com/document/d/1NvLiQiGHgzhp-xLO__8tHXgJGUPC2FiCuSDrJ8kB_XM/edit#heading=h.pi1xt54bx3n3
+    - https://docs.google.com/document/d/1eNT_bgSnVkjymvXULtAhMia81HmWfJxphnfedc1diX0/edit#heading=h.mutzmdjg9ufw
+    - Talk on 11/05/21
+        - Clock-aware Chisel CDC checking
+        - setting up a repo with examples of multiclock circuits
+        - goal is to create a set of Chisel clocking annotations that can be used to identify clock domains, crossings, and CDC paths
+        - emit xdc/sdc constraints consistent with the paths + visualize the clock domains
+        - later: reset domains (did John work on this before?)
+- An IR which supports arbitrary 'views' and runtime translation
+    - e.g. a pass can declare what primitives it would like to see in the graph it processes
+        - e.g. i don't want to see modules (flatten everything), i don't want to see onehot types or aggregate nets
+    - then the compiler will lazily stream a view of that to the pass, which the pass can manipulate/write or just read (both require special support and some restrictions)
+    - the compiler will translate back and forth as we stream into the pass and serialize into the next in-memory representation for the next pass
+- Another interesting thing is automatic pass fusion - can this be accomplished with a principled pass type?
+    - Some similar ideas are present in LiveHD
