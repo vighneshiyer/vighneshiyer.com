@@ -150,3 +150,9 @@ The innovation is both the library for and the implementation of parametric gene
 - Is parametric fuzzing effective for hardware? The metrics will be coverage vs time (or cycles or # insts committed)
 - Feedback and success metrics: mux-toggle coverage, line coverage
 - What is the target design? Can start with something simpler than Rocket to show viability of the approach
+
+## Property based testing
+
+- https://hypothesis.readthedocs.io/en/latest/data.html
+- https://github.com/typelevel/scalacheck (look at Scalacheck's Gen[T] API primitives)
+- https://hypofuzz.com/docs/literature.html#coverage (hypofuzz is a fuzzing backend for hypothesis, coverage-guided)
