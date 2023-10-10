@@ -5,7 +5,7 @@ draft = false
 aliases = ["research_topics/hardware-design-languages"]
 +++
 
-Over the past several decades, the tools for designing digital circuits have gone from [hand-cutting Rubylith](https://en.wikipedia.org/wiki/Rubylith#VLSI_production) tape to manually lay out transistors and wires, to 
+Over the past several decades, the tools for designing digital circuits have gone from [hand-cutting Rubylith](https://en.wikipedia.org/wiki/Rubylith#VLSI_production) tape to manually lay out transistors and wires, to
 A *hardware design language* is:
 
 ## Axes of HDL Design
@@ -497,3 +497,103 @@ Vighnesh
     - the compiler will translate back and forth as we stream into the pass and serialize into the next in-memory representation for the next pass
 - Another interesting thing is automatic pass fusion - can this be accomplished with a principled pass type?
     - Some similar ideas are present in LiveHD
+
+## Not Separating Structs and Interfaces (with directionality) is a Problem
+
+- Look at how complicated this is: https://www.chisel-lang.org/chisel3/docs/explanations/connectable.html#connecting-components-with-fully-aligned-members
+    - This seems to stem from allowing directionality in bundles
+
+> I want to use OpenROAD and ASAP7 to measure the setup time for a module.
+>
+> To do so, I need for a Foo module to create a FooTop module where I register all inputs and outputs.
+>
+> How can I best do this in Chisel?
+>
+> I want to do something like:
+>
+> class FooTop extends Bundle {
+>  val io = IO(new FooBundle)
+>  val bar = Module(new Foo)
+>  val reg = Reg(new FooBundle)
+>  io <> reg
+>  bar.io <> reg
+> }
+>
+> https://scastie.scala-lang.org/VFoKDXSrRUmtTIuDbHTKtA
+>
+> Error message: firrtl.passes.CheckHighFormLike$RegWithFlipException:  @[src/main/scala/main.scala 19:15]: [module FooTop] Register reg cannot be a bundle type with flips.
+
+
+> There are likely better ways of doing this than what I suggest below.
+>
+> You can strip the type of the bundle to make it passive before creating the register. You then need to do per-field connections to the register.
+>
+> E.g., something like the following will work:
+>
+> ```
+> class Foo extends Module {
+>   val a = IO(Flipped(new Bar))
+>   val b = IO(new Bar)
+>
+>   val r = Reg(Output(chiselTypeOf(a)))
+>
+>   r.x :<= a.x
+>   r.y :<= b.y
+>
+>   b.x :<= r.x
+>   a.y :<= r.y
+> }
+> ```
+>
+> The better approach is that there is likely a pithy way to do this with either: (1) the new connection operators or (2) a utility. What you really want is a way to have the left-hand-side connect (in a flipped or aligned fashion) ignoring the type of the right-hand-side passive thing.
+
+## No Support for Asymmetric Memories as Chisel Primitives
+
+- The common question as to which primitives should be specified in the language directly
+    - Chisel has regular SRAMs, but it can't emit banked asymmetric read/write SRAMs in a way that Quartus can infer
+    - Chisel now has explicit SRAM instantiation instead of inferred read/write ports and enable logic: https://www.chisel-lang.org/chisel3/docs/explanations/memories.html
+
+> Does Chisel allow defining memories with ports of varying width?
+> For instance 2 x 64 bit read and one 64 bit write port and one 512 bit read or write port?
+
+> Example of Verilog code with ports of different widths: https://www.intel.com/content/www/us/en/docs/programmable/683082/22-1/mixed-width-dual-port-ram.html
+
+```verilog
+module mixed_width_ram // 256x32 write and 1024x8 read
+( input [7:0] waddr, input [31:0] wdata, input we, clk, input [9:0] raddr, output logic [7:0] q );
+    logic [3:0][7:0] ram[0:255];
+    always_ff@(posedge clk) begin
+        if(we) ram[waddr] <= wdata;
+        q <= ram[raddr / 4][raddr % 4];
+    end
+endmodule : mixed_width_ram
+```
+
+> There is no support for representing this in FIRRTL. There is no corresponding Chisel API for representing this. This seems like Altera is providing a very convenient way to describe banked memories. Doing this in Chisel would be more natural to handle with a wrapper around a memory to do the banking for you (which sounds like exactly what you are doing). There is some benefit to this as it then isn't specialized for an Altera-specific inference pattern.
+
+### Another Case of Semantics Being Lost
+
+> I am getting one clock per read and write port, even if there is a single clock in my design where SyncReadMem() is invoked.
+> Is there a way to tell SyncReadMem() to generate a .sv file for this SRAM with a single clock?
+
+```verilog
+module registers_32x64(
+  input  [4:0]  R0_addr,
+  input         R0_en,
+                R0_clk,
+
+  input  [4:0]  W0_addr,
+  input         W0_en,
+                W0_clk,
+  input  [63:0] W0_data,
+  input  [7:0]  W0_mask,
+  input  [4:0]  W1_addr,
+  input         W1_en,
+                W1_clk,
+```
+
+> There is currently no way to do this. Keeping this as-is, where you get a memory (or a blackbox module) with this predictable lowering has ABI benefits---you know what you're going to get and it's not a function of whether two clocks are wired together trivially or, as some might expect, in a more complicated way somewhere earlier in the hierarchy.
+>
+> Chisel or FIRRTL don't have the ideal representation for clocks and resets as these are closer to "global resources" rather than things which are ports and can be put into wires or registers. Reworking Chisel in this direction would help with the desired emission strategy as there is then an unambiguous way to say that two ports of a memory have _the same clock_ as opposed to _the same wire_.
+>
+> tl;dr: Wiring the ports together is the right way to proceed or to put the memory in a wrapper module in Chisel.

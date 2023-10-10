@@ -156,3 +156,8 @@ The innovation is both the library for and the implementation of parametric gene
 - https://hypothesis.readthedocs.io/en/latest/data.html
 - https://github.com/typelevel/scalacheck (look at Scalacheck's Gen[T] API primitives)
 - https://hypofuzz.com/docs/literature.html#coverage (hypofuzz is a fuzzing backend for hypothesis, coverage-guided)
+- Look into hypothesis for the generator (strategy) API - what components can we copy and can arbitrary constraints be specified?
+    - Does hypothesis have a coverage driven mode (yes!, see hypofuzz)
+    - Look into automatic testcase generation and reduction (shrinking)
+- Do a fundamental comparison between CRV, fuzzing, generator-based fuzzing, PBT, directed testing, and formal
+    - Have a crisp top-down view of each of these, the differences and similarities, how they slot into the verif loop and unify a clear terminology
