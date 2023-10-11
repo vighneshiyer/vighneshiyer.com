@@ -166,8 +166,10 @@ Consider using Ray's remote execution model or look to bazel too.
 </details>
 
 - https://taskflow.github.io/taskflow/index.html (See the taskflow API and C++ library)
-
-
+- https://docs.google.com/presentation/d/10Jyh6np4DO-ummqD2Wgygigby2q3z8RTOwI-fCPaSRo/edit?usp=sharing
+    - See prefect, airflow, luigi as python dataflow pipeline orchestration tools
+    - How do these fit alongside a build system and caching system?
+    - Also how do we support remote execution explicitly via slurm/GCP, etc.
 
 # HAMMER
 

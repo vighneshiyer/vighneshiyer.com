@@ -498,6 +498,20 @@ Vighnesh
 - Another interesting thing is automatic pass fusion - can this be accomplished with a principled pass type?
     - Some similar ideas are present in LiveHD
 
+## Dealing with Undefined Signals and Xs
+
+- places X injection can happen from the dynamic simulation itself (not due to init)
+    - out of bound read/write from vector or SRAM
+    - firrtl read ports with enable signal where the read data is invalid if enable is false
+    - read under write with undefined behavior
+    - writes to same address from 2 different write ports
+    - division by zero
+- Kevin uses arbitrary state to represent X's in formal memories
+    - Make sure that the circuit doesn't depend on the X value itself!
+    - https://github.com/chipsalliance/firrtl/blob/1.6.x/src/main/scala/firrtl/backends/experimental/smt/random/UndefinedMemoryBehaviorPass.scala
+    - https://github.com/chipsalliance/firrtl/blob/1.6.x/src/main/scala/firrtl/backends/experimental/smt/random/InvalidToRandomPass.scala
+
+
 ## Not Separating Structs and Interfaces (with directionality) is a Problem
 
 - Look at how complicated this is: https://www.chisel-lang.org/chisel3/docs/explanations/connectable.html#connecting-components-with-fully-aligned-members
