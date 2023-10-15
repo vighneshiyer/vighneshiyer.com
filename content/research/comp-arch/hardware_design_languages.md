@@ -510,7 +510,9 @@ Vighnesh
     - Make sure that the circuit doesn't depend on the X value itself!
     - https://github.com/chipsalliance/firrtl/blob/1.6.x/src/main/scala/firrtl/backends/experimental/smt/random/UndefinedMemoryBehaviorPass.scala
     - https://github.com/chipsalliance/firrtl/blob/1.6.x/src/main/scala/firrtl/backends/experimental/smt/random/InvalidToRandomPass.scala
-
+- Another case is for a case statement with no default (or rather the default is 'x' meaning arbitrary)
+    - This is a difficult case to handle, which is why Chisel never emits 'x's for the synthesis tool to optimize
+- What's the right strategy to deal with undefined states? The FIRRTL approach isn't right of just forcing only 0/1 values in the circuit.
 
 ## Not Separating Structs and Interfaces (with directionality) is a Problem
 
@@ -611,3 +613,7 @@ module registers_32x64(
 > Chisel or FIRRTL don't have the ideal representation for clocks and resets as these are closer to "global resources" rather than things which are ports and can be put into wires or registers. Reworking Chisel in this direction would help with the desired emission strategy as there is then an unambiguous way to say that two ports of a memory have _the same clock_ as opposed to _the same wire_.
 >
 > tl;dr: Wiring the ports together is the right way to proceed or to put the memory in a wrapper module in Chisel.
+
+- One more thing, right now we have to make distinction between things passed as constants in ports vs parameters
+    - e.g. the RocketTile has the hartid passed in as a port vs a parameter because if it was a parameter, then each instance of RocketTile would be unique and they wouldn't be deduped! also the instance + cloning (Instance API) wouldn't help here!
+    - Can we unify these use cases? Make it possible to declare it as a parameter! Constant valued ports should not exist, instead parameters should be used and the frontend should use content-addressing of generated hardware IR to produce largely the same module but with small diffs
