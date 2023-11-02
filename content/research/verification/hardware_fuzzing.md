@@ -33,6 +33,7 @@
 - GenFuzz: GPU-accelerated Hardware Fuzzing using Genetic Algorithm with Multiple Inputs https://tsung-wei-huang.github.io/papers/2023-dac.pdf
     - Built on top of RTLFLow (From RTL to CUDA: A GPU Acceleration Flow for RTL Simulation with Batch Stimulus https://tsung-wei-huang.github.io/papers/icpp22-rtlflow.pdf)
 - IBM Ziv Machine Learning in the Service of Hardware Functional Verification https://link.springer.com/chapter/10.1007/978-3-031-13074-8_14#Sec6
+- HyPFuzz: HyPFuzz: Formal-Assisted Processor Fuzzing (https://arxiv.org/pdf/2304.02485.pdf)
 
 ### Fuzzing
 
