@@ -1,0 +1,231 @@
+\documentclass[10pt]{article}
+
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage[left=1.25in,right=1.25in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{XCharter}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{makecell}
+\usepackage{hyperref}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttl@select}{\strut}{}{}{}
+\patchcmd{\ttlh@hang}{\strut}{}{}{}
+\patchcmd{\ttlh@hang}{\strut}{}{}{}
+\makeatother
+
+\titleformat{\section}
+    {\normalfont\large\bfseries} % style of section title
+    {} % prefix
+    {0pt} % how much space between the prefix and the title
+    {} % How the section appears in text (use \thesection to print the section number)
+
+\makeatletter
+\renewcommand{\subsection}
+{\@startsection {subsection}{1}{0pt}
+ {-1ex}
+ {0.5ex}
+ {\bfseries\normalsize}}
+\makeatother
+
+\setlength{\parskip}{0em}
+\usepackage{setspace}
+\setstretch{1.2}
+
+% https://www.youtube.com/watch?v=UP-S9rvAYYo
+% Top third = snapshot of you (what type of job are you targeting?, why are you qualified?, no objective, tease the rest of the resume, objective replacement is an executive summary, include areas of expertise as bullets or points)
+% for each job: paragraph for roles and responsibilities, then bullets for bragging points
+% headers: 13-16 pt, body: 10-12 pt, at least 1/2in border
+\begin{document}
+\begin{center}
+    {\LARGE \textbf{Vighnesh Iyer}}
+
+    {\small vighneshiyer.com}
+
+    {\small vighnesh.iyer@berkeley.edu}
+\end{center}
+
+\section{Research Interests}
+\vspace{-0.1cm}
+{RTL verification and debugging methodologies/tools; stimulus generation techniques; microarchitecture simulation; specification mining; machine learning for DV; RTL fuzzing; DSLs for hardware construction / hardware-specific IRs; FPGA-accelerated emulation; FPGA-accelerated RTL-level power/performance estimation; RTL power modeling; domain-specific accelerators; hardware resiliency}
+\vspace{-0.2cm}
+
+\section{Education}
+\vspace{-0.1cm}
+\begin{tabular}{@{}ll}
+    \textit{2018 -- current} & UC Berkeley: PhD EECS, Advisor: Prof. Borivoje Nikolic\\
+    \textit{2014 -- 2018} & UC Berkeley: BS EECS
+\end{tabular}
+\vspace{-0.2cm}
+
+\section{Experience}
+%\item Brought up and calibrated SERDES links designed to drive memory traffic between an ASIC and FPGA
+%\item Created a comprehensive UVM testbench to verify an NVM IP controller's functionality prior to tapeout
+%\item Designed and implemented a pipelined RISC-V processor on a Xilinx Virtex-5 FPGA; wrote a DDR DRAM controller, and developed graphics accelerators
+\makebox[1.75in][l]{\textit{August 2023 -- current}} \textbf{UC Berkeley} --- Graduate Student Researcher
+\begin{itemize}
+    \item Applying software parametric fuzzing techniques to RTL verification.
+    \begin{itemize}
+        \item Development of a parametric stimulus generator for RISC-V programs that also emits instrumentation to identify the influence of each byte of the parametric bytestream that serves as generator input
+        \item Leverage bytestream instrumentation to perform guided mutation
+        \item Applying hardware fuzzing to stimulus generation for microarchitectural metric targeting
+    \end{itemize}
+    \item Methodologies for RTL coverpoint / bug synthesis using specification mining infrastructure.
+    \begin{itemize}
+        \item Break the limitations of using open-source RTL for verification research by synthesizing microarchitecturally-interesting temporal properties
+        \item Demonstrate the usage of synthesized properties to evaluate different dynamic verification techniques
+    \end{itemize}
+    \item Applying machine learning to RTL-level dynamic verification.
+    \begin{itemize}
+        \item Investigating coverage extrapolation via GNNs to overcome the limitations of supervised learning for coverage prediction
+        \item Leveraging generator instrumentation for stimulus embedding
+    \end{itemize}
+    \item High throughput, low latency, high accuracy microarchitecure simulation.
+    \begin{itemize}
+        \item Combine functional (ISA-level), uArch trace-driven models, and RTL simulation to exploit the best traits of each simulation methodology
+        \item Demonstrate that ``multi-level simulation'' enables fast microarchitecture iteration cycles with evaluation on realistic workloads
+    \end{itemize}
+    \item Leveraging RTL-level formal-driven trace generation for power macromodel construction.
+    \begin{itemize}
+        \item Mitigate the issue of low training dataset diversity by using formal tools to generate short and diverse traces that cover microarchitecturally-relevant (and power-relevant) design states and trajectories
+    \end{itemize}
+\end{itemize}
+\vspace{0.2cm}
+
+\makebox[1.75in][l]{\textit{May 2023 -- August 2023}} \textbf{Jane Street} --- FPGA Engineering Intern
+\begin{itemize}
+    \item FPGA infrastructure work
+\end{itemize}
+\vspace{0.2cm}
+
+\makebox[1.75in][l]{\textit{August 2018 -- May 2023}} \textbf{UC Berkeley} --- Graduate Student Researcher
+\begin{itemize}
+    \item Worked on a functional API for random stimulus generation that decouples the description of constraints from the interpreter that generates legal stimulus. In doing so, we enable automatic extraction of the randomization graph for stimulus embedding and coverage for the generator itself as well as the generated stimulus.
+    \item Worked on a monadic simulation API for high-performance testbench fork/join threading.
+    \item Worked on power modeling techniques that use selective signal sampling and event traces to estimate energy. Leveraged formal methods for trace generation for power model training.
+    \item Worked on verification libraries for Chisel circuits with 2 MS students to create an API for constrained random stimulus generation, assertion based verification, transaction-level testing with VIPs, and cosimulation coupling a functional simulator with the RTL simulation of an accelerator written in Chisel
+    \item Investigated the usage of specification mining for RTL bug localization by mining LTL properties from simulation waveforms and checking properties on failing simulations
+    \item Worked on a systolic array based, dataflow configurable, GEMM accelerator generator (Gemmini) tightly coupled to a RISC-V core, designed for ML inference workloads
+    \item Worked on the physical design and verification of a multicore RISC-V chip taped out in TSMC16
+    \item TA'ing EECS 151/251A (Digital Design and ICs); led students through FPGA labs and the design of a pipelined RISC-V processor; teach discussion sections
+\end{itemize}
+\vspace{0.2cm}
+
+\makebox[1.75in][l]{\textit{May 2021 -- August 2021}} \textbf{Apple (CPU Verification Tooling)} --- Intern
+\begin{itemize}
+    \item Investigated the usage of machine learning to guide random stimulus generation for coverage targetting
+    \item Designed a framework to evaluate various predictive models from data collected during stimulus generation to impact in RTL simulation
+\end{itemize}
+\vspace{0.2cm}
+
+\makebox[1.75in][l]{\textit{May 2020 -- August 2020}} \textbf{NVIDIA (ASIC and VLSI Research Group)} --- Research Intern
+\begin{itemize}
+    \item Developed models to predict RTL-level structural coverage from functional simulation features with the intention to accelerate coverage closure and guide stimulus generation
+\end{itemize}
+\vspace{0.2cm}
+
+\makebox[1.75in][l]{\textit{Jan 2018 -- August 2018}} \textbf{NVIDIA (ASIC and VLSI Research Group)} --- Research Intern
+\begin{itemize}
+    \item Emulated a ML inference accelerator testchip with a RISC-V controller on a VCU118 board; found bugs and workarounds pre and post silicon
+    \item Developed a Microzed-based stimulus board for driving a testchip during radiation beamtesting
+    \item Developed an FPGA-accelerated deterministic fault injection framework for simulating transient fault effects in single-clock RTL
+\end{itemize}
+\vspace{0.2cm}
+
+\makebox[1.75in][l]{\textit{Jan 2017 -- Jan 2018}} \textbf{Berkeley Wireless Research Center} --- Undergraduate Researcher
+\begin{itemize}
+    \item Developed FPGA RTL and simulation framework to interface between an ASIC and a host machine.
+    \item Debugged and tested SERDES links connecting a RISC-V core's memory backend to an FPGA's DDR backing store.
+\end{itemize}
+
+\makebox[1.75in][l]{\textit{June 2016 -- August 2016}} \textbf{Analog Devices} --- Digital Verification Intern
+\begin{itemize}
+    \item Developed a UVM testbench using SystemVerilog from scratch to stress test a NVM controller to be integrated into the digital portion of a mixed-signal chip
+    \item Designed 2 verification IP blocks to be used in block-level and system/chip-level testbenches
+    \item Wrote suite of coverpoints and ran simulations to find bugs and achieve full coverage on basic NVM operations
+\end{itemize}
+
+\makebox[1.75in][l]{\textit{Jan 2016 -- Dec 2017}} \textbf{UC Berkeley} --- TA: EECS 151 (Digital Design and Circuits)
+\begin{itemize}
+    \item Designed six FPGA labs to introduce students to fundamental concepts of digital design encompassing FSMs, serial I/O, and chip-to-chip communication
+    \item Expanded the class FPGA project consisting of a RISC-V core to include AC97 audio and DVI link video components
+\end{itemize}
+
+%\location{Intern: June – August 2015, Contractor: October 2015 – May 2016}
+\makebox[1.75in][l]{\textit{June 2015 -- May 2016}} \textbf{Guidewire Software} --- Software Engineering Intern
+\begin{itemize}
+    \item Developed a SPA using AngularJS on the front end and Spring + Jersey on the backend, that enabled users to perform administrative tasks; deployed to internal admins and Guidewire customers
+    \item Wrote comprehensive unit and integration tests using Protractor and Karma/Jasmine; standardized CSS across all admin apps
+\end{itemize}
+
+%\location{Intern: June – August 2014, Employee: August 2014 – April 2015}
+\makebox[1.75in][l]{\textit{June 2014 -- April 2015}} \textbf{Zurich North America} --- iOS/Web Application Developer
+\begin{itemize}
+    \item Created an iOS mobile app and REST API service to disseminate information regarding Zurich’s IT Security Standards throughout the entire organization
+    \item Deployed the mobile app to hundreds of IT architects throughout the enterprise
+    \item Created a SPA and API for the internal distribution of security research
+\end{itemize}
+
+\vspace{-0.2cm}
+
+\section{Awards}
+\begin{enumerate}
+    \item 2018 - Outstanding Graduate Student Instructor Award (UC Berkeley)
+\end{enumerate}
+
+\section{Publications}
+
+\begin{itemize}
+    \item \href{https://scholar.google.com/citations?user=0qawpQkAAAAJ&hl=en&oi=ao}{Google Scholar: Vighnesh Iyer}
+\end{itemize}
+
+\begin{enumerate}
+    \item \href{https://dl.acm.org/citation.cfm?id=3361202}{RTL Bug Localization Through LTL Specification Mining}. \textit{Proceedings of the 17th ACM-IEEE International Conference on Formal Methods and Models for System Design.} No. 5, 2019. \textbf{Vighnesh Iyer}, Donggyu Kim, Borivoje Nikolic, Sanjit A. Seshia
+    \item \href{https://ieeexplore.ieee.org/document/9241430}{A Dual-Core RISC-V Vector Processor With On-Chip Fine-Grain Power Management in 28-nm FD-SOI}. \textit{IEEE Transactions on Very Large Scale Integration (VLSI) Systems} Volume: 28, Issue: 12, Dec. 2020. John Wright, Colin Schmidt, Ben Keller, Daniel Palmer Dabbelt, Jaehwa Kwak, \textbf{Vighnesh Iyer}, Nandish Metha, Pi-Feng Chiu, Stevo Bailey, Krste Asanovic, Borivoje Nikolic
+    \item \href{https://people.eecs.berkeley.edu/~ysshao/assets/papers/genc2021-dac.pdf}{Gemmini: Enabling Systematic Deep-Learning Architecture Evaluation via Full-Stack Integration}. \textit{DAC 2021}. Hasan Genc, Seah Kim, Alon Amid, Ameer Haj-Ali, \textbf{Vighnesh Iyer}, Pranav Prakash, Jerry Zhao, Daniel Grubb, Harrison Liew, Howard Mao, Albert Ou, Colin Schmidt, Samuel Steffl, John Wright, Ion Stoica, Jonathan Ragan-Kelley, Krste Asanovic, Borivoje Nikolic, Yakun Sophia Shao
+    \item \href{https://oscar-workshop.github.io/files/SimCommand_A_High_Performance_RTL_Testbench_API-OSCAR22.pdf}{SimCommand: A High-Performance RTL Testbench API}. \textit{Open-Source Computer Architecture Research (OSCAR) Workshop at ISCA 2022}. \textbf{Vighnesh Iyer}, Kevin Laeufer, Koushik Sen, Borivoje Nikolic
+    \item \href{https://dl.acm.org/doi/10.1145/3582016.3582019}{Simulator Independent Coverage for RTL Hardware Languages}. \textit{ASPLOS 2023}. Kevin Laeufer, \textbf{Vighnesh Iyer}, David Biancolin, Jonathan Bachrach, Borivoje Nikolic, Koushik Sen
+    \item \href{https://pldi23.sigplan.org/details/plarch-2023-papers/16/Mixed-Abstraction-HDLs-and-A-Discussion-on-Other-Aspects-of-HDL-Design}{Mixed-Abstraction HDLs and A Discussion on Other Aspects of HDL Design}. \textit{Programming Languages for Architecture (PLARCH) Workshop at ISCA 2023}. \textbf{Vighnesh Iyer}, Borivoje Nikolic
+    \item \href{https://pldi23.sigplan.org/details/plarch-2023-papers/15/New-Embedded-DSLs-for-Hardware-Design-and-Verification}{New Embedded DSLs for Hardware Design and Verification}. \textit{Programming Languages for Architecture (PLARCH) Workshop at ISCA 2023}. \textbf{Vighnesh Iyer}, Kevin Laeufer, Young-Jin Park, Rohit Agarwal, Lixiang Yin, Bryan Ngo, Oliver Yu, Koushik Sen, Borivoje Nikolic
+\end{enumerate}
+
+\section{Skills}
+\begin{itemize}
+    \item FPGA emulation, Xilinx FPGAs, Vivado
+    \item Verilog, SystemVerilog, Chisel/FIRRTL, UVM, verification metholodogy
+    \item Java, Python, C, C++, Scala, OCaml, Rust, Typescript
+\end{itemize}
+
+\section{Coursework}
+\textbf{CS 61A/B/C} (Data Structures, Computer Architecture)\\
+\textbf{CS 152} (Computer Architecture and Engineering)\\
+\textbf{CS 162} (Operating Systems and Systems Programming)\\
+\textbf{CS 188} (AI)\\
+\textbf{CS 294} (Recent Topics on Program Synthesis, Compilation, and Debugging)\\
+\textbf{CS 294} (Architectures and Systems for Warehouse-Scale Computers)\\
+\textbf{EE 16A/B} (Designing Information Devices and Systems)\\
+\textbf{EE 105} (Microelectronic Devices and Circuits)\\
+\textbf{EE 120} (Signals and Systems)\\
+\textbf{EE 123} (DSP)\\
+\textbf{EE 128} (Feedback Control Systems)\\
+\textbf{EE 140} (Analog ICs)\\
+\textbf{EE 142} (RF Circuits)\\
+\textbf{EE 219C} (Formal Methods)\\
+\textbf{EE 227} (Convex Optimization)\\
+\textbf{EE 240C} (VLSI Analog-Digital Interface ICs)\\
+\textbf{EE 241B} (Advanced Digital ICs)\\
+\textbf{EE 290C} (DSP Circuits)\\
+\textbf{EE 290} (Hardware for Machine Learning)\\
+\textbf{EECS 149} (Embedded Systems)\\
+\textbf{EECS 151} (Digital Design, Digital ICs)\\
+\textbf{Math 53/54} (Multivariable Calculus, Linear Algebra, Differential Equations)\\
+\textbf{Math 128A} (Numerical Analysis)\\
+\textbf{Math 221} (Advanced Matrix Computations)\\
+\textbf{Stat 133} (Concepts in Computing with Data)\\
+\textbf{Stat 134} (Concepts of Probability)\\
+\textbf{Stat 135} (Concepts of Statistics)\\
+\textbf{Stat 150} (Stochastic Processes)
+\end{document}
