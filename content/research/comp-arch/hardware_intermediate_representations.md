@@ -29,3 +29,6 @@ Views that allow flat (no module hierarchy), low-level (no behavioral constructs
     - Original paper by Click [A Simple Graph-Based Intermediate Representation](https://www.oracle.com/technetwork/java/javase/tech/c2-ir95-150110.pdf)
     - GraalVM JIT optimizer (https://medium.com/graalvm/under-the-hood-of-graalvm-jit-optimizations-d6e931394797) - uses sea-of-nodes representation under the hood
         - [Graal IR: An Extensible Declarative Intermediate Representation](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.726.5496&rep=rep1&type=pdf)
+
+- https://github.com/masc-ucsc/hhds
+- https://github.com/masc-ucsc/livehd (lgraph + lnast)
