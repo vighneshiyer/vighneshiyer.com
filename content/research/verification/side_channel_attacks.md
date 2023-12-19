@@ -1,6 +1,12 @@
-# VLSI-Level (Pre-Silicon) Side Channel Attacks
++++
+title = "Pre-Silicon Evaluation of Side-Channel Attacks"
+date = 2023-12-18
+draft = true
+slug = "pre-silicon-evaluation-of-side-channel-attacks"
++++
 
 ## Use of simulators for side channel analysis (Veshchikov, 2016)
+
 - Input: Compiled AVR binaries (elf), Output: evaluation of DPA resistance, leakage traces
 - Uses SimulAVR (cycle accurate ISA simulator)
 - reading/writing to SRAMs or regfiles causes recording of a leakage value
@@ -22,6 +28,7 @@
         - try to perform an attack like DoM to distinguish one bit of the ciphertext
 
 ## Verification of Power-Based Side-Channel Leakage through Simulation (Yao, 2020)
+
 - Goal: test for presence of leakage from design files, modeling of leakage through simulation
 - They make the point that low-level simulation (gate and transistor level) (glitching power, layout based power - cross coupling) can cause subtle information leakage that RTL-level sim can't capture
 - Interesting graph on when a power correlation attack is viable at different abstraction levels including the real chip (TSMC 180nm processor + AES accelerator)
@@ -32,6 +39,7 @@
     - Would be useful to replicate the RTL-level power analysis and compare to a real chip we have in the lab
 
 ## Towards Efficient and Automated Side Channel Evaluations at Design Time (Sijacic, 2018)
+
 - The best written paper with good background information
 - Measurements of leakage
     - Measurement to Disclosure (how many traces are required for an attack method to succeed at some task?)
@@ -49,5 +57,6 @@
     - CASCADE should be open source, but no link posted in paper
 
 ## Architecture Correlation Analysis (ACA): Identifying the Source of Side-channel Leakage at Gate Level (Yao, 2020)
+
 - Best paper of them all; tries to identify the leaking gate by comparing a specific gate's toggles against the toggles of a design-specific leakage model
 - Useful insights from block-level analysis of an AES block and from analysis of a full SoC revealing unexpected correlated activity in various bus components

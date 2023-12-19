@@ -1,3 +1,13 @@
++++
+title = "Semantic Compression Algorithms"
+date = 2023-12-18
+draft = true
+slug = 'semantic-compression-algorithms'
++++
+
+Most compression algorithms today operate on a stream of bytes.
+However, if the input has a schema and structure, can we design a framework for describing *semantic* compression algorithms that are lightweight enough to implement in hardware, while retaining the compressibility of heavyweight input-schema-agnostic algorithms?
+
 ## NoC / Transaction-Level Compression
 
 - If we have a schema of transactions, and many traces of real traffic, can we find an optimal encoding/decoding scheme to minimize bus/NoC traffic?
@@ -13,6 +23,7 @@
     - We want to compare on aggregate PPA cost and benefit and on real RTL evaluation unlike their simulator based eval
     - https://github.com/xingyuli9961/CS262AProject-FlitReduce-NoC_Compression
     - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6742954 (NoΔ: Leveraging Delta Compression for End-to-End Memory Access in NoC Based Multicores)
+    - These are quite low-level and naive compression algorithms that do not take advantage of the known schema of protocol messages
 
 - (Optimal Protocol NoC Packetization): NoC protocol to packet packing (profile based) automatic RTL generation including optimal compression scheme
 

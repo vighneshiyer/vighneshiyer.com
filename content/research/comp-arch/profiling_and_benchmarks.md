@@ -1,4 +1,15 @@
-# Profiling and Benchmarks
++++
+title = "Profiling Tools and Benchmark Suites"
+date = 2023-12-18
+draft = true
+slug = "profiling-tools-and-benchmark-suites"
++++
+
+This is my personal enumeration of:
+
+- Profiling tools, papers, and case studies where they might be useful
+    - + Papers and blog posts that discuss bottlenecks or inefficiencies in existing systems (applications, runtimes, and OSes)
+- Benchmarks used for microarchitectural and system-level optimization
 
 ## Benchmark Suites
 
@@ -35,6 +46,8 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
     - Their base Docker image (https://hub.docker.com/r/cloudsuite/base-os/tags) is compiled for the riscv64 platform
     - Using multi-platform support in Docker via qemu (https://docs.docker.com/build/building/multi-platform/) you can natively compile the target application to riscv64 (without any cross-compilation complexity)
     - A CS294 class project then took the target program binary and its required shared objects from the Docker filesystem and placed them into the buildroot rootfs
+- [Renaissance](https://github.com/renaissance-benchmarks/renaissance/)
+    - JVM benchmarks in Big Data, ML, and FP
 
 ## Profilers
 
@@ -70,3 +83,6 @@ In general, there is *some* prior work, but it is limited in scope and old.
     - They have some good links to survey/high impact papers on profiling
         - [Hardware Performance Monitoring for the Rest of Us: A Position and Survey](https://inria.hal.science/hal-01593009/document?uclick_id=258370bf-d3db-44ff-8497-8dd57a7cef1c)
         - [A Top-Down method for performance analysis and counters architecture](https://ieeexplore.ieee.org/document/6844459?uclick_id=258370bf-d3db-44ff-8497-8dd57a7cef1c)
+- [Virtual Machine Warmup Blows Hot and Cold](https://arxiv.org/pdf/1602.00602.pdf)
+    - An interesting paper that suggests that microbenchmarks are inconsistently 'warmed' on VMs with GC and JIT and often don't reach 'steady-state' performance
+    - Motivates work in improving VM profiling and determinism
