@@ -1,4 +1,9 @@
-# Post-Silicon Validation
++++
+title = "Post-Silicon Validation"
+date = 2023-12-18
+draft = true
+slug = "post-silicon-validation"
++++
 
 ## Static DFT with ATPG
 

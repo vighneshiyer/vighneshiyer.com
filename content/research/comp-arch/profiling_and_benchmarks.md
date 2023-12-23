@@ -24,6 +24,7 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 ### Embedded
 
 - Embench
+- [MiBench](https://github.com/embecosm/mibench)
 
 ### Desktop
 

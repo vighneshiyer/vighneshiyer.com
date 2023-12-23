@@ -1,4 +1,9 @@
-#### Fuzzing / Stimulus Generation
++++
+title = "Hardware Fuzzing and Stimulus Generation"
+date = 2023-12-18
+draft = true
+slug = "hardware-fuzzing-and-stimulus-generation"
++++
 
 - [ ] FuzzFactory
     - Rohan's oopsla19 paper on domain-specific fuzzing: https://people.eecs.berkeley.edu/~rohanpadhye/files/fuzzfactory-oopsla19.pdf
@@ -94,6 +99,7 @@ Prior processor fuzzing works: DiFuzz-RTL, TheHuzz, LogicFuzzer, ProcessorFuzz (
 
 - See me and Kevin's notes: https://docs.google.com/document/d/1eNT_bgSnVkjymvXULtAhMia81HmWfJxphnfedc1diX0/edit
 - Tianrui's fuzzing review: https://docs.google.com/document/d/1vAl2_MZ9r4fQQYiCPqepfMcgiUHNuD3wJa3QnEvlAlw/edit
+    - See the taxonomy / axes at the bottom
 - See prior rfuzz citations (incl ones this week): https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&as_ylo=2023&cites=10810537520712045465&scipsc=
     - PSOFuzz: https://arxiv.org/abs/2307.14480
     - SoCFuzzer: https://ieeexplore.ieee.org/abstract/document/10137024

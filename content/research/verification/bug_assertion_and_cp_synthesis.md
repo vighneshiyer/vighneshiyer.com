@@ -1,3 +1,10 @@
++++
+title = "Synthesizing Hardware Bugs, Assertions, and Coverpoints + Specification Mining for Hardware"
+date = 2023-12-18
+draft = true
+slug = "hardware-bug-coverpoint-synthesis-and-specification-mining"
++++
+
 # Synthesizing RTL Bugs, Assertions, and Coverpoints
 
 In the world of open-source hardware design research, there aren't designs with interesting and reproducable bugs, assertions, and coverpoints.

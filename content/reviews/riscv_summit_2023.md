@@ -1,4 +1,9 @@
-# RISC-V Summit 2023
++++
+title = "RISC-V Summit 2023"
+date = 2023-12-18
+draft = true
+slug = "riscv-summit-2023-review"
++++
 
 - SiFive had little prescence, Krste's keynote was replaced by some other corporate stooge
 - https://events.linuxfoundation.org/riscv-summit/program/schedule/
