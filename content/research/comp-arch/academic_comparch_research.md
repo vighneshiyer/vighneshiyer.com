@@ -7,24 +7,34 @@ slug = "worthwhile-directions-in-academic-computer-architecture-research"
 
 This article is a full-form version of a [talk I presented to the SLICE Lab](https://docs.google.com/presentation/d/1K9ljkV5xASLpvs-hxx1Hruop512EWR6atFtepTYHKT0/edit?usp=sharing) in September 2023.
 In the talk, I discussed the recent history of computer architecture research labs at Berkeley, fundamental vs domain-specific research, infrastructure vs application-driven work, different types of project risk, and gave an overview of areas of computer architecture that academic researchers were in a good position to attack.
-This article is a call to action to think hard about what a worthwhile research agenda looks like and a list of what concrete projects I think are essential to the next paradigm of computer architecture research.
+
+This article is *my opinion* on what an academic computer architecture research agenda would look like and why.
 
 ## The Recent History of Computer Architecture Research at Berkeley
 
 In the talk, I began with an overview of what research has been accomplished at Berkeley over the past two decades, its impact, and what it can teach us about what's worth pursuing in the future.
-Labs in Berkeley run in 5 year cycles, where each lab starts off with a problem statement or observation, some high level goals, and operates for 5 years before a new lab is christened.
-The idea behind the 5 year cycle is to reflect on the past 5 years of research and recalibrate with new branding and goals, although the people (both professors and grad students) in the new lab carry over from the previous one.
+
+Labs in Berkeley run in 5 year cycles.
+Each lab begins with a problem statement or observation, some high level goals, and then operates for 5 years before a new lab is christened.
+This is supposed to allow us reflect on the past 5 years of research and recalibrate with new branding and goals, although the people (both professors and grad students) in the new lab carry over from the previous one.
 
 ### PAR Lab (2007-2012)
 
-The [UC Berkeley Parallel Computing Lab](https://old.hotchips.org/wp-content/uploads/hc_archives/hc21/2_mon/HC21.24.300.ParallelComputingCenters-Epub/HC21.24.310.Patterson-UCB-ParLab.pdf) (PAR Lab) ran from the late 2000s to early 2010s
-It was an 
+The [UC Berkeley Parallel Computing Lab](https://old.hotchips.org/wp-content/uploads/hc_archives/hc21/2_mon/HC21.24.300.ParallelComputingCenters-Epub/HC21.24.310.Patterson-UCB-ParLab.pdf) (PAR Lab) ran from the late 2000s to early 2010s.
+The lab's objectives were multifaceted (not purely computer architecture, but a blend of algorithms, PL, compilers, systems, architecture, and simulation), but the lab can be summarized in one tagline:
 
-The Landscape of Parallel Computing Research: A View from Berkeley (2006) https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf
+<p style="font-size: 1.05rem; font-weight: 500; text-align: center;">"Easy to write, correct, programs that run efficiently on manycore"</p>
+
+The effort began with a 2006 whitepaper titled ["The Landscape of Parallel Computing Research: A View from Berkeley](https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf).
+The CS department at Berkeley has a history of writing whitepapers that broadly examine an area of computer science,
+
+
+Make bets and then get proven wrong, but still come out with interesting and useful research.
+Can you be proven wrong? What happens if your vision doesn't work out in the real world?
+
 The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008) https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf
 
 
-Not purely computer architecture, but a blend of algorithms, systems, architecture, simulation, and others
 
 This was the last architecture lab whitepaper. what happened? are we not confident placing bets anymore?
 
@@ -38,22 +48,57 @@ What was the bet? What was the actual outcome? Placing bets that fail isn't a pr
 
 ## A Reflection on Successful Research Labs
 
-### Patterson's Take
+### Whitepapers
 
-### Mission Accomplished?
+Writing forces clarity. Forces an idea to become clear. Makes what you say easy to critize. Allows you to be proven wrong.
+Slides on the other hand are vague, hand-wavey, can have meaningless drivel
+Cite Simon peyton jones
+Cite Bezos on Amazon memos, writing forces clarity
+
+### Making Bets
 
 Placing bets and looking at where the dice land.
 The value is in placing the bet to begin with.
 
+trendfollowing is a big risk, trendsetting is even more risky, but it is the right type of risk to assume
+
+### Patterson's Take
+
+Cite his article on research labs
+Point to Dave Patersons how to build a research center
+
+### Mission Accomplished?
+
 Never assume the thing that was said is actually done - usually that is not the case.
 What has been accomplished and what remains to be done?
 Trying to move past objectives that were never completed is like allowing students to graduate while still failing their tests.
+
+Have you really succeeded in your past mission? It's like graduating a grade while still failing all the tests
 
 ### On Publications
 
 See Quinell's article.
 Can't let bad benchmarks, old paper comparisons, and lack of faith from others (our work seen as too 'engineering' vs 'research') stop us from making progress.
 The best ideas always win eventually. We know this - we've never had a paper pumping mill to begin with (unlike UMich / KAIST), our PIs (Patterson, Asanovic, Nikolic) have never been paper pushers.
+
+> Citations for motivation are unfounded, you need to make short motivation with reasoned arguments or else you propagate stupid motivations. You don't always need a citation to identify a problem or describe how a problem is typically solved
+> This is in the context of profiling
+
+### On Meaningful Research
+
+Cite Hamming's "you and your research" talk
+Mention hammings you and your research
+
+Research is about new paradigms not iteration
+New paradigms require destruction
+Boiling the ocean is the norm
+Harrison on first principles thinking rather than iteration
+
+### Teamwork
+
+Are people making conscious decisions?
+Should everyone just work on what they want in quotes to work on?
+Does that create a lab?
 
 ## Industry vs Academia
 
@@ -71,6 +116,7 @@ is there really a 'spectrum'?
 ## Worthwhile Directions
 
 ### My Bet
+
 What is my bet?
 
 I bet that SoC development will be bottlenecked by stagnation in the fundamental building blocks of circuit design (language, simulation tools, verification), and industry will struggle to break through this bottleneck due to accumulated cruft - new competitors will emerge that innovate at this level and will crush the dinosaurs who rely on old paradigms and stagnate.
@@ -87,7 +133,7 @@ look at past industry feedback from retreats too
 - Fpga and asic targeted rtl design language, syncreadmem is not a good abstraction for eg multiport rf with different latencies for each design and able to perform perf area tradeoff
 
 
-## My Vision
+### My Vision
 
 If I could lead a lab of 5-10 students and had complete directional control, what areas would I hit, how would I allocate resources, and what paper/research targets would I want to hit?
 
@@ -100,6 +146,40 @@ Instead, everyone should work on something that they lead, but critically, it mu
 - Coming up with datacenter benchmarks
 - New HDL & IR
 - Aladdin v2.0
+
+Take stuff from `90/research/planning/idea_archive` too
+
+### Simulation Methodology
+
+### SoC Design Methodology
+
+#### Hardware Design Languages
+
+#### Hardware Intermediate Representations
+
+#### Incrementalism
+
+##### Build Systems
+
+### Novel Architectures
+
+- RTL is critical for evaluation - we have never believed in *modeling* - always strive for high fidelity
+- At the same time, don't use high fidelity models when low fidelity ones suffice (cite "arch sims considered harmful" paper)
+- What architectures do we have?
+    - Systolic GEMM accelerator
+    - Vector machine
+    - Scalar cores (both in and out of order)
+    - NoC
+- What architectures are missing?
+    - DRAM MC/PHY, various IO things (PCIe, CXL)
+    - GPU (large-scale SIMD)
+    - GGRA (MIMD / streaming / dataflow architectures)
+
+### Workload Analysis and Kernel Extraction
+
+### Compilers
+
+### Microarchitecture
 
 From slice offsite notes:
 
