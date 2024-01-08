@@ -12,6 +12,10 @@ draft = true
 
 ### The Office
 
+### The People
+
+high competence everywhere - unprecendented in my experience
+
 ### The Culture
 
 Game and betting heavy
@@ -19,7 +23,14 @@ Compensation
 
 ### OCaml and the Tech Stack
 
+Curse and blessing of owning your own tech stack, including language and compiler
+- see mozilla (rust), google (go) for examples of good and upstreamable stewardship
+- whereas ocaml has basically forked in two and integrating features from upstream is a massive pain
+
 ### HardCaml
+
+- cite the hardcaml paper and go through examples and show comparisons with SystemVerilog and Chisel (Scala)
+- so many things in Hardcaml are made worse with Ocaml being host language - it is a poor language to host a DSL
 
 ### The FPGA Team
 

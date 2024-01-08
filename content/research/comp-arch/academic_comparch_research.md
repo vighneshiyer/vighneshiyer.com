@@ -26,19 +26,30 @@ The lab's objectives were multifaceted (not purely computer architecture, but a 
 <p style="font-size: 1.05rem; font-weight: 500; text-align: center;">"Easy to write, correct, programs that run efficiently on manycore"</p>
 
 The effort began with a 2006 whitepaper titled ["The Landscape of Parallel Computing Research: A View from Berkeley](https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf).
-The CS department at Berkeley has a history of writing whitepapers that broadly examine an area of computer science,
 
+> Industry has laid out a roadmap for multicore designs that preserves the programming paradigm of the past via binary compatibility and cache coherence. Conventional wisdom is now to double the number of cores on a chip with each silicon generation.
+>
+> A multidisciplinary group of Berkeley researchers met nearly two years to discuss this change. Our view is that this evolutionary approach to parallel hardware and software may work from 2 or 8 processor systems, but is likely to face diminishing returns as 16 and 32 processor systems are realized, just as returns fell with greater instruction-level parallelism.
 
-Make bets and then get proven wrong, but still come out with interesting and useful research.
-Can you be proven wrong? What happens if your vision doesn't work out in the real world?
+The whitepaper identified trends in computing, extrapolated them well into the future, and proposed research directions that could solve anticipated problems if the trends were realized.
+In particular, the following recommendations were made:
 
 The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008) https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf
 
 
+Other comparch whitepapers:
 
-This was the last architecture lab whitepaper. what happened? are we not confident placing bets anymore?
+- Patterson (2008) whitepaper: The Future of Computer Architecture: https://cra.org/ccc/wp-content/uploads/sites/2/2015/05/Computer_Architecture.pdf
+- Arch2030: A Vision of Computer Architecture Research over the Next 15 Years: https://cra.org/ccc/wp-content/uploads/sites/2/2016/12/15447-CCC-ARCH-2030-report-v3-1-1.pdf
+    - From here: https://cra.org/ccc/resources/ccc-led-whitepapers/
 
-What was the bet? What was the actual outcome? Placing bets that fail isn't a problem - but the bet must be placed in the first place. Working on a hypothetical solution, even if it fails, teaches us a lot.
+Systems whitepapers:
+
+- A Berkeley View of Systems Challenges for AI (2017, Ion Stoica): https://sands.kaust.edu.sa/classes/CS290E/F19/papers/berkeley-sysai.pdf
+- Above the Clouds: A Berkeley View of Cloud Computing: https://cs.lbl.gov/news-media/news/news-archive/2009/above-the-clouds-a-berkeley-view-of-cloud-computing/
+- From Cloud Computing to Sky Computing (2021, Ion Stoica): https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf
+
+- https://joey0320.github.io/articles/research-on-domain-specific-architectures.html
 
 ### ASPIRE (2012-2017)
 
@@ -50,12 +61,22 @@ What was the bet? What was the actual outcome? Placing bets that fail isn't a pr
 
 ### Whitepapers
 
+The CS department at Berkeley has a history of writing whitepapers that broadly examine an area of computer science,
+This (PAR Lab) was the last architecture lab whitepaper. what happened? are we not confident placing bets anymore?
+
 Writing forces clarity. Forces an idea to become clear. Makes what you say easy to critize. Allows you to be proven wrong.
 Slides on the other hand are vague, hand-wavey, can have meaningless drivel
 Cite Simon peyton jones
 Cite Bezos on Amazon memos, writing forces clarity
 
+Harrison on first principles thinking rather than iteration
+
 ### Making Bets
+
+Make bets and then get proven wrong, but still come out with interesting and useful research.
+Can you be proven wrong? What happens if your vision doesn't work out in the real world?
+
+What was the bet? What was the actual outcome? Placing bets that fail isn't a problem - but the bet must be placed in the first place. Working on a hypothetical solution, even if it fails, teaches us a lot.
 
 Placing bets and looking at where the dice land.
 The value is in placing the bet to begin with.
@@ -92,7 +113,6 @@ Mention hammings you and your research
 Research is about new paradigms not iteration
 New paradigms require destruction
 Boiling the ocean is the norm
-Harrison on first principles thinking rather than iteration
 
 ### Teamwork
 
