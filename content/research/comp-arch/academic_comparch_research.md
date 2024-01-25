@@ -21,21 +21,60 @@ This is supposed to allow us reflect on the past 5 years of research and recalib
 ### PAR Lab (2007-2012)
 
 The [UC Berkeley Parallel Computing Lab](https://old.hotchips.org/wp-content/uploads/hc_archives/hc21/2_mon/HC21.24.300.ParallelComputingCenters-Epub/HC21.24.310.Patterson-UCB-ParLab.pdf) (PAR Lab) ran from the late 2000s to early 2010s.
-The lab's objectives were multifaceted (not purely computer architecture, but a blend of algorithms, PL, compilers, systems, architecture, and simulation), but the lab can be summarized in one tagline:
+The lab's objectives were multifaceted (not purely computer architecture, but a blend of algorithms, PL, compilers, systems, architecture, and simulation), but the lab's mission can be summarized in one tagline:
 
 <p style="font-size: 1.05rem; font-weight: 500; text-align: center;">"Easy to write, correct, programs that run efficiently on manycore"</p>
 
-The effort began with a 2006 whitepaper titled ["The Landscape of Parallel Computing Research: A View from Berkeley](https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf).
+The effort began with a whitepaper published in 2006 titled ["The Landscape of Parallel Computing Research: A View from Berkeley](https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf).
 
 > Industry has laid out a roadmap for multicore designs that preserves the programming paradigm of the past via binary compatibility and cache coherence. Conventional wisdom is now to double the number of cores on a chip with each silicon generation.
 >
 > A multidisciplinary group of Berkeley researchers met nearly two years to discuss this change. Our view is that this evolutionary approach to parallel hardware and software may work from 2 or 8 processor systems, but is likely to face diminishing returns as 16 and 32 processor systems are realized, just as returns fell with greater instruction-level parallelism.
 
 The whitepaper identified trends in computing, extrapolated them well into the future, and proposed research directions that could solve anticipated problems if the trends were realized.
-In particular, the following recommendations were made:
+In particular, the following recommendations / predictions were made:
 
-The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008) https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf
+> *Regarding multicore versus manycore*: We believe that manycore is the future of computing.
+> Furthermore, it is unwise to presume that multicore architectures and programming models suitable for 2 to 32 processors can incrementally evolve to serve manycore systems of 1000s of processors.
 
+> *Regarding the application tower*: We believe a promising approach is to use 13 Dwarfs as stand-ins for future parallel applications since applications are rapidly changing and because we need to investigate parallel programming models as well as architectures.
+
+> *Regarding the hardware tower*: We advise using simple processors, to innovate in memory as well as in processor design, to consider separate latency-oriented and bandwidth-oriented networks
+
+> We believe that future benchmark sets must evolve to reflect a more representative mix of applications, including parallel codes based on the 13 dwarfs, to avoid over-optimization for single-thread performance (SPEC)
+
+<p style="text-align: center;"><strong>Looking back on these predictions, some of them just didn't pan out.</strong></p>
+
+For example, we don't see these massive wimpy-manycore chips with fine-grained synchronization primitives today; instead we see chips with modest core counts (8-64) that are optimized for single-thread performance and use a traditional cache coherency scheme for sychronization and data sharing.
+Additionally, techniques and libraries for parallel programming are still relatively unchanged from the days of the PAR Lab, although highly concurrent programming has become a lot easier with the proliferation of language-level features such as coroutines.
+
+However, other recommendations seem pertinent today.
+The authors recognized that optimizing for single-thread performance using SPEC as a benchmark was not a good idea, and instead architectures should be optimized around benchmarks based on the 13 Dwarfs, which are common computational motifs (e.g. GEMM, SpMV, found in many applications domains.
+Variants of these Dwarfs
+
+While cores are still optimized for general-purpose single-thread compute, system accelerators...
+For example, instead of SPEC driving, we will use DWARFS (like MLPerf)
+
+What worked out? DWARFs were good direction for directing application-driven research
+
+The PAR Lab came into existance along with a whitepaper titled ["The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008)"](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf), which summarized the lab vision and the concrete projects they were going to work on.
+On the computer architecture side, the projects include:
+
+- RAMP Gold
+- Parallel browser
+    - While browsers today are multi-process and concurrent, the core algorithms for parsing, layout, rendering, and Javascript JIT themselves aren't parallel.
+- Manycore architecture
+- Workload characterization
+
+### ASPIRE (2012-2017)
+
+### ADEPT (2017-2022)
+
+### SLICE (2022-2027 (projected))
+
+## A Reflection on Successful Research Labs
+
+### Whitepapers
 
 Other comparch whitepapers:
 
@@ -51,16 +90,6 @@ Systems whitepapers:
 
 - https://joey0320.github.io/articles/research-on-domain-specific-architectures.html
 
-### ASPIRE (2012-2017)
-
-### ADEPT (2017-2022)
-
-### SLICE (2022-2027 (projected))
-
-## A Reflection on Successful Research Labs
-
-### Whitepapers
-
 The CS department at Berkeley has a history of writing whitepapers that broadly examine an area of computer science,
 This (PAR Lab) was the last architecture lab whitepaper. what happened? are we not confident placing bets anymore?
 
@@ -71,7 +100,7 @@ Cite Bezos on Amazon memos, writing forces clarity
 
 Harrison on first principles thinking rather than iteration
 
-### Making Bets
+### Making Bets and Picking Fights
 
 Make bets and then get proven wrong, but still come out with interesting and useful research.
 Can you be proven wrong? What happens if your vision doesn't work out in the real world?
@@ -83,11 +112,6 @@ The value is in placing the bet to begin with.
 
 trendfollowing is a big risk, trendsetting is even more risky, but it is the right type of risk to assume
 
-### Patterson's Take
-
-Cite his article on research labs
-Point to Dave Patersons how to build a research center
-
 ### Mission Accomplished?
 
 Never assume the thing that was said is actually done - usually that is not the case.
@@ -95,6 +119,11 @@ What has been accomplished and what remains to be done?
 Trying to move past objectives that were never completed is like allowing students to graduate while still failing their tests.
 
 Have you really succeeded in your past mission? It's like graduating a grade while still failing all the tests
+
+Paper titles and conclusions don't tell you what the on-the-ground reality is.
+Just because there was 'prior work' doesn't mean it is usable or practical.
+Often, getting it there might seem like 'engineering', but there is always hidden research insights and innovations required.
+Consider Simon Peyton Jones' notes on writing a paper - no matter how insignificant an idea may seem (pure engineering), there are always challenges along the way.
 
 ### On Publications
 
@@ -119,6 +148,12 @@ Boiling the ocean is the norm
 Are people making conscious decisions?
 Should everyone just work on what they want in quotes to work on?
 Does that create a lab?
+Building a graven prototype that demonstrates a unified vision (see Patterson's paper).
+
+### Patterson's Take
+
+Cite his article on research labs
+Point to Dave Patersons how to build a research center
 
 ## Industry vs Academia
 
@@ -127,11 +162,19 @@ intellectual vs economic risk
 is there really a 'spectrum'?
 
 - Palladium, arch sim with palladium cores on chip, rtl sims opt, bridge reuse firesim and palladium and maybe bringup, dse, fpga overlay
+    - Credit to Daniel Sanchez's group at MIT who are doing great work in this area
 - Alladin like stuff
 - Integrate with language level stuff and irs
 - Ppa estimation, early stage iteration, live flow
 - Sampled simulation / evaluation methodology
 
+## Magic box thinking
+
+- Forces us to think at a high abstract-level divorced from specific applications
+- Usually motivates general broadly-applicable research rather than some local random optimization
+- Give some examples of magic box thinking
+- Then we can refine and produce a very small slice of that magic box
+- Lends itself to methodology innovation that academics are well positioned to attack vs industry - often requires rethinking existing paradigms
 
 ## Worthwhile Directions
 
@@ -143,11 +186,17 @@ I bet that SoC development will be bottlenecked by stagnation in the fundamental
 I bet that there is a lot of low hanging fruit in languages, IRs, simulators, design methodology, etc. just waiting to be picked - but no one wants to pick the fruit because of the full-stack boil-the-ocean effort it requires.
 This fruit must be picked if we are to make paradigm-shifting advancements in computer architecture - vastly lower effort digital design, much higher first-spin success confidence, must less headache and pain for engineers.
 
+It is wrong to think that this is the 'end of time' and that SystemVerilog and others are entrenched so far that there can't be any deviance or upstart.
+
+What is my anti-bet?
+
+I bet that there are no innovations left at the SoC architecture area that academics are well positioned to examine.
 
 This list *is not* all-encompassing.
 PLARCH talks on eDSLs and mixed-abstraction HDLs
 live iteration flow - we keep getting asked about PPA
 look at past industry feedback from retreats too
+- specification first interpreter/jit generator for ISA simulation
 
 - P core and e core unified generator
 - Fpga and asic targeted rtl design language, syncreadmem is not a good abstraction for eg multiport rf with different latencies for each design and able to perform perf area tradeoff
@@ -161,13 +210,17 @@ Avoid using minions under a specific project but make them feel independent and 
 
 Instead, everyone should work on something that they lead, but critically, it must integrate into one thing that exemplifies the lab vision and graven prototype. e.g. using agile development as something that everything slots into like an emulation platform which requires vertical innovation across HDL, IR, compiler, simulator infra, RTL designs, and so forth
 
-
 - FPGA overlay emulation platform
 - Coming up with datacenter benchmarks
 - New HDL & IR
 - Aladdin v2.0
 
 Take stuff from `90/research/planning/idea_archive` too
+
+Consider the cache generator project - all the things that need to slot into place are quite varied in nature
+- formal modeling of coherency protocols, consistency models
+- generation of verification collateral
+- cache modeling and design methodology - combining lightweight HLS and RTL
 
 ### Simulation Methodology
 

@@ -50,7 +50,7 @@
 
 \section{Research Interests}
 \vspace{-0.1cm}
-{RTL verification and debugging methodologies/tools; stimulus generation techniques; microarchitecture simulation; specification mining; machine learning for DV; RTL fuzzing; DSLs for hardware construction / hardware-specific IRs; FPGA-accelerated emulation; FPGA-accelerated RTL-level power/performance estimation; RTL power modeling; domain-specific accelerators; hardware resiliency}
+{Microarchitecture simulation; sampled simulation; RTL verification and debugging methodologies/tools; stimulus generation techniques; specification mining; machine learning for DV; RTL fuzzing; DSLs for hardware construction / hardware-specific IRs; FPGA-accelerated emulation; FPGA-accelerated RTL-level power/performance estimation; RTL power modeling; domain-specific accelerators; hardware resiliency}
 \vspace{-0.2cm}
 
 \section{Education}
@@ -67,6 +67,12 @@
 %\item Designed and implemented a pipelined RISC-V processor on a Xilinx Virtex-5 FPGA; wrote a DDR DRAM controller, and developed graphics accelerators
 \makebox[1.75in][l]{\textit{August 2023 -- current}} \textbf{UC Berkeley} --- Graduate Student Researcher
 \begin{itemize}
+    \item High throughput, low latency, high accuracy microarchitecure simulation.
+    \begin{itemize}
+        \item Combine functional (ISA-level), uArch trace-driven models, and RTL simulation to exploit the best traits of each simulation methodology
+        \item Demonstrate that ``multi-level simulation'' enables fast microarchitecture iteration cycles with evaluation on realistic workloads
+        \item \href{https://github.com/euphoric-hardware/tidalsim}{Github: TidalSim}
+    \end{itemize}
     \item Applying software parametric fuzzing techniques to RTL verification.
     \begin{itemize}
         \item Development of a parametric stimulus generator for RISC-V programs that also emits instrumentation to identify the influence of each byte of the parametric bytestream that serves as generator input
@@ -82,11 +88,6 @@
     \begin{itemize}
         \item Investigating coverage extrapolation via GNNs to overcome the limitations of supervised learning for coverage prediction
         \item Leveraging generator instrumentation for stimulus embedding
-    \end{itemize}
-    \item High throughput, low latency, high accuracy microarchitecure simulation.
-    \begin{itemize}
-        \item Combine functional (ISA-level), uArch trace-driven models, and RTL simulation to exploit the best traits of each simulation methodology
-        \item Demonstrate that ``multi-level simulation'' enables fast microarchitecture iteration cycles with evaluation on realistic workloads
     \end{itemize}
     \item Leveraging RTL-level formal-driven trace generation for power macromodel construction.
     \begin{itemize}
