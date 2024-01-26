@@ -161,6 +161,10 @@ Point to Dave Patersons how to build a research center
 intellectual vs economic risk
 is there really a 'spectrum'?
 
+- Re-examine existing paradigms, tools, languages, and IRs - re-design them if we can do a better job! The same idea that applies to ISAs also applies to HDLs, scripts, schemas, and so forth.
+    - Never be constrained by having to 'support' what already exists - this constraint is only an industry concern! The ability to break free of this constraint is the power of academia
+    - But what if industry doesn't want to use our things?! Who cares, this isn't the point of research anyways. And see RISC-V as an example - if the new paradigm (better cleanroom ISA) and its tools (assembler, compiler, peripheral specs) are in place, then a new ecosystem can evolve around them given time. We can boil the ocean - that should also not be a limiter. We can throw away old things! Having to support old things shouldn't be a limiter either!
+
 - Palladium, arch sim with palladium cores on chip, rtl sims opt, bridge reuse firesim and palladium and maybe bringup, dse, fpga overlay
     - Credit to Daniel Sanchez's group at MIT who are doing great work in this area
 - Alladin like stuff
@@ -223,6 +227,17 @@ Consider the cache generator project - all the things that need to slot into pla
 - cache modeling and design methodology - combining lightweight HLS and RTL
 
 ### Simulation Methodology
+
+- New paradigm of tightly-integrated with IR simulator
+    - First class support for low-power optimization, DVFS modeling (rather than UPF hacks in VCS NLP mode)
+        - IR-level support for CPF/UPF constructs, but done cleanly and compositionally with well and formally defined semantics
+    - First class support for dipping in and out of code written in general purpose language during simulation execution (generalize the DPI hacks we currently use)
+    - Clean x-prop support with localized xprop modes (https://www.synopsys.com/verification/simulation/vcs.html)
+    - Highly incremental simulator builds and aggressive global (cloud) caching
+- Synthesis that is tightly integrated with the frontend language and IR
+    - Semantics preserving
+    - Highly parallel with quick synthesis mode and early PPA feedback
+    - Incremental-first so you can fearlessly re-run synthesis
 
 ### SoC Design Methodology
 
