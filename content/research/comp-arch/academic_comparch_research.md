@@ -25,6 +25,8 @@ The lab's objectives were multifaceted (not purely computer architecture, but a 
 
 <p style="font-size: 1.05rem; font-weight: 500; text-align: center;">"Easy to write, correct, programs that run efficiently on manycore"</p>
 
+#### The Berkeley Position on the Future of Parallel Computing
+
 The effort began with a whitepaper published in 2006 titled ["The Landscape of Parallel Computing Research: A View from Berkeley](https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf).
 
 > Industry has laid out a roadmap for multicore designs that preserves the programming paradigm of the past via binary compatibility and cache coherence. Conventional wisdom is now to double the number of cores on a chip with each silicon generation.
@@ -50,12 +52,11 @@ Additionally, techniques and libraries for parallel programming are still relati
 
 However, other recommendations seem pertinent today.
 The authors recognized that optimizing for single-thread performance using SPEC as a benchmark was not a good idea, and instead architectures should be optimized around benchmarks based on the 13 Dwarfs, which are common computational motifs (e.g. GEMM, SpMV, found in many applications domains.
-Variants of these Dwarfs
 
-While cores are still optimized for general-purpose single-thread compute, system accelerators...
-For example, instead of SPEC driving, we will use DWARFS (like MLPerf)
+Variants of these Dwarfs can be seen in benchmark suites today, such as MLPerf, and the Dwarfs guided research into application-driven domain-specific accelerators, although they didn't have much influence in the microarchitecture of general-purpose cores.
+Competent, vertically-integrated companies like Apple have gone well beyond SPEC and have crafted benchmarks that are specialized to real workloads: in doing so, they now lead the industry in power efficient compute.
 
-What worked out? DWARFs were good direction for directing application-driven research
+#### The PAR Lab's Agenda
 
 The PAR Lab came into existance along with a whitepaper titled ["The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008)"](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf), which summarized the lab vision and the concrete projects they were going to work on.
 On the computer architecture side, the projects include:
@@ -243,6 +244,13 @@ Consider the cache generator project - all the things that need to slot into pla
 
 #### Hardware Design Languages
 
+- Fast PPA iteration loop
+- Power, clock, reset aware (semantics carried over + first-class simulation support)
+- Injection ready (for sampled simulation in both FPGA and RTL sims)
+- Event annotated (native event annotation support)
+- Verification collateral and APIs directly in the design language (and zero overhead conversion of collateral to C-like shared objects for direct linking in simulations)
+    - a DPI-like API for adding software verif/modeling stuff inside RTL
+
 #### Hardware Intermediate Representations
 
 #### Incrementalism
@@ -282,6 +290,14 @@ From slice offsite notes:
 > - Joonho's accelerator building arguments
 > - Then move to concrete verification stuff
 > - Comment on chiplets to finish off and say that we can debate in the next session after the opponent has presented his view
+
+### Post-Silicon Validation
+
+- Event API with automatic tracker logic generation
+- Pruning events and event history to match off-chip bandwidth limits
+- Reconstructing full event traces using ML/heuristics from partial traces
+- Semantic compression
+-
 
 
 Joonho's notes about research areas:
