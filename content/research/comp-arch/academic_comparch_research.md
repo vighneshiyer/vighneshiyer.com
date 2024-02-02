@@ -51,7 +51,7 @@ For example, we don't see these massive wimpy-manycore chips with fine-grained s
 Additionally, techniques and libraries for parallel programming are still relatively unchanged from the days of the PAR Lab, although highly concurrent programming has become a lot easier with the proliferation of language-level features such as coroutines.
 
 However, other recommendations seem pertinent today.
-The authors recognized that optimizing for single-thread performance using SPEC as a benchmark was not a good idea, and instead architectures should be optimized around benchmarks based on the 13 Dwarfs, which are common computational motifs (e.g. GEMM, SpMV, found in many applications domains.
+The authors recognized that optimizing for single-thread performance using SPEC as a benchmark was not a good idea, and instead architectures should be optimized around benchmarks based on the 13 Dwarfs, which are common computational motifs (e.g. GEMM, SpMV, graph traversal) found in many application domains.
 
 Variants of these Dwarfs can be seen in benchmark suites today, such as MLPerf, and the Dwarfs guided research into application-driven domain-specific accelerators, although they didn't have much influence in the microarchitecture of general-purpose cores.
 Competent, vertically-integrated companies like Apple have gone well beyond SPEC and have crafted benchmarks that are specialized to real workloads: in doing so, they now lead the industry in power efficient compute.
@@ -62,10 +62,14 @@ The PAR Lab came into existance along with a whitepaper titled ["The Parallel Co
 On the computer architecture side, the projects include:
 
 - RAMP Gold
-- Parallel browser
-    - While browsers today are multi-process and concurrent, the core algorithms for parsing, layout, rendering, and Javascript JIT themselves aren't parallel.
-- Manycore architecture
+    - A handwritten FPGA-based simulator for performance evaluation of massive manycore systems and custom core architectures
+- A parallel web browser
+    - An attempt to exploit manycore architectures to improve the performance of web browsers
+    - In today's world, while browsers are multi-process and concurrent, the core algorithms for parsing, layout, rendering, and Javascript JIT themselves aren't parallel, and will likely never be
+- Core architecture for manycore systems
+    - 
 - Workload characterization
+    - 
 
 ### ASPIRE (2012-2017)
 
@@ -297,7 +301,7 @@ From slice offsite notes:
 - Pruning events and event history to match off-chip bandwidth limits
 - Reconstructing full event traces using ML/heuristics from partial traces
 - Semantic compression
--
+- See the riscv-trace-spec which provides some basics about how to get an inst/PC trace out, without any uArch info (https://github.com/riscv-non-isa/riscv-trace-spec/releases/tag/v2.0.1)
 
 
 Joonho's notes about research areas:

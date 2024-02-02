@@ -329,6 +329,7 @@ Vighnesh
     - for rtl simulation - only randomize the few registers that don't need a reset, but cause downstream failures due to (too pessimistic) x-propagation
     - for asic - build in a formal analysis pass that verifies that the few marked registers actually do not permit x escape
     - for x-injection - add assertions that none of the inputs are x's via a compiler flag
+    - This is something that's completely elided by existing languages that don't distinguish between X as unknown and X as arbitrary (Chisel + SFC and Circt do this - just treat unknowns as zero and random init)
 - built-in boolean optimization to mitigate x emission in synthesis flows
 
 - What about Clash? What are the primitives there? Can this be the basis for Chisel 4? https://www.youtube.com/watch?v=HAhfWsvpt7E
@@ -617,3 +618,13 @@ module registers_32x64(
 - One more thing, right now we have to make distinction between things passed as constants in ports vs parameters
     - e.g. the RocketTile has the hartid passed in as a port vs a parameter because if it was a parameter, then each instance of RocketTile would be unique and they wouldn't be deduped! also the instance + cloning (Instance API) wouldn't help here!
     - Can we unify these use cases? Make it possible to declare it as a parameter! Constant valued ports should not exist, instead parameters should be used and the frontend should use content-addressing of generated hardware IR to produce largely the same module but with small diffs
+
+- On width inference and subword assignment and last-connect semantics (and 'when' 'behavioral' conditional blocks too)
+    - limit width inference everything except ports and registers (only intermediate nets)
+    - how about when inference - what about last-connect semantics that cause multiple drivers that we need to resolve?
+    - can we also do subword assignment? is this even desirable? look thru prior issues - leads to issues with comb loop detection and multi-driver style assignment
+- Prior work on subword assignment
+    - https://github.com/chipsalliance/firrtl/pull/2545/files
+    - https://github.com/chipsalliance/firrtl-spec/pull/26
+    - Weirdness from not having subword assignment: https://github.com/ekiwi/paso/blob/ad2bf83f420ca704ff0e76e7a583791a0e80a545/benchmarks/src/benchmarks/aes/TinyAES128.scala#L181
+    - https://github.com/llvm/circt/pull/3658
