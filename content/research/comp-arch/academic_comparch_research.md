@@ -33,7 +33,7 @@ The effort began with a whitepaper published in 2006 titled ["The Landscape of P
 >
 > A multidisciplinary group of Berkeley researchers met nearly two years to discuss this change. Our view is that this evolutionary approach to parallel hardware and software may work from 2 or 8 processor systems, but is likely to face diminishing returns as 16 and 32 processor systems are realized, just as returns fell with greater instruction-level parallelism.
 
-The whitepaper identified trends in computing, extrapolated them well into the future, and proposed research directions that could solve anticipated problems if the trends were realized.
+The whitepaper identified trends in computing, extrapolated them well into the future, and proposed research directions that could solve anticipated problems if the trends came to pass.
 In particular, the following recommendations / predictions were made:
 
 > *Regarding multicore versus manycore*: We believe that manycore is the future of computing.
@@ -67,9 +67,9 @@ On the computer architecture side, the projects include:
     - An attempt to exploit manycore architectures to improve the performance of web browsers
     - In today's world, while browsers are multi-process and concurrent, the core algorithms for parsing, layout, rendering, and Javascript JIT themselves aren't parallel, and will likely never be
 - Core architecture for manycore systems
-    - 
+    -
 - Workload characterization
-    - 
+    -
 
 ### ASPIRE (2012-2017)
 
@@ -261,6 +261,17 @@ Consider the cache generator project - all the things that need to slot into pla
 
 ##### Build Systems
 
+#### VLSI Flow Methodology
+
+- API-first flow - enabled by open source CAD tools
+    - Direct database query
+    - Full fine-grained control over CAD tool execution
+    - Remove the multi-interpreter problem (yaml -> hammer -> tcl -> interpreter in Cadence tools -> internal API -> action) becomes (top-level -> API -> action)
+    - Error reporting as first-class rather than random log messages
+    - Unit-testing of CAD tool APIs with small examples (cutting out irrelevant details) from larger designs
+    - What does this enable? Where can we use design semantics to improve the QoR and the way we invoke the CAD tool APIs? Can we design new heuristics outside the CAD tool itself?
+    - Can this enable new kinds of incrementalism?
+
 ### Novel Architectures
 
 - RTL is critical for evaluation - we have never believed in *modeling* - always strive for high fidelity
@@ -303,6 +314,13 @@ From slice offsite notes:
 - Semantic compression
 - See the riscv-trace-spec which provides some basics about how to get an inst/PC trace out, without any uArch info (https://github.com/riscv-non-isa/riscv-trace-spec/releases/tag/v2.0.1)
 
+
+- open review platform
+- public comments
+- public reviews
+- reputation
+- infra work is rewarded and credited
+- detailed subdomains
 
 Joonho's notes about research areas:
 
