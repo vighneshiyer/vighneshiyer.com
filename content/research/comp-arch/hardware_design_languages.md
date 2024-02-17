@@ -408,18 +408,12 @@ Vighnesh
     - issue: you have a block you want to develop - there are five people ready to work on it - however, more than one person working on the block will likely lead to worse productivity since early stage design needs to be in the head of one person - no opportunity to exploit human parallelism
     - I argue this is mainly a tooling problem rather than something intrinsic to the hardware development process itself
 
-
-
-
-
 ## Standard Library
 
 - chisel3.std
 - ip-contributions
 - priority queue from joonho
 - rocket-chip util folder
-
-
 
 ## Chisel Bootcamp / Docs
 
@@ -446,6 +440,7 @@ Vighnesh
 
 - https://github.com/chipsalliance/firrtl/wiki/transform-writing-manual
 - https://gist.github.com/seldridge/0959d714fba6857c5f71ebc7c9044fcf
+
 ## Chisel Bugs
 
 - [ ] Look into Chisel Vivado SRAM inference not working correctly
@@ -628,3 +623,34 @@ module registers_32x64(
     - https://github.com/chipsalliance/firrtl-spec/pull/26
     - Weirdness from not having subword assignment: https://github.com/ekiwi/paso/blob/ad2bf83f420ca704ff0e76e7a583791a0e80a545/benchmarks/src/benchmarks/aes/TinyAES128.scala#L181
     - https://github.com/llvm/circt/pull/3658
+
+## New HDL/IR
+
+- Base hardware types should be bitvector (with no operators except comparison), boolean (with boolean operators), uint/sint (with signed-ness arithmetic operators and logical comparison operators)
+    - Enum should be first-class - and represented just like Scala enum
+    - Consider support for runtime tagged unions right up front
+- uint/sint should have representations specified in the type or value (binary, grey-coded, one-hot) and the arithmetic should map onto those representations
+- width inference should work for all types in the IR backend
+- spire typeclasses for math should be first-class in the language package
+- vector type for indexing should be thought carefully
+- literal types should be thought carefully, should be possible to describe literals as types when they are needed
+- doing runtime interpretation of the hardware should be first-class, shouldn't require lowering to IR - switching between runtime interpretation and deferred interpretation should be first-class
+- aggregate types should be separate concepts from interfaces
+- clocks and reset should be first-class, not subtypes of booleans
+- source-level information should be injected via scala 3 macros (ideally re-using logic in sourcecode)
+- behavioral blocks like when statements should be preserved throughout the IR lowering process
+    - a IR pass should declare what kinds of things it would like to see and the view mechanism will bring a high-level netlist down to that view for the pass to operate on
+    - This can be more flexible for read-only passes, but restrictive for read/write passes
+- bus protocol standards should be baked into the language's package, not kept separately, do not accept bikeshedding concerns from others
+- enums should use typeclass derivation
+- bundles should be regular case classes that use derivation - they should also be type generic with some bound (similar to hardcaml Bits vs Signal)
+- 'reflection' on bundle types should be done using macros
+- after the basic RTL stuff is done, the next thing is to work on a basic control flow language that we can compile with Calyx or similar (or do it ourselves), but have that directly expressible in the IR and simulatable both at runtime and deferred into another simulator
+- what should a circuit be? critically we want to enable people to extend modules and add functionality by reusing the variables in the original module - we want to basically bake in chisel aspects as a first-class feature to the language
+    - adding print statements according to specific variables that are declared
+    - this requires separating the declaration of state from the definition of the circuit itself from the declaration of the interface
+- interfaces can be based on bundles, but can also have ad-hoc fields - directionality should be encoded in the type! this way we can have very concrete semantics for connecting interfaces to each other
+- for the higher-level hdl stuff, look into the primitives in spatial (https://news.ycombinator.com/item?id=37729203)
+    - but maybe start with the calyx primitives first actually
+- for the internal representation - think about emitting the content-addressed circuits from the front-end itself!
+    - Look into Merkle trees: https://en.wikipedia.org/wiki/Merkle_tree
