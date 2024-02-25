@@ -136,6 +136,7 @@ https://docs.calyxir.org/fud/index.html
 - https://en.liujiacai.net/2023/04/13/zig-build-system/
     - Zig's build system is built on `steps`, and is quite like an explicit execution graph
 - Profiling via traces (https://profiler.firefox.com/) (chrome://tracing)
+- Nix as a build system
 
 ## Remote Execution
 

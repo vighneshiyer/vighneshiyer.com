@@ -316,11 +316,16 @@ From slice offsite notes:
 
 
 - open review platform
-- public comments
-- public reviews
-- reputation
-- infra work is rewarded and credited
-- detailed subdomains
+  - public comments
+  - public reviews
+  - reputation
+  - infra work is rewarded and credited
+  - detailed subdomains
+
+- leveraging circuits work
+  - power domains, power credits/tokens, chip-embeddable macromodels
+  - LDOs and clock generators
+  - much other stuff too... let's figure this out
 
 Joonho's notes about research areas:
 
