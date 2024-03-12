@@ -306,6 +306,17 @@ From slice offsite notes:
 > - Then move to concrete verification stuff
 > - Comment on chiplets to finish off and say that we can debate in the next session after the opponent has presented his view
 
+### uArch Toolkits
+
+- A quick way to do program level analysis (criticality analysis, embedding, cache/TLB playground)
+- Very similar infra to a trace based simulator, but because we are SW engineers, we will do a better job
+- Related thing is to extend sampled simulation to support what-if analysis
+  - play with latencies
+  - suppose an unlimited capacity or associativity cache somewhere in the hierarchy
+  - suppose a bus has infinite throughput
+  - how can we support these types of bottleneck analyses in sampled simulation or RTL sim world firstly?
+- See my notes from Intel talk wrt TidalSim + reference my written notes about the uArch/program analysis toolkit
+
 ### Post-Silicon Validation
 
 - Event API with automatic tracker logic generation
