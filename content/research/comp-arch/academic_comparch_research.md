@@ -310,12 +310,17 @@ From slice offsite notes:
 
 - A quick way to do program level analysis (criticality analysis, embedding, cache/TLB playground)
 - Very similar infra to a trace based simulator, but because we are SW engineers, we will do a better job
+
+### RTL-Level What-If Analysis
+
 - Related thing is to extend sampled simulation to support what-if analysis
   - play with latencies
   - suppose an unlimited capacity or associativity cache somewhere in the hierarchy
   - suppose a bus has infinite throughput
   - how can we support these types of bottleneck analyses in sampled simulation or RTL sim world firstly?
 - See my notes from Intel talk wrt TidalSim + reference my written notes about the uArch/program analysis toolkit
+- Do what if analysis at rtl level, what are the true throughout bottlenecks of the web apps now days?
+- How do we do this accurately and efficiently in rtl sim and fpga sim? Can we avoid dpi overhead and annoyances
 
 ### Post-Silicon Validation
 
