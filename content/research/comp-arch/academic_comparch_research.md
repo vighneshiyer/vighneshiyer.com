@@ -310,6 +310,22 @@ From slice offsite notes:
 
 - A quick way to do program level analysis (criticality analysis, embedding, cache/TLB playground)
 - Very similar infra to a trace based simulator, but because we are SW engineers, we will do a better job
+- And we can extend this basic infra such that the profile can leverage it (to do stack unwinding, arch state querying, batch instruction processing, function counting / interception, etc.)
+- This infra should look like:
+  - **Trace formats**: raw spike-like trace, RISC-V trace spec, custom trace formats (for memory subsystems / accelerators, etc.), microarchitectural event graph, Google event trace format
+  - **Input tools**: spike, RTL sim, TidalSim, FireSim, qemu?
+  - **Analysis tools**: cache parameter analysis, see below
+- Basic workload characterization from functional simulation
+  - working set size analysis
+  - mem access pattern predictibility
+  - cache modeling
+  - instruction mix, criticality, code density, hotspot analysis
+  - branch predictability
+  - SST-like program analysis
+  - Look at what DynamioRIO can do: https://dynamorio.org/
+    - The cache simulator drcachesim, TLB simulation, Reuse distance, Reuse time, Opcode mix, Function call tracing
+    - A bunch of other analysis tools: https://dynamorio.org/API_samples.html
+  - See https://github.com/ChampSim/ChampSim too
 
 ### RTL-Level What-If Analysis
 

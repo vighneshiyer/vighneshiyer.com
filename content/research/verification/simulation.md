@@ -43,3 +43,121 @@ draft = true
         - Small nits / changes should cause just a small recompilation cost
         - One issue is dealing with cross-module (cross-hash reference in our case) optimizations
         - As usual, there should be a 'fast' mode which doesn't do much optimization, but there should also be a mode that does more aggressive opt
+
+### Notes From Joonho
+
+# RTL Simulation
+
+#Research/notes/RTL-Simulation
+
+
+
+# Things to read more carefully
+
+- LightningSim: Fast and Accurate Trace-Based Simulation for High-Level Synthesis
+
+
+
+
+
+---
+
+# Accelerating RTL Simulation
+
+RTL simulation is a unique workload in that it has a lot of control instructions (branches & jumps), large I-cache pressure, and fine-grained parallelism opportunities.
+
+Accelerating RTL simulation is crucial for design productivity.
+
+---
+
+# Ongoing/recent work on RTL simulation
+
+## Archilator (from SiFive)
+
+- Although a lot of the things that the CIRCT people are doing are stupid, they have one new interesting thing. They are building ArcSim, which is a RTL simulator emitted directly from CIRCT (w/o going to system verilog and then verilator). By directly going from the IR to RTL sim, they can preserve/exploit the circuit semantics much better, thus achieving a much higher simulation performance.
+
+  - https://www.youtube.com/watch?v=iwJBlRUz6Vw&ab_channel=LLVM
+
+- The following list presents the tricks that they play to improve the simulation performance
+
+  1. Dedup : If there are multiple copies of the same module, we can deduplicate these modules and reduce the instruction footprint (which alleviates I-cache pressure).
+
+     - This is basically kind of like FAME-5 on software RTL simulation
+
+     - It resulted in nearly a 2x smaller binary size for LargeBOOM
+
+  2. LUT : Instead of simulating combinational logic, we can replace that with lookup tables. So the main benefit is that this is essentially converting a branch instruction (imagine that you are simulating a Mux), to load and store instructions. This reduces the core frontend stalls which are prevalent in RTL simulations.
+
+  3. Register/latency retiming : by removing the register values around from one arch to another, we can change the latency of each arch. So I guess this is about searching for a good balance between the arcs?
+
+  4. Loop re-rolling : We can reduce the binary footprint by re-rolling the loop.
+
+- They also can play tricks during the compile time to reduce the compile time. They basically have a way of emitting separate files for each arch such that the LLVM backend can consume them in parallel, thereby reducing the compile time.
+
+- Simulation performance improvement is impressive.
+
+  - Large Rocket : 100 KHz (2.6x vs verilator)
+
+  - Large BOOM : 10(?) KHz (1.9x vs verilator)
+
+- Overall impression is
+
+  - Reducing the binary footprint & alleviating the branch predictor pressure seems to the most important factor when it comes to RTL simulation
+
+- QnA
+
+  - Fake comb loops makes verilator slow (the register as a whole seems to have a comb loop, but if you break down the register bit by bit, there isn’t a comb loop). However, Archilator doesn’t consider this, or try to blast out the registers to prevent this problem (they are using rocket & boom which doesn’t have these fake loops anyways).
+
+  - Have you used PGO to compile verilator? Also, when using verilator, you have to use `-Oz` or `-Os` to reduce the binary footprint size. (The CIRCT people used the `-O3` flag which isn’t the best flag for verilator)
+
+- [[HW-IR]] : Remember that FIRRTL used to have something similar like this?
+
+
+
+## Essent
+
+### Dynamically scheduled vs statically scheduled RTL simulation
+
+- Dynamically scheduled (a.k.a event driven) : The RTL circuit is broken up into a graph. Every cycle, the simulator performs a BFS and if a node is active in that cycle, the nodes is simulated.
+
+- Statically scheduled : The RTL circuit is statically scheduled during compile time. You can think of a gigantic C++ code that represents the entire designs per cycle behavior. Unlike the dynamically scheduled simulation, it can’t skip parts of the design.
+
+### Problem that it is trying to solve & the solution
+
+- Modern RTL designs are big. Hence, the overhead of dynamic scheduling is larger then the benefit of being able to skip parts of your simulation.
+
+- To get the best of both worlds, instead of having fine-grained partitions of the design and a dynamic scheduler, ESSENT partitions the design into a coarse grained acyclic graph. Since the partitions are coarse grained, the scheduling overhead is small, and we can skip large parts of the design.
+
+### QnA
+
+- How close is the partitioning to the theoretical maximal?
+
+- How would the designer provide “hints” to the compiler such that it can guide the partitioning decisions? Or would this be irrelevant, and would you just want to perform a min-cut recursively to generate acyclic graph partitions?
+
+- Also how would we leverage the correlation between the partition activities to improve simulation performance?
+
+- Value prediction??? Would need to do some profiling, or are there interfaces where this is a bit more easy??? If there is data signals going through this interface, it wouldn’t make a lot of sense. Control signals are a bit easier to predict, but it is also difficult to find boundaries that are only control signals.
+
+
+
+## Repcut
+
+- Repcut duplicates a small amount of RTL nodes to remove the intra-cycle dependencies between the partitions.
+
+- Also, it has a method to better predict the execution time of each thread, thereby achieving a good balance between the cores.
+
+- May not have clear backdoor access (`readmemb`, `readmemh`), can only simulate synchronous circuits (cycle level simulation granularity)
+
+
+
+---
+
+
+
+## Random things that might be interesting to try out
+
+- Comparing the performance of FAME-5 vs Repcut. In theory,  we can use FAME-5 infinitely for software RTL simulations as the main limiting factor on FPGAs are critical paths. Given a multicore SoC, how much performance boost can we get by using FAME-5? If we do, where is the performance boost coming from: can we come up with detailed performance breakdowns? Also, is there a way of not using LI-BDNs to perform FAME-5? The first step of this would be to quantify the difference between FAME-5 metasims vs non-FAME-5 metasims using FireSim for a multicore system.
+
+- Another interesting direction would be to understand the microarchitectural implications of RTL simulation. That is, where is the core stalling, what are the critical instructions, how does the memory access pattern look like, how does scaling to multicore systems affect simulation? We don’t have a good understanding of this workload, and I have a feeling that there may be interesting microarchitectural optimization opportunities. We are in a very good position to investigate this. The first step would be to port verilator into RISC-V and run RTL simulations on BOOM. Then, we can use the event-tracking API (or just some hardware counters) and TIP/TEA to understand where the core is getting stalled.
+
+- Another option would be to directly emit LLVM bitcode to avoid compiling C++ code which takes up a lot of time for verilator, archilator, and ESSENT. Also, if we had a content addressed language that can cache certain parts of the design, we can skip executing the passes for that part of the circuit to further reduce the compile time.
