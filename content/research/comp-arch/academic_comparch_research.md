@@ -210,6 +210,9 @@ look at past industry feedback from retreats too
 - P core and e core unified generator
 - Fpga and asic targeted rtl design language, syncreadmem is not a good abstraction for eg multiport rf with different latencies for each design and able to perform perf area tradeoff
 
+### Good Examples
+
+- Priyanka's group - unified vision going towards common project (a specialized architecture for sparse tensor algebra) - unifying work across discplines (horizontally, NOT vertically) in compilers, PL, RTL, Arch, applications, PD/VLSI.
 
 ### My Vision
 
@@ -292,6 +295,56 @@ Consider the cache generator project - all the things that need to slot into pla
 
 ### Microarchitecture
 
+#### Fundamental questions in microarchitecture
+
+##### Code Density and ISAs
+
+- Putting the nail in the coffin of VLIW
+
+##### Fixed Width ISAs vs Variable Width
+
+- Both for scalar ISAs and SIMD code
+- Fundamental tradeoff analysis
+
+##### Why Do ML Chip Architectures Diverge into Two Camps?
+
+- Tradeoffs in efficiency vs flexibility/programmability
+- Tradeoffs wrt PPA and compute density / power density / bandwidth density
+- What is the right PU granularity and functionality? (outer product machine with broadcast, systolic array for GEMM, inner product machine)
+  - What is a PE? The smallest unit of compute that has independent control flow?
+- separating the incidental things from the fundamental things - what makes an architecture good?
+- There are 2 camps
+  - Big vector engine, big matrix engine, lots of memory bandwidth, not really fine-grained, just a few control processors in the periphery
+    - TPU / Trainium / Apple Neural Engine / Qualcomm NPU
+    - From the Trainium talk
+      - They use heavily cisc vliw arch, instructions take hundreds of cycles, they don't do multicore RISC-V, very specialized hardware
+      - The control flow has a lot of flexibility without using classical control cpu, instead there is some microcoded compiler programmed control engine
+      - Ability to add new instructions over time that chains things or does some complex control stuff, programmed during chip boot or per network
+      - Custom operator and activation functions or data types can be supported by the vector unit, nearly arbitrary pytorch or jax can be targeted to this unit
+      - They have insane amount of flexibility wrt data types, they have support for things like 3-bit precision using their vector engine, not sure how granular it actually is
+  - GPUs exist kind of in the middle 
+  - Manycore architecture with many tiny vector + tensor engines coupled to a control core and NoC mesh interconnect
+    - Tenstorrent / SiFive "Intelligence" / Cerebras / Groq
+    - Jerry thinks that redoing vector thread architectures would be a good idea - couple a vector + matrix extension with a scalar core and have a distributed scratchpad and a physically aware compiler (and a task graph programming abstraction for streaming compute)
+
+##### Vector Thread Architecture
+
+- taxonomizing data-parallel architectures
+- why did VT lose out?
+- is there a way forward?
+- https://parlab.eecs.berkeley.edu/sites/all/parlab/files/Exploring%20the%20Tradeoffs%20between%20Programmability%20and%20Efficiency.pdf
+
+##### Reexplore Control vs Compute Power Split
+
+- Prior work has established that modern microprocessors spend 80+% of power on decode and control and memory and only a tiny fraction on compute - does this still hold, can we analyze this quantitatively, can we understand how much control power is actually necessary - what is the lower bound?
+
+##### From the ML Compiler Angle, What ISA is best?
+
+- how are microkernels actually written? are they synthesizable?
+- benchmarking them on real hardware and simulated hardware
+- How do ML compilers actually work? See ml-compilers.md
+- What does tinygrad do differently? Can we use that to target RVV + AME?
+
 From slice offsite notes:
 
 > - Title: Language Level Innovation, Simulation Infrastructure, and Chiplet Research
@@ -320,7 +373,7 @@ From slice offsite notes:
   - mem access pattern predictibility
   - cache modeling
   - instruction mix, criticality, code density, hotspot analysis
-  - branch predictability
+  - branch predictability - isolate which branches are predictable and which ones are not, what their penalties are, and the source code they come from
   - SST-like program analysis
   - Look at what DynamioRIO can do: https://dynamorio.org/
     - The cache simulator drcachesim, TLB simulation, Reuse distance, Reuse time, Opcode mix, Function call tracing
