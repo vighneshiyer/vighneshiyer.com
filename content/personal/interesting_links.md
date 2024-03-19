@@ -25,14 +25,13 @@ Here are a bunch of things from around the internet that I find interesting.
     - [HN link](https://news.ycombinator.com/item?id=39606885)
     - The answer is Datalog - express graph algorithms declaratively and let the compiler choose the suitable in-memory representation and synthesize concrete imperative code to implement the algortihm.
 
-
 ## Computer Architecture
 
 ### RISC-V Mailing List
 
 - [Debate on incorporating RVV into the proposed AME spec](https://lists.riscv.org/g/tech-attached-matrix-extension/topic/shared_ame_presentations/104585223?p=,,,20,0,0,0::recentpostdate/sticky,,,20,2,0,104585223,previd%3D1709667821182778053,nextid%3D1698744627839279315&previd=1709667821182778053&nextid=1698744627839279315)
 
-## Research
+## Research Philosophies
 
 - [Richard Hamming's "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
   - [Hamming's Reflection on His Time at Bell Labs](https://sameerismail.org/hamming)
@@ -41,9 +40,15 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1)
   - The Age of Gods, The Age of Heroes, and The Age of Men
 
+## Ventures and Life
+
+- [Paul Graham's Essays](https://paulgraham.com/articles.html)
+  - [How to Start Google (March 2024)](https://paulgraham.com/google.html) ([HN link](https://news.ycombinator.com/item?id=39756865))
+
 ## Education
 
 - [How I Taught The Iliad to Chinese Teenagers](https://scholars-stage.org/how-i-taught-the-iliad-to-chinese-teenagers/) ([HN link](https://news.ycombinator.com/item?id=39420769))
+- [The First Line(s) of the Iliad](https://philologicalcrocodile.wordpress.com/2019/04/06/the-first-lines-of-the-iliad/)
 
 ## Productivity
 
