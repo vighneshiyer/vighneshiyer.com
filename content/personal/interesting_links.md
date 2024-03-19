@@ -31,6 +31,12 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Debate on incorporating RVV into the proposed AME spec](https://lists.riscv.org/g/tech-attached-matrix-extension/topic/shared_ame_presentations/104585223?p=,,,20,0,0,0::recentpostdate/sticky,,,20,2,0,104585223,previd%3D1709667821182778053,nextid%3D1698744627839279315&previd=1709667821182778053&nextid=1698744627839279315)
 
+### Talks
+
+- [Tuesday @ 1130 ISA Shootout – a Comparison of RISC V, ARM, and x86 Chris Celio, UC Berkeley V2 (2016)](https://www.youtube.com/watch?v=Ii_pEXKKYUg)
+- [Berkeley EECS Annual Research Symposium BEARS 2023 - RISC V at Berkeley and Beyond - Krste Asanovic](https://www.youtube.com/watch?v=uThc5K0fErk)
+- [David Patterson - A New Golden Age for Computer Architecture: History, Challenges and Opportunities (2019)](https://www.youtube.com/watch?v=kFT54hO1X8M)
+
 ## Research Philosophies
 
 - [Richard Hamming's "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
@@ -39,6 +45,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [David Patterson's How to Build a Bad Research Center](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
 - [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1)
   - The Age of Gods, The Age of Heroes, and The Age of Men
+- [How to Have a Bad Career | David Patterson | Talks at Google](https://www.youtube.com/watch?v=Rn1w4MRHIhc)
 
 ## Ventures and Life
 
