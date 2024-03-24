@@ -7,6 +7,11 @@ A bunch of random recipes I like or I thought were interesting.
 
 ## Drinks
 
+### Sleep Potions
+
+- Level 1: 5g glycine + honey in chammomile tea with magnesium glycinate capsules
+- Level 2: Level 1 + melatonin (low dose, ~1mg) and L-Theanine
+
 ### Electrolyte Drinks
 
 #### Chef John's Homemade Gatorade
@@ -89,7 +94,10 @@ Current Recipe
 
 - Existing powders
   - [Liquid IV](https://www.liquid-iv.com/pages/ingredients): Vitamin C (ascorbic acid), "natural flavors", stevia, silicon dioxide (no value), dipotassium phosphate ("provides" potassium, but no value), citric acid, B vitamin powders (B3, B5, B6, B12), potassium citrate (potassium equivalent to 1 banana), sodium citrate (sodium salt found in citric acid), salt, dextrose (sugar)
-  - [LM]
+  - [LMNT](https://drinklmnt.com/pages/ingredients/?): 1000mg sodium (as salt), 200mg potassium (as potassium chloride), 60mg magnesium (as magnesium malate)
+    - Recipe: 1/2 teaspoon salt (1g sodium), 500mg potassium citrate (200mg potassium), 1/4 teaspoon magnesium malate (60mg magnesium)
+    - [Detailed explanation of the LMNT salt ratios](https://science.drinklmnt.com/electrolytes/lmnts-electrolyte-ratios-explained/) (10:2:0.6)
+    - [Recipes](https://science.drinklmnt.com/electrolytes/best-homemade-electrolyte-drink-for-dehydration/): 1/2 teaspoon salt, 400mg potassium chloride (200mg potassium), 1/4 teaspoon magnesium malate (60mg magnesium) + 2 tablespoons lime juice + 16/32 oz water
 - The base ingredients
   - Salts
     - sodium (RealSalt, sea salt, pink salt, baking soda)
@@ -102,5 +110,5 @@ Current Recipe
   - Acidity: ACV / red wine vinegar / fruit (orange, lime, lemon) / citric acid
   - Vitamins: Vitamin C, Vitamin B complex
   - Trace Minerals: Trace Minerals ConcenTrace Drops (from Salt Lake, Utah) / BioTrace Drops (from Dead Sea, Jordan), Lugol's iodine, Shilajit resin (high potency variability, see Nootropics Depot PrimaVie)
-  - Extras: BCAA, creatine, ionic boron, glycine
+  - Extras: BCAA, creatine, ionic boron
 
