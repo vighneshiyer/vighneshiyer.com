@@ -1,4 +1,8 @@
-# Fundamental Works in Microarchitecture
++++
+title = "Fundamental Works in Microarchitecture"
+date = 2024-03-23
+draft = true
++++
 
 - CS152/252
 

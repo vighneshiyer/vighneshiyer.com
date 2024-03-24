@@ -394,6 +394,7 @@ From slice offsite notes:
 ### Post-Silicon Validation
 
 - Event API with automatic tracker logic generation
+  - https://vighneshiyer.github.io/2024_02-uarch_event_tracing.html#/2/1/1
 - Pruning events and event history to match off-chip bandwidth limits
 - Reconstructing full event traces using ML/heuristics from partial traces
 - Semantic compression
