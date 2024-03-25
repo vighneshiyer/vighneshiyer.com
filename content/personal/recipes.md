@@ -5,6 +5,12 @@ date = 2024-03-23
 
 A bunch of random recipes I like or I thought were interesting.
 
+## Pasta Dishes
+
+### Cacio e Pepe
+
+
+
 ## Drinks
 
 ### Sleep Potions
@@ -98,21 +104,42 @@ Current Recipe
     - Recipe: 1/2 teaspoon salt (1g sodium), 500mg potassium citrate (200mg potassium), 1/4 teaspoon magnesium malate (60mg magnesium)
     - [Detailed explanation of the LMNT salt ratios](https://science.drinklmnt.com/electrolytes/lmnts-electrolyte-ratios-explained/) (10:2:0.6)
     - [Recipes](https://science.drinklmnt.com/electrolytes/best-homemade-electrolyte-drink-for-dehydration/): 1/2 teaspoon salt, 400mg potassium chloride (200mg potassium), 1/4 teaspoon magnesium malate (60mg magnesium) + 2 tablespoons lime juice + 16/32 oz water
+
 - The base ingredients
   - Salts
-    - sodium (RealSalt, sea salt, pink salt, baking soda)
-    - potassium/phosphorous (potassium phosphate)
-    - magnesium (magnesium citrate - cheap and not good, chelated magnesium (bi)glycinate - ideal, ionic magnesium)
-    - chloride (NaCl)
-    - calcium (calcium citrate, calcium ascorbate)
-    - zinc (zinc citrate)
-  - Sugars: honey / cane sugar
-  - Acidity: ACV / red wine vinegar / fruit (orange, lime, lemon) / citric acid
-  - Vitamins: Vitamin C, Vitamin B complex
-  - Trace Minerals: Trace Minerals ConcenTrace Drops (from Salt Lake, Utah) / BioTrace Drops (from Dead Sea, Jordan), Lugol's iodine, Shilajit resin (high potency variability, see Nootropics Depot PrimaVie)
-  - Extras: BCAA, creatine, ionic boron
+    - Sodium/chloride
+      - **Options**: **RealSalt**, sea salt, pink salt, baking soda
+      - **Decision**: RealSalt (natural, clean)
+    - Potassium/phosphorous
+      - **Options**: potassium phosphate, potassium citrate, potassium chloride, **potassium gluconate**, potassium sulfate
+      - **Decision**: potassium gluconate (lowest chance of digestive issues)
+    - Magnesium
+      - **Options**: magnesium citrate, chelated magnesium (bis)glycinate, magnesium L-Threonate, magnesium taurate, **magnesium malate**
+      - **Decision**: magnesium malate, citrate (cheap, bad for digestion), bisglycinate (better for pre-sleep supplementation)
+    - Calcium
+      - **Options**: calcium citrate, calcium ascorbate
+      - **Decision**: Calcium seems unnecessary
+    - Zinc
+      - **Options**: zinc citrate
+      - **Decision**: Zinc also seems unnecessary
+  - Sugars
+    - **Options**: honey, **sugar**, dextrose
+    - **Decision**: organic cane sugar (easy to dissolve, cheap)
+  - Acidity
+    - **Options**: ACV, red wine vinegar, fruit (orange, **lime, lemon**), citric acid
+    - **Decision**: lime/lemon juice (cheap, tasty, fresh)
+  - Vitamins
+    - **Potential additions**: Vitamin C, Vitamin B complex
+    - **Decision**: Unnecessary
+  - Trace Minerals
+    - **Options**: **ConcenTrace Drops** (from Salt Lake, Utah), BioTrace Drops (from Dead Sea, Jordan), **Lugol's iodine**, Shilajit resin (high potency variability, see Nootropics Depot PrimaVie)
+    - **Decision**: Lugol's iodine (2 drops), Concentrace drops (5-10 drops, also supplies magnesium)
+  - Extras:
+    - **Potential additions**: BCAA, creatine, ionic boron
+    - **Decision**: Unnecessary
+
 - Proposed recipe (for 1 liter of water ~32 oz)
-  - 1000mg sodium (RealSalt: 1.4g = 530mg sodium → )
+  - 1000mg sodium (as RealSalt: 1.4g = 530mg sodium → 2.64g of RealSalt for 1000mg of sodium)
   - 200mg potassium ()
   - 60mg magnesium ()
   - Lugol's Iodine
