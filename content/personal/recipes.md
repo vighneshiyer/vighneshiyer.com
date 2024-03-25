@@ -111,4 +111,13 @@ Current Recipe
   - Vitamins: Vitamin C, Vitamin B complex
   - Trace Minerals: Trace Minerals ConcenTrace Drops (from Salt Lake, Utah) / BioTrace Drops (from Dead Sea, Jordan), Lugol's iodine, Shilajit resin (high potency variability, see Nootropics Depot PrimaVie)
   - Extras: BCAA, creatine, ionic boron
-
+- Proposed recipe (for 1 liter of water ~32 oz)
+  - 1000mg sodium (RealSalt: 1.4g = 530mg sodium → )
+  - 200mg potassium ()
+  - 60mg magnesium ()
+  - Lugol's Iodine
+  - Sugar
+  - Lemon/lime juice
+  - Trace minerals
+- Batched recipe
+- Cost per serving

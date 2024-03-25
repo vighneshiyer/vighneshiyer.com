@@ -32,3 +32,13 @@ Views that allow flat (no module hierarchy), low-level (no behavioral constructs
 
 - https://github.com/masc-ucsc/hhds
 - https://github.com/masc-ucsc/livehd (lgraph + lnast)
+
+### DPI Hacks
+
+- Currently, we use a Verilog blackbox that wraps a DPI call and a C function to implement things like I/O models (for block devices, UART), host interaction (the HTIF/TSI bridge), instrumentation (like a RISC-V Trace IO printer / dumper), and verification collateral (like a TileLink bus monitor, in theory), or even functional/performance models (cache models, oracles).
+  - Simulator backends that don't support these, will basically balk and are unusable to run Chipyard simulations (https://github.com/epfl-vlsc/parendi?tab=readme-ov-file#Unsupported-features)
+  - The same applies to FPGA accelerated simulations... ideally we can execute the DPI code on a softcore/hardcore next to the FPGA in a partially streaming or bulk buffered DMA fashion, without having to write FPGA specific DPI-like models or bridges on the host in a very different manner than they are written for SW RTL simulation
+- A simulator backend that just consumes the IR can't reason about these Verilog blackboxes and the inner DPI calls 
+  - A first order concern is to make calling foreign functions first-class from within RTL and also define the calling / timing semantics cleanly + having a clean frontend that can make foreign calls easy to write into the RTL
+- Longer-term, a mixed-abstraction approach would unify models written in a high level language (supporting polyglot models in a Scala embedded high-level DSL, or a fast model in Rust, or a model in Python)
+  - The polyglot approach needs to be seamless, or else it will end up making builds very complex
