@@ -105,17 +105,23 @@ Current Recipe
     - [Detailed explanation of the LMNT salt ratios](https://science.drinklmnt.com/electrolytes/lmnts-electrolyte-ratios-explained/) (10:2:0.6)
     - [Recipes](https://science.drinklmnt.com/electrolytes/best-homemade-electrolyte-drink-for-dehydration/): 1/2 teaspoon salt, 400mg potassium chloride (200mg potassium), 1/4 teaspoon magnesium malate (60mg magnesium) + 2 tablespoons lime juice + 16/32 oz water
 
-- The base ingredients
+- The base ingredients and costs
   - Salts
     - Sodium/chloride
-      - **Options**: **RealSalt**, sea salt, pink salt, baking soda
-      - **Decision**: RealSalt (natural, clean)
+      - **Options**: **Real Salt**, sea salt, pink salt, baking soda
+      - **Decision**: Real Salt (natural, clean)
+      - **Dose**: 1.4g of Real Salt = 530mg sodium → 2.64g of RealSalt for **1000mg of sodium**
+      - **Cost / Dose**: [737g for $11.85](https://www.amazon.com/REDMOND-Real-Sea-Salt-Unrefined/dp/B000R5PKD0) → $0.016 / g → $0.042 / dose
     - Potassium/phosphorous
       - **Options**: potassium phosphate, potassium citrate, potassium chloride, **potassium gluconate**, potassium sulfate
       - **Decision**: potassium gluconate (lowest chance of digestive issues)
+      - **Dose**: 1.1g of potassium gluconate powder = 175mg potassium → 1.257g of powder for **200mg of potassium**
+      - **Cost / Dose**: [454g for $14.90](https://www.amazon.com/NOW-Supplements-Potassium-Gluconate-1-Pound/dp/B0015C2ZI2) → $0.033 / g → $0.041 / dose
     - Magnesium
       - **Options**: magnesium citrate, chelated magnesium (bis)glycinate, magnesium L-Threonate, magnesium taurate, **magnesium malate**
       - **Decision**: magnesium malate, citrate (cheap, bad for digestion), bisglycinate (better for pre-sleep supplementation)
+      - **Dose**: 2g of magnesium malate powder = 420mg magnesium → 0.286g of powder for **60mg of magnesium**
+      - **Cost / Dose**: [300g for $21.95](https://www.amazon.com/Nutricost-Magnesium-Malate-Powder-300g/dp/B097J5Q7R3) → $0.073 / g → $0.021 / dose
     - Calcium
       - **Options**: calcium citrate, calcium ascorbate
       - **Decision**: Calcium seems unnecessary
@@ -125,6 +131,8 @@ Current Recipe
   - Sugars
     - **Options**: honey, **sugar**, dextrose
     - **Decision**: organic cane sugar (easy to dissolve, cheap)
+    - **Dose**: Liquid IV has **11g of sugar** per packet
+    - **Cost / Dose**: [907g for $4](https://www.traderjoes.com/home/products/pdp/organic-cane-sugar-027042) → $0.0044 / g → $0.0485 / dose
   - Acidity
     - **Options**: ACV, red wine vinegar, fruit (orange, **lime, lemon**), citric acid
     - **Decision**: lime/lemon juice (cheap, tasty, fresh)
@@ -137,9 +145,10 @@ Current Recipe
   - Extras:
     - **Potential additions**: BCAA, creatine, ionic boron
     - **Decision**: Unnecessary
+  - Water (16-32 oz)
 
 - Proposed recipe (for 1 liter of water ~32 oz)
-  - 1000mg sodium (as RealSalt: 1.4g = 530mg sodium → 2.64g of RealSalt for 1000mg of sodium)
+  - 1000mg sodium (
   - 200mg potassium ()
   - 60mg magnesium ()
   - Lugol's Iodine
