@@ -164,13 +164,9 @@ A bunch of random recipes I like or I thought were interesting.
   - Water (16-32 oz)
   - **Total Cost / Dose**: $0.042 (sodium) + $0.041 (potassium) + $0.021 (magnesium) + $0.0485 (sugar) + $0.25 (lime) + $0.023 (iodine) + $0.037 (trace minerals) = **$0.463 / dose**
 
-- Recipe (for 1 liter of water ~32 oz)
-  - 1000mg sodium (
-  - 200mg potassium ()
-  - 60mg magnesium ()
-  - Lugol's Iodine
-  - Sugar
-  - Lemon/lime juice
-  - Trace minerals
-- Batched recipe
-- Cost per serving
+- Recipe (for 16-32 oz of water)
+  - Dry ingredients: 2.64g Real Salt, 1.257g potassium gluconate powder, 0.286g magnesium malate powder, 11g sugar = 15.183g of powder mixture
+  - Wet ingredients: 1/2 small lime, 2 drops Lugol's iodine, 5-10 drops Concentrace
+- Powder mixture (for 50 servings)
+  - 132g Real Salt, 62.9g potassium gluconate, 14.3g magnesium malate, 550g sugar
+  - Thoroughly mix everything together, take 15g of mixture (about 1 tablespoon) and mix with 16-32 oz of water
