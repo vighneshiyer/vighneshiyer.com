@@ -20,7 +20,9 @@ A bunch of random recipes I like or I thought were interesting.
 
 ### Electrolyte Drinks
 
-#### Chef John's Homemade Gatorade
+<details>
+
+<summary>Chef John's Homemade Gatorade</summary>
 
 - [Homemade Sports Drink](https://www.allrecipes.com/recipe/246681/homemade-sports-drink-aka-greaterade/)
 - Ingredients
@@ -34,11 +36,13 @@ A bunch of random recipes I like or I thought were interesting.
   - 2 medium limes, juiced
 - In 1 cup water, heat all the ingredients on low heat and whisk until everything is combined, then add the remaining water and chill
 
-#### Posca
+</details>
 
-[Posca](https://en.wikipedia.org/wiki/Posca) was an Ancient Roman drink for soldiers.
-See: [The Incredible Spiced Wine of Ancient Rome](https://www.youtube.com/watch?v=40uw6VkWpaI).
+<details>
 
+<summary><a href="https://en.wikipedia.org/wiki/Posca">Posca</a>: an Ancient Roman drink for soldiers</summary>
+
+- See: [The Incredible Spiced Wine of Ancient Rome](https://www.youtube.com/watch?v=40uw6VkWpaI).
 - [Feeding a Roman Legion | Posca & Laridum](https://www.youtube.com/watch?v=qj5vg2fjOtk)
 
 > As an archaeologist I've tried a very similar drink - essentially the same type of origin, roman legionnaires - that one of my teachers took to one of our Byzantine classes. She called it "Phouska", and the recipe we used was 1.5 cups of vinegar, 0.5 cup of honey, 1 tablespoon of crushed coriander seed, and 4 cups of water, then boiling it until the honey is dissolved and then straining the coriander seeds. It's actually one of my favorite archaeological/historical dishes (closely tied with Babylonian date-and-nut bars, which I would eat daily if I wasn't allergic to nuts XD), and one Christmas I actually drank a few liters of Phouska across a couple of days.
@@ -49,7 +53,11 @@ See: [The Incredible Spiced Wine of Ancient Rome](https://www.youtube.com/watch?
 >
 > 250ml water, 1 tbsp honey, 2 tbsp red wine vinegar, Pinch of salt
 
-#### More Electrolyte Recipes
+</details>
+
+<details>
+
+<summary>More Electrolyte Recipes</summary>
 
 - [@SolBrah](https://twitter.com/SolBrah/status/1726186665872646486)
 
@@ -73,9 +81,12 @@ See: [The Incredible Spiced Wine of Ancient Rome](https://www.youtube.com/watch?
 - Coconut water
 - Water + celtic salt + lemon juice + honey
 
-#### Snake Juice
+</details>
 
-Original Recipe
+<details>
+<summary>Snake Juice</summary>
+
+<span style="text-decoration:underline;">**Original Recipe**</span>
 
 - No more than 2L of water per day is really needed unless you are doing lots of physical activity
 - Start with slighly less sodium per L (1000mg) since 2g/L is the high-limit
@@ -86,7 +97,7 @@ Original Recipe
 - Use a high Ph water (Ph > 7, Alkalinity > 120ppm)
     - Avoid tap water, use Evian or other high-Ph water (use Ph strips to test water), tap water can be OK if properly checked
 
-Current Recipe
+<span style="text-decoration:underline;">**Current Recipe**</span>
 
 - Slightly different than the initial video; probably introduces more essential ingredients (such as magnesium)
 - Also Cole recommends not using ACV or lemon juice in the snake juice but drinking them separately since they are acidic and will erode enamel if you don't brush soon
@@ -96,7 +107,9 @@ Current Recipe
 - Sodium Bicarbonate = 1 tsp (Baking Soda)
 - Magnesium Sulphate = 1/2 tsp (Food Grade Epsom Salts)
 
-#### Trying to Devise My Own Recipe
+</details>
+
+#### My Own Recipe
 
 - Existing powders
   - [Liquid IV](https://www.liquid-iv.com/pages/ingredients): Vitamin C (ascorbic acid), "natural flavors", stevia, silicon dioxide (no value), dipotassium phosphate ("provides" potassium, but no value), citric acid, B vitamin powders (B3, B5, B6, B12), potassium citrate (potassium equivalent to 1 banana), sodium citrate (sodium salt found in citric acid), salt, dextrose (sugar)
@@ -136,18 +149,22 @@ Current Recipe
   - Acidity
     - **Options**: ACV, red wine vinegar, fruit (orange, **lime, lemon**), citric acid
     - **Decision**: lime/lemon juice (cheap, tasty, fresh)
+    - **Dose**: 1/2 small lime/lemon
+    - **Cost / Dose**: $0.25 / dose
   - Vitamins
     - **Potential additions**: Vitamin C, Vitamin B complex
     - **Decision**: Unnecessary
   - Trace Minerals
     - **Options**: **ConcenTrace Drops** (from Salt Lake, Utah), BioTrace Drops (from Dead Sea, Jordan), **Lugol's iodine**, Shilajit resin (high potency variability, see Nootropics Depot PrimaVie)
     - **Decision**: Lugol's iodine (2 drops), Concentrace drops (5-10 drops, also supplies magnesium)
+    - **Cost / Dose**: 1) Lugol's iodine: [1200 drops for $13.95](https://www.amazon.com/J-CROWS%C2%AE-Lugols-Solution-Iodine-2/dp/B001AEFM9Y) → $0.023 / dose. 2) Concentrace: [4740 drops for $34.80](https://www.amazon.com/dp/B000AMUWLK) → $0.037 to $0.073 / dose
   - Extras:
     - **Potential additions**: BCAA, creatine, ionic boron
     - **Decision**: Unnecessary
   - Water (16-32 oz)
+  - **Total Cost / Dose**: $0.042 (sodium) + $0.041 (potassium) + $0.021 (magnesium) + $0.0485 (sugar) + $0.25 (lime) + $0.023 (iodine) + $0.037 (trace minerals) = **$0.463 / dose**
 
-- Proposed recipe (for 1 liter of water ~32 oz)
+- Recipe (for 1 liter of water ~32 oz)
   - 1000mg sodium (
   - 200mg potassium ()
   - 60mg magnesium ()
