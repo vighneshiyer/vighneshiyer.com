@@ -9,7 +9,35 @@ A bunch of random recipes I like or I thought were interesting.
 
 ### Cacio e Pepe
 
+- [NOT ANOTHER COOKING SHOW: The Secret to the Creamiest Cacio e Pepe Ever](https://www.youtube.com/watch?v=YBg0DiHTImU)
+  - [Recipe](https://www.notanothercookingshow.tv/post/the-4-greatest-methods-for-creamy-cacio-e-pepe)
+  - Stick to the original method of making the sauce in the pan by aggressively stirring the pecorino into the pasta water
+  - Use 1 tbsp of peppercorns per serving, toast on a flame until fragrant, then crush with mortar and pestle
+  - Use 4oz (approx 114g) of spaghetti per serving
+  - Grate plenty of pecorino (2-3oz per serving) on a very fine grate (either use the 'snow' holes in a box grater or a microplane)
+  - **Do not** use salt in the pasta boiling water
+  - Keep the pan for sauce making warm, but not on a flame. Add pasta water to the pepper 2-3 minutes before the pasta is al dente.
+  - Stir aggressively when making the sauce. Make sure the pasta **has cooled down** (wait 1 minute) before adding pecorino or it will become clumpy and stringy. Add a little pecorino (2 handfuls, then the rest slowly) at a time along with pasta water to maintain temperature under 180F.
+  - Before plating, warm plates in microwave for 30 seconds to get hot
+- Retrospective after 3/24/2024 preparation
+  - I overcooked the pasta, it was a bit past al dente - should pull pasta as soon as it reaches al dente
+  - The sauce pan was too hot when adding pecorino; I need to let the pasta cool for 1 minute along with the pasta water before I add cheese
+  - The sauce was overall quite creamy, but slightly clumpy and stringy - this is due to poor temperature control, and not enough vigorous mixing
+  - I used too much pepper (need to stick with 1 tbsp / serving or a bit less even)
+  - I should use higher quality pasta (bronze cut square spaghetti De Cecco) and fresher pecorino
+  - I tried to make garlic bread, but I only started it after I pulled the pasta - need to start it earlier and keep it under low flame until serving
+  - It's hard to grate enough pecorino - I should use the microplane vs the box grater
 
+## Sides
+
+### Garlic Bread
+
+- [NOT ANOTHER COOKING SHOW: how to make the EASIEST GARLIC BREAD](https://www.youtube.com/watch?v=umYStKsDpqU)
+- My recipe
+  - Smash together 5-10 garlic cloves, unsalted butter, parsley, parmesean in a mortar and pestle
+  - Broil the bottom of Italian bread for 1 minute to get crispy and moisture resistant
+  - Spread the mixture on top of the bread and cover with microplaned parmesean
+  - Broil the top of the bread for a minute, rotating often, then pull and cut into pieces
 
 ## Drinks
 
