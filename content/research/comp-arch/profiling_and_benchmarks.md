@@ -29,13 +29,13 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 ### Desktop
 
 - SPEC (supposedly)
-- BrowserBench
+- BrowserBench 2, 3.0
 
 ### HPC
 
-- MLPerf
-- NASA Parallel Benchmarks
-- [GAP Benchmark Suite](http://gap.cs.berkeley.edu/benchmark.html)
+- [MLPerf](https://mlcommons.org/benchmarks/)
+- [NASA Parallel Benchmarks](https://www.nas.nasa.gov/software/npb.html)
+- [GAP (Graph) Benchmark Suite](http://gap.cs.berkeley.edu/benchmark.html)
 
 ### Datacenters
 
@@ -49,6 +49,15 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
     - A CS294 class project then took the target program binary and its required shared objects from the Docker filesystem and placed them into the buildroot rootfs
 - [Renaissance](https://github.com/renaissance-benchmarks/renaissance/)
     - JVM benchmarks in Big Data, ML, and FP
+
+#### FaaS
+
+- These benchmarks were enumerated in [this MS thesis from ETH: "Exploring the Microarchitectural Implications of Serverless Workloads Using RISC-V"](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/610314/Starc_Roberto.pdf?sequence=1&isAllowed=y)
+- vSwarm / vSwarm-u (Python, Go, node.js)
+- FaaSdom (node.js)
+- SeBS (Python, node.js)
+- ServerlessBench (Java, node.js, C++)
+- FunctionBench (Python)
 
 ## Profilers
 
