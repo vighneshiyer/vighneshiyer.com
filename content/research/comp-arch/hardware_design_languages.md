@@ -654,3 +654,6 @@ module registers_32x64(
     - but maybe start with the calyx primitives first actually
 - for the internal representation - think about emitting the content-addressed circuits from the front-end itself!
     - Look into Merkle trees: https://en.wikipedia.org/wiki/Merkle_tree
+
+- when having a bunch of FPUs, we don't want to lower to RTL, can we represent these at a higher level and regain simulation performance that's lost if we were to model FPUs at RTL-level?
+  - Having a native notion of FP (for sure) and fixed point (maybe) in the IR itself would be good - don't worry much about making this *too* programmable, it's best if it's just good enough

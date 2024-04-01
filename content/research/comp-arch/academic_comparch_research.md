@@ -274,6 +274,7 @@ Consider the cache generator project - all the things that need to slot into pla
     - Unit-testing of CAD tool APIs with small examples (cutting out irrelevant details) from larger designs
     - What does this enable? Where can we use design semantics to improve the QoR and the way we invoke the CAD tool APIs? Can we design new heuristics outside the CAD tool itself?
     - Can this enable new kinds of incrementalism?
+    - Can we do 'unit tests' for PD where we construct a minimal database as we like, then manipulate it with our custom commands / parameters along with fine-grained tool API calls and verify the results (geometrically? wrt DRCs?)
 
 ### Novel Architectures
 
