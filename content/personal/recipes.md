@@ -5,6 +5,11 @@ date = 2024-03-23
 
 A bunch of random recipes I like or I thought were interesting.
 
+## Ingredients
+
+- [High in plant polyphenols](https://twitter.com/Mangan150/status/1598691696023199747) (highest to lowest)
+  - Dark chocolate, black tea, pomegranate juice, red wine, red onion, green tea, beet, coffee, white wine, broccoli, hot chocolate, carrot, tomato
+
 ## Pasta Dishes
 
 ### Cacio e Pepe
@@ -45,6 +50,18 @@ A bunch of random recipes I like or I thought were interesting.
 
 - Level 1: 5g glycine + honey in chammomile tea with magnesium glycinate capsules
 - Level 2: Level 1 + melatonin (low dose, ~1mg) and L-Theanine
+
+### Chocolate Drinks
+
+#### Polyphenol Hot Chocolate
+
+- [Recipe](https://twitter.com/Mangan150/status/1774420420596560278)
+  - 1 cup very hot water
+  - 1 heaping tsp. organic cacao powder
+  - 3/4 tsp. glycine (for sweetener)
+  - dash of salt
+  - dash of cream
+- Use non-alkalized dark cacao powder, use milk instead of water, add espresso or concentrated tea
 
 ### Electrolyte Drinks
 

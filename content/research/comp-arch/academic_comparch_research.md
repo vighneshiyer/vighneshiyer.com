@@ -309,10 +309,22 @@ Consider the cache generator project - all the things that need to slot into pla
 ##### Why Do ML Chip Architectures Diverge into Two Camps?
 
 - Tradeoffs in efficiency vs flexibility/programmability
+  - To analyze the tradeoffs properly, we would have to take a historical view
+  - Assume we build a specialized (less programmable, to various degrees) accelerator for ML workloads as of 5 years ago
+  - Then we also build a generalized architecture
+  - Evaluate the tradeoffs at that time-point
+  - Then go forward year-by-year and investigate whether new models can be efficiently mapped onto the specialized accelerator (also attempt to re-design it) vs the general purpose vector machine
+  - The notion of specialization exists both for generalized architectures (new instructions + new arch state / new specialized memory architectures or scratchpads) and for specialized architectures (new structures like transpose/conv arrays, activation functions)
+  - Prior work: https://research.nvidia.com/publication/2021-01_flexion-quantitative-metric-flexibility-dnn-accelerators
+    - FLAT: An Optimized Dataflow for Mitigating Attention Bottlenecks (ASPLOS 23)
+    - A Formalism of DNN Accelerator Flexibility (https://dl.acm.org/doi/abs/10.1145/3530907)
 - Tradeoffs wrt PPA and compute density / power density / bandwidth density
 - What is the right PU granularity and functionality? (outer product machine with broadcast, systolic array for GEMM, inner product machine)
   - What is a PE? The smallest unit of compute that has independent control flow?
-- separating the incidental things from the fundamental things - what makes an architecture good?
+- One major difficulty
+  - separating the incidental things from the fundamental things - what makes an architecture good?
+  - How can we make sure that the compiler quality or the uArch details aren't the bottleneck in the evaluation of each architecture?
+  - Another problem: how do we quantify the implementation complexity of the new specializations in both the vector/matrix general arch or the specialized arch and for the compilers of each one?
 - There are 2 camps
   - Big vector engine, big matrix engine, lots of memory bandwidth, not really fine-grained, just a few control processors in the periphery
     - TPU / Trainium / Apple Neural Engine / Qualcomm NPU
@@ -332,7 +344,7 @@ Consider the cache generator project - all the things that need to slot into pla
 - taxonomizing data-parallel architectures
 - why did VT lose out?
 - is there a way forward?
-- https://parlab.eecs.berkeley.edu/sites/all/parlab/files/Exploring%20the%20Tradeoffs%20between%20Programmability%20and%20Efficiency.pdf
+- Prior Work: https://parlab.eecs.berkeley.edu/sites/all/parlab/files/Exploring%20the%20Tradeoffs%20between%20Programmability%20and%20Efficiency.pdf
 
 ##### Reexplore Control vs Compute Power Split
 
