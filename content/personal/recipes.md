@@ -33,6 +33,15 @@ A bunch of random recipes I like or I thought were interesting.
   - I tried to make garlic bread, but I only started it after I pulled the pasta - need to start it earlier and keep it under low flame until serving
   - It's hard to grate enough pecorino - I should use the microplane vs the box grater
 
+### Pasta with Tomato Cream Sauce
+
+- [Revolution| Spaghetti with tomato cream sauce using tomato paste](https://www.youtube.com/watch?v=NVe3_SdgRpc)
+  - Melt unsalted butter, add tomato paste and mash and stir fry until the tomato is fragrant
+  - Immediately add heavy cream and stir aggressively until completely mixed, adjust tomato paste and cream until the color matches that of the video and the consistency is thick
+  - DO NOT add salt - there will be plenty of salt in the pasta and cheese
+  - Boil pasta (rigatoni, spaghetti) in salted water, transfer to sauce without draining fully, stir through
+  - Top with microplaned parm or grana padano
+
 ## Sides
 
 ### Garlic Bread
