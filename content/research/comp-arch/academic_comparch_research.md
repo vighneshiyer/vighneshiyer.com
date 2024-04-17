@@ -176,6 +176,8 @@ is there really a 'spectrum'?
 - Integrate with language level stuff and irs
 - Ppa estimation, early stage iteration, live flow
 - Sampled simulation / evaluation methodology
+  - SoC level sampled simulation / activity embedding
+  - Never been done before either for perf models or for RTL especially, lots of things have to come together for this to work
 
 ## Magic box thinking
 

@@ -11,6 +11,9 @@ date = 2024-02-12
 - Drugstores: Freedom Flex (3%)
 - "Large" purchase: US Bank Cash+ (until $1k bonus threshold met)
 - Uncategorized stuff: Freedom Unlimited (1.5%)
+- Internet / Streaming / TV: US Bank Cash+ (5%)
+- Fast food (incl Chipotle): US Bank Cash+ (5%)
+- Gas: US Bank Cash+ (2%)
 
 ## Current Cards
 
@@ -18,6 +21,7 @@ date = 2024-02-12
 
 - $200 bonus on $1000 spend in first 120 days (4 months) of account opening (3/21/2024)
 - 5% on $2k/quarter for specific chosen categories
+  - For April-June 2024: 5% on internet/streaming/TV + fast food
 - 2% (unlimited) on one chosen category
 - 1% (unlimited) on all other purchases
 

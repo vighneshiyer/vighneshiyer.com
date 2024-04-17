@@ -9,6 +9,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Signs that you're a good programmer](https://skatgame.net/mburo//courses/350/signs-that-you-re-a-good-programmer.html)
 - [Signs that you're a bad programmer](https://web.archive.org/web/20230405060440/http://www.yacoset.com/Home/signs-that-you-re-a-bad-programmer)
+- Aggregator websites: [HN: Other sites like HN](https://news.ycombinator.com/item?id=37611708), [HN: Other news feeds besides HN](https://news.ycombinator.com/item?id=36175315)
 
 ### Concurrent Programming
 
@@ -56,6 +57,10 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [How I Taught The Iliad to Chinese Teenagers](https://scholars-stage.org/how-i-taught-the-iliad-to-chinese-teenagers/) ([HN link](https://news.ycombinator.com/item?id=39420769))
 - [The First Line(s) of the Iliad](https://philologicalcrocodile.wordpress.com/2019/04/06/the-first-lines-of-the-iliad/)
+
+## Philosophy
+
+- [Old And New Paganism by BAP](https://theamericansun.com/2019/03/25/old-and-new-paganism-by-bap/)
 
 ## Productivity
 
