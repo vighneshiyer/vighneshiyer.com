@@ -21,6 +21,10 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 - Dhrystone
 - Coremark
 
+### Vectors
+
+- [Swan](https://github.com/arkhadem/Swan) (vector benchmarks for mobile processors written with ARM NEON intrinsics)
+
 ### Embedded
 
 - Embench

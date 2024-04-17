@@ -110,7 +110,7 @@ Accelerating RTL simulation is crucial for design productivity.
 
   - Have you used PGO to compile verilator? Also, when using verilator, you have to use `-Oz` or `-Os` to reduce the binary footprint size. (The CIRCT people used the `-O3` flag which isn’t the best flag for verilator)
 
-- [[HW-IR]] : Remember that FIRRTL used to have something similar like this?
+- HW-IR : Remember that FIRRTL used to have something similar like this?
 
 
 
