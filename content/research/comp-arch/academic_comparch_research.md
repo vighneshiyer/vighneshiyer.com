@@ -395,6 +395,15 @@ From slice offsite notes:
     - A bunch of other analysis tools: https://dynamorio.org/API_samples.html
   - See https://github.com/ChampSim/ChampSim too
 
+#### uArch Change Perf Prediction
+
+- How to be able to predict impact of a uArch change on a workload's end-to-end performance?
+- Of course, we can just use sampled simulation and rebuild a simulator as we make changes to the RTL / mixed-abstraction model.
+- But, let's say we already have traces for a given unit in the pipeline / memory system? Like an L2 memory trace from a long RTL-level simulation (FireSim or regular RTL SW sim).
+  - Can we make a RTL change for that unit, replay the trace, and then estimate the end-to-end performance impact?
+  - This is quite hard in general since the timings of the trace will change based on the changes made to the unit! So naively running the traces on the modified unit won't suffice.
+  - Using some learned prediction model is also unreasonable - it becomes too unit-specific and requires constant re-training as the uArch changes. Also, parameter sweeping is too naive - real optimizations involve changing some fundamental algorithm or doing some nit thing that makes a marginal difference, not sweeping some coarse grained large hammer)
+
 ### RTL-Level What-If Analysis
 
 - Related thing is to extend sampled simulation to support what-if analysis
