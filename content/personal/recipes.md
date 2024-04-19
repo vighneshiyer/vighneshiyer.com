@@ -72,6 +72,14 @@ A bunch of random recipes I like or I thought were interesting.
   - dash of cream
 - Use non-alkalized dark cacao powder, use milk instead of water, add espresso or concentrated tea
 
+#### Focus Boosting Hot Chocolate
+
+- [Recipe](https://twitter.com/coookwithchris/status/1780965281042481621)
+  - 1 tsp raw fermented cacao
+  - 1 tsp lion's mane
+  - dash of ceylon cinnamon
+  - warm milk + raw honey
+
 ### Electrolyte Drinks
 
 <details>
