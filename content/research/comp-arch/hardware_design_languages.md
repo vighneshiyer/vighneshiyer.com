@@ -150,6 +150,7 @@ Execution of the hardware generator in the host language constructs an in-memory
     - Intel's SystemC compiler (https://github.com/intel/systemc-compiler)
     - Bambu (https://github.com/ferrandi/PandA-bambu)
 - μIR -An intermediate representation for transforming and optimizing the microarchitecture of application accelerators (https://dl.acm.org/doi/abs/10.1145/3352460.3358292)
+- HeteroCL
 
 ## Intermediate Representations
 
@@ -646,7 +647,7 @@ module registers_32x64(
 - bundles should be regular case classes that use derivation - they should also be type generic with some bound (similar to hardcaml Bits vs Signal)
 - 'reflection' on bundle types should be done using macros
 - after the basic RTL stuff is done, the next thing is to work on a basic control flow language that we can compile with Calyx or similar (or do it ourselves), but have that directly expressible in the IR and simulatable both at runtime and deferred into another simulator
-- what should a circuit be? critically we want to enable people to extend modules and add functionality by reusing the variables in the original module - we want to basically bake in chisel aspects as a first-class feature to the language
+- what should a circuit be? Critically we want to enable people to extend modules and add functionality by reusing the variables in the original module - we want to basically bake in chisel aspects as a first-class feature to the language
     - adding print statements according to specific variables that are declared
     - this requires separating the declaration of state from the definition of the circuit itself from the declaration of the interface
 - interfaces can be based on bundles, but can also have ad-hoc fields - directionality should be encoded in the type! this way we can have very concrete semantics for connecting interfaces to each other
@@ -657,3 +658,10 @@ module registers_32x64(
 
 - when having a bunch of FPUs, we don't want to lower to RTL, can we represent these at a higher level and regain simulation performance that's lost if we were to model FPUs at RTL-level?
   - Having a native notion of FP (for sure) and fixed point (maybe) in the IR itself would be good - don't worry much about making this *too* programmable, it's best if it's just good enough
+
+- Preserving semantics down the stack into synthesis, but doing so in a way that we can write passes on the IR that operate on a small set of primitives and have them translated by the compiler framework to operate on a high-level IR
+- Formalizing semantics for HDLs. Especially dealing with X's in an intelligent way that's integrated into the design language/frontend. For X's that we can prove never escape past reset and N number of cycles, allowing zeroed initial state; for X's that we can't prove don't escape, either use explicit resets, or randomize state sufficiently to have confidence that nothing will break, or strengthen the formal methods with dynamic information, or pick out certain paths for the simulation tool to use a more-realistic X-prop mode on (VCS doesn't have this level of granularity, the X-prop mode must be set for the entire simulation).
+- Encoding more VLSI/FPGA constructs in the frontend HDL and furthermore as IR primitives. Clocks, resets, power domains should be first-class objects. Checks that composition of these primitives should happen as part of the frontend and IR compilation. Functional things like retention flops should have formal checks for whether they can restore the state of a block correctly. Power domain crossings should be aware of the power state of each domain. UPF/CPF/SDC generation should come from the frontend. This information should propagate to the simulation tool to perform power-aware/DVFS-capable simulation, without relying on the UPF format and VCS/Xcelium.
+- Incrementally elaborated HDLs. A trend that has emerged for build systems (see Bazel, Buck2) is that not only are the builds executed incrementally (as they did from the days of Make lol), but also the build *descriptions* themselves are being compiled incrementally. This is because reading build descriptions themselves takes a long time. Same problem shows up in HDLs when circuits get really large. Within-run caching in HDL elaboration is easy enough - just have an API for creating an instance and creating several instances of them (see the Chisel Instance API). But run-to-run caching is much more difficult since it requires us to know what source code changed and what it could affect. One solution is a content-addressed language (e.g. Unison), but more practically we could analyze the incremental compilation output of e.g. the Scala compiler and understand what cache entries to invalidate.
+
+
