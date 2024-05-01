@@ -55,6 +55,15 @@ A bunch of random recipes I like or I thought were interesting.
 
 ## Drinks
 
+### Smoothies
+
+- [A nice milkshake](https://twitter.com/NgoloTesla/status/1785060015268577650/photo/1)
+  - 1 1/2 cup full fat cream
+  - 1-2 tbsp unheated honey
+  - 1/2 lb berries (frozen if not in season)
+  - 6 raw eggs
+  - 1 banana, raw cacao, pine pollen, royal jelly, vanilla powder
+
 ### Sleep Potions
 
 - Level 1: 5g glycine + honey in chammomile tea with magnesium glycinate capsules
