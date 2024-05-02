@@ -195,17 +195,17 @@ A bunch of random recipes I like or I thought were interesting.
       - **Options**: **Real Salt**, sea salt, pink salt, baking soda
       - **Decision**: Real Salt (natural, clean)
       - **Dose**: 1.4g of Real Salt = 530mg sodium → 2.64g of RealSalt for **1000mg of sodium**
-      - **Cost / Dose**: [737g for $11.85](https://www.amazon.com/REDMOND-Real-Sea-Salt-Unrefined/dp/B000R5PKD0) → $0.016 / g → $0.042 / dose
+      - **Cost / Dose**: [737g for \$11.85](https://www.amazon.com/REDMOND-Real-Sea-Salt-Unrefined/dp/B000R5PKD0) → $0.016 / g → $0.042 / dose
     - Potassium/phosphorous
       - **Options**: potassium phosphate, potassium citrate, potassium chloride, **potassium gluconate**, potassium sulfate
       - **Decision**: potassium gluconate (lowest chance of digestive issues)
       - **Dose**: 1.1g of potassium gluconate powder = 175mg potassium → 1.257g of powder for **200mg of potassium**
-      - **Cost / Dose**: [454g for $14.90](https://www.amazon.com/NOW-Supplements-Potassium-Gluconate-1-Pound/dp/B0015C2ZI2) → $0.033 / g → $0.041 / dose
+      - **Cost / Dose**: [454g for \$14.90](https://www.amazon.com/NOW-Supplements-Potassium-Gluconate-1-Pound/dp/B0015C2ZI2) → $0.033 / g → $0.041 / dose
     - Magnesium
       - **Options**: magnesium citrate, chelated magnesium (bis)glycinate, magnesium L-Threonate, magnesium taurate, **magnesium malate**
       - **Decision**: magnesium malate, citrate (cheap, bad for digestion), bisglycinate (better for pre-sleep supplementation)
       - **Dose**: 2g of magnesium malate powder = 420mg magnesium → 0.286g of powder for **60mg of magnesium**
-      - **Cost / Dose**: [300g for $21.95](https://www.amazon.com/Nutricost-Magnesium-Malate-Powder-300g/dp/B097J5Q7R3) → $0.073 / g → $0.021 / dose
+      - **Cost / Dose**: [300g for \$21.95](https://www.amazon.com/Nutricost-Magnesium-Malate-Powder-300g/dp/B097J5Q7R3) → $0.073 / g → $0.021 / dose
     - Calcium
       - **Options**: calcium citrate, calcium ascorbate
       - **Decision**: Calcium seems unnecessary

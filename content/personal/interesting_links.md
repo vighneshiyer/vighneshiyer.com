@@ -9,7 +9,6 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Signs that you're a good programmer](https://skatgame.net/mburo//courses/350/signs-that-you-re-a-good-programmer.html)
 - [Signs that you're a bad programmer](https://web.archive.org/web/20230405060440/http://www.yacoset.com/Home/signs-that-you-re-a-bad-programmer)
-- Aggregator websites: [HN: Other sites like HN](https://news.ycombinator.com/item?id=37611708), [HN: Other news feeds besides HN](https://news.ycombinator.com/item?id=36175315)
 - [Jonathan Blow: "Ideas about a new programming language for games."](https://www.youtube.com/watch?v=TH9VCN6UkyQ)
 
 ### Concurrent Programming
