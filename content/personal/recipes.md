@@ -44,7 +44,9 @@ A bunch of random recipes I like or I thought were interesting.
 
 ## Sides
 
-### Garlic Bread
+### Breads
+
+#### Garlic Bread
 
 - [NOT ANOTHER COOKING SHOW: how to make the EASIEST GARLIC BREAD](https://www.youtube.com/watch?v=umYStKsDpqU)
 - My recipe
@@ -52,6 +54,12 @@ A bunch of random recipes I like or I thought were interesting.
   - Broil the bottom of Italian bread for 1 minute to get crispy and moisture resistant
   - Spread the mixture on top of the bread and cover with microplaned parmesean
   - Broil the top of the bread for a minute, rotating often, then pull and cut into pieces
+
+#### Brie Crostini
+
+- [Brie Crostini](https://www.yourhomebasedmom.com/brie-crostini/)
+  - Very simple, toast baguette slices topped with brie cheese and fresh rosemary/thyme in an oven at 450F
+  - Top with honey, serve warm
 
 ## Drinks
 

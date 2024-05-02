@@ -18,6 +18,12 @@ slug = "asplos-2024"
 
 ## Takeaways from LATTE
 
+### Mojo
+
+- The presentation was very slick - seemed to be a PitchDeck slidedeck, nice code examples, clear vision, MLIR-native mappings
+- https://docs.modular.com/mojo/manual/parameters/#parameter-expressions-are-just-mojo-code
+- Very cool, I see this is a combination of Python (frontend simplicity), Exo (moving compiler transformations and accelerator mappings from the compiler internals to a library that can be invoked in regular user code), Zig (comptime metaprogramming in the same language as the full language via interpretation), Rust (borrowing + some manual memory management semantics), Julia (high performance stdlib, the idea of writing high perf code in the same language as the frontend with no compromises)
+
 ## Weird Stuff in CompArch "Research"
 
 - HotEthics, YArch weird stuff - the field is going into an odd status-seeking and virtue-signaling hole
