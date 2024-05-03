@@ -24,6 +24,16 @@ slug = "asplos-2024"
 - https://docs.modular.com/mojo/manual/parameters/#parameter-expressions-are-just-mojo-code
 - Very cool, I see this is a combination of Python (frontend simplicity), Exo (moving compiler transformations and accelerator mappings from the compiler internals to a library that can be invoked in regular user code), Zig (comptime metaprogramming in the same language as the full language via interpretation), Rust (borrowing + some manual memory management semantics), Julia (high performance stdlib, the idea of writing high perf code in the same language as the frontend with no compromises)
 
+## Things from Latchup
+
+- Latchup slides
+  - https://drive.google.com/drive/folders/1vPCOoBrt5J2O4a-tyj9oJFg9fsEGehws
+
+### Chisel 6/7
+
+- ok looking at the chisel6/7 talk, the things that seem interesting are: verdi debug integration, firtool packaging (which should save some conda dependency annoyances), minor SVA support, probes (could actually be useful for generating state injection harnesses), eventually Scala 3 support (very nice, seemed like a lot of work to rewrite macros)
+- the thing that seem iffy are: intrinsics (this is just a pure hack to avoid extending the IR), 
+
 ## Weird Stuff in CompArch "Research"
 
 - HotEthics, YArch weird stuff - the field is going into an odd status-seeking and virtue-signaling hole
