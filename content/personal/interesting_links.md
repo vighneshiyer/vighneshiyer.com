@@ -22,15 +22,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Hunt for the Missing Data Type](https://www.hillelwayne.com/post/graph-types/)
   - [HN link](https://news.ycombinator.com/item?id=39592444)
   - The author asks why there aren't any graph libraries in a stdlib when graphs are ubiquitous in many applications. One proposed reason is that graphs come in many forms (directed, hypergraphs, ubergraphs, bipartite) and each form usually has a different API and set of optimized algorithms. Since performance is critical, people often write custom graph libraries. In-memory graph representations are also very diverse and have significant impact on the performance and memory requirements of different types of graphs.
-  - [A Response: The "missing" graph datatype already exists. It was invented in the '70s](https://tylerhou.com/posts/datalog-go-brrr/)
-    - [HN link](https://news.ycombinator.com/item?id=39606885)
+  - [A Response: The "missing" graph datatype already exists. It was invented in the '70s](https://tylerhou.com/posts/datalog-go-brrr/). [HN link](https://news.ycombinator.com/item?id=39606885)
     - The answer is Datalog - express graph algorithms declaratively and let the compiler choose the suitable in-memory representation and synthesize concrete imperative code to implement the algortihm.
 
 ## Computer Architecture
-
-### RISC-V Mailing List
-
-- [Debate on incorporating RVV into the proposed AME spec](https://lists.riscv.org/g/tech-attached-matrix-extension/topic/shared_ame_presentations/104585223?p=,,,20,0,0,0::recentpostdate/sticky,,,20,2,0,104585223,previd%3D1709667821182778053,nextid%3D1698744627839279315&previd=1709667821182778053&nextid=1698744627839279315)
 
 ### Talks
 
@@ -38,9 +33,11 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Berkeley EECS Annual Research Symposium BEARS 2023 - RISC V at Berkeley and Beyond - Krste Asanovic](https://www.youtube.com/watch?v=uThc5K0fErk)
 - [David Patterson - A New Golden Age for Computer Architecture: History, Challenges and Opportunities (2019)](https://www.youtube.com/watch?v=kFT54hO1X8M)
 
-### Articles
+### Articles / Posts
 
 - [SIMD Instructions Considered Harmful - Dave Patterson and Andrew Waterman](https://www.sigarch.org/simd-instructions-considered-harmful/)
+- [RISC-V mailing list: Debate on incorporating RVV into the proposed AME spec](https://lists.riscv.org/g/tech-attached-matrix-extension/topic/shared_ame_presentations/104585223)
+- [/r/riscv post on the design of a large multiported register file](https://www.reddit.com/r/RISCV/comments/1c273nk/riscv_large_multiported_register_file_challenge/)
 
 ## Research Philosophies
 
@@ -48,9 +45,8 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Hamming's Reflection on His Time at Bell Labs](https://sameerismail.org/hamming)
 - [David Patterson's Last Lecture: How to Be a Bad Professor](https://www.youtube.com/watch?v=TK6EPvrmcBk)
 - [David Patterson's How to Build a Bad Research Center](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
-- [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1)
-  - The Age of Gods, The Age of Heroes, and The Age of Men
-- [How to Have a Bad Career | David Patterson | Talks at Google](https://www.youtube.com/watch?v=Rn1w4MRHIhc)
+- [David Patterson's How to Have a Bad Career](https://www.youtube.com/watch?v=Rn1w4MRHIhc)
+- [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
 
 ## Ventures and Life
 
@@ -68,6 +64,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [@Peter_Nimitz's thread with excerpts from Edward Watts' "The Final Pagan Generation"](https://twitter.com/Peter_Nimitz/status/1784248781900480913)
   - The thread can be seen in the context of "The Final Christian Generation" that may be the Millennials of the modern day
   - [The American Conservative: Learning From ‘The Final Pagan Generation’](https://www.theamericanconservative.com/learning-from-the-final-pagan-generation/). A Christian view of the book and its lessons for modern-day Christians.
+- [BAP: Wirathu speaking on Muslims](https://twitter.com/bronzeagemantis/status/1784134586366103879)
 
 ## Productivity
 
