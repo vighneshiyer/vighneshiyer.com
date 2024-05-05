@@ -665,3 +665,45 @@ module registers_32x64(
 - Incrementally elaborated HDLs. A trend that has emerged for build systems (see Bazel, Buck2) is that not only are the builds executed incrementally (as they did from the days of Make lol), but also the build *descriptions* themselves are being compiled incrementally. This is because reading build descriptions themselves takes a long time. Same problem shows up in HDLs when circuits get really large. Within-run caching in HDL elaboration is easy enough - just have an API for creating an instance and creating several instances of them (see the Chisel Instance API). But run-to-run caching is much more difficult since it requires us to know what source code changed and what it could affect. One solution is a content-addressed language (e.g. Unison), but more practically we could analyze the incremental compilation output of e.g. the Scala compiler and understand what cache entries to invalidate.
 
 
+## Notes from LATTE Matrix Thread
+
+Hi everyone! The [slides from our overview talk on Saturday are here](https://vighneshiyer.github.io/2024_04-latte-the_next_paradigm_of_hw_design.html) (you can hit Escape to arrow thru the slides quickly).
+Also, [here is the code we used to integrate the Calyx module into a Chipyard SoC](https://github.com/ucb-bar/chipyard/commit/0abf79fdd32db4712148375125944e52307cc2cc#diff-43d6868b42d92c56ef9d2f1c15376667e0ab929c9a45bdc3209fb9f215f04b4b) and the [trivial Calyx module we used](https://github.com/joonho3020/calyx/tree/asplos-24-latte-talk).
+
+To respond to some questions/comments from the chat that we didn't get to:
+
+> @MARCO KURZYNSKI
+> I read on FireSim's website
+>
+> > Users can also integrate custom software models for components that they don’t need or want to write as RTL
+>
+> I wonder if the software models need to be in Scala too?
+
+The software models for FireSim are written in C++; [here is an example of a block device model](https://github.com/firesim/firesim/blob/main/sim/firesim-lib/src/main/cc/bridges/blockdev.cc).
+
+> @nuno.m.paulino
+> I think i have a question on the effort to preserve semantics: regardless of how much semantics you preserve in the IR (whatever it is), doesn't it get lost anyway if you emit RTL via that IR? shouldnt the solution be to go from a higher level hardware design -> semantic rich IR -> netlist (w/ mapping step performed?)
+>
+> > @Can Lehmann
+> > Thats basically the long term vision of rebuilding synthesis tools to take advantage of the multi-level IR, isn't it? Using the high level information to augment netlist generation.
+>
+> > > @Max Korbel
+> > > stealing some of the optimization work from the synthesis tools before generating RTL and spitting out something more structural seems like a viable temporary solution, but sounds better in the long term to have synthesis tools consuming a better IR than verilog
+
+Yes, the long-term vision we all share is for the simulation/synthesis tools to ingest an IR natively instead of Verilog, but this is not reasonable in the near term.
+The best we can do now is emit Verilog that looks as if a human wrote it, so that the synthesis tools can use their existing heuristics on the Verilog AST to identify common circuit structures (e.g. FSMs).
+Trying to do optimizations at the IR-level by a compiler, before structural Verilog emission for the synthesis tool is another option, but it may lead to worse QoR in unexpected ways.
+There is also the question as to whether new semantics-preserving IR node types should exist or simply annotations that mark semantics on existing IR nodes.
+
+> @Can Lehmann
+> I would be interested in the concrete improvements one could gain from using more semantically rich IR for netlist generation. I know e.g. yosys can do FSM state reencoding, which might benefit if we preserve information about FSMs. What else is there?
+
+Sure, here are a few ideas:
+
+- You already mentioned FSMs, and yes that is a good place to start - being able to mark legal transitions, state bits, and sub-FSMs explicitly would save the trouble of inferring those semantics in synthesis
+- IRs like FIRRTL don't have great support for "don't care" semantics for combinational logic (in Verilog this is usually done with casez/casex), so complex logic is [eagerly turned into optimized logic in Chisel itself](https://www.chisel-lang.org/api/latest/chisel3/util/experimental/decode/DecodeTable.html). Ideally we can preserve these semantics and let the synthesis tool do the boolean logic optimization.
+- Chisel [doesn't support tagged unions](https://github.com/chipsalliance/chisel/issues/927), but if it did, it would be nice to encode those semantics for any net that holds a tagged union type. Being able to specify the discriminator bits and the values they can take on (like an enum) could enable more aggressive logic optimizations in synthesis.
+- In the talk we mentioned that it would be nice to separate the logical and physical representations of integers (among other datatypes). For the FSM case, one could leave the physical encoding (binary vs onehot) of the state register unspecified and let the synthesis tool pick the right choice without having to rewrite the circuit.
+- More radically, we could encode more arithmetic operators and datatypes into the IR. Right now, we encode '+' and '*' operators in our IRs and Verilog and let the synthesis tool pick the specific circuit that is inferred (and automatically retime the circuits with user provided registers). In principle, we could eagerly lower '+' and '*' to a specific circuit implementation using just gates, but we don't because we know the synthesis tool will give us higher QoR and has verified implementations of these arithmetic circuits.
+  - Concretely, what if we encoded floating point datatypes and arithmetic in the IR? What is stopping us from letting synthesis tools infer '/' (division) circuits? This has the potential to speed up simulation compilation time + throughput and achieve higher QoR.
+  - What makes adding a (e.g. division IR node) hard, is that often, dividers are circuits with input-dependent latencies. But, if we leverage higher-level abstractions (e.g. dataflow-style ready-valid), then we can encode division in those abstractions, and make it usable to the logic designer. I think that trying to encode these arithmetic primitives in the RTL abstraction will fail.
