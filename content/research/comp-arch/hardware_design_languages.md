@@ -144,6 +144,7 @@ Execution of the hardware generator in the host language constructs an in-memory
     - FPGA HLS Today: Successes, Challenges, and Opportunities (https://dl.acm.org/doi/full/10.1145/3530775)
 - Catapult
 - LegUp
+- PandA-Bambu (https://github.com/ferrandi/PandA-bambu)
 - Synphony
 - SystemC TLM HLS
     - A modular digital VLSI flow for high-productivity SoC design (https://dl.acm.org/doi/abs/10.1145/3195970.3199846)
