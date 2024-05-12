@@ -31,6 +31,8 @@ date = 2024-04-18
   - DRAM
 - Silicon
   - Easy swapping of different chips as they inevitably die or have different margins during testing
+- Pre-tapeout prototyping
+  - Putting a partial design on one large FPGA and the bringup platform on another smaller FPGA is an important use case
 
 ## Bringup System Architecture and IOs
 
