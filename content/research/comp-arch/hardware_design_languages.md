@@ -131,15 +131,21 @@ Execution of the hardware generator in the host language constructs an in-memory
     - Spade (https://spade-lang.org/) (Custom, Rust-like syntax)
     - DFiant (https://github.com/DFiantHDL/DFiant) (Scala)
     - PDL: A High-Level Hardware Design Language for Pipelined Processors (https://www.cs.cornell.edu/andru/papers/pdl/pdl-pldi22.pdf)
+- Control language
+  - Cement (Rust-based HDL, FPGA 2024, 'recipes' tiny eDSL language for control flow synthesis, mostly structural data flow description)
 - Specification languages
     - Sail (https://github.com/rems-project/sail)
 
+## Mid-Level HLS
+
+- Calyx (https://calyxir.org/)
+  - Dahlia (https://capra.cs.cornell.edu/dahlia/) (an example frontend for Calyx)
+- XLS (https://github.com/google/xls)
+- Spatial: a language and compiler for application accelerators (https://dl.acm.org/doi/abs/10.1145/3192366.3192379)
+
 ## HLS
 
-- Spatial: a language and compiler for application accelerators (https://dl.acm.org/doi/abs/10.1145/3192366.3192379)
-- Calyx (https://calyxir.org/)
-- XLS (https://github.com/google/xls)
-- Dahlia (https://capra.cs.cornell.edu/dahlia/) (frontend for Calyx)
+- HeteroCL (generates C++ to be processed by a regular HLS toolchain)
 - Vivado HLS
     - FPGA HLS Today: Successes, Challenges, and Opportunities (https://dl.acm.org/doi/full/10.1145/3530775)
 - Catapult
@@ -151,7 +157,6 @@ Execution of the hardware generator in the host language constructs an in-memory
     - Intel's SystemC compiler (https://github.com/intel/systemc-compiler)
     - Bambu (https://github.com/ferrandi/PandA-bambu)
 - μIR -An intermediate representation for transforming and optimizing the microarchitecture of application accelerators (https://dl.acm.org/doi/abs/10.1145/3352460.3358292)
-- HeteroCL
 
 ## Intermediate Representations
 
