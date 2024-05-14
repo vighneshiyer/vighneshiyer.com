@@ -58,6 +58,8 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Paul Graham's Essays](https://paulgraham.com/articles.html)
   - [How to Start Google (March 2024)](https://paulgraham.com/google.html) ([HN link](https://news.ycombinator.com/item?id=39756865))
+- [Doing well in your courses: a guide by Andrej Karpathy](https://cs.stanford.edu/people/karpathy/advice.html)
+- [Seinfeld's Duke 2024 Commencement Speech](https://www.youtube.com/watch?v=76QV2SrSqgo)
 
 ## Education
 
@@ -73,6 +75,13 @@ Here are a bunch of things from around the internet that I find interesting.
   - [The American Conservative: Learning From ‘The Final Pagan Generation’](https://www.theamericanconservative.com/learning-from-the-final-pagan-generation/). A Christian view of the book and its lessons for modern-day Christians.
 - [BAP: Wirathu speaking on Muslims](https://twitter.com/bronzeagemantis/status/1784134586366103879)
 
+## Politics
+
+- L0m3z
+  - [First Things: What is the Longhouse?](https://archive.ph/BSEPn)
+  - [Our Generation's War](https://archive.ph/RPVVm)
+  - [The American Mind: The Death of Midwit Expertise](https://archive.ph/ytGCH)
+
 ## Productivity
 
 - [Tim Ferris: You Don’t Need More How-To Advice — You Need a Beautiful and Painful Reckoning](https://tim.blog/2024/02/09/harajuku-moment/)
@@ -84,3 +93,12 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Music
 
 - [KLANGPHONICS](https://www.youtube.com/watch?v=bixtQAq2LzE) - these guys are pretty good
+- [Fred again's tiny desk concert](https://www.youtube.com/watch?v=4iQmPv_dTI0)
+- [Fred again's boiler room set](https://www.youtube.com/watch?v=c0-hvjV2A5Y)
+- [Danish String Quartet's tiny desk concert](https://www.youtube.com/watch?v=cfuEIHEZobc)
+- [An interesting HÖR set](https://www.youtube.com/watch?v=7CXp2EaRaIU)
+  - [Liwando - LPH](https://www.youtube.com/watch?v=-RLTwe-0MlY)
+- [Midnight Sun - Baltic Sea Philharmonic and Kristjan Järvi](https://www.youtube.com/watch?v=ytS_9SQmGBo)
+- [A good rendition of Dunkelheit](https://www.youtube.com/watch?v=znV_BYjx5T0)
+- [An interesting set by moumou: House Music You Can't Find On Spotify](https://www.youtube.com/watch?v=_P2ilGmSXDk)
+  - [Fidde - I Only See Things I Dont Have](https://www.youtube.com/watch?v=vwHx0BPj3vM)

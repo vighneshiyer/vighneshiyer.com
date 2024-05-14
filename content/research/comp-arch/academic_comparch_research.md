@@ -337,7 +337,7 @@ Consider the cache generator project - all the things that need to slot into pla
       - Ability to add new instructions over time that chains things or does some complex control stuff, programmed during chip boot or per network
       - Custom operator and activation functions or data types can be supported by the vector unit, nearly arbitrary pytorch or jax can be targeted to this unit
       - They have insane amount of flexibility wrt data types, they have support for things like 3-bit precision using their vector engine, not sure how granular it actually is
-  - GPUs exist kind of in the middle 
+  - GPUs exist kind of in the middle
   - Manycore architecture with many tiny vector + tensor engines coupled to a control core and NoC mesh interconnect
     - Tenstorrent / SiFive "Intelligence" / Cerebras / Groq
     - Jerry thinks that redoing vector thread architectures would be a good idea - couple a vector + matrix extension with a scalar core and have a distributed scratchpad and a physically aware compiler (and a task graph programming abstraction for streaming compute)
@@ -397,6 +397,7 @@ From slice offsite notes:
 
 #### uArch Change Perf Prediction
 
+
 - How to be able to predict impact of a uArch change on a workload's end-to-end performance?
 - Of course, we can just use sampled simulation and rebuild a simulator as we make changes to the RTL / mixed-abstraction model.
 - But, let's say we already have traces for a given unit in the pipeline / memory system? Like an L2 memory trace from a long RTL-level simulation (FireSim or regular RTL SW sim).
@@ -436,6 +437,19 @@ From slice offsite notes:
   - power domains, power credits/tokens, chip-embeddable macromodels
   - LDOs and clock generators
   - much other stuff too... let's figure this out
+
+- But it's mostly engineering not research
+  - First of all engineering is research
+  - Research involves building new abstractions and new tools that do things you couldn't do before, that isn't merely engineering
+  - Secondly the goal of academics is to do things a better way, there is a better way, things that others are too myopic to see or have different incentives
+- Chisel had a fast c simulator before, we can do that again, in fact it is a must
+  - Useful tools have much larger impact than the vast majority of research
+  - Tools enable new research, take llvm for example or mlir even or RISC-V or any other things in that realm
+  - How much compilers research was only possible after llvm?
+  - Same with halide and exo
+- Labs aren't linear, they are cyclic
+  - It is just like the yuga cycle, the end of a lab should mark destruction and the start of new creation
+  - Linear movements are for companies not academics! They enable maturity and products but going down that road is the opposite to the academic strength
 
 Joonho's notes about research areas:
 
