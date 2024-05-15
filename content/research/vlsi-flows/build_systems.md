@@ -21,6 +21,8 @@ date = 2024-04-18
     - [Shake Before Building: Replacing Make with Haskell - Slides](https://pdfs.semanticscholar.org/309f/beaa395906cd5c5554f8e3b5742f17656a22.pdf)
     - [Shake Before Building: Replacing Make with Haskell - ICFP 2012](https://ndmitchell.com/downloads/paper-shake_before_building-10_sep_2012.pdf)
     - [Non-recursive Make Considered Harmful - Haskell 16](http://simonmar.github.io/bib/papers/shake.pdf)
+- The Tup build system: https://gittup.org/tup/lua_parser.html
+- Buck2: https://www.reddit.com/r/cpp/comments/12e352j/buck2_our_open_source_build_system/
 - **Calyx FUD** "build system" - really more like a execution manager
   - https://calyxir.org/post/one-year/
   - https://docs.calyxir.org/fud/index.html

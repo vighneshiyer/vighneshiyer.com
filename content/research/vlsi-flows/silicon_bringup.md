@@ -73,6 +73,8 @@ date = 2024-04-18
 
 ## FPGA Concerns
 
+I/O voltages need to be configurable or match those the chip expects. Modern processes often have low IO voltages (1.2V), so it may be a challenge to find an FPGA that has banks which support such a low voltage and drive the GPIOs of the devboard.
+
 ### Dev Boards
 
 #### FPGA-Chip Physical Interface
