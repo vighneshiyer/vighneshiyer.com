@@ -99,6 +99,7 @@ FMC boards are too expensive and they often come with a huge FPGA. Building bits
 - Opal Kelly
   - https://opalkelly.com/products/xem7350/ (FMC, Kintex 7, USB to host via FrontPanel, $1400)
   - https://opalkelly.com/products/xem7310mt/ (Artix 7, QSE Samtec connector, FrontPanel, $680)
+  - https://opalkelly.com/products/xem8310/ (Artix UltraScale+, 3x Samtec connector, FrontPanel, $1200)
 - Avnet
   - Zedboard
   - Microzed (discontinued)
