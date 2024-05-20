@@ -30,6 +30,10 @@ Here are a bunch of things from around the internet that I find interesting.
   - [A Response: The "missing" graph datatype already exists. It was invented in the '70s](https://tylerhou.com/posts/datalog-go-brrr/). [HN link](https://news.ycombinator.com/item?id=39606885)
     - The answer is Datalog - express graph algorithms declaratively and let the compiler choose the suitable in-memory representation and synthesize concrete imperative code to implement the algortihm.
 
+### Performance Optimization
+
+- [Hazy Research: GPUs Go Brrr](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) ([HN link](https://news.ycombinator.com/item?id=40337936))
+
 ## Computer Architecture
 
 ### Talks
@@ -73,6 +77,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - The thread can be seen in the context of "The Final Christian Generation" that may be the Millennials of the modern day
   - [The American Conservative: Learning From ‘The Final Pagan Generation’](https://www.theamericanconservative.com/learning-from-the-final-pagan-generation/). A Christian view of the book and its lessons for modern-day Christians.
 - [BAP: Wirathu speaking on Muslims](https://twitter.com/bronzeagemantis/status/1784134586366103879)
+- [The American Sun: Ideologies of Delayed Informatization](https://theamericansun.com/2019/08/27/ideologies-of-delayed-informatization/)
 
 ## Politics
 
@@ -93,7 +98,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [KLANGPHONICS](https://www.youtube.com/watch?v=bixtQAq2LzE) - these guys are pretty good
 - [Fred again's tiny desk concert](https://www.youtube.com/watch?v=4iQmPv_dTI0)
-- [Fred again's boiler room set](https://www.youtube.com/watch?v=c0-hvjV2A5Y)
+  - [Fred again's boiler room set](https://www.youtube.com/watch?v=c0-hvjV2A5Y)
 - [Danish String Quartet's tiny desk concert](https://www.youtube.com/watch?v=cfuEIHEZobc)
 - [An interesting HÖR set](https://www.youtube.com/watch?v=7CXp2EaRaIU)
   - [Liwando - LPH](https://www.youtube.com/watch?v=-RLTwe-0MlY)
