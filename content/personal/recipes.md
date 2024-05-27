@@ -74,8 +74,8 @@ A bunch of random recipes I like or I thought were interesting.
 
 ### Sleep Potions
 
-- Level 1: 5g glycine + honey in chammomile tea with magnesium glycinate capsules
-- Level 2: Level 1 + melatonin (low dose, ~1mg) and L-Theanine
+- Level 1: 5g glycine + honey in chammomile tea with magnesium glycinate capsules + ([Thiamine HCL + milk](https://x.com/JulianaLung/status/1793713206504087608))
+- Level 2: Level 1 + melatonin (low dose, ~1mg) + L-Theanine
 
 ### Chocolate Drinks
 

@@ -450,6 +450,8 @@ From slice offsite notes:
 - Labs aren't linear, they are cyclic
   - It is just like the yuga cycle, the end of a lab should mark destruction and the start of new creation
   - Linear movements are for companies not academics! They enable maturity and products but going down that road is the opposite to the academic strength
+- Instead of predicting 5 years into the future, look back 15 years in the past
+  - What has stayed the same and is staying the same due to inertia, what are the issues with that? how do we break out of it?
 
 Joonho's notes about research areas:
 

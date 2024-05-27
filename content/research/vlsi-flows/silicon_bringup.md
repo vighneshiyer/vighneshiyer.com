@@ -17,7 +17,7 @@ date = 2024-04-18
 ## Desirable Things
 
 - FPGA design
-  - High host bandwidth
+  - High host bandwidth, easy (drivers work out of the box) host connectivity
   - Clean connectors to the chip PCB
   - Voltage compatibility
   - Debug-ability, visibility into all activity going in and out of the chip, visibility of what the FPGA design is doing (or an insanely minimal FPGA design)
@@ -111,4 +111,4 @@ Of all of these, I prefer the Opal Kelly options the most. After that, the Arty 
 
 ## My Proposed Bringup Methodology
 
-WIP
+WIP.
