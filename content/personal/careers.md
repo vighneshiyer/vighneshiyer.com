@@ -16,6 +16,7 @@ So here is my list of interesting employers.
 - The typical gamut of quant firms: Jane Street, HRT, Citadel
 - Google Cloud
 - Apple HWT / PA
+- Palantir
 
 ## Mid/Late-Stage Startups
 

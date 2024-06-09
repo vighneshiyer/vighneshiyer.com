@@ -61,6 +61,37 @@ A bunch of random recipes I like or I thought were interesting.
   - Very simple, toast baguette slices topped with brie cheese and fresh rosemary/thyme in an oven at 450F
   - Top with honey, serve warm
 
+## Ice Cream
+
+### REN's Ice Cream
+
+- [Link to recipe: No-Churn Anabolic Ice Cream](https://x.com/Babygravy9/status/1799121243293036906/photo/1)
+- 4 whole eggs (separated into whites and yolks), 100g granulated sugar, 300ml heavy cream
+- Whisk egg whites until stiff peaks form
+- Whisk in sugar until whites are glossy
+- Whisk cream in separate bowl until soft peaks form
+- Fold together whites, cream, and yolks + flavoring
+  - e.g. 1 tsp of vanilla extract, cold shot of espresso, 2-3 tbsp of coffee extract
+- Freeze the mixture for at least 2 hours
+
+- Salted caramel sauce
+  - 200g granulated sugar, 90g salted butter (cubed), 120ml heavy cream, pinches of sea salt flakes
+  - Heat sugar in saucepan over medium heat and stir constantly with wood spoon
+  - Once darkened (thin wisps of smoke and hint of burning smell), remove from heat and add butter
+  - Back onto the heat and stir for 2 minutes, while slowly adding in cream
+  - Allow the mixture to boil for 1 minute, then sprinkle the salt in
+  - Keep sauce heated until it is ready to serve
+
+### Peat's Ice Cream
+
+- [Link to recipe](https://x.com/PeatPill/status/1799085143120122295)
+- 1/2 cup coconut oil, 1/2 cup white sugar, 1 raw egg, 1/4 cup non-fat milk powder, 7oz of milk
+- Warm coconut oil and sugar to 40C, use a pourable pot, heat on low for 1 minute
+- Pour warm coconut oil and sugar into blender
+- Add whole egg (or just the yolk to avoid raw whites), milk powder, and milk to fill the blender
+- Use orange juice or coffee or vanilla for flavoring
+- Blend and freeze in small bowls
+
 ## Drinks
 
 ### Smoothies
@@ -71,6 +102,8 @@ A bunch of random recipes I like or I thought were interesting.
   - 1/2 lb berries (frozen if not in season)
   - 6 raw eggs
   - 1 banana, raw cacao, pine pollen, royal jelly, vanilla powder
+- [Another nice milkshake](https://x.com/coookwithchris/status/1799083286071034213)
+  - Raw goat milk, goat whey, local bee pollen, local raw honey, creatine, astragalus root, organic wild blueberries
 
 ### Sleep Potions
 
