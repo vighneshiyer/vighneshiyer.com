@@ -10,7 +10,6 @@ draft = true
 
 - [An Integrated Multi-Level Simulation Infrastructure for Fast and Accurate Evaluation of Complex Workloads](https://docs.google.com/document/d/1ZIl1rExD4e5BkUvhTFgKjWBVJPtYICGU_o3SSJVmypI/edit)
 
-
 ### Prior works in RTL Simulation
 
 - State of the art Verilog simulators
@@ -43,6 +42,21 @@ draft = true
         - Small nits / changes should cause just a small recompilation cost
         - One issue is dealing with cross-module (cross-hash reference in our case) optimizations
         - As usual, there should be a 'fast' mode which doesn't do much optimization, but there should also be a mode that does more aggressive opt
+
+### FPGA Accelerated Simulation / RAMP Project
+
+- https://github.com/palmer-dabbelt/flo-llvm
+- https://github.com/palmer-dabbelt/libflo
+- Chisel DREAMER emulation platform: https://wiki.eecs.berkeley.edu/dreamer/Main/20141203Notes
+- https://web.archive.org/web/20230927151250/http://ramp.eecs.berkeley.edu/
+- https://www2.eecs.berkeley.edu/Pubs/TechRpts/2005/CSD-05-1412.pdf (RAMP: Research Accelerator for Multiple Processors - A Community Vision for a Shared Experimental Parallel HW/SW Platform)
+- RAMP gold: https://ieeexplore.ieee.org/document/5523116
+
+### Emulation
+
+- https://onlinelibrary.wiley.com/doi/epdf/10.1002/ecjc.20193 (Sahara: Massively Parallel Dedicated Hardware for Cycle-Based Logic Simulations, Fujitsu)
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1585480&tag=1&tag=1
+- https://patents.google.com/?q=(emulation)&inventor=William+F.+Beausoleil&oq=inventor:(William+F.+Beausoleil)+emulation&sort=new
 
 ### Notes From Joonho
 
