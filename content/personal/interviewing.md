@@ -19,6 +19,7 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 - Classes you've taken and coursework
 - GPA
 - Your background on any given research topic
+- "Prior work" (especially papers or other publications)
 
 ## My Approach
 
@@ -39,3 +40,52 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 Anyone in the know can attest that asking these things and getting meaningful responses gives you high confidence in the person's ability to do research *in any area*.
 Asking random leetcode nonsense, 'behavioral' questions, info about coursework projects, and random chit-chat doesn't correlate with anything.
 Finally, this is a two-way street: the candidate must also be interested in working with you and on your set of projects, so you must prove you can help them achieve their goals when seeking out research.
+
+## Other Opinions I Like
+
+### Just Explain Some Concept to Me
+
+- https://x.com/GrantSlatton/status/1803242201482404117
+
+> Back when AWS did a phone screen before onsite interviews, the first technical question I would ask, regardless of level, was “tell me what you know about hash tables”
+>
+> You would be blown away by the number of allegedly-senior devs who don’t know a thing about them — around 50%
+>
+> I’d also tailor my vocab to their stated programming language preference, e.g I’d say “dictionary” for Python
+>
+> Regardless of their answer, the 1 hour phone screen had to go on, but the hash table question correlated to success or failure >90% of the time
+>
+> Candidates that could sperg out about hash tables for many minutes almost always got an offer
+>
+> Candidates that didn’t know about them almost always couldn’t code their way out of a cardboard box
+>
+> And then some in the middle went either way
+>
+> Extremely good interview question
+>
+> > What would you look for in a good answer? Time/space complexity of operations, typical use cases, collision resolution?
+>
+> > > Passable: just knows time complexity and use cases and is comfortable using
+> > >
+> > > Good: some implementation details like hashing to an index, 1 collision resolution mechanism
+> > >
+> > > Better: can discuss pros and cons of different hash algorithms and collision resolution mechanisms
+> > >
+> > > Best: can discuss all the above implementation details in terms of memory locality, cache implications, etc
+
+### Do You Know Your Tools?
+
+- https://x.com/t3dotgg/status/1801503098927779902 ([HN link (flagged)](https://news.ycombinator.com/item?id=40689779))
+
+> The number of CS grads who don’t even know basic git commands is astounding
+
+There were the usual people saying that a CS degree has nothing to do with in-the-field programming knowledge (i.e. tools).
+And I agree with this.
+This doesn't mean universities should be "teaching" git and other tooling related things, but rather that not knowing these things reflects *individual characteristics* we should select against.
+What does it mean when you are studying a topic you are supposedly interested in and have no clue about how it is applied?
+
+> Git is not just a fad; it's a literal underpinning of most serious software development these days, especially if you need to work with others.
+>
+> That a CS grad doesn't even know basic Git is telling not of their degree, but of the individual themselves - that they have no desire to learn beyond what's taught, and couldn't even be bothered to look into the requirements of the industry that they want to work in.
+>
+> I argue that it should be a barrier to hiring, on that ground.
