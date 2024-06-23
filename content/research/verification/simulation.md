@@ -28,6 +28,7 @@ draft = true
   - [RepCut: Superlinear Parallel RTL Simulation with Replication-Aided Partitioning (ASPLOS 23)](https://dl.acm.org/doi/abs/10.1145/3582016.3582034)
   - [On Accelerating PyRTL Simulation with Essential Signal Simulation Techniques (ISEDA 23)](https://ieeexplore.ieee.org/abstract/document/10218453)
   - [Khronos: Fusing Memory Access for Improved Hardware RTL Simulation (MICRO 23)](https://dl.acm.org/doi/abs/10.1145/3613424.3614301)
+  - [TaroRTL: Accelerating RTL Simulation using Coroutine-based Heterogeneous Task Graph Scheduling (Euro-Par 24)](https://jsm.ece.wisc.edu/docs/lin-europar2024.pdf)
 
 ### ???
 

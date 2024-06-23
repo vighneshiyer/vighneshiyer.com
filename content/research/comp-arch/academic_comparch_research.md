@@ -255,6 +255,9 @@ Consider the cache generator project - all the things that need to slot into pla
 
 - Fast PPA iteration loop
 - Power, clock, reset aware (semantics carried over + first-class simulation support)
+  - https://vlsitutorials.com/retention-cells-low-power-vlsi/
+  - https://vlsitutorials.com/isolation-cells-level-shifter-cells-low-power-vlsi/
+  - Power-aware as a first-class primitive (same with clock and reset). Encoding CPF-like things directly in the front-end. Being able to describe reset (multi-cycle) and clock constraints and encode those in the front-end + have them validated statically + at runtime (simulation runtime and even in-circuit).
 - Injection ready (for sampled simulation in both FPGA and RTL sims)
 - Event annotated (native event annotation support)
 - Verification collateral and APIs directly in the design language (and zero overhead conversion of collateral to C-like shared objects for direct linking in simulations)
