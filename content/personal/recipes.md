@@ -24,14 +24,17 @@ A bunch of random recipes I like or I thought were interesting.
   - Keep the pan for sauce making warm, but not on a flame. Add pasta water to the pepper 2-3 minutes before the pasta is al dente.
   - Stir aggressively when making the sauce. Make sure the pasta **has cooled down** (wait 1 minute) before adding pecorino or it will become clumpy and stringy. Add a little pecorino (2 handfuls, then the rest slowly) at a time along with pasta water to maintain temperature under 180F.
   - Before plating, warm plates in microwave for 30 seconds to get hot
-- Retrospective after 3/24/2024 preparation
-  - I overcooked the pasta, it was a bit past al dente - should pull pasta as soon as it reaches al dente
-  - The sauce pan was too hot when adding pecorino; I need to let the pasta cool for 1 minute along with the pasta water before I add cheese
-  - The sauce was overall quite creamy, but slightly clumpy and stringy - this is due to poor temperature control, and not enough vigorous mixing
-  - I used too much pepper (need to stick with 1 tbsp / serving or a bit less even)
-  - I should use higher quality pasta (bronze cut square spaghetti De Cecco) and fresher pecorino
-  - I tried to make garlic bread, but I only started it after I pulled the pasta - need to start it earlier and keep it under low flame until serving
-  - It's hard to grate enough pecorino - I should use the microplane vs the box grater
+
+<details>
+<summary>Retrospective after 3/24/2024 preparation</summary>
+- I overcooked the pasta, it was a bit past al dente - should pull pasta as soon as it reaches al dente
+- The sauce pan was too hot when adding pecorino; I need to let the pasta cool for 1 minute along with the pasta water before I add cheese
+- The sauce was overall quite creamy, but slightly clumpy and stringy - this is due to poor temperature control, and not enough vigorous mixing
+- I used too much pepper (need to stick with 1 tbsp / serving or a bit less even)
+- I should use higher quality pasta (bronze cut square spaghetti De Cecco) and fresher pecorino
+- I tried to make garlic bread, but I only started it after I pulled the pasta - need to start it earlier and keep it under low flame until serving
+- It's hard to grate enough pecorino - I should use the microplane vs the box grater
+</details>
 
 ### Pasta with Tomato Cream Sauce
 
@@ -54,6 +57,22 @@ A bunch of random recipes I like or I thought were interesting.
   - Broil the bottom of Italian bread for 1 minute to get crispy and moisture resistant
   - Spread the mixture on top of the bread and cover with microplaned parmesean
   - Broil the top of the bread for a minute, rotating often, then pull and cut into pieces
+- [Sourdough garlic bread](https://x.com/coookwithchris/status/1806046996576223303)
+  - Ingredients
+    - 1 loaf of good bread
+    - 1 stick butter, softened
+    - 6-8 cloves garlic, minced
+    - 1 tbsp fresh parsley, minced
+    - 1/2 tsp crushed red pepper
+    - Drizzle of olive oil
+    - 1/2 cup Parmesan cheese
+    - Pinch of salt
+    - Optional: mozzarella cheese
+  - Steps
+    - Combine all ingredients besides the bread and stir well
+    - Slice your bread down the middle, then lather each side with your garlic butter
+    - For a cheesy garlic bread, add shredded mozzarella after the garlic butter
+    - Put your bread on the bottom rack of the oven and broil on high until golden (usually 8-10 minutes, but keep an eye on it so it doesn't burn)
 
 #### Brie Crostini
 
@@ -282,3 +301,7 @@ A bunch of random recipes I like or I thought were interesting.
 - Powder mixture (for 50 servings)
   - 132g Real Salt, 62.9g potassium gluconate, 14.3g magnesium malate, 550g sugar
   - Thoroughly mix everything together, take 15g of mixture (about 1 tablespoon) and mix with 16-32 oz of water
+- Preparation notes
+  - There is too much salt, dial it back a bit
+  - Add some crystallized lime/lemon powder to avoid needing fresh lime juice for flavoring
+  - Replace sugar with another sweetener, maybe stevia so a smaller quantity can be used and it mixes easier with water
