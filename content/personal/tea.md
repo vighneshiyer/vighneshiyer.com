@@ -10,7 +10,8 @@ date = 2024-07-08
 <small>
 Sources:
   <a href="https://www.reddit.com/r/tea/comments/5yj6mt/an_introduction_to_gongfu_tea/">/r/tea: An Introduction to Gongfu Tea</a>,
-  <a href="https://yunnansourcing.com/pages/brewing-guide-for-green-black-oolong-and-pu-erh-teas)">Yunnan Sourcing: Brewing Guide for Green, Black, Oolong and Pu-erh Teas</a>.
+  <a href="https://yunnansourcing.com/pages/brewing-guide-for-green-black-oolong-and-pu-erh-teas)">Yunnan Sourcing: Brewing Guide for Green, Black, Oolong and Pu-erh Teas</a>,
+  <a href="https://www.hugotea.com/blogs/making-tea/gongfu">Hugo Tea Company: GONGFU (small-format tea steeping)</a>.
 </small>
 
 ### Equipment
@@ -47,8 +48,8 @@ Kettle
   - It allows you to combine several brews before serving if you're using a small gaiwan
 - Tea tray ([example](https://teaware.house/collections/tools-and-tea-accessories/products/black-cover-bamboo-tea-tray))
   - Since brews are discarded in the prep for gongfu, a tea tray provides a basin that collects the discarded water
-- Tea scoop ([example]())
-  - An ornamental scoop to measure and transfer tea from storage to the gaiwan
+- Tea scoop ([example](https://yunnansourcing.com/collections/tongs/products/narra-wood-lotus-flower-harwood-cha-dao-set-for-gong-fu-tea))
+  - A (wood) scoop to measure and transfer tea from storage to the gaiwan
 - Tea tongs ([example](https://teaware.house/collections/tools-and-tea-accessories/products/bamboo-sliver-tea-tongs))
   - It is nice to use tongs to invert tea cups on the tea tray to discard water used for preheating and tea leaf washing
 
@@ -66,48 +67,70 @@ Kettle
 
 ### Setting the Environment
 
-To me it seems that gongfu is best enjoyed in a small room with floor seating.
+To me, it seems that gongfu is best enjoyed in a small room with floor seating.
 A cool open breeze is ideal.
 Lighting some incense is also a good idea.
 Playing some light instrumental music might be good too.
 
 ### The Flow
 
-1. Prep
+#### Prep
 
-- 3-8g of tea per 100 ml of water
+1. Set the tea tray, tea cups, gaiwan, and fairness kettle in place
+1. Pick the tea and weigh and set aside the correct amount of leaves. Use a presentation vessel to show the leaves to guests. Use a pick to pick apart pu'er cakes.
+  - Grams of tea leaves given per 100 ml of water in the gaiwan
+  - Green / white / black: 5-6g
+  - Oolong: 4-5g
+  - Pu'er: 6g
+1. Boil filtered water in a kettle to the temperature for the tea you have chosen
+  - Green / white: 85°C
+  - Black: 90°C
+  - Oolong: 95°C
+  - Pu'er: 95-100°C
 
-1. Preheating
-1. Washing
-1. Brewing
+#### Preheating
 
-- Initial infusions are 5-30 seconds
+1. Pour water into the gaiwan, let it sit for 10 seconds, and pour it out into the fairness kettle
+1. Then pour from the fairness kettle into the tea cups and let them heat up briefly
+1. Use tongs to discard the water in the tea cups over the tea pet
 
-1. Distribution
+#### Washing
 
-- Pour in round robin fashion into the cups one at a time to evenly distribute the brewed tea (maintain equal tea strength for each cup)
+1. Add tea leaves to the gaiwan
+1. Pour hot water into the gaiwan and let it sit for 10 seconds
+1. Immediately pour from the gaiwan into the kettle (over the filter) and into the cups. Then discard the water in the cups via tongs over the tea pet.
+1. This 'washing' step is designed to remove debris from the tea leaves. The brew should not be drunk.
 
-1. Cleanup
+- *For pu'er*
+  - Wash *raw* pu'er once for 20 seconds
+  - Wash *ripe* pu'er twice for 15 seconds each time
 
-- Gongfu tea: https://www.hugotea.com/blogs/making-tea/gongfu
-- Equipment
-  - Essential: gaiwan, tea cups, kettle
-  - Helpful: tea tray, fairness pitcher, filter, tongs for cup handling and tea leaves removal, tea scoop
-  - Optional: scale, tea pet
-- 5-8 grams of tea per gongfu session
-  - Assuming typical 120ml gaiwan
-  - 70–85 °C (158–185 °F) for green tea. 80 °C (176 °F) is typical.
-  - 75–90 °C (167–194 °F) for white tea. 85 °C (185 °F) is typical.
-  - 80–90 °C (176–194 °F) for oolong tea. 85 °C (185 °F) is typical.
-  - 90–95 °C (194–203 °F) for red tea. 90 °C (194 °F) is typical.
-  - 95–100 °C (203–212 °F) for dark tea. 99 °C (210 °F) is typical.
-  - 90–100 °C (194–212 °F) or near-boiling to fully-boiling for pu'er
+#### Brewing and Distribution
+
+It's time to extract drinkable tea from the leaves.
+
+1. Pour hot water into the gaiwan, steep with the lid closed, and pour into the fairness kettle
+  - After pouring into the fairness kettle, immediately begin the next steep in the gaiwan
+1. Distribute from the fairness kettle into tea cups
+  - Pour in round robin fashion into the cups one at a time to evenly distribute the brewed tea (maintain equal tea strength for each cup)
+
+- For green/white/black/oolong teas: steep 10s, 15s, 20s, 30s, 45s, 1m until the tea flavor has diminished.
+- For pu'er: steep < 20s for the first few infusions, and continue to steep up to 10-20 times, adjusting steeping times upwards as the flavor diminishes.
 
 ## Stores
 
-### Equipment
+[/r/tea vendor list](https://www.reddit.com/r/tea/wiki/vendors/page_01/)
 
-- [teaware.house](https://teaware.house/)
+- Tea
+  - [Yunnan Sourcing](https://yunnansourcing.com/) (everything from Yunnan)
+  - [o-cha](https://www.o-cha.com/) (Japanese green tea and matcha)
+  - [Tao of Tea](https://taooftea.com/) (everything)
+  - [white2tea](https://white2tea.com/) (raw Pu'er tea)
+  - [Yunomi](https://yunomi.life/) (Japanese teas)
+  - [Hibiki-An](https://www.hibiki-an.com/) (Japanese teas)
+  - [Den's Tea](https://denstea.com/) (CA-based Japanese tea importer)
+- Equipment-oriented
+  - [teaware.house](https://teaware.house/)
 
 ## Selections
 
@@ -122,6 +145,12 @@ Playing some light instrumental music might be good too.
 
 ### White Teas
 
+### Black Teas
+
+- [Yunnan Sourcing: Light Roast Wild Tree Purple Varietal Black Tea of Dehong](https://yunnansourcing.com/products/light-roast-wild-tree-purple-varietal-black-tea-of-dehong?variant=43915912904903)
+  - [Can induce tea drunkenness](https://www.reddit.com/r/tea/comments/1blskol/stuff_got_me_messed_up/)
+- [Yunnan Sourcing: Yunnan Rose Flowers and Big Snow Mountain Black Tea Dragon Ball](https://yunnansourcing.com/products/yunnan-rose-flowers-and-big-snow-mountain-black-tea-dragon-ball?variant=53229211925)
+
 ### Oolong Teas
 
 - [Yunnan Sourcing: "King of Duck Shit Aroma" Dan Cong Oolong Tea](https://yunnansourcing.com/products/king-of-duck-shit-aroma-dan-cong-oolong-tea?variant=44148455473351)
@@ -130,8 +159,8 @@ Playing some light instrumental music might be good too.
 ### Pu'erh Teas
 
 - [Yunnan Sourcing: Tangerine Stuffed with 4 Years Aged Ripe Pu-erh Tea](https://yunnansourcing.com/products/tangerine-stuffed-with-4-years-aged-ripe-pu-erh-tea?variant=35648765574)
-  - [Chen Pi Puer](https://twitter.com/JulianaLung/status/1761498269900021812) seems to have good health benefits
+  - Chen Pi Puer [seems to have health benefits](https://twitter.com/JulianaLung/status/1761498269900021812)
 
 ### Herbal Teas
 
-- Rockrose tea
+- [Rock Rose](https://www.biokoma.com/products/cistus-rock-rose-cistus-incanus-dried-leaves-40-bags-2oz)
