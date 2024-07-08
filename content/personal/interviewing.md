@@ -41,6 +41,9 @@ Anyone in the know can attest that asking these things and getting meaningful re
 Asking random leetcode nonsense, 'behavioral' questions, info about coursework projects, and random chit-chat doesn't correlate with anything.
 Finally, this is a two-way street: the candidate must also be interested in working with you and on your set of projects, so you must prove you can help them achieve their goals when seeking out research.
 
+type 1 vs type 2 people
+from scratch vs iterative
+
 ## Other Opinions I Like
 
 ### Just Explain Some Concept to Me
