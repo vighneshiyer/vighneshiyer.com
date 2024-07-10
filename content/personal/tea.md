@@ -99,6 +99,7 @@ Playing some light instrumental music might be good too.
 1. Add tea leaves to the gaiwan
 1. Pour hot water into the gaiwan and let it sit for 10 seconds
 1. Immediately pour from the gaiwan into the kettle (over the filter) and into the cups. Then discard the water in the cups via tongs over the tea pet.
+  - Note: make sure the gaiwan is always drained fully after every infusion. After draining the gaiwan, the lid should not be placed on top until the next brew begins.
 1. This 'washing' step is designed to remove debris from the tea leaves. The brew should not be drunk.
 
 - *For pu'er*
@@ -110,7 +111,7 @@ Playing some light instrumental music might be good too.
 It's time to extract drinkable tea from the leaves.
 
 1. Pour hot water into the gaiwan, steep with the lid closed, and pour into the fairness kettle
-  - After pouring into the fairness kettle, immediately begin the next steep in the gaiwan
+  - After pouring into the fairness kettle, you can begin the next steep in the gaiwan
 1. Distribute from the fairness kettle into tea cups
   - Pour in round robin fashion into the cups one at a time to evenly distribute the brewed tea (maintain equal tea strength for each cup)
 
