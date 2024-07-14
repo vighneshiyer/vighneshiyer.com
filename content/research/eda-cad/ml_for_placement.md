@@ -334,5 +334,43 @@ Also Andrew Kahng's article in Nature's "News and Views" ([AI system outperforms
 > Retraction 21 September 2023: The author has retracted this article because new information about the methods used in the reported paper (A. Mirhoseini et al. Nature 594, 207–212; 2021) has become available since publication, and that has changed the author’s assessment of, and conclusions about, the paper’s contributions. Nature is also doing an independent investigation of the performance claims in the paper.
 
 Igor Markov, the author of one of the rebuttal papers, presented a talk to the [Fall 2023 CS 294 class at UC Berkeley (ML for Hardware Design)](https://ucb-cs294-256.github.io/).
-See his [review of the original Nature paper](https://drive.google.com/file/d/1bhz0LfBvzwA7UaALZxCcNk3d5bFxmimc/view) and [his rebuttal](https://drive.google.com/file/d/1krf1w-pNV5BfO9S2OrlVy6Dcr6cPzOzC/view).
-TODO TODO TODO: attach local static links
+See his [review of the original Nature paper](https://drive.google.com/file/d/1bhz0LfBvzwA7UaALZxCcNk3d5bFxmimc/view) ([local mirror](research/eda-cad/ml-for-placement/Igor_Markov-RL_for_MP_Review_Slides.pdf)) and [his rebuttal](https://drive.google.com/file/d/1krf1w-pNV5BfO9S2OrlVy6Dcr6cPzOzC/view) ([local mirror](research/eda-cad/ml-for-placement/Igor_Markov-False_Dawn_Slides.pdf)).
+
+## July 2024 Retrospective
+
+So the Nature paper still has the same editor's note on it.
+At this point, it is unlikely that there will ever be an outcome of their 'investigation'.
+
+I was also reading the [NYT article about Dr. Chatterjee's firing from Google again](https://www.nytimes.com/2022/05/02/technology/google-fires-ai-researchers.html) and a few things came to mind.
+Firstly, the ridiculous claims made by Google.
+
+> “We thoroughly vetted the original Nature paper and stand by the peer-reviewed results,” Zoubin Ghahramani, a vice president at Google Research, said in a written statement. “We also rigorously investigated the technical claims of a subsequent submission, and it did not meet our standards for publication.”
+
+Oh really?
+What a thorough investigation they did.
+And what a coincidence that the preprint that dumped cold water on the "AI for AI chips" was 'not good enough for publication'.
+If you actually look at Dr. Chatterjee's paper, you will find that it is written in a much clearer style and contains plenty of hard evidence compared to the 'Nature paper'.
+
+> Ms. Goldie said that Dr. Chatterjee had asked to manage their project in 2019 and that they had declined. When he later criticized it, she said, he could not substantiate his complaints and ignored the evidence they presented in response.
+>
+> “Sat Chatterjee has waged a campaign of misinformation against me and Azalia for over two years now,” Ms. Goldie said in a written statement.
+>
+> She said the work had been peer-reviewed by Nature, one of the most prestigious scientific publications. And she added that Google had used their methods to build new chips and that these chips were currently used in Google’s computer data centers.
+
+Ah yes, he "waged a campaign of misinformation" against these poor innocent ML pushers.
+I was looking at [Dr. Chatterjee's website](https://blif.org/~satrajit/).
+Unlike the applied ML people who want to "learn" surrogates for placement algorithms, he is a serious person investigating *fundamental* questions about DNNs.
+Unlike the people who led the Nature paper effort, he is actually knowledgable in state-of-the-art VLSI CAD algorithms.
+And finally, Dr. Chatterjee is one of us (Berkeley PhD with Brayton and Mishchenko).
+I think it is obvious who is in the right here.
+
+> While the debate about that research continued, Google pitched another paper to Nature. For the submission, Google made some adjustments to the earlier paper and removed the names of two authors, who had worked closely with Dr. Chatterjee and had also expressed concerns about the paper’s main claims, the people said.
+
+This is something interesting I had not noticed before.
+There are two people (Sungmin Bae, Anand Babu) whose names appear on the arXiv preprint, but not on the Nature paper.
+These are clearly two people of high integrity and intelligence.
+
+- Idiot 'similarity' in the middle of the article
+
+
+- Nature paper status now

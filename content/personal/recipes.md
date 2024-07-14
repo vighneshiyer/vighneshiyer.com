@@ -262,8 +262,8 @@ A bunch of random recipes I like or I thought were interesting.
       - **Dose**: 1.1g of potassium gluconate powder = 175mg potassium → 1.257g of powder for **200mg of potassium**
       - **Cost / Dose**: [454g for \$14.90](https://www.amazon.com/NOW-Supplements-Potassium-Gluconate-1-Pound/dp/B0015C2ZI2) → $0.033 / g → $0.041 / dose
     - Magnesium
-      - **Options**: magnesium citrate, chelated magnesium (bis)glycinate, magnesium L-Threonate, magnesium taurate, **magnesium malate**
-      - **Decision**: magnesium malate, citrate (cheap, bad for digestion), bisglycinate (better for pre-sleep supplementation)
+      - **Options**: magnesium citrate (cheap, bad for digestion), chelated magnesium (bis)glycinate (better for pre-sleep supplementation), magnesium L-Threonate, magnesium taurate, **magnesium malate**
+      - **Decision**: magnesium malate
       - **Dose**: 2g of magnesium malate powder = 420mg magnesium → 0.286g of powder for **60mg of magnesium**
       - **Cost / Dose**: [300g for \$21.95](https://www.amazon.com/Nutricost-Magnesium-Malate-Powder-300g/dp/B097J5Q7R3) → $0.073 / g → $0.021 / dose
     - Calcium
@@ -276,7 +276,7 @@ A bunch of random recipes I like or I thought were interesting.
     - **Options**: honey, **sugar**, dextrose
     - **Decision**: organic cane sugar (easy to dissolve, cheap)
     - **Dose**: Liquid IV has **11g of sugar** per packet
-    - **Cost / Dose**: [907g for $4](https://www.traderjoes.com/home/products/pdp/organic-cane-sugar-027042) → $0.0044 / g → $0.0485 / dose
+    - **Cost / Dose**: [907g for \$4](https://www.traderjoes.com/home/products/pdp/organic-cane-sugar-027042) → \$0.0044 / g → \$0.0485 / dose
   - Acidity
     - **Options**: ACV, red wine vinegar, fruit (orange, **lime, lemon**), citric acid
     - **Decision**: lime/lemon juice (cheap, tasty, fresh)
@@ -288,7 +288,7 @@ A bunch of random recipes I like or I thought were interesting.
   - Trace Minerals
     - **Options**: **ConcenTrace Drops** (from Salt Lake, Utah), BioTrace Drops (from Dead Sea, Jordan), **Lugol's iodine**, Shilajit resin (high potency variability, see Nootropics Depot PrimaVie)
     - **Decision**: Lugol's iodine (2 drops), Concentrace drops (5-10 drops, also supplies magnesium)
-    - **Cost / Dose**: 1) Lugol's iodine: [1200 drops for $13.95](https://www.amazon.com/J-CROWS%C2%AE-Lugols-Solution-Iodine-2/dp/B001AEFM9Y) → $0.023 / dose. 2) Concentrace: [4740 drops for $34.80](https://www.amazon.com/dp/B000AMUWLK) → $0.037 to $0.073 / dose
+    - **Cost / Dose**: 1) Lugol's iodine: [1200 drops for \$13.95](https://www.amazon.com/J-CROWS%C2%AE-Lugols-Solution-Iodine-2/dp/B001AEFM9Y) → \$0.023 / dose. 2) Concentrace: [4740 drops for \$34.80](https://www.amazon.com/dp/B000AMUWLK) → \$0.037 to \$0.073 / dose
   - Extras:
     - **Potential additions**: BCAA, creatine, ionic boron
     - **Decision**: Unnecessary
