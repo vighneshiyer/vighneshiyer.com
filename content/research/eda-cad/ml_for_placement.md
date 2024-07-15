@@ -134,7 +134,7 @@ At the time, the code was closed source, and the only evaluation of RL for place
 Furthermore, Nature is a very odd venue to publish such a work - a CAD conference would have been appropriate, but I suspect the reviewers would have grilled the authors too much for their liking.
 
 Even inside Google, there was a rebuttal to this work on RL for placement that was floating around.
-The rebuttal was [eventually leaked](http://47.190.89.225/pub/education/MLcontra.pdf) and is titled "Stronger Baselines for Evaluating Deep Reinforcement Learning in Chip Placement".
+The rebuttal was [eventually leaked](http://47.190.89.225/pub/education/MLcontra.pdf) ([local mirror](research/eda-cad/ml-for-placement/MLcontra.pdf)) and is titled "Stronger Baselines for Evaluating Deep Reinforcement Learning in Chip Placement".
 The author of the rebuttal was fired by Google, but that's irrelevant - let's examine its claims.
 
 ### The Rebuttal
@@ -369,8 +369,3 @@ I think it is obvious who is in the right here.
 This is something interesting I had not noticed before.
 There are two people (Sungmin Bae, Anand Babu) whose names appear on the arXiv preprint, but not on the Nature paper.
 These are clearly two people of high integrity and intelligence.
-
-- Idiot 'similarity' in the middle of the article
-
-
-- Nature paper status now

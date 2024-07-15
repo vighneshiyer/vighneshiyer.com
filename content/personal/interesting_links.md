@@ -37,6 +37,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Performance Optimization
 
 - [Hazy Research: GPUs Go Brrr](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) ([HN link](https://news.ycombinator.com/item?id=40337936))
+- [The LMAX architecture](https://martinfowler.com/articles/lmax.html) in the context of ([HN link: Disruptor-rs: better latency and throughput than crossbeam](https://news.ycombinator.com/item?id=40954104))
 
 ## Computer Architecture
 
