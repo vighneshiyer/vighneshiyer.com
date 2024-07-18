@@ -63,7 +63,14 @@ Kettle
   - A clay figurine to pour discarded water and brews over
 - Tea pick/needle ([example](https://teaware.house/collections/tools-and-tea-accessories/products/cigarillo-tea-needle-light-wood), [example](https://yunnansourcing.us/collections/picks-and-pryers-for-taking-apart-pu-erh-cakes/products/sandalwood-pick-for-prying-apart-pu-erh-tea-cakes))
   - For picking apart compressed Pu'er tea cakes or for unclogging a teapot spout
-- Even more things: tea basin for spent tea leaves, digital scale for weighing tea, a timer for measuring brew times, an aroma cup, a brush for spreading tea liquid over the tea tray evenly
+- Even more things:
+  - Tea basin for discarding spent tea leaves
+  - Digital scale for weighing tea
+  - Timer for measuring brew times
+  - Aroma cups so guests can smell brewed tea in a tall cup before inverting into a regular teacup
+  - Tea brush for spreading tea liquid over the tea tray evenly
+  - Tea towel for wiping teacups after preheating and discard
+  - Coasters for the teacups
 
 ### Setting the Environment
 
