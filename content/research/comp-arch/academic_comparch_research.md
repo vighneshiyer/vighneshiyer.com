@@ -249,6 +249,15 @@ Consider the cache generator project - all the things that need to slot into pla
     - Highly parallel with quick synthesis mode and early PPA feedback
     - Incremental-first so you can fearlessly re-run synthesis
 
+### Datacenter Profiling
+
+- [Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency](https://www.comp.nus.edu.sg/~lijl/papers/latency-socc14.pdf)
+- Benchmark duplication using oss
+- Why do things explode (throughput cliff)
+- Why is there tail latency (fundamental causes and exact ascription)
+- Can we mitigate with hw or os things
+  - Microkernel vs monolithic kernel
+
 ### SoC Design Methodology
 
 #### Hardware Design Languages
