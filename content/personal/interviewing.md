@@ -68,6 +68,7 @@ in getting results and progress out of and high tolerance
 This type of engineer often doesn't want to or, in many cases, is incapable of building things from scratch.
 
 from scratch vs iterative
+the button pusher
 
 The type of engineer you want depends on the codebase you want him to work on (of course).
 Try to coax out where someone lies on this spectrum.

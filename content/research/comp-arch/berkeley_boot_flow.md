@@ -4,6 +4,9 @@ date = 2023-02-28
 aliases = ["misc/chiplet-research"]
 +++
 
+Let's try to understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
+We will begin with a very simple baremetal program and try to understand the program loading mechanics, beginning execution, and communicating with a tethered host.
+
 ## Let's build a tiny RISC-V binary
 
 You'll first need a RISC-V cross compiler for your host architecture (x86 or ARM).
@@ -110,3 +113,5 @@ Notes from Joonho:
 > 	return 0;
 > }
 > ```
+
+- https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf (Sagar's slides from a long time ago)

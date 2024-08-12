@@ -45,6 +45,13 @@ A bunch of random recipes I like or I thought were interesting.
   - Boil pasta (rigatoni, spaghetti) in salted water, transfer to sauce without draining fully, stir through
   - Top with microplaned parm or grana padano
 
+## Soups
+
+### Tomato Soups
+
+- https://youtube.com/shorts/zz3D2fc3rvU?si=ZQSuxw00sauEc3VI
+  - Roasted tomato, garlic, onion soup
+
 ## Sides
 
 ### Breads
