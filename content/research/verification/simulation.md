@@ -1,5 +1,5 @@
 +++
-title = "Computer Architecture Simulation"
+title = "RTL Simulation"
 date = 2023-08-23
 draft = true
 +++

@@ -150,11 +150,11 @@ A bunch of random recipes I like or I thought were interesting.
 
 #### Focus Boosting Hot Chocolate
 
-- [Recipe](https://twitter.com/coookwithchris/status/1780965281042481621)
-  - 1 tsp raw fermented cacao
-  - 1 tsp lion's mane
-  - dash of ceylon cinnamon
-  - warm milk + raw honey
+- [Recipe](https://twitter.com/coookwithchris/status/1780965281042481621), [Recipe](https://x.com/coookwithchris/status/1825877926455185763)
+  - 1 tbsp raw fermented cacao
+  - 1 tbsp lion's mane
+  - 1 tbsp ceylon cinnamon
+  - warm milk + raw honey + MCT oil
 
 ### Electrolyte Drinks
 
