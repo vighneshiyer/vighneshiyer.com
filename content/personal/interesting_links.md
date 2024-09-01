@@ -86,8 +86,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [@Peter_Nimitz's thread with excerpts from Edward Watts' "The Final Pagan Generation"](https://twitter.com/Peter_Nimitz/status/1784248781900480913)
   - The thread can be seen in the context of "The Final Christian Generation" that may be the Millennials of the modern day
   - [The American Conservative: Learning From ‘The Final Pagan Generation’](https://www.theamericanconservative.com/learning-from-the-final-pagan-generation/). A Christian view of the book and its lessons for modern-day Christians.
-- [BAP: Wirathu speaking on Muslims](https://twitter.com/bronzeagemantis/status/1784134586366103879)
+- [Wirathu speaking on Muslims](https://twitter.com/bronzeagemantis/status/1784134586366103879)
+  - See: [Time: The Face of Buddhist Terror](https://time.com/archive/6643742/the-face-of-buddhist-terror/)
 - [The American Sun: Ideologies of Delayed Informatization](https://theamericansun.com/2019/08/27/ideologies-of-delayed-informatization/)
+- [The Buddha's Teachings on Women's 84 Manners](https://thedailyenlightenment.com/2022/10/the-buddhas-teachings-on-womens-84-manners/)
 
 ## Politics
 
