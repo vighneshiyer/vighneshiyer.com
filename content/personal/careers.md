@@ -31,3 +31,5 @@ So here is my list of interesting employers.
 - Comma AI
 - JITX
 - Zendar
+
+- https://github.com/aolofsson/awesome-semiconductor-startups
