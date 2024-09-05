@@ -12,3 +12,11 @@ Here are some websites that I generally find interesting.
 - [AI Junk Generator - Stockimg AI](https://stockimg.ai/)
 - [AI Image Editor - Leonardo AI](https://leonardo.ai/)
 - [AI Image Editor - Pixlr](https://pixlr.com/)
+
+Blogs:
+
+- https://www.paulgraham.com/articles.html
+- https://danluu.com/
+- https://yosefk.com/blog/
+- john de goes
+- li haoyi
