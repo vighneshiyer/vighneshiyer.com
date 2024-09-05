@@ -208,6 +208,11 @@ PLARCH talks on eDSLs and mixed-abstraction HDLs
 live iteration flow - we keep getting asked about PPA
 look at past industry feedback from retreats too
 - specification first interpreter/jit generator for ISA simulation
+- look at NEMU and Vienna
+  - https://stackoverflow.com/questions/75028678/is-it-impossible-to-write-thread-code-in-rust
+  - https://users.rust-lang.org/t/how-can-i-approach-the-performance-of-c-interpreter-that-uses-computed-gotos/6261
+  - https://stackoverflow.com/questions/58774170/how-to-speed-up-dynamic-dispatch-by-20-using-computed-gotos-in-standard-c
+  - https://www.complang.tuwien.ac.at/forth/threaded-code.html
 
 - P core and e core unified generator
 - Fpga and asic targeted rtl design language, syncreadmem is not a good abstraction for eg multiport rf with different latencies for each design and able to perform perf area tradeoff
