@@ -6,14 +6,12 @@ date = 2024-02-12
 ## Spending Strategy
 
 - Groceries: Citi Custom Cash (5%)
-- Restaurants / cafes: Discover it (5%) (until end of March 2024), then Freedom Flex (5%) (until end of June 2024)
-- Hotels: Freedom Flex (5%) (until end of June 2024)
+- Restaurants / cafes: Freedom Flex (3%)
+- Hotels: Nothing in particular
 - Drugstores: Freedom Flex (3%)
 - "Large" purchase: US Bank Cash+ (until $1k bonus threshold met)
 - Uncategorized stuff: Freedom Unlimited (1.5%)
 - Internet / Streaming / TV: US Bank Cash+ (5%)
-- Fast food (incl Chipotle): US Bank Cash+ (5%)
-- Gas: US Bank Cash+ (2%)
 
 ## Current Cards
 
@@ -21,8 +19,9 @@ date = 2024-02-12
 
 - $200 bonus on $1000 spend in first 120 days (4 months) of account opening (3/21/2024)
 - 5% on $2k/quarter for specific chosen categories
-  - For April-June 2024: 5% on internet/streaming/TV + fast food
-- 2% (unlimited) on one chosen category
+  - April-June 2024: 5% on internet/streaming/TV + fast food
+  - July-Sept 2024: 5% electronic stores, internet/streaming/TV
+- 2% (unlimited) on one chosen category (grocery stores)
 - 1% (unlimited) on all other purchases
 
 ### Citi Custom Cash
@@ -51,6 +50,8 @@ date = 2024-02-12
 - 5% cash back in quarterly categories ($1.5k max spend per quarter)
     - Jan - Mar 2024: Grocery stores (excluding Target/Walmart), Fitness Clubs / Gym Memberships, Self-care / Spa Services
     - Apr - June 2024: Amazon.com / Hotels / Restaurants
+    - Jul - Sept 2024: Gas stations, live entertainment, movie theaters
+- 5\% on Chase travel
 - 3% on restaurants (dining and takeout)
 - 3% on drugstore purchases
 - 1% on all other purchases
@@ -79,6 +80,6 @@ date = 2024-02-12
 - 5% calendar, up to $1500 in purchases per quarter - 75$ cash back
     - Jan - Mar 2024: Restaurants and Drug Stores
     - Apr - June 2024: Gas Stations, Home Improvement Stores, Public Transit
-    - Jul - Sept 2024: ???
+    - Jul - Sept 2024: Walmart + grocery stores
     - Oct - Dec 2024: ???
 - 1% on all other purchases
