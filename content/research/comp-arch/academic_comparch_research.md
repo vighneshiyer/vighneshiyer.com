@@ -155,6 +155,8 @@ Should everyone just work on what they want in quotes to work on?
 Does that create a lab?
 Building a graven prototype that demonstrates a unified vision (see Patterson's paper).
 
+Compete with the strengths of the school, don't compete with eth on chip vlsi, don't compete with kaist on random opt, leverage our unique strengths
+
 ### Patterson's Take
 
 Cite his article on research labs
@@ -519,3 +521,25 @@ Joonho's notes about research areas:
 >   - Another problem that can be solved is how do we pick the correct benchmarks to re-run after fixing the design. You probably don't want to run the entire benchmark suite after changing 2 lines of your RTL. This I have no clue on how to approach this. I should probably think about this after taking the formal class.
 >
 > -
+
+### Notes from SLICE Winter 2024 Retreat
+
+- Big little cores qos, power management, soft and hard errors
+- Thread synchronization primitives, we still communicate via memory, there is better option to do core to core?
+  - Cray machine had core shared regfile to share task details among cores via registers, not memory
+  - We have so much bandwidth on chip now but core to core bandwidth is still like 512 bit bus! Why is there this limitation? Can we lift it?
+
+- Need to use fpga for functional sim and then do detailed sim in software, use PCIe for bandwidth
+- Workloads and benchmarks are important, but hard to convince people, right now people still ask for dhrtstonr and coremark and other useless stuff like geekbench
+- Krste really likes power management work, build a taxonomy of prior syuff, lots of verif stuff to do, still many unknowns of wr could develop our own system
+- Perf models need to just show trends but they also need to capture the gradient correctly, perf models are valuable for fast iteration
+- This TidalSim stuff is good but you might be limited by the functional simulator throughout, use fpgas and then GPU for high batch size
+- Oh the fpga we can build many cores and many different cache and bp functional models that are warmed up all at the same time
+- We need better error heuristics for tidalsim, how can we more efficiently estimate the error for a given interval?
+- Krsts said we need to do dynamic simulation where the runtime behavior depends on timing behavior, we need to do actual tidalsim
+- For cool stuff, krste said a few things but I'm not that interested in that
+- Simulation is critical, krste thinks this is good to push on, need to keep pushing with accelerators and mmio and multicore
+- Make sure I add the class paper and the GitHub project link to the wiki
+- Trying to leverage RISC-V Android and browser benchmarks is critical but very difficult
+- Using profiling information from sampled simulation to drive black box Auto tuner optimizers, combine joonho's project and mine and graces project too
+- Power management integrated into tidalsim

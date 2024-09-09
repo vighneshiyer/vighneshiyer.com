@@ -54,11 +54,7 @@ insane spending: laptop, ipad + pencil, bose headphones, desktop machine, dev ma
 dessert delivery from nyc
 
 Trading interns Oreo bet
-4:47
-Lots of swarting
-4:47
-Swearing
-4:47
+Lots of swearing
 Very limited work blocks
 
 The culture here is very interesting, everyone swears a lot and it's completely encouraged
@@ -158,3 +154,19 @@ Hardcaml tooling in particular is bad, it is hard to believe that anyone is ok w
 Parent -> child 1 -> child 2. Child 2 runs forever but child 1 terminates at some point. When child 1 terminates, child 2 is not reparented but is instead killed. Similar issue may exist in SIM command, create test case
 Catching cdc is very poor in hardcaml, can we improve this? At the type level or even just post elaboration checking with waivers and sdc xdc generation with false paths and clock domains
 Functorize a function or a module or the 'a bring bits or signal for runtime simulation or deferred graph construction
+
+Places i wanted to visit a bit away from the city
+
+- Tuxedo trailhead, bear mountain from mta
+- Adirondack lake canoe
+- Catskill falls
+- Kaataskills falls
+- Brickneck ridge
+- Cold springs town
+- Beacon town, fire tower
+- Donut place in beacon
+- Blue note nyc
+- Philly
+- Montauk long island
+- Jones beach, long island
+- Rockaway beach, pier 11

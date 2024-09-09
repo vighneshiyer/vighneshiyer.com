@@ -31,3 +31,8 @@ slug = "riscv-summit-2023-review"
     - There is this: https://www.sifive.com/boards/hifive-pro-p550 but it isn't released yet
     - Yeah, why is it taking so long to get new boards for the new IPs: https://www.sifive.com/boards ???
     - Not many openings (https://www.sifive.com/careers), most in India or Taiwan
+
+- The imperas model is quite primitive. It doesn't support retirement groups for out of order and wide retirement pipes so designers have to manually destructive retire groups into multiple single inst retires. Also multi core consistent gecks don't really work, no support for consistency models and instruction interleaving order models
+- This is quite bad lol, but tbf we also don't have a way to verify multicores with spike trace comparison so ok it isn't that big of a deal
+- We can use consistency litmus tests and those give some additional confidence
+- They also expect the core to be isolated without caches for verification harness
