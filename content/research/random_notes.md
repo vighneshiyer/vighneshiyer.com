@@ -424,6 +424,20 @@ Things I would ask a good architect:
 ## Other Groups
 
 - Talk about Priyanka and her groups unified vision going towards common project, compilers, pl, rtl, arch, applications
+- https://stanfordaha.github.io/aha_tutorial/
+- Oh wow their tutorial is quite impressive at least on paper
+- You can see Priyanka's coherent vision
+- even still, it is fred + kunle + priyanka and they have a clear vision and coherent execution combining the strengths of their students
+- it is so far ahead of what we have
+- yeah it doesn't interest me as a domain, but that's besides the point right, it shows very clear vision and ability to compose a bunch of 'random' projects
+- they picked a very specific domain, and built all the right tools and integrated them tightly
+  - the chipyard + gemmini view of this is not so strong
+- yeah perhaps, but there are other groups working on sparse LA acceleration too - it's actually a popular domain
+  - when they build such a system, they are creating a baseline others will be forced to compare against
+  - it's actually similar to gemmini in that sense
+  - their thing is more fair than that - the custard compiler can target AVX and GPUs too
+- their methodology is actually more general than sparse LA to be fair - it is about the general process of creating a CGRA arch + generic mappers / compilers, there are other groups working on other domains that could adapt their flows
+  - all to say, i have much greater respect for this group of PIs than i did before
 
 ## Amazon Trainium Talk
 
