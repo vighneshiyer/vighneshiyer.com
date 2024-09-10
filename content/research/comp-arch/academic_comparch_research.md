@@ -451,6 +451,7 @@ From slice offsite notes:
   - reputation
   - infra work is rewarded and credited
   - detailed subdomains
+  - https://news.ycombinator.com/item?id=41478690 (alphaXiv: Open research discussion on top of arXiv (alphaxiv.org))
 
 - leveraging circuits work
   - power domains, power credits/tokens, chip-embeddable macromodels

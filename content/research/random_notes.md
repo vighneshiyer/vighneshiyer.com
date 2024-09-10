@@ -98,6 +98,139 @@ These are very high level ideas and scratch notes:
 - not sure how this MMIO gemmini thing works, seems like we shouldn't be hamstrung by issue bandwidth anymore... why are we still bottlenecked in this way with Vortex cores?
   - it seems like there is a lot of inefficiency to do coalescing when we statically know which cache lines to fetch
 
+- ASPLOS 2024
+- Doing a serious study of cgra vs gpu simt architecture wrt ppa and flexibility and programmability tradeoff analysis would be valuable, to what degree are you recreating a generic cPU core grid with cgra when you have to support slightly more dynamic applications. Consider the area efficiency too, consider compute kernels which don't have statically abalyxavle access patterns, so then we have to basically have a multicore or vector based predication..... So yeah, there is a strict tradeoff that we have to evaluate, the static schedule saves lots of power and area, but has hard limits that may make it area unviable on a real soc
+  - All of these talks in this session about compilers are so similar, they must be unifyable to some extent
+  - April 27, 2024
+  - Taylor series based co induction streams of transcendental functions for deriving rewrite rules
+    - Layer in between cas and compiler
+  - Xiangshan uses 20M inst simpoint and they run in full parallel, 10 checkpoints per spec benchmark, and with enough servers we can run in 5.5 hours, but normally 2 days
+  - A case against accelerators, consider the concrete robotics thing slam case and then talk about area efficiency of real socs
+
+- First principles thinking
+  - Ml principles don't build surrogate models
+
+- Things to look for
+  - Natural curiosity, hacker mentality, desire to write
+  - Broad scope of interests, generalist
+  - Strong programmer
+
+- Recent Trends in soc design and semiconductors, the hullabaloo about multicore and parallel shift hasnt happened, single core perf primacy, accelerator rich ecosystem, but mostly dark silicon, specialized datapaths. But single core is still the most critical! Show benchmark suites, and continued perf improvements, like wider cores, less bp mispredict penalty, better memory subsystems, better memory be and latency, better prefecthers, no signs of stopping any time soon, continued process scaling with better density
+  - The vast majority of stuff run on cloud or mobile or desktop is single threaded at most exploiting task level parallelism, not parallelism within one algorithm or application although concurrency is better exploited nowadays for task level parallalism
+  - This is the first motivation, micro optimization and workload specialization of cores
+  - Second motivation is the industry take on the next paradigm, no need to build and correlate models for models
+  - Final motivation is rtl first methodology which academics are the leaders in and can exploit to do meaningful research that can be trusted
+
+- Why do things break? Don't create fake benchmarks
+- Macros are critical for high perf design
+- Mobile vs server benchmark suites and core optimization or specialization
+
+- Need some background on prior work in comparing vliw vs scalable vector isaa or even packed simd
+- What are the tradeoffs that motivated the wide range of dlp implementations that you've covered? Why did that happen that way?
+- Scaling up the Saturn arch to data center
+- Need to show full stack for the final thing, need to show saturation of cores and rate matching via other scheduling
+
+- paper on having multiple orderings of code within a basic blocks, pldi paper maybe, reordering in memory, got a lot faster for specific uarch, this could reveal issues in BBV embedding
+
+- Simulate and capture time spent in critical paths that we can see vs other paths
+
+- The role of ml for simulation, don't learn surrogate functions, learn new representations
+  - But really we need to go back to first principles
+
+- DFI: Design for injection, a rtl design methodology to leverage sampled simulation
+
+- How does security fold into the slice lab if we don't even care about verification?
+- What is the value of building a full stack? What leverage does it give us?
+
+- Egraphs based compiler passes with global equivalence class opt and unified passes, global DB of area and power est
+
+SLICE Summer retreat 2024
+
+- Palladium asic
+- Sim in Intel, perf models are too slow in design timeframe
+- Should investigate post silicon validation but in our case there should be no mismatch and we don't have perf model, how do academics like us get involved in this area? Event trace from silicon
+- Design of a pristine thing from first principles and rethinking abstractions and even seemingly unimportant details in the pursuit of beauty and aesthetics is intrinsically valuable and the domain of academic research which is completely infeasible in industry even in research labs
+
+Things I would ask a good architect:
+
+- The next gen cuda, what's the next programming paradigm for parallel compute? Is there something on the horizon?
+- How specialized should architectures be? It seems that most ml accels are converging to a very similar arch
+- Can we generalize the mind the gap work a bit? The holy Grail is knowing the reuse and compute and communication limits of any given algorithm given a specific implementation but not the general class of algorithms eg sorting or some data structure
+- Hardware design languages, what is the future, what are the limits to adoption, why have hw languages failed to evolve like sw ones?
+- What is the opportunity for a startup with a radically different design methodology to overturn the cost issues of the big players?
+- What would you work if you were a pi in Berkeley with our students and infra and plenty of money to isolate you from other things
+- Power management on gpus, how will you deal with higher static power on gpus, how do you deal with data dependent power management
+- What is your true belief about llm for code gen for rtl design, arch, transpiration, and compiler gen
+- What if could redesign the kernel and app such that the app was the init process, there is no other processes, everything in user space, all threads are cooperative, how do interrupts work, what about kernel services, no process isolation
+- What if we did partha compute hierarchy thing, physically aware allocation of compute wrt data location, expose those apis to the user, remove this abstraction, what about how this changes programming model and OS design
+
+- Vortex verilog rtl to chisel via llm lifting
+- Also use formal equiv for checking
+
+- Starting from scratch
+- Rather than building on existing codebase
+- Reinventing the wheel
+
+- Modify spike like rivet with trace based mode, similar to gem5, just trying to make a point about these simulators in general not a specific implementation
+- Maintain some basic core state, bp, cache, rob ilp state, and that's it basically, hook with dramsim2
+- Chance to implement the ramp style functional and timing split
+
+- Another academic value: opening up or making transparent industry things like emulators
+
+- Benchmark duplication using oss
+- Why do things explode
+- Why is there tail latency
+- Can we mitigate with hw or os things
+- Microkernel vs monolithic kernel
+
+- Disprove trace driven sim first
+  - Then talk about exe sim
+  - Then about design for injection
+  - And then the full flow from dbt sim to ice emulation
+  - Ipc doesn't matter if it's spinning the scheduler thread, need app level metrics
+  - Dr traces induce 30x core slowdown and memory bw contention and cache pollution
+  - Fake results when fed into trace driven sim, io appears faster than reality
+
+- The new paradigm of profiling, simulation driven profiling, unlimited fidelity and zero perturbation, provide the ground truth
+- Design for injection, new paradigm of methodology across dbt simulators, isa simulators perf sim, and rtl sim with sw or emulation
+- More than just design for injection
+  - Consider ideal case molding for infinite bw or perfect branch prediction or prefetching. Can model these with a model acting ahead of the core or another rtl sim (oraclebp from xiangshan) that guides decisions of the slower instance. So this is basically decision injection and influence at runtime, not merely state injection at some point in time
+
+## Googling
+
+- Why is there ipc in the gem5 embedding? How do we handle dvfs of the trace itself?
+- Time based sampling vs inst based, embedding aggregation for soc, trace scheduler
+- Trace driven time sync error, scheduler error, inst based interval error, trace model mismatch
+
+- Culture of blameless criticism vs fake niceness
+- Driving others to do better always
+- Brutal focus on the outcome
+- Secrecy that actually matters, being proud of your team, team morale vs apple
+- Playing around, abusing the company benefits, unfocused work environment
+
+- Google isn't (that) special. Analyze Google workload traces against our open source workloads and compare, they are quite similar
+
+- Foreign languages
+- Google couples
+- Money focus of new people, pure exploitation
+- Segregation at apple, others not allowed at engineering cafes, serves a purpose beyond secrecy of projects, segregation doesn't exist here
+- I was wrong, it serves a valuable purpose, please forgive me jobs
+- The guest policy is another thing, compare Google and apple, guests degrade the environment doesn't feel cohesive anymore, makes you worry about others, moves focus outside of the workplace
+- Many bfs bring their gfs here to eat dinner, why don't the girls break up with them lmao, just absolutely insane
+- I thought there was intrinsic value in transparency, that is still true but only if there is nothing to protect
+- Mountain view vs Sunnyvale, white workers vs everyone else
+- Highly politicized company, many activist groups fighting for political influence over c suite and funding poured into their pet projects and human pets too
+- Musk is badly needed, vast swaths of this company can be eradicated and nothing would be worse off, but as long as human costs are small vs hardware and other costs, this is unlikely to happen
+- Search monopoly will surely be broken, ads on youtube will continue dominance, everything else is iffy, waymo was actually a good job
+- See the value of acquisitions when the internal company culture is so degraded and degenerate
+- Badge stupidity, temp for no reason, no access controls, renewal without notice of deactivation, same with bus schedule thing
+- At least the buses run frequently and stop in the right places, but they couldn't bother to capture who is using the buses and notify them when a change is in place
+- Google bikes are interesting, how are they not stolen more often? A relic of a past time
+- The perks are not what they used to be, abuse is rampant, apple has a point, free has no value at the point of use, paying even a nominal amount makes a massive difference in human behavior even with people of high integrity already
+
+- Trace driven sim is almost an oxymoron
+- Trace implies execution
+
 ## Hardware Modeling
 
 - An ir for event driven description of models that can be composed with a hardware primitive ir
@@ -175,6 +308,8 @@ These are very high level ideas and scratch notes:
 - Need to read the PhD thesis to figure out what exactly they are talking about, it seems the authors have invented a convoluted system and no longer know how to describe it
 - The paper does point out that design semantics are lost during "lowering" which is why we need to have many more primitives in the frontend that are understood natively by the backend
 
+- Can we use content hashed ir for capturing sub circuits in a hdl for loop such that we can identify the duplicate components right from the frontend and not have to extract in the backend and also not have to encode loop semantics in the IR or pass those semantics as annotations from the frontend
+
 ## Optimization
 
 - Talk about teramalloc, casting optimization as a rl game and comparisons to analog sizing optimization
@@ -182,6 +317,24 @@ These are very high level ideas and scratch notes:
 ## VLSI CAD
 
 - Also ask if khangs team tried to inject bad initial placements into the other algorithms and what the impact was
+
+- Openroad is so dumb working on vanilla flows that they will always lose out on
+  - They should work on incremental ism, global fragment cache for generic gate mapping, Boolean opt, and even tech specific mapping with clock constraints and physical awareness
+  - They can also work on better irs for semantics preservation and better qor vs verilog ingestion
+  - They can work on egraphs for a generic framework of optimization
+  - So many interesting things
+  - Unit testing for physical design iteration
+  - Apis for library like embedding of cad tools
+  - Opening up the database format natively, adding type safety for querying and modifying the database
+  - Vertical integration of synthesis and pnr and every aspect of the flow in a unified framework
+
+- GPU for rtl sim
+- Joules vs voltus vs powerpro
+
+- Mixed models in rtl somulation
+- Multiplier ir
+- Mixed abstractions design
+- Unifying primitives across models and design layers
 
 ## Quals / Thesis
 
@@ -206,6 +359,8 @@ These are very high level ideas and scratch notes:
 - Can we learn a performance model by getting a sunset of events from fn sim and synthesizing a new graph and then doing that iteratively to get the full graph
 
 - For asplos the event graph stuff would be nice, after the TidalSim paper planned for isca
+
+- I should talk about how the verification work inspired me to work on actually problems, bad benchmark, not a real issue
 
 ### Feedback on other qual
 
@@ -373,3 +528,38 @@ April 26, 2024
   - They want to build a rpc benchmark suite basically, just want to model rpc request response characteristics
   - Tanvir has quite an annoying speaking cadence
 - So the main issue with ml things is that they aren't learning any new representations. It is like training a ml model on a classical cv algorithm, it doesn't make sense
+
+## Professors
+
+- Daniel Jimenez
+- Daniel Sanchez
+- Krste
+- Scott beamer
+- Heiner Litz
+- Jose renau
+- Nam Sung Kim
+- Lieven
+- Trevor
+- Bora
+- Priyanka
+- Fred
+- Rachit
+- Onur mutlu
+- Partha, industry pi
+- Brucek and Mark ren
+- Martin maas
+- Kurt
+- Chris fletcher
+- Luca carloni
+- Vlad elad krste ion stoica as startup PIs
+- Gilbert bernstein
+- Chris batten
+- Adrian Sampson
+- Jrk
+- Patterson
+- jason lowe-power
+- james larus (manticore PI)
+- Christina D from CMU
+  - Actually from MIT
+
+- Compare and contrast the different prof types and associated research philosophy

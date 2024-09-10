@@ -57,6 +57,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Agner Fog: The microarchitecture of Intel, AMD, and VIA CPUs](https://www.agner.org/optimize/microarchitecture.pdf)
 - [Agner Fog: Software optimization resources](https://www.agner.org/optimize/)
 - [Apple Silicon CPU Optimization Guide](https://developer.apple.com/documentation/apple-silicon/cpu-optimization-guide)
+- [Nanjing University Department of Computer Science and Technology Computer System Basic Course Experiment 2024](https://nju--projectn-github-io.translate.goog/ics-pa-gitbook/ics2024/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
+  - [Github: Nanjing University Computer System Project Series - Build a computer system from scratch!](https://github.com/NJU-ProjectN)
 
 ## Research Philosophies
 
