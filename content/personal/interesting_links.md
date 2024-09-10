@@ -47,6 +47,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Tuesday @ 1130 ISA Shootout – a Comparison of RISC V, ARM, and x86 Chris Celio, UC Berkeley V2 (2016)](https://www.youtube.com/watch?v=Ii_pEXKKYUg)
 - [Berkeley EECS Annual Research Symposium BEARS 2023 - RISC V at Berkeley and Beyond - Krste Asanovic](https://www.youtube.com/watch?v=uThc5K0fErk)
 - [David Patterson - A New Golden Age for Computer Architecture: History, Challenges and Opportunities (2019)](https://www.youtube.com/watch?v=kFT54hO1X8M)
+- [View from the Top: Professor David Patterson](https://www.youtube.com/watch?v=TK6EPvrmcBk)
 
 ### Articles / Posts
 

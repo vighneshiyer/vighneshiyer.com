@@ -1,5 +1,9 @@
 Absolutely random notes about random research things.
 
+## Truly Random Things
+
+These are very high level ideas and scratch notes:
+
 - Fundamental papers on speeds and feeds? Anything? Besides roofline stuff
 - More holistic language level view, multi abstraction, vlsi collateral and capture, verification and modeling and incremental lowering, cosimulation models, ppa fast estimation and design guidance
 - Palladium, arch sim with palladium cores on chip, rtl sims opt, bridge reuse firesim and palladium and maybe bringup, dse, fpga overlay
@@ -12,6 +16,87 @@ Absolutely random notes about random research things.
 - Fpga and asic targeted rtl design language, syncreadmem is not a good abstraction for eg multiport rf with different latencies for each design and able to perform perf area tradeoff
 
 - Citations for motivation are unfounded, you need to make short motivation with reasoned arguments or else you propagate stupid motivations. You don't always need a citation to identify a problem or describe how a problem is typically solved. This is in the context of profiling
+
+- Magic box thinking
+  - Benchmark box
+  - Orthogonal program box
+  - Directly differentiable box
+  - Power trace box
+  - Workload extraction from silicon box
+  - Rtl elaboration speed box
+  - Rtl templates box with block diagram
+    - E.g. compression c code to boxes in diagram each with functional implementation and clear path to rtl implementation
+  - Guided rtl optimization box
+    - Identify inefficiencies and propose ways to fix them
+    - Which things to put effort into first in what order
+  - Incremental synthesis
+    - Power and area and critical path id very quickly, only do partial synthesis
+    - What are the characteristics of critical paths? Can we do a study?
+    - How hard can it be to build an estimating synthesis tool? Just wrap things physically and route between them and analyze a bunch of paths
+  - Silicon uarch trace extraction
+    - Model correlation, interleaving and dvfs, validation coverage
+    - In silicon state injection
+  - Coverpoint synthesis
+  - Semantic compression
+  - Chisel API uarch event marking
+
+- Leverage event graph as a model for the uarch, model extraction, can use unsupervised learning to learn missing timestamps
+- Think about attacking the abstraction stack from both sides. Using isa spec to generate simulator and using rtl to generate model, then using sampled simulation to tie them together
+
+- Create a unified diagram of all the things
+  - Emulator
+  - Post silicon and trace extraction
+  - Sampled simulation
+  - Full stack profiling
+  - New language and ir
+  - Consider all the magic boxes too
+  - Mixed abstraction simulation and language
+  - Benchmark extraction
+  - Incremental synthesis and elab and simulation compilation
+
+- Enumerate all slice projects and figure out who is working on them and what companies are funding them
+  - Integrate my research philosophy article here too
+  - Slice lab enumeration of projects and people, and categorization
+
+- The two axes of multidisciplinary collaboration
+  - one axis is cross-discipline (application focused) e.g. working with geneticists to accelerate some algorithm
+  - another axis is discipline-integration (integration / tooling / infra focused) e.g. working the PL and systems and compilers people to build a new HDL
+
+- Goals of research
+  - Doing something you can't do before
+  - Making something more beautiful, in the process doing new paradigms or new primitives and composition and systematic understanding, see stellar, exo, halide, calyx
+  - Doing something cool and awe inspiring
+  - Elucidating a concept or implementation that is opaque or proprietary
+
+- Teach by story
+  - Function implementation over hand written stimulus stuff, implement a cache model rather than hand stuff
+  - Unit test student functions and models
+
+- Tinygrad, gemmini isa, backend for rvv, ame extension
+
+- Fundamental exploration of why the ml Arch's have differed into 2 camps
+  - Vector fetch model and programmability
+  - How predictable are certain branches and source code correspondence and penalties
+
+- Can we apply egraphs to both hw compilers like firrtl as well as synthesis engines?
+  - It should enable very incremental flows
+
+- https://lwn.net/SubscriberLink/964735/8b795f23495af1d4/
+> The E-graph data structure represents this efficiently, by allowing two copies of the internal representation to share the nodes that they have in common, and to allow nodes in CLIF to refer to equivalency classes of other nodes, instead of referring to specific other nodes. This produces a dense structure in which adding an alternate form of a particular section of the program is cheap.
+- Can this be applied for a hw ir that's module free?
+- Or supports 'incremental' modules?
+
+- Spec mining is next!
+  - Fixed vs mixed width instruction encoding
+
+- Need to read the ramp gold paper, think back to krste's idea about using fpgas to drive sampled simulation running via rtl sw simulation
+
+- Why do higher abstractions lose out vs lower ones on ppa? Why are generators worse than point designs? How can we bridge the gap? Consider designing CPUs using LI design or GAAs or using pipelineC or other techniques, why are they worse?
+
+- We need to rethink pd methodology
+
+- not sure how this MMIO gemmini thing works, seems like we shouldn't be hamstrung by issue bandwidth anymore... why are we still bottlenecked in this way with Vortex cores?
+  - it seems like there is a lot of inefficiency to do coalescing when we statically know which cache lines to fetch
 
 ## Hardware Modeling
 
@@ -49,6 +134,23 @@ Absolutely random notes about random research things.
 
 - Trying to take sail model and generate spike or a very fast interpreter or even a dbt jit! Why is this not done already? We should generate models. Maybe have some way to specify undefined behavior specific to some target too. This would allow us to safely break away from spike and is good direction maybe for ansa to investigate
 
+- Combining repcut and essent
+- Profiling verilator on our cores and analyze coherency traffic versus Intel cores
+- Multi threaded verilator
+
+- Fame 5 simd, repcut, essent, khronos, unified compile to emulator
+  - Doing x prop correctly
+
+- Generating a simulator from semantics translation from rtl to x86, automated pass derivation
+
+- Direct asm emissions for rtl simulators and a c top level orchestrating them
+- Aggressive caching of tiny circuits using content addressed irs
+- Shared build cache for simulators
+- Why is vcs compile so much faster than verilator? We want direct bit code emission but how will we support platform agnostic simd?
+
+- Do what if analysis at rtl level, what are the true throughout bottlenecks of the web apps now days?
+- How do we do this accurately and efficiently in rtl sim and fpga sim? Can we avoid dpi overhead and annoyances
+
 ## HDLs
 
 - Rosetta code for hdls, Systolic arrays
@@ -59,6 +161,20 @@ Absolutely random notes about random research things.
 
 - Unify host language for hdl and testbench and system software language, it would be ideal or just find a way to make ffi or mixed language stuff easy
 
+- Pitch to PLARCH audience
+  - You're good at defining semantics and making them clear
+  - We're good at knowing what matters and would help us
+  - Nested multi abstraction
+  - Hls top vs rtl top and nested tops
+
+- Ability to introspect on subtrees of the design that are already elaborated to guide elaboration and transformation at the higher level
+- Ability for subtrees to introspect the higher level model during generation
+- Ability to change or transform a subtree generation process without changing the original source code, guided by the higher level model
+- The paper is too vague wrt how their meta model isn't just something described as another edsl on top of their rtl level abstraction edsl
+- Having a behavioral layer of chisel is interesting, there are inferred hw structures like width inference or ram port inference or especially mux inference, having a purely structural layer that is translated into in the frontend itself is interesting (from the parts of the design written in the behavioral layer)
+- Need to read the PhD thesis to figure out what exactly they are talking about, it seems the authors have invented a convoluted system and no longer know how to describe it
+- The paper does point out that design semantics are lost during "lowering" which is why we need to have many more primitives in the frontend that are understood natively by the backend
+
 ## Optimization
 
 - Talk about teramalloc, casting optimization as a rl game and comparisons to analog sizing optimization
@@ -67,7 +183,7 @@ Absolutely random notes about random research things.
 
 - Also ask if khangs team tried to inject bad initial placements into the other algorithms and what the impact was
 
-## Quals
+## Quals / Thesis
 
 - End of Moore's law end of dennard scaling so we have heterogeneous socs with accelerators and critically specialized Microarchitectures even multiple uarch on the same chip for different application and workload characteristics
 - See new apple chips with pcore encore, but also other Qualcomm chip with 3 different cpu variants
@@ -79,6 +195,32 @@ Absolutely random notes about random research things.
 
 - Tell a story! Start with concrete example and motivate accordingly.
 - I have idea, do impl in chipyard, eval is hard! Then uarch sims, but show inaccuracy, then show sampled simulation idea for rtl sim, then how does that work, then let's try a prototype, then where does error come from? Look at perf metrics, then generalize the injection harness, then make checkpointing robust, then how about streaming,...
+
+- Begin to write my thesis
+  - Very detailed and personally driven with examples on arch simulation, analyze all the papers in the area
+  - Use latex book template then migrate to usual dept template
+  - Synthesizing fn simulators, see slides
+  - Pre compile basic blocks from riscv into C or llvm bitcode and then add instrumentation, or do this dynamically, this seems ideal! And still maintains all the fidelity we want
+  - Look at other people's thesis who did this work related to simulation
+
+- Can we learn a performance model by getting a sunset of events from fn sim and synthesizing a new graph and then doing that iteratively to get the full graph
+
+- For asplos the event graph stuff would be nice, after the TidalSim paper planned for isca
+
+### Feedback on other qual
+
+- Your vision has to be clear in the first few slides, what is your vision?
+- Make the big pitch before getting into the weeds
+- It's easy to say that these things are taxes (system and data center) but to what degree are these essential elements of the workload?
+- If memory bandwidth is the bottleneck here then how can chaining improve aggregate performance? Can the CPUs do things while the acc are doing their thing?
+- You start off taking about database operators and accelerating them but then you talk about random stuff unrelated to databases
+- It appears that your taxonomy of chain accelerators doesn't include the most classic DSP pipelines, also they seem to move from most flexible to least flexible, how do each of these differ, write a concrete comparison table
+- The proposal comes way too late, no clue what he's talking about until then
+- What are the CPUs doing while they have dispatches a fully async task graph to the acc complex? Can they do useful work or is the work they accept bounded by soc memory bandwidth anyways?
+- How can we get a number for the size of a database scan operation? The size is unknown at compile time?
+  - Consider the case when you segment memory into a cached and uncached region where a scratchpad can act as a dram cache bypassing coherency, how does it compare?
+- The specialize core as acc is insane, consider how that would change the programming model! You have to migrate state!
+  - Even if you have interstitial code and you have a core on the task graph to run that computation wont that bottleneck the entire graph execution?
 
 ## Cache Design
 
@@ -92,3 +234,142 @@ Absolutely random notes about random research things.
 - Abstracting away the bus protocol or message hierarchy from a more baseline set of adts, can we unify tilelink axi4+ace and chi?
 - Can we design caches using hls or other high level methodology for it's state machines? Can we do verification and design more efficiently?
 - Generating caches based on formalization of a coherency spec, also generating litmus tests
+
+## Parallel Programming Projects
+
+- Optimizing nic and core interface
+- Linear algebra with many gemmini
+- Chisel parallel elaboration
+- Livehd parallel compilation to verilog, ir pass parallelism
+- Coarsifying rtl to higher levels models to use to build large data centers simulations with these coarse models but using rtl as the source of truth
+- Extend exo for multicore
+- Parallel algorithm mapping on het for system
+  - Use existing Qualcomm chipset
+- Sat or smt sampling parallelization
+  - Using many cores for sampling for hypercompressbench
+
+## Luca Carloni's Talk
+
+- Luca claims that we want to integrate others components in other languages or spec platforms, I'm not sure this is valuable from industry perspective or academia in fact
+- Not having things in common language forces awkward interface boundaries and not able to use common tools that depend on language level features, or can cause stripping of semantics
+- The chip appears to have very regularly sized tiles, is that the actual physical tile?
+- The programming model is interesting, it does seem to nicely integrate with the user space software stack, the esp primitives seem simple and sufficient
+- Of course there is some overhead due to io plane based programming and lack of core coupling
+- The "services" provided to an accelerator tile are interesting, we also would like similar things, when it comes to dma at least and maybe a llc coherent acc local cache
+- Their dvfs controller as a service is pretty cool, I like the general idea of placing hard abstractions on module or tile boundaries
+- The clean integration of a tlb and the os technique to program it when the acc is dispatched is copl
+- They did need to do some kernel modifications, but that seems reasonable enough
+- They have a very wide parallel off chip bus for dram fpga bridge
+- 64 bit bus! And they have 4 of them
+- Token based power management scheme, tokens are basically credits for power consumption, they are used by each tile and the pm controller to throttle
+- They can dynamically activate more llc and io tiles on the fly at runtime, pretty cool
+- Scratchpad tiles can be dynamically used as llc storage! At runtime they can activate and deactivate these as they measure the noc traffic
+- They can support shared memory cross acc access as well as acc to acc direct dma, the dispatch is via some kind of descriptor that is kicked off by the host cote
+
+## Other Groups
+
+- Talk about Priyanka and her groups unified vision going towards common project, compilers, pl, rtl, arch, applications
+
+## Amazon Trainium Talk
+
+- They use heavily cisc vliw arch, instructions take hundreds of cycles, they don't do multicore RISC-V, very specialized hardware
+- The control flow has a lot of flexibility without using classical control cpu, instead there is some microcoded compiler programmed control engine
+- Ability to add new instructions over time that chains things or does some complex control stuff, programmed during chip boot or per network
+- Custom operator and activation functions or data types can be supported by the vector unit, nearly arbitrary pytorch or jax can be targeted to this unit
+- They have insane amount of flexibility wrt data types, they have support for things like 3-bit precision using their vector engine, not sure how granular it actually is
+
+## PLARCH Talk Notes
+
+- Never say "we want"
+- Instead we are making an argument about what's important to work on
+- It's not a demand, just something worth motivating
+
+- Don't say that these synthesis algorithms take up too much time lol, that's just wrong
+- Don't talk about these things as if they are done
+- These are proposals for things that should be enabled by future research
+- Image size and number mapping to the slides
+- Firrtl, talk about circt, core part of circt
+- Then add another circt slide
+- Remove chipyard detail slides
+- Highlight results of chipyard tutorials, highlight the impact, lots of people, lots of citations, take from sagar's job talk, talk about the massive soc that people build and simulate during the tutorial
+- Make the claim that the rest of the talk is not related to chipyard
+- The claims in the demo are applicable to all soc design frameworks
+- What is the takeaway from the demo, present it up front before going into the demo, it's cool to integrate all this ip, but there is lots of friction involved
+- Make it clear that with a better example, changing a tiny thing forces entire recompilation, use a diagram
+- For the incremental stuff make the diagram clearer
+- For mixed abstractions mention prior work, systemc virtual platform, cocotb, switchboard zeroasic, say that they are all clunky, we need first class support
+- Firesim also does this, quite clunky, mixed model simulation
+- Ending is abrupt
+- Spec first vs design first people need to meet in the middle
+- We have more need to build things vs working at the spec level and being limited by the refinement strategies
+
+## Google Simulation Summit
+
+April 26, 2024
+
+- Baris and kan are going first
+  - A quite vague thing...
+  - Google traces, memory and inst traces, branch info, dynamiorio format, per thread data
+  - They reconstruct per core traces from to study thread switch behaviors, 1m inst context switches, so quite a small quanta, so prefecthers aren't warm
+  - They do reg dependency analysis, they perform limit studies with ideal caches, figure out how good the traces could be
+  - They analyze the working set size and compare against cache capacities
+  - They also have prefecthers models and determine that they aren't that effective
+  - They do pca on the traces to only look at a subset of traces, embedding unknown
+  - Google traces gives branch info to simulate branch predictor, and inst cache via instructions, but no microop info so the decoder state is hard to model, micro-ops cache makes 10 percent change in ipc, register dependency are not known, we don't know
+    - We need microop cache simulation, num of uops per induction, and execution cycle of each uop
+  - Also add instruction dependencies, add reg info in the trace, at least give a dep graph, current form doesn't know anything about scheduling decisions
+  - Also need accurate simulation of the LLC, hard to simulate, hard to simulate coherency, can we partition the simulation? Use a coarse LLC model maybe
+  - Simulation throughout is an issue since each core can't run on a host core for parallelism, partitioning the LLC could help but need to compensate for coherency and sharing overheads
+  - Currently the traces don't have info about what is running, kernel code and idle time arent captured, don't know exact start and end of each thread execution
+  - Some physical cores have different ipc and then the traces come out of alignment
+    - Dont know what this means, maybe related to LLC modeling, of course cores run at different ipcs
+  - Need to record inter thread dependencies, mutex and barriers
+  - Need to record dependencies of a thread when it is unloaded, like disk or network io, hard to optimize scheduling policies, why was a thread swapped out?
+  - Number of uops, inst dependency graph, high accuracy timestamp, inter thread dep, reason to swap thread
+  - Simulator need to support modern uop frontend, multi core LLC sim, implement dependency and synchronization from traces
+- Gem5 talk time!!!!
+  - Gem5 is slow, they know
+  - Gem5 is frontend bound, much faster on m1 vs xeon lol
+  - 1.3x speedup doing 2 threads running 4 core sim, doing parallel dispatch of multiple events seen on the same tick
+- Ok now the Google simulation needs and challenges talk, this should be good hopefully
+  - 3 netinfra people, 1 chip, 1 deep mind
+  - Alon Bernstein, netinfra
+  - Simulator results must be believed, what if scenarios, codev of sw before hw is ready, sim for regressions, tco simulation is also important
+  - Simulator needs to be integrated into the sw validation lifecycle... But why? Don't we just have staging hardware?
+  - Isekai packet level network simulator, rdma falcon architecture
+  - Built on OMnest, OMNet++, built traffic gen, nic ,switch model, qos, can simulate 1 Jupiter super block, integrated into artra-sim to model ml workloads communication
+    - They needed to correlate their simulator vs rtl, they traded off accuracy for time, they neglected caching effects on the host, retransmission, congestion were modeled
+    - Hard to scale simulator for larger networks, maybe we can parallelize the event queue, not sure, they can only simulate 1-2k machines at reasonable speeds, at packet level
+    - For workloads, they simulated network traffic patterns and representative workloads
+  - Simulator is in critical path to time to market, can't build bespoke sims, need a pluggable simulator infra to evaluate end to end app acceleration potential
+  - Can we go low to high, ultra detailed and then coarsen based on what we care about, rather than the opposite, where we make things fine where we see errors vs reallty
+  - Accuracy on absolute vs relative, the sensitivity must be right! The gradient! Not just relative
+  - Making sure simpoint samples and representative is critical
+- https://mlcommons.org/working-groups/research/chakra/
+  - Sophia asked about industry perf models and how academics can engage?
+- Now for the mlsim talk
+  - They want to do perf prediction model that's faster than a regular uarch model
+  - They want to train on a few Arch's and then generize... Somehow
+  - They assume a perfect front end, no bp or icache, learn dynamics about the backend of the pipeline
+  - It's kind of stupid
+  - Too simplistic, doesn't allow you to make tradeoff decisions
+  - They do what if analysis by taking oracles of all components except the one under sweep
+  - Pretty good idea to use these oracle models to identify per interval throughout constraints
+  - Need to use time series into compact features that don't grow with the size of problem, turn time series into distributions and use those as the embedding for a program
+  - So they don't consider the frontend, so this does seem off, like what is their reference number? Is it gem5 sim of a Google traces? How is the cache state warmed up? This is very odd they are using a custom m trace based cycle exact simulator
+  - Their diversity of training data is quite suspect, most behaviors across 100k insts is quite averaged, not hard to predict
+- Time for Trevor's talk
+  - Excited
+  - He has had many highly cited papers
+  - See his ispass papers
+  - Time based sampling is too generic, we can do workload specific methodologies
+  - Looppoint and barrier point are quite interesting, use something higher abstractions vs BB, like loops
+  - Pacsim contains logic for power modeling on soc and dynamic hw and sw, don't want any up front analysis like simpoint
+  - Simulation regions transition between functional and detailed simulation
+  - Also integrates the impact of dvfs
+  - Very good insight, streaming sampled simulation, integration of power
+  - We can't do O(1) simulation, because dependencies of power on previous region
+- Ok time for micro services talk
+  - They want to build a rpc benchmark suite basically, just want to model rpc request response characteristics
+  - Tanvir has quite an annoying speaking cadence
+- So the main issue with ml things is that they aren't learning any new representations. It is like training a ml model on a classical cv algorithm, it doesn't make sense
