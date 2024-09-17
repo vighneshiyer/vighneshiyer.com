@@ -79,21 +79,27 @@ On the computer architecture side, the projects include:
 
 ## A Reflection on Successful Research Labs
 
+- Systems labs
+  - AMPLab (2011-2017) (Big Data)
+  - RISELab (2017-2022) (more Big Data + Cloud + ML Systems)
+  - SkyLab (2022-present) (Inter-Cloud Brokers + ML Systems)
+
 ### Whitepapers
 
-Other comparch whitepapers:
-
-- Patterson (2008) whitepaper: The Future of Computer Architecture: https://cra.org/ccc/wp-content/uploads/sites/2/2015/05/Computer_Architecture.pdf
-- Arch2030: A Vision of Computer Architecture Research over the Next 15 Years: https://cra.org/ccc/wp-content/uploads/sites/2/2016/12/15447-CCC-ARCH-2030-report-v3-1-1.pdf
-    - From here: https://cra.org/ccc/resources/ccc-led-whitepapers/
-
-Systems whitepapers:
-
-- A Berkeley View of Systems Challenges for AI (2017, Ion Stoica): https://sands.kaust.edu.sa/classes/CS290E/F19/papers/berkeley-sysai.pdf
-- Above the Clouds: A Berkeley View of Cloud Computing: https://cs.lbl.gov/news-media/news/news-archive/2009/above-the-clouds-a-berkeley-view-of-cloud-computing/
-- From Cloud Computing to Sky Computing (2021, Ion Stoica): https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf
-
-- https://joey0320.github.io/articles/research-on-domain-specific-architectures.html
+- [RAMP: Research Accelerator for Multiple Processors - A Community Vision for a Shared Experimental Parallel HW/SW Platform (2005, pre-PARLab)](http://people.eecs.berkeley.edu/~krste/papers/ramp-TR-05-1412.pdf)
+- [The Landscape of Parallel Computing Research: A View from Berkeley (2006, pre-PARLab)](https://people.eecs.berkeley.edu/~krste/papers/BerkeleyView.pdf)
+- [The Future of Computer Architecture (2008, Patterson)](https://cra.org/ccc/wp-content/uploads/sites/2/2015/05/Computer_Architecture.pdf)
+- [The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008, PARLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf)
+- [Above the Clouds: A Berkeley View of Cloud Computing (2009, pre-AMPLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf)
+- [SEJITS: Getting Productivity and Performance With Selective Embedded JIT Specialization (2010, PARLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-23.html)
+- [Instruction Sets Should Be Free: The Case For RISC-V (2014, Krste and Patterson)](http://people.eecs.berkeley.edu/~krste/papers/EECS-2014-146.pdf)
+- [Arch2030: A Vision of Computer Architecture Research over the Next 15 Years (2016, Luis Ceze and Mark Hill and Thomas Wenisch)](https://cra.org/ccc/wp-content/uploads/sites/2/2016/12/15447-CCC-ARCH-2030-report-v3-1-1.pdf)
+- [The Rocket Chip Generator (2016, Krste)](http://people.eecs.berkeley.edu/~krste/papers/EECS-2016-17.pdf)
+- [A Berkeley View of Systems Challenges for AI (2017, RISELab)](https://arxiv.org/abs/1712.05855)
+- [Cloud Programming Simplified: A Berkeley View on Serverless Computing (2019, RISELab)](https://arxiv.org/abs/1902.03383)
+- [A New Golden Age for Computer Architecture (2019, Hennessy and Patterson)](https://cacm.acm.org/research/a-new-golden-age-for-computer-architecture/)
+- [From Cloud Computing to Sky Computing (2021, SkyLab)](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf)
+- [The Sky Above The Clouds (2022, SkyLab)](https://arxiv.org/abs/2205.07147)
 
 The CS department at Berkeley has a history of writing whitepapers that broadly examine an area of computer science,
 This (PAR Lab) was the last architecture lab whitepaper. what happened? are we not confident placing bets anymore?
@@ -104,6 +110,9 @@ Cite Simon peyton jones
 Cite Bezos on Amazon memos, writing forces clarity
 
 Harrison on first principles thinking rather than iteration
+
+- https://joey0320.github.io/articles/research-on-domain-specific-architectures.html
+
 
 ### Making Bets and Picking Fights
 
@@ -160,7 +169,7 @@ Compete with the strengths of the school, don't compete with eth on chip vlsi, d
 ### Patterson's Take
 
 Cite his article on research labs
-Point to Dave Patersons how to build a research center
+Point to Dave Patersons how to build a bad research center (https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
 
 ## Industry vs Academia
 
