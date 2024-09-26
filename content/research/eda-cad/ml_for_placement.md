@@ -139,9 +139,9 @@ The author of the rebuttal was fired by Google, but that's irrelevant - let's ex
 
 ### The Rebuttal
 
-Since the proliferation of ML in various problem domains, ML practioners have often claimed a benefit using their approach, while not
-RL papers haven't evaluated themselves against reasonable baselines, and when properly compared against a good baseline, the RL method usually comes out much worse in terms of compute efficiency.
-This rebuttal claims that when more traditional mixed placement algorithms are unconstrained and compared to the RL method - they come out ahead in terms of QoR, runtime, and required compute.
+Since the proliferation of applied ML in various problem domains, ML practitioners have often claimed an advantage, while not evaluating the SOTA algorithm.
+In particular, RL papers don't always evaluate themselves against reasonable baselines, and when compared against a good baseline, the RL method comes out worse wrt compute efficiency.
+This rebuttal claims that when traditional mixed placement algorithms are unconstrained and compared against the RL method, they come out ahead in terms of QoR, runtime, and required compute.
 
 The rebuttal starts off by clarifying the methodology used in the RL paper, pointing out 3 important facts:
 

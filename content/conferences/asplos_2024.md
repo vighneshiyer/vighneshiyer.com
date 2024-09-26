@@ -40,4 +40,10 @@ slug = "asplos-2024"
   - We argue that these people and their insane and unreasonable hypothetical attack vectors should be ignored for the sake of the planet and human survival
 </callout>
 
+- many new students who want arch research do what
+  - sustainable compute
+  - LLM for xyz
+  - carbon
+  - probably it's just dark era
+
 ## ASPLOS Best Papers (In My Opinion)

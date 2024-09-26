@@ -11,8 +11,8 @@ In the talk, I discussed the recent history of computer architecture research la
 This article is *my opinion* on what an academic computer architecture research agenda would look like and why.
 
 ## The Recent History of Computer Architecture Research at Berkeley
-
 In the talk, I began with an overview of what research has been accomplished at Berkeley over the past two decades, its impact, and what it can teach us about what's worth pursuing in the future.
+
 
 Labs in Berkeley run in 5 year cycles.
 Each lab begins with a problem statement or observation, some high level goals, and then operates for 5 years before a new lab is christened.
@@ -93,6 +93,7 @@ On the computer architecture side, the projects include:
 - [Above the Clouds: A Berkeley View of Cloud Computing (2009, pre-AMPLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf)
 - [SEJITS: Getting Productivity and Performance With Selective Embedded JIT Specialization (2010, PARLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-23.html)
 - [Instruction Sets Should Be Free: The Case For RISC-V (2014, Krste and Patterson)](http://people.eecs.berkeley.edu/~krste/papers/EECS-2014-146.pdf)
+- [FireBox: A Hardware Building Block for 2020 Warehouse-Scale Computers (2014, Krste)](https://www.usenix.org/conference/fast14/technical-sessions/presentation/keynote)
 - [Arch2030: A Vision of Computer Architecture Research over the Next 15 Years (2016, Luis Ceze and Mark Hill and Thomas Wenisch)](https://cra.org/ccc/wp-content/uploads/sites/2/2016/12/15447-CCC-ARCH-2030-report-v3-1-1.pdf)
 - [The Rocket Chip Generator (2016, Krste)](http://people.eecs.berkeley.edu/~krste/papers/EECS-2016-17.pdf)
 - [A Berkeley View of Systems Challenges for AI (2017, RISELab)](https://arxiv.org/abs/1712.05855)
@@ -100,6 +101,8 @@ On the computer architecture side, the projects include:
 - [A New Golden Age for Computer Architecture (2019, Hennessy and Patterson)](https://cacm.acm.org/research/a-new-golden-age-for-computer-architecture/)
 - [From Cloud Computing to Sky Computing (2021, SkyLab)](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf)
 - [The Sky Above The Clouds (2022, SkyLab)](https://arxiv.org/abs/2205.07147)
+- [AHA: An Agile Approach to the Design of Coarse-Grained Reconfigurable Accelerators and Compilers (2022, Stanford)](http://theory.stanford.edu/~barrett/pubs/KMS+22.pdf)
+- [Portal: Portable Accelerated Learning (2024, Stanford)](https://portal.stanford.edu/portal-whitepaper-short.pdf)
 
 The CS department at Berkeley has a history of writing whitepapers that broadly examine an area of computer science,
 This (PAR Lab) was the last architecture lab whitepaper. what happened? are we not confident placing bets anymore?
@@ -232,6 +235,11 @@ look at past industry feedback from retreats too
 
 - Priyanka's group - unified vision going towards common project (a specialized architecture for sparse tensor algebra) - unifying work across discplines (horizontally, NOT vertically) in compilers, PL, RTL, Arch, applications, PD/VLSI.
 
+- https://news.ycombinator.com/item?id=41547378
+  - this entire project was driven by a very unique and ambitious research vision
+  - lots of impressive work came together to make it possible
+  - Michigan Micro Mote M3
+
 ### My Vision
 
 If I could lead a lab of 5-10 students and had complete directional control, what areas would I hit, how would I allocate resources, and what paper/research targets would I want to hit?
@@ -319,6 +327,10 @@ Consider the cache generator project - all the things that need to slot into pla
     - DRAM MC/PHY, various IO things (PCIe, CXL)
     - GPU (large-scale SIMD)
     - GGRA (MIMD / streaming / dataflow architectures)
+- Precise exceptions
+  - We rely on them for many things (correct resumption from a trap / preemption / interrupt / page fault for one)
+  - If we didn't have to rely on them, how much PPA benefit can we really extract if all/some exceptions were imprecise?
+  - http://www.cs.yale.edu/homes/abhishek/gupta-isca23.pdf
 
 ### Workload Analysis and Kernel Extraction
 
@@ -553,3 +565,10 @@ Joonho's notes about research areas:
 - Trying to leverage RISC-V Android and browser benchmarks is critical but very difficult
 - Using profiling information from sampled simulation to drive black box Auto tuner optimizers, combine joonho's project and mine and graces project too
 - Power management integrated into tidalsim
+
+- https://wiki.eecs.berkeley.edu/dreamer/Main/Meetings
+- https://parlab.eecs.berkeley.edu/sites/all/parlab/files/ramp_gold_-_jan_09_-parlab_retreat.pdf
+- https://slideplayer.com/slide/14477349/
+- https://web.archive.org/web/20230305000019/http://ramp.eecs.berkeley.edu/
+- https://carrv.github.io/2017/slides/asanovic-riscv-research.pdf
+- https://people.eecs.berkeley.edu/~krste/papers/ramp-TR-05-1412.pdf
