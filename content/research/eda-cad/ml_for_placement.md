@@ -139,8 +139,8 @@ The author of the rebuttal was fired by Google, but that's irrelevant - let's ex
 
 ### The Rebuttal
 
-Since the proliferation of applied ML in various problem domains, ML practitioners have often claimed an advantage, while not evaluating the SOTA algorithm.
-In particular, RL papers don't always evaluate themselves against reasonable baselines, and when compared against a good baseline, the RL method comes out worse wrt compute efficiency.
+Since the proliferation of ML in various problem domains, ML practitioners have often claimed an advantage of their technique, while not fairly evaluating against the SOTA algorithm of that domain.
+In particular, RL papers don't always evaluate themselves against reasonable baselines, and when compared against a good baseline, the RL method fares poorly or at least comparably to existing algorithms.
 This rebuttal claims that when traditional mixed placement algorithms are unconstrained and compared against the RL method, they come out ahead in terms of QoR, runtime, and required compute.
 
 The rebuttal starts off by clarifying the methodology used in the RL paper, pointing out 3 important facts:
@@ -369,3 +369,9 @@ I think it is obvious who is in the right here.
 This is something interesting I had not noticed before.
 There are two people (Sungmin Bae, Anand Babu) whose names appear on the arXiv preprint, but not on the Nature paper.
 These are clearly two people of high integrity and intelligence.
+
+## One More Thing
+
+https://news.ycombinator.com/item?id=41672110
+https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/
+https://www.nature.com/articles/s41586-024-08032-5

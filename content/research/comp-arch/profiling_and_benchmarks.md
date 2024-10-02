@@ -8,7 +8,7 @@ slug = "profiling-tools-and-benchmark-suites"
 This is my personal enumeration of:
 
 - Profiling tools, papers, and case studies where they might be useful
-    - + Papers and blog posts that discuss bottlenecks or inefficiencies in existing systems (applications, runtimes, and OSes)
+    - Papers and blog posts that discuss bottlenecks or inefficiencies in existing systems (applications, runtimes, and OSes)
 - Benchmarks used for microarchitectural and system-level optimization
 
 ## Benchmark Suites
@@ -18,12 +18,16 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 
 ### Microbenchmarks
 
-- Dhrystone
-- Coremark
+- Dhrystone (baremetal)
+- Coremark (baremetal / Linux)
+- [multichase](https://github.com/google/multichase) (Linux)
+- [lmbench](https://github.com/intel/lmbench) (Linux)
+- [STREAM: Sustainable Memory Bandwidth in High Performance Computers](https://www.cs.virginia.edu/stream/) (Linux)
 
 ### Vectors
 
 - [Swan](https://github.com/arkhadem/Swan) (vector benchmarks for mobile processors written with ARM NEON intrinsics)
+- [rvv-bench](https://github.com/camel-cdr/rvv-bench)
 
 ### Embedded
 
@@ -33,7 +37,7 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 ### Desktop
 
 - SPEC (supposedly)
-- BrowserBench 2, 3.0
+- BrowserBench 2, Speedometer 3.0
 
 ### HPC
 
@@ -53,6 +57,8 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
     - A CS294 class project then took the target program binary and its required shared objects from the Docker filesystem and placed them into the buildroot rootfs
 - [Renaissance](https://github.com/renaissance-benchmarks/renaissance/)
     - JVM benchmarks in Big Data, ML, and FP
+- [distbench](https://github.com/google/distbench)
+  - RPCs / networking stacks
 
 #### FaaS
 
