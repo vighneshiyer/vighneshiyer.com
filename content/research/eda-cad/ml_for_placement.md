@@ -7,44 +7,43 @@ aliases = ["misc/ml-for-placement"]
 ## Background on Chip Placement
 
 Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal (do not violate any DRCs, snap to a grid, no overlaps) and feasible (routing is likely to succeed with no overlapping wires and a DRC clean layout).
-Traditionally, hard macro placement is done manually, while standard cell placement is done automatically by the PnR tool.
-Hard macros, such as SRAMs and other hard IP blocks (e.g. PLLs, PHYs), need to be placed with knowledge of the pin locations to ensure good routability.
-Since the number of hard macros per RTL unit is usually small (under 100) and their placement is critical, manual placement is seen as reasonable.
+Traditionally, hard macro placement is done manually, while standard cell placement is done automatically by the PnR (place-and-route) tool.
+Hard macros, such as SRAMs and other hard IP blocks (e.g. PLLs, PHYs), need to be placed with knowledge of their pin locations to ensure good routability.
+Since the number of hard macros per hierarchical block is usually small (under 100) and their placement is critical, manual placement is seen as reasonable.
 
 ### Placement Metrics
 
 **Question**: How can we calculate the quality of a proposed macro and standard cell placement?
 
-The most accurate way is to take that placement, run the routing algorithm to connect the macros and standard cells, and compute the metrics related to QoR (quality of results) using the CAD tools.
+The most accurate way is to take that placement, run the VLSI flow to completion (clock tree synthesis, routing all nets), and compute the QoR (quality of results) metrics.
 The most important metrics are:
 
-- Total Area (in µm²)
-- Utilization / Density (proportion of stdcells vs filler/tap/cap cells per unit area) (~0.7 is considered an upper limit)
+- Total area (in µm²)
+- Utilization / density (the proportion of standard cells/macros vs filler/tap/cap cells per unit area) (~70% is considered an upper limit)
 - Number of DRC violations
 - Number of LVS violations (such as shorts)
 - TNS (total negative slack), WNS (worst negative slack) (both ideally zero)
 - Worst case IR drop
-- Power draw when running dynamic stimulus
-<!--- Worst case clock skew / jitter-->
+<!-- - Power draw when running dynamic stimulus -->
+<!-- - Worst case clock skew / jitter -->
 
-Computing these metrics is time consuming, often taking 6+ hours for routing to complete on medium-sized RTL blocks, and many more hours to run DRC, LVS, rail analysis, and power simulation.
+Computing these metrics is time consuming, since it often takes 6+ hours to run routing on even small RTL blocks, and many more hours to run DRC, LVS, rail analysis, and power simulation.
 
 Therefore, the placement algorithm cannot run routing on every proposed placement.
-Instead, it uses a proprietary *proxy metric* that *correlates* to the metrics above.
-It is critical that any proxy metric correlates with the final metric since it controls what the placer determines is an optimal placement (with respect to other proposed placements).
+Instead, it must compute a *proxy metric* while running placement, that (hopefully) *correlates* to the final QoR metrics above.
+It is critical that the proxy metric correlates with the final QoR, since it should guide the placement algorithm to an optimal placement.
 
 There are many proxy metrics including:
 
-- Wirelength (point to point routing, Manhattan distance)
-- Utilization
-- Congestion (an approximation of the number of overlapping routes)
+- Estimated wirelength (e.g. HPWL = half-perimeter wirelength)
+- Estimated congestion (a heuristic of the density of naively overlapping routes)
 
 ### Placement Algorithms
 
 Placement algorithms have been studied for many decades and there are many variations; I don't know much about the inner workings of these algorithms.
-At a high-level the algorithm is usually split into two parts: coarse placement and detailed placement.
+At a high-level the algorithm is split into two parts: coarse placement and detailed placement.
 
-Trying to place each hard macro and stdcell individually is not viable since there are often *millions* of instances to place.
+Trying to place each hard macro and standard cell individually is not viable since there are often *millions* of instances to place.
 So, as a first step, the placer will group standard cells, based on a min-cut clustering algorithm, into a small number of clusters (usually around ~1k).
 These clusters of stdcells are called soft macros.
 
@@ -56,7 +55,7 @@ Finally, during *detailed placement*, the clusters of standard cells are explode
 
 Modern EDA CAD placement algorithms have some additional features.
 For one, they constantly track the proxy metrics as they make placement decisions to avoid exploring bad placements.
-Modern synthesis is placement-aware and will come up with a standard cell floorplan as its deciding what PDK cells to use considering the timing constraints (see [Synopsys' overview of "Physical Synthesis"](https://www.synopsys.com/glossary/what-is-physical-synthesis.html), see Cadence Genus iSpatial).
+Modern synthesis is placement-aware and will come up with a standard cell floorplan as its deciding what PDK cells to use, considering the timing constraints (see [Synopsys' overview of "Physical Synthesis"](https://www.synopsys.com/glossary/what-is-physical-synthesis.html), [Cadence Genus iSpatial](https://community.cadence.com/cadence_blogs_8/b/di/posts/ispatial-flow-in-genus-a-modern-approach-for-physical-synthesis)).
 This floorplan from physical synthesis is fed into the PnR algorithm to seed its initial coarse placements.
 
 Also, placement isn't part of a linear (synthesis → placement → routing) flow, rather every algorithm in the flow is aware of the others, and they constantly call back to each other.
@@ -69,7 +68,7 @@ Manual macro placement is a bottleneck when iterating on physical design.
 Most engineers manually calculate macro (x, y) coordinates by hand, using knowledge about the connections between macros, logic, and pins.
 Macro placement is resistant to automation because physical design engineers are quite stubborn and superstitious, notwithstanding the algorithmic complexity.
 
-However, as the number of memory macros per RTL block continues to grow (into the 100s), there is interest in automating macro placement.
+However, as the number of memory macros per RTL block continues to grow (into the 100s), there has been interest in automating macro placement.
 As of 2020, mixed placers, such as [Cadence's GigaPlace XL (in Innovus)](https://community.cadence.com/cadence_blogs_8/b/breakfast-bytes/posts/innovus-mixed-placer) became mature, and are able to [concurrently place hard macros and standard cells](https://semiwiki.com/eda/cadence/293055-cadence-is-making-floorplanning-easier-by-changing-the-rules/) with no designer input.
 
 > The mixed placement technology, GigaPlace XL within the Innovus Implementation System, is an extension of the powerful multi-objective standard cell placement GigaPlace engine. The GigaPlace XL engine can handle the placement of these macros together with the standard cells and I/Os in the same step, concurrently. In reality, macro placement is a combinatorial problem, while standard cell placement is a numerical one. The breakthrough achieved by the GigaPlace XL engine inside Innovus Implementation is that, with its solver-based placement technology, it can solve continuous optimization and combinatorial optimization simultaneously.
@@ -104,7 +103,7 @@ The encoder network is trained on 10000 generated floorplans to predict the prox
 The encoder is replaced with the policy network once it is trained.
 
 The RL agent places macros one by one, and once all are placed, a force-directed method is used to place the standard cell clusters.
-A commercial CAD tool seems to take care of the detailed placement and the rest of the flow (including routing and post-place optimization).
+A commercial CAD tool seems to take care of the detailed placement and the rest of the flow (including post-place optimization and routing).
 
 {{ image(path="misc/ml-for-placement/embedding_and_policy_network.webp", width="100%") }}
 
@@ -120,25 +119,30 @@ They compare their technique against manual macro placement and the academic ReP
 
 > Our method was used in the product tapeout of a recent Google TPU. We fully automated the placement process through PlaceOpt, at which point the design was sent to a third party for post-placement optimization, including detailed routing, clock tree synthesis and post-clock optimization.
 
-Note that they aren't using the final output from PnR to compute the design metrics, rather only looking at post-place optimization metrics (no detailed routing has been performed).
+Note that they aren't using the final output from PnR to compute the QoR metrics, rather only looking at post-place optimization metrics (no detailed routing has been performed).
 But overall, this was a very promising result that could supplement the upcoming mixed placement algorithms.
 
 ## Something's Off
 
 At the time (mid-2021), this paper caused a stir in the EDA CAD community.
-Jeff Dean went around broadcasting the good news: the tagline was "using ML to design ML accelerators".
-The authors also went on speaking circuits, delivering seminars at companies, universities, and conferences showcasing their work and the promise of using ML for other difficult combinational optimization problems.
+Jeff Dean went around [broadcasting](https://www.youtube.com/watch?v=EFe7-WZMMhc) the [good news](https://www.youtube.com/watch?v=FraDFZ2t__A): the tagline was "using ML accelerators to run RL to design the next ML accelerators!".
+The authors also went on speaking circuits, delivering seminars at companies, [universities](https://cs224r.stanford.edu/slides/cs224r_practical_deep_rl.pdf), and conferences [showcasing their work](https://www.youtube.com/watch?v=gSBYf25bWyo) and the promise of using ML for other difficult combinatorial optimization problems.
 
 There was a lot of skepticism about the reported results.
 At the time, the code was closed source, and the only evaluation of RL for placement was on secret TPU blocks.
-Furthermore, Nature is a very odd venue to publish such a work - a CAD conference would have been appropriate, but I suspect the reviewers would have grilled the authors too much for their liking.
+Furthermore, Nature is a very odd venue to publish such a work: a CAD conference would have been appropriate, but I suspect the reviewers would have grilled the authors too much for their liking.
 
 Even inside Google, there was a rebuttal to this work on RL for placement that was floating around.
-The rebuttal was [eventually leaked](http://47.190.89.225/pub/education/MLcontra.pdf) ([local mirror](research/eda-cad/ml-for-placement/MLcontra.pdf)) and is titled "Stronger Baselines for Evaluating Deep Reinforcement Learning in Chip Placement".
-The author of the rebuttal was fired by Google, but that's irrelevant - let's examine its claims.
+The rebuttal was [eventually leaked](http://47.190.89.225/pub/education/MLcontra.pdf) ([mirror](https://statmodeling.stat.columbia.edu/wp-content/uploads/2022/05/MLcontra.pdf)) ([local mirror](research/eda-cad/ml-for-placement/MLcontra.pdf)) and is titled "Stronger Baselines for Evaluating Deep Reinforcement Learning in Chip Placement".
+The rebuttal was authored by Sungmin Bae, Amir Yazdanbakhsh, MyungChul Kim, Satrajit Chatterjee, Mingyu Woo, and Igor. L. Markov in 2022.
+One of the authors (Satrajit Chatterjee) was [fired](https://www.wired.com/story/google-brain-ai-researcher-fired-tension/) [by Google](https://www.nytimes.com/2022/05/02/technology/google-fires-ai-researchers.html), but that's irrelevant - let's examine its claims.
 
 ### The Rebuttal
 
+The explosion of ML has led to researchers trying to apply it to various domains that they don't really understand.
+In particular, it's not uncommon for RL papers to compare their methods against non-SOTA baselines, or handicap the baselines in some way that advantage the RL algorithm.
+
+As ML grew in popularity,
 Since the proliferation of ML in various problem domains, ML practitioners have often claimed an advantage of their technique, while not fairly evaluating against the SOTA algorithm of that domain.
 In particular, RL papers don't always evaluate themselves against reasonable baselines, and when compared against a good baseline, the RL method fares poorly or at least comparably to existing algorithms.
 This rebuttal claims that when traditional mixed placement algorithms are unconstrained and compared against the RL method, they come out ahead in terms of QoR, runtime, and required compute.
@@ -375,3 +379,5 @@ These are clearly two people of high integrity and intelligence.
 https://news.ycombinator.com/item?id=41672110
 https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/
 https://www.nature.com/articles/s41586-024-08032-5
+
+Where ML/RL might actually be useful. How are Cadence/Synopsys using ML in their flows? We can only speculate, but...
