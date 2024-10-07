@@ -9,7 +9,7 @@ build_search_index = true
 
 title = "Vighnesh Iyer"
 
-generate_feed = true
+generate_feeds = true
 
 [markdown]
 # Whether to do syntax highlighting
