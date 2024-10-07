@@ -405,6 +405,12 @@ Hopefully this checkpoint can finally put this matter to rest.
 The Nature authors released an [addendum to their paper](https://www.nature.com/articles/s41586-024-08032-5) which basically rehashes arguments they have made in the past that I believe the UCSD team refuted.
 It seems the Nature investigation has concluded, without any substantial changes being made to the original article.
 
+They started their addendum with this:
+
+> AlphaChip was one of the first RL methods deployed to solve a real-world engineering problem, and its publication triggered an explosion of work on AI for chip design. Nevertheless, as described in Sutton’s The Bitter Lesson, there is often reluctance to accept the application of machine learning to new areas, and ultimately this has led to some confusion around our work, which we address below.
+
+The arrogance of the Nature authors and their disdain for rigorous evaluation from actual EDA CAD researchers is laid bare with this statement.
+
 ### Hacker News
 
 The next day (September 27th), a friend alerted me that the AlphaChip blog post was [posted on Hacker News](https://news.ycombinator.com/item?id=41672110) and was ascending to the top of the front page very quickly.
