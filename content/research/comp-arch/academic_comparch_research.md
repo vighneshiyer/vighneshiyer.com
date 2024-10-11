@@ -281,6 +281,11 @@ Consider the cache generator project - all the things that need to slot into pla
 - Why is there tail latency (fundamental causes and exact ascription)
 - Can we mitigate with hw or os things
   - Microkernel vs monolithic kernel
+- Profiling itself is not a well studied tool
+  - If we have RTL and detailed simulation, then we can identify exactly where profiling is adding overhead and obscuring fine-grained events
+  - Taxonomy of profilers - no one has done this properly for low-level profilers (vTune, Intel PT, DynamoRIO, etc.)
+  - Have concrete numbers for each profiler and mode wrt perturbation for a wide range of workloads. Measure perturbation wrt latency impacts (e.g. tail latency) and throughput too.
+  - Consider the types of things we can extract from each profiler + the time granularity each profiler can operate at
 
 ### SoC Design Methodology
 
