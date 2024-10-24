@@ -14,9 +14,18 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
 
 ## PrimisAI
 
+## VoltAI
+
+https://voltai.com/
+
 ## Silimate
 
+- https://www.zach.be/p/why-are-so-many-startups-developing
+- https://www.zach.be/p/why-are-so-many-startups-developing-f3c
+
 ## Chipstack
+
+- https://www.luxcapital.com/content/the-looming-labor-crisis-in-chip-design
 
 - chipstack.ai
   - Yet another LLM for RTL design / testbench generation / RTL understanding / etc

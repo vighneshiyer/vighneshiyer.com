@@ -52,6 +52,13 @@ A bunch of random recipes I like or I thought were interesting.
 - https://youtube.com/shorts/zz3D2fc3rvU?si=ZQSuxw00sauEc3VI
   - Roasted tomato, garlic, onion soup
 
+## Baking
+
+### No-Knead Bread
+
+- [NYT: No-Knead Bread](https://cooking.nytimes.com/recipes/11376-no-knead-bread) ([youtube](https://www.youtube.com/shorts/_XMSbdalHDQ))
+- This seems to be a great recipe and quite easy to make with just some flour, instant yeast, and a dutch oven
+
 ## Sides
 
 ### Breads
@@ -86,6 +93,17 @@ A bunch of random recipes I like or I thought were interesting.
 - [Brie Crostini](https://www.yourhomebasedmom.com/brie-crostini/)
   - Very simple, toast baguette slices topped with brie cheese and fresh rosemary/thyme in an oven at 450F
   - Top with honey, serve warm
+
+### Potatoes
+
+#### Potato Stacks
+
+- [Potato Stacks with Garlic Herb Butter](https://www.youtube.com/shorts/a8NvbdeNM34)
+- Mandolin thin slices of potatoes
+- Prepare herb butter with 1 stick of melted unsalted butter, many chopped garlic cloves, parsley, thyme, salt, pepper. Prepare in saucepan.
+- Cool butter mix, add to potatoes in large mixing bowl, and mix.
+- Stack potato slices in muffin tin, intersperse with grated parmesean. Wrap tin in foil.
+- Bake at 375F for 25 minutes. Finish uncovered at 425F until crispy, around 15 minutes. Garnish with coarse salt flakes.
 
 ## Ice Cream
 

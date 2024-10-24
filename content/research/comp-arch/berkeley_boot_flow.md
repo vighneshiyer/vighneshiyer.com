@@ -1,7 +1,6 @@
 +++
 title = "The Berkeley RISC-V Boot and Bringup Stack"
 date = 2023-02-28
-aliases = ["misc/chiplet-research"]
 +++
 
 Let's try to understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
