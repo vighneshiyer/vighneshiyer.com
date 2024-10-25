@@ -4,24 +4,44 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
 - https://github.com/aolofsson/awesome-semiconductor-startups
 - Also See startups from DAC 2024
 
+## Some General Notes
+
 ## VerifAI
+
+DAC 2022
 
 ## Silogy
 
+- https://silogy.io/ (YC 23)
+I met these two at Hot Chips 2024.
+
 ## Agnisys
+
+I met these guys at DAC 2022 and 2024.
 
 ## Metrics
 
+I met these guys at DAC 2024.
+
 ## PrimisAI
+
+I saw their booth somewhere.
 
 ## VoltAI
 
 https://voltai.com/
+Never met, heard about from others, information-free.
 
 ## Silimate
 
 - https://www.zach.be/p/why-are-so-many-startups-developing
 - https://www.zach.be/p/why-are-so-many-startups-developing-f3c
+
+I met these two at DAC 2024.
+
+## Etched.ai
+
+Have heard of the founders second-hand.
 
 ## Chipstack
 
@@ -80,3 +100,6 @@ Two guys just playing around, but I'm still quite impressed.
 Dan is an elite SW engineer and circuit designer - he knows what he's doing.
 
 ## JITX
+
+Very very good, I'm so happy with what they're doing and success is certain with someone like Jonathan Bachrach at the helm.
+Actually tackling a relevant problem with a clear path to success and the potential to obsolete huge swaths of the existing industry.
