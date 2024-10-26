@@ -13,6 +13,11 @@ DAC 2022
 ## Silogy
 
 - https://silogy.io/ (YC 23)
+
+> Meet Viv: the World's First Virtual Verification Engineer
+>
+> AI agent, deft debugger, code critic, and your new favorite coworker.
+
 I met these two at Hot Chips 2024.
 
 ## Agnisys
@@ -98,6 +103,18 @@ https://github.com/gen-alpha-xtor/GenAlphaSchematicsDemo
 
 Two guys just playing around, but I'm still quite impressed.
 Dan is an elite SW engineer and circuit designer - he knows what he's doing.
+
+- [Founding Software Engineer](https://wellfound.com/jobs/3132724-founding-software-engineer?utm_campaign=startup_share&utm_content=startup_share_module&utm_medium=social&utm_term=generation-alpha-transistor)
+
+> Develop AI agents for novel chip design problems. Experience with LLM-based systems & agents, foundation models, ML systems, fine-tuning, RAG, GraphRAG all pluses. Develop automated methods to extract structured data from diverse sources including documents & images. Test & characterize natural language AI systems.
+>
+> Develop a web & cross-platform GUI environment, using Typescript, Rust, WebGL, WebGPU. Experience with computational geometry, graphics engines, high-performance rendering a plus, especially in the context of other CAD design systems.
+>
+> Develop novel tactics for existing chip-world problems, commonly known as electronic design automation, EDA. Optimizing placement, routing, extraction, simulation, physical verification (LVS, DRC). Working knowledge of silicon design flow & typical chip data (LEF, DEF, GDS, spice, etc) a plus.
+>
+> We value software generalists & polyglots who are unafraid to try & learn new & valuable tools, wherever they can be found. Past experience in cloud-native B2B and customer-facing engineering roles is a plus. Desire to grow into engineering leadership is a plus. Desire to work in a rapidly changing, high intensity environment is a must.
+
+This is a very good pitch.
 
 ## JITX
 
