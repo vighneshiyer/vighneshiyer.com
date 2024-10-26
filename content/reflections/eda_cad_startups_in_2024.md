@@ -44,6 +44,16 @@ Never met, heard about from others, information-free.
 
 I met these two at DAC 2024.
 
+https://www.ycombinator.com/companies/silimate/jobs
+
+- Founding Chip/Software Engineer
+  - Mountain View, CA, US / San Francisco, CA, US
+  - $160K - $220K
+  - 0.50% - 2.00%
+  - 3+ years
+- Founding ML Engineer
+  - Same terms
+
 ## Etched.ai
 
 Have heard of the founders second-hand.
@@ -115,6 +125,12 @@ Dan is an elite SW engineer and circuit designer - he knows what he's doing.
 > We value software generalists & polyglots who are unafraid to try & learn new & valuable tools, wherever they can be found. Past experience in cloud-native B2B and customer-facing engineering roles is a plus. Desire to grow into engineering leadership is a plus. Desire to work in a rapidly changing, high intensity environment is a must.
 
 This is a very good pitch.
+
+- umich, nc state, ...
+- natural language for circuits
+- native 'live' + 'remote' GUI environment for code-driven (but natural language-driven from the user perspective) circuit design and layout
+- autorouting that understands the circuit intent and can beat humans in qor
+  - this is a good idea that doesn't exist in the market for no good reason
 
 ## JITX
 
