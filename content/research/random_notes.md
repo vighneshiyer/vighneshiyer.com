@@ -207,6 +207,7 @@ Things I would ask a good architect:
 - Brutal focus on the outcome
 - Secrecy that actually matters, being proud of your team, team morale vs apple
 - Playing around, abusing the company benefits, unfocused work environment
+- People give support on 'moonshot proposals' even if they have no idea what they're talking about. Just having a bunch of people with good titles saying nice things about your proposal is sufficient. Smart voices are rare and are easily drowned out.
 
 - Google isn't (that) special. Analyze Google workload traces against our open source workloads and compare, they are quite similar
 

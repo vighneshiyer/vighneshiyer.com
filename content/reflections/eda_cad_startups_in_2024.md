@@ -3,6 +3,10 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
 
 - https://github.com/aolofsson/awesome-semiconductor-startups
 - Also See startups from DAC 2024
+- https://www.zach.be/p/why-are-so-many-startups-developing-f3c
+  - Diode
+- https://www.zach.be/p/why-are-so-many-startups-developing-640
+  - Quilter PCB autorouter
 
 ## Some General Notes
 
@@ -40,6 +44,7 @@ Never met, heard about from others, information-free.
 ## Silimate
 
 - https://www.zach.be/p/why-are-so-many-startups-developing
+- https://substack.com/@zachbe/p-148658947
 - https://www.zach.be/p/why-are-so-many-startups-developing-f3c
 
 I met these two at DAC 2024.
@@ -57,6 +62,7 @@ https://www.ycombinator.com/companies/silimate/jobs
 ## Etched.ai
 
 Have heard of the founders second-hand.
+- https://substack.com/@zachbe/p-146056411
 
 ## Chipstack
 
@@ -132,7 +138,20 @@ This is a very good pitch.
 - autorouting that understands the circuit intent and can beat humans in qor
   - this is a good idea that doesn't exist in the market for no good reason
 
+- https://natcast.org/nstc-jump-start-anticipated-awardees
+
 ## JITX
 
 Very very good, I'm so happy with what they're doing and success is certain with someone like Jonathan Bachrach at the helm.
 Actually tackling a relevant problem with a clear path to success and the potential to obsolete huge swaths of the existing industry.
+
+## Motivo.ai
+
+- https://motivo.ai/
+- https://techcrunch.com/2021/08/12/motivo-raises-12-5m-series-a-to-speed-up-chip-design-with-ai/
+
+## ChipAgents
+
+- https://chipagents.ai/#intro
+
+## BoolSi
