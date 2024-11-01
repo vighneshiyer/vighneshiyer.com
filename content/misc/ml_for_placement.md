@@ -454,3 +454,39 @@ Google had tried to dismiss the lawsuit earlier, but the judge refused to do so 
 Digging into the [original complaint filed by Dr. Chatterjee's lawyers](https://regmedia.co.uk/2023/03/26/satrajit_vs_google.pdf) reveals plenty of evidence that Google leadership conspired to suppress negative results about "AlphaChip" and retaliate against employees who authored the rebuttal or expressed skepticism about the work.
 
 Hopefully this is the last addendum I make to this blog post!
+
+## Ok, One More Thing
+
+This never seems to end...
+
+On October 23, 2024, Igor Markov published an [article on CACM](https://cacm.acm.org/research/reevaluating-googles-reinforcement-learning-for-ic-macro-placement/) titled "Reevaluating Google’s Reinforcement Learning for IC Macro Placement", which is a slightly modified version of [his arXiv manuscript](https://arxiv.org/abs/2306.09633).
+It seems Google's announcement of "AlphaChip" has spurred renewed interest in refuting their inaccurate claims.
+Markov calls out the Nature editorial process and asks that they demand a full reproduction to obtain the numbers reported in the Nature paper.
+
+There was another followup article published on CACM on October 29, 2024 titled ["Updates Spark Uproar"](https://cacm.acm.org/news/updates-spark-uproar/).
+This article collects skeptical quotes from several experts in the field of VLSI CAD that casts doubt on Google's hype.
+
+> AlphaChip detractors also took issue with Google applying the “Alpha” moniker to the chip design method, labeling it as a questionable effort to trade on the solid reputation of Google’s AlphaGo game playing AI software, and AlphaFold, an AI method for protein research...
+
+> “It’s nonsensical to compare AlphaChip to AlphaFold, whose results have been validated by many academic research groups as part of an open competition,” Markov said.
+
+### Jeff Dean's Pronouncement
+
+On the day Google's AlphaChip blog post was released, Jeff Dean made a [Twitter post of his own](https://x.com/JeffDean/status/1839308592408834559)
+
+> Welcome, AlphaChip!
+>
+> Today, we are sharing some exciting updates on our work published in @Nature in 2021 on using reinforcement learning for ASIC chip floorplanning and layout.  We’re also naming this work AlphaChip.
+>
+> Since we first published this work, our use of this approach internally has grown significantly.  It has now been used for multiple generations of TPU chips (TPU v5e, TPU v5p, and Trillium), with AlphaChip placing an increasing number of blocks and with larger wirelength reductions vs. human experts from generation to generation:
+
+Just the usual fanfare.
+
+> Three things we have observed in the external community are described in the Nature Addendum: (1) not doing any pre-training (circumventing the learning aspects of our method by removing its ability to learn from prior experience) (2) not training to convergence (standard practice in ML methods), and (3) using fewer computational resources than described in our Nature paper (using fewer resources is likely to harm performance, or require running for considerably longer to achieve the same performance).
+
+Just like the Nature addendum, Jeff Dean points out supposed 'deficiencies' in the ISPD 2023 paper, which have already been thoroughly refuted by its authors (and by Markov in his CACM article).
+
+> Many organizations have used AlphaChip as a building block for their own chip design efforts.  For example, MediaTek, one of the top chip design companies in the world, extended AlphaChip to accelerate development of their most advanced chips (e.g. the Dimensity Flagship 5G used in Samsung mobile phones), while improving power, performance and chip area.
+
+'Usage' of a VLSI CAD tool in industry is not a replacement for rigorous benchmarking.
+It is unknown what blocks AlphaChip was used on, the characteristics of those blocks, and how AlphaChip fares against other macro placement / mixed-placement algorithms.
