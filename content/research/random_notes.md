@@ -566,6 +566,7 @@ April 26, 2024
 - Kurt
 - Chris fletcher
 - Luca carloni
+- Luca Benini
 - Vlad elad krste ion stoica as startup PIs
 - Gilbert bernstein
 - Chris batten
@@ -576,5 +577,21 @@ April 26, 2024
 - james larus (manticore PI)
 - Christina D from CMU
   - Actually from MIT
+- Andrew Kahng
 
 - Compare and contrast the different prof types and associated research philosophy
+  - Paper Pushers
+  - Hyperscaler Pets
+    - or Industry Oriented
+  - Fallen from Grace
+  - Incompetent / Highly Competent
+  - Highly Competent But Uninspired
+  - Highly Competent But Easily Propagandized
+  - Highly Competent and Inspired
+  - Gods and the Truly Exceptional
+- Create a taxonomy and terms
+  - Effective boss: the paper God, Hyperscalers, niche industry, ego
+  - Competence: Incompetent, Moderately Competent, Highly Competent
+  - Time horizon: long, short, ultrashort
+  - Source of interest: ego, 'just' work, personal curiosity, in the blood passion
+  - Research inspiration: uninspired, general field propaganda, truly inspired

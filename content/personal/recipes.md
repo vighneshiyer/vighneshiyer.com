@@ -5,6 +5,19 @@ date = 2024-03-23
 
 A bunch of random recipes I like or I thought were interesting.
 
+## General Methodologies
+
+- https://x.com/simonsarris/status/1851774134247735581
+
+> An Everlasting Meal: Cooking with Economy and Grace by Tamar Adler
+>
+> and The Art of Simple Food by Alice Waters
+
+- Nourishing Traditions by Sally Fallon
+- Salt Fat Acid Heat
+- Flour Water Salt Yeast
+- Essentials of Classic Italian Cooking by Marcella Hazan ([note recent changes](https://x.com/simonsarris/status/1852006542284845218) to remove fat)
+
 ## Ingredients
 
 - [High in plant polyphenols](https://twitter.com/Mangan150/status/1598691696023199747) (highest to lowest)
