@@ -7,6 +7,8 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
   - Diode
 - https://www.zach.be/p/why-are-so-many-startups-developing-640
   - Quilter PCB autorouter
+- https://www.zach.be/p/yc-is-wrong-about-llms-for-chip-design (HN post: https://news.ycombinator.com/item?id=42156516)
+  -
 
 ## Some General Notes
 
