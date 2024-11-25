@@ -1,5 +1,5 @@
 +++
-title = "Machine Learning for Chip Placement: The Saga"
+title = "Reinforcement Learning for Chip Floorplanning: The Saga"
 date = 2023-04-08
 aliases = ["misc/ml-for-placement"]
 +++
@@ -472,7 +472,7 @@ This article collects skeptical quotes from several experts in the field of VLSI
 
 ### Jeff Dean's Pronouncement
 
-On the day Google's AlphaChip blog post was released, Jeff Dean made a [Twitter post of his own](https://x.com/JeffDean/status/1839308592408834559)
+On the day Google's AlphaChip blog post was released, Jeff Dean made a [Twitter post of his own](https://x.com/JeffDean/status/1839308592408834559).
 
 > Welcome, AlphaChip!
 >
@@ -490,3 +490,59 @@ Just like the Nature addendum, Jeff Dean points out supposed 'deficiencies' in t
 
 'Usage' of a VLSI CAD tool in industry is not a replacement for rigorous benchmarking.
 It is unknown what blocks AlphaChip was used on, the characteristics of those blocks, and how AlphaChip fares against other macro placement / mixed-placement algorithms.
+
+## It Truly Never Ends
+
+When CACM published Igor Markov's article, he [posted a link to it on his Linkedin](https://www.linkedin.com/posts/imarkov_happy-to-see-my-acm-communications-article-activity-7258264869114654720-kCyR/).
+In the comments, Igor and Anna Goldie argued about the article, both rebutting each other's claims, and the conversation ended with no consensus.
+Igor took down his post for an unknown reason, but part of it is [still archived here](https://web.archive.org/web/20241111045533/https://www.linkedin.com/posts/imarkov_happy-to-see-my-acm-communications-article-activity-7258264869114654720-kCyR/).
+
+### Nature Authors Publish Another Rebuttal
+
+On November 18th, 2024, Anna Goldie, Azalia Mirhoseini, and Jeff Dean published another rebuttal to Igor Markov's CACM article (LinkedIn posts: [Anna](https://www.linkedin.com/feed/update/urn:li:activity:7264308532643020801/), [Azalia](https://www.linkedin.com/feed/update/urn:li:activity:7264312172661354497/), [Jeff](https://www.linkedin.com/feed/update/urn:li:activity:7264312912532447234/)) (Twitter posts: [Anna](https://x.com/annadgoldie/status/1858531756506558688), [Azalia](https://x.com/Azaliamirh/status/1858534201316000055), [Jeff](https://x.com/JeffDean/status/1858540085794451906)).
+The rebuttal is titled "That Chip Has Sailed: A Critique of Unfounded Skepticism Around AI for Chip Design" and was [released on arXiv](https://arxiv.org/abs/2411.10053).
+
+I have reproduced Jeff Dean's statement below.
+
+> There has been unfounded skepticism in the EDA community about whether our AlphaChip method works as claimed in our Nature paper. @annadgoldie, @Azaliamirh, and I wrote a technical response highlighting these issues:
+>
+> Much of this unfounded skepticism is driven by a deeply flawed non-peer-reviewed publication by Cheng et al. (ISPD 2023) that claimed to replicate our approach but failed to follow our methodology in major ways.
+> In particular the authors did no pre-training (despite pre-training being mentioned 37 times in our Nature article), robbing our learning-based method of its ability to learn from other chip designs, then used 20X less compute and did not train to convergence, preventing our method from fully learning even on the chip design being placed.
+> By analogy, this would be like evaluating a version of AlphaGo that had never seen a game of Go before (instead of being pre-trained on millions of games), and then concluding that AlphaGo is not very good at Go.
+>
+> We also respond to Igor Markov’s “meta-analysis” published in the Nov 2024 issue of CACM.
+> In Markov’s paper (published without disclosing that Markov is a high-level employee at Synopsys, which makes commercial software that competes with our open-source release of AlphaChip), Markov “meta-analyzes” the flawed Cheng et al. paper and another unpublished anonymous PDF (Stronger Baselines) with no listed authors on which Markov is a shadow co-author (effectively regurgitating his own unpublished arguments as if they were independent).
+> The Markov article makes veiled accusations, all completely baseless and already found to be without merit by Nature.
+> I am surprised @Synopsys wants to be associated with this, and I am surprised @CACMmag saw fit to publish these sorts of allegations with no evidence, nor any technical data other than two flawed, non-peer reviewed articles.
+
+The use of hyperbole and belittling language ("deeply flawed", "regurgitating his own unpublished arguments") is surprising, especially against Igor Markov.
+
+> As an update, Shankar Krishnamoorthy, Head of Technology & Product Development at @Synopsys, reached out to me to say "Regarding the CACM article that Igor Markov's comments and writings do not represent Synopsys views or opinions in any way.
+> Synopsys is also aligned with you on the potential of Reinforcement Learning AI for chip design as evidenced by strong customer adoption of our http://Synopsys.ai/DSO.ai suite of products."
+
+Shankar demonstrates that he is an excellent VP by playing both sides: he does not disavow Igor's technical arguments, while he also injects Synopsys marketing materials!
+
+### My Perspective
+
+Before I analyze the rebuttal written by the Nature authors, I'll give my high-level thoughts about RL for floorplanning thus far.
+
+#### My Technical Thoughts
+
+<strong>Is a turn-by-turn game the proper formulation for the chip floorplanning / mixed-placement problem?</strong>
+
+Unlike chess or Go, chip floorplanning isn't naturally a turn-by-turn game.
+Instead, you have a bunch of hard macros and soft standard cell clusters and you must optimally place them all on an empty canvas (or in some cases, with fixed blockages on the canvas).
+
+The Nature authors propose placing hard macros one at a time on a canvas until they are all placed, and then give their RL agent a reward at the very end.
+Instinctively, it seems that casting an optimization problem as a game isn't the best formulation
+
+- How can we get around the coarse placement grid limitations?
+- What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
+
+#### My Non-Technical Thoughts
+
+- Nature as a venue, huge anomaly.
+- Authors are uncritical of their own work, another huge anomaly.
+- What is Jeff Dean doing? Why is he burning his reputation?
+
+### Addressing the Nature Authors' Rebuttal
