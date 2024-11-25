@@ -515,12 +515,12 @@ I have reproduced Jeff Dean's statement below.
 > The Markov article makes veiled accusations, all completely baseless and already found to be without merit by Nature.
 > I am surprised @Synopsys wants to be associated with this, and I am surprised @CACMmag saw fit to publish these sorts of allegations with no evidence, nor any technical data other than two flawed, non-peer reviewed articles.
 
-The use of hyperbole and belittling language ("deeply flawed", "regurgitating his own unpublished arguments") is surprising, especially against Igor Markov.
+The use of hyperbole and belittling language ("deeply flawed", "regurgitating his own unpublished arguments") is surprising, coming from Jeff Dean.
 
 > As an update, Shankar Krishnamoorthy, Head of Technology & Product Development at @Synopsys, reached out to me to say "Regarding the CACM article that Igor Markov's comments and writings do not represent Synopsys views or opinions in any way.
 > Synopsys is also aligned with you on the potential of Reinforcement Learning AI for chip design as evidenced by strong customer adoption of our http://Synopsys.ai/DSO.ai suite of products."
 
-Shankar demonstrates that he is an excellent VP by playing both sides: he does not disavow Igor's technical arguments, while he also injects Synopsys marketing materials!
+Shankar demonstrates that he is an excellent VP by playing both sides: he does not disavow Igor's technical arguments, while also injecting Synopsys' marketing materials!
 
 ### My Perspective
 
@@ -530,11 +530,21 @@ Before I analyze the rebuttal written by the Nature authors, I'll give my high-l
 
 <strong>Is a turn-by-turn game the proper formulation for the chip floorplanning / mixed-placement problem?</strong>
 
-Unlike chess or Go, chip floorplanning isn't naturally a turn-by-turn game.
+Unlike chess or Go, *automatic* chip floorplanning isn't naturally a turn-by-turn game.
 Instead, you have a bunch of hard macros and soft standard cell clusters and you must optimally place them all on an empty canvas (or in some cases, with fixed blockages on the canvas).
+Chip floorplanning is *naturally an optimization problem*.
 
-The Nature authors propose placing hard macros one at a time on a canvas until they are all placed, and then give their RL agent a reward at the very end.
+However, the way humans *manually* perform floorplanning *looks* like a game.
+They first specify the dimensions of the canvas by hand and place the top-level pins of the hierarchical block they're floorplanning on its edges.
+Then, they take one macro (or a group of banked SRAMs), analyze its connections to other macros/standard cells/pins, and harden its coordinates.
+This is repeated until until all hard macros are placed.
+
+I *feel* the Nature authors tried to automate this *human-like* approach to floorplanning.
+To leverage reinforcement learning for floorplanning, the Nature authors propose placing hard macros *one at a time* on a canvas until they are all placed, and then give their RL agent a reward based on a proxy cost.
+
 Instinctively, it seems that casting an optimization problem as a game isn't the best formulation
+
+While routing can be thought of as a game easily, it is hard to put floorplanning in the same box
 
 - How can we get around the coarse placement grid limitations?
 - What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
