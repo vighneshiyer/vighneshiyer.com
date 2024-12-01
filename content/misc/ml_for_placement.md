@@ -565,6 +565,10 @@ While there may be ways to get around this problem, it does seem intrinsic to a 
 
 <strong>What does 'pre-training' really mean?</strong>
 
+<!--
+- What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
+-->
+
 The Nature authors in their rebuttals have emphasized the need to *pre-train* both the policy and the problem state embedding networks before evaluating them on unseen problems.
 This involves taking several netlists, running the usual RL training loop on all of them, and training until convergence.
 In theory, during pre-training, the policy network should learn a problem embedding and placement procedure that generalizes across many designs.
@@ -581,29 +585,35 @@ There are a few complicating factors:
 
 - **Overfitting and data contamination**: when rigorously evaluating an algorithm on a benchmark, it can be unfair to allocate "uncounted" compute to training examples that resemble the benchmark. However, this is a moot point for commercial usage of RL floorplanning.
 - **Marginal demonstrated improvements in QoR**: the original Nature paper shows relatively small improvements to QoR (\< 5%) when using a pre-trained network vs training from scratch. The primary benefit seems to be faster runtime to achieve a particular QoR.
-- **Extreme compute requirements and long runtimes**: pre-training as the Nature authors did requires substantially more compute and memory than is required by the conventional algorithms. Allocating the equivalent number of compute resources to a parallelizable algorithm such as SA, could  The runtime of a pre-trained network
-- **Miscorrection of the proxy cost**:
-- Fixed flow:
-
-The major issues are overfitting, difficulty in improving QoR over a from-scratch training, the enormous amount of compute required, and miscorrelation between the proxy cost and the final PPA.
-fixed flow, no feedback from future steps (unlike commercial CAD tools e.g. Fusion Compiler)
+- **Extreme compute requirements and long runtimes**: pre-training as the Nature authors did requires substantially more compute and memory than is required by the conventional algorithms. Allocating the equivalent number of compute resources to a parallelizable algorithm such as SA, could give it a substantial advantage. Finally, the runtime of a pre-trained network is still in the order of several hours to reach an optimal proxy cost. This is still slower than commercial autofloorplanners and AutoDMP (as seen in the appendix of the ISPD 2023 paper).
+- **Poor correlation of the proxy cost to final PPA**: pre-training optimizes the network to minimize the proxy cost, but the ISPD authors have presented evidence that proxy cost poorly correlates to final area and timing numbers seen after running the entire CAD flow.
 
 <!--
-- What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
+- **Fixed CAD flow**: the
+fixed flow, no feedback from future steps (unlike commercial CAD tools e.g. Fusion Compiler)
 -->
 
 #### Non-Technical Questions
 
 <strong>Why did the Googlers publish their work in Nature?</strong>
 
-- Nature as a venue, huge anomaly.
+Nature, as its name suggests, is a journal for publishing innovative findings in the *natural sciences* (there is plenty of engineering too, but it is usually in the context of enabling a fundamental scientific innovation).
+AlphaChip is a pure engineering project for a very specific problem in EDA CAD; it isn't a good fit for Nature.
+If the authors had published this paper in DAC, ICCAD, or TCAD, I'm certain it would have been subject to much less criticism post-publication, although it would have been more heavily scrutinized during review.
+<!--By pushing the paper to Nature, presumably for clout-chasing purposes, the authors can get away without evaluating on the standard set of academic placement benchmarks.-->
 
-<strong>Why do the Google authors so adamant in not conceding anything?</strong>
+<strong>Why are the Google authors so adamant in not conceding anything?</strong>
 
-- Authors are uncritical of their own work, another huge anomaly.
+Typically, the authors of a paper are the first ones to point out its flaws, limitations, and caveats.
+It is common that the people most critical of a paper are the authors themselves.
+This case is an anomaly: the authors are uncritical of their own work, do not discuss any of its downsides, and portray it as strictly superior to all other work in the domain, including commercial offerings.
 
 <strong>Why is Jeff Dean acting so hostile towards Igor Markov?</strong>
 
-- What is Jeff Dean doing? Why is he burning his reputation?
+<!--What is Jeff Dean doing? Why is he burning his reputation?-->
+
+Jeff Dean has been using AlphaChip as an example of "AI chips for AI for AI chips" in many of his talks promoting ML work at Google.
+It seems he has staked quite a bit of his professional reputation on this project's success, and recently he must have seen many detractors of AlphaChip gaining attention and harming Google's reputation.
+However, since his internal Google team asserts they are in the right, he must feel he has to defend them even if he has a weak technical understanding of floorplanning.
 
 ### Addressing the Nature Authors' Rebuttal
