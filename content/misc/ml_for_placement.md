@@ -526,7 +526,7 @@ Shankar demonstrates that he is an excellent VP by playing both sides: he does n
 
 Before I analyze the rebuttal written by the Nature authors, I'll give my high-level thoughts about RL for floorplanning thus far.
 
-#### My Technical Thoughts
+#### Technical Questions
 
 <strong>Is a turn-by-turn game the proper formulation for the chip floorplanning / mixed-placement problem?</strong>
 
@@ -539,20 +539,71 @@ They first specify the dimensions of the canvas by hand and place the top-level 
 Then, they take one macro (or a group of banked SRAMs), analyze its connections to other macros/standard cells/pins, and harden its coordinates.
 This is repeated until until all hard macros are placed.
 
-I *feel* the Nature authors tried to automate this *human-like* approach to floorplanning.
-To leverage reinforcement learning for floorplanning, the Nature authors propose placing hard macros *one at a time* on a canvas until they are all placed, and then give their RL agent a reward based on a proxy cost.
+I *feel* the Nature authors tried to automate this *human-like* approach to floorplanning by learning a placement policy using reinforcement learning.
+The Nature authors propose placing hard macros *one at a time* on a canvas until they are all placed, and then give their RL agent a reward based on a proxy cost.
 
-Instinctively, it seems that casting an optimization problem as a game isn't the best formulation
+This differs substantially from how mixed-placement is approached by commercial CAD tools and other tools like DREAMPlace / AutoDMP.
+They *simultaneously* place both hard and soft macros and *simultaneously* attempt to optimize and legalize their placements.
+They also take advantage of *estimating costs as they are iterating* the proposed placement, rather than only receiving a cost at the end of placement.
+Instinctively, it seems that casting an optimization problem as a turn-by-turn game isn't the best formulation.
 
-While routing can be thought of as a game easily, it is hard to put floorplanning in the same box
+<!--While routing can be thought of as a game easily, it is hard to put floorplanning in the same box-->
 
-- How can we get around the coarse placement grid limitations?
+<strong>How does the RL formulation of floorplanning get around the limitations of a coarse placement grid?</strong>
+
+<!--To train the policy network, which receives a reward at the end of a trajectory, we need to backprop through all the decisions made by the network.-->
+The RL policy network outputs a probability distribution over the chip canvas of where the macro under consideration ought to be placed.
+This probability distribution must be discretized over the chip canvas, since the action space must be discrete.
+The Nature authors propose placing macros onto *grid cells*: a discrete grid of up to 128 x 128 points evenly distributed across the chip canvas.
+<!-- Usually the grid is 30 x 30, according to the authors -->
+
+This coarse gridded action space is required to make training feasible.
+Making the grid finer would increase training time substantially since there are many more potential placement decisions for the RL network to explore.
+However, this 'gridding' necessarily degrades QoR, since it makes tight macro packing and fine adjustments to macro positions impossible during placement (this was seen above in the 'Stronger Baselines' paper).
+
+While there may be ways to get around this problem, it does seem intrinsic to a discrete action space.
+
+<strong>What does 'pre-training' really mean?</strong>
+
+The Nature authors in their rebuttals have emphasized the need to *pre-train* both the policy and the problem state embedding networks before evaluating them on unseen problems.
+This involves taking several netlists, running the usual RL training loop on all of them, and training until convergence.
+In theory, during pre-training, the policy network should learn a problem embedding and placement procedure that generalizes across many designs.
+In contrast to conventional automatic floorplanning algorithms (SA, RePLAce, AutoDMP), RL floorplanning *should learn* from experience rather than starting from scratch every time.
+<!--This learning is supposed to give it an edge over heuristic algorithms which always start from scratch.-->
+
+When the network sees a new problem, it is *fine-tuned*, which means the network weights are optimized for the current problem as it explores many trajectories to minimize the proxy cost.
+What does fine-tuning mean in practice?
+It boils down to trying a bunch of different trajectories and exploring the space of placement possibilities, but with the pretrained policy and problem embedding networks as a prior.
+In theory, this would yield much faster runtimes vs training the model from scratch while also achieving better QoR.
+
+But is a lack of pre-training as big a deal as the Nature authors make it out to be?
+There are a few complicating factors:
+
+- **Overfitting and data contamination**: when rigorously evaluating an algorithm on a benchmark, it can be unfair to allocate "uncounted" compute to training examples that resemble the benchmark. However, this is a moot point for commercial usage of RL floorplanning.
+- **Marginal demonstrated improvements in QoR**: the original Nature paper shows relatively small improvements to QoR (\< 5%) when using a pre-trained network vs training from scratch. The primary benefit seems to be faster runtime to achieve a particular QoR.
+- **Extreme compute requirements and long runtimes**: pre-training as the Nature authors did requires substantially more compute and memory than is required by the conventional algorithms. Allocating the equivalent number of compute resources to a parallelizable algorithm such as SA, could  The runtime of a pre-trained network
+- **Miscorrection of the proxy cost**:
+- Fixed flow:
+
+The major issues are overfitting, difficulty in improving QoR over a from-scratch training, the enormous amount of compute required, and miscorrelation between the proxy cost and the final PPA.
+fixed flow, no feedback from future steps (unlike commercial CAD tools e.g. Fusion Compiler)
+
+<!--
 - What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
+-->
 
-#### My Non-Technical Thoughts
+#### Non-Technical Questions
+
+<strong>Why did the Googlers publish their work in Nature?</strong>
 
 - Nature as a venue, huge anomaly.
+
+<strong>Why do the Google authors so adamant in not conceding anything?</strong>
+
 - Authors are uncritical of their own work, another huge anomaly.
+
+<strong>Why is Jeff Dean acting so hostile towards Igor Markov?</strong>
+
 - What is Jeff Dean doing? Why is he burning his reputation?
 
 ### Addressing the Nature Authors' Rebuttal
