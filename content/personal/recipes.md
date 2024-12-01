@@ -65,6 +65,29 @@ A bunch of random recipes I like or I thought were interesting.
 - https://youtube.com/shorts/zz3D2fc3rvU?si=ZQSuxw00sauEc3VI
   - Roasted tomato, garlic, onion soup
 
+## Curries
+
+### Thai Yellow Curry
+
+- [Yellow Curry](https://tastesbetterfromscratch.com/yellow-curry/)
+- Coconut oil in dutch oven, add thick-cut sliced 1/2 onion and saute until soft, add a pinch of salt
+- Add sliced carrots (3x), potatoes (1x), peas (handful, if desired) and saute for flavor
+- Add cubed paneer (1x pack) and saute until slightly browned
+- Push all the ingredients to the sides of the pot, and add a few tablespoons of yellow curry paste (Mae Ploy) with chopped garlic and ginger. Saute until fragrant, add additional coconut oil if needed
+- Add 2 cans of coconut milk and stir to combine. Add water if needed to cover all the vegetables.
+- Cover and simmer until all vegetables are cooked through
+- Add brown/coconut sugar (1-2 tbsp), lime juice (1/2 lime) and simmer
+- Serve with jasmine rice
+
+<details>
+<summary>Notes from Nov 2024 preparation</summary>
+- I added too much salt, the curry paste already has salt, no need to keep salting
+- I added too much curry paste (4-5 tbsp, it was too spicy)
+- A bit more sugar is good
+- I used 1 can coconut milk + 1 can coconut cream which made the sauce too thick (stick with 2 cans of coconut milk)
+- This made a large quantity (3 med/large carrots, 1 potato, 1/2 onion, 1 paneer block) = 4 servings (at least)
+</details>
+
 ## Baking
 
 ### No-Knead Bread
