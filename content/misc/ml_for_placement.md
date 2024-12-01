@@ -617,3 +617,52 @@ It seems he has staked quite a bit of his professional reputation on this projec
 However, since his internal Google team asserts they are in the right, he must feel he has to defend them even if he has a weak technical understanding of floorplanning.
 
 ### Addressing the Nature Authors' Rebuttal
+
+[Here is the rebuttal again](https://arxiv.org/pdf/2411.10053): "That Chip Has Sailed: A Critique of Unfounded Skepticism Around AI for Chip Design"
+I shall ignore all the personal attacks and insinuations against Igor Markov.
+
+In short, the Nature authors claim a few issues with the ISPD 2023 paper:
+
+1. No pre-training, fewer compute resources, no training to convergence
+2. Evaluation on bad benchmarks (i.e. older PDKs)
+3. The ISPD reimplementation of parts of Circuit Training may contain errors
+
+#### The Pre-Training Issue Again
+
+I believe I have covered pre-training in my paragraphs above.
+
+However, at this point, I will concede that the ISPD paper did indeed do an iffy job of replicating the training procedure used in Google, and they could have done much better.
+Seeing the Tensorboard loss trajectories shows that the RL model wasn't bring trained properly.
+I believe the ISPD team ought to produce new data that performs training in the same manner as the Googlers prescribe.
+
+However, I believe all the points I made above still stand.
+If anything, this shows that deep RL networks and embeddings are very hard to train, require tons of compute, and still can't compete in runtime or compute resources vs mixed-placers.
+
+#### Evaluation on Old Technologies
+
+This is a weak argument from Google.
+There is no evidence that the choice of technology substantially affects the performance of Circuit Training (see the charts in the ISPD paper) besides some handwaving in a footnote.
+If indeed certain hyperparameters and proxy cost coefficients need to be tuned for a technology, that makes Circuit Training even more complex to deploy.
+This is contrast to modern vertically integrated CAD tools which can use full fidelity timing/routing engines to modify macro placements.
+<!--The authors mention that multiple patterning lowers the density at which congestion begins to appear, but ultimately this is just a tuning parameter, and multiple patterning is less frequently used in even more modern nodes that use EUV.-->
+
+#### Other Things
+
+The Nature authors claim that ISPD unnecessarily reverse engineered the proxy cost function and force-directed standard cell placer, by claiming they provided these as binaries.
+This is a bizarre thing to attack since binaries are black boxes and they didn't give a good reason they didn't release the source.
+
+The Nature authors also claim that the ISPD authors haven't shared their benchmarks (specifically synthesized netlists).
+For GF12, this is reasonable, since it is a proprietary technology and they can't share it for NDA reasons.
+For NG45, this is also reasonable, since all the benchmark RTL is available and the Cadence synthesis scripts are completely open (the Googlers can easily run synthesis themselves).
+The Nature authors are attacking a moot point.
+
+### Conclusion
+
+While I concede that there are things the ISPD authors could have done better, their conclusion is still sound.
+The Nature authors do not address the fact that CMP and AutoDMP outperform CT with far less runtime and compute requirements (although they claim CT would be closer/better if they had pre-trained the network and adjusted proxy cost coefficients for the target technology).
+
+This saga isn't over, and I don't expect it to be over for a while longer.
+I feel the ISPD authors still owe the Googlers (and the broader EDA CAD community) a response and a more rigorous refutation.
+
+Interestingly, some people at Intel Labs published an [article on IEEE Spectrum](https://spectrum.ieee.org/chip-design-ai): "AI Alone Isn’t Ready for Chip Design" on November 21, 2024 ([/r/hardware thread](https://www.reddit.com/r/hardware/comments/1gwurmw/ai_alone_isnt_ready_for_chip_design/)).
+They don't broach the topic of AlphaChip, but their article is good nonetheless.
