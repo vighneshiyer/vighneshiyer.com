@@ -52,11 +52,59 @@ A bunch of random recipes I like or I thought were interesting.
 ### Pasta with Tomato Cream Sauce
 
 - [Revolution| Spaghetti with tomato cream sauce using tomato paste](https://www.youtube.com/watch?v=NVe3_SdgRpc)
-  - Melt unsalted butter, add tomato paste and mash and stir fry until the tomato is fragrant
-  - Immediately add heavy cream and stir aggressively until completely mixed, adjust tomato paste and cream until the color matches that of the video and the consistency is thick
-  - DO NOT add salt - there will be plenty of salt in the pasta and cheese
-  - Boil pasta (rigatoni, spaghetti) in salted water, transfer to sauce without draining fully, stir through
-  - Top with microplaned parm or grana padano
+- Melt unsalted butter, add tomato paste and mash and stir fry until the tomato is fragrant
+- Immediately add heavy cream and stir aggressively until completely mixed, adjust tomato paste and cream until the color matches that of the video and the consistency is thick
+- DO NOT add salt - there will be plenty of salt in the pasta and cheese
+- Boil pasta (rigatoni, spaghetti) in salted water, transfer to sauce without draining fully, stir through
+- Top with microplaned parm or grana padano
+
+### Cherry Tomato and Basil Pasta
+
+- [Short](https://www.youtube.com/shorts/XWT0JnOTivw)
+- [This channel "Bread Bake Beyond" is excellent](https://www.youtube.com/@breadbakebeyond/shorts)
+- Smash garlic in mortar
+- Use small vine/cherry tomatoes, slice in half
+- Saute garlic with olive oil, add tomatoes, cook until soft
+- Deglaze with white wine, add salt, hot pepper flakes, and tomato paste
+- Add heavy cream, reduce, and add microplaned parmesean
+- Add sliced basil, immediately toss in cooked pasta and more grated parmesean
+- Adjust thickness with pasta water, boil, and serve
+- Top with black pepper and basil, and small mozzarella pearls + more parmesean + olive oil
+
+### White Wine and Pesto Pasta
+
+- [Short](https://www.youtube.com/shorts/ri8UgGRlfVo)
+- Toast sliced garlic in olive oil, deglaze with white wine
+- Add heavy cream, reduce, add salt + pepper
+- Add cooked pasta, grated parm cheese, and adjust with pasta water
+- Add pre-prepared basil pesto and stir in (do not cook)
+- Top with mozz pearls, parm cheese, pepper, Calabrian chili oil
+
+### Creamy Peppercorn Pasta
+
+- [Short](https://www.youtube.com/shorts/lS1aX7t5M28)
+- Grind whole peppercorns in a mortar and pestle
+- Chop one shallot finely, crush 3 garlic cloves
+- Fry shallot in olive oil, then add garlic and ground peppercorns
+- Deglaze with cognac and stock, and add heavy cream, reduce
+- Add cooked pasta, parm cheese, and pasta water to adjust, reduce
+- Serve topped with parsley, parm cheese, pepper
+
+### Shallot and Herbs Alfredo
+
+- [Short](https://www.youtube.com/shorts/b1IRasbpTEw)
+- Smash garlic in mortar and pestle, finely dice a shallot
+- Fry shallot in olive oil and unsalted butter
+- Deglaze with white wine and add garlic
+- Add heavy cream and reduce, add grated parm, pepper, and salt
+- Add long ribbon pasta, parm, and pasta water to adjust
+- Top with chopped parsley and chives, reduce until thick
+- Serve with olive oil, pepper, parm, and chopped chives
+
+### Stuffed Shells
+
+- [Cheesy Stuffed Shells (Better Than Lasagna)](https://www.youtube.com/watch?v=OdgOchwSifk)
+- No time to write the recipe. Write it down when I make it!
 
 ## Soups
 
@@ -64,6 +112,31 @@ A bunch of random recipes I like or I thought were interesting.
 
 - https://youtube.com/shorts/zz3D2fc3rvU?si=ZQSuxw00sauEc3VI
   - Roasted tomato, garlic, onion soup
+- [The best way to make grilled cheese & tomato Soup](https://www.youtube.com/watch?v=5K8xMOHTz8Y)
+- Chop onion and shallot into quarters, cut tomatoes into quarters, chop red bell pepper into half
+- Roast in baking tray with whole cloves of peeled garlic, salt and pepper, olive oil
+- Place roasted vegetables into a hot pot along with the roasting juices
+- Add stock, pepper and salt and red chili flakes
+- After boiling, blend with an immersion blender
+- Add basil leaves and blend again
+- Add heavy cream and grated parm and reduce
+- Add one shot of vodka, cover and simmer
+- Prepare grilled cheese as normal (butter, nice cheese)
+- Serve with white wine, top soup with heavy cream and chopped basil
+
+## Sandwiches
+
+### Caprese
+
+- [Short](https://www.youtube.com/shorts/aWeHckhduso)
+- Prepare tomato confit: roast cherry tomatoes, 3 cloves garlic, salt, pepper, rosemary sprig, olive oil in baking dish until tomatoes burst and reduce
+- Prepare basil pesto (as usual) (garlic, salt, toasted pine nuts, basil, olive oil, parm)
+- Toast bread in olive oil
+- Cover with basil pesto, arugula, burrata cheese, Calabrian chili oil, tomato confit, and balsamic glaze. Adjust salt and pepper.
+
+- [Another short](https://www.youtube.com/shorts/TdXLc4UFqgA)
+- In this variant, prepare the config with a whole head of garlic with the top chopped off and add some balsamic vinegar too
+- To serve, smash the cooked garlic onto toasted bread, top with burrata, then confit, and sliced basil
 
 ## Curries
 
@@ -129,6 +202,13 @@ A bunch of random recipes I like or I thought were interesting.
 - [Brie Crostini](https://www.yourhomebasedmom.com/brie-crostini/)
   - Very simple, toast baguette slices topped with brie cheese and fresh rosemary/thyme in an oven at 450F
   - Top with honey, serve warm
+
+#### Hazelnut Buratta
+
+- I've had this [at Delarosa](https://www.delarosasf.com/menus-bishop-ranch/) and [Doppio Zero](https://www.dzpizzeria.com/san-francisco-menu). It is always very good.
+- [Recipe](https://claudiastastybits.com/2015/03/burrata-hazelnut-and-honey-bruschetta-ode-to-delarosa-in-san-francisco/)
+- On plate, add burrata, drizzle with honey and honey-roasted hazelnuts, sprinkle coarse salt + pepper
+- Toast bread and drizzle with olive oil, serve on side
 
 ### Potatoes
 
