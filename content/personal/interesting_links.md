@@ -101,6 +101,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [First Things: What is the Longhouse?](https://archive.ph/BSEPn)
 - [Our Generation's War](https://archive.ph/RPVVm)
 - [The American Mind: The Death of Midwit Expertise](https://archive.ph/ytGCH)
+- [The 28 Theses of the German Christians](https://coreyjmahler.com/the-28-theses-of-the-german-christians/#fnr1-18150)
+- [Race in America and the Dork Right: Against an Authoritarianism of Clerks](https://bronzeagepervert.substack.com/p/race-in-america-and-the-dork-right)
 
 ## Productivity
 
@@ -109,6 +111,10 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Time Management
 
 - [My productivity app is a never-ending .txt file](https://jeffhuang.com/productivity_text_file/) ([HN link](https://news.ycombinator.com/item?id=39432876))
+
+## Health
+
+- [Bryan Johnson – The World’s Most Expensive Eating Disorder](https://desmolysium.com/bryan-johnson-the-worlds-most-expensive-eating-disorder/)
 
 ## Music
 

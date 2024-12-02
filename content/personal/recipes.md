@@ -184,6 +184,8 @@ A bunch of random recipes I like or I thought were interesting.
   - 1 banana, raw cacao, pine pollen, royal jelly, vanilla powder
 - [Another nice milkshake](https://x.com/coookwithchris/status/1799083286071034213)
   - Raw goat milk, goat whey, local bee pollen, local raw honey, creatine, astragalus root, organic wild blueberries
+- [Sisson's Milkshake](https://x.com/Mark_Sisson/status/1860794525209464879)
+  - Ice cream, Whey isolate, Heavy cream, 2-3 raw yolks, Milk, Creatine
 
 ### Sleep Potions
 
@@ -209,6 +211,12 @@ A bunch of random recipes I like or I thought were interesting.
   - 1 tbsp lion's mane
   - 1 tbsp ceylon cinnamon
   - warm milk + raw honey + MCT oil
+
+#### "Peaty" Coffee
+
+- [Recipe](https://x.com/celestialbe1ng/status/1860331872460398685)
+  - Take this with a grain of salt lol
+- Coffee, milk, collagen peptides, 1/2 tsp glycine, honey / maple syrup, coconut oil
 
 ### Electrolyte Drinks
 

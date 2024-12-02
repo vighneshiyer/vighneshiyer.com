@@ -235,3 +235,21 @@ This is not much different than modeling a multi-socket system, except with lowe
 
 This tradeoff between finely-distributed coherence (Intel) and cluster-level coherence (AMD) seems interesting and worth investigating at the arch modeling level.
 It can be investigated at a much smaller scale (in terms of number of cores and cache sizes) and we should be able to come to the same conclusions as with a larger system.
+
+### Some Supporting Data
+
+- https://chipsandcheese.com/p/amds-turin-5th-gen-epyc-launched
+
+> For convenience, the list below are the numbers from the chart because a chart this big can be hard to read.
+>
+>     Intra-CCD latency: ~45ns
+>
+>     Inter-CCD latency: ~150ns
+>
+>     Socket to Socket latency: ~260ns
+
+- https://chipsandcheese.com/p/core-to-core-latency-data-on-large-systems
+
+> Sapphire Rapids (SPR) is Intel’s latest server architecture, developed with the Golden Cove architecture as a foundation. A full SPR chip features four dies connected with EMIB links. Average core to core latency within a socket is 59 ns, while cross socket transfers average 138 ns latency.
+
+> Within a socket, groups of four cores tend to share similar characteristics. Worst case latency within a socket is 81 ns.

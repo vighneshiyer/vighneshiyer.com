@@ -20,3 +20,9 @@ Blogs:
 - https://yosefk.com/blog/
 - john de goes
 - li haoyi
+
+Health:
+- https://desmolysium.com/
+
+Productivity:
+https://www.scotthyoung.com/
