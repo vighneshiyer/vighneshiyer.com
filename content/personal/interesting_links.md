@@ -40,6 +40,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The LMAX architecture](https://martinfowler.com/articles/lmax.html) in the context of ([HN link: Disruptor-rs: better latency and throughput than crossbeam](https://news.ycombinator.com/item?id=40954104))
 - [Parsing Protobuf at 2+GB/s: How I Learned To Love Tail Calls in C](https://blog.reverberate.org/2021/04/21/musttail-efficient-interpreters.html) ([HN link](https://news.ycombinator.com/item?id=41289114))
 
+### Rust
+
+- [Speeding up the Rust edit-build-run cycle (davidlattimore.github.io)](https://news.ycombinator.com/item?id=42140164)
+
 ## Computer Architecture
 
 ### Talks
@@ -84,6 +88,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Woodworking as an escape from the absurdity of software](https://alinpanaitiu.com/blog/woodworking-escape-from-software-absurdity/) ([HN link](https://news.ycombinator.com/item?id=40245601))
 - [Doing well in your courses: a guide by Andrej Karpathy](https://cs.stanford.edu/people/karpathy/advice.html)
 - [MATH 3406M (McCuan) Spring 2022 - Some Administrative Details: John McCuan](https://mccuan.math.gatech.edu/courses/3406/rona.pdf) 😆
+- [A Student's Guide to Writing with ChatGPT (openai.com)](https://news.ycombinator.com/item?id=42129064)
 
 ## Philosophy / Religion
 
