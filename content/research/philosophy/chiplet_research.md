@@ -253,3 +253,6 @@ It can be investigated at a much smaller scale (in terms of number of cores and 
 > Sapphire Rapids (SPR) is Intel’s latest server architecture, developed with the Golden Cove architecture as a foundation. A full SPR chip features four dies connected with EMIB links. Average core to core latency within a socket is 59 ns, while cross socket transfers average 138 ns latency.
 
 > Within a socket, groups of four cores tend to share similar characteristics. Worst case latency within a socket is 81 ns.
+
+- Cost modeling: see LUCIE (paper from MICRO 2024). Basically a bunch of handwaving, and random things. Speculating on yield and other random stuff.
+- Also see the sanctions aware hardware paper. Same idea, who are you fooling?
