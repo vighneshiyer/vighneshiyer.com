@@ -595,3 +595,15 @@ April 26, 2024
   - Time horizon: long, short, ultrashort
   - Source of interest: ego, 'just' work, personal curiosity, in the blood passion
   - Research inspiration: uninspired, general field propaganda, truly inspired
+
+## Leveraging coeffs of a PMU-based regression model
+
+Motivated from the CAMS presentation about using ML for transferring benchmark scores across different microarchitectures with just PMU counter data.
+That original presentation was poorly motivated since you already have hardware for both microarchitectures, but the real value lies in the coefficients of the trained model.
+
+Can we understand the impact of various uarch features on speedometer.
+A simple regression study of PMU counters while running speedometer and doing a simple regression while sweeping the runtime availability of uarch resources would be insightful.
+Perhaps there is some way to inhibit the cache capacity (by pinging it from other cores) or the BP capacity or the ROB capacity or otherwise.
+This is something that would be very hard to investigate using simulation.
+
+Similar idea for the Geekbench OSS Rusty baremetal reconstruction project.
