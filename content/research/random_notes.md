@@ -607,3 +607,79 @@ Perhaps there is some way to inhibit the cache capacity (by pinging it from othe
 This is something that would be very hard to investigate using simulation.
 
 Similar idea for the Geekbench OSS Rusty baremetal reconstruction project.
+
+## Notes from Luca Carloni's Talk at Berkeley
+
+- About his experience using open source EDA and the European effort in general
+
+ir design
+can you genericify circuit structures separately from concrete attributes (gate types, bitwidths, constants) - ideally consider how to pull all FIFOs into one hash - shouldn't all constants be extracted outside a given IR circuit hash? should hashes just describe comibinational logic and the registers are treated separately?
+
+yosys-slang-compat-suite (pretty good SV benchmark suite that Ella can use)
+
+Cheshire seems to take 1-2 hrs to *elaborate*!!! - how does it take so long? what is inside this rtl? (see his slides, one CVA6, many peripherals, small LLC, off-chip tether)
+
+Jose mentioned that when designware is used, then genus outperforms oss synthesis by miles - making an OSS arithmetic circuit library, leveraging automatic DSE would be crucial
+
+LAU (library of arithmetic units) - quite impressive work - mostly generic gate level templates of arithmetic structures which are then synthesized/opt as usual
+
+PD tool of the future needs to avoid concretizing things early - move to canvas asap with blobs and incrementally concretize while allowing re-synthesis. can we avoid floorplanning or top-down hierarchical, by making that step native in the tool? blob-oriented syn + PD flow! ultra caching. 'feedback' becomes unnecessary with incremental blob concretization instead of manually adding annnotations from the very top rtl. how do we generalize the aspect ratio of a blob and allowed overlap (need a better geometric representation, perhaps a statistical distribution)?
+
+open challenges are quite relevant, can be addressed by blob-heuristic approach, timing-driven flow, format hell (unified internal in-memory database is the solution, semantics preserving database throughout the concreteization flow)
+
+the CrocSoC seems quite neat - very suitable for initial fun stuff in cs 152
+
+DFT is important, need to consider from the start or it will just become another 'pass' and not easily integrated into a bloby PnR flow
+
+luca is very sharp, great talk, need to get his slides and add to my vlsi cad article
+
+the reason for all these divergent vlsi cad tool flows has to do with the api exposed about the cad tools - tcl based garbage continue to produce the same garbage toolchain. proper library and top integration, no longer trying to use a CLI tool based flow, file based flow, is a bad idea.
+
+cad tool research done in the traditional way seems like a dead end tbh, it is useful academic engineering for sure, but this type of front-to-end flow seems like a waste. e.g. some students in taiwan are trying to feedback timing info from openroad into abc for timing driven optimization - this is a consequence of wrong abstractions and being stuck in the old paradigm...
+
+user-guided area/power/timing tradeoff from early floorplanning, or have the CAD tool already determine the range of possiblities with a blank and resizable canvas
+
+## Discussion with Jose Renau (10/30/2024)
+
+- egraphs for synthesis (cell mapping, boolean optimization)
+- HIR/LIR for rtl simulator generation
+- infinite bitwidth thing
+- equiv point approach vs aggressive caching approach for incremental synthesis
+
+- warmup via gpr insts + cache insts vs injection (similar to NEMU checkpoints)
+- rapid iteration focus
+- prefetcher warmup
+- tlb warmup is hard, but not published previously
+- create an ISA extension to make warmups easier - unify with post-silicon injection
+  - exploit side channel - make it easy for secrity researcher
+  - could useful for verificatoin too - a way to seed the tlb state and so forth, to avoid warmup sequences that are iffy anyways
+
+- tlb trick in dromajo (hypothesis)
+- big case statement in the main interpretation loop (compiler should optimize it into a jump table)
+- nothing special about predecode
+
+## Discussion with Victor (Nov 2024)
+
+- autocorrelation to find equiv snippet on a gsim trace
+- golang scheduling determinism on query response<D-Space> ... are quieries always prcessed on the same core?
+
+- move faster, not accurate (that is tolerable at Sifive, googlers seem too focused on details)
+- how to scale for new custs, customization - can't work with existing headcount, have talks with all the silicon vendors but not many actual paying customers for revenue for more people hiring
+- has team in taiwan and one person in bay area - not enough to do all the work required
+- firesim, both types of simulation are supported (trace-driven and execution-driven), high perf core only (but want to expand into all the product lines)
+- have correlation between firesim, silicon, RTL sim, and the perf model - they feel it is quite strong - however only one core workloads are correlated (webapps and other googling things are still a WIP). It seems that they only run SPEC/Geekbench single-core to do perf modeling; their thing is based on Sparta/Olympia but it is a fork of the OSS version. They execute all their modeled cores decoupled and there is some kind of uncore model (so multicore synchronized workloads are iffy in perf modeling).
+- have to deal with internal customers, external customers, and pathfinding using the perf model. not enough people to do all of that.
+  - would like to add a power model to the perf model - will require adding some signal proxies and a correlation matrix. they have PPA from synthesis for old parameterizations of the perf model that they have already taped out with customers.
+- overall, fast paced, lots of communication, seems like a good place to be
+- googlers are stuck for so long, the gsoc arch is already fixed, there is nothing much this team can contribute at this point, besides the next generation
+
+## Incremental Offline Synthesis Ideas
+
+For the incremental synthesis - one thing we want to do is offline continuous common abstraction extraction - when we discover common structures, we should be able to refactor them out and potentially create new primitive nodes in the IR
+
+## ISS Ideas
+
+Separation of concerns ala halide for generation of functional models from a specification description of an ISA
+e.g. for a memory block element (whether than be a scratchpad, DRAM, or otherwise) we can define codegen optimizations separately from the execution semantics itself (implementation as a fixed length array, a resizable vector, as a paged hash table, ...)
+e.g. for translation mappings (e.g. page table mappings) we can avoid having to specify a "TLB" explicitly in the ISS and instead generate it as a translation cache (which is a generic concept that can be applied to decode logic too)
+e.g. for the main execution loop, the transformation of a switch table based decode and dispatch can be automatically transformed into a threaded interpreter with its own VM and bytecode which can be hand guided by the ISS developer
