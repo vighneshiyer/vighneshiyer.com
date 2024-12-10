@@ -20,6 +20,7 @@ Blogs:
 - https://yosefk.com/blog/
 - john de goes
 - li haoyi
+- https://zipcpu.com/blog/2024/11/06/not-axi.html
 
 Health:
 - https://desmolysium.com/
