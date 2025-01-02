@@ -3,6 +3,9 @@
 
 ### My Trip Day-by-Day
 
+- Coex / Lotte Muji
+- Gangnam Daiso
+
 ### Observations About Korea / Koreans
 
 #### Metro and Chimes
