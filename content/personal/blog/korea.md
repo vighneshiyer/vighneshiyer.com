@@ -5,6 +5,21 @@
 
 - Coex / Lotte Muji
 - Gangnam Daiso
+- Rolling pasta: https://www.tripadvisor.com/Restaurant_Review-g294197-d16828545-Reviews-Rolling_Pasta_Jongno-Seoul.html#/media/16828545/?albumid=-184&type=ALL_INCLUDING_RESTRICTED&category=-184
+- Food suggestions: https://www.reddit.com/r/koreatravel/comments/1dbd0m6/food_suggestion_for_solotraveler_please/
+- Other Korea articles
+  - https://www.insideasiatours.com/blog/field-notes-a-first-timers-korea
+  - https://www.reddit.com/r/korea/comments/1cb48be/whats_the_coolestcraziest_fact_you_know_about/
+  - https://thecultureur.com/eat-play-stay-seoul-south-korea/
+  - https://indianinkorea.wordpress.com/2010/02/26/observations-about-korea/
+- Korean fashion: https://thekoreaninme.com/blogs/korean-fashion/korean-men-fashion/
+- Tourist spots in Seoul: https://www.reddit.com/r/koreatravel/comments/1h4xlbq/notsoobvious_tourist_spots_in_seoul/
+- https://lindynewsletter.beehiiv.com/p/what-s-wrong-with-korea
+
+#### Museums
+
+https://www.museumshop.or.kr/eng/product/product_li.do?page=2&purl=&str_bcode=030420006&checks=&price_txts1=&price_txts2=&left_url=%2Feng%2Fproduct%2Fproduct_li.do&searchTxt=&price_txt1=&price_txt2=&priceOder=0
+The Pensieve Boddisathva lol
 
 ### Observations About Korea / Koreans
 
@@ -139,6 +154,16 @@ Even tomatoes are fruits here, have you seen cherry stevia tomatoes?
 #### Auto Sliding Doors Everywhere
 
 #### Zokbo and Family Trees
+
+#### Saying Hi to Strangers
+
+America vs the rest of the world. Saying Hi, nodding, smiling at people on the street.
+
+https://x.com/PaulSkallas/status/1874935303359836531
+
+America is a very folksy place. Constant optimism is part of the social fabric.
+
+ The rest of the world isn't like this.
 
 ### My Regrets and My Next Trip
 
