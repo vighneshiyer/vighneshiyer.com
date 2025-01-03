@@ -165,6 +165,12 @@ America is a very folksy place. Constant optimism is part of the social fabric.
 
  The rest of the world isn't like this.
 
+#### The Importance of SKY
+
+Doctors, dentists, optometrists, hagwons
+No matter where you turn, there will be a SNU/Yonsei sign
+SKY castle is real
+
 ### My Regrets and My Next Trip
 
 Temple visit
