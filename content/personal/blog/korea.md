@@ -171,6 +171,8 @@ Doctors, dentists, optometrists, hagwons
 No matter where you turn, there will be a SNU/Yonsei sign
 SKY castle is real
 
+#### Korean Red Ginseng
+
 ### My Regrets and My Next Trip
 
 Temple visit

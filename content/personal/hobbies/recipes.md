@@ -266,6 +266,8 @@ A bunch of random recipes I like or I thought were interesting.
   - Raw goat milk, goat whey, local bee pollen, local raw honey, creatine, astragalus root, organic wild blueberries
 - [Sisson's Milkshake](https://x.com/Mark_Sisson/status/1860794525209464879)
   - Ice cream, Whey isolate, Heavy cream, 2-3 raw yolks, Milk, Creatine
+- [Orange Julius](https://x.com/OnlyThroughGod/status/1874924042622575063)
+  - Blend: 4 juiced naval oranges, 1/2 cup whole milk, 1/4 cup sugar or 3 tbsp honey, 2 raw egg yolks, 1 tsp vanilla extract, ice
 
 ### Sleep Potions
 
