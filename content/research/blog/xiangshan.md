@@ -11,3 +11,5 @@ Why is the top performing open source CPU (XiangShan) Chinese? Where's the Ameri
 Look into the 1 student 1 chip program. We need it in the US
 https://t.co/GzctYd5CTa
 https://ysyx.oscc.cc/en/project/intro.html#background
+
+- https://news.ycombinator.com/item?id=42576242

@@ -142,3 +142,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [A good rendition of Dunkelheit](https://www.youtube.com/watch?v=znV_BYjx5T0)
 - [An interesting set by moumou: House Music You Can't Find On Spotify](https://www.youtube.com/watch?v=_P2ilGmSXDk)
   - [Fidde - I Only See Things I Dont Have](https://www.youtube.com/watch?v=vwHx0BPj3vM)
+
+## Art
+
+- [Profilo Continuo (Testa di Mussolini)](https://www.iwm.org.uk/collections/item/object/2247)

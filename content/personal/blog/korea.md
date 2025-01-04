@@ -58,6 +58,8 @@ I feel the lifestyle and habits of Korean-Californians are the future of Koreans
 
 #### Love-Oriented Society
 
+korean love culture - internet nonsense is non-existent on the ground in Korea, everyone is together, although I may be too naive about this
+
 #### Clean Streets and No Garbage
 
 No beggars, no buskers, beautiful Metro,
@@ -100,6 +102,7 @@ Juk - bonjuk
 Sweet pancake thing
 Potato and cheese rosti thing
 Temple food
+Pine bud drink
 
 #### Korean Drinking Culture and Group-Orientation
 

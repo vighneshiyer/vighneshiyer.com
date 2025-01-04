@@ -27,3 +27,5 @@ Health:
 
 Productivity:
 https://www.scotthyoung.com/
+
+https://wiki.chadnet.org/ray-peat
