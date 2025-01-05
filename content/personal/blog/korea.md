@@ -1,7 +1,9 @@
 
 ## My Trip to Korea
 
-### My Trip Day-by-Day
+### Day-by-Day Sightseeing
+
+#### An Overview of Seoul
 
 - Coex / Lotte Muji
 - Gangnam Daiso
@@ -15,13 +17,14 @@
 - Korean fashion: https://thekoreaninme.com/blogs/korean-fashion/korean-men-fashion/
 - Tourist spots in Seoul: https://www.reddit.com/r/koreatravel/comments/1h4xlbq/notsoobvious_tourist_spots_in_seoul/
 - https://lindynewsletter.beehiiv.com/p/what-s-wrong-with-korea
+- Seoul official guidebook is very good actually: https://english.visitseoul.net/map-guide-book (file:///home/vighnesh/Downloads/2025guidebook_EN.pdf)
 
 #### Museums
 
 https://www.museumshop.or.kr/eng/product/product_li.do?page=2&purl=&str_bcode=030420006&checks=&price_txts1=&price_txts2=&left_url=%2Feng%2Fproduct%2Fproduct_li.do&searchTxt=&price_txt1=&price_txt2=&priceOder=0
 The Pensieve Boddisathva lol
 
-### Observations About Korea / Koreans
+### Observations About Korea and Koreans
 
 #### Metro and Chimes
 
@@ -41,6 +44,16 @@ See glasses, doctors, IV liquids, hospitals, phone stores, restaurants with kios
 Literally only one negative experience in a Korean store and it was at a 7-11 in Myeongdong with a black american cashier. Wtf. Why was she working in Korea to begin with?
 
 Dentist and optician competence was so good to see, nothing like America
+
+https://x.com/PaulSkallas/status/1875641066680144032
+
+> I went to the Cava in Wicker Park in Chicago a month ago. Lots of people there waiting in line. They want the food. they love the food. But the staff was out of ingredients. They didn't know what they were doing. The employees couldn't handle the to-go orders and the in-person orders. Everything was slow.
+>
+> When you go into a store and the owner is working there he is friendly and makes sure you are taken cared of. He has a stake in the business succeeding. Employees don't. They work for a wage. That's a misalignment.
+>
+> Why don't companies just tell employees that if stores make certain sales thresholds every month they'll get an extra few grand on their paycheck.
+
+Low wage employees in Korea are still competent! Very efficient, always try to improve the job they do, and looking for responsibility. They are just superior in every way to what we have in America (at least in the modern era; likely not the America of 100 years ago).
 
 #### Extreme Convenience
 
@@ -100,7 +113,7 @@ Bibimbap - can be extremely good, some banchan is vegetarian
 Gim
 Juk - bonjuk
 Sweet pancake thing
-Potato and cheese rosti thing
+Potato and cheese rosti thing (gamjajeon)
 Temple food
 Pine bud drink
 
@@ -175,6 +188,10 @@ No matter where you turn, there will be a SNU/Yonsei sign
 SKY castle is real
 
 #### Korean Red Ginseng
+
+#### Places to Shop
+
+#### Maps
 
 ### My Regrets and My Next Trip
 

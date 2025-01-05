@@ -39,15 +39,31 @@ A bunch of random recipes I like or I thought were interesting.
   - Before plating, warm plates in microwave for 30 seconds to get hot
 
 <details>
-<summary>Retrospective after 3/24/2024 preparation</summary>
-- I overcooked the pasta, it was a bit past al dente - should pull pasta as soon as it reaches al dente
-- The sauce pan was too hot when adding pecorino; I need to let the pasta cool for 1 minute along with the pasta water before I add cheese
-- The sauce was overall quite creamy, but slightly clumpy and stringy - this is due to poor temperature control, and not enough vigorous mixing
-- I used too much pepper (need to stick with 1 tbsp / serving or a bit less even)
-- I should use higher quality pasta (bronze cut square spaghetti De Cecco) and fresher pecorino
-- I tried to make garlic bread, but I only started it after I pulled the pasta - need to start it earlier and keep it under low flame until serving
-- It's hard to grate enough pecorino - I should use the microplane vs the box grater
+  <summary>Retrospective after 3/24/2024 preparation</summary>
+  <ul>
+    <li>I overcooked the pasta, it was a bit past al dente - should pull pasta as soon as it reaches al dente</li>
+    <li>The sauce pan was too hot when adding pecorino; I need to let the pasta cool for 1 minute along with the pasta water before I add cheese</li>
+    <li>The sauce was overall quite creamy, but slightly clumpy and stringy - this is due to poor temperature control, and not enough vigorous mixing</li>
+    <li>I used too much pepper (need to stick with 1 tbsp / serving or a bit less even)</li>
+    <li>I should use higher quality pasta (bronze cut square spaghetti De Cecco) and fresher pecorino</li>
+    <li>I tried to make garlic bread, but I only started it after I pulled the pasta - need to start it earlier and keep it under low flame until serving</li>
+    <li><s>It's hard to grate enough pecorino - I should use the microplane vs the box grater.</s> Actually, the box grater is the way to go.</li>
+  </ul>
 </details>
+
+[arXiv: Phase behavior of Cacio and Pepe sauce, Giacomo Bartolucci, et. al.](https://arxiv.org/abs/2501.00536) ([HN thread](https://news.ycombinator.com/item?id=42585707))
+
+The takeaway is to use cornstarch or flour to emulsify the pasta water (starch) + pecorino sauce since their isn't enough starch in the pasta water you used to cook the pasta (unless you operate a restaurant which cooks tons of pasta or you reduce the pasta water).
+Mix cornstarch or potato starch into a small amount of cold water, add the slurry to the sauce, and stir aggressively.
+Don't let the cheese get too hot, although, with enough of the starch emulsifier, the temperature becomes less of an issue.
+
+The referenced recipe: [Youtube: Cacio e Pepe: Original vs. Foolproof vs. Gourmet with Luciano Monosilio | Answering Babish](https://www.youtube.com/watch?v=U4eaNqTbDDA).
+
+They give example ratios: 2 people, 240g of pasta, 160g of pecorino, 4g of starch (2-3% of the cheese).
+Dissolve 4g of potato/corn starch in 40g of water, heat the mixture and stir until clear, then let it cool slightly.
+*Blend* the starch mixture and cheese, adding a splash of water if necessary, until it is a smooth sauce and season with pepper.
+Separately cook the pasta, drain it and let cool slightly before adding the sauce + pasta water.
+The only thing I don't like about this recipe is the lack of toasted peppercorns, but that is easily remedied.
 
 ### Pasta with Tomato Cream Sauce
 
@@ -123,6 +139,19 @@ A bunch of random recipes I like or I thought were interesting.
 - Add one shot of vodka, cover and simmer
 - Prepare grilled cheese as normal (butter, nice cheese)
 - Serve with white wine, top soup with heavy cream and chopped basil
+
+### Vegetable Soup
+
+- [The Legendary Vegetable Soup from the Italian Michelin Restaurant Il Luogo di Aimo and Nadia](https://www.youtube.com/watch?v=Tx3xoCThDbE)
+
+This is similar to a minestrone soup, with some important modifications.
+
+- Toasted farro in the base vs pasta
+- Blended cannellini beans used as a soup thickener and base
+- Usage of infused olive oil with sage, rosemary, garlic (infused oil is made by crushing the spices in a mortar, adding olive oil, and letting it sit for a day in the fridge)
+- Preparation of a separate vegetable broth using all the vegetable scraps, simultaneously with the soup production
+- Fennel seeds used in the base soup seasoning and fennel flower/pollen powder used as garnish
+- Whole cooked sorana beans are added to the soup
 
 ## Sandwiches
 
