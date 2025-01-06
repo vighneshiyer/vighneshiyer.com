@@ -21,6 +21,7 @@ Blogs:
 - john de goes
 - li haoyi
 - https://zipcpu.com/blog/2024/11/06/not-axi.html
+https://www.compactmag.com/
 
 Health:
 - https://desmolysium.com/
