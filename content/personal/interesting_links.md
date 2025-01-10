@@ -116,7 +116,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The 28 Theses of the German Christians](https://coreyjmahler.com/the-28-theses-of-the-german-christians/#fnr1-18150)
 - [Race in America and the Dork Right: Against an Authoritarianism of Clerks](https://bronzeagepervert.substack.com/p/race-in-america-and-the-dork-right)
 - [J'Accuse: An Open Letter to an Open Minded Tech Rightist by Torbert Fahey (12/26/2024)](https://www.jaccusepaper.co.uk/p/an-open-letter-to-an-open-minded)
-  - Interesting relevant news (1/6/2025): [Telugu Techies Lose Jobs At Apple In CSR Scam](https://www.bizzbuzz.news/industry/infotech/telugu-techies-lose-jobs-at-apple-in-csr-scam-1347793)
+  - Interesting relevant news (1/6/2025) (this is probably fake though): [Telugu Techies Lose Jobs At Apple In CSR Scam](https://www.bizzbuzz.news/industry/infotech/telugu-techies-lose-jobs-at-apple-in-csr-scam-1347793)
+  - This is a real story (12/3/2024) (Chinese committing fraud): [6 former Apple employees charged in $150,000 charitable donations scheme](https://www.nbclosangeles.com/news/national-international/former-apple-employees-charged/3573568/)
 - [Debate Club by Lomez (12/29/2024)](https://www.lomez.press/p/debate-club)
 
 ## Productivity
