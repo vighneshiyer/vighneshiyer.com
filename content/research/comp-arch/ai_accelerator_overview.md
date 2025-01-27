@@ -69,6 +69,7 @@ TaalasAI
 MatX
 NextSilicon
 Neuchips
+Blaize
 
 ## Hosted Services
 

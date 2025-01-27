@@ -8,7 +8,16 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
 - https://www.zach.be/p/why-are-so-many-startups-developing-640
   - Quilter PCB autorouter
 - https://www.zach.be/p/yc-is-wrong-about-llms-for-chip-design (HN post: https://news.ycombinator.com/item?id=42156516)
-  -
+- PCB design
+  - https://github.com/devbisme/skidl + https://github.com/michaelgale/pcbflow
+  - https://github.com/atopile/atopile/
+  - https://github.com/boldport/pcbmode
+  - AllSpice
+  - DeepPCB
+  - Flux.ai
+  - https://www.celus.io/
+- PCB manufacturing / assembly
+  - CircuitHub
 
 ## Some General Notes
 

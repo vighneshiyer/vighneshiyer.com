@@ -177,7 +177,7 @@ Point to Dave Patersons how to build a bad research center (https://www2.eecs.be
 ## Industry vs Academia
 
 - Academia is NOT 'industry-lite'
-intellectual vs economic risk
+intellectual vs economic risk vs implementation risk
 is there really a 'spectrum'?
 
 - Re-examine existing paradigms, tools, languages, and IRs - re-design them if we can do a better job! The same idea that applies to ISAs also applies to HDLs, scripts, schemas, and so forth.
