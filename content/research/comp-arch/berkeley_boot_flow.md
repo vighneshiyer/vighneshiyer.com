@@ -4,9 +4,47 @@ date = 2023-02-28
 +++
 
 Let's try to understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
-We will begin with a very simple baremetal program and try to understand the program loading mechanics, beginning execution, and communicating with a tethered host.
+We will begin with a very simple baremetal program and try to understand the program loading mechanics, the bootrom and initialization sequence, and communicating with a tethered host.
 
-## Let's build a tiny RISC-V binary
+## Dependencies
+
+Before we get started, install some basic dependencies on your laptop.
+
+### Host Toolchain and Libraries
+
+Install a base development environment for your host system:
+
+- **Arch Linux**: `pacman -S base-devel`
+- **Ubuntu**: `apt install build-essential`
+- **OSX**: `brew install gcc make cmake automake autoconf libtool` + `xcode-select --install`
+- **Windows**: Use WSL
+
+You also need a few other dependencies:
+
+- **Arch Linux**: `pacman -S dtc boost-libs`
+- **Ubuntu**: `apt-get install device-tree-compiler libboost-regex-dev libboost-system-dev`
+- **OSX**: `brew install dtc boost`
+
+### RISC-V Cross Compiler
+
+We will use a GCC *cross-compiler* that runs on your host architecture (x86 or ARM) and compiles source files to a RISC-V binary.
+
+- **Linux**: Look at the releases page for [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain/tags). Download the file that looks like `riscv64-elf-ubuntu-24.04-gcc-nightly-...tar.xz` (the key words are: `riscv64`, `elf`, `gcc`). Uncompress the file and add the `bin` folder inside to your `$PATH`.
+- **OSX**: Follow the instructions in the `README` in [homebrew-riscv](https://github.com/riscv-software-src/homebrew-riscv). Alternatively, you can install the [`riscv64-elf-gcc` Homebrew package](https://formulae.brew.sh/formula/riscv64-elf-gcc), but truthfully I don't know much about the OSX packages.
+
+After you install the cross compiler, verify it exists and runs.
+
+```bash
+which riscv64-unknown-elf-gcc
+riscv64-unknown-elf-gcc -v
+```
+
+### spike: The RISC-V Instruction Set Simulator
+
+`spike` is the golden RISC-V instruction set simulator (ISS).
+You give it a RISC-V binary and it will run it for you.
+
+## Let's build and run a tiny RISC-V binary
 
 You'll first need a RISC-V cross compiler for your host architecture (x86 or ARM).
 If you're using Arch, you can just run `pacman -S riscv64-elf-gcc`.
@@ -18,8 +56,17 @@ If you're using Windows, use WSL.
 
 Reference: https://github.com/riscv-software-src/riscv-tests/tree/master
 
+### Cross-Compilation with riscv-gcc
+
+### Linker Scripts
+
+### spike: The RISC-V Instruction Set Simulator
+
+#### The SoC Configuration
 
 ### Running it in spike
+
+#### What are those beginning instructions?
 
 #### Wait, why won't it stop?
 

@@ -129,6 +129,8 @@ The value is in placing the bet to begin with.
 
 trendfollowing is a big risk, trendsetting is even more risky, but it is the right type of risk to assume
 
+Don't look at what will the future bring, but rather look at what hasn't changed.
+
 ### Mission Accomplished?
 
 Never assume the thing that was said is actually done - usually that is not the case.
