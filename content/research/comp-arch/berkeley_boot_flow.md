@@ -1,25 +1,28 @@
 +++
-title = "The Berkeley RISC-V Boot and Bringup Stack"
+title = "The RISC-V Boot and Bringup Flow (Berkeley Edition)"
 date = 2023-02-28
 +++
 
-Let's try to understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
-We will begin with a very simple baremetal program and try to understand the program loading mechanics, the bootrom and initialization sequence, and communicating with a tethered host.
+Let's understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
+We will begin with a very simple baremetal program and understand the program loading mechanics, the bootrom and initialization sequence, and how the RISC-V core communicates with a tethered host.
+
+This article assumes basic knowledge about using the command line / shell, Linux, and the RISC-V ISA.
+If you don't possess these prerequisites, you must carefully go through [MIT's "missing semester" course](https://missing.csail.mit.edu/) before reading on.
 
 ## Dependencies
 
-Before we get started, install some basic dependencies on your laptop.
+Before we get started, let's install some required dependencies on your laptop.
 
 ### Host Toolchain and Libraries
 
-Install a base development environment for your host system:
+Install a basic development environment (`gcc`, `make`, etc.) on your host system:
 
 - **Arch Linux**: `pacman -S base-devel`
 - **Ubuntu**: `apt install build-essential`
 - **OSX**: `brew install gcc make cmake automake autoconf libtool` + `xcode-select --install`
 - **Windows**: Use WSL
 
-You also need a few other dependencies:
+You also need a few other dependencies for `spike`:
 
 - **Arch Linux**: `pacman -S dtc boost-libs`
 - **Ubuntu**: `apt-get install device-tree-compiler libboost-regex-dev libboost-system-dev`
@@ -27,10 +30,10 @@ You also need a few other dependencies:
 
 ### RISC-V Cross Compiler
 
-We will use a GCC *cross-compiler* that runs on your host architecture (x86 or ARM) and compiles source files to a RISC-V binary.
+You need a GCC *cross-compiler* that runs on your host architecture (x86 or ARM) and compiles source code (e.g. C, assembly) into a RISC-V binary.
 
-- **Linux**: Look at the releases page for [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain/tags). Download the file that looks like `riscv64-elf-ubuntu-24.04-gcc-nightly-...tar.xz` (the key words are: `riscv64`, `elf`, `gcc`). Uncompress the file and add the `bin` folder inside to your `$PATH`.
-- **OSX**: Follow the instructions in the `README` in [homebrew-riscv](https://github.com/riscv-software-src/homebrew-riscv). Alternatively, you can install the [`riscv64-elf-gcc` Homebrew package](https://formulae.brew.sh/formula/riscv64-elf-gcc), but truthfully I don't know much about the OSX packages.
+- **Linux**: Look at the releases page for [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain/tags). Download the file that looks like `riscv64-elf-ubuntu-24.04-gcc-nightly-...tar.xz` (the key words are: `riscv64`, `elf`, `gcc`). Uncompress the `.tar.xz` file and add the `bin` folder inside to your `$PATH`.
+- **OSX**: Follow the instructions in the `README` in [homebrew-riscv](https://github.com/riscv-software-src/homebrew-riscv). Alternatively, you can install the [`riscv64-elf-gcc` Homebrew package](https://formulae.brew.sh/formula/riscv64-elf-gcc), but truthfully I don't know if this package contains everything you need.
 
 After you install the cross compiler, verify it exists and runs.
 
@@ -42,25 +45,104 @@ riscv64-unknown-elf-gcc -v
 ### spike: The RISC-V Instruction Set Simulator
 
 `spike` is the golden RISC-V instruction set simulator (ISS).
-You give it a RISC-V binary and it will run it for you.
+You give it a RISC-V binary and `spike` will interpret it one instruction at a time.
+`spike` models all the architectural state of a RISC-V hart (hardware thread), backing memory (DRAM), and several other devices in a RISC-V SoC (CLINT, PLIC, UART) we will learn about soon.
 
-## Let's build and run a tiny RISC-V binary
+You need to set the `$RISCV` environment variable to some folder where `spike` will be installed to.
+Typically, it is set to the folder where you decompressed the riscv-gcc toolchain.
+You can also just create a folder anywhere on your disk.
 
-You'll first need a RISC-V cross compiler for your host architecture (x86 or ARM).
-If you're using Arch, you can just run `pacman -S riscv64-elf-gcc`.
-OSX users can install the toolchain with `brew install riscv64-elf-gcc`.
-If your package manager doesn't contain a RISC-V gcc package, download a RISC-V gcc toolchain [from here](https://github.com/riscv-collab/riscv-gnu-toolchain/tags) (starting with `riscv64-elf`), untar it, and place its `bin` directory on your `$PATH`.
-If you're using Windows, use WSL.
+```bash
+export RISCV=/path/to/some/sysroot
+export PATH="$PATH:$RISCV/bin"
+```
 
-### A simple program
+Time to build `spike` from source.
 
-Reference: https://github.com/riscv-software-src/riscv-tests/tree/master
+```bash
+git clone git@github.com:riscv-software-src/riscv-isa-sim && cd riscv-isa-sim
+mkdir build
+cd build
+../configure --prefix=$RISCV
+make -j8
+make install
+```
 
-### Cross-Compilation with riscv-gcc
+Verify everything is OK:
 
-### Linker Scripts
+```bash
+which spike
+spike --dump-dts TEST
+```
 
-### spike: The RISC-V Instruction Set Simulator
+## First Steps
+
+### A Simple Assembly Program
+
+Let's start with the simplest program we could write.
+It just loads 2 registers with literals, adds them together, and does this in a loop.
+
+```asm
+simple.S
+.section .text
+.global _start
+_start:
+    li a0, 1
+    li a1, 2
+    add a2, a0, a1
+    j _start
+```
+
+Find out for yourself: what do `.section .text` and `.global _start` mean?
+Let's compile this program and run it with spike.
+
+```bash
+riscv64-unknown-elf-gcc -nostartfiles -ffreestanding -march=rv64gc -mabi=lp64 -o simple.elf simple.S
+spike simple.elf
+```
+
+Oh no, something is wrong. Spike is unhappy with the ELF we gave it.
+
+```text
+Access exception occurred while loading payload simple.elf:
+Memory address 0x100b8 is invalid
+```
+
+To investigate further, let's disassemble the ELF binary.
+
+```bash
+riscv64-unknown-elf-objdump -D simple.elf
+```
+
+```text
+simple.elf:     file format elf64-littleriscv
+
+Disassembly of section .text:
+
+00000000000100b0 <_start>:
+   100b0:	4505                  li  a0,1
+   100b2:	4589                  li  a1,2
+   100b4:	00b50633              add a2,a0,a1
+   100b8:	bfe5                  j   100b0 <_start>
+```
+
+Indeed, we can see that the binary starts at the address `0x100b0`, but it seems spike doesn't like that.
+Why would that be the case?
+If you do some more investigation, you'll find that gcc has a default linker script for RISC-V which places the ELF at `0x10000`, followed by the ELF headers, and then the program itself at `0x100b0`.
+
+### The SoC Memory Map and Linker Scripts
+
+So, it seems spike doesn't like that this binary begins at this memory address.
+What memory map does spike assume?
+
+Each RISC-V hart on an SoC sees the same view of the system memory space.
+If we dump the default DTS
+
+### The Bootrom
+
+### How Can The Program Exit?
+
+## HTIF (Berkeley Host-Target Interface)
 
 #### The SoC Configuration
 
