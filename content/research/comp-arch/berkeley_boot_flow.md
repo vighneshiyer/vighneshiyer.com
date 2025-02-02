@@ -6,7 +6,7 @@ date = 2023-02-28
 Let's understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
 We will begin with a very simple baremetal program and understand the program loading mechanics, the bootrom and initialization sequence, and how the RISC-V core communicates with a tethered host.
 
-This article assumes basic knowledge about using the command line / shell, Linux, and the RISC-V ISA.
+This article assumes basic knowledge about using the command line / shell, Linux, the RISC-V ISA, and CPU architecture.
 If you don't possess these prerequisites, you must carefully go through [MIT's "missing semester" course](https://missing.csail.mit.edu/) before reading on.
 
 ## Dependencies
@@ -93,21 +93,23 @@ _start:
     j _start
 ```
 
-Find out for yourself: what do `.section .text` and `.global _start` mean?
+**Find out for yourself**: what do `.section .text` and `.global _start` mean?
 Let's compile this program and run it with spike.
 
 ```bash
 riscv64-unknown-elf-gcc -nostartfiles -ffreestanding -march=rv64gc -mabi=lp64 -o simple.elf simple.S
-spike simple.elf
 ```
 
-Oh no, something is wrong. Spike is unhappy with the ELF we gave it.
+**Find out for yourself**: what do the command line options passed to `gcc` mean?
+Now let's run the generated `elf` file with spike.
 
 ```text
+spike simple.elf
 Access exception occurred while loading payload simple.elf:
 Memory address 0x100b8 is invalid
 ```
 
+Oh no, something is wrong. Spike is unhappy with the ELF we gave it.
 To investigate further, let's disassemble the ELF binary.
 
 ```bash
@@ -127,13 +129,19 @@ Disassembly of section .text:
 ```
 
 Indeed, we can see that the binary starts at the address `0x100b0`, but it seems spike doesn't like that.
-Why would that be the case?
-If you do some more investigation, you'll find that gcc has a default linker script for RISC-V which places the ELF at `0x10000`, followed by the ELF headers, and then the program itself at `0x100b0`.
+If you do some more investigation, you'll find that gcc has a default linker script for RISC-V which sets the starting address for the ELF to `0x10000`, which is followed by the ELF headers, and then the program itself at `0x100b0`.
 
 ### The SoC Memory Map and Linker Scripts
 
-So, it seems spike doesn't like that this binary begins at this memory address.
-What memory map does spike assume?
+It seems spike doesn't like that this binary begins at the memory address `0x100b0`.
+So, what address should this binary be loaded at?
+
+When a RISC-V hart executes a load or store instruction, or fetches from the current PC, it sends an addressed request into the memory system.
+The request's address determines which device in the SoC will receive the request.
+The map from address to device is defined by the *SoC memory map*.
+
+So, what is the memory map of spike's default configuration?
+We can run `spike --dump-dts`
 
 Each RISC-V hart on an SoC sees the same view of the system memory space.
 If we dump the default DTS

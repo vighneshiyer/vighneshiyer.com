@@ -8,7 +8,7 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 
 ## Important Things
 
-- Natural curiosity
+- Natural curiosity. Inquisitive, but only after exhausting their own options to find answers.
 - Hacker mentality
 - Desire to write, explain, and teach for fun
 - Broad scope of interests, generalist
@@ -17,9 +17,9 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 
 ## Irrelevant Things
 
-- Classes you've taken and coursework
+- Classes you've taken, coursework, homework, and projects completed as a part of a course
 - GPA
-- Your background on any given research topic
+- Your existing background on any particular research topic or area of computer science
 - "Prior work" (especially papers or other publications)
 
 ## My Approach
@@ -35,7 +35,8 @@ My approach to interviewing undergrads (and others). Proven over many years of w
   - This can literally be anything. I even consider bash aliases to be 'tiny scripts'. I'm looking for any instinct towards automation and workflow optimization (and curiosity).
 1. Show me something you've played around with recently for fun.
   - This can be anything. A new programming language, an IDE, a library, a random program, a game, or some art. It doesn't have to be related to CS in any way: a new language, some physical skill, exercise, cooking, whatever!
-1. What are a few interesting things you read recently? Do they motivate any work?
+1. What are a few interesting things you read recently? (These need not be books. They can be tweets, blog posts, or articles, among many other possibilities.)
+  - Do they motivate any work?
 1. What problems in any field of your choice do you think are worth solving and you could attack? How would you start?
 
 Anyone in the know can attest that asking these things and getting meaningful responses gives you high confidence in the person's ability to do research *in any area*.
@@ -121,3 +122,12 @@ What does it mean when you are studying a topic you are supposedly interested in
 > That a CS grad doesn't even know basic Git is telling not of their degree, but of the individual themselves - that they have no desire to learn beyond what's taught, and couldn't even be bothered to look into the requirements of the industry that they want to work in.
 >
 > I argue that it should be a barrier to hiring, on that ground.
+
+### How to Handle LLMs for Interviews
+
+- [Ask HN: What is interviewing like now with everyone using AI?](https://news.ycombinator.com/item?id=42909166)
+
+> I've let people use GPT in coding interviews, provided that they show me how they use it. At the end I'm interested in knowing how a person solves a problem, and thinks about it. Do they just accept whatever crap the gpt gives them, can they take a critical approach to it, etc.
+
+I don't think there is any other way besides letting people show off how they leverage LLMs to improve their own productivity.
+People who are already good at programming and problem solving will leverage LLMs effectively, just as they leverage their editor, LSP, programming language, and the Internet in general.
