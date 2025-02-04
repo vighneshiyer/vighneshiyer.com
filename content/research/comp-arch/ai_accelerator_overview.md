@@ -27,6 +27,8 @@ Intel
 AMD
 FuriosaAI
 Tenstorrent Wormhole
+  - https://www.anandtech.com/show/21482/tenstorrent-launches-wormhole-ai-processors-466-fp8-tflops-at-300w
+  - https://semianalysis.com/2021/06/25/tenstorrent-wormhole-analysis-a-scale/#
 MatX
 Untether.ai
 Mythic (deprecated)

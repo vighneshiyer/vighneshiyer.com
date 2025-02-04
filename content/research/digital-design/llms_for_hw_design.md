@@ -24,6 +24,8 @@ Can unsupervised learning be helpful here?
 - generic agentic AI tools will outstrip specialized ones with model scaling and vast queryable datasets
 - startups are the wrong place to build specialized tools that depend on rich training data
 
+- https://news.ycombinator.com/item?id=42672790 (AI founders will learn the bitter lesson (lukaspetersson.com))
+
 https://ahmedheakl.github.io/asm2asm/
 ahmedheakl.github.io
 From CISC to RISC: Language-Model Guided Assembly Transpilation

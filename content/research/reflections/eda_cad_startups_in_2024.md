@@ -18,6 +18,11 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
   - https://www.celus.io/
 - PCB manufacturing / assembly
   - CircuitHub
+- DAC expo map for 2025: https://hallerickson.ungerboeck.com/prod/app85.cshtml?aat=5a38394674626477442b3465597050664944574a59456c7673365353335957374f5244577263577a6f31413d
+  - Jade Design Automation (Register Manager): https://jade-da.com/register-manager/ (there are tons of these, who buys this stuff?)
+  - Baum: https://www.baum-ds.com/ (Korean!, we talked to these guys in 2024, I like their products, basically trying to commercialize Donggyu's PhD projects lol)
+  - Silimate (of course): https://github.com/Silimate/silisizer (the usual)
+  - https://mooreslab.ai/ (LMAO) (old commercial LMAO: https://www.youtube.com/watch?v=w6p53_D7vMA&t=19s) (new commercial: https://www.youtube.com/watch?time_continue=32&v=PVadAPgUSKA&embeds_referring_euri=https%3A%2F%2Fmooreslab.ai%2F&source_ve_path=MjM4NTE)
 
 ## Some General Notes
 

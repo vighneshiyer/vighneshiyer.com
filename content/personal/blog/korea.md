@@ -55,6 +55,8 @@ https://x.com/PaulSkallas/status/1875641066680144032
 
 Low wage employees in Korea are still competent! Very efficient, always try to improve the job they do, and looking for responsibility. They are just superior in every way to what we have in America (at least in the modern era; likely not the America of 100 years ago).
 
+https://news.ycombinator.com/item?id=42707238 (Nobody cares (grantslatton.com)) - really drives the point home
+
 #### Extreme Convenience
 
 What does it mean? Think of the second-order meaning of conveience being so desirable for Koreans.

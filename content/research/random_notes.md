@@ -683,3 +683,10 @@ Separation of concerns ala halide for generation of functional models from a spe
 e.g. for a memory block element (whether than be a scratchpad, DRAM, or otherwise) we can define codegen optimizations separately from the execution semantics itself (implementation as a fixed length array, a resizable vector, as a paged hash table, ...)
 e.g. for translation mappings (e.g. page table mappings) we can avoid having to specify a "TLB" explicitly in the ISS and instead generate it as a translation cache (which is a generic concept that can be applied to decode logic too)
 e.g. for the main execution loop, the transformation of a switch table based decode and dispatch can be automatically transformed into a threaded interpreter with its own VM and bytecode which can be hand guided by the ISS developer
+
+## NSF Grants
+
+- https://www.nsf.gov/awardsearch/showAward?AWD_ID=2303735&HistoricalAwards=false
+- https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238346&HistoricalAwards=false
+- https://www.nsf.gov/awardsearch/showAward?AWD_ID=1955450&HistoricalAwards=false
+- https://www.nsf.gov/awardsearch/showAward?AWD_ID=2016662&HistoricalAwards=false

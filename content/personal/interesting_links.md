@@ -17,6 +17,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - ["The Mess We're In" by Joe Armstrong @ Strange Loop 2014](https://www.youtube.com/watch?v=lKXe3HUG2l4)
 - [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
   - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
+- [Stop Trying To Schedule A Call With Me](https://matduggan.com/stop-trying-to-schedule-a-call-with-me/) ([HN link](https://news.ycombinator.com/item?id=42669754))
 
 ### Functional Programming
 
@@ -46,6 +47,10 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Speeding up the Rust edit-build-run cycle (davidlattimore.github.io)](https://news.ycombinator.com/item?id=42140164)
 
+### Data Processing
+
+- [Modern Polars: A side-by-side comparison of the Polars and Pandas libraries.](https://kevinheavey.github.io/modern-polars/)
+
 ## Computer Architecture
 
 ### Talks
@@ -66,6 +71,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Nanjing University Department of Computer Science and Technology Computer System Basic Course Experiment 2024](https://nju--projectn-github-io.translate.goog/ics-pa-gitbook/ics2024/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
   - [Github: Nanjing University Computer System Project Series - Build a computer system from scratch!](https://github.com/NJU-ProjectN)
   - [Stop-Ask-Questions-The-Stupid-Ways](https://github-com.translate.goog/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp0)
+
+## Hardware
+
+- [Creating a highly-integrated open-source laptop from scratch. Power in your hands.](https://www.byran.ee/posts/creation/) ([Show HN: I made an open-source laptop from scratch (byran.ee)](https://news.ycombinator.com/item?id=42797260)) (very impressive)
 
 ## Machine Learning
 
@@ -97,6 +106,11 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Doing well in your courses: a guide by Andrej Karpathy](https://cs.stanford.edu/people/karpathy/advice.html)
 - [MATH 3406M (McCuan) Spring 2022 - Some Administrative Details: John McCuan](https://mccuan.math.gatech.edu/courses/3406/rona.pdf) 😆
 - [A Student's Guide to Writing with ChatGPT (openai.com)](https://news.ycombinator.com/item?id=42129064)
+- [Why are tech people suddenly so into homeschooling?](https://newsletter.goodtechthings.com/p/why-are-tech-people-suddenly-so-into) ([HN link](https://news.ycombinator.com/item?id=42698737))
+
+## Writing
+
+- [Ask HN: Is maintaining a personal blog still worth it?](https://news.ycombinator.com/item?id=42685534)
 
 ## Philosophy / Religion
 
@@ -117,13 +131,15 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The 28 Theses of the German Christians](https://coreyjmahler.com/the-28-theses-of-the-german-christians/#fnr1-18150)
 - [Race in America and the Dork Right: Against an Authoritarianism of Clerks](https://bronzeagepervert.substack.com/p/race-in-america-and-the-dork-right)
 - [J'Accuse: An Open Letter to an Open Minded Tech Rightist by Torbert Fahey (12/26/2024)](https://www.jaccusepaper.co.uk/p/an-open-letter-to-an-open-minded)
-  - Interesting relevant news (1/6/2025) (this is probably fake though): [Telugu Techies Lose Jobs At Apple In CSR Scam](https://www.bizzbuzz.news/industry/infotech/telugu-techies-lose-jobs-at-apple-in-csr-scam-1347793)
   - This is a real story (12/3/2024) (Chinese committing fraud): [6 former Apple employees charged in $150,000 charitable donations scheme](https://www.nbclosangeles.com/news/national-international/former-apple-employees-charged/3573568/)
+  - [Apple fires some Indians over donation fraud; TANA under scrutiny](https://timesofindia.indiatimes.com/city/hyderabad/apple-fires-some-indians-over-donation-fraud-tana-under-scrutiny/articleshow/117034457.cms)
 - [Debate Club by Lomez (12/29/2024)](https://www.lomez.press/p/debate-club)
+- [Moral Foundations Theory (Wikipedia)](https://en.wikipedia.org/wiki/Moral_foundations_theory)
 
 ## Productivity
 
 - [Tim Ferris: You Don’t Need More How-To Advice — You Need a Beautiful and Painful Reckoning](https://tim.blog/2024/02/09/harajuku-moment/)
+- [How to improve your WFH lighting to reduce eye strain](https://rustle.ca/posts/articles/work-from-home-lighting) ([HN link](https://news.ycombinator.com/item?id=42796950))
 
 ### Time Management
 
