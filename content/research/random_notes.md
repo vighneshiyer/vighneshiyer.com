@@ -232,6 +232,14 @@ Things I would ask a good architect:
 - Trace driven sim is almost an oxymoron
 - Trace implies execution
 
+- The lack of a founding myth
+- Chinese team with a single white, he would have long coding convos with the handful of Chinese women lol, Indian only teams, further split by language
+- Savings in terms of swe salary, Google compute units
+
+- "be googley" - this might have had some meaning during the days of Sergey and Page
+  - it might have meant: "act with honor"
+  - but today, it is basically "be nice!" "be kind!", just reduced to a meaningless slogan
+
 ## Hardware Modeling
 
 - An ir for event driven description of models that can be composed with a hardware primitive ir

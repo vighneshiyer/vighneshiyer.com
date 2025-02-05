@@ -579,3 +579,54 @@ Joonho's notes about research areas:
 - https://web.archive.org/web/20230305000019/http://ramp.eecs.berkeley.edu/
 - https://carrv.github.io/2017/slides/asanovic-riscv-research.pdf
 - https://people.eecs.berkeley.edu/~krste/papers/ramp-TR-05-1412.pdf
+- https://users.elis.ugent.be/~leeckhou/papers/hpca2025-hilp.pdf
+
+
+- RAMP era papers
+  - https://dl.acm.org/doi/abs/10.1145/1815961.1815999
+  - https://dl.acm.org/doi/pdf/10.1145/1837274.1837390
+  - https://ieeexplore.ieee.org/abstract/document/5749747
+  - https://dl.acm.org/doi/abs/10.1145/2775054.2694362
+
+### Distinguishing PIs from Researchers
+
+- https://www.youtube.com/watch?v=gjXD5dwRnDU
+  - "How to be the #1 pick in an R1 faculty search"
+- Key points
+- Who gets the job?
+  - Hypothesis: The person with the most pubs gets it.
+  - Why might a person have a strong CV? They are an incredible scientist and scholar.
+  - They joined a research group at a good time. How much contribution is from the student vs advisor?
+  - They are working on a hot field. What happens if the field is no longer hot? Do they have transferable knowledge/skills?
+  - They contributed a lot of papers. Can they lead an *independent*, world-class research team?
+- Graduate student vs prof
+  - Graduate student
+    - Expert knowledge of field
+    - Technically competent in research methods
+    - Strong fundamentals in field / skills to do engineering and study
+    - Productive and disciplined
+    - -> many papers
+    - Necessary, but not sufficient
+  - Professor
+    - Scientific vision (independence)
+    - Communication (pedagogical, persuasion, charisma, networking)
+    - -> scientifically influential
+    - Sufficient
+- Building a scientific vision
+  - To make something novel, you need to get to the point where the current SOTA is boring
+  - Then you need to take the field to the next level
+  - Incremental
+    - We can do X now
+    - I can extend this to Y (low-hanging fruit)
+  - Visionary
+    - What does this field need to be able to do 15 years from now?
+    - Plan: how are we going to get there?
+  - Developing a vision is a personal process: start as early as possible
+- Your time as a postdoc
+  - 6+ months per paper, don't do everything
+  - Pick a research vision and 2-3 works that demonstrate it
+  - Be thoughtful before chasing low-hanging fruit / followup papers
+- Format of talk
+  - Don't talk about 'what' you're going to do first
+  - Explain why you are going to do it first. Overarching research question, funding sources, how you will advise the first 3 PhD students
+  - If faculty isn't interested / invested in your problem, they won't care about your solution
