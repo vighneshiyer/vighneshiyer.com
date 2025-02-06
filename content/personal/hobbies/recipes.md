@@ -153,6 +153,23 @@ This is similar to a minestrone soup, with some important modifications.
 - Fennel seeds used in the base soup seasoning and fennel flower/pollen powder used as garnish
 - Whole cooked sorana beans are added to the soup
 
+### Ramen
+
+- [Ultimate Vegetarian Ramen](https://www.youtube.com/watch?v=riGNm51LiSw)
+  - Finely grate garlic and ginger, toast in sesame oil on low heat
+  - Add chili bean paste (1/2 tsp) and toast
+  - Add 1 tsp miso + 1 tsp sugar and toast
+  - Add 1 tbsp soy sauce + 1 tsp of kombu (kelp) powder
+  - Add 150 ml water + 300 ml of soy milk (can use coconut milk too), bring to simmer and set aside
+  - Cook ramen noodles and mix into broth
+  - Top with finely sliced green onions, sesame seeds, sesame oil
+  - My mods
+    - Saute mushrooms, whites of green onions, boy choy with ginger/garlic
+    - Add 1 tbsp of sake to deglaze along with some ground sesame seeds
+    - Add firm tofu to broth before simmering
+    - Substitute coconut milk for soy milk (but use more water, or else the broth will be too thick)
+    - Add fried eggs for topping
+
 ## Sandwiches
 
 ### Caprese

@@ -258,32 +258,41 @@ Let's break down what these instructions do.
 2. `addi a1, t0, 32`: The base address of the DTS is stored in `a1`
 3. `csrr a0, mhartid`: Load the current hart's ID into `a0` (every hart in a RISC-V SoC has a unique id, starting at 0)
 4. `ld t0, 24(t0)`: Load the `start_pc` into `t0` (the `start_pc` is located 24 bytes from the start of the reset vector)
-5. `jr t0`:
+5. `jr t0`: Jump to the `start_pc`
 
 When the program we pass to spike begins to run, it can immediately reference the hart ID and the base of the DTS.
 But wait, where does this `start_pc` come from?
 
+Looking at the code, it comes from calling `get_entry_point()`, which is [defined in `fesvr/htif.h`](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/htif.h#L70).
+We will get back to that soon, but essentially it reads the ELF file and queries where program execution should begin.
+**Try this yourself**: `riscv64-unknown-elf-readelf -a simple.elf`.
+
 ### How Can The Program Exit?
+
+OK, so far, so good.
+The program runs on spike and we know how spike's bootup routine works.
+
+But, the program runs in an infinite loop!
+If we left off the final jump instruction, the program still wouldn't exit.
+**Try this yourself**. **What happens**?
+
+To be able to exit the program, we must first understand *host-tethering*.
 
 ## HTIF (Berkeley Host-Target Interface)
 
-#### The SoC Configuration
+Image of the system (fesvr, htif)
 
-### Running it in spike
+### Printing Strings via HTIF
 
-#### What are those beginning instructions?
+## Booting a Rocket Core in RTL Simulation
 
-#### Wait, why won't it stop?
+### Loading the Program Into Memory
 
-
-#### What is this magic?
-
-### HTIF
-
-### Bootrom
+fast memload vs TSI
 
 ### CLINT
 
+software interrupt trigger to jump to start PC
 
 Now going into RTL simulation world:
 
