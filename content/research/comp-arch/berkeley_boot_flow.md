@@ -1,6 +1,6 @@
 +++
 title = "The RISC-V Boot and Bringup Flow (Berkeley Edition)"
-date = 2023-02-28
+date = 2025-02-05
 +++
 
 Let's understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
@@ -83,7 +83,7 @@ Let's start with the simplest program we could write.
 It just loads 2 registers with literals, adds them together, and does this in a loop.
 
 ```asm
-simple.S
+// simple.S
 .section .text
 .global _start
 _start:
@@ -103,7 +103,7 @@ riscv64-unknown-elf-gcc -nostartfiles -ffreestanding -march=rv64gc -mabi=lp64 -o
 **Find out for yourself**: what do the command line options passed to `gcc` mean?
 Now let's run the generated `elf` file with spike.
 
-```text
+```bash
 spike simple.elf
 Access exception occurred while loading payload simple.elf:
 Memory address 0x100b8 is invalid
@@ -137,16 +137,131 @@ It seems spike doesn't like that this binary begins at the memory address `0x100
 So, what address should this binary be loaded at?
 
 When a RISC-V hart executes a load or store instruction, or fetches from the current PC, it sends an addressed request into the memory system.
-The request's address determines which device in the SoC will receive the request.
-The map from address to device is defined by the *SoC memory map*.
+The request's address determines which device in the SoC the request will be routed to.
+This map from address to device is referred to as the *SoC memory map*.
 
-So, what is the memory map of spike's default configuration?
-We can run `spike --dump-dts`
+So, what is the memory map of the SoC that spike is modeling?
+We can run `spike --dump-dts DUMP` to find out (this dumps the *device tree* of the modeled SoC).
+**Find out for yourself**: what is a device tree?
 
-Each RISC-V hart on an SoC sees the same view of the system memory space.
-If we dump the default DTS
+```text
+  memory@80000000 {
+    device_type = "memory";
+    reg = <0x0 0x80000000 0x0 0x80000000>;
+  };
+```
+
+These lines indicate that memory (DRAM) begins at address `0x8000_0000` and is `0x8000_0000` bytes (2 GiB).
+So the address `0x100b0` isn't mapped to DRAM. It isn't mapped to anything!
+This explains why spike raised an error saying the ELF base memory address is invalid.
+
+How do we fix this?
+We want the linker to place the program's instructions at the beginning of the DRAM address space.
+Let's write a custom linker script that instructs gcc to place the program at `0x8000_0000`.
+
+```linker
+# link.ld
+OUTPUT_ARCH(riscv)
+ENTRY(_start)
+
+SECTIONS {
+    . = 0x80000000; /* Typical start address for RISC-V */
+    .text : {
+        *(.text)
+    }
+    .data : {
+        *(.data)
+    }
+    .bss : {
+        *(.bss)
+    }
+}
+```
+
+**Find out for yourself**: what does this linker script do? What data do the various sections (`.text`, `.data`, `.bss`) hold?
+Now, use this linker script with `gcc`.
+
+```bash
+riscv64-unknown-elf-gcc -nostartfiles -ffreestanding -march=rv64gc -mabi=lp64 -o simple.elf -T link.ld simple.S
+```
+
+**Find out for yourself**: disassemble this binary and observe the impact that using this linker script had.
+Let's run this binary on spike.
+We know this binary has an infinite loop, so we should only run a handful of instructions to observe what is happening.
+To do this, we will use spike's debug (`-d`) mode (run `help` for a full list of commands in debug mode) and dump spike's instruction commit log to a file (`spike.log`).
+
+```bash
+spike -d --log=spike.log simple.elf
+warning: tohost and fromhost symbols not in ELF; can't communicate with target
+(spike) run 100
+(spike) quit
+```
+
+Let's look at the log that spike wrote.
+
+```text
+core   0: 0x0000000000001000 (0x00000297) auipc   t0, 0x0
+core   0: 0x0000000000001004 (0x02028593) addi    a1, t0, 32
+core   0: 0x0000000000001008 (0xf1402573) csrr    a0, mhartid
+core   0: 0x000000000000100c (0x0182b283) ld      t0, 24(t0)
+core   0: 0x0000000000001010 (0x00028067) jr      t0
+core   0: >>>>  $xrv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0
+core   0: 0x0000000080000000 (0x00004505) c.li    a0, 1
+core   0: 0x0000000080000002 (0x00004589) c.li    a1, 2
+core   0: 0x0000000080000004 (0x00b50633) add     a2, a0, a1
+core   0: 0x0000000080000008 (0x0000bfe5) c.j     pc - 8
+core   0: >>>>  $xrv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0
+core   0: 0x0000000080000000 (0x00004505) c.li    a0, 1
+core   0: 0x0000000080000002 (0x00004589) c.li    a1, 2
+core   0: 0x0000000080000004 (0x00b50633) add     a2, a0, a1
+core   0: 0x0000000080000008 (0x0000bfe5) c.j     pc - 8
+```
+
+The format of this log is `core <core number>: <PC> (<raw instruction bytes>) <disassembled instruction>`.
+We can see the code we wrote and observe the infinite loop.
+But there is some code that spike seems to run even before it reaches our program at (`0x8000_0000`)!
 
 ### The Bootrom
+
+Notice that the first instruction spike fetches is at address `0x1000`.
+But we don't see that address in the spike DTS.
+
+What's happening is that spike models a hart that begins executing instructions from a hardcoded address (in this case `0x1000`) upon coming out of reset.
+The hardcoded set of instructions that a hart executes at boot is called the *reset vector*, and it is stored in the *bootrom*.
+
+The reset vector and bootrom are defined in [`riscv/sim.cc` in spike](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/riscv/sim.cc#L361).
+
+```cpp
+  reg_t start_pc = cfg->start_pc.value_or(get_entry_point());
+
+  uint32_t reset_vec[reset_vec_size] = {
+    0x297,                                      // auipc  t0,0x0
+    0x28593 + (reset_vec_size * 4 << 20),       // addi   a1, t0, &dtb
+    0xf1402573,                                 // csrr   a0, mhartid
+    get_core(0)->get_xlen() == 32 ?
+      0x0182a283u :                             // lw     t0,24(t0)
+      0x0182b283u,                              // ld     t0,24(t0)
+    0x28067,                                    // jr     t0
+    0,
+    (uint32_t) (start_pc & 0xffffffff),
+    (uint32_t) (start_pc >> 32)
+  };
+  // ...
+  std::vector<char> rom((char*)reset_vec, (char*)reset_vec + sizeof(reset_vec));
+  rom.insert(rom.end(), dtb.begin(), dtb.end());
+```
+
+The bootrom consists of the instructions we just saw + the `start_pc` + the DTB (the binary form of the device tree).
+Let's break down what these instructions do.
+
+1. `auipc t0, 0x0`: The current PC (`0x1000`) is loaded into `t0`
+2. `addi a1, t0, 32`: The base address of the DTS is stored in `a1`
+3. `csrr a0, mhartid`: Load the current hart's ID into `a0` (every hart in a RISC-V SoC has a unique id, starting at 0)
+4. `ld t0, 24(t0)`: Load the `start_pc` into `t0` (the `start_pc` is located 24 bytes from the start of the reset vector)
+5. `jr t0`:
+
+When the program we pass to spike begins to run, it can immediately reference the hart ID and the base of the DTS.
+But wait, where does this `start_pc` come from?
 
 ### How Can The Program Exit?
 
@@ -169,7 +284,6 @@ If we dump the default DTS
 
 ### CLINT
 
-bootrom, HTIF
 
 Now going into RTL simulation world:
 
