@@ -169,6 +169,8 @@ This is similar to a minestrone soup, with some important modifications.
     - Add firm tofu to broth before simmering
     - Substitute coconut milk for soy milk (but use more water, or else the broth will be too thick)
     - Add fried eggs for topping
+- [This INCREDI-BOWL vegan Ramen Recipe is quick and tasty!](https://www.youtube.com/watch?v=wOf1G1SdbA4)
+- Wok Stir fry noodles... coming soon
 
 ## Sandwiches
 

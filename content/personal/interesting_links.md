@@ -14,10 +14,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Features of a dream programming language: 3rd draft](https://dev.to/redbar0n/features-of-a-dream-programming-language-3rd-draft-5m6)
 - ["Unison: a new distributed programming language" by Paul Chiusano @ Strange Loop 2019](https://www.youtube.com/watch?v=gCWtkvDQ2ZI)
   - [Unison: The Big Idea](https://www.unison-lang.org/docs/the-big-idea/)
+  - [Abilities for the monadically inclined](https://www.unison-lang.org/docs/fundamentals/abilities/for-monadically-inclined/)
 - ["The Mess We're In" by Joe Armstrong @ Strange Loop 2014](https://www.youtube.com/watch?v=lKXe3HUG2l4)
 - [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
   - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
-- [Stop Trying To Schedule A Call With Me](https://matduggan.com/stop-trying-to-schedule-a-call-with-me/) ([HN link](https://news.ycombinator.com/item?id=42669754))
 
 ### Functional Programming
 
@@ -47,6 +47,10 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Speeding up the Rust edit-build-run cycle (davidlattimore.github.io)](https://news.ycombinator.com/item?id=42140164)
 
+### Scala
+
+- [Scala 3 Migration: Report from the Field](https://blog.pierre-ricadat.com/scala-3-migration-report-from-the-field) ([HN link](https://news.ycombinator.com/item?id=42964773))
+
 ### Data Processing
 
 - [Modern Polars: A side-by-side comparison of the Polars and Pandas libraries.](https://kevinheavey.github.io/modern-polars/)
@@ -71,12 +75,14 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Nanjing University Department of Computer Science and Technology Computer System Basic Course Experiment 2024](https://nju--projectn-github-io.translate.goog/ics-pa-gitbook/ics2024/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
   - [Github: Nanjing University Computer System Project Series - Build a computer system from scratch!](https://github.com/NJU-ProjectN)
   - [Stop-Ask-Questions-The-Stupid-Ways](https://github-com.translate.goog/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp0)
+- [An ex-ARM engineer critiques RISC-V (2019)](https://gist.github.com/erincandescent/8a10eeeea1918ee4f9d9982f7618ef68) ([HN link](https://news.ycombinator.com/item?id=24958423)) ([more comments](https://news.ycombinator.com/item?id=42928482))
+- [How to improve the RISC-V specification - Alastair Reid](https://alastairreid.github.io/riscv-spec-issues/)
 
 ## Hardware
 
 - [Creating a highly-integrated open-source laptop from scratch. Power in your hands.](https://www.byran.ee/posts/creation/) ([Show HN: I made an open-source laptop from scratch (byran.ee)](https://news.ycombinator.com/item?id=42797260)) (very impressive)
 
-## Machine Learning
+## Machine Learning (AI/ML)
 
 - [Simon Willison: Things we learned about LLMs in 2024 (12/31/2024)](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
 
@@ -91,12 +97,16 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
 - [Systems Software Research is Irrelevant by Rob Pike of Bell Labs (2/21/2000)](https://doc.cat-v.org/bell_labs/utah2000/utah2000.pdf)
 
-## Ventures and Life
+## Life
+
+- [Seinfeld's Duke 2024 Commencement Speech](https://www.youtube.com/watch?v=76QV2SrSqgo)
+- [3b1b's Harvey Mudd 2024 Commencement Speech](https://www.youtube.com/watch?v=W3I3kAg2J7w)
+
+## Business
 
 - [Paul Graham's Essays](https://paulgraham.com/articles.html)
   - [How to Start Google (March 2024)](https://paulgraham.com/google.html) ([HN link](https://news.ycombinator.com/item?id=39756865))
-- [Seinfeld's Duke 2024 Commencement Speech](https://www.youtube.com/watch?v=76QV2SrSqgo)
-- [3b1b's Harvey Mudd 2024 Commencement Speech](https://www.youtube.com/watch?v=W3I3kAg2J7w)
+- [Stop Trying To Schedule A Call With Me](https://matduggan.com/stop-trying-to-schedule-a-call-with-me/) ([HN link](https://news.ycombinator.com/item?id=42669754))
 
 ## Education
 
