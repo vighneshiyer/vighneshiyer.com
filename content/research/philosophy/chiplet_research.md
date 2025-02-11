@@ -256,3 +256,6 @@ It can be investigated at a much smaller scale (in terms of number of cores and 
 
 - Cost modeling: see LUCIE (paper from MICRO 2024). Basically a bunch of handwaving, and random things. Speculating on yield and other random stuff.
 - Also see the sanctions aware hardware paper. Same idea, who are you fooling?
+
+- https://arxiv.org/pdf/2502.01449
+  - Figure 1 of this paper is a good overview of SiP methodologies

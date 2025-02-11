@@ -1,0 +1,71 @@
+elf: {
+  label: "RISC-V ELF Binary"
+}
+
+host_syscall: {
+    label: "Host Services"
+    console: {
+      label: "Console printing"
+    }
+    fs: {
+      label: "Filesystem access"
+    }
+    exit: {
+      label: "Exit with returncode"
+    }
+}
+
+fesvr: {
+  label: "riscv-isa-sim/fesvr\n(Front-end Server)"
+  htif: {
+    label: "HTIF\n(Host-Target Interface)"
+  }
+  elfloader: {
+    label: "elfloader\n(ELF parser)"
+  }
+  syscall_proxy: {
+    label: "Syscall Proxy\n(Emulates target syscalls)"
+  }
+}
+
+soc: {
+  label: "riscv-isa-sim/riscv\n(SoC Functional Model)\nstep()"
+  hart: {
+      label: "RISC-V Hart"
+  }
+  bus: {
+      label: "Bus (SoC memory map)\n⌧"
+  }
+  dram: {
+      label: "DRAM"
+  }
+  plic: {
+      label: "PLIC"
+  }
+  clint: {
+      label: "CLINT"
+  }
+  #step: {
+  #    label: "step()"
+  #    style.font: mono
+  #    style.italic: false
+  #    #near: top
+  #}
+}
+
+ELF -> fesvr.elfloader
+fesvr.elfloader -> fesvr.htif
+fesvr.htif -> fesvr.syscall_proxy
+fesvr.htif -> soc.bus: {
+  label: "read_chunk()\nwrite_chunk()"
+  style: {
+    font-size: 22
+    font: mono
+    italic: false
+  }
+}
+fesvr.syscall_proxy -> host_syscall
+soc.hart -> soc.bus
+soc.bus -> soc.dram
+soc.bus -> soc.plic
+soc.bus -> soc.clint

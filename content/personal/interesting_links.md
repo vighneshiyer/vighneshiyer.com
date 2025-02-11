@@ -18,6 +18,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - ["The Mess We're In" by Joe Armstrong @ Strange Loop 2014](https://www.youtube.com/watch?v=lKXe3HUG2l4)
 - [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
   - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
+- [Carbon is not a programming language (sort of)](https://herecomesthemoon.net/2025/02/carbon-is-not-a-language/0) ([HN link](https://news.ycombinator.com/item?id=42983733))
 
 ### Functional Programming
 
@@ -50,6 +51,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Scala
 
 - [Scala 3 Migration: Report from the Field](https://blog.pierre-ricadat.com/scala-3-migration-report-from-the-field) ([HN link](https://news.ycombinator.com/item?id=42964773))
+- [Rust from a Scala Perspective: Advent of Code 2024](https://medium.com/@w.pitula/rust-from-a-scala-perspective-advent-of-code-2024-a5060f8beda3)
 
 ### Data Processing
 
@@ -121,6 +123,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Writing
 
 - [Ask HN: Is maintaining a personal blog still worth it?](https://news.ycombinator.com/item?id=42685534)
+- [Why Blog If Nobody Reads It?](https://andysblog.uk/why-blog-if-nobody-reads-it/) ([HN link](https://news.ycombinator.com/item?id=42992159))
 
 ## Philosophy / Religion
 

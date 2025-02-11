@@ -280,7 +280,30 @@ To be able to exit the program, we must first understand *host-tethering*.
 
 ## HTIF (Berkeley Host-Target Interface)
 
-Image of the system (fesvr, htif)
+Now is a good time to understand the target and host components of spike.
+We refer to the SoC that is being emulated (consisting of a RISC-V core connected to DRAM and peripherals) as the **target**.
+The **host** refers to the components of spike that *interact with the target* (e.g. load ELF binaries) and provide services (e.g. exiting / printing to the console).
+
+![Overview of the host and target components of spike](./figs/spike_fesvr_htif.svg)
+
+This is a logical overview of spike's architecture.
+The code for spike doesn't exactly correspond to these boxes, but the diagram is mostly accurate.
+Let's walk through how spike begins to execute a program on a modeled RISC-V target.
+
+1. The RISC-V ELF binary is passed to [`fesvr` (the "front-end server")](https://github.com/riscv-software-src/riscv-isa-sim/tree/master/fesvr) which contains the [`elfloader` component](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/elfloader.cc) that parses the ELF, analyzes its sections, and loads them into the target's DRAM.
+2. The `elfloader` interacts with the target using the [HTIF (host-target interface)](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/htif.h)
+  - The 2 primary functions that define the HTIF interface are `read_chunk()` and `write_chunk()`, [defined in `htif.h`](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/htif.h#L58)
+  - These functions allow the *host to access the target's memory space* (including its DRAM model)
+  - HTIF refers to the *interface*, while `fesvr` refers to the logic around it (e.g. the `elfloader`)
+  - Colloquially we refer to
+
+
+- HTIF vs fesvr is colloqually used to not only describe the the interface but also the logic around it (elf loader)
+
+HTIF is non-standard and not a part of any RISC-V spec.
+HTIF encapsulates the syscall proxy "spec" too.
+
+### Exiting via HTIF
 
 ### Printing Strings via HTIF
 
@@ -288,14 +311,31 @@ Image of the system (fesvr, htif)
 
 ### Loading the Program Into Memory
 
-fast memload vs TSI
+#### TSI
 
-### CLINT
+#### Fast DRAM Loading
+
+### Chipyard Bootrom
+
+#### CLINT
 
 software interrupt trigger to jump to start PC
 
+## Baremetal C
+
+### crt.S
+
+### libgloss
+
+## Running Userspace Binaries with pk
+
+### Virtual Memory
+
+## Booting Linux
+
 Now going into RTL simulation world:
 
+## RISC-V Baremetal Rust
 - Standalone TSI: https://github.com/ucb-bar/tsi
 - TSI protocol
   - https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/tsi.cc#L55
@@ -355,22 +395,6 @@ Notes from Joonho:
 >   2. Fesvr periodically checks `toHost` address
 >   3. When the value of `toHost` is not zero, it executes some action according to the value
 >      * E.g., `abort` `tohost_exit` `handle_trap` `print_str` all have different addresses
->
-> ```cpp
-> #include <stdio.h>
-> #include <inttypes.h>
->
-> char *arr[] = "Hello";
->
-> int main() {
-> 	uint64_t addr = (uint64_t)arr;
-> 	for (int i = 0; i < 5; i++) {
-> 		// This will make the core write "addr" to the "toHost" address. When fesvr sends a TL-A req through TSI, the response will be "addr"
->  		// Then, fesvr will send another request to "addr".
->   		printf("%c", arr[i]);
-> 	};
-> 	return 0;
-> }
 > ```
 
 - https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf (Sagar's slides from a long time ago)
