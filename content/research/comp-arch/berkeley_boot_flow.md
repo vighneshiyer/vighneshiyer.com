@@ -397,4 +397,4 @@ Notes from Joonho:
 >      * E.g., `abort` `tohost_exit` `handle_trap` `print_str` all have different addresses
 > ```
 
-- https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf (Sagar's slides from a long time ago)
+- https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf (Sagar's slides from a long time ago) [Archive](https://web.archive.org/web/20240717110728/https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf)
