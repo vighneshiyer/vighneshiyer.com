@@ -44,6 +44,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The LMAX architecture](https://martinfowler.com/articles/lmax.html) in the context of ([HN link: Disruptor-rs: better latency and throughput than crossbeam](https://news.ycombinator.com/item?id=40954104))
 - [Parsing Protobuf at 2+GB/s: How I Learned To Love Tail Calls in C](https://blog.reverberate.org/2021/04/21/musttail-efficient-interpreters.html) ([HN link](https://news.ycombinator.com/item?id=41289114))
 
+### Compilers
+
+- [A catalog of ways to generate SSA](https://bernsteinbear.com/blog/ssa/) ([HN link](https://news.ycombinator.com/item?id=43009952))
+
 ### Rust
 
 - [Speeding up the Rust edit-build-run cycle (davidlattimore.github.io)](https://news.ycombinator.com/item?id=42140164)
@@ -79,10 +83,16 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Stop-Ask-Questions-The-Stupid-Ways](https://github-com.translate.goog/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp0)
 - [An ex-ARM engineer critiques RISC-V (2019)](https://gist.github.com/erincandescent/8a10eeeea1918ee4f9d9982f7618ef68) ([HN link](https://news.ycombinator.com/item?id=24958423)) ([more comments](https://news.ycombinator.com/item?id=42928482))
 - [How to improve the RISC-V specification - Alastair Reid](https://alastairreid.github.io/riscv-spec-issues/)
+- [Smol GPU: An rv32i inspired ISA, SIMT GPU implementation in system-verilog.](https://github.com/Grubre/smol-gpu) (great `README` about GPU architectures and programming models)
+
+## Systems
+
+- [CACM: Meta’s Hyperscale Infrastructure: Overview and Insights](https://cacm.acm.org/research/metas-hyperscale-infrastructure-overview-and-insights/) ([HN link](https://news.ycombinator.com/item?id=43008920))
 
 ## Hardware
 
 - [Creating a highly-integrated open-source laptop from scratch. Power in your hands.](https://www.byran.ee/posts/creation/) ([Show HN: I made an open-source laptop from scratch (byran.ee)](https://news.ycombinator.com/item?id=42797260)) (very impressive)
+- [IEEE Spectrum: It’s Time To Rethink 6G](https://spectrum.ieee.org/5g-bandwidth) ([HN link](https://news.ycombinator.com/item?id=43027266))
 
 ## Machine Learning (AI/ML)
 

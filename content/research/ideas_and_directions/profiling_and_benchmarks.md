@@ -106,3 +106,6 @@ In general, there is *some* prior work, but it is limited in scope and old.
 - [Virtual Machine Warmup Blows Hot and Cold](https://arxiv.org/pdf/1602.00602.pdf)
     - An interesting paper that suggests that microbenchmarks are inconsistently 'warmed' on VMs with GC and JIT and often don't reach 'steady-state' performance
     - Motivates work in improving VM profiling and determinism
+
+- It's not important to model the commercial application precisely! That is not that relevant to the academic setting - we can't be slaves to Googlers who insist that nothing out in the open looks like their very special "Googling workloads". That is irrelevant.
+  - We instead should propose and implement a *methodology* and show that it works on a small scale with reasonable workloads that can be scaled up and applied to any scenario!

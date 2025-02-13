@@ -588,6 +588,8 @@ Joonho's notes about research areas:
   - https://ieeexplore.ieee.org/abstract/document/5749747
   - https://dl.acm.org/doi/abs/10.1145/2775054.2694362
 
+- Don't sweep the design space but build the design space!
+
 ### Distinguishing PIs from Researchers
 
 - https://www.youtube.com/watch?v=gjXD5dwRnDU

@@ -1,3 +1,5 @@
+# Meeting Methodology
+
 What is the point of these talks? Droning on and on and everyone is on their laptops. How much does group cohesion and common thinking/philosophy play a role in this? Don't we also see this in very specialized settings (e.g. EDA CAD Birds of a Feather at DAC)?
 
 What is the point of a research retreat or conference?
