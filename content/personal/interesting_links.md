@@ -61,6 +61,15 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Modern Polars: A side-by-side comparison of the Polars and Pandas libraries.](https://kevinheavey.github.io/modern-polars/)
 
+### Build Systems
+
+- [The Mill Build Tool Blog](https://mill-build.org/blog/)
+  - [Why does Mill use Scala?](https://mill-build.org/mill/depth/why-scala.html)
+
+### Typesetting
+
+- [TeX and Typst: Layout Models](https://laurmaedje.github.io/posts/layout-models/) ([HN link](https://news.ycombinator.com/item?id=43032697))
+
 ## Computer Architecture
 
 ### Talks

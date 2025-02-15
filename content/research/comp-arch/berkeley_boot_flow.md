@@ -1,6 +1,7 @@
 +++
 title = "The RISC-V Boot and Bringup Flow (Berkeley Edition)"
 date = 2025-02-05
+description = "HTIF, Fesvr, TSI, PLIC, CLINT, spike, what is all of this stuff?"
 +++
 
 Let's understand how a RISC-V binary boots and runs on a RISC-V core modeled in spike or in RTL simulation.
@@ -280,6 +281,11 @@ To be able to exit the program, we must first understand *host-tethering*.
 
 ## HTIF (Berkeley Host-Target Interface)
 
+<!--
+1. Start with the simplest possible asm program, introduce host htif communication to exit the program
+  - Will have to discuss linker scripts, memory layout, assembler, spike, and htif
+-->
+
 Now is a good time to understand the target and host components of spike.
 We refer to the SoC that is being emulated (consisting of a RISC-V core connected to DRAM and peripherals) as the **target**.
 The **host** refers to the components of spike that *interact with the target* (e.g. load ELF binaries) and provide services (e.g. exiting / printing to the console).
@@ -305,9 +311,31 @@ HTIF encapsulates the syscall proxy "spec" too.
 
 ### Exiting via HTIF
 
+> * How the program prints stuff & executes sys-calls in bare metal mode
+> * There are `toHost` and `fromHost` addresses in the `elf` file
+> * While the binary is executing in the SoC and meets a `printf` function…
+>   1. It writes the address of the string to the `toHost` address
+>   2. Fesvr periodically checks `toHost` address
+>   3. When the value of `toHost` is not zero, it executes some action according to the value
+>      * E.g., `abort` `tohost_exit` `handle_trap` `print_str` all have different addresses
+
 ### Printing Strings via HTIF
 
+## Baremetal C
+
+<!--
+1. Then use C (need to discuss crt.S, how to compile baremetal, buliding a htif library for launching syscalls)
+  - Then show the htif library that exists already within spike
+1. libgloss, what is it? how does it let us use regular libc functions, but delegate the syscall interface as we would like
+-->
+
+### crt.S
+
+### libgloss
+
 ## Booting a Rocket Core in RTL Simulation
+
+Now going into RTL simulation world
 
 ### Loading the Program Into Memory
 
@@ -315,86 +343,94 @@ HTIF encapsulates the syscall proxy "spec" too.
 
 #### Fast DRAM Loading
 
-### Chipyard Bootrom
+### Chipyard SoC Bootrom
 
 #### CLINT
 
 software interrupt trigger to jump to start PC
 
-## Baremetal C
-
-### crt.S
-
-### libgloss
+> 1. The core wakes out of reset
+> 2. The core fetches instructions from the BootROM (the address of the BootROM 0x10000, is a hardcoded value inside the core)
+> 3. The core spins using the instructions from the BootROM (boot sequence)
+> 4. Meanwhile, fesvr writes to binary to DRAM (this is not-coherent)
+> 5. When the fesvr is done writing the binary to the DRAM, it sends a TSI msg which gets translated to a TL msg which is sent to the CLINT which raises the MSIP(machine software) interrupt which pulls the core out of the boot sequence, and makes it jump to the starting point of the binary
 
 ## Running Userspace Binaries with pk
+
+<!--
+1. How does pk work?
+1. Virtual memory (setup routines and CSR configuration and page tables)
+-->
 
 ### Virtual Memory
 
 ## Booting Linux
 
-Now going into RTL simulation world:
+<!--
+1. OpenSBI + Linux boot? Final thing to show is how Linux sets up kernel mode logic and hands off things to userspace
+-->
 
 ## RISC-V Baremetal Rust
+
+
+## Multicore
+
+<!--
+1. Multicore programs, how do the riscv-benchmarks work in multicore mode?
+-->
+
+## Resources
+
+### Baremetal Rust for RISC-V
+
+- https://github.com/defermelowie/bare-metal-rust-on-riscv (Rust mode!)
+  - embedded rust book: https://docs.rust-embedded.org/book/start/semihosting.html
+  - rust based tsi implementation: https://github.com/ucb-bar/tsi
+  - https://docs.rust-embedded.org/embedonomicon/smallest-no-std.html
+
+### TSI
+
 - Standalone TSI: https://github.com/ucb-bar/tsi
 - TSI protocol
   - https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/tsi.cc#L55
   - https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/tsi.h
 - TSI to tilelink:
   - https://github.com/ucb-bar/testchipip/blob/master/src/main/scala/tsi/TSIToTileLink.scala
-- Serializing TSI:
+- Sending TSI transactions over UART:
   - https://github.com/ucb-bar/testchipip/blob/master/src/main/scala/uart/UARTToSerial.scala
+
+### Chipyard
 
 - How does the RTL-side memory map get generated?
   - See the diplomacy API: https://chipyard.readthedocs.io/en/latest/TileLink-Diplomacy-Reference/index.html
   - Diplomacy paper: https://carrv.github.io/2017/papers/cook-diplomacy-carrv2017.pdf
+- [6.13. Chipyard Boot Process — Chipyard 1.9.0 documentation](https://chipyard.readthedocs.io/en/stable/Customization/Boot-Process.html#bootrom-and-risc-v-frontend-server)
 
+### RISC-V Toolchain
 
-- HTIF, Fesvr, TSI, PLIC, CLINT, spike, what is all of this stuff
+- [The SiFive "All Aboard" blog post series](https://www.sifive.com/blog/all-aboard-part-0-introduction)
+
+> All Aboard, Part 0: Introduction (current page)
+> All Aboard, Part 1: The -march, -mabi, and -mtune arguments to RISC-V Compilers
+> All Aboard, Part 2: Relocations in ELF Toolchains
+> All Aboard, Part 3: Linker Relaxation in the RISC-V Toolchain
+> All Aboard, Part 4: The RISC-V Code Models
+> All Aboard, Part 5: Per-march and per-mabi Library Paths on RISC-V Systems
+> All Aboard, Part 6: Booting a RISC-V Linux Kernel
+> All Aboard, Part 7: Entering and Exiting the Linux Kernel on RISC-V
+> All Aboard, Part 8: The RISC-V Linux Port is Upstream!
+> All Aboard, Part 9: Paging and the MMU in the RISC-V Linux Kernel
+> All Aboard, Part 10: How to Contribute to the RISC-V Software Ecosystem
+> All Aboard, Part 11: RISC-V Hackathon, Presented by SiFive
+
+- [Putting the “You” in CPU](https://cpu.land/)
+
+> Multitasking, Exec, ELF, Paging, Fork-Exec
+
+- [Structure of the RISC-V Software Stack (2015)](https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf) ([Archive](https://web.archive.org/web/20240717110728/https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf))
+
 - From the RocketTile alone, reset vector, baremetal programs, the role of crt0.S, how the linker script works, physical memory
 - Moving up: how does HTIF work, how does the target program signal termination to the host tether, how does the host load programs into the processor
 - Even more: how do syscalls work, how does proxying work, how can we use CSRs for measuring time and performance
 - Virtual memory: how does the virtual memory environment work for the ISA tests, how does pk work?
 - FSBL: how does opensbi work? understanding privilege modes
-- https://www.sifive.com/blog/all-aboard-part-1-compiler-args
-- https://www.sifive.com/blog/all-aboard-part-6-booting-a-risc-v-linux-kernel (Palmer's series is great, just needs an update and consolidation)
-- https://news.ycombinator.com/item?id=37062422 (https://github.com/hackclub/putting-the-you-in-cpu)
-- https://github.com/defermelowie/bare-metal-rust-on-riscv (Rust mode!)
-  - embedded rust book: https://docs.rust-embedded.org/book/start/semihosting.html
-  - rust based tsi implementation: https://github.com/ucb-bar/tsi
-  - https://docs.rust-embedded.org/embedonomicon/smallest-no-std.html
-
-1. Start with the simplest possible asm program, introduce host htif communication to exit the program
-  - Will have to discuss linker scripts, memory layout, assembler, spike, and htif
-1. Write print syscall via htif in asm
-1. Then use C (need to discuss crt.S, how to compile baremetal, buliding a htif library for launching syscalls)
-  - Then show the htif library that exists already within spike
-1. libgloss, what is it? how does it let us use regular libc functions, but delegate the syscall interface as we would like
-1. Multicore programs, how do the riscv-benchmarks work in multicore mode?
-1. Virtual memory (setup routines and CSR configuration and page tables)
-1. Targeting baremetal with rust
-1. How does pk work?
-1. OpenSBI + Linux boot? Final thing to show is how Linux sets up kernel mode logic and hands off things to userspace
-
-Notes from Joonho:
-
-> # Boot Sequence
-> 1. The core wakes out of reset
-> 2. The core fetches instructions from the BootROM (the address of the BootROM 0x10000, is a hardcoded value inside the core)
-> 3. The core spins using the instructions from the BootROM (boot sequence)
-> 4. Meanwhile, fesvr writes to binary to DRAM (this is not-coherent)
-> 5. When the fesvr is done writing the binary to the DRAM, it sends a TSI msg which gets translated to a TL msg which is sent to the CLINT which raises the MSIP(machine software) interrupt which pulls the core out of the boot sequence, and makes it jump to the starting point of the binary
->
-> [6.13. Chipyard Boot Process — Chipyard 1.9.0 documentation](https://chipyard.readthedocs.io/en/stable/Customization/Boot-Process.html#bootrom-and-risc-v-frontend-server)
->
->
-> # How the program prints stuff & executes sys-calls in bare metal mode
-> * There are `toHost` and `fromHost` addresses in the `elf` file
-> * While the binary is executing in the SoC and meets a `printf` function…
->   1. It writes the address of the string to the `toHost` address
->   2. Fesvr periodically checks `toHost` address
->   3. When the value of `toHost` is not zero, it executes some action according to the value
->      * E.g., `abort` `tohost_exit` `handle_trap` `print_str` all have different addresses
-> ```
-
-- https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf (Sagar's slides from a long time ago) [Archive](https://web.archive.org/web/20240717110728/https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf)
