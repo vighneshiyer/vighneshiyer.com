@@ -5,13 +5,13 @@ elf: {
 host_syscall: {
     label: "Host Services"
     console: {
-      label: "Console printing"
+      label: "Print to the console"
     }
     fs: {
       label: "Filesystem access"
     }
     exit: {
-      label: "Exit with returncode"
+      label: "Exit with return code"
     }
 }
 
@@ -29,7 +29,7 @@ fesvr: {
 }
 
 soc: {
-  label: "riscv-isa-sim/riscv\n(SoC Functional Model)\nstep()"
+  label: "riscv-isa-sim/riscv\n(SoC Functional Model)"
   hart: {
       label: "RISC-V Hart"
   }
@@ -59,9 +59,8 @@ fesvr.htif -> fesvr.syscall_proxy
 fesvr.htif -> soc.bus: {
   label: "read_chunk()\nwrite_chunk()"
   style: {
-    font-size: 22
+    font-size: 20
     font: mono
-    italic: false
   }
 }
 fesvr.syscall_proxy -> host_syscall

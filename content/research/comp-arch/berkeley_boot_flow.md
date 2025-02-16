@@ -299,15 +299,14 @@ Let's walk through how spike begins to execute a program on a modeled RISC-V tar
 1. The RISC-V ELF binary is passed to [`fesvr` (the "front-end server")](https://github.com/riscv-software-src/riscv-isa-sim/tree/master/fesvr) which contains the [`elfloader` component](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/elfloader.cc) that parses the ELF, analyzes its sections, and loads them into the target's DRAM.
 2. The `elfloader` interacts with the target using the [HTIF (host-target interface)](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/htif.h)
   - The 2 primary functions that define the HTIF interface are `read_chunk()` and `write_chunk()`, [defined in `htif.h`](https://github.com/riscv-software-src/riscv-isa-sim/blob/master/fesvr/htif.h#L58)
-  - These functions allow the *host to access the target's memory space* (including its DRAM model)
-  - HTIF refers to the *interface*, while `fesvr` refers to the logic around it (e.g. the `elfloader`)
-  - Colloquially we refer to
+  - These functions allow the *host to access the target's memory space*. Calls to `write_chunk()` by the `elfloader` are used to write the ELF binary into the target's DRAM.
+  - HTIF refers to the *interface* and a *protocol* for proxying target syscalls, while `fesvr` contains the host components that interact with the target *using HTIF*
+  - HTIF is **not** a RISC-V standard. It is a Berkeley-specific hack from more than a decade ago that has proliferated more than we would have liked
+3. Once the ELF is loaded into the target's DRAM, the HTIF protocol constantly reads from the `tohost` address on the target
+  - `tohost` is a target memory address defined in the ELF which the program running on the target uses to communicate with the host
+  - This is the mechanism by which the target can signal exit or print to the console (i.e. access host services)
 
-
-- HTIF vs fesvr is colloqually used to not only describe the the interface but also the logic around it (elf loader)
-
-HTIF is non-standard and not a part of any RISC-V spec.
-HTIF encapsulates the syscall proxy "spec" too.
+- Moving up: how does HTIF work, how does the target program signal termination to the host tether, how does the host load programs into the processor
 
 ### Exiting via HTIF
 
@@ -339,6 +338,8 @@ Now going into RTL simulation world
 
 ### Loading the Program Into Memory
 
+- From the RocketTile alone, reset vector, baremetal programs, the role of crt0.S, how the linker script works, physical memory
+
 #### TSI
 
 #### Fast DRAM Loading
@@ -355,11 +356,16 @@ software interrupt trigger to jump to start PC
 > 4. Meanwhile, fesvr writes to binary to DRAM (this is not-coherent)
 > 5. When the fesvr is done writing the binary to the DRAM, it sends a TSI msg which gets translated to a TL msg which is sent to the CLINT which raises the MSIP(machine software) interrupt which pulls the core out of the boot sequence, and makes it jump to the starting point of the binary
 
+### CSRs
+
+- Even more: how do syscalls work, how does proxying work, how can we use CSRs for measuring time and performance
+
 ## Running Userspace Binaries with pk
 
 <!--
 1. How does pk work?
 1. Virtual memory (setup routines and CSR configuration and page tables)
+- Virtual memory: how does the virtual memory environment work for the ISA tests, how does pk work?
 -->
 
 ### Virtual Memory
@@ -368,6 +374,7 @@ software interrupt trigger to jump to start PC
 
 <!--
 1. OpenSBI + Linux boot? Final thing to show is how Linux sets up kernel mode logic and hands off things to userspace
+- FSBL: how does opensbi work? understanding privilege modes
 -->
 
 ## RISC-V Baremetal Rust
@@ -428,9 +435,3 @@ software interrupt trigger to jump to start PC
 > Multitasking, Exec, ELF, Paging, Fork-Exec
 
 - [Structure of the RISC-V Software Stack (2015)](https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf) ([Archive](https://web.archive.org/web/20240717110728/https://riscv.org/wp-content/uploads/2015/01/riscv-software-stack-bootcamp-jan2015.pdf))
-
-- From the RocketTile alone, reset vector, baremetal programs, the role of crt0.S, how the linker script works, physical memory
-- Moving up: how does HTIF work, how does the target program signal termination to the host tether, how does the host load programs into the processor
-- Even more: how do syscalls work, how does proxying work, how can we use CSRs for measuring time and performance
-- Virtual memory: how does the virtual memory environment work for the ISA tests, how does pk work?
-- FSBL: how does opensbi work? understanding privilege modes
