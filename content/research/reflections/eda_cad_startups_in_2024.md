@@ -129,6 +129,115 @@ The moonshot pivot is that they will make frontend design and verification so ea
 Then, the value proposition is that they will obsolete $100s of millions of NRE cost and make custom chips even more ubiquitous.
 If I was a VC, I would say this seems possible but unlikely, but that's good enough to invest.
 
+- https://www.youtube.com/watch?v=c_B5m6Vn9g4 (Why Work Here: Kartik Hegde, ChipStack)
+
+> Interviewer
+> Hey everybody, I'm here with Kartik Hegde, the founder and CEO of ChipStack. Thanks for joining us, Kartik.
+>
+> Kartik Hegde
+> Yeah, great to be here. Nice to meet you as well.
+>
+> Interviewer
+> So, tell me about ChipStack. Your site seems really interesting—you guys are at the forefront of AI and chip design. Tell me a little bit about what you do.
+>
+> Kartik Hegde]
+> Yeah, at the highest level, we're building software that helps chip designers work much faster. Chips are incredibly complex—it takes multiple years and hundreds of people to build a functioning, complex chip. Our mission is to reduce the time and effort it takes to do that.
+>
+> The way we do it differently from the current industry approach is by integrating generative AI into the chip design cycle. Most of the challenges in chip design are in verifying the logic of a chip and designing it optimally. We use generative AI to tackle these difficult problems, ultimately reducing the time and effort needed to build complex chips.
+>
+> Interviewer]
+> Can you paint me a picture of what this looks like? Are you building an environment where people can design chips, or how does this actually work if I'm using your product?
+>
+> Kartik Hegde]
+> We take an assistive approach. You install extensions into your code editors and IDEs, so ChipStack integrates directly into your workflow. We don’t want to force people onto a completely new platform. Instead, we enhance their existing workflows by integrating into key areas such as planning for testing, running simulations, debugging, and writing code. It’s a very interactive experience within your coding environment.
+>
+> Interviewer]
+> Talk to me about the founding story—why did you start the company?
+>
+> Kartik Hegde]
+> I started as a chip designer at Arm, where I was building and verifying chips. I loved working on hardware because it's the foundation of the entire innovation stack—better hardware leads to better software, better applications, and so much more. However, I quickly realized that the process was incredibly inefficient and slow, particularly the verification process. Verifying a chip is difficult because you have to test every possible state the hardware can go into, often in a random, inefficient manner. Writing directed tests is hard.
+>
+> Frustrated with these inefficiencies, I left the field and pursued research and a PhD in AI. However, I kept coming back to hardware because I loved its potential. After my PhD, I decided to work in an area where I had an unfair advantage—chip design and AI.
+>
+> I also saw three major trends: (1) Chips are getting more complex every generation, with a thousand times more transistors in the last two decades. (2) More companies are building chips—what used to be dominated by seven major companies has now expanded to include hundreds of startups and tech firms. (3) The rise of generative AI has direct implications for chip design, as many bottlenecks are natural language problems.
+>
+> With my background, these trends, and my passion for hardware and AI, I saw an opportunity to build a company that could make a significant impact. I met my co-founder Hamid, an experienced chip designer, and we had similar thoughts—so we built ChipStack.
+>
+> Interviewer]
+> Tell me about the vision for the company. You mentioned wanting to build a generational company. What does success look like?
+>
+> Kartik Hegde]
+> Our North Star is enabling chip design in less than a month with fewer than ten people. That’s an ambitious goal, but I believe it’s achievable.
+>
+> When we reach that point, the value proposition changes entirely. Today, only the largest tech companies build custom chips because the process takes years and hundreds of engineers. But if we can reduce that time significantly, even smaller companies will be able to consider custom silicon. That democratization of chip design is our ultimate vision.
+>
+> Interviewer]
+> Why do you think ChipStack is uniquely positioned to crack this problem when others are also trying?
+>
+> Kartik Hegde]
+> It comes down to the people we bring together. ChipStack is an incredibly complex company to build because it requires expertise in three key areas:
+>
+> Highly experienced chip designers—this is a rare skill that takes a decade to develop.
+>
+> Strong ML scientists and engineers—this is an AI company at its core.
+>
+> Experienced software engineers—we need to integrate with existing automation tools that are decades old and used by every chip design company.
+>
+> On top of that, having the right investors, connections, and early customers is crucial. We’ve assembled a world-class team, including experts from Google, NVIDIA, and the Allen Institute for AI. We also have strong investors like Khosla Ventures and Clear Ventures. This combination of a strong team, strong backers, and strong early customers gives us confidence in our direction.
+>
+> Interviewer]
+> What milestones do you need to hit in the next year or two?
+>
+> Kartik Hegde]
+> Our immediate focus is verification. If we can deploy software that reduces verification time by an order of magnitude and makes real customers love it, that’s our biggest milestone. In startup terms, that means reaching product-market fit. We already have excited early customers using our product, and we’re collecting data on how much time and effort they save. Successfully demonstrating real-world impact is our next major step.
+>
+> Interviewer]
+> Tell me about your team and work culture.
+>
+> Kartik Hegde]
+> We’re about 15 people right now, with offices in the Bay Area and Seattle. We have an on-site culture because we believe in serendipitous in-person conversations, which spark innovation.
+>
+> Our culture emphasizes two main things:
+>
+> Technical depth – We reward people who think deeply and comprehensively about complex problems.
+>
+> Customer focus – We ensure our solutions align with real user needs, leveraging our in-house chip designers as proxies for end users.
+>
+> Interviewer]
+> How do you attract top talent in such a competitive field?
+>
+> Kartik Hegde]
+> For chip designers, the pitch is simple: Do you want to work at another traditional chip company, or do you want to change the inefficiencies that everyone knows exist? You still use your expertise but also learn about generative AI.
+>
+> For AI experts, we highlight impact. AI advancements depend on better chips—what if NVIDIA or AMD could release new GPUs in six months instead of years? That’s the kind of impact we’re enabling.
+>
+> For software engineers, chip design tools haven’t innovated in decades. This is a rare chance to revolutionize developer experience in an industry that needs it.
+>
+> Interviewer]
+> What are you most excited about for the next year?
+>
+> Kartik Hegde]
+> We’ve built the foundation: infrastructure, product, initial customers. Now it’s about iterating and making the product indispensable to customers. That’s the fun part—refining and improving until they can’t live without it.
+>
+> Interviewer]
+> Any final thoughts on startups or building a company?
+>
+> Kartik Hegde]
+> Startups are a unique blend of research, engineering, and business. They challenge you in ways other careers don’t. I believe every engineer should try working at a startup early in their career. The network effect, exposure, and impact potential are unmatched. If you don’t try, you won’t know if it’s for you.
+>
+> Interviewer]
+> Where can people learn more about ChipStack?
+>
+> Kartik Hegde]
+> Visit chipstack.ai. The site is still in an early version, but if you’re interested in chip design, AI, or software, reach out. We’re always hiring and looking for great talent!
+>
+> Interviewer]
+> Awesome! Thanks for your time, Kartik.
+>
+> Kartik Hegde]
+> Thanks so much!
+
+
 ## Generation Alpha (Transistor)
 
 https://github.com/gen-alpha-xtor/GenAlphaSchematicsDemo
