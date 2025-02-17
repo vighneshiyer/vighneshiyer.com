@@ -290,6 +290,8 @@ Now is a good time to understand the target and host components of spike.
 We refer to the SoC that is being emulated (consisting of a RISC-V core connected to DRAM and peripherals) as the **target**.
 The **host** refers to the components of spike that *interact with the target* (e.g. load ELF binaries) and provide services (e.g. exiting / printing to the console).
 
+### Fesvr Architecture
+
 ![Overview of the host and target components of spike](./figs/spike_fesvr_htif.svg)
 
 This is a logical overview of spike's architecture.
@@ -303,10 +305,13 @@ Let's walk through how spike begins to execute a program on a modeled RISC-V tar
   - HTIF refers to the *interface* and a *protocol* for proxying target syscalls, while `fesvr` contains the host components that interact with the target *using HTIF*
   - HTIF is **not** a RISC-V standard. It is a Berkeley-specific hack from more than a decade ago that has proliferated more than we would have liked
 3. Once the ELF is loaded into the target's DRAM, the HTIF protocol constantly reads from the `tohost` address on the target
-  - `tohost` is a target memory address defined in the ELF which the program running on the target uses to communicate with the host
-  - This is the mechanism by which the target can signal exit or print to the console (i.e. access host services)
+  - `tohost` is a target memory address defined in the ELF
+  - The program running on the target writes to the `tohost` address to communicate with the host
+  - This allows the target to exit or print to the console (i.e. access host services)
 
-- Moving up: how does HTIF work, how does the target program signal termination to the host tether, how does the host load programs into the processor
+### HTIF Syscall Proxy Architecture
+
+
 
 ### Exiting via HTIF
 

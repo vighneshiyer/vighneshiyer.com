@@ -172,6 +172,15 @@ This is similar to a minestrone soup, with some important modifications.
 - [This INCREDI-BOWL vegan Ramen Recipe is quick and tasty!](https://www.youtube.com/watch?v=wOf1G1SdbA4)
 - Wok Stir fry noodles... coming soon
 
+### Chowmein
+
+- [Short](https://www.youtube.com/shorts/TqYG5c23lcs)
+  - Chop celery, cabbage, onion
+  - Soy sauce, brown sugar, crushed ginger and garlic
+  - Oil, onions fry, then cabbage and celery
+  - Then add noodles and sauce
+  - My take: probably replace the celery with the whites of green onions, add some tofu
+
 ## Sandwiches
 
 ### Caprese
