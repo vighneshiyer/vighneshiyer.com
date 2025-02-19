@@ -1,0 +1,37 @@
+direction: right
+
+ds: Data Structures {
+  dl: device.h {
+  device_list: |cpp
+class device_list_t {
+ public:
+  void register_device(device_t* dev);
+  void handle_command(command_t cmd);
+
+ private:
+  std::vector<device_t*> devices;
+};|
+
+  device: |cpp
+class device_t {
+ public:
+  void handle_command(command_t cmd);
+
+ protected:
+  void register_command(size_t, command_func_t, const char*);
+};|
+
+  command: |cpp
+class command_t {
+ public:
+  command_t(memif_t& memif, uint64_t tohost, callback_t cb)
+  uint8_t device() { return tohost >> 56; }
+  uint8_t cmd() { return tohost >> 48; }
+  uint64_t payload() { return tohost << 16 >> 16; }
+};|
+  }
+}
+
+init: Initialization {
+
+  }

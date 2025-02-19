@@ -253,6 +253,11 @@ This is similar to a minestrone soup, with some important modifications.
     - Slice your bread down the middle, then lather each side with your garlic butter
     - For a cheesy garlic bread, add shredded mozzarella after the garlic butter
     - Put your bread on the bottom rack of the oven and broil on high until golden (usually 8-10 minutes, but keep an eye on it so it doesn't burn)
+- [Confit Garlic Cheesy Bread: Short](https://www.youtube.com/shorts/q3tFXIIhreE)
+  - Submerge many garlic cloves in olive oil in oven safe dish and bake at 130 deg C for one hour to make garlic confit
+  - Add garlic confit (after draining oil) + stick of unsalted butter + parsley, grated parm cheese, pinch of salt. Blend together (or use mortar and pestle)
+  - Spread on ciabatta, add parm on top + grated mozz cheese
+  - Broil 5 minutes
 
 #### Brie Crostini
 

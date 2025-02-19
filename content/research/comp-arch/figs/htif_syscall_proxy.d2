@@ -1,0 +1,59 @@
+direction: down
+#**.style.font-size: 30
+
+target {
+  label: "Target"
+}
+
+htif: HTIF {
+  query {
+    label: "Periodically read tohost"
+    shape: parallelogram
+  }
+  act: {
+    label: "if (tohost != 0)"
+    style.font: mono
+    shape: diamond
+  }
+  list: Device List
+}
+
+bcd: Block Character Device {
+  rw: {
+    label: "Command 0 (Read)\nCommand 1 (Write)"
+  }
+}
+
+syscall_proxy: Syscall Proxy Device\n(Command 0) {
+  syscall: Syscall {
+    print: Read/Write (to stdout/stderr)
+    etc: Open, Read, Write, Seek, Stat\n(to files)
+  }
+  exit: Exit with return code
+}
+
+host: Host {
+  console: Console
+  fs: File System
+}
+
+target -> htif.query {
+  label: tohost value
+  style.font: mono
+  style.font-size: 20
+}
+
+htif.query -> target: {
+  label: read(tohost_addr)
+  style.font: mono
+  style.font-size: 20
+}
+
+htif.act -> htif.list
+htif.query -> htif.act
+
+htif.list -> syscall_proxy
+htif.list -> bcd
+bcd.rw <-> host.console
+syscall_proxy.syscall.print <-> host.console
+syscall_proxy.syscall.etc <-> host.fs

@@ -172,6 +172,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Tim Ferris: You Don’t Need More How-To Advice — You Need a Beautiful and Painful Reckoning](https://tim.blog/2024/02/09/harajuku-moment/)
 - [How to improve your WFH lighting to reduce eye strain](https://rustle.ca/posts/articles/work-from-home-lighting) ([HN link](https://news.ycombinator.com/item?id=42796950))
+- [Finding Flow: Escaping Digital Distractions Through Deep Work and Slow Living](https://www.ssp.sh/blog/finding-flow/) ([HN link](https://news.ycombinator.com/item?id=43067303))
 
 ### Time Management
 

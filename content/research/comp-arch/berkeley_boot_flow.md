@@ -311,7 +311,17 @@ Let's walk through how spike begins to execute a program on a modeled RISC-V tar
 
 ### HTIF Syscall Proxy Architecture
 
+![Overview of how HTIF for syscall proxying works at a high level](./figs/htif_syscall_proxy.svg)
 
+This figure provides an overview of how HTIF performs syscall proxying.
+HTIF periodically polls the value of `tohost` and if its non-zero, delegates to its device list.
+The device ID encoded in the `tohost` value is used to select a device to handle the target's request.
+The command ID also encoded in `tohost`
+
+#### Read the Code
+
+Now we will walk through the code in fesvr to understand the HTIF protocol in depth.
+You can skip this part.
 
 ### Exiting via HTIF
 
