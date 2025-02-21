@@ -14,6 +14,17 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 - Broad scope of interests, generalist
 - Strong programmer
 - **Intrinsic** (in the blood) interest in computer science topics
+- https://news.ycombinator.com/item?id=43109255 (What Makes a Great Software Engineer (Dissertation) (2016) [pdf] (washington.edu))
+
+> My view of GSEs:
+> - Wiliness to test hypotheses, listen to others, seeks input and feedback, and maintain metrics to decide if various methods are or aren't working.
+> - Minimal ego.
+> - Curiosity about things at lower levels.
+> - Mastery of first principles and able to create data structures and algorithms optimized for specific, difficult problems.
+> - Ability to debug up and down the stack quickly.
+> - Concern for stability and usability by consumers of products and services maintained and delivered.
+> - Ability to teach and mentor.
+> - Ethical integrity refusing to compromise or exploit users for short-term business gain.
 
 ## Irrelevant Things
 
