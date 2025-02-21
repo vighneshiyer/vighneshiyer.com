@@ -12,12 +12,12 @@ class device_list_t {
   device: |cpp
 class device_t {
   void handle_command(command_t cmd);
-  void register_command(size_t, command_func_t, const char*);
+  void register_command(size_t id, command_func_t);
 };|
 
   command: |cpp
 class command_t {
-  command_t(memif_t& memif, uint64_t tohost, callback_t cb)
+  command_t(memif_t& memif, uint64_t tohost)
   uint8_t device() { return tohost >> 56; }
   uint8_t cmd() { return tohost >> 48; }
   uint64_t payload() { return tohost << 16 >> 16; }
@@ -28,9 +28,27 @@ class command_t {
 }
 
 init: Initialization {
-  htif: htif.cc {
+  register_dev: |cpp
+// htif.cc
+void htif_t::register_devices() {
+  device_list.register_device(&syscall_proxy);
+  device_list.register_device(&bcd);
+}|
 
-  }
+  syscall_cmd: |cpp
+// syscall.cc
+syscall_t::syscall_t(htif_t* htif) {
+  register_command(0, &syscall_t::handle_syscall);
+}|
+
+  bcd_cmd: |cpp
+// device.cc
+bcd_t::bcd_t() {
+  register_command(0, &bcd_t::handle_read);
+  register_command(1, &bcd_t::handle_write);
+}|
+  register_dev -> syscall_cmd
+  register_dev -> bcd_cmd
 }
 
 runtime: Runtime {

@@ -210,6 +210,8 @@ Things I would ask a good architect:
 - success is rare. products are killed often (everyone knows this). it is uncommon for a googlers to be proud of what they've built, rather they are proud of exploiting the ad revenue for their personal enrichment.
 - extreme leadership and purging is required to restore google to its former glory. especially from the hw side, the only solutions are musk-style leadership or acquisition while maintaining separation.
 - deepmind people are special. they have their own canopy building. no one is allowed in. unlike any other building in google.
+- what about the edge tpu. consider the things in their HW org on the google cloud side and otherwise related to custom silicon. edge tpu tried Chisel, was big, then they died off without proper support. TPU continued, but it is probably only TCO beneficial once the NVIDIA margin is considered, as a product itself, it probably isn't competitive. they seem to have something similar to aws nitro (which is all thanks to their acquisition of Annapurna). they use outsourcing all the time - broadcom and marvell are the big ones - the internal PD teams are meager, that is done by the pros. density of googling silicon is quite low. tensor SoC is a big mess and is still mostly outsourced - even stapling ARM IP together is a challenge with a budget similar to apple. budget is rarely the problem when it comes to custom silicon - the leadership and vision and skills of the team are the most important.
+- recruiters are outsourced!
 
 - Why is there ipc in the gem5 embedding? How do we handle dvfs of the trace itself?
 - Time based sampling vs inst based, embedding aggregation for soc, trace scheduler
