@@ -309,7 +309,7 @@ Let's walk through how spike begins to execute a program on a modeled RISC-V tar
   - The program running on the target writes to the `tohost` address to communicate with the host
   - This allows the target to exit or print to the console (i.e. access host services)
 
-### HTIF Syscall Proxy Architecture
+### HTIF Architecture
 
 ![Overview of how HTIF for syscall proxying works at a high level](./figs/htif_syscall_proxy.svg)
 
@@ -321,7 +321,7 @@ The command ID also encoded in `tohost`
 #### Read the Code
 
 Now we will walk through the code in fesvr to understand the HTIF protocol in depth.
-You can skip this part.
+Here is a figure that summarizes the relevant code snippets for the diagram above.
 
 ### Exiting via HTIF
 
@@ -338,10 +338,13 @@ You can skip this part.
 ## Baremetal C
 
 <!--
-1. Then use C (need to discuss crt.S, how to compile baremetal, buliding a htif library for launching syscalls)
-  - Then show the htif library that exists already within spike
-1. libgloss, what is it? how does it let us use regular libc functions, but delegate the syscall interface as we would like
+Then use C (need to discuss crt.S, how to compile baremetal, buliding a htif library for launching syscalls)
+Then show the htif library that exists already within spike
+libgloss, what is it? how does it let us use regular libc functions, but delegate the syscall interface as we would like
 -->
+
+So far we have used assembly, but writing it, even for RISC-V, is painful.
+Let's begin using C.
 
 ### crt.S
 
@@ -373,14 +376,13 @@ software interrupt trigger to jump to start PC
 
 ### CSRs
 
-- Even more: how do syscalls work, how does proxying work, how can we use CSRs for measuring time and performance
+- How can we use CSRs for measuring time and performance?
 
 ## Running Userspace Binaries with pk
 
 <!--
-1. How does pk work?
-1. Virtual memory (setup routines and CSR configuration and page tables)
-- Virtual memory: how does the virtual memory environment work for the ISA tests, how does pk work?
+How does pk work?
+Virtual memory (setup routines and CSR configuration and page tables) (v environment for ISA tests)
 -->
 
 ### Virtual Memory
@@ -388,8 +390,8 @@ software interrupt trigger to jump to start PC
 ## Booting Linux
 
 <!--
-1. OpenSBI + Linux boot? Final thing to show is how Linux sets up kernel mode logic and hands off things to userspace
-- FSBL: how does opensbi work? understanding privilege modes
+OpenSBI + Linux boot? Final thing to show is how Linux sets up kernel mode logic and hands off things to userspace
+FSBL: how does opensbi work? understanding privilege modes
 -->
 
 ## RISC-V Baremetal Rust
@@ -398,10 +400,10 @@ software interrupt trigger to jump to start PC
 ## Multicore
 
 <!--
-1. Multicore programs, how do the riscv-benchmarks work in multicore mode?
+Multicore programs, how do the riscv-benchmarks work in multicore mode?
 -->
 
-## Resources
+## More Resources
 
 ### Baremetal Rust for RISC-V
 

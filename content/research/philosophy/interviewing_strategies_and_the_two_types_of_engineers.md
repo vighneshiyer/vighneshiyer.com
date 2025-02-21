@@ -142,3 +142,11 @@ What does it mean when you are studying a topic you are supposedly interested in
 
 I don't think there is any other way besides letting people show off how they leverage LLMs to improve their own productivity.
 People who are already good at programming and problem solving will leverage LLMs effectively, just as they leverage their editor, LSP, programming language, and the Internet in general.
+
+- [AI Killed The Tech Interview. Now What?](https://kanenarraway.com/posts/ai-killed-the-tech-interview-now-what/) ([HN link](https://news.ycombinator.com/item?id=43108673))
+
+> Company A wants to hire an engineer, an AI could solve all their tech interview questions, so why not hire that AI instead?
+>
+> There's very likely a real answer to that question, and that answer should shape the way that engineer should be assessed and hired.
+
+Good point. Ultimately, what an AI may not have is the *desire* to do foundational things. A human with desire, paired with an AI, will outperform massive teams where each person just doesn't really care.

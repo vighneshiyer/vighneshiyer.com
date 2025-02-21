@@ -1,4 +1,4 @@
-direction: down
+direction: right
 
 ds: Data Structures and tohost Encoding {
   dl: device.h {
@@ -25,6 +25,8 @@ class command_t {
   device_list -> device
   device -> command
   }
+  near: top-center
+  direction: right
 }
 
 init: Initialization {
@@ -52,6 +54,44 @@ bcd_t::bcd_t() {
 }
 
 runtime: Runtime {
-  main_loop
-  syscall_dispatch
+  main_loop: Main Simulation Loop {
+    loop: |cpp
+      // htif.cc
+      int htif_t::run() {
+        start();
+        while (!signal_exit && exitcode == 0) {
+          if ((tohost = from_target(mem.read_uint64(tohost_addr))) != 0)
+            mem.write_uint64(tohost_addr, 0);
+          if (tohost != 0) {
+            command_t cmd(mem, tohost, fromhost_callback);
+            device_list.handle_command(cmd);
+          }
+          step(5000);
+        }
+      }|
+  }
+  syscall_dispatch: Syscall Dispatch {
+    dispatch: |cpp
+      // syscall.cc
+      void syscall_t::handle_syscall(command_t cmd) {
+        if (cmd.payload() & 1) {
+          htif->exitcode = cmd.payload();
+          // Print exitcode if non-zero
+        }
+        else // proxied system call
+          dispatch(cmd.payload());
+      }
+
+      void syscall_t::dispatch(reg_t mm) {
+        reg_t magicmem[8];
+        memif->read(mm, sizeof(magicmem), magicmem);
+
+        reg_t syscall_num = htif->from_target(magicmem[0]);
+        syscall_args = magicmem[1:7];
+        this->*table[syscall_num](syscall_args);
+      }|
+  }
+  main_loop -> syscall_dispatch
+  near: bottom-center
+  direction: right
 }
