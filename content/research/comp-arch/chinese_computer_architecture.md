@@ -31,6 +31,7 @@
 - number of people is irrelevant. you may think the Chinese have an advantage due to the number of people they can command, but that isn't the case. Or even if it was, it wouldn't be possible with just a pool of people.
   - it is about leadership, vision, and drive of the leaders. If you look at the code contributors, the majority of projects are one man shows. One man drives everything downstream. The 'hero' is the most important character, and everyone else is his supporting cast.
   - The vision of the Chinese, supported by professors, students, industry allies, and the government is unified and real. No nonsense. Very honest.
+- https://csdiy.wiki/en/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/NJUOS/
 
 ## From Lux
 

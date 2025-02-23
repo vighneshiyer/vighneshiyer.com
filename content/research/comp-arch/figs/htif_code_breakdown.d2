@@ -1,8 +1,8 @@
 direction: right
 
 ds: Data Structures and tohost Encoding {
-  dl: device.h {
   device_list: |cpp
+// device.h
 class device_list_t {
   void register_device(device_t* dev);
   void handle_command(command_t cmd);
@@ -24,7 +24,6 @@ class command_t {
 };|
   device_list -> device
   device -> command
-  }
   near: top-center
   direction: right
 }

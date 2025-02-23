@@ -176,6 +176,13 @@ Compete with the strengths of the school, don't compete with eth on chip vlsi, d
 Cite his article on research labs
 Point to Dave Patersons how to build a bad research center (https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
 
+- https://www.linkedin.com/posts/bruceahecht_exciting-presentations-from-jan-rabaey-and-activity-7297392795135193088-G04p/
+
+> Prof. Rabaey’s talk, "Reverse Time Machines – An Approach to Beyond State of the Art Research," inspired attendees to think beyond incremental progress and envision the future of technology.
+
+> One often heard comment about academic research is that it is too incremental and only marginally improving the SOTA. And indeed we as researchers often tend to follow the wave of the day, and even worse trail it. To get away from this incrementalism, consider an alternative approach. Imagine or dream of how the future may look like - A Prediction sustained by educated guesses informed by science, roadmaps, and technology insights. From there we can work backwards to identify the big hurdles that need to be overcome to realize that future, and let this guide our research. It is exciting and visionary. In this presentation, some examples of reverse time machines will be presented.
+
+
 ## Industry vs Academia
 
 - Academia is NOT 'industry-lite'

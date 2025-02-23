@@ -117,6 +117,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [David Patterson: Life Lessons from the First Half-Century of My Career](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/) ([HN link](https://news.ycombinator.com/item?id=42795646))
 - [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
 - [Systems Software Research is Irrelevant by Rob Pike of Bell Labs (2/21/2000)](https://doc.cat-v.org/bell_labs/utah2000/utah2000.pdf)
+- [A letter of advice to all the people who have the destiny by Yanyan Jiang](https://jyywiki.cn/Letter.md) ([Translation](https://jyywiki-cn.translate.goog/Letter.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true))
 
 ## Life
 
@@ -173,6 +174,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Tim Ferris: You Don’t Need More How-To Advice — You Need a Beautiful and Painful Reckoning](https://tim.blog/2024/02/09/harajuku-moment/)
 - [How to improve your WFH lighting to reduce eye strain](https://rustle.ca/posts/articles/work-from-home-lighting) ([HN link](https://news.ycombinator.com/item?id=42796950))
 - [Finding Flow: Escaping Digital Distractions Through Deep Work and Slow Living](https://www.ssp.sh/blog/finding-flow/) ([HN link](https://news.ycombinator.com/item?id=43067303))
+- [Johnny.Decimal - A system to organise your life](https://johnnydecimal.com/) ([HN link](https://news.ycombinator.com/item?id=43128093))
 
 ### Time Management
 

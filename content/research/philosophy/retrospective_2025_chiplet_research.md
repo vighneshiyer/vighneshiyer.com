@@ -3,7 +3,6 @@
 ## A Summary of the 2023 Article
 
 Correct the definitions of 2.5D integration itself vs the usage of a silicon interposer.
-- https://arxiv.org/pdf/2502.01449
 
 ### My Main Points
 
@@ -54,6 +53,9 @@ Correct the definitions of 2.5D integration itself vs the usage of a silicon int
 
 ### "Partitioning"
 
+- https://arxiv.org/pdf/2502.01449
+- Chiplet Cloud
+
 ### Tapeouts and IP
 
 - Look @ ISSCC and VLSI proceedings
@@ -82,6 +84,8 @@ Node-granularity fine-grained heterogeneity via chiplets? Is there really an app
 
 https://semiwiki.com/chiplet/349280-collaboration-required-to-maximize-asic-chiplet-value/
 https://semiwiki.com/ip/352531-will-50-of-new-high-performance-computing-hpc-chip-designs-be-multi-die-in-2025/
+
+https://chipletsummit.com/2025-program-at-a-glance/?f=g
 
 ### Academic Research Perspective
 

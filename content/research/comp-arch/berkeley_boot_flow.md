@@ -320,8 +320,21 @@ The command ID also encoded in `tohost`
 
 #### Read the Code
 
-Now we will walk through the code in fesvr to understand the HTIF protocol in depth.
 Here is a figure that summarizes the relevant code snippets for the diagram above.
+Note: the code in the diagram is simplified.
+
+![Overview of HTIF code](./figs/htif_code_breakdown.svg)
+
+Try to understand this code yourself.
+The main point is that
+
+- https://github.com/riscv-software-src/riscv-isa-sim/issues/364#issuecomment-607657754
+  - Thank you Andrew
+If tohost is nonzero, then we have to do something
+We construct a command_t
+If the bottom bit of tohost is 1, then we have an exitcode.
+If not, then the bottom 16 bits are the 'payload'
+
 
 ### Exiting via HTIF
 
