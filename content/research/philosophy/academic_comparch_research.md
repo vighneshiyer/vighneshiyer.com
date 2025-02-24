@@ -182,6 +182,8 @@ Point to Dave Patersons how to build a bad research center (https://www2.eecs.be
 
 > One often heard comment about academic research is that it is too incremental and only marginally improving the SOTA. And indeed we as researchers often tend to follow the wave of the day, and even worse trail it. To get away from this incrementalism, consider an alternative approach. Imagine or dream of how the future may look like - A Prediction sustained by educated guesses informed by science, roadmaps, and technology insights. From there we can work backwards to identify the big hurdles that need to be overcome to realize that future, and let this guide our research. It is exciting and visionary. In this presentation, some examples of reverse time machines will be presented.
 
+- https://dl.acm.org/doi/pdf/10.1145/3649329.3663515
+  - Invited: The Magnificent Seven Challenges and Opportunities in Domain-Specific Accelerator Design for Autonomous Systems
 
 ## Industry vs Academia
 

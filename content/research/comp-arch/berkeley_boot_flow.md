@@ -313,19 +313,20 @@ Let's walk through how spike begins to execute a program on a modeled RISC-V tar
 
 ![Overview of how HTIF for syscall proxying works at a high level](./figs/htif_syscall_proxy.svg)
 
-This figure provides an overview of how HTIF performs syscall proxying.
-HTIF periodically polls the value of `tohost` and if its non-zero, delegates to its device list.
-The device ID encoded in the `tohost` value is used to select a device to handle the target's request.
-The command ID also encoded in `tohost`
+This is an overview of how HTIF performs syscall proxying.
+HTIF periodically polls the value of `tohost` and if it's non-zero, delegates to the host device list.
+The device and command IDs encoded in the `tohost` value are used to select a device and command to handle the target's request.
+Fesvr models two devices by default: the block character device (BCD) (to print to the console) and the syscall proxy device (to run target syscalls on the host, including printing via `write` to stdout).
 
 #### Read the Code
 
-Here is a figure that summarizes the relevant code snippets for the diagram above.
-Note: the code in the diagram is simplified.
-
 ![Overview of HTIF code](./figs/htif_code_breakdown.svg)
 
-Try to understand this code yourself.
+This figure summarizes the relevant code snippets for above diagram.
+Note: the code in the diagram is simplified.
+Try to **understand this code yourself** and read the real code in spike/fesvr.
+
+
 The main point is that
 
 - https://github.com/riscv-software-src/riscv-isa-sim/issues/364#issuecomment-607657754
