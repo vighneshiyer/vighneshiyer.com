@@ -59,6 +59,7 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
     - JVM benchmarks in Big Data, ML, and FP
 - [distbench](https://github.com/google/distbench)
   - RPCs / networking stacks
+- SPECJbb
 
 #### FaaS
 

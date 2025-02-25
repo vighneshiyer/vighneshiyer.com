@@ -324,30 +324,24 @@ Fesvr models two devices by default: the block character device (BCD) (to print 
 
 This figure summarizes the relevant code snippets for above diagram.
 Note: the code in the diagram is simplified.
-Try to **understand this code yourself** and read the real code in spike/fesvr.
+Try to **understand this code yourself** and read the real code in `spike`/`fesvr`.
 
+The `tohost` address points to a 64-bit value with this encoding ([graciously described by Andrew](https://github.com/riscv-software-src/riscv-isa-sim/issues/364#issuecomment-607657754)):
 
-The main point is that
-
-- https://github.com/riscv-software-src/riscv-isa-sim/issues/364#issuecomment-607657754
-  - Thank you Andrew
-If tohost is nonzero, then we have to do something
-We construct a command_t
-If the bottom bit of tohost is 1, then we have an exitcode.
-If not, then the bottom 16 bits are the 'payload'
-
+- `tohost[63:56]` (the uppermost byte) = device ID
+- `tohost[55:48]` (the 2nd to uppermost byte) = command ID
+- `tohost[47:0]` (the bottom 6 bytes) = the payload
+  - BCD device + write command: the payload is printed
+  - Syscall device (only command 0 exists)
+    - If the bottom bit of the payload is 1: exit spike with the return code = payload
+    - Otherwise, use the payload as a pointer to an array of eight 64-bit values in the target's DRAM
+      - The
 
 ### Exiting via HTIF
 
-> * How the program prints stuff & executes sys-calls in bare metal mode
-> * There are `toHost` and `fromHost` addresses in the `elf` file
-> * While the binary is executing in the SoC and meets a `printf` function…
->   1. It writes the address of the string to the `toHost` address
->   2. Fesvr periodically checks `toHost` address
->   3. When the value of `toHost` is not zero, it executes some action according to the value
->      * E.g., `abort` `tohost_exit` `handle_trap` `print_str` all have different addresses
+### Printing Characters via HTIF (BCD)
 
-### Printing Strings via HTIF
+### Printing Strings via HTIF (Write Syscall)
 
 ## Baremetal C
 

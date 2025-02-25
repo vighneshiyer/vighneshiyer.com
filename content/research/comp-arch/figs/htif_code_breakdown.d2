@@ -65,11 +65,17 @@ runtime: Runtime {
             command_t cmd(mem, tohost, fromhost_callback);
             device_list.handle_command(cmd);
           }
-          step(5000);
+          step(5000); // Advances the target by executing 5000 instructions
         }
       }|
   }
-  syscall_dispatch: Syscall Dispatch {
+  bcd_dispatch: Block Character Device {
+    dispatch: |cpp
+    void bcd_t::handle_write(command_t cmd) {
+      canonical_terminal_t::write(cmd.payload());
+    }|
+  }
+  syscall_dispatch: Syscall Proxy Device {
     dispatch: |cpp
       // syscall.cc
       void syscall_t::handle_syscall(command_t cmd) {
@@ -90,7 +96,8 @@ runtime: Runtime {
         this->*table[syscall_num](syscall_args);
       }|
   }
+  main_loop -> bcd_dispatch
   main_loop -> syscall_dispatch
   near: bottom-center
-  direction: right
+  direction: down
 }

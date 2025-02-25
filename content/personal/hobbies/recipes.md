@@ -170,6 +170,25 @@ This is similar to a minestrone soup, with some important modifications.
     - Substitute coconut milk for soy milk (but use more water, or else the broth will be too thick)
     - Add fried eggs for topping
 - [This INCREDI-BOWL vegan Ramen Recipe is quick and tasty!](https://www.youtube.com/watch?v=wOf1G1SdbA4)
+
+### Stir Fry Noodles
+
+- The ingredient order should be: white-stems of green onions| large onion pieces | crispy tofu | shredded cabbage and carrot | garlic | noodles + sauce | juilenne green onion tops
+  - Need to add bell peppers and onions early to cook them properly
+  - Avoid bell pepper, use smaller amount garlic (just 3 cloves is enough)
+  - Too much tofu, not enough cabbage, but that is OK
+  - Use broccolini too next time
+- Not hot enough, use large stove for the carbon steel pan
+  - The cooking took too long, the vegetables became limp, they lost their color, and there was too much liquid in the pan (lead to boiling vs sauteeing)
+- The tofu began to crumble and fall apart
+  - Make the tofu crispy in sesame oil + soy sauce before adding it to the mix
+- Noodles can be made by boiling water in the kettle and pouring the boiling water over the noodles to cook and rehydrate
+- The sauce was not enough
+  - Not salty enough due to low sodium soy sauce - needed to add salt manually after cooking, next time add to sauce directly
+  - Add rice wine vinegar next time
+  - Use mirin next time in place of sugar
+
+
 - Wok Stir fry noodles... coming soon
 
 ### Chowmein

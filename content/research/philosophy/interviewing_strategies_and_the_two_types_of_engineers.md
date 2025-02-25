@@ -150,3 +150,7 @@ People who are already good at programming and problem solving will leverage LLM
 > There's very likely a real answer to that question, and that answer should shape the way that engineer should be assessed and hired.
 
 Good point. Ultimately, what an AI may not have is the *desire* to do foundational things. A human with desire, paired with an AI, will outperform massive teams where each person just doesn't really care.
+
+### LLMs in the University
+
+#### The Need for Discrimination
