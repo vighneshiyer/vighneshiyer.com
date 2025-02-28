@@ -345,7 +345,7 @@ Then this happens:
 ### Exiting via HTIF
 
 With this in mind, let's try to exit our program!
-We need to modify the linker script to define a `tohost` section and add the exit logic.
+We need to modify the linker script to define a `tohost` section and add the exit logic (invoke the syscall device and exit by setting the bottom bit of the `tohost` payload).
 
 
 

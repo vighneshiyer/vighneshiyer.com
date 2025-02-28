@@ -12,18 +12,16 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Jonathan Blow: "Ideas about a new programming language for games."](https://www.youtube.com/watch?v=TH9VCN6UkyQ)
 - [Jonathan Blow: "Preventing the Collapse of Civilization"](https://www.youtube.com/watch?v=pW-SOdj4Kkk)
 - [Features of a dream programming language: 3rd draft](https://dev.to/redbar0n/features-of-a-dream-programming-language-3rd-draft-5m6)
-- ["Unison: a new distributed programming language" by Paul Chiusano @ Strange Loop 2019](https://www.youtube.com/watch?v=gCWtkvDQ2ZI)
-  - [Unison: The Big Idea](https://www.unison-lang.org/docs/the-big-idea/)
-  - [Abilities for the monadically inclined](https://www.unison-lang.org/docs/fundamentals/abilities/for-monadically-inclined/)
 - ["The Mess We're In" by Joe Armstrong @ Strange Loop 2014](https://www.youtube.com/watch?v=lKXe3HUG2l4)
-- [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
-  - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
 - [Carbon is not a programming language (sort of)](https://herecomesthemoon.net/2025/02/carbon-is-not-a-language/0) ([HN link](https://news.ycombinator.com/item?id=42983733))
 
 ### Functional Programming
 
 - [Algebraic Effects from Scratch by Kit Langton](https://www.youtube.com/watch?v=qPvPdRbTF-E)
   - A great talk introducing algebraic effects from first principles and a sketched implementation of [Kyo](https://github.com/getkyo/kyo)
+- ["Unison: a new distributed programming language" by Paul Chiusano @ Strange Loop 2019](https://www.youtube.com/watch?v=gCWtkvDQ2ZI)
+  - [Unison: The Big Idea](https://www.unison-lang.org/docs/the-big-idea/)
+  - [Abilities for the monadically inclined](https://www.unison-lang.org/docs/fundamentals/abilities/for-monadically-inclined/)
 
 ### Concurrent Programming
 
@@ -51,6 +49,8 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Compilers
 
 - [A catalog of ways to generate SSA](https://bernsteinbear.com/blog/ssa/) ([HN link](https://news.ycombinator.com/item?id=43009952))
+- [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
+  - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
 
 ### Rust
 
@@ -110,6 +110,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Machine Learning (AI/ML)
 
 - [Simon Willison: Things we learned about LLMs in 2024 (12/31/2024)](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
+- [AI is killing some companies, yet others are thriving - let's look at the data (2/28/2025)](https://www.elenaverna.com/p/ai-is-killing-some-companies-yet) ([HN link](https://news.ycombinator.com/item?id=43206491))
 
 ## Research Philosophies
 
@@ -119,7 +120,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [David Patterson's How to Build a Bad Research Center](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
 - [David Patterson's How to Have a Bad Career](https://www.youtube.com/watch?v=Rn1w4MRHIhc)
 - [David Patterson: Life Lessons from the First Half-Century of My Career](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/) ([HN link](https://news.ycombinator.com/item?id=42795646))
-- [Alberto Sangiovanni-Vincentelli's The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
+- [Alberto Sangiovanni-Vincentelli: The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
 - [Systems Software Research is Irrelevant by Rob Pike of Bell Labs (2/21/2000)](https://doc.cat-v.org/bell_labs/utah2000/utah2000.pdf)
 - [A letter of advice to all the people who have the destiny by Yanyan Jiang](https://jyywiki.cn/Letter.md) ([Translation](https://jyywiki-cn.translate.goog/Letter.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true))
 
