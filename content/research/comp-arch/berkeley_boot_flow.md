@@ -331,13 +331,23 @@ The `tohost` address points to a 64-bit value with this encoding ([graciously de
 - `tohost[63:56]` (the uppermost byte) = device ID
 - `tohost[55:48]` (the 2nd to uppermost byte) = command ID
 - `tohost[47:0]` (the bottom 6 bytes) = the payload
-  - BCD device + write command: the payload is printed
-  - Syscall device (only command 0 exists)
-    - If the bottom bit of the payload is 1: exit spike with the return code = payload
-    - Otherwise, use the payload as a pointer to an array of eight 64-bit values in the target's DRAM
-      - The
+
+If the target wants to access the BCD device (device ID 1) with the write command (command ID 1), then the `tohost` payload is printed.
+
+If the target accesses the syscall device (device ID 0), there is only one command (command ID 0).
+Then this happens:
+
+- If the bottom bit of the payload is 1: exit spike with the payload as the return code
+- Otherwise, use the payload as a pointer to an array of eight 64-bit values in the target's DRAM
+  - The first element of the array (`magicmem[0]`) is the syscall number. See the `table` defined in `syscall.cc`.
+  - The remaining elements are arguments to the syscall
 
 ### Exiting via HTIF
+
+With this in mind, let's try to exit our program!
+We need to modify the linker script to define a `tohost` section and add the exit logic.
+
+
 
 ### Printing Characters via HTIF (BCD)
 

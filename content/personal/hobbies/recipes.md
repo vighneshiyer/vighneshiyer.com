@@ -173,9 +173,11 @@ This is similar to a minestrone soup, with some important modifications.
 
 ### Stir Fry Noodles
 
-- The ingredient order should be: white-stems of green onions| large onion pieces | crispy tofu | shredded cabbage and carrot | garlic | noodles + sauce | juilenne green onion tops
+#### Prep Notes
+
+- The ingredient order should be: white-stems of green onions | large onion pieces | shredded cabbage and carrot | crispy tofu | garlic | noodles + sauce | juilenne green onion tops
   - Need to add bell peppers and onions early to cook them properly
-  - Avoid bell pepper, use smaller amount garlic (just 3 cloves is enough)
+  - Actually, avoid bell pepper, use smaller amount of garlic (just 3 cloves is enough)
   - Too much tofu, not enough cabbage, but that is OK
   - Use broccolini too next time
 - Not hot enough, use large stove for the carbon steel pan
@@ -187,9 +189,6 @@ This is similar to a minestrone soup, with some important modifications.
   - Not salty enough due to low sodium soy sauce - needed to add salt manually after cooking, next time add to sauce directly
   - Add rice wine vinegar next time
   - Use mirin next time in place of sugar
-
-
-- Wok Stir fry noodles... coming soon
 
 ### Chowmein
 

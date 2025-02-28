@@ -31,6 +31,10 @@ Here are a bunch of things from around the internet that I find interesting.
   - This blog is insanely good: every article is filled with detailed information about the low-level concurrency primitives provided by the hardware and OS
   - [Scala's AsynchronousFileChannel is not truly asynchronous.](https://www.reddit.com/r/scala/comments/1b6k0cs/scalas_asynchronousfilechannel_is_not_truly/)
 
+### Distributed Programming
+
+- [Distributed Systems Programming Has Stalled](https://www.shadaj.me/writing/distributed-programming-stalled) ([HN link](https://news.ycombinator.com/item?id=43195702))
+
 ### Data Structures
 
 - [The Hunt for the Missing Data Type](https://www.hillelwayne.com/post/graph-types/) ([HN link](https://news.ycombinator.com/item?id=39592444))

@@ -64,6 +64,13 @@ Let's begin by applying magic box thinking to the problems in power modeling.
   - Exploring clustering / sampling for power
   - How to deal with RTL changes? The strategies are usually different for core uarch deltas vs cache hierarchy deltas (see gem5 O3 CPU model vs the trace-driven memory hierarchy model)
 
+## Ideas
+
+- Redo Mark Horowitz's power-per-X diagram
+  - https://gwern.net/doc/cs/hardware/2014-horowitz-2.pdf (Computing’s Energy Problem (and what we can do about it))
+  - Area/power efficiency vs performance vs variability and so forth are not properly characterized. The actual design space and energy/area/performance tradeoffs are quite broad.
+  - Accelergy (https://github.com/Accelergy-Project/accelergy) has some 'power' and 'area' numbers defined in csv files (https://github.com/Accelergy-Project/accelergy-table-based-plug-ins/blob/master/set_of_table_templates/data/intadder.csv) and people actually write papers that report these numbers!
+
 # Notes from Joonho: Power Modeling
 
 #Research/Notes/Power-Modeling
@@ -91,7 +98,7 @@ Let's begin by applying magic box thinking to the problems in power modeling.
   2. Make changes to your RTL.
   3. Use incremental synthesis to update your netlist. Normally, updating your RTL will affect the nearby gates as well, but this isn’t a big issue here. As we mentioned above, we only care about the big trends when performing runtime power estimation and supposedly, these small patches to your RTL won’t affect this big trend anyways (i.e., it is okay to have some error). This step can be achieved by something similar to LiveSim. You can add patches during link time by compiling your new design as a shared library.
 - So the initial steps of this process would be to obtain a gate level netlist using ABC which is a open-source synthesis tool, and applying the technology specific power-draw information of each gate to obtain a power draw estimation.
-  - [ABC: A System for Sequential Synthesis and Verification](https://people.eecs.berkeley.edu/~alanmi/abc/) 
+  - [ABC: A System for Sequential Synthesis and Verification](https://people.eecs.berkeley.edu/~alanmi/abc/)
   - [berkeley-abc/abc: ABC: System for Sequential Logic Synthesis and Formal Verification](https://github.com/berkeley-abc/abc)
 
 # Area estimation

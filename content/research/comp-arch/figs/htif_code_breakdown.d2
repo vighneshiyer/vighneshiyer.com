@@ -78,6 +78,11 @@ runtime: Runtime {
   syscall_dispatch: Syscall Proxy Device {
     dispatch: |cpp
       // syscall.cc
+      table[62] = &syscall_t::sys_lseek;
+      table[63] = &syscall_t::sys_read;
+      table[64] = &syscall_t::sys_write;
+      table[67] = &syscall_t::sys_pread;
+
       void syscall_t::handle_syscall(command_t cmd) {
         if (cmd.payload() & 1) {
           htif->exitcode = cmd.payload();
@@ -94,10 +99,11 @@ runtime: Runtime {
         reg_t syscall_num = htif->from_target(magicmem[0]);
         syscall_args = magicmem[1:7];
         this->*table[syscall_num](syscall_args);
-      }|
+      }
+    |
   }
   main_loop -> bcd_dispatch
   main_loop -> syscall_dispatch
   near: bottom-center
-  direction: down
+  direction: right
 }
