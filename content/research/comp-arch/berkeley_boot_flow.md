@@ -345,9 +345,73 @@ Then this happens:
 ### Exiting via HTIF
 
 With this in mind, let's try to exit our program!
-We need to modify the linker script to define a `tohost` section and add the exit logic (invoke the syscall device and exit by setting the bottom bit of the `tohost` payload).
+We need to first modify the linker script to define a `tohost` section.
 
+```asm
+// link.ld
+OUTPUT_ARCH(riscv)
+ENTRY(_start)
 
+SECTIONS {
+    . = 0x80000000; /* Typical start address for RISC-V */
+    .text : {
+        *(.text)
+    }
+    . = ALIGN(0x1000);
+    .tohost : { *(.tohost) }
+    . = ALIGN(0x1000);
+    .data : {
+        *(.data)
+    }
+    .bss : {
+        *(.bss)
+    }
+}
+```
+Then we add the exit logic to the assembly file (invoke the syscall device and exit by setting the bottom bit of the `tohost` payload).
+
+```asm
+// simple.S
+.pushsection .tohost,"aw",@progbits
+.align 6 # align tohost on a 64-byte (cache line) boundary
+.global tohost
+tohost: .dword 0
+.size tohost, 8
+
+.align 6
+.global fromhost
+fromhost: .dword 0
+.size fromhost, 8
+.popsection
+
+.section .text
+.global _start
+_start:
+    li a0, 10
+    li a1, 20
+    add a2, a0, a1
+    slli a2, a2, 1
+    ori a2, a2, 1
+    la t0, tohost
+write_tohost:
+    sd a2, 0(t0)
+    j write_tohost
+```
+
+After compiling it as usual: `riscv64-unknown-elf-gcc -nostartfiles -ffreestanding -march=rv64gc -mabi=lp64 -o simple.elf -T link.ld simple.S`.
+We can run it on spike: `spike simple.elf`.
+And indeed, spike exits with the exitcode of 30 (10 + 20)!
+
+```text
+spike simple.elf
+*** FAILED *** (tohost = 30)
+```
+
+**On your own**:
+
+- Disassemble `simple.elf` and make sense of it
+- Use `readelf` to list the sections defined in `simple.elf`
+- Trace through the code paths exercised in spike by this target program
 
 ### Printing Characters via HTIF (BCD)
 
