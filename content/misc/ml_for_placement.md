@@ -517,6 +517,10 @@ I have reproduced Jeff Dean's statement below.
 
 The use of hyperbole and belittling language ("deeply flawed", "regurgitating his own unpublished arguments") is surprising, coming from Jeff Dean.
 
+Furthermore, Dean claims that Markov is a "shadow co-author" of the "Stronger Baselines" paper and made an attempt to hide his affiliation when writing his meta-analysis.
+However, both in the [first version of Markov's arXiv preprint](https://arxiv.org/pdf/2306.09633v1) (published in June 2023), and in the [CACM article's supplement](https://dl.acm.org/doi/10.1145/3676845#supplementary-materials), Markov cites his authorship of the "Stronger Baselines" paper.
+Markov was also not employed by Synopsys at the time the meta-analysis was written.
+
 > As an update, Shankar Krishnamoorthy, Head of Technology & Product Development at @Synopsys, reached out to me to say "Regarding the CACM article that Igor Markov's comments and writings do not represent Synopsys views or opinions in any way.
 > Synopsys is also aligned with you on the potential of Reinforcement Learning AI for chip design as evidenced by strong customer adoption of our http://Synopsys.ai/DSO.ai suite of products."
 
