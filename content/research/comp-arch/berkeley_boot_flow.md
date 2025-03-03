@@ -389,11 +389,11 @@ fromhost: .dword 0
 _start:
     li a0, 10
     li a1, 20
-    add a2, a0, a1
+    add a2, a0, a1 # a2 holds the exit code
     slli a2, a2, 1
-    ori a2, a2, 1
-    la t0, tohost
+    ori a2, a2, 1 # set the bottom bit of the payload
 write_tohost:
+    la t0, tohost
     sd a2, 0(t0)
     j write_tohost
 ```
@@ -415,7 +415,43 @@ spike simple.elf
 
 ### Printing Characters via HTIF (BCD)
 
+OK, now let's try to print a single character using BCD over HTIF.
+The linker script can stay the same, but let's add a single printing routing before we exit via HTIF.
+Read the code in `fesvr` to see this sequence of events:
+
+1. The target writes to `tohost` with the payload to print, invoking the BCD device with the write command
+  - The target then enters a loop where it polls `fromhost` until it becomes non-zero
+  - This is the synchronization mechanism between the host and target
+2. HTIF discovers a nonzero value in `tohost`
+3. HTIF writes 0 to `tohost`
+4. HTIF delegates to the BCD, which prints the character
+5. HTIF writes some non-zero thing to `fromhost` (depends on the device)
+  - Unfortunately, printing using BCD doesn't write to `fromhost`, so we just have to wait a sufficient amount of time in the target
+6. The target exits its synchronization loop and sets `fromhost` to 0
+
+```asm
+print_bcd:
+    li t0, 0x0101
+    slli t0, t0, 48 # device 1, command 1
+    ori t0, t0, 97 # payload = 97 (ASCII 'a')
+    la t1, tohost
+    sd t0, 0(t1)
+prepare_to_wait:
+    li t2, 0
+    li t3, 50000 # loop 10000 times to wait
+wait_a_while:
+    addi t2, t2, 1
+    blt t2, t3, wait_a_while
+```
+
+**On your own**, compile this and observe what happens.
+You should see an `a` like this `a*** FAILED *** (tohost = 30)`.
+
 ### Printing Strings via HTIF (Write Syscall)
+
+OK, that was quite iffy.
+The BCD is actually unmaintained and a total hack.
+Let's now print a string in a static segment of our program using the syscall device.
 
 ## Baremetal C
 
