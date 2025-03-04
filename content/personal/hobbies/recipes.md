@@ -536,3 +536,21 @@ This is similar to a minestrone soup, with some important modifications.
   - There is too much salt, dial it back a bit
   - Add some crystallized lime/lemon powder to avoid needing fresh lime juice for flavoring
   - Replace sugar with another sweetener, maybe stevia so a smaller quantity can be used and it mixes easier with water
+
+### Kefir
+
+TBD... I used to make this often, but it was hard to get used to the flavor
+
+### Kombucha
+
+- https://youtube.com/shorts/3_Tr6KZt2FA?si=QSl1_7MSH81BzlFo
+- Brew black tea, add sugar, scoby
+- Leave 1-2 weeks in brewing vessel with tea towel on top
+- Bottle in glass with fruit (blackberries)
+- Seal for 4-5 days and let carbonate
+
+### Soda
+
+- https://youtube.com/shorts/9w-_3zWnYKY?si=EYPfGd-P7wY-2e5G (Ginger Bug)
+- https://www.youtube.com/shorts/G2CQlN7p1Os
+- https://www.youtube.com/shorts/lTdS7TWexDU (ginger ale, simmer ginger in water, fresh lime juice, raw honey)
