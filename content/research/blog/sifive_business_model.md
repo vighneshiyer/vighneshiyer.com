@@ -1,5 +1,7 @@
 # My View on SiFive's Future (and Past)
 
+- https://news.ycombinator.com/item?id=37996295 (The risk of RISC-V: What's going on at SiFive? (morethanmoore.substack.com))
+
 The early days of RISC-V. Replace MIPS for CS61C.
 Fully academic initially, some test chips, supervisor ISA, fast iteration, Linux port.
 Appeared there was some market for getting rid of the ARM royalty and ISA lockdown.

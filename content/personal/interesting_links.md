@@ -97,6 +97,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [An ex-ARM engineer critiques RISC-V (2019)](https://gist.github.com/erincandescent/8a10eeeea1918ee4f9d9982f7618ef68) ([HN link](https://news.ycombinator.com/item?id=24958423)) ([more comments](https://news.ycombinator.com/item?id=42928482))
 - [How to improve the RISC-V specification - Alastair Reid](https://alastairreid.github.io/riscv-spec-issues/)
 - [Smol GPU: An rv32i inspired ISA, SIMT GPU implementation in system-verilog.](https://github.com/Grubre/smol-gpu) (great `README` about GPU architectures and programming models)
+- [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
 
 ## Systems
 
