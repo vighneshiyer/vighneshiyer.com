@@ -82,6 +82,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Berkeley EECS Annual Research Symposium BEARS 2023 - RISC V at Berkeley and Beyond - Krste Asanovic](https://www.youtube.com/watch?v=uThc5K0fErk)
 - [David Patterson - A New Golden Age for Computer Architecture: History, Challenges and Opportunities (2019)](https://www.youtube.com/watch?v=kFT54hO1X8M)
 - [View from the Top: Professor David Patterson](https://www.youtube.com/watch?v=TK6EPvrmcBk)
+- [SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic](https://www.youtube.com/watch?v=8n2HLp2gtYs) (one of the best talks I've ever seen)
 
 ### Articles / Posts
 
@@ -98,6 +99,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [How to improve the RISC-V specification - Alastair Reid](https://alastairreid.github.io/riscv-spec-issues/)
 - [Smol GPU: An rv32i inspired ISA, SIMT GPU implementation in system-verilog.](https://github.com/Grubre/smol-gpu) (great `README` about GPU architectures and programming models)
 - [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
+- [Taxonomy of RISC-V Vector Extensions](https://fprox.substack.com/p/taxonomy-of-risc-v-vector-extensions)
 
 ## Systems
 
