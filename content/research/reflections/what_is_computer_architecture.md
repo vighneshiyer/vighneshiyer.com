@@ -28,3 +28,6 @@ What skills must a computer architect possess and be confident in?
 - https://en.wikipedia.org/wiki/Parallel_computing
 - There were some 151 slides from Rabaey on the basic techniques used for low power design / parallelism vs pipelining
 - https://www.cise.ufl.edu/research/ParallelPatterns/PatternLanguage/Background/ParallelHardware.htm
+
+- https://www.youtube.com/watch?v=8n2HLp2gtYs&t=2116s ( SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic )
+  - Krste has a slide at the very beginning about his take on what is computer architecture

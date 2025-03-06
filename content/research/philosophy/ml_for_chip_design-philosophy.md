@@ -7,3 +7,7 @@
 ## Where Does ML Excel?
 
 ## Utility of ML for Chip Design
+
+## Commentary on Sutton's "The Bitter Lesson"
+
+- https://awards.acm.org/about/2024-turing

@@ -34,8 +34,10 @@ But there is room for good stuff too (and most of it uses very classical ML tech
 - Synthesis
 - Placement
 - Routing
+- OPC
 - Standard cell design
 - ATPG / post-silicon validation
 - TCL scripting
+- RFIC / photonics design
 
 ## Where is the Opportunity?

@@ -17,6 +17,16 @@ Isn't product development research itself?
 
 ## What Makes Research Good vs Bad vs Irrelevant vs Mediocre
 
+## Other Perspectives
+
+- https://x.com/pmddomingos/status/1897407091406684633?t=a8MSULvgbvsqJbZB3KCvLQ
+
+> If your research consists of doing the same hacks that people in industry can do at any time, then it’s not research. Research is solving problems that are too deep, difficult, long-term, diffusely beneficial for industry to focus on.
+
+Hamming
+
+Patterson
+
 ## A Bit More Philosophical
 
 ### What is value?
