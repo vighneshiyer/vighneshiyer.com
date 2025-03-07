@@ -89,6 +89,7 @@ In general, there is *some* prior work, but it is limited in scope and old.
 - [VIProf: Vertically Integrated Full-System Performance Profiler (2007)](https://sites.cs.ucsb.edu/~rich/publications/viprof-ngs.pdf)
 - [Reconfigurable vertical profiling framework for the android runtime system (ECS 14)](https://dl.acm.org/doi/abs/10.1145/2544375.2544379)
 - [VrtProf: Vertical Profiling for System Virtualization (Sherwood, 2014)](https://ieeexplore.ieee.org/abstract/document/5428518)
+- [Meta - Strobelight: A profiling service built on open source technology](https://engineering.fb.com/2025/01/21/production-engineering/strobelight-a-profiling-service-built-on-open-source-technology/) ([HN link](https://news.ycombinator.com/item?id=43290555))
 
 ## Identifying Bottlenecks / Inefficiencies
 

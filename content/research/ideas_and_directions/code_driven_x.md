@@ -4,6 +4,7 @@ The Missing Part of Code-Driven X
 - CRDT (or unison like content hashing)
 - generic library for this
 - Dan's thesis chapter about diagram (schematic) to code
+  - BAG, Layout21, Substrate
 
 - visualizations / graphs
 - schematic design
