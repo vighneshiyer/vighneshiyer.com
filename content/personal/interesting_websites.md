@@ -22,6 +22,7 @@ Blogs:
 - li haoyi
 - https://zipcpu.com/blog/2024/11/06/not-axi.html
 https://www.compactmag.com/
+https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems.html (a few very high quality technical articles)
 
 Health:
 - https://desmolysium.com/

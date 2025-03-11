@@ -554,3 +554,5 @@ TBD... I used to make this often, but it was hard to get used to the flavor
 - https://youtube.com/shorts/9w-_3zWnYKY?si=EYPfGd-P7wY-2e5G (Ginger Bug)
 - https://www.youtube.com/shorts/G2CQlN7p1Os
 - https://www.youtube.com/shorts/lTdS7TWexDU (ginger ale, simmer ginger in water, fresh lime juice, raw honey)
+- https://msshiandmrhe.com/homemade-cola/
+- https://msshiandmrhe.com/pine-needle-soda/
