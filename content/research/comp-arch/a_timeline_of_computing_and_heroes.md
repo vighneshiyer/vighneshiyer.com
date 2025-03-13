@@ -1,0 +1,28 @@
+# A Timeline of Computing
+
+- Timeline
+  - https://en.wikipedia.org/wiki/Timeline_of_computing
+  - Similar style, but native CSS/HTML, and beautiful too
+- Research Labs
+  - University of London
+  - MIT Arvind's group
+  - DEC legends
+  - Bell Labs legends
+  - IBM research
+  - Intel Labs
+- Heros across time
+  - Shockley
+  - Hamming
+  - Shannon
+  - Patterson
+  - Asanovic
+- Metrics
+  - Cost / Gb
+  - Max disk throughput
+  - SPECint / W leader
+  - DRAM throughput / latency
+  - Clock frequencies
+  - https://github.com/karlrupp/microprocessor-trend-data
+  - Largest supercomputer arithmetic throughput
+  - Networking / NIC throughput
+  - Board-level serdes standards (PCIe +)
