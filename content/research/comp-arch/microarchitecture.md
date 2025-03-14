@@ -22,3 +22,9 @@ draft = true
 - [Cohmeleon: Learning-Based Orchestration of Accelerator Coherence in Heterogeneous SoCs](https://dl.acm.org/doi/abs/10.1145/3466752.3480065)
   - The ML aspect of this isn't that interesting, the workloads are kind of iffy and adhoc
   - BUT, their taxonomy of accelerator memory coherency integration strategies is good
+
+## Modeling
+
+- ML based uArch models
+  - Ithemal: Accurate, Portable and Fast Basic Block Throughput Estimation using Deep Neural Networks (https://arxiv.org/pdf/1808.07412)
+  - Tao: Re-Thinking DL-based Microarchitecture Simulation (https://dl.acm.org/doi/pdf/10.1145/3656012)
