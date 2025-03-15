@@ -26,3 +26,16 @@
   - Largest supercomputer arithmetic throughput
   - Networking / NIC throughput
   - Board-level serdes standards (PCIe +)
+
+- Base technology (switch): Vaccum tubes, NMOS, planar CMOS, Finfet, ...
+- Lithography: 300nm, ..., multi patterning, OPC, EUV, ..., 2nm
+- Architectures: von Neumann, superscaler, out of order, multicore, GPU
+- Parallelism: ILP, MLP, ...
+- Programming abstractions: Lisp meta-programming, FP (lambda calculus), OOP (classes)
+- Programming languages: punch cards, assembly, assemblers, COBOL, C, ...
+- Technology trends: Dennard scaling, Moore's law, multicore, specialization
+- Compilers: interpreters, ..., JIT, GC
+- Prominent applications: ballistics, tracking, accounting, word processing, internet/browsers, video, social media, microservice architectures, games, LLMs
+- Performance evolution: SPECint / MHz or W
+- Specific timelines of products and innovations for:
+  - Apple, Intel, AMD, ARM

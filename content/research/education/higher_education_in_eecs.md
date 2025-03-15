@@ -50,3 +50,16 @@ Sahai (https://web.archive.org/web/20230213214722/https://people.eecs.berkeley.e
 ### LLMs in the University
 
 #### The Need for Discrimination
+
+## Random Notes
+
+- Impact of LLMs
+- Tutors (LLMs + human experts) / mentors
+- Importance of peers and mentors, the environment is key, motivation and being among many different peers in different domains
+- Encyclopedic curriculum (tech + adjacent fields + humanities / classical education)
+- Free-form education, change topics at will, no dictation of a strict curriculum
+- Simultaneous movement across the stack, increasing depth across the entire breadth as you keep building things / projects
+- At what point to switch from foundational structured curriculum, to free-form exploration (imo around the 9-10th grade)
+- After learning for a short bit, immediately implement and evaluate. Being a programmer, you should strive to implement things as you learn about them in theory and observe how they behave. Guide your learning this way when studying from a curriculum.
+  - e.g. FFT theory -> implement it. copy-and-patch compiler -> implement basic example in Bril or your own custom DSL
+  - Get a feel for the thing you're learning about right away, don't wait until 'homework' or 'labs'
