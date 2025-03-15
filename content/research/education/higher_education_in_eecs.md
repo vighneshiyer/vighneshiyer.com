@@ -1,5 +1,7 @@
 # Steps to A Proper EECS Education
 
+- I have some more notes in 90/research/education.md and School_Curriculum.adoc
+
 ## What Are We Doing?
 
 What is a higher education for? For even higher education. For lifelong education. For encyclopedic education. For honoring the Gods. NOT FOR A JOB. THIS ISNT JOB TRAINING.
@@ -32,8 +34,6 @@ STOP taking notes. Just Do. Do again and again. Whatever you remember will be su
   - Always write what you learn, publish project reports (even if they are just a few paragraphs long with one plot and some code snippets! it's worth a lot more than you think)
 
 Watch seminars / random talks on Youtube. You will be surprised by how much you learn compared to your peers who look at lecture slides alone.
-
-## The
 
 Classics First
 
