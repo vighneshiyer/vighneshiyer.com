@@ -114,6 +114,9 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Simon Willison: Things we learned about LLMs in 2024 (12/31/2024)](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
 - [AI is killing some companies, yet others are thriving - let's look at the data (2/28/2025)](https://www.elenaverna.com/p/ai-is-killing-some-companies-yet) ([HN link](https://news.ycombinator.com/item?id=43206491))
+- [The Deep Learning Compiler: A Comprehensive Survey (Mar 2021)](https://ieeexplore.ieee.org/abstract/document/9222299)
+- [Full Stack Optimization of Transformer Inference: a Survey (Feb 2023)](https://arxiv.org/abs/2302.14017)
+- [A Review on Edge Large Language Models: Design, Execution, and Applications (Feb 2025)](https://arxiv.org/pdf/2410.11845v20)
 
 ## Research Philosophies
 

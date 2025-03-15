@@ -35,4 +35,8 @@
   - Many good observations were made in this talk. I will summarize them below.
   - Knowing which line of code -> which polygon in the layout is crucial. With a general purpose language, the best you can do is inject a source annotation macro at the point where the `Rect` is instantiated, but that doesn't tell you how (the trajectory of function calls) that `Rect` got created! There is no good support for this in host languages, which motivates the need for a custom DSL. Although I still think this is the wrong strategy - it would be better to thoroughly instrument the frontend language code via a compiler plugin or otherwise.
     - Inevitably, you will create programming features in your custom DSL and it will become a pain. Constraining the custom DSL to pcells will feel limiting in the near future.
-  -
+  - Constraint-based layout is the right move. Imperative placement and routing (even with 'automatic' via drops) isn't good enough from the ergonomic perspective (and it makes two-way sync even harder).
+  - Solving linear and non-linear constraints simultaneously can be done using z3 (it will basically do this constraint ordering and iterative solving for you). Gurobi can do this too.
+  - OpenSCAD and SolveSpace are good inspirations, SolveSpace seems to be constraint driven while OpenSCAD seems to be imperative placement-based
+  - Trying to use constraint solvers is always a bit iffy. They have various limitations although they have some ability to get optimal solutions.
+    - Rather, formulate things with an arbitrary objective function and use either genetic algorithms, simulated annealing, or gradient descent techniques. Leverage parallelism.

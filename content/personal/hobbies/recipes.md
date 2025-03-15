@@ -556,3 +556,14 @@ TBD... I used to make this often, but it was hard to get used to the flavor
 - https://www.youtube.com/shorts/lTdS7TWexDU (ginger ale, simmer ginger in water, fresh lime juice, raw honey)
 - https://msshiandmrhe.com/homemade-cola/
 - https://msshiandmrhe.com/pine-needle-soda/
+
+### Coffee
+
+- [Cinnamon frothy iced coffee](https://www.youtube.com/shorts/Mvu0QoHD0VY)
+  - 1 tsp instant coffee, 2 tsp honey, 4 tsp water. Whip up until frothy with nanofoamer.
+  - Fill some milk, add lots of cinnamon powder, froth with nanofoamer
+  - Add ice cubes to the coffee mix and pour in the milk
+- [London fog latte](https://youtube.com/shorts/02rfGYgF9hU?si=cl1vgQ0BzBkd2BhK)
+  - Brew earl grey tea with half the water as normally used for a full cup
+  - Froth heated milk with 1 tsp of vanilla syrup
+  - Remove tea bag and pour milk into cup
