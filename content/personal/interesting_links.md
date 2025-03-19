@@ -118,6 +118,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Full Stack Optimization of Transformer Inference: a Survey (Feb 2023)](https://arxiv.org/abs/2302.14017)
 - [A Review on Edge Large Language Models: Design, Execution, and Applications (Feb 2025)](https://arxiv.org/pdf/2410.11845v20)
 
+## Design
+
+- [Our Interfaces Have Lost Their Senses](https://wattenberger.com/thoughts/our-interfaces-have-lost-their-senses) ([HN link](https://news.ycombinator.com/item?id=43380930))
+
 ## Research Philosophies
 
 - [Richard Hamming's "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)

@@ -10,7 +10,11 @@ What is the point of a research retreat or conference?
 - The lack of written documents after this retreat and just some garbage notes of breakout reports and the industry feedback is a huge problem
 
 - Chinese meeting methodology, shared Google doc no talking
+  - https://news.ycombinator.com/item?id=43378239 (Docs – Open source alternative to Notion or Outline (github.com/suitenumerique)) - self hosted, seems ideal
+  - The collaborative platform is supposed to be ephemeral. Edit the memo written by one person locally, paste it in this web app, do the reading + commenting + discussion during meeting, then during the meeting itself, collaboratively work on the conclusion / tasks / answers to questions. Then effectively make the document read only as plaintext that can stand alone, with every comment thread going away (discussions don't need to be preserved, just summarized in the memo conclusion itself).
 - Memo production at the end of the retreat
+- The meeting needs to be fully self-contained, only invite people who are relevant and have roughly equivalent background knowledge and insight.
+- There needs to be a set of questions that must be answered or some task that has to be accomplished during the meeting.
 - Noise is a huge problem, use the outdoors!
 - Live feedback is unreasonable, we need time to think and report ideas and criticism
 
