@@ -13,14 +13,28 @@ What is the point of a research retreat or conference?
   - https://news.ycombinator.com/item?id=43378239 (Docs – Open source alternative to Notion or Outline (github.com/suitenumerique)) - self hosted, seems ideal
   - The collaborative platform is supposed to be ephemeral. Edit the memo written by one person locally, paste it in this web app, do the reading + commenting + discussion during meeting, then during the meeting itself, collaboratively work on the conclusion / tasks / answers to questions. Then effectively make the document read only as plaintext that can stand alone, with every comment thread going away (discussions don't need to be preserved, just summarized in the memo conclusion itself).
 - Memo production at the end of the retreat
-- The meeting needs to be fully self-contained, only invite people who are relevant and have roughly equivalent background knowledge and insight.
-- There needs to be a set of questions that must be answered or some task that has to be accomplished during the meeting.
 - Noise is a huge problem, use the outdoors!
 - Live feedback is unreasonable, we need time to think and report ideas and criticism
 
 - How did ramp work?
 - It used the same talk format but quite different in nature
 - Don't talk about projects, talk about stacks, individuals should collaborate on a memo with respect to a stack
+
+## Examples of Memo Meetings
+
+I'll leave some comments about how each of these went.
+
+- Yufeng (exploration of running ML workloads on RISC-V silicon): https://www.notion.so/ucb-bar/Summary-of-running-ML-workflows-on-SoCs-1a4f299403da80f297e0dc7f4ef0e856 (Summary of running ML workflows on SoCs)
+  - From Yufeng, it seemed like the reading + commenting went well, but
+  -
+  - There needs to be a set of questions that must be answered or some task that has to be accomplished during the meeting.
+- Kris (robotics workloads in general): https://www.notion.so/ucb-bar/Workload-Discussion-1adf299403da80c185e0f4645a7ccef7 (Workload Discussion)
+  - The meeting needs to be fully self-contained, only invite people who are relevant and have roughly equivalent background knowledge and insight.
+- Abe/Raghav (simulation infrastructure): https://docs.google.com/document/d/1mvPIXbElzDlxT7hiGjkRCKTYyxQXcrHX_eGZzcOc-DQ/edit?tab=t.0#heading=h.ewm3wiusakdd (Simulating Current and Future Research)
+  - Couldn't stop from talking!
+  - The meeting topic should be more tightly scoped, fewer people are needed
+    - The memo was too long to be read + commented on in 15 minutes
+  -
 
 # Article from Yufeng
 
