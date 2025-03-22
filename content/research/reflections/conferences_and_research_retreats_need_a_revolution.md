@@ -25,16 +25,17 @@ What is the point of a research retreat or conference?
 I'll leave some comments about how each of these went.
 
 - Yufeng (exploration of running ML workloads on RISC-V silicon): https://www.notion.so/ucb-bar/Summary-of-running-ML-workflows-on-SoCs-1a4f299403da80f297e0dc7f4ef0e856 (Summary of running ML workflows on SoCs)
-  - From Yufeng, it seemed like the reading + commenting went well, but
-  -
-  - There needs to be a set of questions that must be answered or some task that has to be accomplished during the meeting.
+  - From Yufeng, it seemed like the reading + commenting went well, but once things devolved into 'discussion', they ran out of time and didn't produce any collaborative conclusion
+  - There needs to be a set of questions that must be answered or some task that has to be accomplished during the meeting - a specific goal in mind. It is the job of the leader to produce the goal.
 - Kris (robotics workloads in general): https://www.notion.so/ucb-bar/Workload-Discussion-1adf299403da80c185e0f4645a7ccef7 (Workload Discussion)
   - The meeting needs to be fully self-contained, only invite people who are relevant and have roughly equivalent background knowledge and insight.
+  - The memo needs to be short enough to read and comment on and respond to comments in 20 minutes. Roughly 2 pages in length.
 - Abe/Raghav (simulation infrastructure): https://docs.google.com/document/d/1mvPIXbElzDlxT7hiGjkRCKTYyxQXcrHX_eGZzcOc-DQ/edit?tab=t.0#heading=h.ewm3wiusakdd (Simulating Current and Future Research)
-  - Couldn't stop from talking!
+  - Couldn't stop from talking! Need to avoid talking for the majority of the meeting.
   - The meeting topic should be more tightly scoped, fewer people are needed
     - The memo was too long to be read + commented on in 15 minutes
-  -
+  - Same issue: no clear topic or goals in mind. No conclusion was drawn. After talking started, everything degenerated into chaos with topics being jumped to and from constantly.
+    - Need to comment on a specific proposal rather than commenting on generic problems
 
 # Article from Yufeng
 
