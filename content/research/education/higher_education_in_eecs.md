@@ -46,6 +46,7 @@ Sahai (https://web.archive.org/web/20230213214722/https://people.eecs.berkeley.e
 
 > Set yourself a goal of understanding some system from top to bottom before you graduate. For example, you might want to know how the entire process of downloading and listening to an MP3 or OGG file works. This can be a good tool for integrating knowledge across different courses
 
+- [The Lost Art of Research as Leisure](https://kasurian.com/p/research-as-leisure) ([HN link](https://news.ycombinator.com/item?id=43410061))
 
 ### LLMs in the University
 

@@ -31,3 +31,8 @@ What skills must a computer architect possess and be confident in?
 
 - https://www.youtube.com/watch?v=8n2HLp2gtYs&t=2116s ( SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic )
   - Krste has a slide at the very beginning about his take on what is computer architecture
+
+- https://www.youtube.com/watch?v=gzgyksS5pX8
+  - Jim Keller: Tenstorrent talk
+  - At 25:30: what made computers fast? Transistor count, pipelining, frequency, parallelism, OoO execution, vector units, multi processors, data prefetch, branch prediction, ...
+  - The point is computer architecture is about the tradeoffs therein. Furthermore, parallelism extraction is the major thing from the architecture perspective, with the other 'fast' things coming from other areas.

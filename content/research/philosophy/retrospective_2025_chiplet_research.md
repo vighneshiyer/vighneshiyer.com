@@ -51,6 +51,8 @@ Correct the definitions of 2.5D integration itself vs the usage of a silicon int
 
 ### "Scheduling" and "Optimization"
 
+- https://arxiv.org/pdf/2503.11460
+
 ### "Partitioning"
 
 - https://arxiv.org/pdf/2502.01449

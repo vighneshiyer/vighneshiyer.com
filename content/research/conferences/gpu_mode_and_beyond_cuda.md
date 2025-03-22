@@ -35,4 +35,5 @@ Panels got broken into talks as presenters wanted the ability to present their o
 
 ## GTC
 
-https://semianalysis.com/2025/03/19/nvidia-gtc-2025-built-for-reasoning-vera-rubin-kyber-cpo-dynamo-inference-jensen-math-feynman/#smart-router
+- https://semianalysis.com/2025/03/19/nvidia-gtc-2025-built-for-reasoning-vera-rubin-kyber-cpo-dynamo-inference-jensen-math-feynman/#smart-router
+- https://irrationalanalysis.substack.com/p/gtc-2025-co-packaged-optics-switching

@@ -29,6 +29,10 @@ Here are a bunch of things from around the internet that I find interesting.
   - This blog is insanely good: every article is filled with detailed information about the low-level concurrency primitives provided by the hardware and OS
   - [Scala's AsynchronousFileChannel is not truly asynchronous.](https://www.reddit.com/r/scala/comments/1b6k0cs/scalas_asynchronousfilechannel_is_not_truly/)
 
+### Parallel Programming
+
+- [I want a good parallel computer](https://raphlinus.github.io/gpu/2025/03/21/good-parallel-computer.html) ([HN link](https://news.ycombinator.com/item?id=43440174))
+
 ### Distributed Programming
 
 - [Distributed Systems Programming Has Stalled](https://www.shadaj.me/writing/distributed-programming-stalled) ([HN link](https://news.ycombinator.com/item?id=43195702))
@@ -74,6 +78,10 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [TeX and Typst: Layout Models](https://laurmaedje.github.io/posts/layout-models/) ([HN link](https://news.ycombinator.com/item?id=43032697))
 
+### Operating Systems
+
+- [The little book about OS development](https://littleosbook.github.io/) ([HN link](https://news.ycombinator.com/item?id=43440473))
+
 ## Computer Architecture
 
 ### Talks
@@ -101,6 +109,13 @@ Here are a bunch of things from around the internet that I find interesting.
 - [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
 - [Taxonomy of RISC-V Vector Extensions](https://fprox.substack.com/p/taxonomy-of-risc-v-vector-extensions)
 
+### Formal Verification
+
+- [Daniel E. Gisselquist: An Introduction to Formal Methods](https://zipcpu.com/tutorial/class-verilog.pdf) (slides)
+- [My first experience with Formal Methods](https://zipcpu.com/blog/2017/10/19/formal-intro.html)
+- [Swapping assumptions and assertions doesn't work](https://zipcpu.com/formal/2018/12/18/skynet.html)
+- [An Exercise in using Formal Induction](https://zipcpu.com/blog/2018/03/10/induction-exercise.html)
+
 ## Systems
 
 - [CACM: Meta’s Hyperscale Infrastructure: Overview and Insights](https://cacm.acm.org/research/metas-hyperscale-infrastructure-overview-and-insights/) ([HN link](https://news.ycombinator.com/item?id=43008920))
@@ -109,6 +124,11 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Creating a highly-integrated open-source laptop from scratch. Power in your hands.](https://www.byran.ee/posts/creation/) ([Show HN: I made an open-source laptop from scratch (byran.ee)](https://news.ycombinator.com/item?id=42797260)) (very impressive)
 - [IEEE Spectrum: It’s Time To Rethink 6G](https://spectrum.ieee.org/5g-bandwidth) ([HN link](https://news.ycombinator.com/item?id=43027266))
+
+### ML Hardware
+
+- [Irrational Analysis: Tenstorrent and the State of AI Hardware Startups](https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware)
+- [Corsix: Tenstorrent Wormhole Series Part 1: Physicalities](https://www.corsix.org/content/tt-wh-part1) (A highly detailed 7-part series on the Wormhole architecture and programming model)
 
 ## Machine Learning (AI/ML)
 
@@ -198,6 +218,10 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Health
 
 - [Bryan Johnson – The World’s Most Expensive Eating Disorder](https://desmolysium.com/bryan-johnson-the-worlds-most-expensive-eating-disorder/)
+
+## History
+
+- [On the Origin of the Pork Taboo](https://archaeology.org/issues/march-april-2025/letters-from/on-the-origin-of-the-pork-taboo/) ([HN link](https://news.ycombinator.com/item?id=43410885))
 
 ## Music
 
