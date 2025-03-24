@@ -16,14 +16,6 @@ Leverage language models
 
 Pick the right materials
 
-- https://cs343d.github.io/index.html
-- EDA CAD course on Coursera
-- Scott Beamer's course
-- UMich / CMU CPU OoO uArch project-based courses
-- https://wasmgroundup.com/ (compilers)
-- Scala red book
-- https://csdiy.wiki/en/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/NJUOS/
-
 ## The Methodology
 
 Master your tools. Master your OS. Master your CLI / shell. Master your editor. Master your VM. Make your life hard (suddenly switch to a tiling VM, CLI editor, ...), and it will pay off. Keep your computing environment simple (avoid usage of many random note-taking apps and so forth).
@@ -38,7 +30,6 @@ Watch seminars / random talks on Youtube. You will be surprised by how much you 
 Classics First
 
 Read papers early and often
-
 
 Encyclopedic knowledge in EECS is the bare minimum for an undergraduate education. (https://decal.best/)
 

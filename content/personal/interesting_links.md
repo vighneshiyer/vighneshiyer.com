@@ -138,6 +138,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Deep Learning Compiler: A Comprehensive Survey (Mar 2021)](https://ieeexplore.ieee.org/abstract/document/9222299)
 - [Full Stack Optimization of Transformer Inference: a Survey (Feb 2023)](https://arxiv.org/abs/2302.14017)
 - [A Review on Edge Large Language Models: Design, Execution, and Applications (Feb 2025)](https://arxiv.org/pdf/2410.11845v20)
+- [A Foundational Theory for Decentralized Sensory Learning](https://arxiv.org/pdf/2503.15130) (Neuromorphic computing, Mar 2025)
+  - [Introducing IntuiCell](https://www.youtube.com/watch?v=CBqBTEYSEmA) (company based on this paper)
 
 ## Design
 

@@ -1,5 +1,8 @@
 # ML for Chip Design: My Perspective
 
+Before discussing ML specifically in the context of chip design, let me first discuss ML in general, and where it has found success.
+After establishing the general philosophy of applying ML to problems, we can discuss how it can be applied to various steps in the chip design process.
+
 ## Background
 
 - Media buzz (see Googling)
@@ -41,3 +44,5 @@ But there is room for good stuff too (and most of it uses very classical ML tech
 - RFIC / photonics design
 
 ## Where is the Opportunity?
+
+
