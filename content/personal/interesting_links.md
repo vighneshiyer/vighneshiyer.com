@@ -32,6 +32,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Parallel Programming
 
 - [I want a good parallel computer](https://raphlinus.github.io/gpu/2025/03/21/good-parallel-computer.html) ([HN link](https://news.ycombinator.com/item?id=43440174))
+- [Halmstad Colloquium: Mike Butts on Kahn Process Networks in Silicon for Real-Time Embedded Systems](https://www.youtube.com/watch?v=sDuuvyUaIAc)
 
 ### Distributed Programming
 

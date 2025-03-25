@@ -13,7 +13,22 @@ Just a group of highly motivated and competent people who just kept pushing coll
 
 ## Beyond CUDA
 
-https://lu.ma/beyondcuda25
+- https://lu.ma/beyondcuda25
+
+### What Did I Expect?
+
+- Overview of deficiencies and legacy cruft of the CUDA programming model
+- New abstractions over GPU primitives
+- Detailed overview and examples of the Rocm API and programming model and how it differs from CUDA, why it is better
+- From Triton creator: how Triton's abstractions enable easy targeting of AMD GPUs due to their block abstraction
+- From Keller and Raja: rethinking the ideal architecture and microarchitecture for the SIMT programming model from first principles, eliminating the graphics-oriented specializations that exist in consumer NVIDIA GPUs
+- From AMD: ubiquitous support for Rocm across the product lineup, elimination of kernel driver crashes and misbehaviors, demonstration of end-to-end training of large scale models using upstream ML libraries
+
+### What Happened?
+
+I wouldn't be surprised if this event was shadow funded by NVIDIA.
+It just reinforced that AMD is way "behind" CUDA.
+If anyone can go "beyond CUDA", it is NVIDIA.
 
 Competent CUDA compiler/translator team
 
