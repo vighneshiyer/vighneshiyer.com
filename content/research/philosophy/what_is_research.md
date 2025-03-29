@@ -5,6 +5,14 @@ The term itself is polluted. Is "engineering" "research"? Does the field you are
 I argue that instead of talking about research, we should simply talk about good, irrelevant, mediocre, and bad work. And furthermore, we must understand what work should be done where. We also talk about what motivates the work to begin with. What work has good impact?
 Finally, from the academic engineering research perspective, we discuss what broad categories of research would fall into good and bad buckets (and in the middle), and provide examples of each.
 
+What is _good_ _engineering_ research?
+
+As we have seen, the core of engineering is abstraction. Therefore good engineering research must be abstraction-oriented.
+
+Application-driven vs application-oriented research.
+  - Driven is often too direct
+  - Oriented makes us see the abstractions that are common to applications
+
 ## Research
 
 ### Engineering

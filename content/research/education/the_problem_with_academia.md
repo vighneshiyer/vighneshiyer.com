@@ -5,6 +5,7 @@
 - Consider what the pure situation should be. Then what is the reality. How can we make everyone's interests line up? Who's interests are illegitimate to begin with?
 
 https://jyywiki-cn.translate.goog/Letter.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true
+
 - PhD has become a job training program
 - Taxonomy: Job training, innovation, papers
 - Types of PhDs

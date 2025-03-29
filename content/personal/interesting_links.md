@@ -50,6 +50,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Hazy Research: GPUs Go Brrr](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) ([HN link](https://news.ycombinator.com/item?id=40337936))
 - [The LMAX architecture](https://martinfowler.com/articles/lmax.html) in the context of ([HN link: Disruptor-rs: better latency and throughput than crossbeam](https://news.ycombinator.com/item?id=40954104))
 - [Parsing Protobuf at 2+GB/s: How I Learned To Love Tail Calls in C](https://blog.reverberate.org/2021/04/21/musttail-efficient-interpreters.html) ([HN link](https://news.ycombinator.com/item?id=41289114))
+- [Deep Dive into Matrix Optimization on AMD GPUs (RDNA3)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) ([HN link](https://news.ycombinator.com/item?id=43469535))
+  - [Overview of HIP C++](https://rocm.docs.amd.com/projects/HIP/en/docs-develop/how-to/hip_cpp_language_extensions.html) (designed to look like CUDA C with (mostly) the same APIs)
 
 ### Compilers
 
@@ -121,6 +123,8 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Systems
 
 - [CACM: Meta’s Hyperscale Infrastructure: Overview and Insights](https://cacm.acm.org/research/metas-hyperscale-infrastructure-overview-and-insights/) ([HN link](https://news.ycombinator.com/item?id=43008920))
+- [Google Search has lost my trust, and I'm not sure where to head next](https://www.androidpolice.com/google-search-engine-lost-my-trust/) ([HN link](https://news.ycombinator.com/item?id=43517828))
+  - [The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/), [In Response To Google](https://www.wheresyoured.at/in-response-to-google/), [Requiem for Raghavan](https://www.wheresyoured.at/requiem-for-raghavan/)
 
 ## Hardware
 
@@ -226,6 +230,8 @@ Here are a bunch of things from around the internet that I find interesting.
 ## History
 
 - [On the Origin of the Pork Taboo](https://archaeology.org/issues/march-april-2025/letters-from/on-the-origin-of-the-pork-taboo/) ([HN link](https://news.ycombinator.com/item?id=43410885))
+- [Second Sophistic - Greek cultural movement of the second and third century CE](https://www.livius.org/articles/concept/second-sophistic/)
+  - [Synesius, Eulogy of Baldness](https://www.livius.org/sources/content/synesius/synesius-eulogy-of-baldness/)
 
 ## Music
 
