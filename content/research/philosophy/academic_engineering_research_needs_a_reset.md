@@ -21,23 +21,27 @@ Vertical integration is important, and ceding the base models will eventually le
 
 <aside>The Chinese have built on American innovations and extended them. We must keep innovating.</aside>
 
-The Chinese still look to America for fundamental innovations in every sector that they quickly adopt and adapt.
-That is the case, until it isn't, for example, in the field of drones where the Chinese took early American innovations and quickly overtook them with vertical integration and optimization (i.e. DJI).
+The Chinese still look to America for fundamental innovations in every sector that they quickly adopt, adapt, and optimize.
+Stagnant American innovation can only last so long, for example, in the field of drones where the Chinese took early American hardware and software platforms and quickly overtook them with vertical integration and optimization (i.e. DJI).
 The same trend is playing out in humanoid robotics with plenty of innovations from Boston Dynamics (both publicly and privately funded) being optimized and extended by the Chinese humanoid leader Unitree.
+This has happened again recently with DeepSeek and the [Six Tigers](https://www.technologyreview.com/2025/02/04/1110942/four-chinese-ai-startups-deepseek/) when it comes to language models.
 
 One way to stay ahead of the Chinese is to not allow domestic fragmentation and extraction only at the upper end of the value stack, but to try pushing on domestic vertical integration.
-
+And as Chris suggests, continuing to innovate instead of optimize, is the best way of making sure America's labs and industry are the world leaders in AI.
 
 <aside>Academia built the first-iteration of many AI innovations that industry has run with. Industry must fund academia strategically.</aside>
 
 Chris notes that attention, the Mamba architecture, FlashAttention, many ML compilers, and so forth came from academic research first before being adopted commercially.
 To some degree, industry has been eating a free lunch sponsored by the federal government, when it is perfectly capable of funding its own research efforts.
-I believe one point Chris is making is that the current model of university funding, with all its inefficiencies, corruption, and graft, crowds out funding that would naturally come from industry.
+I believe one point Chris is making is that the current model of university funding, with all its inefficiencies, corruption, and graft, crowds out and inhibits funding that would naturally come from industry.
 
 > We should get rid of the needless complexity of compliance and allow professors to engage more flexibly with industry. We need new models for collaboration, as Stanford no longer benefits as much as it could from brilliant former professors like Daphne Koller, Andrew Ng, Sebastian Thrun, and Bill Dally (CTO NVidia).
 
 If industry is to fund research, then it must be completely divorced from the uselessness of current-day government funding (e.g. NSF, DoD), where knowing the program director is crucial, and the actual project proposal has little value.
 The value proposition of the research, even if only realizable in 10+ years, must be clear to the funders, who are placing a hedge on the future.
+
+Finally, the actual amount of funding needed for a handful of truly visionary researchers working
+Without destroying the wasteful and corrupt instutitions by purging, the ideal case can't be built up.
 
 <aside>
 Academia is not industry-lite.
@@ -50,7 +54,7 @@ Without taking sufficient _engineering_ and _intellectual risk_, academic resear
 
 My view is that academics should focus on _tools, methodologies, abstractions, and theories_.
 Not on products.
-Naturally, if academic funding is industry driven, nit research and useless paper pushing will be on its way out, while long time-horizon, risky, and high-impact research will flourish.
+Naturally, if academic funding is industry driven, nit research and useless paper pushing will be on its way out, while long time horizon, risky, and high-impact research will flourish.
 
 To make this concrete, I
 - Intel's funding of ASPIRE is a great example of the proper role of industry and academic engineering research
@@ -58,6 +62,15 @@ To make this concrete, I
 <aside>Many academics today don't belong in academia.</aside>
 
 Although Chris does not say this outright, I believe it is implicit in his article.
+
+At the end of the day, an engineering professor is making a pitch.
+Unlike a startup pitch, the time horizon is long, the roadmap is vague, and the revenue is zero.
+In return, he is providing mentorship to a handful of truly passionate but inexperienced students, the promise of revolutionary tools, and
+The essential element of a pitch remains: a clear vision about the future and evidence of extreme technical competence to make progress towards it.
+
+A professorship isn't a status seeking endeavor.
+It isn't for people who care about money.
+It isn't for people who ask their students for research ideas.
 
 
 ## The Computer Architecture Case
@@ -69,7 +82,7 @@ The Chinese are experts here in industry/academic collboration
 ## Yanyan's Letter
 
 It reminds me of [the letter](https://jyywiki.cn/Letter.md) that Prof. Yanyan Jiang of Nanjing University wrote ([ChatGPT translation](https://chatgpt.com/share/67e86a54-2dd8-8004-a376-2c82ece77f03)).
-I encourage everyone to stop and read his letter now.
+I encourage everyone reading to stop and read his letter now.
 
 - https://jyywiki.cn/Reading_List.md (Hero worship of von Neumann, the benefits of true-belief cults)
 
