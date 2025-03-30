@@ -40,8 +40,15 @@ I believe one point Chris is making is that the current model of university fund
 If industry is to fund research, then it must be completely divorced from the uselessness of current-day government funding (e.g. NSF, DoD), where knowing the program director is crucial, and the actual project proposal has little value.
 The value proposition of the research, even if only realizable in 10+ years, must be clear to the funders, who are placing a hedge on the future.
 
-Finally, the actual amount of funding needed for a handful of truly visionary researchers working
-Without destroying the wasteful and corrupt instutitions by purging, the ideal case can't be built up.
+Finally, the actual amount of funding needed for a professor, a handful of researchers, and some computing resources is incredibly low.
+Even if you bundle in all of the other expenses needed to run a research lab, the amount of money required does not exceed $100k / student (a 5x discount vs an industry employee).
+The issue is that universities tack on all kinds of _fake expenses_ for research: "tuition", "rent", "indirect costs" which end up in a slush fund for the entire university, armies of administrators and "vice provosts", garbage IT services, and so forth.
+The fake expenses are _compounded by bureaucracy_ when it comes to hiring, recruitment, capital expenditure, teaching courses, facilities, and on and on.
+
+All for what?
+So students get a piece of paper from an "accredited university", which is a process controlled by yet another cartel.
+Without taking a hammer to these wasteful and corrupt institutions, a proper and financially viable relationship between industry, academic research, and PhD students can't be established.
+At the same time, industry shouldn't corrupt the intellectual freedom of academia: it is the role of the righteous professor to serve as an intermediary, defending research and securing funding.
 
 <aside>
 Academia is not industry-lite.
@@ -56,7 +63,12 @@ My view is that academics should focus on _tools, methodologies, abstractions, a
 Not on products.
 Naturally, if academic funding is industry driven, nit research and useless paper pushing will be on its way out, while long time horizon, risky, and high-impact research will flourish.
 
-To make this concrete, I
+To make this concrete, I can point to the old [ASPIRE lab](https://aspire.eecs.berkeley.edu/) at UC Berkeley, which ran from 2012 to 2017.
+This lab was mostly [funded by](https://aspire.eecs.berkeley.edu/sponsors/) DARPA and the primary industry sponsor: Intel.
+The lab's focus was on retrofitting the [agile methodology for hardware design](https://people.eecs.berkeley.edu/~bora/Journals/2016/IEEEMicro16.pdf), and Intel provided both the industry vision and feedback for realizing this goal.
+Many innovations and tools came out of ASPIRE, including the [RISC-V ISA (it started a bit before this lab began)](https://people.eecs.berkeley.edu/~krste/papers/EECS-2016-1.pdf), [Chisel (a hardware design language embedded in Scala)](https://www.chisel-lang.org/), [FIRRTL (the first well-defined IR for hardware)](https://ieeexplore.ieee.org/abstract/document/8203780), [Rocket (the first reasonable RISC-V core)](https://aspire.eecs.berkeley.edu/wp/wp-content/uploads/2016/04/Tech-Report-The-Rocket-Chip-Generator-Beamer.pdf), [BOOM (the first out-of-order RISC-V core)](https://github.com/riscv-boom/riscv-boom), [Hwacha (a vector-fetch ISA and microarchitecture)](https://people.eecs.berkeley.edu/~krste/papers/EECS-2015-263.pdf), [DIABLO](https://dl.acm.org/doi/abs/10.1145/2775054.2694362)/[FireBox](https://www.usenix.org/conference/fast14/technical-sessions/presentation/keynote) (FPGA-based simulation platforms), [FireSim (it started at the very tail of this lab)](https://fires.im/), and [GAP (a comprehensive graph algorithm benchmark suite)](http://gap.cs.berkeley.edu/benchmark.html), many of which are still being developed and have industry uptake today.
+Another outcome of this lab was the founding of SiFive in 2015, which is a major player in RISC-V IP today.
+
 - Intel's funding of ASPIRE is a great example of the proper role of industry and academic engineering research
 
 <aside>Many academics today don't belong in academia.</aside>
