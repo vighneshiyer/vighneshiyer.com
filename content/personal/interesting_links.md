@@ -14,6 +14,12 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Features of a dream programming language: 3rd draft](https://dev.to/redbar0n/features-of-a-dream-programming-language-3rd-draft-5m6)
 - ["The Mess We're In" by Joe Armstrong @ Strange Loop 2014](https://www.youtube.com/watch?v=lKXe3HUG2l4)
 - [Carbon is not a programming language (sort of)](https://herecomesthemoon.net/2025/02/carbon-is-not-a-language/0) ([HN link](https://news.ycombinator.com/item?id=42983733))
+- [c2: Sufficiently Smart Compiler](https://wiki.c2.com/?CeeLanguage)
+  - [c2 wiki](https://wiki.c2.com/) (Lots of excellent articles)
+  - [c2: Can Programming Be Liberated From The Von Neumann Style](https://wiki.c2.com/?CanProgrammingBeLiberatedFromTheVonNeumannStyle)
+  - [John Backus: Can Programming Be Liberated from the von Neumann Style? A Functional Style and Its Algebra of Programs](https://dl.acm.org/doi/pdf/10.1145/359576.359579)
+  - [Daniel Hillis and Guy Steele: DATA PARALLEL ALGORITHMS](https://rsim.cs.illinois.edu/arch/qual_papers/systems/3.pdf)
+  - [c2: Connection Machine](https://wiki.c2.com/?ConnectionMachine)
 
 ### Functional Programming
 
@@ -166,6 +172,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Seinfeld's Duke 2024 Commencement Speech](https://www.youtube.com/watch?v=76QV2SrSqgo)
 - [3b1b's Harvey Mudd 2024 Commencement Speech](https://www.youtube.com/watch?v=W3I3kAg2J7w)
+- [Paul Graham: What to Do](https://paulgraham.com/do.html) ([HN link](https://news.ycombinator.com/item?id=43514969))
 
 ## Business
 

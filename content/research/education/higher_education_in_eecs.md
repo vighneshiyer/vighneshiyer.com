@@ -55,3 +55,7 @@ Sahai (https://web.archive.org/web/20230213214722/https://people.eecs.berkeley.e
 - After learning for a short bit, immediately implement and evaluate. Being a programmer, you should strive to implement things as you learn about them in theory and observe how they behave. Guide your learning this way when studying from a curriculum.
   - e.g. FFT theory -> implement it. copy-and-patch compiler -> implement basic example in Bril or your own custom DSL
   - Get a feel for the thing you're learning about right away, don't wait until 'homework' or 'labs'
+- https://hilariusbookbinder.substack.com/p/the-average-college-student-today/comments
+  - The average college student today (hilariusbookbinder.substack.com)
+  - https://news.ycombinator.com/item?id=43522966
+  - This guy is right and wrong. Right about student deficiencies, wrong about how to address them. At the end of the day, it is about students looking to superior beings.

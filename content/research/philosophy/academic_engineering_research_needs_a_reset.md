@@ -89,13 +89,18 @@ It isn't for people who depend on their students for research output.
 Some professors and graduate students will admit in private that a large chunk of academic engineering research is ill-motivated, isn't going anywhere, reflects a desire to simply push papers, and has little real-world value, but I will just state it outright.
 Our goal should be to use open source and industry / academic collaboration to restore academic engineering research to a state of excellence and admiration.
 
-## An Analogy From Computer Architecture
+## Analogies From Berkeley
 
-If we examine the historical pattern described by Chris for language models (American academic innovation, industry funding, startup founding, and Chinese upstarts optimizing these innovations), there is an equivalent story in the field of computer architecture.
+If we examine the historical pattern described by Chris for language models (American academic innovation, industry funding, startup founding, Chinese upstarts optimizing these innovations, and finally Chinese dominance), there is an equivalent story in the field of computer architecture.
+
+### The RISC-V Innovation Followed by Chinese Innovation
 
 RISC microprocessor design goes back a long way (before the 80s), but it had a modern revival with the creation of RISC-V at UC Berkeley around 2010 (originally intended for pedagogical purposes).
-Lead by Prof. Krste Asanovic, a bunch of tools and implementations for RISC-V came out of the ASPIRE lab, which I enumerated above.
-The story played out the same way: industry (Intel) provided funding to work on fundamental research, the
+Lead by Prof. Krste Asanovic, many tools and implementations for RISC-V came out of the ASPIRE lab, which I enumerated above.
+The story played out the same way.
+
+Industry (Intel) provided funding, resources, and industrial feedback for work on fundamental computer architecture methodology research, which was performed at UC Berkeley.
+Many useful products came out of the research
 
 <!--
 Krste Asanovic is the equivalent person on the computer architecture side (RISC-V, spike, Rocket, Hwacha, Chipyard, FireSim, and on and on).
@@ -115,3 +120,11 @@ I encourage everyone reading to stop and read his letter now.
 
 - NSF and other funding is running dry and is frequently allocated to bad and useless things
   - Yanyan's letter makes it clear that running government-funded research in the 'business-as-usual' case, leads to a sustaining feedback loop of nonsense, running in circles, and producing nothing of value other than every party shaking each other's hand and handing over money, status, prestige, papers, in a circle
+
+Consider mattei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part , the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
+
+This is different from what happened to krste though, Chinese forces took innovation and ran with it and the Americans are caught flatfooted, save for all the riscv ip startups, which may soon be overrun by xiangshan
+
+We can see the same pattern in manufacturing, let's take PCB prototyping and large volume manufacturing for example, Chinese built their own pipeline, tools like easyeda, things like lcsc, and then began to dominate everything, very open and accessible, low price and vertical integration, now they are the ones innovating and more importantly enabling American innovation
+
+Consider what happens when China dumps solar panels, all of a sudden it eats up all the domestic market and it dies
