@@ -127,8 +127,13 @@ The Chinese are experts here in industry/academic collboration
 
 ### Big Data Innovations Continue to be Dominated by America
 
+There is one more historical example from Berkeley to look at.
+Led by Profs. Matei Zaharia and Ion Stoica, many tools for "big data" came out of the AMPLab (Spark, Mesos, Alluxio), and tools for "ML systems" from the RISELab (Ray).
+These projects came out of academic research funded by many industrial sponsors, and they led to several startups, with Databricks and Anyscale being the most prominent.
 
+<!--
 Consider mattei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part , the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
+-->
 
 ## Analogies From Other Industries
 
