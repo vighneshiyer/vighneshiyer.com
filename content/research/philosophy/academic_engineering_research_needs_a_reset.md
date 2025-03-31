@@ -131,19 +131,33 @@ There is one more historical example from Berkeley to look at.
 Led by Profs. Matei Zaharia and Ion Stoica, many tools for "big data" came out of the AMPLab (Spark, Mesos, Alluxio), and tools for "ML systems" from the RISELab (Ray).
 These projects came out of academic research funded by many industrial sponsors, and they led to several startups, with Databricks and Anyscale being the most prominent.
 
+Because these tools were open source, stayed that way (for the most part), and innovation in the open continued, there was no ability for the Chinese to dominate this market.
+The tools were maximally accessible and therefore continued to evolve and improve over time as industry funds flowed into them, and seeded the academic lab that spawned it to do *the next thing*.
+
+<!-- Instead, these projects enabled billions in value creation, and spawned the era of LLMs, -->
+
 <!--
 Consider mattei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part , the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
 -->
 
 ## Analogies From Other Industries
 
+The same story played out in manufacturing generally over the past 50 years.
+If we take the particular example of PCB prototyping and manufacturing, we see a clear pattern.
+An industry that was started in America, began to lose ground to the Chinese as they started with manufacturing very simple boards in prototype quantities.
+
+In the early stages, no one would suspect that China could overtake the US manufacturers.
+After all, the US had a huge head start, the manufacturing process was not so sensitive to labor costs, and it seemed doubtful if the Chinese could keep evolving with tighter PCB tolerances and features (i.e. HDI) the board engineers wanted.
+
+<!--
 We can see the same pattern in manufacturing, let's take PCB prototyping and large volume manufacturing for example, Chinese built their own pipeline, tools like easyeda, things like lcsc, and then began to dominate everything, very open and accessible, low price and vertical integration, now they are the ones innovating and more importantly enabling American innovation
 
 Consider what happens when China dumps solar panels, all of a sudden it eats up all the domestic market and it dies
+-->
 
 ## Chris Re's Position
 
-Chris Re is in the same position as Krste. Founded together.ai, trying to cultivate this university / industry player position. But recognizes the state he is in: inventor of lots of ML systems things (thunderkittens, flashattention, mamba, etc.) and realizes what needs to happen next.
+Chris Re is in the same position that Krste was in shortly after the founding of SiFive. Founded together.ai, trying to cultivate this university / industry player position. But recognizes the state he is in: inventor of lots of ML systems things (thunderkittens, flashattention, mamba, etc.) and realizes what needs to happen next.
 
 ## Yanyan Jiang's Letter
 
