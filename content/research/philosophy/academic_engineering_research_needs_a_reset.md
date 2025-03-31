@@ -91,26 +91,56 @@ Our goal should be to use open source and industry / academic collaboration to r
 
 ## Analogies From Berkeley
 
-If we examine the historical pattern described by Chris for language models (American academic innovation, industry funding, startup founding, Chinese upstarts optimizing these innovations, and finally Chinese dominance), there is an equivalent story in the field of computer architecture.
+This is the historical pattern described by Chris for language models (specifically for transformers and FlashAttention):
+
+1. American academic innovation funded largely by industry takes a long-term view of a problem
+2. Industry investment amplifies / incorporates the academic work
+3. Creation of a startup from the originating academic lab to capitalize on their innovation
+4. Chinese upstarts begin leveraging and optimizing these innovations which were open source to begin with
+5. And, if American innovation begins to stagnate or is moved into closed source, Chinese dominance ensues
+
+There is an equivalent story in the field of computer architecture.
 
 ### The RISC-V Innovation Followed by Chinese Innovation
 
-RISC microprocessor design goes back a long way (before the 80s), but it had a modern revival with the creation of RISC-V at UC Berkeley around 2010 (originally intended for pedagogical purposes).
-Lead by Prof. Krste Asanovic, many tools and implementations for RISC-V came out of the ASPIRE lab, which I enumerated above.
-The story played out the same way.
+<!-- Krste Asanovic is the equivalent person on the computer architecture side (RISC-V, spike, Rocket, Hwacha, Chipyard, FireSim, and on and on). -->
 
-Industry (Intel) provided funding, resources, and industrial feedback for work on fundamental computer architecture methodology research, which was performed at UC Berkeley.
-Many useful products came out of the research
+RISC microprocessor design goes back a long way (before the 80s), but it had a modern revival with the creation of RISC-V at UC Berkeley around 2010 (originally intended for pedagogical purposes).
+Led by Prof. Krste Asanovic, many tools and implementations for RISC-V came out of the ASPIRE lab, which I enumerated above.
+The story played out the same way (I admit I'm simplifying the history and outlook a bit).
+
+1. Industry (Intel) provided funding, resources, and industrial feedback for work on fundamental computer architecture methodology research, which was performed at UC Berkeley
+2. Many useful tools (Chisel, RISC-V, FireSim, agile design methodology) came out of the research and were subsequently adopted by American industry
+3. The original creators of RISC-V started SiFive to capitalize on being first to market for a brand new ISA, which was rapidly gaining traction
+4. China recognized the value of a new royalty-free ISA with a software ecosystem and began to contribute from all angles (microarchitecture, ISA specification, SoC tapeouts, compiler extensions)
+5. American startups moved core IP development (SiFive's RISC-V cores) and language tooling (Chisel) away from academia and open source into the corporate environment. American academia failed to continue innovating. The Chinese didn't hold back and open sourced their cores and tools (e.g. Alibaba C910, Xiangshan) and are poised to dominate the RISC-V ecosystem.
+
+There is an entire article to write on just what happened to RISC-V from the Chinese perspective, but suffice it to say, nearly all the new academic / low-mid end work is being done in China.
+China is trying to create a maximally accessible RISC-V IP environment, which will have long-term knock on effects in continuing Chinese control.
+Furthermore, there is far more collaboration between government, industry, and academia in China than there is in the US, with a clear national plan to dominate the industry.
+While it is the case that all the high-performance "high-margin" RISC-V IP startups are based in the US, it isn't a threat to China at all: they understand they must capture the broad market first and then specialize as they build the domestic talent pipeline.
 
 <!--
-Krste Asanovic is the equivalent person on the computer architecture side (RISC-V, spike, Rocket, Hwacha, Chipyard, FireSim, and on and on).
+This is different from what happened to krste though, Chinese forces took innovation and ran with it and the Americans are caught flatfooted, save for all the riscv ip startups, which may soon be overrun by xiangshan
+The Chinese are experts here in industry/academic collboration
 -->
 
-The Chinese are experts here in industry/academic collboration
+### Big Data Innovations Continue to be Dominated by America
+
+
+Consider mattei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part , the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
+
+## Analogies From Other Industries
+
+We can see the same pattern in manufacturing, let's take PCB prototyping and large volume manufacturing for example, Chinese built their own pipeline, tools like easyeda, things like lcsc, and then began to dominate everything, very open and accessible, low price and vertical integration, now they are the ones innovating and more importantly enabling American innovation
+
+Consider what happens when China dumps solar panels, all of a sudden it eats up all the domestic market and it dies
+
+## Chris Re's Position
 
 Chris Re is in the same position as Krste. Founded together.ai, trying to cultivate this university / industry player position. But recognizes the state he is in: inventor of lots of ML systems things (thunderkittens, flashattention, mamba, etc.) and realizes what needs to happen next.
 
-## Yanyan's Letter
+## Yanyan Jiang's Letter
 
 It reminds me of [the letter](https://jyywiki.cn/Letter.md) that Prof. Yanyan Jiang of Nanjing University wrote ([ChatGPT translation](https://chatgpt.com/share/67e86a54-2dd8-8004-a376-2c82ece77f03)).
 I encourage everyone reading to stop and read his letter now.
@@ -120,11 +150,3 @@ I encourage everyone reading to stop and read his letter now.
 
 - NSF and other funding is running dry and is frequently allocated to bad and useless things
   - Yanyan's letter makes it clear that running government-funded research in the 'business-as-usual' case, leads to a sustaining feedback loop of nonsense, running in circles, and producing nothing of value other than every party shaking each other's hand and handing over money, status, prestige, papers, in a circle
-
-Consider mattei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part , the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
-
-This is different from what happened to krste though, Chinese forces took innovation and ran with it and the Americans are caught flatfooted, save for all the riscv ip startups, which may soon be overrun by xiangshan
-
-We can see the same pattern in manufacturing, let's take PCB prototyping and large volume manufacturing for example, Chinese built their own pipeline, tools like easyeda, things like lcsc, and then began to dominate everything, very open and accessible, low price and vertical integration, now they are the ones innovating and more importantly enabling American innovation
-
-Consider what happens when China dumps solar panels, all of a sudden it eats up all the domestic market and it dies
