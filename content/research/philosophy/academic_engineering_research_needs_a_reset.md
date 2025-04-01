@@ -117,11 +117,12 @@ The story played out the same way (I admit I'm simplifying the history and outlo
 
 There is an entire article to write on just what happened to RISC-V from the Chinese perspective, but suffice it to say, nearly all the new academic / low-mid end work is being done in China.
 China is trying to create a maximally accessible RISC-V IP environment, which will have long-term knock on effects in continuing Chinese control.
-Furthermore, there is far more collaboration between government, industry, and academia in China than there is in the US, with a clear national plan to dominate the industry.
+Furthermore, there is [far more collaboration](https://www.bosc.ac.cn/) between government, industry, and academia in China than there is in the US, with a clear national plan to dominate the industry.
 While it is the case that all the high-performance "high-margin" RISC-V IP startups are based in the US, it isn't a threat to China at all: they understand they must capture the broad market first and then specialize as they build the domestic talent pipeline.
 
-One more note: all of the innovation coming from the Xiangshan team was seeded in Krste's group over the past 10 years.
-Xiangshan is a fork of BOOM, their cache is a fork of the LLC that SiFive open sourced, and they [continue to innovate in the hardware design language space](https://capra.cs.cornell.edu/latte25/paper/12.pdf) after fully adopting Chisel.
+One more note: all of the innovation coming from the Xiangshan team was seeded in Krste's group over the past 10 years (Chisel, FireSim, Rocket, BOOM, Chipyard, ...).
+Xiangshan is a fork of BOOM, their cache is a fork of the LLC that SiFive open sourced, and they continue to [innovate](https://ericlyun.me/tutorial-asplos2025/) in the [hardware design language space](https://capra.cs.cornell.edu/latte25/paper/12.pdf) even after fully adopting Chisel.
+They built a bunch of [verification](https://ieeexplore.ieee.org/abstract/document/9923860) and [physical design](https://tutorial.xiangshan.cc/hpca25/slides/20250302-HPCA25-1-Introduction-XiangShan.pdf) infrastructure too, and now they are [servicing many Chinese startups that want their own custom SoC](https://www.computer.org/csdl/proceedings-article/hcs/2024/10665293/20b7ws18WlO).
 Another note is that the Chinese effort, like all efforts, is _hero-driven_: there are a handful of heroes that contribute the majority of the engineering work, and they are quickly "promoted" to leadership roles where their impact is magnified.
 
 <!--
@@ -143,7 +144,7 @@ Instead, these projects enabled billions in value creation, and spawned the era 
 Consider matei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part, the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
 -->
 
-### PCB Prototyping
+### PCB Manufacturing
 
 The same story played out in manufacturing generally over the past 50 years.
 If we take the particular case of PCB prototyping and manufacturing, we see one thread of Chinese manufacturing dominance.
@@ -153,12 +154,19 @@ In the early stages, no one would suspect that China could overtake the US manuf
 After all, the US had a huge head start, all the PCB _design_ happened in America, the manufacturing process was not so sensitive to labor costs, and it seemed doubtful if the Chinese could keep evolving with tighter PCB tolerances and features (i.e. HDI).
 Things began to change as the Chinese first targeted the hobby and low-volume prototype market, offering English services, and making their web platform _maximally accessible_ with instant quotes (something American manufacturers still can't do today).
 
-Operate all the baseline services as commodities and make them accessible and integrated, cheap and fast, and usable by all. Value creation happens further up the chain! Trying to control and close off what should be a commodity doesn't work in the long run and leads to ruin / loss of innovation.
+The Chinese then started to build their PCB pipeline, encouraging more domestic prototyping, designing [their own PCB CAD tools](https://easyeda.com/), integrating [fabrication and assembly services under the same roof](https://jlcpcb.com/), integrating their own [electronics warehouse](https://www.lcsc.com/), and improving their yields and tolerances.
+With all of this, and increased automation, prices crashed to the point where you would be a fool to not use a Chinese board house over an American one.
 
-More automation, specialized machinery, and now innovation
+Their goal is to turn baseline services (like PCB manufacturing) into commodities, make them _accessible_, and fully integrate them with other parts of the Chinese economy.
+Since PCB manufacturing is now cheap, fast, and usable by all, they enable more value stacking further up the chain (i.e. knock-on effects).
+By trying to control and close off what should be a commodity (e.g. foundation models and their runtime platforms), you end up inhibiting innovation further up the stack.
 
 <!--
 We can see the same pattern in manufacturing, let's take PCB prototyping and large volume manufacturing for example, Chinese built their own pipeline, tools like easyeda, things like lcsc, and then began to dominate everything, very open and accessible, low price and vertical integration, now they are the ones innovating and more importantly enabling American innovation
+
+Operate all the baseline services as commodities and make them accessible and integrated, cheap and fast, and usable by all. Value creation happens further up the chain! Trying to control and close off what should be a commodity doesn't work in the long run and leads to ruin / loss of innovation.
+
+More automation, specialized machinery, and now innovation
 
 Consider what happens when China dumps solar panels, all of a sudden it eats up all the domestic market and it dies
 -->

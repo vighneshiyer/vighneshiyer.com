@@ -240,6 +240,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [On the Origin of the Pork Taboo](https://archaeology.org/issues/march-april-2025/letters-from/on-the-origin-of-the-pork-taboo/) ([HN link](https://news.ycombinator.com/item?id=43410885))
 - [Second Sophistic - Greek cultural movement of the second and third century CE](https://www.livius.org/articles/concept/second-sophistic/)
   - [Synesius, Eulogy of Baldness](https://www.livius.org/sources/content/synesius/synesius-eulogy-of-baldness/)
+- [The Highly Probable Future: 83 Assumptions About the Year 2025 (written in 1994 by Joseph F. Coates)](https://www.uscg.mil/Portals/0/Strategy/Article%20Highly%20Probable%20Future%202025%201994.pdf?ver=2018-10-18-145610-687&ref=newslttrs.com)
 
 ## Music
 

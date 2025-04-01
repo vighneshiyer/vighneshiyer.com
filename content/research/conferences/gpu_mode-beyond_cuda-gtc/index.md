@@ -336,6 +336,16 @@ Panels got broken into talks as presenters wanted the ability to present their o
 - CI lmao
 - Rocm performance is improving, improving over H200 lol
 
+- https://news.ycombinator.com/item?id=43547309 (Ask HN: Why hasn’t AMD made a viable CUDA alternative?)
+
+> This ticket, finally closed after being open for 2 years, is a pretty good micocosm of this problem:
+>
+> https://github.com/ROCm/ROCm/issues/1714
+>
+> Users complaining that the docs don't even specify which cards work.
+>
+> But it goes deeper - a valid complaint is that "this only supports one or two consumer cards!" A common rebuttal is that it works fine on lots of AMD cards if you set some environment flag to force the GPU architecture selection. The fact that this is so close to working on a wide variety of hardware, and yet doesn't, is exactly the vibe you get with the whole ecosystem.
+
 ## GTC
 
 - https://semianalysis.com/2025/03/19/nvidia-gtc-2025-built-for-reasoning-vera-rubin-kyber-cpo-dynamo-inference-jensen-math-feynman/#smart-router
