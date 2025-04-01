@@ -717,3 +717,11 @@ Sure, here are a few ideas:
 - How do you design a language for readability of existing RTL / HW in any abstraction?
   - Right now, a big issue with Chisel and even Verilog is it is hard to get an idea of the overall HW architecture at different levels of detail without manually going through the code and seeing where modules are instantiated and looking at the dataflow. Looking at waveforms for a simple test makes the dataflow a bit more clear, but still requires lots of manual work. Can we do a better job here? The language itself should support visualization of dataflows and module instantiations and chains of bundles and the like: the visual dataflow should also be easy to programmatically inspect after the circuit is elaborated with original references to the functions/classes that generated certain bits of hardware and the ability to do post-elaboration introspection of those structures.
   - Visualization: https://news.ycombinator.com/item?id=40937119 (https://blog.sbensu.com/posts/demand-for-visual-programming/)
+
+## Interesting Projects
+
+- https://capra.cs.cornell.edu/latte25/paper/12.pdf (Zaozi, Reinvent Chisel in Scala 3) (by sequencer)
+- https://capra.cs.cornell.edu/latte25/ (general stuff from LATTE in 2025)
+- https://ericlyun.me/tutorial-asplos2025/ (very impressive set of tools that I didn't appreciate before, all from Yun Liang's lab in Peking University)
+  - Hector HLS language and IRs, Cement HDL, Khronos RTL simulator
+- See my email with Scott Beamer and Dustin Richmond - I enumerated languages and they gave some feedback too of ones I missed

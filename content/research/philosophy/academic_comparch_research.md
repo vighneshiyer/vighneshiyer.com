@@ -175,6 +175,9 @@ Compete with the strengths of the school, don't compete with eth on chip vlsi, d
 
 Cite his article on research labs
 Point to Dave Patersons how to build a bad research center (https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
+- https://people.eecs.berkeley.edu/~pattrsn/talks/BadCareer.pdf
+- https://people.eecs.berkeley.edu/~pattrsn/talks/research.pdf
+  - Bad Career Move #6: As the leading scientist, your job is to publish in journals; it’s not your job to make you the ideas palatable to the ordinary engineer
 
 - https://www.linkedin.com/posts/bruceahecht_exciting-presentations-from-jan-rabaey-and-activity-7297392795135193088-G04p/
 
@@ -184,6 +187,9 @@ Point to Dave Patersons how to build a bad research center (https://www2.eecs.be
 
 - https://dl.acm.org/doi/pdf/10.1145/3649329.3663515
   - Invited: The Magnificent Seven Challenges and Opportunities in Domain-Specific Accelerator Design for Autonomous Systems
+
+- https://dl.acm.org/doi/pdf/10.1145/2566969
+  - How to Build a Bad research Center
 
 ## Industry vs Academia
 

@@ -89,7 +89,7 @@ It isn't for people who depend on their students for research output.
 Some professors and graduate students will admit in private that a large chunk of academic engineering research is ill-motivated, isn't going anywhere, reflects a desire to simply push papers, and has little real-world value, but I will just state it outright.
 Our goal should be to use open source and industry / academic collaboration to restore academic engineering research to a state of excellence and admiration.
 
-## Analogies From Berkeley
+## Analogies
 
 This is the historical pattern described by Chris for language models (specifically for transformers and FlashAttention):
 
@@ -120,6 +120,10 @@ China is trying to create a maximally accessible RISC-V IP environment, which wi
 Furthermore, there is far more collaboration between government, industry, and academia in China than there is in the US, with a clear national plan to dominate the industry.
 While it is the case that all the high-performance "high-margin" RISC-V IP startups are based in the US, it isn't a threat to China at all: they understand they must capture the broad market first and then specialize as they build the domestic talent pipeline.
 
+One more note: all of the innovation coming from the Xiangshan team was seeded in Krste's group over the past 10 years.
+Xiangshan is a fork of BOOM, their cache is a fork of the LLC that SiFive open sourced, and they [continue to innovate in the hardware design language space](https://capra.cs.cornell.edu/latte25/paper/12.pdf) after fully adopting Chisel.
+Another note is that the Chinese effort, like all efforts, is _hero-driven_: there are a handful of heroes that contribute the majority of the engineering work, and they are quickly "promoted" to leadership roles where their impact is magnified.
+
 <!--
 This is different from what happened to krste though, Chinese forces took innovation and ran with it and the Americans are caught flatfooted, save for all the riscv ip startups, which may soon be overrun by xiangshan
 The Chinese are experts here in industry/academic collboration
@@ -131,23 +135,27 @@ There is one more historical example from Berkeley to look at.
 Led by Profs. Matei Zaharia and Ion Stoica, many tools for "big data" came out of the AMPLab (Spark, Mesos, Alluxio), and tools for "ML systems" from the RISELab (Ray).
 These projects came out of academic research funded by many industrial sponsors, and they led to several startups, with Databricks and Anyscale being the most prominent.
 
-Because these tools were open source, stayed that way (for the most part), and innovation in the open continued, there was no ability for the Chinese to dominate this market.
-The tools were maximally accessible and therefore continued to evolve and improve over time as industry funds flowed into them, and seeded the academic lab that spawned it to do *the next thing*.
-
-<!-- Instead, these projects enabled billions in value creation, and spawned the era of LLMs, -->
+Because these tools were open source, stayed that way (for the most part), and innovation in the open continued (more data analytics tools such as Pandas and Polars, more databases such as MongoDB and DuckDB), there was no ability for the Chinese to dominate this market.
+The tools were _maximally accessible_ and therefore continued to evolve and improve over time as industry funds flowed into them, and seeded the academic lab that spawned it to do *the next thing*.
 
 <!--
-Consider mattei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part , the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
+Instead, these projects enabled billions in value creation, and spawned the era of LLMs
+Consider matei and stoica, also doing the same thing with data bricks, spark, any scale, and more in the future, but they didn't have the final part, the Chinese takeover happen, instead the Chinese still use their data analysis platforms and innovations because they both continue to innovate and also open source, making something accessible and innovative ensures continued market dominance and leadership
 -->
 
-## Analogies From Other Industries
+### PCB Prototyping
 
 The same story played out in manufacturing generally over the past 50 years.
-If we take the particular example of PCB prototyping and manufacturing, we see a clear pattern.
-An industry that was started in America, began to lose ground to the Chinese as they started with manufacturing very simple boards in prototype quantities.
+If we take the particular case of PCB prototyping and manufacturing, we see one thread of Chinese manufacturing dominance.
+An industry that started in America, began to lose ground to the Chinese as they started manufacturing very simple boards in prototype quantities.
 
 In the early stages, no one would suspect that China could overtake the US manufacturers.
-After all, the US had a huge head start, the manufacturing process was not so sensitive to labor costs, and it seemed doubtful if the Chinese could keep evolving with tighter PCB tolerances and features (i.e. HDI) the board engineers wanted.
+After all, the US had a huge head start, all the PCB _design_ happened in America, the manufacturing process was not so sensitive to labor costs, and it seemed doubtful if the Chinese could keep evolving with tighter PCB tolerances and features (i.e. HDI).
+Things began to change as the Chinese first targeted the hobby and low-volume prototype market, offering English services, and making their web platform _maximally accessible_ with instant quotes (something American manufacturers still can't do today).
+
+Operate all the baseline services as commodities and make them accessible and integrated, cheap and fast, and usable by all. Value creation happens further up the chain! Trying to control and close off what should be a commodity doesn't work in the long run and leads to ruin / loss of innovation.
+
+More automation, specialized machinery, and now innovation
 
 <!--
 We can see the same pattern in manufacturing, let's take PCB prototyping and large volume manufacturing for example, Chinese built their own pipeline, tools like easyeda, things like lcsc, and then began to dominate everything, very open and accessible, low price and vertical integration, now they are the ones innovating and more importantly enabling American innovation
@@ -157,12 +165,19 @@ Consider what happens when China dumps solar panels, all of a sudden it eats up 
 
 ## Chris Re's Position
 
-Chris Re is in the same position that Krste was in shortly after the founding of SiFive. Founded together.ai, trying to cultivate this university / industry player position. But recognizes the state he is in: inventor of lots of ML systems things (thunderkittens, flashattention, mamba, etc.) and realizes what needs to happen next.
+Chris Re is in the same position that Krste was in shortly after his founding of SiFive.
+Founded together.ai, trying to cultivate this university / industry player position. But recognizes the state he is in: inventor of lots of ML systems things (thunderkittens, flashattention, mamba, etc.) and realizes what needs to happen next.
 
 ## Yanyan Jiang's Letter
 
-It reminds me of [the letter](https://jyywiki.cn/Letter.md) that Prof. Yanyan Jiang of Nanjing University wrote ([ChatGPT translation](https://chatgpt.com/share/67e86a54-2dd8-8004-a376-2c82ece77f03)).
+All this discussion reminds me of [the letter](https://jyywiki.cn/Letter.md) that Prof. Yanyan Jiang of Nanjing University wrote ([GPT-4o translation](https://chatgpt.com/share/67e86a54-2dd8-8004-a376-2c82ece77f03)) ([Grok 3 translation](https://grok.com/share/c2hhcmQtMg%3D%3D_58ec05dc-dfd8-45d7-bea9-76089c4c4f09)).
 I encourage everyone reading to stop and read his letter now.
+
+<aside>
+Sidenote: The Grok translation is more true to the original Chinese and preserves the harsh language and Chinese proverbs Yanyan used, while the GPT version is sanitized and strips out several paragraphs from the original text.
+Only after seeing these two translations side-by-side did I realize just how much GPT has been censored by OpenAI's "safety" morons.
+We're saved by Musk yet again.
+</aside>
 
 - https://jyywiki.cn/Reading_List.md (Hero worship of von Neumann, the benefits of true-belief cults)
 
