@@ -93,7 +93,7 @@ Our goal should be to use open source and industry / academic collaboration to r
 
 This is the historical pattern described by Chris for language models (specifically for transformers and FlashAttention):
 
-1. American academic innovation funded largely by industry takes a long-term view of a problem
+1. American academic innovation funded by government (mostly) and industry takes a long-term view of a problem
 2. Industry investment amplifies / incorporates the academic work
 3. Creation of a startup from the originating academic lab to capitalize on their innovation
 4. Chinese upstarts begin leveraging and optimizing these innovations which were open source to begin with
