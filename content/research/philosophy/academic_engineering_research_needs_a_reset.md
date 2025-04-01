@@ -116,8 +116,8 @@ The story played out the same way (I admit I'm simplifying the history and outlo
 5. American startups moved core IP development (SiFive's RISC-V cores) and language tooling (Chisel) away from academia and open source into the corporate environment. American academia failed to continue innovating. The Chinese didn't hold back and open sourced their cores and tools (e.g. Alibaba C910, Xiangshan) and are poised to dominate the RISC-V ecosystem.
 
 There is an entire article to write on just what happened to RISC-V from the Chinese perspective, but suffice it to say, nearly all the new academic / low-mid end work is being done in China.
-China is trying to create a maximally accessible RISC-V IP environment, which will have long-term knock on effects in continuing Chinese control.
-Furthermore, there is [far more collaboration](https://www.bosc.ac.cn/) between government, industry, and academia in China than there is in the US, with a clear national plan to dominate the industry.
+China is trying to create a maximally accessible RISC-V IP environment, which will have long-term knock on effects in continuing Chinese dominance.
+Furthermore, there is [far more collaboration](https://www.bosc.ac.cn/) between government, industry, and academia in China than there is in the US, with a clear national plan to leverage RISC-V for innovating in domestic semiconductors.
 While it is the case that all the high-performance "high-margin" RISC-V IP startups are based in the US, it isn't a threat to China at all: they understand they must capture the broad market first and then specialize as they build the domestic talent pipeline.
 
 One more note: all of the innovation coming from the Xiangshan team was seeded in Krste's group over the past 10 years (Chisel, FireSim, Rocket, BOOM, Chipyard, ...).
@@ -125,9 +125,18 @@ Xiangshan is a fork of BOOM, their cache is a fork of the LLC that SiFive open s
 They built a bunch of [verification](https://ieeexplore.ieee.org/abstract/document/9923860) and [physical design](https://tutorial.xiangshan.cc/hpca25/slides/20250302-HPCA25-1-Introduction-XiangShan.pdf) infrastructure too, and now they are [servicing many Chinese startups that want their own custom SoC](https://www.computer.org/csdl/proceedings-article/hcs/2024/10665293/20b7ws18WlO).
 Another note is that the Chinese effort, like all efforts, is _hero-driven_: there are a handful of heroes that contribute the majority of the engineering work, and they are quickly "promoted" to leadership roles where their impact is magnified.
 
+Finally, take a look at [this article about StarFive](https://archive.ph/U8K8q) (a Chinese RISC-V startup spun off from SiFive).
+There is one very telling quote:
+
+> While other RISC-V chip startups are targeting the most lucrative area of chips—artificial intelligence — Starfive is focusing on steadily building up its technology and chip portfolio. Starfive wants to “learn to walk before it runs” and avoid creating “an equity fantasy” by jumping on the AI bandwagon, says Alan Chan, managing partner of Full Vision Capital and chief investment officer of Towngas.
+
 <!--
 This is different from what happened to krste though, Chinese forces took innovation and ran with it and the Americans are caught flatfooted, save for all the riscv ip startups, which may soon be overrun by xiangshan
 The Chinese are experts here in industry/academic collboration
+
+https://archive.ph/U8K8q (StarFive: Meet The Hong Kong Billionaire-Backed Chinese Startup That’s Making Chips Without U.S. Technology)
+
+> While other RISC-V chip startups are targeting the most lucrative area of chips—artificial intelligence—Starfive is focusing on steadily building up its technology and chip portfolio. Starfive wants to “learn to walk before it runs” and avoid creating “an equity fantasy” by jumping on the AI bandwagon, says Alan Chan, managing partner of Full Vision Capital and chief investment officer of Towngas.
 -->
 
 ### Big Data Innovations Continue to be Dominated by America
@@ -174,7 +183,12 @@ Consider what happens when China dumps solar panels, all of a sudden it eats up 
 ## Chris Re's Position
 
 Chris Re is in the same position that Krste was in shortly after his founding of SiFive.
+He has led plenty of high-impact academic research (FlashAttention, ThunderKittens), moved it to his startup ([Together AI](https://www.together.ai/)), and is now trying to cultivate more academic / industry collaboration.
+I hope he can succeed in superseding the existing "government-driven + sprinkle of industry funds" lab funding model, and work on fundamental innovations in academia.
+
+<!--
 Founded together.ai, trying to cultivate this university / industry player position. But recognizes the state he is in: inventor of lots of ML systems things (thunderkittens, flashattention, mamba, etc.) and realizes what needs to happen next.
+-->
 
 ## Yanyan Jiang's Letter
 
@@ -182,13 +196,15 @@ All this discussion reminds me of [the letter](https://jyywiki.cn/Letter.md) tha
 I encourage everyone reading to stop and read his letter now.
 
 <aside>
-Sidenote: The Grok translation is more true to the original Chinese and preserves the harsh language and Chinese proverbs Yanyan used, while the GPT version is sanitized and strips out several paragraphs from the original text.
+Sidenote: The Grok translation is more true to the original Chinese and preserves the direct language and Chinese proverbs Yanyan used, while the GPT version is sanitized and strips out several paragraphs from the original text.
 Only after seeing these two translations side-by-side did I realize just how much GPT has been censored by OpenAI's "safety" morons.
 We're saved by Musk yet again.
 </aside>
 
+Yanyan talks about many things, but one key thing he identifies is that running government-funded research in the 'business-as-usual' case, leads to a sustaining feedback loop of nonsense, and produces nothing of value other than every party shaking each other's hand and handing over money, status, prestige, and papers, in a circle.
+We can do better than this.
+
+<!--
 - https://jyywiki.cn/Reading_List.md (Hero worship of von Neumann, the benefits of true-belief cults)
-
-
 - NSF and other funding is running dry and is frequently allocated to bad and useless things
-  - Yanyan's letter makes it clear that running government-funded research in the 'business-as-usual' case, leads to a sustaining feedback loop of nonsense, running in circles, and producing nothing of value other than every party shaking each other's hand and handing over money, status, prestige, papers, in a circle
+-->
