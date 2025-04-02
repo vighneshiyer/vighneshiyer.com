@@ -350,3 +350,6 @@ Panels got broken into talks as presenters wanted the ability to present their o
 
 - https://semianalysis.com/2025/03/19/nvidia-gtc-2025-built-for-reasoning-vera-rubin-kyber-cpo-dynamo-inference-jensen-math-feynman/#smart-router
 - https://irrationalanalysis.substack.com/p/gtc-2025-co-packaged-optics-switching
+
+- https://www.youtube.com/watch?v=d89mHSeN_QE ( Beyond CUDA: Accelerating GenAI with MAX and Mojo (Chris Lattner's lightning talk at GTC 2025) )
+  - Modular was missing during Beyond CUDA, but they are the best positioned to make an impact
