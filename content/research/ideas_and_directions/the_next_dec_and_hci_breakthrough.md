@@ -41,3 +41,13 @@ We seem to be very far from achieving intelligence with biological-tier power. P
 
 - https://news.ycombinator.com/item?id=43451742 (Bitter Lesson is about AI agents (ankitmaloo.com))
   - The point made in the blog post here is that AI agents can leverage RL to self-learn effectively. Therefore, don't try to do nit things to base models that keep getting better or can self evolve.
+
+- https://news.ycombinator.com/item?id=43559370 (Ace: Realtime Computer Autopilot (generalagents.com))
+  - Pretty cool, they run as an app on OSX which can hijack the keyboard and mouse and execute all kinds of user commands in natural language
+  - Getting closer to what I envision, but they don't have many APIs to work with - Apple can do a much better job internally just due to their vertical integration
+  - Still, this integration is quite finicky. The perplexity browser agent thing might be a better hooking point. (https://www.zdnet.com/article/perplexity-ai-teases-a-new-browser-for-agentic-search/)
+
+- The meta glasses are just not positioned correctly! There is too much emphasis on AR and having a screen on those glasses, which is technologically painful. It also introduces the complexity of 'apps' running locally on the glasses, and then there must be an OS (probably android), and then another SDK specialized for it... very painful
+  - The focus should be on the continuous capturing of your life, incorporating visual and audio cues
+  - e.g. after seeing ASV's Haas talk, I just want a transcript and summary, just give it to me! some photos too perhaps
+  - The glasses should sample the camera every now and then and then give me a report on how I spent my day. No need for all this random metrics software, just tell me based on what you see! How much time do I spend reading? What things am I reading about? What route did I walk today and is it special in any way?

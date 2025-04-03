@@ -19,6 +19,9 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
 
 ### Raw Notes
 
+- Everything is about abstraction, need to look at alphafold more closely, how do we make other domains understand and apply simulation modeling and abstraction? Process engineering, biological engineering, materials, chemical
+- Domain knowledge with AI is powerful as asv says, however language models are an example of rejecting that premise, perhaps this only applies for precise engineering and not fuzzy engineering
+
 - Tesla: they redesigned automotive electronics from first principles and cut out all the middle-tier suppliers. They have a single computer board and that's it. High voltage ethernet to all sensors and components. Tesla has the only tier-1 automotive SoC in production with full integration.
   - The competition is at least 5 years behind (probably more, and they have no hope of catching up with tier-2 and tier-3 engineering talent). Each subsystem is outsourced with its own control processor and programming interface, a complete mess that they have to coordinate. Software/hardware integration becomes complex and buggy.
 - Business people are useless in technical disciplines - they don't understand technical investment and are unable to take long-term views of profitability

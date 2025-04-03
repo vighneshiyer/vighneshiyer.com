@@ -16,3 +16,6 @@ Why should the Chinese pledge fealty to this foreign principle that has no basis
 
 
 - The talent card is a great idea. Why are there any Chinese professors remaining in the US? Especially as many of these profs have all foreign Chinese groups in the US too? And the entire group speaks in Chinese? There are plenty of examples of this all throughout American academia. Go to China!
+
+- https://chatgpt.com/c/67eddc32-75c8-8004-8610-6860a403c954 (chat about chinese uprisings and governing philosophy)
+- https://en.wikipedia.org/wiki/Hukou (another example of chinese trying to prevent the downsides of mass urbanization and population concentration that has affected Korean and Japan greatly)
