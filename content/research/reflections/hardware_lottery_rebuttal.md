@@ -14,4 +14,5 @@ It's easier than ever to prove your algorithm would be very good on custom hardw
 
 The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
 
-- https://www.youtube.com/watch?v=8n2HLp2gtYs&t=2116s ( SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic ) (very very good talk, but I think Hooker draws the wrong conclusions from it)
+- https://www.youtube.com/watch?v=8n2HLp2gtYs&t=2116s ( SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic ) (very very good talk, but I think Hooker draws the wrong conclusions from it) (Krste's lecture)
+  - Watch this before writing this article. Just make the point that everything is about extracting DLP in various ways and amortizing instruction dispatch costs - Krste / PARLAB is able to boil down all parallel compute patterns into just a handful of motifs (the seven dwarves). This is sufficient for everything - there is no lottery.
