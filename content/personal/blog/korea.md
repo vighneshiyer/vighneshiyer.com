@@ -55,7 +55,9 @@ https://x.com/PaulSkallas/status/1875641066680144032
 
 Low wage employees in Korea are still competent! Very efficient, always try to improve the job they do, and looking for responsibility. They are just superior in every way to what we have in America (at least in the modern era; likely not the America of 100 years ago).
 
-https://news.ycombinator.com/item?id=42707238 (Nobody cares (grantslatton.com)) - really drives the point home
+- https://news.ycombinator.com/item?id=42707238 (Nobody cares (grantslatton.com)) - really drives the point home
+- Another one: https://news.ycombinator.com/item?id=43562119 (Are people bad at their jobs or are the jobs just bad? (annehelen.substack.com))
+  - No one in the comments wants to say the truth, this is about the intrinsic quality of the people, the quality of 'humans' in the US has been declining for a long time now, there is plenty of historical precedent for such declines in the quality of people
 
 #### Extreme Convenience
 
