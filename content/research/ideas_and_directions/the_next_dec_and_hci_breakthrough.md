@@ -51,3 +51,17 @@ We seem to be very far from achieving intelligence with biological-tier power. P
   - The focus should be on the continuous capturing of your life, incorporating visual and audio cues
   - e.g. after seeing ASV's Haas talk, I just want a transcript and summary, just give it to me! some photos too perhaps
   - The glasses should sample the camera every now and then and then give me a report on how I spent my day. No need for all this random metrics software, just tell me based on what you see! How much time do I spend reading? What things am I reading about? What route did I walk today and is it special in any way?
+
+- All the past HCI innovations have been 'active' on the part of the user. There was a new screen added for each one, or a new input modality.
+  - The keyboard, the analog and then laser mouse, multi-monitor setups, iPod (compact storage and scroll wheel), iPhone (usable touchscreen), Apple Watch (wearables, Oura / Garmin / Whoop are also here, but don't target the same audience as the Apple watch), iPad (desktop/mobile converged compute, actually iPad doesn't accomplish this lol but Samsung DEX does), M-series laptops (lol basically everything that matters in its final engineered and perfected form comes from Apple), Apple vision pro (the best AR headset in the market), LLM-based agents / chatbots, Neuralink implants
+  - Some people are talking about new modalities (e.g. gestures or voice or brain waves) or new screens (via AR glasses or contacts or via the Humane Pin's laser projector). But none of these make sense to me. They are all 'active' modalities or add new distractions to your life.
+  - https://chatgpt.com/share/67f0239d-7d3c-8004-a095-5c2a8ffa830f (seems reasonable about the future actually, language-driven interfaces for normies)
+- The next revolution will be 'passive' and 'anti-technological' to some degree
+  - The daylight computer is an example of this. New wave of proliferation of eInk devices (e.g. boox palma) are another example.
+  - It could have a new form factor (e.g. the humane pin or 'smart' contacts) but more likely it will be an enhanced version of an existing form factor.
+  - It will enable global observation of your life and all your experiences throughout the day, learn your routine and what you're up to, and help you improve your own life!
+- OS and app control revolution
+  - I discussed this above, this can occur simultaneously
+- Then the glasses / passive observer revolution
+  - Watching over your shoulder already has very good effects, imagine a God watching you constantly! But critically, privacy will never be more important. No one will trust Meta or Google with this kind of product, only Apple can be spared possibly due to their insistence on on-device compute (for your device cluster, which includes your phone, airpods, iPad, and Macbook, the actual compute can be distributed across this cluster of devices, not performed on the glasses).
+  - When I see it this way, only Apple has all the pieces to make this vision a reality. Others will have to rely on 3rd party integrations and it will be flaky and non-comprehensive.
