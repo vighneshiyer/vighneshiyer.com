@@ -1,4 +1,4 @@
-# The Next DEC
+# The Next DEC and the Next HCI Revolution
 
 - The next way humans will interact with computers (ultimately HCI) thing
 - Room-scale computer (DEC), desktop computing, cloud computing, laptop computing, mobile computing, smartwatches, ... what's next?
@@ -65,3 +65,37 @@ We seem to be very far from achieving intelligence with biological-tier power. P
 - Then the glasses / passive observer revolution
   - Watching over your shoulder already has very good effects, imagine a God watching you constantly! But critically, privacy will never be more important. No one will trust Meta or Google with this kind of product, only Apple can be spared possibly due to their insistence on on-device compute (for your device cluster, which includes your phone, airpods, iPad, and Macbook, the actual compute can be distributed across this cluster of devices, not performed on the glasses).
   - When I see it this way, only Apple has all the pieces to make this vision a reality. Others will have to rely on 3rd party integrations and it will be flaky and non-comprehensive.
+
+- Devin is a good start from the agentic side - interact via Slack, does things for you automatically. For now, it is easier to operate within its own sandbox doing coding tasks, browsing, running shell commands, but there is no reason this approach couldn't be applied to random tasks in random apps
+  - See: similar to 'Ace' above
+
+- Meta AR glasses: https://about.fb.com/news/2024/09/introducing-orion-our-first-true-augmented-reality-glasses/
+  - The existing rayban glasses are actually quite compelling, they have done a good job on the battery life, weight and balance, form factor, camera quality for photos and video, microphone quality with good directionality, and speaker quality with projecting straight into your ears without any buds. They also have a reasonable cost point ($300) and prescription lens support too
+
+> Presenter: Edith Beigné, Meta
+> Date: April 4, 2025
+> Open Forum
+> 12:00pm
+>
+> Title: Building the Metaverse: Augmented Reality applications and integrated circuits challenges
+>
+> Abstract: Augmented reality is a set of technologies that will fundamentally change the way we interact with our environment. It represents a merging of the physical and the digital worlds into a rich, context aware and accessible user interface delivered through a socially acceptable form factor such as eyeglasses. One of the biggest challenges in realizing a comprehensive AR and AI experiences are the performance and form factor requiring new custom silicon. Innovations are mandatory to manage power consumption constraints and ensure both adequate battery life and a physically comfortable thermal envelope. This presentation reviews Augmented Reality applications and Silicon challenges.
+>
+> Biography: Edith Beigné is the Silicon Research Director at Meta Reality Labs where she leads research projects driving the future of AR and AI devices. Her main research interests are low power digital and mixed-signal circuits and design with emerging technologies, in application to new AI workloads. She is the General chair of ISSCC 2025-2026, was the technical chair of ISSCC 2022 and part of ISSCC TPC since 2014, was part of VLSI symposium TPC and now executive committee. Distinguished Lecturer for the SSCS in 2016/2017, Women-in-Circuits Committee chair and JSSC Associate Editor since 2018. She visited Stanford University in 2018 to research emerging technologies and new architectures.
+
+- The hci revolution is a second brain, not an assistant
+  - This misunderstanding is the reason for the failure of rabbit (https://www.rabbit.tech/) and the humane pin (https://humane.com/)
+- **The Limitless pendant** (https://www.limitless.ai/) is much more suitable for the second brain idea! Very good product.
+  - Daily prompt: remove the need for manual diary writing, just be prompted by this pendant, and you just narrate what you're thinking! Then all the writing and summarization and consolidation takes place later.
+- Electromyography, another thing that meta will struggle with for hand gestures while this will be trivial for apple with their watch integration, just having accelerometers will be enough let alone electrical signal extraction
+  - Gestures are already quite finicky though, Apple will decide against them unless it has camera view of your hands (like with the Vision Pro)
+
+- What is the next DEC?
+  - OpenAI feels too bureaucratic already to make advancements on the consumer electronics or software side.
+  - Meta and Google are inherently untrustworthy companies
+  - Neuralink is too early right now but they will continue to make technological progress
+  - Anthropic is a potential candidate.
+  - The Chinese AI competitors are very unlikely to innovate in a breakthrough fashion when it comes to consumer items
+  - Apple has the whole ecosystem, plenty of experience and internal secret projects. They are the potential leaders here.
+  - Microsoft is too incompetent to do anything new.
+  - I really like the Limitless pendant - it finally feels like the right next step, they built a good foundation with Rewind AI on Mac, it is quite Mac focused, so I imagine this is what Apple will either acquire or stomp out once they have their own product

@@ -14,3 +14,6 @@
 - PCB side
   - Cypress: VLSI-Inspired PCB Placement with GPU Acceleration (https://www.csl.cornell.edu/~zhiruz/pdfs/cypress-ispd2025.pdf)
   - Quilter, DeepPCB, JITX
+
+- https://arxiv.org/pdf/2503.22958 (Late Breaking Results: Breaking Symmetry— Unconventional Placement of Analog Circuits using Multi-Level Multi-Agent Reinforcement Learning)
+  - This suggests that we shouldn't even bother with formalizing 'layout techniques' and just eagerly move to a fully automated flow with sufficiently fast/parallel/incremental parasitic-aware and variation-aware simulation tools

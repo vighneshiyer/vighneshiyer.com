@@ -152,6 +152,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [A Foundational Theory for Decentralized Sensory Learning](https://arxiv.org/pdf/2503.15130) (Neuromorphic computing, Mar 2025)
   - [Introducing IntuiCell](https://www.youtube.com/watch?v=CBqBTEYSEmA) (company based on this paper)
 - [Dijkstra: On the foolishness of "natural language programming".](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) ([HN link](https://news.ycombinator.com/item?id=43564386))
+- [AI 2027](https://ai-2027.com/) ([HN link](https://news.ycombinator.com/item?id=43571851)) (written in April 2025)
+  - [What 2026 looks like](https://www.alignmentforum.org/posts/6Xgy6CAf2jqHhynHL/what-2026-looks-like) (written in August 2021)
 
 ## Design
 
