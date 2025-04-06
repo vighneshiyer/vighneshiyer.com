@@ -26,7 +26,7 @@ NVIDIA (of course) (you can buy boxes and racks too)
 Intel
 AMD
 FuriosaAI
-Tenstorrent Wormhole
+Tenstorrent Wormhole / Blackhole
   - https://www.anandtech.com/show/21482/tenstorrent-launches-wormhole-ai-processors-466-fp8-tflops-at-300w
   - https://semianalysis.com/2021/06/25/tenstorrent-wormhole-analysis-a-scale/#
 MatX
@@ -42,7 +42,7 @@ Mythic (deprecated)
 
 Cerebras
   - https://x.com/Tim_Dettmers/status/1858977311569440955
-SambaNova
+SambaNova (looking good)
 Groq
 Graphcore???
 
@@ -78,7 +78,6 @@ Blaize
 - Fireworks
 - Together
 - GCP / Azure / AWS
--
 
 ## Startups without Commercial Silicon Yet
 

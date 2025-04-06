@@ -30,16 +30,6 @@ slug = "asplos-2024"
 - Even elite people like Lieven are doing this kind of weird stuff nowadays
 - Consider the broader context - does this work really matter? Who is pushing this stuff? Why? Does it advance our field?
 
-### My Carbon Paper
-
-<callout>
-- [ ] The carbon cost of microarchitectural side channels
-  - Consider all the random mitigations necessary that are turned on by default even though they have such a tiny attack surface
-  - Consider the massive performance loss (especially on older silicon) and the impact of that wrt how much more compute has to be acquired and manufactured (embodied carbon + extra emissions)
-  - The uarch side channel security researchers have produced **harmful research** and are **personally responsible** for countless extra tons of carbon emissions
-  - We argue that these people and their insane and unreasonable hypothetical attack vectors should be ignored for the sake of the planet and human survival
-</callout>
-
 - many new students who want arch research do what
   - sustainable compute
   - LLM for xyz

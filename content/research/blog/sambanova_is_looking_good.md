@@ -1,2 +1,0 @@
-# SambaNova is Quite Good
-
