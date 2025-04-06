@@ -91,6 +91,7 @@ On the computer architecture side, the projects include:
 - [The Future of Computer Architecture (2008, Patterson)](https://cra.org/ccc/wp-content/uploads/sites/2/2015/05/Computer_Architecture.pdf)
 - [The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View (2008, PARLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf)
 - [Above the Clouds: A Berkeley View of Cloud Computing (2009, pre-AMPLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf)
+  - https://dl.acm.org/doi/fullHtml/10.1145/1721654.1721672 ( A view of cloud computing )
 - [SEJITS: Getting Productivity and Performance With Selective Embedded JIT Specialization (2010, PARLab)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-23.html)
 - [Instruction Sets Should Be Free: The Case For RISC-V (2014, Krste and Patterson)](http://people.eecs.berkeley.edu/~krste/papers/EECS-2014-146.pdf)
 - [FireBox: A Hardware Building Block for 2020 Warehouse-Scale Computers (2014, Krste)](https://www.usenix.org/conference/fast14/technical-sessions/presentation/keynote)
