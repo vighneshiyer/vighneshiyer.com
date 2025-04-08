@@ -15,7 +15,9 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
 - Talk about RL for placement and why it didn't work in their formulation
   - In principle, RL works for this, you can certainly learn a placement algorithm
   - They really should compare what they learned (ideally some algorithm via iteration) to force directed methods to see if they make the same decisions from the same starting point. that is the really interesting part, if they can learn hyperparameter tuning automatically from example
-  -
+  - No simultaneous placement
+  - Gridding reduces maximum potential QoR
+  - Reliance on rough proxy metric + also only given at the end of a trajectory, rather than an iteration based optimization algorithm (simulated annealing, genetic evolution, force-directed placement)
 
 ## From Alberto's Haas Fireside Chat on 4/1/2025
 
