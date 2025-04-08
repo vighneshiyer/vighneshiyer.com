@@ -157,6 +157,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Dwarkesh: 2027 Intelligence Explosion: Month-by-Month Model — Scott Alexander & Daniel Kokotajlo](https://www.dwarkesh.com/p/scott-daniel) (some good counterpoints)
 - [SITUATIONAL AWARENESS: The Decade Ahead](https://situational-awareness.ai/) (another AI hype story)
 - [No elephants: Breakthroughs in image generation](https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image) ([HN link](https://news.ycombinator.com/item?id=43590569)) (March 2025)
+- [Andrej: Power to the people: How LLMs flip the script on technology diffusion](https://karpathy.bearblog.dev/power-to-the-people/) ([HN link](https://news.ycombinator.com/item?id=43619367))
 
 ## Design
 
