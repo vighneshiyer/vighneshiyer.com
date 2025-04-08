@@ -59,6 +59,24 @@ draft = true
 - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1585480&tag=1&tag=1
 - https://patents.google.com/?q=(emulation)&inventor=William+F.+Beausoleil&oq=inventor:(William+F.+Beausoleil)+emulation&sort=new
 
+### Parallel RTL Simulation Models
+
+- BSP: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel (used in Parendi, Verilator parallel partitioning mode, RepCut, and I think also Manticore)
+- Bulk batch parallelism: RTLFlow (via SIMT)
+- MIMD: Palladium ASIC, Cyclist, Yorktown simulation engine
+- IPC / cross-machine distributed compute: Metro-MPI based RTL simulation on timing-insensitive boundaries
+
+### Simulation Models
+
+- A-port networks
+- Theory of latency insensitive design
+- See lots of random stuff from the RAMP days
+
+### RTL Simulation Traversal Modes
+
+- Level-by-level
+- Cone-by-cone (duplication of nodes and re-computation as needed)
+
 ### Notes From Joonho
 
 # RTL Simulation
