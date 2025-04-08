@@ -19,10 +19,26 @@
 - Engineered systems vs evolved systems vs natural systems
   - Are evolved systems just engineered natural systems? Neuromorphic approaches could fall in this bucket.
   - Perhaps, evolved systems can be both natural and engineered - they are an outcome of either system in a particular context / perspective
+  - Evolved systems are just engineered systems that have been engineered 'naturally' (either by the Gods, random chance, biological abstractions). They don't build explicit models or abstractions however. That is the major difference from an engineered system. They are also not 'natural' systems either though since there are no axioms.
 
 ## Engineering vs Science
 
 - https://mitpress.mit.edu/9780262690232/the-sciences-of-the-artificial/
+- While doing either science or engineering, often you will have to bleed into the other and there can be grey areas. This doesn't take away from our ability to distinguish between science and engineering in the abstract.
+- Engineered systems produce a final manifestation into a natural system. At that point, the various abstractions used during engineering break down and you see the reality. Making the engineered stack match the natural one is the goal of science. Leveraging the abstraction stack to produce systems manifested into the natural world is the goal of engineering.
+- Software is of course the best example of an engineered system
+  - At the very bottom, the process engineer gives the standard cell designer a SPICE model of a transistor and parasitic models of the process.
+  - The stdcell designer treats that as gospel and designs the standard cells and gives the synthesis tool Liberty files that fully describe the cell.
+  - The synthesis tool treats Liberty files as golden and provides a blackbox that the RTL designer can rely on to perfectly translate with near optimality (wrt the stdcells given) the RTL into a netlist.
+  - The RTL designer hands the architect the RTL blocks with IO ports as golden abstractions. The RTL designer guarantees that his block satisfies the assumption/guarantee specification provided by the architect.
+  - The architect treats these RTL blocks as golden and stitches them together into a top level. The architect provides an ISA to the OS / software developer as the model.
+  - The OS engineer takes the ISA as gospel and provides abstractions to the userspace programmer.
+  - The runtime engineer takes the OS abstractions as bulletproof and designs a JIT runtime + garbage collector that a program can run on top of.
+  - The software engineer assumes that memory allocation never fails and the code will run fast enough and provides some library functions (e.g. HTTP server) for the application engineer.
+  - The app engineer assumes the core software works and writes the business logic and backend.
+  - And on and on until this entire abstraction stack manifests into the natural world and all these abstractions are gradually erased with every deployment (manifestation) up the stack. At that point, we see all the ways in which the various abstractions are wrong / do not accurately model the natural system.
+
+It is hard to appreciate just how much of our engineered computing stack is built on quite robust abstractions. The complexity this enables (and in a similar vein, the insane inefficiency of software) is not seen in other fields.
 
 ## Well what is the point of all this?
 
