@@ -2,6 +2,8 @@
 
 A vision for Berkeley-style research labs for shaping AI by Patterson and Andy
 
+What is AI? To them it is just language models, at least from the moonshots they propose. They don't consider things like self-driving "AI" in this context, even though clearly it will induce demand with lower cost and eliminate jobs. In fact, I take issue with this notion of elasticity for goods where human labor itself becomes obsolete.
+
 - Doctors need a new model. Cartels exist at every level of the medical system - insurance that can't price risk, doctor schooling that is onerous, LLMs replacing doctors for diagnosis, need a new hospital model which is oriented around generalist doctors who perform operations and blood draws and imaging and a host of AI helping perform diagnosis
 - pharmacy cartel, dentist cartel, optometry cartel - cartels everywhere!
 - concierge medicine, people taking longevity into their own hands
@@ -15,7 +17,7 @@ Engineering driven labs should be venture funded - just take a different view of
 - people wanted these guys to replace the NSF. but the notion of the NSF funding engineering research is insane on its own. engineering must be industry funded. science can be a mix depending on what the outcomes and goals are. venture has never been as flush with cash as it is today - exploit it!
 
 - andy is rich, laude will be set up with a philanthropy and venture arm that are independent, but ultimately the venture arm can invest in innovations / startups / labs on the grant side. this will provide incentive for other rich people to dump money into this, knowing that it is de-risked with the most early stage investment potential
-  - venture funded research is the future imo. need to limit its downsides which is too much focus on product and not enough long term potential. investors need to accept risks and long time horizons and avoid messing with students. 
+  - venture funded research is the future imo. need to limit its downsides which is too much focus on product and not enough long term potential. investors need to accept risks and long time horizons and avoid messing with students.
 
 - limiting apps to 12 universities is kind of insane, the best people to lead these projects aren't even professors, they are people from industry who want to switch into mentoring young PhD students through a 5 year research and development cycle, who want to continue this moving forwards. uncomfortable truth is that the engineering PhD field must shrink considerably - most profs are not qualified and most students don't belong there.
 
@@ -27,3 +29,11 @@ Engineering driven labs should be venture funded - just take a different view of
 
 - collaboration across disciplines is fake
   - Multidisciplinary doesn't mean random domains under the same roof, it means across disciplines in the same area, like pl, compilers, analog circuits and so forth, maybe some domain crossover like genomics, commonly misunderstood
+
+- https://laude.vc/news/from-breakthrough-research-to-breakout-companies/
+- https://sky.cs.berkeley.edu/events/dave-patterson-google-and-uc-berkeley-andy-konwinski-laude-institute-shaping-ais-impact-via-berkeley-style-research-centers/
+- patterson's talks: bad career, bad research center, and finally "how to have bad carbon emissions when doing AI" lmao, one is not like the other
+- is this engineering research or politics?
+- focus on trying to augment rather than replace humans is always fraught with difficulty - if the human can be completely replaced, why not? why do you expect others not to do this? won't your thing then be obsoleted by others?
+- https://www.shapingai.com/
+  - The rapid upskilling prize, seems impossible, even LLMs are stumped

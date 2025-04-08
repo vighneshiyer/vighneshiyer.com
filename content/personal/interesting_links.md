@@ -155,6 +155,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [AI 2027](https://ai-2027.com/) ([HN link](https://news.ycombinator.com/item?id=43571851)) (written in April 2025)
   - [What 2026 looks like](https://www.alignmentforum.org/posts/6Xgy6CAf2jqHhynHL/what-2026-looks-like) (written in August 2021)
   - [Dwarkesh: 2027 Intelligence Explosion: Month-by-Month Model — Scott Alexander & Daniel Kokotajlo](https://www.dwarkesh.com/p/scott-daniel) (some good counterpoints)
+- [SITUATIONAL AWARENESS: The Decade Ahead](https://situational-awareness.ai/) (another AI hype story)
 
 ## Design
 
