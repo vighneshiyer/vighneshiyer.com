@@ -1,5 +1,7 @@
 +++
 title = "An FPGA Internship at Jane Street"
+description = ""
+slug = ""
 date = 2023-08-23
 draft = true
 +++

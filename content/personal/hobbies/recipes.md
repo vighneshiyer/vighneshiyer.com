@@ -555,7 +555,7 @@ TBD... I used to make this often, but it was hard to get used to the flavor
 - https://www.youtube.com/shorts/G2CQlN7p1Os
 - https://www.youtube.com/shorts/lTdS7TWexDU (ginger ale, simmer ginger in water, fresh lime juice, raw honey)
 - https://msshiandmrhe.com/homemade-cola/
-- https://msshiandmrhe.com/pine-needle-soda/
+- https://msshiandmrhe.com/pine-needle-soda/ (https://youtube.com/shorts/Ik9YE8TZ4SA?si=zml1q_QobL1B3o57)
 
 ### Coffee
 

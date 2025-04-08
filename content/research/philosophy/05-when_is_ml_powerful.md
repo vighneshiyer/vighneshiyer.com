@@ -10,6 +10,12 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
   - Consider ML for OPC
   - Consider language models
   - Would you train MNIST digit prediction from the output of the SOTA classical human-heuristic-based algorithm or from human labeled data (learning 'end-to-end')?
+  - AlphaFold
+
+- Talk about RL for placement and why it didn't work in their formulation
+  - In principle, RL works for this, you can certainly learn a placement algorithm
+  - They really should compare what they learned (ideally some algorithm via iteration) to force directed methods to see if they make the same decisions from the same starting point. that is the really interesting part, if they can learn hyperparameter tuning automatically from example
+  -
 
 ## From Alberto's Haas Fireside Chat on 4/1/2025
 
