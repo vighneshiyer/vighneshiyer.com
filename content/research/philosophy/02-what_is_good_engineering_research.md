@@ -13,6 +13,15 @@ Application-driven vs application-oriented research.
   - Driven is often too direct
   - Oriented makes us see the abstractions that are common to applications
 
+- "It works" is the worst argument
+- If it ain't broke don't fix it
+- Does it work well
+- Is it optimal?
+- Is it beautiful?
+- Is it euphoric? Euphoric apis and where to find them
+- Create a philosophy section of website, as a subfield of research
+- I will place this article and comp arch article there
+
 ## Research
 
 ### Engineering

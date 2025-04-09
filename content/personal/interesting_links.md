@@ -158,6 +158,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [SITUATIONAL AWARENESS: The Decade Ahead](https://situational-awareness.ai/) (another AI hype story)
 - [No elephants: Breakthroughs in image generation](https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image) ([HN link](https://news.ycombinator.com/item?id=43590569)) (March 2025)
 - [Andrej: Power to the people: How LLMs flip the script on technology diffusion](https://karpathy.bearblog.dev/power-to-the-people/) ([HN link](https://news.ycombinator.com/item?id=43619367))
+- [Obituary for Cyc](https://yuxi-liu-wired.github.io/essays/posts/cyc/) ([HN link](https://news.ycombinator.com/item?id=43625474)) (the death of rule-based symbolic AI)
 
 ## Design
 
