@@ -6,4 +6,6 @@
 - Learning can't exist when students don't feel strictly inferior to their teacher with respect to the subject under question. It simply can't happen.
   - More than learning however. Feeling superior to your 'superiors' is extremely detrimental to productivity and motivation. Having all inferior peers and inferior people up the chain is demoralizing.
   - Consider dogs. Are most humans really that different? Without leadership, they go wild.
-- Is there historical precedent here? I would guess there is.
+- Is there historical precedent here? I would guess there is. How was respect restored?
+  - Similar ideas at play about older generations complaining about the childishness or inferiority of the younger generation - this has lots of historical precedent.
+  - Is there any historical precedent for older generations recognizing the superiority of the youth, and exalting youth? Certainly yes.
