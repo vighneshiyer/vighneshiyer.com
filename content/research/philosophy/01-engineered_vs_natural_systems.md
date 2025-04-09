@@ -12,6 +12,10 @@
 - The system produced by the gods has some natural variation and noise, which the components (abstractions), humans, can leverage, leading to free will
   - https://en.wikipedia.org/wiki/Simulation_hypothesis
 
+- Natural systems
+  - There is only THE natural system (perhaps?)
+  - We can model (i.e. simulate) other natural systems (but those end up engineered)
+
 ## Engineered Systems
 
 - An engineered system is that which moves from the abstract to the physical, this even applies to software
@@ -20,6 +24,7 @@
   - Are evolved systems just engineered natural systems? Neuromorphic approaches could fall in this bucket.
   - Perhaps, evolved systems can be both natural and engineered - they are an outcome of either system in a particular context / perspective
   - Evolved systems are just engineered systems that have been engineered 'naturally' (either by the Gods, random chance, biological abstractions). They don't build explicit models or abstractions however. That is the major difference from an engineered system. They are also not 'natural' systems either though since there are no axioms.
+  - Actually when looking closer, evolved systems can emerge from both engineered and natural systems - the main thing is that the abstractions they use are NOT axiomatic! That seems to be the key. Biological (evolved) systems emerge from natural ones. They can be 'reverse engineered'. Artificial intelligence emerges from engineered systems, but they are still evolved, not strictly engineered. The abstractions they use internally are evolved and not axiomatic.
 
 ## Engineering vs Science
 
@@ -43,3 +48,10 @@ It is hard to appreciate just how much of our engineered computing stack is buil
 ## Well what is the point of all this?
 
 Two things: motivate what is good engineering research + understand where and how ML is powerful
+
+## Notes About Intelligence
+
+- How do you measure self-awareness? What is consciousness?
+- What is intelligence?
+- Can knowledge and reason exist and be acquired independently?
+  - Aristotle would say no
