@@ -28,6 +28,8 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://mdickens.me/
 - https://www.wheresyoured.at/
 - https://yuxi-liu-wired.github.io/
+- https://stratechery.com/
+- https://irrationalanalysis.substack.com/
 
 China:
 

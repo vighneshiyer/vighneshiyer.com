@@ -55,3 +55,6 @@ Two things: motivate what is good engineering research + understand where and ho
 - What is intelligence?
 - Can knowledge and reason exist and be acquired independently?
   - Aristotle would say no
+  - Is number theory a counterexample? No physical reality appears to be needed.
+- Can we build an engineered 'intelligent' system? https://yuxi-liu-wired.github.io/essays/posts/cyc/ (prior experience suggests no.)
+  - Intelligence cannot be fuzzy, so I think? It must evolve from axioms and evolved iteration, but only end up in new axioms? Is this true?
