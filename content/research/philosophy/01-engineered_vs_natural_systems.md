@@ -58,3 +58,25 @@ Two things: motivate what is good engineering research + understand where and ho
   - Is number theory a counterexample? No physical reality appears to be needed.
 - Can we build an engineered 'intelligent' system? https://yuxi-liu-wired.github.io/essays/posts/cyc/ (prior experience suggests no.)
   - Intelligence cannot be fuzzy, so I think? It must evolve from axioms and evolved iteration, but only end up in new axioms? Is this true?
+
+- https://x.com/Devon_Eriksen_/status/1910314718998192537
+
+> Don't get upset. I'm not saying SpaceX plans to fail. I'm pointing out that SpaceX has taken an ultraimportant principle from software engineering, and realized it applies to all engineering.
+>
+> Feedback beats planning.
+>
+> And that, you see, is why SpaceX doesn't do things the NASA way. The NASA way was to gold-plate everything, plan and test and plan and test, and generate mountains of paper detailing every contingency, with every scenario prepared for.
+>
+> SpaceX just shrugs, says "it's unmanned", and sends it.
+>
+>  Half the time it blows up. That's the whole point. They don't actually want it to blow up, of course, but they're anticipating that it might.
+>
+> That possibility is part of the plan. Because one rocket blowing up, or crashing, in an actual end-to-end test, beats many, many man-years of planning and plotting.
+>
+> The key realization here is that knowledge only comes from empirical observation. Everything else is just speculative.
+>
+> The sooner you get into a feedback loop, and the faster you run it, the more iterations you can do in less time. This means, while others are planning and speculating, you actually learn something.
+>
+> Relevant data is the most precious thing in the universe. And it's worth blowing up any number of rockets to get it.
+
+This is kind of irrelevant, but is it true that knowledge can only emerge from observation?

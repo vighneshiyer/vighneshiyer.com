@@ -19,6 +19,7 @@ Axes to consider:
 - Flexibility / programmability / compiler availability and flexibility
 
 - https://www.zach.be/p/most-ai-chips-arent-cost-effective (on d-matrix corsair)
+- https://fleetwood.dev/posts/domain-specific-architectures (good general overview for transformer oriented hardware)
 
 ## Discrete Chips/Cards You can Buy
 
@@ -53,19 +54,19 @@ Graphcore???
 Trainium
 https://www.etched.com/announcing-etched
 
-    NVIDIA’s GPUs
-    Google’s TPUs
-    Amazon’s Trainium
-    AMD’s accelerators
-    Graphcore’s IPUs
-    SambaNova SN Series
+NVIDIA’s GPUs
+Google’s TPUs
+Amazon’s Trainium
+AMD’s accelerators
+Graphcore’s IPUs
+SambaNova SN Series
 
-    Cerebras’s CS-2
-    Groq’s GroqNode
-    Tenstorrent’s Grayskull
-    D-Matrix’s Corsair
-    Cambricon’s Siyuan
-    Intel’s Gaudi
+Cerebras’s CS-2
+Groq’s GroqNode
+Tenstorrent’s Grayskull
+D-Matrix’s Corsair
+Cambricon’s Siyuan
+Intel’s Gaudi
 
 TaalasAI
 MatX

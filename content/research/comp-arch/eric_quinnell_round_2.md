@@ -28,6 +28,7 @@ file:///home/vighnesh/Downloads/QuinnellBerkeleyLecture_2024_final.pdf
 - CPU uarch research in academia: difficult to compare without lots of engineering effort
 - is the beefy core uarch better for cloud or not? it seems hard to figure out. seems dependent on whether using JVM/VMs vs compiled code, icache footprint, and how bursty ipc actually is. clearly the wimpy core strategy failed, but why exactly? there is a difference still between the neoverse/ampere cores that AWS loves vs big x86 AMD/Intel cores still. SMT vs no SMT.
   - there is different things I keep hearing - x86 being king due to high frequency and boost and memory/compute balance vs ARM being king due to high core count and high IPC
+- Ttpoe, first principles thinking, do not worry about reinventing the wheel
 
 ### Joonho's Notes
 

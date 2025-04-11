@@ -40,3 +40,4 @@ There are also AI accelerator startups that can simply be acquired (Sambanova, C
 - Trying to gain leverage against NVIDIA, at least for the inference pipeline. But this can only work if NVIDIA believes they have any shot of decoupling - NVIDIA has much better engineers and can easily snuff out real from fake.
 
 - Recent Broadcom tapeout. What could it be? The team seems under 50 people. They try to hide as "technical staff" on LinkedIn, probably to avoid competitiors piecing together the OpenAI org chart. Look at their hardware job postings. Likely there is just a blob of Synopsys/Cadence/ARM IP and all the integration is contracted out. The effort needed to build datacenter-scale systems, let alone a single blade, is enormous - what is their advantage?
+- https://www.reuters.com/technology/openai-set-finalize-first-custom-chip-design-this-year-2025-02-10/

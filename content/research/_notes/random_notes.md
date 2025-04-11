@@ -196,6 +196,16 @@ Things I would ask a good architect:
 - More than just design for injection
   - Consider ideal case molding for infinite bw or perfect branch prediction or prefetching. Can model these with a model acting ahead of the core or another rtl sim (oraclebp from xiangshan) that guides decisions of the slower instance. So this is basically decision injection and influence at runtime, not merely state injection at some point in time
 
+- Apple has ip level segmentation while Google and others have product or soc level segmentation, the apple way is quite effective
+- But a 2d matrix is even better having product and IP teams and leaving them fully decoupled to their own release cycles and aggression, this makes management much tougher though and makes product cycle alignment tough, only a small company can do this
+
+- Joel emer paper namer
+  - Pick 2
+  - Loop, tree, fiber, nest, sparse, hetero, ... Lmao
+
+- https://github.com/ChipsandCheese/CnC-Tools/tree/main
+  - core-to-core latency tests
+
 ## Hardware Modeling
 
 - An ir for event driven description of models that can be composed with a hardware primitive ir
@@ -303,6 +313,22 @@ Things I would ask a good architect:
 - Multiplier ir
 - Mixed abstractions design
 - Unifying primitives across models and design layers
+
+- Ideal thing is to do physical first and no logical synthesis flow, basically try to push as far physical using generic gates even or even word level stuff and keep making it more fine grained as you go along, incremental hardening
+- Looking at the sram top level it's pretty clear that hardening blocks and then placing them is not good for qor, lots of wasted space and regular layout prevents ideal location of terminal driving cells
+- Lofirrtl estimation pass ppa from Steve Burns intel
+- Yosys vs genus in runtime performance and qor
+
+- Jose Renau's talk
+  - Look into lgraph virtualized flattened netlist
+  - N ary node types is a good idea
+  - Also have reduction and map promotive
+  - Ok i see, to avoid conditioning passes and rewrites based on bit widths, they make it infinite to do the rewrites and then they concretize after all the opt is done based on attributes from the source language
+  - I see also a way to unify modules that only are different based on widths or sizes of memory maybe, a limited form of dedup of modules that look alike, like a counter of different maxes
+  - Oh his slides about new ir is very good
+  - Ohhh fpga tool incremental is very interesting, just like that Intel paper that changes order of always blocks and gets different results, the noisy nature of commercial synthesis
+  - The equiv point approach to incrementalism doesn't seem to scale that well, I would prefer to cache existing results aggressively but that would require a fine grained incremental ir
+  - Could leverage rapidwright API for the incremental pnr on xilinx toolchain
 
 ## Quals / Thesis
 
@@ -636,3 +662,12 @@ For the incremental synthesis - one thing we want to do is offline continuous co
 - How do you model parallel threads within a modeled component, consider multiple requests in flight in a dma unit with reordering possible
 - How do you model peek without pull on a channel when the time of the sending component isn't guaranteed to advance in lock step with the downstream component?
 - Oh the calibration thing is quite iffy it's just like gem5 param calibration, can you actually check that the timing params get closer to rtl or is this just curve fitting?
+
+## Accelerator Integration
+
+- Change the notion of a thread for a modern os
+- Make it accelerator friendly with preemption maybe or some interruption scheme, how does it integrate with accels that have arch state?
+- Real benchmark of such situations
+
+- Redox os is a good platform for running rust apps, let's boot it on chipyard
+  - https://www.phoronix.com/news/Redox-OS-For-October-2024

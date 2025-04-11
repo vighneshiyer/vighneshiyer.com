@@ -36,6 +36,14 @@ Before discussing ML specifically in the context of chip design, let me first di
 After establishing the general philosophy of applying ML to problems, we can discuss how it can be applied to various steps in the chip design process.
 Link Synopsys' (Igor Markov's) ML for synthesis / CAD pdf.
 
+- Ml for chip design philosophy
+- Learn new representations
+- Don't sweep random knobs
+- See sns
+- See boomexplorer and derivative work
+- Don't learn how an engineered tool works via regression, learn the internals and improve them
+- Within a tool, ml is useful for guiding search and heuristics
+
 ## Background
 
 - Media buzz (see Googling)

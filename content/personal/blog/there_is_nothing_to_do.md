@@ -12,6 +12,8 @@ A common refrain about rural living (or even life in Cupertino for that matter):
 
 I would forget about the 'women' aspect since many men exhibit this pattern too. The general concept is true however; the reality is that things 'happen' to you when you 'do something'. There is no agency when it comes to 'doing things' in the typical sense.
 
+The "doing things in the city" theory, you aren't doing things but rather things are happening to you and you perceive it as you being the agent of action (e.g. shopping)
+
 # On Independence
 
 - many people who claim to be 'independent' after (coming to America, living alone, having a job, earning income, no family or dependents)
