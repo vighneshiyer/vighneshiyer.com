@@ -1,5 +1,10 @@
 # The Missing Parts of Code-Driven X
 
+- Code-specified abstractions
+- Building abstractions on top of abstractions - apply the EDA CAD methodology to other domains
+- But focus on the visual aspect of what you're describing to avoid getting bogged down in code when design is actually visual-first. Let the code work for you wrt metaprogramming, generation, and constraints.
+- This essentially is about digital twins for everything (https://en.wikipedia.org/wiki/Digital_twin)
+
 ## The Technical Elements
 
 1. Two-way synchronization between code and visualization / 'compiled form'
@@ -40,3 +45,10 @@
   - OpenSCAD and SolveSpace are good inspirations, SolveSpace seems to be constraint driven while OpenSCAD seems to be imperative placement-based
   - Trying to use constraint solvers is always a bit iffy. They have various limitations although they have some ability to get optimal solutions.
     - Rather, formulate things with an arbitrary objective function and use either genetic algorithms, simulated annealing, or gradient descent techniques. Leverage parallelism.
+- Programmatic architecture seems interesting
+  - OK I must first admit the SOTA here is very hard to beat: https://en.wikipedia.org/wiki/Building_information_modeling#4D (see Autodesk Rivit)
+  - Let's say I want to build a home and I have a floor plan in mind - can I describe that with a combination of code and natural language modified-visualization?
+  - Then I want to programmatically fill that home with stuff and ideas - ideally synthesized for me with some vision and 3d generative models with some constraints I specify in code
+  - Consider city planning games - e.g. cities skylines - all of the stuff drawn visually should have a 1-1 correspondence with constraint-oriented code along with duplicated abstractions w/ parameterization. e.g. Drawing a line of trees to line a block with a given spacing can be represented abstractly right? OK but this has nothing to do with a home, which is an abstraction boundary of city planning by the way.
+  - And then you can run simulations for the particular plot of land wrt foundations, flood and earthquake resistance, sunlight analysis, temperature hotspots and performance of the HVAC system, wind analysis, temperature gradients, humidity, I can imagine there are a bunch more algorithmic analyses that can be done that provide a rigorous automatic checklist for architects (there should be CI for architecture). Foliage and trees, garden, flowers.
+  - Ideally you can explore many building materials, regular wood framing, steel reinforced framing, rammed earth, brick. Explore their performance wrt the aspects above via simulation.

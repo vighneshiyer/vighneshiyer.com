@@ -42,6 +42,8 @@ Correct the definitions of 2.5D integration itself vs the usage of a silicon int
 
 ## Academic Works
 
+- Pick the right fidelity and abstraction! See the critique against arch sims and expand it to the modern world case, make the case that chiplet systems scala stuff can't be done in rtl sim setting, at least in the traditional ways
+
 ### High-Level Modeling
 
 - LUCIE

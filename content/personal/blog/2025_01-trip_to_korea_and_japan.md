@@ -224,3 +224,103 @@ Wtf how is Japanese food quality so high? And the prices are low? Japan is too g
 Cash is still king in Japan, cards aren't accepted in many places, including the subway
 
 ### Korea vs Japan for Tourists
+
+## Random Notes
+
+- Wealth wrt public and private places
+- Lots of pharmacies everywhere 약
+- Very easy to get lots of things done, America is a lot more internet centric about doing things
+- Pine bud drink is very good but also very sweet, in general things are very sweet here
+- Prepackaged foods are much more pronounced here and also on all levels of income, whereas american usage of prepackaged foods is considered low class
+- Metro is very nice and very safe, unlike Bart where the announcements are about keeping your belongings in sight, the Korean metro announcements ate about not getting your slipper stuck in the escalator
+- Quite easy to get around with only knowledge of English, seems like everyone speaks a little bit, enough to do things
+
+- National geographic clothing https://m.blog.naver.com/sapharico/222320922593
+- Plastic surgery extravaganza in Gangnam is real, lots of people with bandages walking around
+- Lots of plastic surgery ads in the Gangnam subway underground mall
+- 8seconds, topten, Giordano
+- Uniqlo, Muji, beanpole
+- No fare gates, insane
+
+- Golf practice everywhere, but courses are basically inaccessible, indoor golf simulation is very popular
+- Why do people leave Korea for America? Who left Europe for America? What are the characteristics? Why do people do it today? How does Japan compare?
+- History of a place and it's relationship to what kind of people it attracts, worship of history vs rewriting an old history as a replay vs writing a new history, the allure of existing history is quite pulling
+- Public photo culture in Japan and Korea vs america
+- Public conversations and stranger interactions
+- The value of labor, can you afford to have many bodies deployed as service workers?
+- Korea vs Japan cycle tourism, mostly Koreans to Japan and not the other way around. I heard lots of Korean in Japan, but no Japanese in Korea
+- Why do shrines not exist in Korea? Patronage, religious zeal, government support? What is Korean Christianity?
+- PC bangs and video games, what do Koreans do on their phone? What the those lights on the ground at crosswalks? I have no clue about games actually but phone usage seems very similar to American in patterns
+- Dokdo island, war propaganda on the subway, Korea still feels like a sore loser country. But the Japanese don't care at all. They just deny the war crimes and make a cute society. Cuteness is the Japanese cultural shield.
+- Kimchi fridge, bottled water, toilet paper as napkins, gloves for dishwashing, lots of banchan that are preserved, trash segregation
+- The different sounds and accents of Korean Japanese and Chinese and how they relate to the character of the people
+  - Korean is quite harsh when spoken - yelling and cursing in Korean feels natural. Japanese is more fluid, less harsh, the tone is higher. Chinese can sound annoying to listen to.
+- Korean news is similar to American ones, during the impeachment they were very focused but otherwise they just replay Twitter and ig tiktok clips and have facial reactions, that part is quite east Asian
+- Koreans go to the doctor for any even slight illness, doctors see 100s of people a day, every apartment complex have multiple medical offices, even a cold is a visit to the doctor, overprescription of antibiotics is similar to India
+  - See the statistics about doctor visits per capita per year, Korea is the highest in the world by far
+  - Korean doctors have their own cartel. They held a boycott recently to prevent more people from entering their cartel and compromising their pricing power.
+- Greenhouses everywhere once slightly outside Seoul, fruit culture, perfect fruits are a common gift and they do taste quite good, strawberries are common and high quality. Fruit quality is very high.
+- 1000 baby credits (Seoul government is desperate for Koreans to breed, but even large boluses of money won't solve anything)
+- Japan is very photo shy, very unlike America
+- Korea is increasingly eradicating smoking
+- Japanese tendency to miniaturization, Japanese gardens are about crafting an artificial world, Korean gardens are about blending into the existing landscape, very different
+
+- https://x.com/JayMan471/status/1872489745755820498
+
+> One small problem with this plan: assimilation is largely a myth, or is superficial at best.
+>
+> The things above water that are easiest to see are what changes with immigrants. The things below water which are harder to see tend to be much more resistant to change. Hence the illusion of assimilation
+
+- Above: language, folklore, arts, dress, literature, holidays/festivals, food
+- Below: family roles, beliefs, assumptions, core values, relation to authority, self-concept, manners, biases, body language, beauty ideals, personal space, competitiveness, and on and on
+
+- Fire safety is crucial, auto gas shutoff, supplies on every train and station, extinguishers everywhere, firewalls and deployment in all buildings
+  - Reflection of Korean fear of fires from history of Japanese invasions
+- Being surrounded by Koreans doesn't affect me in any way, I don't understand these browns and blacks who complain, I actually love seeing Koreans around me
+- Natural drying
+- No tap water
+- Korean exasperation is unique
+- Korean medicine is so good but doctors are overworked like residents in America
+  - Same issue of pharma and doctor cartels, but it is even more acute in Korea, see the doctor walk offs recently
+- No beggars and buskers, contrast with London underground and Bart and ny metro
+- Salvation army, viewed with suspicion. In all the subway stations banging a bell. Asking for donations
+- No cults I encountered
+- Korean haircut
+- Korean beauty standards vs in california
+  - Light vs tan is one of the huge ones. California Koreans are tanned.
+- Dog culture still hasn't kicked off unlike the us
+- No graffiti
+- Moving is easy and fast
+- Honesty, minimal scamming, trust among people to do the job properly and efficiently
+- Bart has bystander intervention cards, please ask the station office lmao
+
+- Is social credit really so bad? Or rather is it the Chinese conception of it? Reputation based societies are crucial regardless, how can they scale efficiently? The handshake deal culture common among VCs
+- After riding Bart, loud people, people going between trains constantly, homeless, dirt, smell, loud talking on phones, loitering, infinite problems
+- No locks in convenience stores! Not a single one! Although there was lots of CCTV and monitoring screens and posters about it
+
+- Trash cans aren't that common and they are not enclosed and transparent
+- No graffiti! No littering. Restrooms exist in all public transit areas and they are clean and usable. Compare to the Berkeley Bart restroom, there is a clipboard and an officer standing there. A list of rules. I have a picture of this I have to put here!
+
+- Oh fat people! They are not so common in the bay area and orange county vs the rest of America but still vs Korea, they have basically no fat people. The Korean diet is filled with sugar and carbs, but still no fat people, maybe that is changing slowly though. Korean moms are brutal towards their daughters, they constantly criticize their looks, fatness, hair, face, and so forth
+
+- High trust society, keep baggage out at the airport, nothing will happen, use your phone to claim your spot in a cafe
+- Fruit culture, such beautiful fruits for gifting!
+
+- College is a big deal, see the snu and yonsei doctors! Compare to equivalent thing in America, moms are obsessed with snu medical
+- See the bookstore things
+
+### Japan
+
+- Game towns in Japan, salarymen, hidden world, mostly impenetrable to outsiders due to language and connections, still very fun, don quixote, trains are excellent, old currency systems, electronics stores are insanely good, streets are very aesthetic, temples are so beautiful and hidden similar to indian cities, talk about the Korean lost history, Osaka castle, Neapolitan pizza is great, McDonald's is surprisingly very good, Japanese contact aversion, single person restaurants, single use thing proliferation, enormous plastic waste generated
+
+- Fake foods in restaurants to advertise, pigeons are useful for cleaning, tourist trap dontori, outside surface of Japan is very accessible, hidden belly is truly only for Japanese and truly exceptional westerners, desire for European fashion during Edo era in 1500s morphed into the world wanting Japanese goods, Japanese good specialities only available domestically, nmn available OTC, same with nattokinase, the miracle from Japan,
+- Japanese bathing and toilet innovations are world class and unbeatable, the quality of life improvement in that area is worth so much and no one knows it, same with public restrooms, Japan needs to exercise some more discretion wrt tourists, Koreans are a very different people I think, Japanese are the most masculine among east Asians even wrt their women, their women do heavy eye makeup, Korea is like a technically advanced Japan but without the grit and an overly western orientation, no religion in Korea due to Japanese destruction
+- Japanese bookstores with nudity and girls next to regular stuff, mostly comics, used clothes store, Bic camera store, same with sex things right next to electronics and clothes at don quixote
+- Family mart and 711 are the most popular convenience stores, they have constant brews of fish things that you can scoop into styrofoam takeout containers, individual takeout is very popular here including delivery
+- Leg patches are prolific! So many Japanese brands, they seem to not stock many American things unlike the Koreans, who like designer stuff and american things more
+- What does it take to make Japanese cities?
+  - High IQ population
+  - Homogeneous and hard working
+  - High density to support enough economic activity
+  - What else? All I know is it's impossible in America
+  - Lowish wages, low prices, no rent seeking, very high efficiency (even if technology isn't used everywhere it could be, the people themselves try to be maximally efficient with their work)

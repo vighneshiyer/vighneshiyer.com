@@ -37,3 +37,8 @@ Engineering driven labs should be venture funded - just take a different view of
 - focus on trying to augment rather than replace humans is always fraught with difficulty - if the human can be completely replaced, why not? why do you expect others not to do this? won't your thing then be obsoleted by others?
 - https://www.shapingai.com/
   - The rapid upskilling prize, seems impossible, even LLMs are stumped
+
+- Patterson is right about the principles, but wrong about how they come about. He seems to think if he just tells professors about them, they will understand and make it happen.
+  - In reality, the principles are all about the leader. The person comes first, then the principles. There is a reason this berkeley lab model patterson talks about doesn't exist anywhere else, and it isn't because the principles aren't well known.
+  - When recruiting, most people are blank slates when it comes to principles and philosophy, but most have some preconception of what they want out of grad school. If they are shooting for jobs or papers explicitly, then it is a bad sign. Nevertheless, the principles of the leader can have a huge impact on how people you recruit turn out and whether they play along and accomplish great things or if they devolve into menial paper pushers.
+  - The people come first, then the principles emerge after distilling their actions. But the principles don't influence the people explicitly as a God might influence his people - they must be emergent!

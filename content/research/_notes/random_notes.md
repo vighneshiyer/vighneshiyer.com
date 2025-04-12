@@ -671,3 +671,15 @@ For the incremental synthesis - one thing we want to do is offline continuous co
 
 - Redox os is a good platform for running rust apps, let's boot it on chipyard
   - https://www.phoronix.com/news/Redox-OS-For-October-2024
+
+## Retreat Talk Outline
+
+- Intro
+- What we are trying
+- Why are we doing this, what is the point
+- What is the flow
+- What results did we get
+- Why are they so bad
+- Injection issues, warmup models, check pointing and restore, benchmarks are bad too
+- Then this is what we propose to work on
+- Then this is how we integrate that back with sampled simulation

@@ -1,4 +1,5 @@
-## Comparisons
+- [ ] Chinese labs and social pockets... I need a better title, talk about internationalization of labs and fake notions of diversity. Chinese labs work hard and get papers but what value do they produce?
+  - Consider the ASPLOS top submitting universities - top 3 are Chinese, mass paper pushers
 
 - [ ] Summarize SoC generator frameworks
 

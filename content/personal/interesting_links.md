@@ -163,6 +163,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Design
 
 - [Our Interfaces Have Lost Their Senses](https://wattenberger.com/thoughts/our-interfaces-have-lost-their-senses) ([HN link](https://news.ycombinator.com/item?id=43380930))
+- [Coding Font Tournament](https://www.codingfont.com/)
 
 ## Research Philosophies
 
