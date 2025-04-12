@@ -4,7 +4,7 @@
 
 ## What I Consider "Fake" ML Research
 
-Blind sweeping. No reasoning or engineering is done, just "Bayesian" learning. Taking an engineered system someone else has made with a bunch of knobs and just spinning them around to "explore" the "design space". This kind of unconstrained monkey-tier "research" is bad.
+- Blind sweeping. No reasoning or engineering is done, just "Bayesian" learning. Taking an engineered system someone else has made with a bunch of knobs and just spinning them around to "explore" the "design space". This kind of unconstrained monkey-tier "research" is bad.
 
 ## Where Does ML Excel?
 

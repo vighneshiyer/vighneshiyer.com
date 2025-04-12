@@ -33,7 +33,7 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 - Your existing background on any particular research topic or area of computer science
 - "Prior work" (especially papers or other publications)
 
-## My Approach
+## The "Behavioral" Part
 
 1. Show me your editor
   - Open a random project (anything is fine, class project, personal thing, random open source codebase) and go through it
@@ -53,6 +53,19 @@ My approach to interviewing undergrads (and others). Proven over many years of w
 Anyone in the know can attest that asking these things and getting meaningful responses gives you high confidence in the person's ability to do research *in any area*.
 Asking random leetcode nonsense, 'behavioral' questions, info about coursework projects, and random chit-chat doesn't correlate with anything.
 Finally, this is a two-way street: the candidate must also be interested in working with you and on your set of projects, so you must prove you can help them achieve their goals when seeking out research.
+
+## The Coding Problem
+
+- No leetcode, no nonsense, you (the interviewee) are in the driver's seat
+- Present a list of 10-20 short projects (should take under 30 minutes)
+  - Cover everything from frontend webdev, backend, CI, devops, CLI utilities, hardware, algorithms, ...
+  - Each project has a short spec and is completely free-form (no restrictions placed on language, approach, framework and no pre-written template)
+  - Interviewee picks one project to try
+- Let the interviewee take over. They can use their laptop, their tools, their desired language, whatever they want.
+- You are judging their *process* not their *outcome. How do they get started? What tools do they pick? How flow-y is their dev process? How do they test and debug the software? How do they translate the spec into code and tests?
+- One restriction: You can use the Internet, you can use anything on your laptop, *but* you cannot spend any money.
+  - This means all AI assistant tools must be used in a way the interviewer can see isn't consuming any money (e.g. the free mode of Copilot, the free modes of Windsurf / Cursor, using a free API with Aider, using only the free webapp for ChatGPT/Gemini/Claude/Grok)
+  - All free usage of AI assistants is allowed. The interviewee must be able to explain how their assistant is working and demonstrate it is being used in a free mode. The point here is to check whether the interviewee is knowledgable about their tool and how to configure it.
 
 ## Other Opinions I Like
 

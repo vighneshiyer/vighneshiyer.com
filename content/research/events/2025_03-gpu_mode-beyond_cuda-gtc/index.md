@@ -353,3 +353,8 @@ Panels got broken into talks as presenters wanted the ability to present their o
 
 - https://www.youtube.com/watch?v=d89mHSeN_QE ( Beyond CUDA: Accelerating GenAI with MAX and Mojo (Chris Lattner's lightning talk at GTC 2025) )
   - Modular was missing during Beyond CUDA, but they are the best positioned to make an impact
+
+- How to Write a CUDA Program - The Parallel Programming Edition | NVIDIA GTC 2025 Session  (https://www.youtube.com/watch?v=GmNkYayuaA4)
+  - Where is this kind of high level tutorial from AMD? NVIDIA's materials are top-tier and AMD is nowhere to be found, just a bunch of confusing stuff in the Rocm documentation.
+- CUDA: New Features and Beyond | NVIDIA GTC 2025 (https://www.youtube.com/watch?v=6o_Wme-FdCU)
+  - The real "Beyond CUDA"
