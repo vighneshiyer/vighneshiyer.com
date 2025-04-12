@@ -309,6 +309,21 @@ Cash is still king in Japan, cards aren't accepted in many places, including the
 - College is a big deal, see the snu and yonsei doctors! Compare to equivalent thing in America, moms are obsessed with snu medical
 - See the bookstore things
 
+- About pricing
+- Base pricing is lower due to lower labor cost and other base goods efficiencies
+- Then the currency advantage
+- Then no tip and included tax
+- And finally the Korean competence gives you way more value for money
+
+- What are the sources of high prices in restaurants and grocery stores in America? At the consumer facing end, margins are actually quite low, so where is the value being lost? Inflation isn't a good explanation since the dollar is still stronger than these other currencies, does everything boil down to labor expense? In which case Chinese and even American robotization can be very successful so long as we can avoid the criminal cost which is easy for Chinese but maybe impossible for americans
+
+- Another few interesting things
+- Extreme inefficiency compared to Korea in restaurants that are counter order, like this falafel place, I like this kiosk culture and it also keeps the workers more efficient and avoids clogging
+- Metro system, Starbucks, 711, bathroom lockers, extreme loud classic music to keep away loitering and other human garbage from floating around
+
+- Waiting at the train station, lining up on both sides of each door, waiting for everyone to get off, moving to the side, still rushed Koreans though :disappointed:
+- Transit leftists seem to understand the concept of induced demand when it comes to adding a lane to a road but they conveniently omit the induced demand caused by migration itself, there is no inherent justification for more biomass!
+
 ### Japan
 
 - Game towns in Japan, salarymen, hidden world, mostly impenetrable to outsiders due to language and connections, still very fun, don quixote, trains are excellent, old currency systems, electronics stores are insanely good, streets are very aesthetic, temples are so beautiful and hidden similar to indian cities, talk about the Korean lost history, Osaka castle, Neapolitan pizza is great, McDonald's is surprisingly very good, Japanese contact aversion, single person restaurants, single use thing proliferation, enormous plastic waste generated
