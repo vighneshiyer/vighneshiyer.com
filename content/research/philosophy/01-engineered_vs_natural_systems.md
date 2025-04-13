@@ -80,3 +80,7 @@ Two things: motivate what is good engineering research + understand where and ho
 > Relevant data is the most precious thing in the universe. And it's worth blowing up any number of rockets to get it.
 
 This is kind of irrelevant, but is it true that knowledge can only emerge from observation?
+
+- What is intelligence? Abstraction, generalization, connection making, synthesis of ideas into a new whole, anything else?
+- What is consciousness? Let's say we build a mechanistic system that has intelligence and we put it in a human form, you can't see the machinery, does it possess consciousness? At its core consciousness isn't really about responsiveness to the environment, since that can be mechanistic, but rather it is about autonomy, if a mechanistic system can be precisely simulated knowing its initial state then it can't be autonomous. This is just the same argument about human free will, it can't exist in a mechanistic world.
+- What about ensoulment, it seems to be related to consciousness, perhaps I'm just getting the definition of consciousness messed up

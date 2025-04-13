@@ -19,6 +19,20 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
   - Gridding reduces maximum potential QoR
   - Reliance on rough proxy metric + also only given at the end of a trajectory, rather than an iteration based optimization algorithm (simulated annealing, genetic evolution, force-directed placement)
 
+- Out of context generalization, graceful or catastrophic failure
+- Learning from an engineered algorithm vs from scratch as human annotated, consider mnist and hand written digit id heuristics vs from scratch
+- Same principle applies all over the place
+
+- What can ML be used for? Regression, classification, generation, agentic interaction, play-by-play interaction (a restricted form of generic agentic behavior)
+  - Can these be generalized into one problem formulation?
+- We often talk about black box and white box approaches to fuzzing and machine learning, these are also understood as natural and engineered systems
+
+- When is ml powerful examples
+- Image classification, bounding box objects, semantic segmentation
+- Alphazero alphago, self play not trying to mimic an existing chess engine
+
+- Why did rl for placement not work? In principle ml one ahotting a placement could work better than existing algorithms, but... Wrong problem formulation as a turn by turn game when it is optimization, gridding makes more optimal solutions unlikely, no simultaneous placement due to difficulty in learning long trajectories
+
 ## From Alberto's Haas Fireside Chat on 4/1/2025
 
 1. When is ML powerful? Domain knowledge + AI (Alberto claimed this was the case with AlphaFold, using AI on top of domain knowledge and systematic simulation techniques / modeling of molecules). However LLMs disprove this. LLMs don't need any input from human linguists to understand language, they don't need input from logicians to discover logic. What are the differences? Fuzzy output + lots of unsupervised data to train from. Can this be the case for VLSI CAD too? Consider one shotting a netlist to geometry. It is in principle possible, we can indeed duplicate functionality of any CAD algorithm with a model, but knowledge of what it does is actually important here.

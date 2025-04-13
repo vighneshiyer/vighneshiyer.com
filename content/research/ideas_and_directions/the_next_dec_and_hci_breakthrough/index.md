@@ -99,3 +99,14 @@ We seem to be very far from achieving intelligence with biological-tier power. P
   - Apple has the whole ecosystem, plenty of experience and internal secret projects. They are the potential leaders here.
   - Microsoft is too incompetent to do anything new.
   - I really like the Limitless pendant - it finally feels like the right next step, they built a good foundation with Rewind AI on Mac, it is quite Mac focused, so I imagine this is what Apple will either acquire or stomp out once they have their own product
+
+- https://x.com/vitrupo/status/1903614834597662858?t=4xfFNDBvg0Io2p1938xRug
+  - Hci article, this is what not to do lol
+
+> Aravind Srinivas explains why Perplexity is building a browser: it's the only way to create AI agents with enough control over multiple apps, especially on iOS.
+>
+> Their goal? Agents that can book travel, buy things, and act as a personalized assistant for those who can't afford a human EA.
+>
+> He adds that this is the long-term vision. "Anyone who's saying agents will work in 2025 should be skeptical."
+
+- A browser agent sounds like a good step, but "booking travel" has got to be the worst example of its utility

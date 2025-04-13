@@ -144,26 +144,51 @@ Here are a bunch of things from around the internet that I find interesting.
 
 ## Machine Learning (AI/ML)
 
-- [Simon Willison: Things we learned about LLMs in 2024 (12/31/2024)](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
-- [AI is killing some companies, yet others are thriving - let's look at the data (2/28/2025)](https://www.elenaverna.com/p/ai-is-killing-some-companies-yet) ([HN link](https://news.ycombinator.com/item?id=43206491))
-- [The Deep Learning Compiler: A Comprehensive Survey (Mar 2021)](https://ieeexplore.ieee.org/abstract/document/9222299)
+### Model Architectures
+
 - [Full Stack Optimization of Transformer Inference: a Survey (Feb 2023)](https://arxiv.org/abs/2302.14017)
 - [A Review on Edge Large Language Models: Design, Execution, and Applications (Feb 2025)](https://arxiv.org/pdf/2410.11845v20)
-- [A Foundational Theory for Decentralized Sensory Learning](https://arxiv.org/pdf/2503.15130) (Neuromorphic computing, Mar 2025)
-  - [Introducing IntuiCell](https://www.youtube.com/watch?v=CBqBTEYSEmA) (company based on this paper)
+
+### Reflections
+
+- [Simon Willison: Things we learned about LLMs in 2024 (12/31/2024)](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
+- [AI is killing some companies, yet others are thriving - let's look at the data (2/28/2025)](https://www.elenaverna.com/p/ai-is-killing-some-companies-yet) ([HN link](https://news.ycombinator.com/item?id=43206491))
+- [Andrej: Power to the people: How LLMs flip the script on technology diffusion](https://karpathy.bearblog.dev/power-to-the-people/) ([HN link](https://news.ycombinator.com/item?id=43619367))
+- [Anthropic: Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model) ([HN link](https://news.ycombinator.com/item?id=43495617))
+
+### Applications
+
+- [No elephants: Breakthroughs in image generation](https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image) ([HN link](https://news.ycombinator.com/item?id=43590569)) (March 2025)
+
+### Predictions
+
 - [Dijkstra: On the foolishness of "natural language programming".](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) ([HN link](https://news.ycombinator.com/item?id=43564386))
 - [AI 2027](https://ai-2027.com/) ([HN link](https://news.ycombinator.com/item?id=43571851)) (written in April 2025)
   - [What 2026 looks like](https://www.alignmentforum.org/posts/6Xgy6CAf2jqHhynHL/what-2026-looks-like) (written in August 2021)
   - [Dwarkesh: 2027 Intelligence Explosion: Month-by-Month Model — Scott Alexander & Daniel Kokotajlo](https://www.dwarkesh.com/p/scott-daniel) (some good counterpoints)
 - [SITUATIONAL AWARENESS: The Decade Ahead](https://situational-awareness.ai/) (another AI hype story)
-- [No elephants: Breakthroughs in image generation](https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image) ([HN link](https://news.ycombinator.com/item?id=43590569)) (March 2025)
-- [Andrej: Power to the people: How LLMs flip the script on technology diffusion](https://karpathy.bearblog.dev/power-to-the-people/) ([HN link](https://news.ycombinator.com/item?id=43619367))
+
+### Symbolic AI
+
 - [Obituary for Cyc](https://yuxi-liu-wired.github.io/essays/posts/cyc/) ([HN link](https://news.ycombinator.com/item?id=43625474)) (the death of rule-based symbolic AI)
+- [Pedro Domingos on the Symbolist Approach to AI](https://www.youtube.com/watch?v=ogaCzVoRpZs) (Pedro defends symbolic AI approaches)
+
+### Neuromorphic
+
+- [A Foundational Theory for Decentralized Sensory Learning](https://arxiv.org/pdf/2503.15130) (Neuromorphic computing, Mar 2025)
+  - [Introducing IntuiCell](https://www.youtube.com/watch?v=CBqBTEYSEmA) (company based on this paper)
+
+### Compilers
+
+- [The Deep Learning Compiler: A Comprehensive Survey (Mar 2021)](https://ieeexplore.ieee.org/abstract/document/9222299)
+- [Modular: Democratizing AI Compute, Part 7: What about Triton and Python eDSLs?](https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls)
+  - This entire series by Chris Lattner is excellent
 
 ## Design
 
 - [Our Interfaces Have Lost Their Senses](https://wattenberger.com/thoughts/our-interfaces-have-lost-their-senses) ([HN link](https://news.ycombinator.com/item?id=43380930))
 - [Coding Font Tournament](https://www.codingfont.com/)
+- [But what if I really want a faster horse?](https://rakhim.exotext.com/but-what-if-i-really-want-a-faster-horse) ([HN link](https://news.ycombinator.com/item?id=43652723))
 
 ## Research Philosophies
 
@@ -267,3 +292,5 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Art
 
 - [Profilo Continuo (Testa di Mussolini)](https://www.iwm.org.uk/collections/item/object/2247)
+- [When Futurism Led to Fascism](https://voidnetwork.gr/2021/03/25/when-futurism-led-to-fascism-and-why-it-could-happen-again/)
+- [Aeropittura](https://en.m.wikipedia.org/wiki/Aeropittura)

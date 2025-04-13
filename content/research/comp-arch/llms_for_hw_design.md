@@ -80,3 +80,19 @@ well i think we need general purpose technique and reasoning is generally good t
 chatgpt was developed with a lot of coding tasks too which significnat incraesed is reasoning skill
 
 - You cannot call saas apps as angular or react wrappers in the same way you can call chipstack or another llm for x tool a gpt wrapper, in the llm case, the base tool will evolve to subsume the wrapper while that isn't the case for saas webapps
+
+- For the saas vs llm serving companies, consider both axes, folding in custom stuff into the general model using rag, fine tuning, agents and so forth and also the custom data aspect, chipagents can get good perf on verilog eval, see their LinkedIn page
+
+- https://x.com/Suhail/status/1903812003757736086?t=lVX9_QMBaJXvQnC6COCrTA
+
+> Playbook to defeat frontier ai labs without billions of dollars initially:
+> - build an app on top of their models
+> - solve an important, large problem for humanity
+> - resume training on top OSS models to reduce dependency, lower costs for certain tasks, increase performance
+> - accumulate users + revenue for that category rapidly
+> - make your UX sharp and focused around the use-case, something they cannot do cuz chatbot UX / too many products to market then
+> - hire great researchers who care about that one problem you work on
+> - work backwards: start with improving post-training then head to pre-training if necessary
+> - market only solving that one problem vs general problems so you stand for something in the market/people’s minds
+> - defeat frontier general ai lab  with your user feedback / focus advantage
+> - ignore the funding cycle hype / never compare

@@ -67,6 +67,10 @@ Finally, this is a two-way street: the candidate must also be interested in work
   - This means all AI assistant tools must be used in a way the interviewer can see isn't consuming any money (e.g. the free mode of Copilot, the free modes of Windsurf / Cursor, using a free API with Aider, using only the free webapp for ChatGPT/Gemini/Claude/Grok)
   - All free usage of AI assistants is allowed. The interviewee must be able to explain how their assistant is working and demonstrate it is being used in a free mode. The point here is to check whether the interviewee is knowledgable about their tool and how to configure it.
 
+## Debug Something
+
+- Interview question, consider a tv which has some failure mode, sliding errors, pixels that don't work or so forth, how do you begin debugging, where could the errors be? What are the steps you would take?
+
 ## Other Opinions I Like
 
 ### Just Explain Some Concept to Me

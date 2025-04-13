@@ -86,4 +86,5 @@ But there is room for good stuff too (and most of it uses very classical ML tech
 
 ## Where is the Opportunity?
 
-
+- https://www.luxcapital.com/content/the-looming-labor-crisis-in-chip-design
+  - Add to ml for chip design article

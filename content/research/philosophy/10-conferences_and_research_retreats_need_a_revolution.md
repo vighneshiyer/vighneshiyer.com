@@ -20,6 +20,12 @@ What is the point of a research retreat or conference?
 - It used the same talk format but quite different in nature
 - Don't talk about projects, talk about stacks, individuals should collaborate on a memo with respect to a stack
 
+- Japanese translation project
+- Hubs of mini conferences
+- Exclusion first
+- United nations style delegations and resolutions based on the papers
+- Accept everything and publish everything, keep things open, make sure everything is real, invite industry. Artifacts being available is not an option, they must be available (note: I don't mean 'artifact evaluation' needs to happen formally).
+
 ## Examples of Memo Meetings
 
 I'll leave some comments about how each of these went.

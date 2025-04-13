@@ -324,6 +324,9 @@ Cash is still king in Japan, cards aren't accepted in many places, including the
 - Waiting at the train station, lining up on both sides of each door, waiting for everyone to get off, moving to the side, still rushed Koreans though :disappointed:
 - Transit leftists seem to understand the concept of induced demand when it comes to adding a lane to a road but they conveniently omit the induced demand caused by migration itself, there is no inherent justification for more biomass!
 
+- Ultra spice consumption in China and Korea vs Japan
+- Separate rice vs glutinous rice, chewy rice cakes in East ga South asia
+
 ### Japan
 
 - Game towns in Japan, salarymen, hidden world, mostly impenetrable to outsiders due to language and connections, still very fun, don quixote, trains are excellent, old currency systems, electronics stores are insanely good, streets are very aesthetic, temples are so beautiful and hidden similar to indian cities, talk about the Korean lost history, Osaka castle, Neapolitan pizza is great, McDonald's is surprisingly very good, Japanese contact aversion, single person restaurants, single use thing proliferation, enormous plastic waste generated

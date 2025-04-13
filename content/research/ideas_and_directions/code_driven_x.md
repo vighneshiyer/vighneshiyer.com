@@ -7,6 +7,8 @@
 
 ## The Technical Elements
 
+- Crdt, git with collaboration, two way sync
+
 1. Two-way synchronization between code and visualization / 'compiled form'
   - Some constraint language on the code side and the generation of new/modified constraints from user manipulation of the visualization
   - I still believe the visualization generation should be 1-way (code to visual). And deterministic / reproducible across machines.

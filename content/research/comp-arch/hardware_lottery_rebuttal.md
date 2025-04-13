@@ -20,3 +20,8 @@ The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
 - There can be a limitation of programming models or compilers or hardware itself that prevent sufficient parallelism from being extracted, see cgra data flow or streaming archs for dsp or asic emulators for rtl simulation
 
 - There is more of a compiler lottery than a hardware one, if Nvidia hadn't invested in general dlp programming, nothing would have been possible even with the hardware, although games would continue to improve
+
+- If it is the case that hw that doesn't and can't exist is limiting a research direction then it may be true but altogether vacuous, it says nothing
+- Consider a research idea that requires a space elevator, is dismissing that today a case of the space technology lottery? Where is the randomness or chance?
+
+- why do GPUs win, especially from nvidia, general purpose gpu programming! it is all about the programming model and the microarchitecture to make it fast while preserving the programmability

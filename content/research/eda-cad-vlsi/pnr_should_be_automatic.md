@@ -17,3 +17,6 @@
 
 - https://arxiv.org/pdf/2503.22958 (Late Breaking Results: Breaking Symmetry— Unconventional Placement of Analog Circuits using Multi-Level Multi-Agent Reinforcement Learning)
   - This suggests that we shouldn't even bother with formalizing 'layout techniques' and just eagerly move to a fully automated flow with sufficiently fast/parallel/incremental parasitic-aware and variation-aware simulation tools
+
+- https://news.ycombinator.com/item?id=43499992 (Things I would have told myself before building an autorouter (autorouting.com))
+  - Some good lessons here, but ultimately the author makes a mistake in dismissing stochastic techniques

@@ -11,6 +11,31 @@ Just a group of highly motivated and competent people who just kept pushing coll
 - https://christianjmills.com/posts/cuda-mode-notes/lecture-005/
 - https://www.youtube.com/channel/UCJgIbYl6C5no72a0NUAPcTA
 
+> This is a casual get together for ML Systems nerds. We'll start off with an hour's worth of inspiring talks discussing some important open problems in ML Systems and end the evening with espressos and cocktails
+>
+> Schedule
+>     5:30 PM: Doors open
+>     5:45 PM: Pre-talk snacks
+>     6:30 PM: Keynote + Lightning talks
+>     8:00 PM: Cocktails and food
+>
+> Talks
+>     6:30 PM | Christos Kozyraki (Stanford) -The State of Hardware — and what it means for you writing software
+>     7:00 PM | Mark Saroufim (GPU MODE) - Opening Statement
+>     Simon Guo (Stanford) - KernelBench
+>     Alex Zhang (Princeton) - KernelBot
+>     Sahan Paliskara (PyTorch) - KernelBook
+>     Zacharias Fisches (FAIR) - KernelLLM
+>     Simran Arora (Stanford) - Thunderkittens
+>     7:25 PM | Vijay Thakkar (NVIDIA) - CUTLASS
+>     7:30 PM | Super Secret Guest Speaker - How nothing's changed but also everything is different
+>
+> Our goal for the night is that you find a few important problems you can sink your teeth into this year and smart peers to actually get it done.
+>
+> Huuuuuge thank you to our sponsor NVIDIA
+
+- Cuda wasn't application driven, it was first principles driven, Jensen needed to be there to make it happen even when product market got didn't exist for many years even decades, the investment was massive when it didn't seem worth it
+
 ## Beyond CUDA
 
 - https://lu.ma/beyondcuda25
@@ -23,6 +48,7 @@ Just a group of highly motivated and competent people who just kept pushing coll
 - From Triton creator: how Triton's abstractions enable easy targeting of AMD GPUs due to their block abstraction
 - From Keller and Raja: rethinking the ideal architecture and microarchitecture for the SIMT programming model from first principles, eliminating the graphics-oriented specializations that exist in consumer NVIDIA GPUs
 - From AMD: ubiquitous support for Rocm across the product lineup, elimination of kernel driver crashes and misbehaviors, demonstration of end-to-end training of large scale models using upstream ML libraries
+- Live demos, coding walkthroughs, demonstration of push button llama.cpp running with zero issues on easily available hardware (no docker, no VMs, no pre-prepared machine, from scratch)
 
 ### What Happened?
 
@@ -46,6 +72,9 @@ Panels got broken into talks as presenters wanted the ability to present their o
 - Girl at the end not being able to say AMD, saying Intel instead
 - This isn't a parody, these aren't audience plants, these are real people! Reality is actually beyond any Silicon Valley parody.
 - The audience is filled with ignorant random people who have no clue what's going on. But the event was sold as this 'exclusive' event.
+  - I would bet that at least 50% of the people there couldn't explain any CUDA code. Lots of people who 'want to be in the scene'. LMAO what a joke
+
+Chris lattner, modular people, no talk though... Claim good functionality on AMD, but no demo or numbers
 
 ### Past and Future of Compute
 
@@ -251,6 +280,13 @@ Panels got broken into talks as presenters wanted the ability to present their o
   - 2.25x faster all reduce on 2x/4x MI300X vs RCCL (can outperform RCCL)
   - https://github.com/mk1-project/quickreduce
   - "The future is open". I don't think so lol
+
+- https://x.com/politicalmath/status/1903243984769577220?t=NHaZQg-NdnZFOI2xIISmzQ
+
+> Very dark opinion: AI is going to enable a lot of morally questionable people to develop products and services that are very profitable but bad for the customers
+
+- https://x.com/chai_research/status/1902127443605156198?t=UHr8YzdwGgWPllkjIuTgGA
+- https://www.reddit.com/r/ChaiApp/comments/1jfsqii/i_didnt_think_i_would_start_sobbing_over_an_ai/
 
 ### Pre-training Beyond CUDA
 

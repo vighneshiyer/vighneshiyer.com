@@ -193,6 +193,14 @@ Point to Dave Patersons how to build a bad research center (https://www2.eecs.be
   - How to Build a Bad research Center
 
 - 2d view of research, domain specialization vs general abstractions and comp arch vs things above and below us, device physics and so forth, ml systems
+- Ironically, the path to unity is exclusion (Patterson didn't say this lol)
+
+- Multidisciplinary is often misunderstood
+  - Multidisciplinary doesn't mean random domains under the same roof, it means across disciplines in the same area, like pl, compilers, analog circuits and so forth, maybe some domain crossover like genomics, commonly misunderstood
+  - There is *cross-stack* and *cross-discipline* or *cross-domain* collaboration + engineering vs science mixing
+  - Consider Bell Labs: they put mathematicians and physicists under the same roof along with engineers - the goal was to produce theoretical foundations + engineering examples for applications in *computing* and *communications* - there was a clear vision for how these groups should interact (this is an example of both cross-stack and cross-domain collaboration)
+  - But also consider the PARLAB and ASPIRE: they had computer architects side-by-side with experts in algorithms, parallel programming, devices (photonics), programming languages / eDSLs, compilers - this is much closer to cross-stack collaboration than cross-domain (although there was some of that too)
+  - Underlying everything is what type of collaboration is likely to produce the most impact. Cross-stack collaboration is of a different nature than cross-domain. In our field, I would say cross-stack is much more valuable than cross-domain. We have already seen how cross-domain comparch has diluted the field entirely, leaving countless useless papers in its wake. The actual utility / impact of such research has been nil (there are a few exceptions like Anton, but largely such high impact cross-domain work has happened in industry)
 
 ## Industry vs Academia
 

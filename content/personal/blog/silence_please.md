@@ -14,3 +14,13 @@
     - "the background soundtrack to my life", give me a break.
   - Tiktok/Youtube shorts/IG videos where two videos are side-by-side, minecraft on one side, video on the other side, text appears in the middle of the screen, narration in the typical AI voice. Zoomers can't even pay attention to a single stream video anymore.
 - What about 3rd world people?
+
+- https://x.com/NEETWorldOrder/status/1904948940736180416?t=CVviG0EvtcgIDeP_jVK8JQ
+
+> People often complain about kids not reading, but it's actually incredible how illiterate Boomers are. As soon as they encounter the written word, their brain plays the Windows XP shutdown sound and nothing gets through. If it isn't verbalized (e.g., TV), they can't understand.
+>
+> Some of it can be attributed to senility, especially considering how old the workforce is getting. Don't expect anything longer than a single full sentence to be comprehended.
+>
+> I'm sort of the opposite, in that I place zero value on anything someone says. If it's not written down, it's meaningless. There's too many liars and crooks nowadays to believe otherwise.
+>
+> It seems we're reverting to an oral culture at large, as the United States transforms--demographically, but also economically, socially, and even spiritually--into a South Asian bazaar. The video essay and the podcast replacing the blog and forum are symptomatic of this.

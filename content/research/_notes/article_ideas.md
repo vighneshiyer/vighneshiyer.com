@@ -97,6 +97,7 @@
   - Ban lists, networking opportunities and colocated people on the flight, preassigned seating, single class, eliminate low class people not by price but by discrimination and blacklisting
 
 - [ ] The Gemmini image over time, all the redrawings, gather all these papers that talk about Gemmini or dse or systolic architectures, compare to the eyeriss diagram and timeloop things too
+  - Gemmini vs tenstorrent 3 layer api lol
 
 - [ ] Why are small startup cores smaller than commercial x86 or arm cores
   - Lots of reasons besides microarchitectural area optimizations and fresh core design

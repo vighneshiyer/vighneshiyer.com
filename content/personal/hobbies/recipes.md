@@ -443,6 +443,14 @@ This is similar to a minestrone soup, with some important modifications.
 - Coconut water
 - Water + celtic salt + lemon juice + honey
 
+- [Another one](https://x.com/AlenaNazarova_/status/1904270202336121279?t=i9SceNi_lbNd95VjAfkpIw)
+
+- Freshly squeezed orange juice
+- Coconut water
+- Maple syrup
+- Sea Salt
+- Collagen
+
 </details>
 
 <details>
