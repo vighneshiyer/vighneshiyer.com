@@ -1,0 +1,1 @@
+- Specialization identification, DSP Saturn extensions being extracted from kernels alone, and then even functional models, perf improvement estimation, automatic new functional units? So much possibility on the methodology side

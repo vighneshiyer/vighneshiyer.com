@@ -18,3 +18,5 @@ The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
   - Watch this before writing this article. Just make the point that everything is about extracting DLP in various ways and amortizing instruction dispatch costs - Krste / PARLAB is able to boil down all parallel compute patterns into just a handful of motifs (the seven dwarves). This is sufficient for everything - there is no lottery.
 
 - There can be a limitation of programming models or compilers or hardware itself that prevent sufficient parallelism from being extracted, see cgra data flow or streaming archs for dsp or asic emulators for rtl simulation
+
+- There is more of a compiler lottery than a hardware one, if Nvidia hadn't invested in general dlp programming, nothing would have been possible even with the hardware, although games would continue to improve

@@ -89,3 +89,16 @@
 - Automatic parallelism extraction: https://github.com/HigherOrderCO/Bend (HN: https://news.ycombinator.com/item?id=40390287)
   - Similar idea but embedded in Scala specifically for for-comprehensions: https://github.com/kitlangton/parallel-for (scala 3 only version: https://github.com/VirtusLab/avocADO)
 
+- [ ] An open source commission free version of snack pass kiosks and the rest of the restaurant ticketing system
+  - Why do we allow such rampant rent seeking!
+
+- [ ] Why are airlines so inefficient? There was a YouTube video about the correct boarding order. Why bother with carry on baggage either. How much profit is lost in this way? Jsx is too good. How can any new company break into the airline industry?
+  - The profit margins are so low too that even what I think is low-hanging fruit isn't picked even though it seems to be necessary to compete
+  - Ban lists, networking opportunities and colocated people on the flight, preassigned seating, single class, eliminate low class people not by price but by discrimination and blacklisting
+
+- [ ] The Gemmini image over time, all the redrawings, gather all these papers that talk about Gemmini or dse or systolic architectures, compare to the eyeriss diagram and timeloop things too
+
+- [ ] Why are small startup cores smaller than commercial x86 or arm cores
+  - Lots of reasons besides microarchitectural area optimizations and fresh core design
+  - Dft, scan chain, redundancy, power density optimization- trying to lower the power density for more even hotspots and thermal performance, idle state priority such as more number of fine grained power gates and low leakage cells being top priority rather than big numbers for max perf mode, voltage regulators and lots of sensors for pvt
+  - Don't believe the smaller core argument from arm or sifive out of the box! There are lots more things than just the rtl design itself

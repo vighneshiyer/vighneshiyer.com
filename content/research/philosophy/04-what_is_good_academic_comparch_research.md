@@ -192,6 +192,8 @@ Point to Dave Patersons how to build a bad research center (https://www2.eecs.be
 - https://dl.acm.org/doi/pdf/10.1145/2566969
   - How to Build a Bad research Center
 
+- 2d view of research, domain specialization vs general abstractions and comp arch vs things above and below us, device physics and so forth, ml systems
+
 ## Industry vs Academia
 
 - Academia is NOT 'industry-lite'
@@ -648,3 +650,20 @@ Joonho's notes about research areas:
   - Don't talk about 'what' you're going to do first
   - Explain why you are going to do it first. Overarching research question, funding sources, how you will advise the first 3 PhD students
   - If faculty isn't interested / invested in your problem, they won't care about your solution
+
+## App Driven
+
+- Application driven vs application first research
+  - About generality, not the application itself, consider the 7 dwarfs vs the app first "research" done today
+  - Papers with code methodology dominates today, this doesn't produce any knowledge, it doesn't generalize
+  - Must distinguish application driven from app first from methodology driven such as mess
+- Application oriented methodology vs application first, need to disambiguate between two usages of application driven
+  - Of course everything must be application driven whether an architecture or a tool.
+  - Who would design an architecture independent of what it is supposed to run or design a methodology or tool independent of the task that it were to accomplish?
+
+## Signs of Professor Quality
+
+- Single author papers
+- Position papers and white papers
+- Vision papers
+- Workshop papers, focus on real things, latchup, other venues like riscv summit

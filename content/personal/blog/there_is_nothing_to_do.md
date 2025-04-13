@@ -23,3 +23,5 @@ The "doing things in the city" theory, you aren't doing things but rather things
 - Independence from what?
 - Modern "Independence" is dependence
 - Independence to what end?
+
+- "Self care" <-> inducing a superficial feeling of comfort

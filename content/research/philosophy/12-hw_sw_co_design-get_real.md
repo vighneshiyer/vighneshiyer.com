@@ -19,3 +19,5 @@ Oh, you mean like a modern GPU? What is the actual proposal here? Buzzwords (e.g
 > Every proposal for a new model should include a consideration of its hardware requirements, and every hardware innovation should clearly articulate the new algorithms (or computing idioms) it supports.
 
 The reality is that, when prototyping a model architecture idea, you don't have the time to also perform software optimization (and that usually vastly outpaces the performance benefits of any hardware modification itself). There are no more 'computing idioms'; they have all already been discovered, but that doesn't mean computer architecture research has no future. As he points out, the *methodology side* is what needs attention.
+
+- https://web.archive.org/web/20120423063209/http://cacs.usc.edu/education/cs653/Shaw-msMD-SC09.pdf (Anton comes the closest to real HW-SW co-design in a meaningful way, Amir cites this in his paper).

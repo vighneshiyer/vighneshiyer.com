@@ -36,3 +36,18 @@ What skills must a computer architect possess and be confident in?
   - Jim Keller: Tenstorrent talk
   - At 25:30: what made computers fast? Transistor count, pipelining, frequency, parallelism, OoO execution, vector units, multi processors, data prefetch, branch prediction, ...
   - The point is computer architecture is about the tradeoffs therein. Furthermore, parallelism extraction is the major thing from the architecture perspective, with the other 'fast' things coming from other areas.
+
+- Background on what is comp arch
+- Isca hpca micro have drifted away
+  - The multiple tracks
+  - No one knows what the papers are about, best papers have nothing in common, prevalence if the hallway track, compare with isca of 10 years ago
+  - Also many people are publishing in comp arch because they can't publish in their field, conferences have become a big tent and in doing so there are huge silos everywhere
+  - Also some people have began to claim that computer architecture is everything or the vice versa, I want to put a stake in the ground and defend a principled notion of computer architecture
+  - Call out fhe, quantum, as particularly egregious, instead of putting the algorithms first they try to shoehorn in the architecture
+  - Papers with code methodology has become prevalent exacerbating the situation
+  - Abuse of asplos as a dumping ground for random things all over the place, going very far away from the purpose of the conference which was pl and os research that is architecture related
+  - Security opportunists, propagandists, call them out, activists, also not related to architecture (but much better than others), enclaves and PMP are relevant
+  - Modeling monkeys, calibration quibbling, no true understanding
+- What is computer architecture?
+  - The essence of hardware acceleration
+  - Some discussion of non von Neumann architecture is good but this extreme PIM track stuff has got to go, what are people learning here? What is the point of an academic conference in the first place?

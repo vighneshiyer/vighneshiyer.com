@@ -22,6 +22,14 @@ Application-driven vs application-oriented research.
 - Create a philosophy section of website, as a subfield of research
 - I will place this article and comp arch article there
 
+- What would you like to show, investigate, elucidate, quantify? Is there something to build in a unique way?
+
+- What risks to take? Implementation risk vs intellectual risk, this is key
+- there is also future looking risk (prediction risk)
+
+- generalize something specific: (build new abstractions) -> e.g. building halide to generalize common kernel optimizations and systematically and correctly apply them and then use it to explore shape specialized kernel generation. e.g. building a tool that can analyze the DSP RVV extensions Daniel added and find a way to automatically extract those instructions and ways to use them given some piece of code (aladdin seems similar in some ways).
+- Don't sweep the design space but build the design space!
+
 ## Research
 
 ### Engineering
@@ -58,4 +66,7 @@ Is extrinsic value the only thing that makes research meaningful? Can research d
 
 ### What is meant by "impact"?
 
-
+- Is novelty important? Does it correlate with value and impact? Not really especially in engineering disciplines
+- Who is qualified to judge novelty?
+- What is purity? Is it important? Is there a spectrum? How much is only due to the discipline and not the research itself?
+- Mention some hazy research blog posts as having more value than thousands of useless papers

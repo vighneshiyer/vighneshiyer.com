@@ -1,0 +1,2 @@
+- Virtualization vs allocation
+- Time multiplexing, round robin arbitration, dynamic allocation, physical dynamic partitioning

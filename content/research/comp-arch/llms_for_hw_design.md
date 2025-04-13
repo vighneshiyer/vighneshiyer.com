@@ -78,3 +78,5 @@ New
 well i think we need general purpose technique and reasoning is generally good to develop from code as a setting
 5:16
 chatgpt was developed with a lot of coding tasks too which significnat incraesed is reasoning skill
+
+- You cannot call saas apps as angular or react wrappers in the same way you can call chipstack or another llm for x tool a gpt wrapper, in the llm case, the base tool will evolve to subsume the wrapper while that isn't the case for saas webapps
