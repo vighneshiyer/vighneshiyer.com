@@ -213,6 +213,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Paul Graham's Essays](https://paulgraham.com/articles.html)
   - [How to Start Google (March 2024)](https://paulgraham.com/google.html) ([HN link](https://news.ycombinator.com/item?id=39756865))
 - [Stop Trying To Schedule A Call With Me](https://matduggan.com/stop-trying-to-schedule-a-call-with-me/) ([HN link](https://news.ycombinator.com/item?id=42669754))
+- [The Open Guide to Equity Compensation](https://github.com/jlevy/og-equity-compensation) ([HN link](https://news.ycombinator.com/item?id=43675126))
 
 ## Education
 

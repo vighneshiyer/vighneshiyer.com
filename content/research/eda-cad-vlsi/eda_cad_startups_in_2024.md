@@ -237,6 +237,34 @@ If I was a VC, I would say this seems possible but unlikely, but that's good eno
 > Kartik Hegde]
 > Thanks so much!
 
+- Another Chipstack interview: https://www.youtube.com/watch?v=lPc5ovcEDv0
+
+Formatted and relevant parts of the transcript below:
+
+> Q: How does it work under the hood? Is it primarily LLM-based?
+>
+> A: I look at our value proposition in four layers:
+>
+>     Task-Specific Fine-Tuned LLMs: We fine-tune large language models to be better at specific chip design tasks. We recently collaborated with OpenAI to fine-tune their latest models and showed over 10-15% improvement on many chip design tasks compared to their frontier models.
+>
+>     Flow Engineering: How do you take a complex problem (like formal verification), break it into smaller, manageable pieces, and compose them so that LLMs can reliably solve those sub-components? We call this flow engineering.
+>
+>     Integrations & Infrastructure: Building an environment where these LLM-based agents have access to all the necessary tools (EDA tools, parsers, compilers) via APIs that the models know how to call and read results from.
+>
+>     User Experience: Agents aren't 100% autonomous today, so humans need to interact, give feedback, and use them in their real workflow. We focused on building a high-quality UX, unlike traditional EDA tools which are notorious for poor UX. Our team has software engineers using modern web frameworks (TypeScript, React) and backend technologies (Docker, Kubernetes) – no one has prior EDA tool building experience, which was intentional to avoid bringing in old DNA.
+>
+> So, it's the combination of customized LLMs, flow engineering, integrations/infrastructure, and user experience.
+>
+> Q: And currently, it supports both formal verification and simulation-based UVM/SystemVerilog testbenches? Are you planning to extend it to RTL design too?
+>
+> A: Correct. Design (RTL) is our next step. We consciously started with verification because it's the inner loop of design. When you create or modify a design (for PPA), you have to check functional correctness. Once verification agents mature, a design agent can internally call them to iterate quickly. Also, people trust LLMs more for testing something first, before trusting them to design RTL for tape-out, where the trust threshold is higher. Verification is also often the bigger bottleneck.
+>
+> Q: Do you have any user success stories, like finding corner-case bugs?
+>
+> A: It's always awesome when users share experiences. For example, on a complex design, we did an experiment: one engineer with ChipStack, one without, both doing formal verification. Without ChipStack, it took 104 hours. With ChipStack, it came down to 20-30 hours, finding the same bugs. On another design, ChipStack found a unique bug as well. Seeing someone actually use what you've built is always a very satisfying feeling.
+>
+> As a company, we are around 15 people and growing. We're always looking for smart engineers with backgrounds in chip design, software, or ML who want to change the way chips are designed. It's a fun place because these three verticals come together, which is rare. We have awesome people, great investors like Khosla Ventures backing us, and the product is deployed at multiple companies, from AI chip startups to Fortune 100 companies building CPUs and networking chips. We're still in the early stages and consciously limiting the number of customers to ensure each one is successful. We want to be sure we've built something reliable, lasting, and easy to use before scaling, probably in a year or so.
+
 
 ## Generation Alpha (Transistor)
 
