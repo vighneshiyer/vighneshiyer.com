@@ -110,3 +110,59 @@ date = 2024-04-18
     - See prefect, airflow, luigi as python dataflow pipeline orchestration tools
     - How do these fit alongside a build system and caching system?
     - Also how do we support remote execution explicitly via slurm/GCP, etc.
+
+## Thread from a Long Time Ago
+
+Batten: What do people think about wake? https://github.com/sifive/wake Just learned about it ... has anyone tried it? Any cool ideas that can be incorporated into Hammer? It does mention "shared build caching" which seems super cool ... I was chatting with someone that said SiFive uses wake as a flow tool for chip tapeouts ... but maybe not ... not sure ... (edited)
+
+Me:
+
+I like a lot of its features. It seems similar to cloud shake in capabilities. I don't like that they created a new scripting language
+Executing binaries using strace to capture the files it opens and then pruning dependencies based on that is very smart
+Several things that still need to be addressed: environment setup (i.e. conda, nix, guix), remote execution with environment cloning (i.e. lsf, slurm), dealing with persistent/stateful resources (e.g. programming FPGAs)
+
+Batten:
+
+The strace thing could be very useful in chip design flow tools since each step can often read/write so many different files. It is very hard to capture all of those dependencies precisely which is critical for enable robust caching ...
+reminds me of fabricate: https://github.com/brushtechnology/fabricate
+
+Me:
+
+strace thing would also be useful for rtl simulation in chipyard. Dependencies are definitely overspecified in the makefile causing a lot of redundant work in some cases
+Fabricate looks cool, the question of which language to embed the build system in is tough to settle on
+Or whether it is better to use a shrinkwrapped language like Starlark
+
+Batten: Python
+
+YABSL = yet another build system language
+99% sure that for any YABSL, someone will pretty soon need to write some python code to generate build scripts in the YABSL
+
+Me:
+
+I think we can agree that creating a new language for build descriptions is a bad idea - embedding build systems in a general purpose language is the better strategy
+But google does make a good case for bazel/buck2 + starlark
+
+Batten:
+
+ha: https://blog.bazel.build/2017/03/21/design-of-skylark.html
+"The project Blaze (later open-sourced as Bazel) was started in 2006. It used a simple parser to read the BUILD files (supporting only function calls, list comprehensions and variable assignments). When Blaze could not directly parse a BUILD file, it used a preprocessing step that ran the Python interpreter on the user BUILD file to generate a simplified BUILD file. The output was used by Blaze."
+
+I was chatting with someone at Google today and they said using bazel for chip design was not great
+
+Me: What were the challenges they faced? Was the build cache just ineffective? Was writing build rules in Starlark too annoying?
+
+Batten: I didn't push too hard but it might be worth trying to talk to some chip design folks at Google about their experiences and see what the Hammer team can learn from their experiences
+
+Me: I agree, this would be a great idea. We can benefit from a better build system even outside the vlsi flow context though - the current chipyard makefile/sbt setup can be improved
+
+jz:
+
++100 for trying to avoid YABSL.
+Currently, our world (Chipyard/Firesim/Hammer) is SBT + Makefiles + Python, which I like to think is at least much more approachable to new users compared to the alternatives
+IMO past proposals to switch to alternative build/packaging (Mill/Nix/Wake), have all failed because YABSL is a huge barrier to entry.
+
+Kevin:
+
+There is a build system that uses Python for all its build files but is extremely slow in its dependency resolution: SCons
+Alos :laughing: @ google hw teams struggling with bazel. I don't remember all the details, but when Google was trying to use Chisel in 2017, I think they ended up forking it - among other reasons - to make it work with Bazel.
+Some googlers (and maybe others) are also working on: https://github.com/hdl/bazel_rules_hdl
