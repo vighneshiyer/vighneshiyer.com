@@ -172,3 +172,9 @@ Places i wanted to visit a bit away from the city
 - Montauk long island
 - Jones beach, long island
 - Rockaway beach, pier 11
+
+- https://x.com/typedfemale/status/1911213477118845086
+
+> guy who first proposed a “flat” organization: hmm, what if instead of an explicit hierarchy, we had an implicit one you had to reconstruct in your head with high school social dynamics?
+
+Quite pertinent here.

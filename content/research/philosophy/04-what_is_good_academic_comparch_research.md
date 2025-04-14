@@ -202,6 +202,10 @@ Point to Dave Patersons how to build a bad research center (https://www2.eecs.be
   - But also consider the PARLAB and ASPIRE: they had computer architects side-by-side with experts in algorithms, parallel programming, devices (photonics), programming languages / eDSLs, compilers - this is much closer to cross-stack collaboration than cross-domain (although there was some of that too)
   - Underlying everything is what type of collaboration is likely to produce the most impact. Cross-stack collaboration is of a different nature than cross-domain. In our field, I would say cross-stack is much more valuable than cross-domain. We have already seen how cross-domain comparch has diluted the field entirely, leaving countless useless papers in its wake. The actual utility / impact of such research has been nil (there are a few exceptions like Anton, but largely such high impact cross-domain work has happened in industry)
 
+“The heaviest penalty for declining to rule is to be ruled by someone inferior to yourself.”
+
+— Plato, The Republic
+
 ## Industry vs Academia
 
 - Academia is NOT 'industry-lite'

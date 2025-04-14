@@ -254,6 +254,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Debate Club by Lomez (12/29/2024)](https://www.lomez.press/p/debate-club)
 - [Moral Foundations Theory (Wikipedia)](https://en.wikipedia.org/wiki/Moral_foundations_theory)
 - [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) (an interesting look at Xiong’an)
+- [Riding The Tiger: Why The Anglosphere Should Be Wary of India](https://knightsofthegreenshield.substack.com/p/riding-the-tiger-why-the-anglosphere) (accurate)
 
 ## Productivity
 

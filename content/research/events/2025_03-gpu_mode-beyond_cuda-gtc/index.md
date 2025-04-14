@@ -287,6 +287,8 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 
 - https://x.com/chai_research/status/1902127443605156198?t=UHr8YzdwGgWPllkjIuTgGA
 - https://www.reddit.com/r/ChaiApp/comments/1jfsqii/i_didnt_think_i_would_start_sobbing_over_an_ai/
+- https://www.youtube.com/watch?v=oGouyCCY3Do (the Chai guy) (5:51 "teenage girls" can create better makeup advice vs our AI lmao, 7:30 "teenager are spending 1.5 hrs a day interacting with AI. this is a monumental shift") (teenagers are going to talk more to AI than humans)
+
 
 ### Pre-training Beyond CUDA
 
@@ -381,6 +383,9 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 > Users complaining that the docs don't even specify which cards work.
 >
 > But it goes deeper - a valid complaint is that "this only supports one or two consumer cards!" A common rebuttal is that it works fine on lots of AMD cards if you set some environment flag to force the GPU architecture selection. The fact that this is so close to working on a wide variety of hardware, and yet doesn't, is exactly the vibe you get with the whole ecosystem.
+
+- https://tensorwave.com/blog/the-future-of-rocm-amds-developer-first-bet-for-the-ai-era
+- https://www.youtube.com/watch?v=3sG1_ARTa04
 
 ## GTC
 

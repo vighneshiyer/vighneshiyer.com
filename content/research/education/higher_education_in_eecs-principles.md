@@ -1,6 +1,7 @@
 # Steps to A Proper EECS Education
 
 - I have some more notes in 90/research/education.md and School_Curriculum.adoc
+- Separate principles from curriculum or rather resources, higher education in eecs, principles and resources
 
 ## What Are We Doing?
 
@@ -39,9 +40,17 @@ Sahai (https://web.archive.org/web/20230213214722/https://people.eecs.berkeley.e
 
 - [The Lost Art of Research as Leisure](https://kasurian.com/p/research-as-leisure) ([HN link](https://news.ycombinator.com/item?id=43410061))
 
-### LLMs in the University
+- [A balanced review of Math Academy](https://newsletter.ozwrites.com/p/a-balanced-review-of-math-academy) ([HN link](https://news.ycombinator.com/item?id=43656481))
 
-#### The Need for Discrimination
+> One of the biggest falsehoods in education is that everything we might want to learn has its tidy little place on a dependency graph. Want to be a machine learning engineer? Of course you should understand how the algorithms work, so first learn linear algebra and calculus, for which you need algebra, so of course pre-algebra, and so on. Don’t forget to do it on the systems side too! Perhaps start with CUDA, no wait computer architecture, no electrical engineering, no physics…
+
+> Ultimately there’s no one best way. Ideally each student would bounce between topics based on their specific background and goals, a level of flexibility that’s challenging for a school but easier in a less structured environment. If the learner is unconstrained by structure and driven to succeed, they’re served best by the meta skill of knowing when to switch focus from A to B, and when to return to A. Chess grandmasters don’t “master” openings before moving on to middle game and then endgame; all aspects of the game are studied continuously, and each informs the others.
+
+> Every person has their own mix of motivation and the last thing I want to do is to judge another’s. But speaking personally, if a book promises to help me grapple mathematically with the chief glories of Western civilization, now THAT might sustain my interest.
+>
+> This is from the introduction to Differential Equations with Applications and Historical Notes by George F. Simmons, a book as close as possible to perfect, for me, for this topic. It is not just motivating but stirring, driving, elevating. By math textbook standards, it overflows with fascination, excitement, even love.
+
+- An excellent article with great points
 
 ## Random Notes
 
