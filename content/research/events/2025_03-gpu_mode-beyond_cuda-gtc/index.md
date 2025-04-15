@@ -386,6 +386,8 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 
 - https://tensorwave.com/blog/the-future-of-rocm-amds-developer-first-bet-for-the-ai-era
 - https://www.youtube.com/watch?v=3sG1_ARTa04
+- https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/
+  - CoreWeave (NVIDIA backed) is #1, TensorWave (AMD backed) (and all AMD backed clouds for that matter) are way behind (close to underperform territory).
 
 ## GTC
 
