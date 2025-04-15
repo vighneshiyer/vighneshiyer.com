@@ -397,5 +397,6 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 
 - How to Write a CUDA Program - The Parallel Programming Edition | NVIDIA GTC 2025 Session  (https://www.youtube.com/watch?v=GmNkYayuaA4)
   - Where is this kind of high level tutorial from AMD? NVIDIA's materials are top-tier and AMD is nowhere to be found, just a bunch of confusing stuff in the Rocm documentation.
+  - Even Tenstorrent's recent developer day had plenty of these in-depth tutorials and overviews of their architecture and software stack: https://www.youtube.com/watch?v=t-k_03JQqww
 - CUDA: New Features and Beyond | NVIDIA GTC 2025 (https://www.youtube.com/watch?v=6o_Wme-FdCU)
   - The real "Beyond CUDA"

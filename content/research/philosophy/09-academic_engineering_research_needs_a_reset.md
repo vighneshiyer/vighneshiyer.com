@@ -124,6 +124,7 @@ One more note: all of the innovation coming from the Xiangshan team was seeded i
 Xiangshan is a fork of BOOM, their cache is a fork of the LLC that SiFive open sourced, and they continue to [innovate](https://ericlyun.me/tutorial-asplos2025/) in the [hardware design language space](https://capra.cs.cornell.edu/latte25/paper/12.pdf) even after fully adopting Chisel.
 They built a bunch of [verification](https://ieeexplore.ieee.org/abstract/document/9923860) and [physical design](https://tutorial.xiangshan.cc/hpca25/slides/20250302-HPCA25-1-Introduction-XiangShan.pdf) infrastructure too, and now they are [servicing many Chinese startups that want their own custom SoC](https://www.computer.org/csdl/proceedings-article/hcs/2024/10665293/20b7ws18WlO).
 Another note is that the Chinese effort, like all efforts, is _hero-driven_: there are a handful of heroes that contribute the majority of the engineering work, and they are quickly "promoted" to leadership roles where their impact is magnified.
+The work done by the Xiangshan team is used commercially in China too (see the [SpacemiT X200](https://www-spacemit-com.translate.goog/news/%E8%BF%9B%E8%BF%AD%E6%97%B6%E7%A9%BA%E7%AC%AC%E4%B8%89%E4%BB%A3%E9%AB%98%E6%80%A7%E8%83%BD%E6%A0%B8x200%E7%A0%94%E5%8F%91%E8%BF%9B%E5%B1%95/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)).
 
 Finally, take a look at [this article about StarFive](https://archive.ph/U8K8q) (a Chinese RISC-V startup spun off from SiFive).
 There is one very telling quote:
