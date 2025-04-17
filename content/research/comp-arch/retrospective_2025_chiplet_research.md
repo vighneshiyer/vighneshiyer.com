@@ -30,6 +30,8 @@ Correct the definitions of 2.5D integration itself vs the usage of a silicon int
 - Some RISC-V core vendors are trying to move in this direction (e.g. Ventana)
 - https://semiwiki.com/silicon-photonics/350889-scaling-ai-data-centers-the-role-of-chiplets-and-connectivity/
 - https://semiwiki.com/eda/cadence/351462-accelerating-automotive-soc-design-with-chiplets/
+- https://newsroom.arm.com/blog/chiplet-standards
+  - https://xpu.pub/2025/01/23/arm-csa/
 
 ### Products
 

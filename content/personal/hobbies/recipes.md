@@ -156,20 +156,35 @@ This is similar to a minestrone soup, with some important modifications.
 ### Ramen
 
 - [Ultimate Vegetarian Ramen](https://www.youtube.com/watch?v=riGNm51LiSw)
-  - Finely grate garlic and ginger, toast in sesame oil on low heat
-  - Add chili bean paste (1/2 tsp) and toast
-  - Add 1 tsp miso + 1 tsp sugar and toast
-  - Add 1 tbsp soy sauce + 1 tsp of kombu (kelp) powder
-  - Add 150 ml water + 300 ml of soy milk (can use coconut milk too), bring to simmer and set aside
-  - Cook ramen noodles and mix into broth
-  - Top with finely sliced green onions, sesame seeds, sesame oil
-  - My mods
-    - Saute mushrooms, whites of green onions, boy choy with ginger/garlic
-    - Add 1 tbsp of sake to deglaze along with some ground sesame seeds
-    - Add firm tofu to broth before simmering
-    - Substitute coconut milk for soy milk (but use more water, or else the broth will be too thick)
-    - Add fried eggs for topping
-- [This INCREDI-BOWL vegan Ramen Recipe is quick and tasty!](https://www.youtube.com/watch?v=wOf1G1SdbA4)
+- [Just One Cookbook: Vegetarian Ramen](https://www.justonecookbook.com/vegetarian-ramen/)
+
+- Finely grate garlic (2 cloves) and ginger (1" piece)
+- Crush 2 tbsp of white sesame seeds in a mortar and pestle
+- Slice green onions, separate whites and greens
+- Cook grated garlic/ginger and whites of green onions in sesame oil on **low heat**
+- Add chili bean paste (1/2 tsp) and toast
+- Add 1 tsp miso + 1 tsp sugar + 1 tbsp soy sauce + 1 tbsp mirin (ideally sake) + ground sesame seeds and toast
+- Add 150 ml miso broth
+- Add 300 ml of coconut milk (this is not typical, but just my preference)
+- Taste and adjust with salt and white pepper (should be fully seasoned by now, noodles will reduce the saltiness)
+- Cook ramen noodles and add to broth poured into a ramen bowl
+- Top with green onions, sesame seeds, sesame oil
+
+### Ramen Toppings
+
+- Vegetables
+  - Blanch quartered bok choy or broccoli
+  - Mushrooms, soy sauce glazed
+- [Tofu Donburi]
+  - Cut firm tofu into half inch pieces
+  - Remove moisture with kitchen towels
+  - Add corn/potato starch and dust the tofu pieces
+  - Sauce: 1 tbsp brown sugar + 1 tbsp mirin (ideally sake) + 1 tbsp soy sauce
+  - Shallow fry tofu pieces in non-aromatic oil for 3 minutes per side on medium heat
+  - Turn heat to low and add sauce, coating every piece
+  - Reduce and caramelize until glossy
+  - Add 5g of unsalted butter
+  - Low heat and keep warm until serving, top with sesame seeds
 
 ### Stir Fry Noodles
 

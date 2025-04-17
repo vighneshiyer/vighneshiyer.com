@@ -36,6 +36,21 @@ Just a group of highly motivated and competent people who just kept pushing coll
 
 - Cuda wasn't application driven, it was first principles driven, Jensen needed to be there to make it happen even when product market got didn't exist for many years even decades, the investment was massive when it didn't seem worth it
 
+### The Keynote
+
+- Moving from mainframe-style "AI factories" which have reliability problems and scaling inflexibility to a computing model that looks like the modern web (microservices, RPC communication)
+- It seems unlikely right now, NVIDIA is 'scaling-up' very aggressively and models are growing more and more monolithic (save for MoE architectures, which are just about efficient inference not the deployment architecture)
+- If individual nodes become large enough to hold specialist LLMs and they can communicate in swarms where we can autoscale the number and type of experts in the network, and if the overall task completion isn't bottlenecked on network throughput or latency, this idea might make more sense
+
+- https://x.com/packyM/status/1912585616203870715/photo/1
+
+> 5. Society-of-Minds Architectures Beat Giant Models
+>
+> Early 2025 demos show that swarms of small, specialist models coordinated via agentic RAG outperform single monoliths on open-ended tasks.
+> The unit of progress becomes the network, not the parameter count.
+
+Idk, this hasn't been demonstrated yet.
+
 ## Beyond CUDA
 
 - https://lu.ma/beyondcuda25
@@ -231,6 +246,7 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 - Better than Veo2, Minimax for video generation, better camera control that professionals want to have
 - "Hollywood level quality", "make the final scene of game of thrones yourself"
 - "AI generated videos are outperforming 'conventional' video on social media", ok this sounds great lmao
+- This reminds me of the Mavs AI generated jumbotron video - it was *that* tier of garbage
 
 #### Aton and Yurii from Open Babylon
 

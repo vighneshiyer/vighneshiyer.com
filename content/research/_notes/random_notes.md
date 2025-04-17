@@ -686,18 +686,9 @@ For the incremental synthesis - one thing we want to do is offline continuous co
 
 ## Winter 2024 Retreat
 
-- Functional sim to switch over to rtl with precise injection, arch state correlation points
-- Unifying functional sim models and mixed models and full rtl models, all in one framework
 - Richard thing is quite cool to think about
-- Also the krste thing is insane and very smart
-  - Tapeout a fame model of rtl along with ways to connect and synchronize it to other blocks
-  - Connect to fpga for custom blocks or for memory
-  - Same thing for co simulation and state influence from rtl sim to guide functional sim commit checks
-
+  - Functional sim to switch over to rtl with precise injection, arch state correlation points
+  - Unifying functional sim models and mixed models and full rtl models, all in one framework
 - An fpga platform with custom arithmetic data types to allow fast modeling of custom datatype research which are currently implemented as soft float like things. There is a Jim student working on a mixed precision cholesky algorithm and the modeling speed is a big issue, leverage hard float and fpga!
   - Could we have hardware with runtime parameterizable hard float? Maybe something more efficient that an embedded fpga fabric for functional units.
-
 - Adwait no stale data use is good for checking that x prop isn't a problem, just to check which registers actually need reset
-
-- Establish upper bounds on various simulation techniques, see article Igor sent me about circuit connectivity
-- In the context of trying to evaluate krste idea at a high level for feasibility, think about board level constraints too
