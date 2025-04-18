@@ -36,6 +36,7 @@ China:
 
 - https://www.eastisread.com/
 - https://www.pekingnology.com/
+- https://danwang.co/
 
 Health:
 - https://desmolysium.com/

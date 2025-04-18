@@ -26,11 +26,12 @@
 
 ## The Proposal
 
-- Tapeout a FAME-transformed model of some RTL (an OoO core, a vector machine)
+- Tapeout a FAME-transformed model of some RTL (an OoO core, a vector machine). In doing so, you can get very high simulation throughput (1 GHz+), while maintaining cycle exact accuracy wrt off-chip devices (DRAM, etc.).
   - Baseline is just FAME1: accurate off-chip DRAM time modeling, full introspectability, detailed tracing, high frequency operation, token channels for host communication, on-board host
-  - Next is FAME5: We can't fit many GigaBOOMs on a U250 (or even a VU19P for that matter). FAME5 allows us to fit more. But we can take it one more step and FAME5 the
-  - RTL configurability (runtime limitations):
-  - RTL configurability (runtime expansion):
+  - Next is FAME5: We can't fit many GigaBOOMs on a U250 (or even a VU19P for that matter). FAME5 allows us to fit more (maybe a 4:1 multiplexing ratio is doable without any other memory optimizations). But we can take it one more step and FAME5 the RTL we put in silicon! Since we can design a completely custom uarch for this purpose and pipeline the heck out of the combinational logic, we should be able to get very high multiplexing ratios on the order of 64:1. This will of course reduce the effective simulation throughput, but it is compensated for with the very high host frequency and the ability to hide the latency of the off-chip links.
+    - Being able to leverage off-chip either co-packaged or board-level DRAM to further extend the multiplexing ratio is a next step. Getting large caches to work with FAME5 will be tough since we will run out of on-chip SRAM capacity.
+  - RTL configurability (runtime limitations): the target RTL is configured with overprovisioned resources (cache sizes, ROB/LSU size, cache organization parameters). At runtime, those resources can be limited to perform sensitivity analysis.
+  - RTL configurability (runtime expansion): one step further is to use off-chip DRAM to
   - Connecting multiple models together with timed ports:
   - Exploring decoupled simulation execution (A-port style) vs central controller:
   - DRAM extra-capacity chips:

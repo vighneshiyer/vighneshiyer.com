@@ -110,3 +110,9 @@ We seem to be very far from achieving intelligence with biological-tier power. P
 > He adds that this is the long-term vision. "Anyone who's saying agents will work in 2025 should be skeptical."
 
 - A browser agent sounds like a good step, but "booking travel" has got to be the worst example of its utility
+
+- Nothing has built quite a few interesting phones with a new HCI focus (https://www.youtube.com/watch?v=pAzJPmsWgKU) (marketing their Phone 3a as "Your Second Memory")
+  - Support for several modalities: button presses, text, voice, screenshots, camera
+  - The general idea is a fuzzy second brain with all kinds of random notes and events and the ability to recall and organize them at will based on arbitrary user commands
+  - Todo lists, idea boards, events / calendar, tasks, emails, ... getting closer to what we want
+  - https://us.nothing.tech/pages/phone-3a

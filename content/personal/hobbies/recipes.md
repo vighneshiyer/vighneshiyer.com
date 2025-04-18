@@ -122,6 +122,13 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
 - [Cheesy Stuffed Shells (Better Than Lasagna)](https://www.youtube.com/watch?v=OdgOchwSifk)
 - No time to write the recipe. Write it down when I make it!
 
+### Roasted Vegetable Pasta
+
+- [Short](https://youtube.com/shorts/BvQb2c4TZqI?si=RqRbIDNpEy2UPvlw)
+- In a roasting tray, roast quartered zucchini, eggplant, halved cherry tomatoes, sliced onion with salt/pepper/oil in the oven at 400F
+- Saute grated garlic and tomato paste with olive oil. Season with salt/pepper/dried herbs
+- Add roasted vegetables, pasta water, stir to emulsify, add cooked pasta and cheese
+
 ## Soups
 
 ### Tomato Soups
