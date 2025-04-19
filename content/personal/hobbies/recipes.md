@@ -129,6 +129,37 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
 - Saute grated garlic and tomato paste with olive oil. Season with salt/pepper/dried herbs
 - Add roasted vegetables, pasta water, stir to emulsify, add cooked pasta and cheese
 
+### Pasta Sauce Ideas
+
+- [5 Restaurant Quality Pasta Sauces in 15 Minutes](https://www.youtube.com/watch?v=U4NZllj854o)
+- Vodka cream
+  - Add very fine dice of 2-3 shallots and fine mince of 6+ cloves of garlic to olive oil in a wide bottom dutch oven + pinch of salt
+  - After 5 minutes of sweating, add calabrian chilis and dried red chili flakes + more oil and continue to sweat for 2 minutes
+  - Add one whole can of tomato paste and smash and sweat on medium heat until tomato begins to caramelize on the pan
+  - Add 100g of vodka (maybe sake would work too) and cook for 30 seconds
+  - Turn down the heat and add heavy cream, bring it to a simmer slowly while stirring
+  - Bubble the sauce for 5 minutes and then stir in cooked pasta, butter and parm
+  - Adjust with salt and pasta water
+- Alfredo e pepe
+  - Add 50g of butter to a wide enameled dutch oven
+  - Once melted, create a roux with 20g of flour and whisk in until lumpless and sizzle for 1 minute
+  - Add 500g of half and half while stirring constantly, bring to a simmer and then turn down the heat
+  - After 5 minutes, kill the heat, add salt, black pepper, and 75g of hand grated pecorino and parmesean each (microplane is less advisable vs box grater)
+  - Whisk until all melted without any added heat (ideally)
+  - Add cooked fetuccini + pasta water and stir until fully coated, garnish with more pecorino, olive oil, and black pepper
+- Pesto
+  - 100g cubed parm into food processor and break down into small bits (couscous texture)
+  - Add 100g untoasted pine nuts, 125g of olive oil, 100g of fresh basil (you need a lot of basil) + 5g salt and blend for 30 seconds
+  - I'm a bit disinclined to use this food processor method and I would stick to mortar and pestle instead
+- Mushroom Marsala
+  - Olive oil, 125 of small diced onions, 20g minced garlic, salt, and sweat until translucent (about 5 minutes)
+  - Add 175g diced mushrooms + salt and cook 5 minutes
+  - Add 2g of chopped thyme, continue cooking 6-7 minutes for mushrooms to shrink
+  - Add 125g of marsala wine and deglaze and continue cooking until there is little liquid
+  - Add 200g heavy cream + a bit of water
+  - Simmer and let reduce, should glaze a spoon. Adjust salt.
+  - Cook ravioli and add
+
 ## Soups
 
 ### Tomato Soups

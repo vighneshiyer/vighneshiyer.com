@@ -31,7 +31,7 @@
   - Next is FAME5: We can't fit many GigaBOOMs on a U250 (or even a VU19P for that matter). FAME5 allows us to fit more (maybe a 4:1 multiplexing ratio is doable without any other memory optimizations). But we can take it one more step and FAME5 the RTL we put in silicon! Since we can design a completely custom uarch for this purpose and pipeline the heck out of the combinational logic, we should be able to get very high multiplexing ratios on the order of 64:1. This will of course reduce the effective simulation throughput, but it is compensated for with the very high host frequency and the ability to hide the latency of the off-chip links.
     - Being able to leverage off-chip either co-packaged or board-level DRAM to further extend the multiplexing ratio is a next step. Getting large caches to work with FAME5 will be tough since we will run out of on-chip SRAM capacity.
   - RTL configurability (runtime limitations): the target RTL is configured with overprovisioned resources (cache sizes, ROB/LSU size, cache organization parameters). At runtime, those resources can be limited to perform sensitivity analysis.
-  - RTL configurability (runtime expansion): one step further is to use off-chip DRAM to
+  - RTL configurability (runtime expansion): one step further is to use off-chip DRAM to 'expand' any given resource
   - Connecting multiple models together with timed ports:
   - Exploring decoupled simulation execution (A-port style) vs central controller:
   - DRAM extra-capacity chips:
@@ -43,11 +43,12 @@
 ### The First Step
 
 - The primary mismatch between FireSim / RTL sim (of an idealized chip in the ideal environment) and the taped-out chip is DRAM (off-chip bandwidth in general)
--
+- What we really need is LVDS links, high bandwidth, fully implemented, no power or area constraints for the first iteration, focus on performance and reliability and debug
+  - On the TX side we need to have all the usual stuff, per-land clock
+  - Leverage FPGAs to develop all the digital control and datapath logic and have a reference for the performance of all the analog components + be able to measure a real channel model
 
 ## Implementation Notes
 
-- FAME5 + pipelining aggressively
 LVDS links
 Krste's idea
 

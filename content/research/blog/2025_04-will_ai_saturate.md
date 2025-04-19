@@ -75,3 +75,8 @@ A lot of these are iffy, but actually not bad. I feel this is a substantial impr
 I think the author is a bit too zealous. RL doesn't yet 'work' in a way that resembles intelligence. But I can agree that it is getting closer by the day. But will it saturate?
 
 - [AGI is Still 30 Years Away — Ege Erdil & Tamay Besiroglu](https://www.dwarkesh.com/p/ege-tamay) ([HN link](https://news.ycombinator.com/item?id=43719280))
+
+- https://techcrunch.com/2025/04/18/openais-new-reasoning-ai-models-hallucinate-more/
+  - There seems to be a tendency that newer models go more haywire more often (see Gemini 2.5 Pro vs older ones) (but particularly o3 and o4-mini vs o1 and Sonnet 3.7 vs 3.5)
+  - The models that perform better on aggregate are also more likely to do crazy things more often, with these newer models doing iffy things when coding (adding a bunch of useless or overly complex code, refactoring things that the user didn't specify, )
+  - This is a suggestion that post-training RL has diminishing returns and can even degrade certain aspects of these models while the increased base training load makes up for it and more
