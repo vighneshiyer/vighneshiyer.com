@@ -31,36 +31,49 @@
   - Next is FAME5: We can't fit many GigaBOOMs on a U250 (or even a VU19P for that matter). FAME5 allows us to fit more (maybe a 4:1 multiplexing ratio is doable without any other memory optimizations). But we can take it one more step and FAME5 the RTL we put in silicon! Since we can design a completely custom uarch for this purpose and pipeline the heck out of the combinational logic, we should be able to get very high multiplexing ratios on the order of 64:1. This will of course reduce the effective simulation throughput, but it is compensated for with the very high host frequency and the ability to hide the latency of the off-chip links.
     - Being able to leverage off-chip either co-packaged or board-level DRAM to further extend the multiplexing ratio is a next step. Getting large caches to work with FAME5 will be tough since we will run out of on-chip SRAM capacity.
   - RTL configurability (runtime limitations): the target RTL is configured with overprovisioned resources (cache sizes, ROB/LSU size, cache organization parameters). At runtime, those resources can be limited to perform sensitivity analysis.
-  - RTL configurability (runtime expansion): one step further is to use off-chip DRAM to 'expand' any given resource
-  - Connecting multiple models together with timed ports:
-  - Exploring decoupled simulation execution (A-port style) vs central controller:
-  - DRAM extra-capacity chips:
-  - FPGA integration for custom logic:
-  - TT Blackhole integration for custom logic and simulation hosting:
+  - RTL configurability (runtime expansion): one step further is to use off-chip DRAM to 'expand' any given resource using memory optimizations (this is quite difficult to do in general, so it will be specialized to caches initially)
+  - Connecting multiple models together with timed ports: how can we connect different FAME-ed RTL models together that are taped out separately?
+  - Exploring decoupled simulation execution (A-port style) vs central controller: something to look at when scaling up multiple models - it is probably easier to do things in a decoupled way, but it will make introspection/pausing harder.
+  - DRAM extra-capacity chips: how can you mix in DRAM-only cards into the emulation system to add capacity to model memory structures or to the modeled SoC DRAM itself.
+  - FPGA integration for custom logic: naturally, you don't want to just build a very fast simulator without the ability to add stuff to the SoC, an FPGA-card will be required
+  - TT Blackhole integration for custom logic and simulation hosting: if we can get the Blackhole RTL simulator working, it makes emulation of arbitrary logic way easier than using an FPGA, and we can buy the individual chips from TT too
 - Build the physical platform
-  - In the context of trying to evaluate this idea at a high-level for feasibility, think about board level constraints too
+  - In the context of trying to evaluate this idea at a high-level for feasibility, think about board level constraints
+  - Lots of board design, SERDES design, LIBDN integration, token transfer, central controller, defining the host of the simulation
 
 ### The First Step
 
 - The primary mismatch between FireSim / RTL sim (of an idealized chip in the ideal environment) and the taped-out chip is DRAM (off-chip bandwidth in general)
-- What we really need is LVDS links, high bandwidth, fully implemented, no power or area constraints for the first iteration, focus on performance and reliability and debug
-  - On the TX side we need to have all the usual stuff, per-land clock
-  - Leverage FPGAs to develop all the digital control and datapath logic and have a reference for the performance of all the analog components + be able to measure a real channel model
+- What we really need are LVDS links, high bandwidth, fully implemented, no power or area constraints for the first iteration, focus on performance and reliability and debug
+  - On the TX side we need to have all the usual stuff, per-lane clock skewing, scrambling, coding, all the self-test machinery that goes with a typical SERDES
+  - On the RX side we need lane combining, CDR (very important), and the usual RX stuff (equalization)
+- Importantly, we can leverage off-the-shelf FPGA devboards to develop all the digital control and datapath logic (maybe FEC/CRC if needed)
+  - Provide a reference for the performance of all the analog components
+  - Be able to measure a real channel and manipulate the channel to observe how well our digital schemes work
+- Spec out the notion of LIBDN components placed on a common motherboard and how they communicate (both the physical layer and the token-layer)
+
+Just to say this very explicitly: **we need high bandwidth LVDS links**.
+That enables everything.
+
+Trying to do other things like proxy PCIe over serial Tilelink, or building a DDR4 PHY + MC, or attaching other peripherals through the FPGA for the custom chip (CAN, SD cards, HDMI, Ethernet) are just not the most crucial things to do.
+
+Trying to do a very wide parallel bus (for Tilelink DRAM traffic) comes with its own problems.
+This might be a good way to get started, but long-term, we can't rely on a very wide bus.
 
 ## Implementation Notes
 
-LVDS links
-Krste's idea
-
-- Also the krste thing is insane and very smart
-  - Tapeout a fame model of rtl along with ways to connect and synchronize it to other blocks
-  - Connect to fpga for custom blocks or for memory
-  - Same thing for co simulation and state influence from rtl sim to guide functional sim commit checks
-
+<!--
+- Tapeout a fame model of rtl along with ways to connect and synchronize it to other blocks
+- Connect to fpga for custom blocks or for memory
+- Same thing for co simulation and state influence from rtl sim to guide functional sim commit checks
+-->
 
 - Establish upper bounds on various simulation techniques, see article Igor sent me about circuit connectivity (Rent's Law)
-  - This also came up in a RAMP retreat slide deck from Mike Butts (`RAMP2010_MButts20Aug (Slides, 8-25-2010).pptx`) (it's in my pdf archive)
-  - https://www.linkedin.com/pulse/chip-bananas-b-n-patrick-madden-1d49c/
+  - This also came up in a RAMP retreat slide deck from Mike Butts (`RAMP2010_MButts20Aug (Slides, 8-25-2010).pptx`) (links below)
+  - https://web.archive.org/web/20230927151250/http://ramp.eecs.berkeley.edu/
+  - https://web.archive.org/web/20230305000041/http://ramp.eecs.berkeley.edu/Publications/RAMP2010_MButts20Aug%20(Slides,%208-25-2010).pptx
+
+- https://www.linkedin.com/pulse/chip-bananas-b-n-patrick-madden-1d49c/ (Rent's Law)
 
 > For reasons, I've been thinking about circuit topologies quite a bit lately. It's stuff that probably wouldn't make it through a review cycle for a conference or journal (ask me how I know), but I think it's interesting. I figured I'd write down somewhere, to open up my brain space for other stuff.
 >
