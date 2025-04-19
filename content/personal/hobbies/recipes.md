@@ -207,8 +207,14 @@ This is similar to a minestrone soup, with some important modifications.
 - Taste and adjust with salt and white pepper (should be fully seasoned by now, noodles will reduce the saltiness)
 - Cook ramen noodles and add to broth poured into a ramen bowl
 - Top with green onions, sesame seeds, sesame oil
+- Notes from 4/16/2025
+  - I made too much broth, should use only half a can of coconut milk. The taste itself was excellent, much to my surprise. Need to use real ramen noodles, not these thick Thai wheat ones. Need to start the broth first, it can sit simmering while I finish the rest and I can even cook the noodles in the broth.
+  - No need to add the ground sesame seeds - they sink to the bottom and don't really add much flavor anyways. I should use more miso and cooking sake.
+  - I blanched the bok choy in salted water as usual - tasted good. The tofu dish had too thick sauce and I didn't get the pan hot enough for the tofu not to stick. Next time, just use paneer instead of tofu lol. Avoid squishing tofu when drying. Use more sake and soy sauce. Use brown sugar over coconut sugar.
+  - In the future, I should make miso soup with vegetables instead of blanched vegetables or tofu for ramen toppings.
+  - I should just try to nail the plain ramen recipe before trying to do prepared tofu or vegetables toppings.
 
-### Ramen Toppings
+#### Ramen Toppings
 
 - Vegetables
   - Blanch quartered bok choy or broccoli
@@ -223,6 +229,15 @@ This is similar to a minestrone soup, with some important modifications.
   - Reduce and caramelize until glossy
   - Add 5g of unsalted butter
   - Low heat and keep warm until serving, top with sesame seeds
+
+### Miso Soup
+
+- Prepare dashi (just use a packet for now, but you can use kombu + dried shitake mushrooms too)
+- Cook leafy green vegetables (e.g. boy choy, cabbage) in dashi under a boil
+- Reduce heat to just below boil. Turn off heat before adding miso.
+- Add 1 tbsp miso (1 tbsp per bowl) through a fine mesh strainer until dissolved (discard the koji or you can add it to the soup - it will settle to the bottom anyways)
+- Add sliced silken tofu, sliced green onion, dried wakame seaweed
+- Keep the heat **well under a boil** until everything is heated and serve (do not boil miso as it will lose flavor)
 
 ### Stir Fry Noodles
 
