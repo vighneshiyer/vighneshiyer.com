@@ -74,6 +74,10 @@ A lot of these are iffy, but actually not bad. I feel this is a substantial impr
 
 I think the author is a bit too zealous. RL doesn't yet 'work' in a way that resembles intelligence. But I can agree that it is getting closer by the day. But will it saturate?
 
+- https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf
+  - Another position paper (from Silver and Sutton) that suggests AI can escape saturation with self-guided exploration and continuous learning ("The Era of Experience")
+  - My instinct is that self-direct improvement / experiential interactions by an 'agent' will lead to it going off the rails and 'cheating' or optimizing for behaviors that reward the agent inappropriately
+
 - [AGI is Still 30 Years Away — Ege Erdil & Tamay Besiroglu](https://www.dwarkesh.com/p/ege-tamay) ([HN link](https://news.ycombinator.com/item?id=43719280))
 
 - https://techcrunch.com/2025/04/18/openais-new-reasoning-ai-models-hallucinate-more/
