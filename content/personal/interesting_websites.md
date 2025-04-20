@@ -31,6 +31,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://stratechery.com/
 - https://irrationalanalysis.substack.com/
 - https://matt.might.net/articles/
+- https://graymirror.substack.com/
 
 China:
 

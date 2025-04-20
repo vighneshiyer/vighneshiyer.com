@@ -304,7 +304,7 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 - https://x.com/chai_research/status/1902127443605156198?t=UHr8YzdwGgWPllkjIuTgGA
 - https://www.reddit.com/r/ChaiApp/comments/1jfsqii/i_didnt_think_i_would_start_sobbing_over_an_ai/
 - https://www.youtube.com/watch?v=oGouyCCY3Do (the Chai guy) (5:51 "teenage girls" can create better makeup advice vs our AI lmao, 7:30 "teenager are spending 1.5 hrs a day interacting with AI. this is a monumental shift") (teenagers are going to talk more to AI than humans)
-
+- https://character.ai/profile/PlayfulDamsel (LMAO just look at these "characters")
 
 ### Pre-training Beyond CUDA
 
