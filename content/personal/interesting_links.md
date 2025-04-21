@@ -39,6 +39,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [I want a good parallel computer](https://raphlinus.github.io/gpu/2025/03/21/good-parallel-computer.html) ([HN link](https://news.ycombinator.com/item?id=43440174))
 - [Halmstad Colloquium: Mike Butts on Kahn Process Networks in Silicon for Real-Time Embedded Systems](https://www.youtube.com/watch?v=sDuuvyUaIAc)
+- [LBNL: Introduction to Parallel Computing Tutorial](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial)
 
 ### Distributed Programming
 
@@ -53,11 +54,8 @@ Here are a bunch of things from around the internet that I find interesting.
 
 ### Performance Optimization
 
-- [Hazy Research: GPUs Go Brrr](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) ([HN link](https://news.ycombinator.com/item?id=40337936))
 - [The LMAX architecture](https://martinfowler.com/articles/lmax.html) in the context of ([HN link: Disruptor-rs: better latency and throughput than crossbeam](https://news.ycombinator.com/item?id=40954104))
 - [Parsing Protobuf at 2+GB/s: How I Learned To Love Tail Calls in C](https://blog.reverberate.org/2021/04/21/musttail-efficient-interpreters.html) ([HN link](https://news.ycombinator.com/item?id=41289114))
-- [Deep Dive into Matrix Optimization on AMD GPUs (RDNA3)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) ([HN link](https://news.ycombinator.com/item?id=43469535))
-  - [Overview of HIP C++](https://rocm.docs.amd.com/projects/HIP/en/docs-develop/how-to/hip_cpp_language_extensions.html) (designed to look like CUDA C with (mostly) the same APIs)
 
 ### Compilers
 
@@ -137,11 +135,6 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Creating a highly-integrated open-source laptop from scratch. Power in your hands.](https://www.byran.ee/posts/creation/) ([Show HN: I made an open-source laptop from scratch (byran.ee)](https://news.ycombinator.com/item?id=42797260)) (very impressive)
 - [IEEE Spectrum: It’s Time To Rethink 6G](https://spectrum.ieee.org/5g-bandwidth) ([HN link](https://news.ycombinator.com/item?id=43027266))
 
-### ML Hardware
-
-- [Irrational Analysis: Tenstorrent and the State of AI Hardware Startups](https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware)
-- [Corsix: Tenstorrent Wormhole Series Part 1: Physicalities](https://www.corsix.org/content/tt-wh-part1) (A highly detailed 7-part series on the Wormhole architecture and programming model)
-
 ## Machine Learning (AI/ML)
 
 ### Model Architectures
@@ -183,6 +176,19 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Deep Learning Compiler: A Comprehensive Survey (Mar 2021)](https://ieeexplore.ieee.org/abstract/document/9222299)
 - [Modular: Democratizing AI Compute, Part 7: What about Triton and Python eDSLs?](https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls)
   - This entire series by Chris Lattner is excellent
+- [Max Slater: Differentiable Programming from Scratch](https://thenumb.at/Autodiff/) ([HN link](https://news.ycombinator.com/item?id=43713140))
+
+### Performance Optimization
+
+- [Hazy Research: GPUs Go Brrr](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) ([HN link](https://news.ycombinator.com/item?id=40337936))
+- [Deep Dive into Matrix Optimization on AMD GPUs (RDNA3)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) ([HN link](https://news.ycombinator.com/item?id=43469535))
+  - [Overview of HIP C++](https://rocm.docs.amd.com/projects/HIP/en/docs-develop/how-to/hip_cpp_language_extensions.html) (designed to look like CUDA C with (mostly) the same APIs)
+- [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) (August 2024) ([HN link](news.ycombinator.com/item?id=43736739))
+
+### ML Hardware
+
+- [Irrational Analysis: Tenstorrent and the State of AI Hardware Startups](https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware)
+- [Corsix: Tenstorrent Wormhole Series Part 1: Physicalities](https://www.corsix.org/content/tt-wh-part1) (A highly detailed 7-part series on the Wormhole architecture and programming model)
 
 ## Design
 
@@ -240,6 +246,8 @@ Here are a bunch of things from around the internet that I find interesting.
   - See: [Time: The Face of Buddhist Terror](https://time.com/archive/6643742/the-face-of-buddhist-terror/)
 - [The American Sun: Ideologies of Delayed Informatization](https://theamericansun.com/2019/08/27/ideologies-of-delayed-informatization/)
 - [The Buddha's Teachings on Women's 84 Manners](https://thedailyenlightenment.com/2022/10/the-buddhas-teachings-on-womens-84-manners/)
+- [Jacobin: Christianity Was Always for the Poor](https://jacobin.com/2024/03/christianity-poor-debt-jesus-moses-wealth) ([HN link - flagged](https://news.ycombinator.com/item?id=43745088))
+  - I agree with the leftist. Good article about the truth of Christianity, Catholic "adaptations" are not grounded in the Bible but rather ancient pagan principles
 
 ## Politics
 
@@ -256,6 +264,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) (an interesting look at Xiong’an)
 - [Riding The Tiger: Why The Anglosphere Should Be Wary of India](https://knightsofthegreenshield.substack.com/p/riding-the-tiger-why-the-anglosphere) (accurate)
 - [Dwarkesh: Notes on China](https://www.dwarkesh.com/p/notes-on-china)
+- [Molson Hart: America Underestimates the Difficulty of Bringing Manufacturing Back](https://www.molsonhart.com/blog/america-underestimates-the-difficulty-of-bringing-manufacturing-back) ([HN link](https://news.ycombinator.com/item?id=43692677))
 
 ## Productivity
 

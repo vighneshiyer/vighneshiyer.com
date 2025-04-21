@@ -75,8 +75,14 @@ A lot of these are iffy, but actually not bad. I feel this is a substantial impr
 I think the author is a bit too zealous. RL doesn't yet 'work' in a way that resembles intelligence. But I can agree that it is getting closer by the day. But will it saturate?
 
 - https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf
+  - "Welcome to the Era of Experience"
   - Another position paper (from Silver and Sutton) that suggests AI can escape saturation with self-guided exploration and continuous learning ("The Era of Experience")
   - My instinct is that self-direct improvement / experiential interactions by an 'agent' will lead to it going off the rails and 'cheating' or optimizing for behaviors that reward the agent inappropriately
+  - HN link: https://news.ycombinator.com/item?id=43740858
+    - Good comment about reward engineering being the hardest part, can the AI learn to engineer its own reward? In such a way that it does something useful and doesn't fall into the same traps a human would? Short term addiction in favor of long term thinking?
+  - Add to the existing article. Add some diagrams, about the model subsuming all the external interaction and memory mechanisms that are right now explicitly engineered. Then about physical world interaction eventually but compute world interaction initially, no reason why theoretical math couldn't be revolutionaries if this were true. Will we then be bottlenecked on environmental interaction? What is the true discovery bottleneck?
+    - Initially: hand-coded MCP agents at every edge of the LLM, rewards are given by humans
+    - In the era of experience: models operate autonomously, explore without restraint, natively have hooks for external interaction not mediated by explicit human programming, have physical world access (somehow), and learn rewards on their own (the most fishy idea of them all)
 
 - [AGI is Still 30 Years Away — Ege Erdil & Tamay Besiroglu](https://www.dwarkesh.com/p/ege-tamay) ([HN link](https://news.ycombinator.com/item?id=43719280))
 

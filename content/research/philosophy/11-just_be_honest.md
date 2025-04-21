@@ -31,3 +31,6 @@ Who wouldn't want to work with him?
   - This is to encourage kids to not lie about quite silly things, if we're *being honest*. But really, who cares about the hijinks of children. It really is about being 'kind' as a buffer to true and blunt honesty (pretend things are nice when they aren't).
   - But what happens over time? Honesty is actually the primitive state of children. Brutal, blunt honesty is bred out in favor of 'kindness' and other such nonsense. Eventually it works up to subtle lying and corruption, and that is considered being 'kind'. That is the true value that is elevated in the modern society, in direct contrast to the Greek ideal.
   - The supremacy of truth over everything else is the Greek ideal.
+
+- The truth hurts. Often. It is important to separate the *essence* of the statement being made from the *manner* in which it is being made.
+  - I would argue that no matter the manner of expression, if the essence is understood, the truth alone is as 'offensive' as it could ever be.

@@ -178,3 +178,10 @@ Places i wanted to visit a bit away from the city
 > guy who first proposed a “flat” organization: hmm, what if instead of an explicit hierarchy, we had an implicit one you had to reconstruct in your head with high school social dynamics?
 
 Quite pertinent here.
+
+- Market making, dark pools, options arbitrage, ETF pricing, payment for order flow, retail trading is often like sports gambling so can be exploited, but this isn't in any way the primary business of js
+- Educational programs were very good, although only old trading algorithms were shared with us they gave some insight
+- Js never stops, once a market has been arbitrated to zero, they will find 10 other markets they can enter and exploit, they are expanding beyond just ETFs and do crypto of course and also commodities options, even down to taking delivery and reselling of oil, very crazy stuff from very ambitious people who never feel the job is done
+- The fpga team is small and well organized and growing, they are part of the ull team, hft isn't the main business of js but they want to grow into everything as I mentioned above, can't say much expect for hardcaml
+- Their open source culture is very admirable, there are no no competes, very honest company among all the quant firms, trust in employees
+- Interns are probationary employees, still auditioning, not part of the team, I felt this was honest and good and provided the right kind of separation

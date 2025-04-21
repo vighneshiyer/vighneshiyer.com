@@ -25,3 +25,6 @@ The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
 - Consider a research idea that requires a space elevator, is dismissing that today a case of the space technology lottery? Where is the randomness or chance?
 
 - why do GPUs win, especially from nvidia, general purpose gpu programming! it is all about the programming model and the microarchitecture to make it fast while preserving the programmability
+
+- On the hw lottery, discuss spiking neural nets or neuromorohic compute, similar to Anton
+  - Is there a hw lottery at play here that prevents this idea from traction? Have they even showed a theoretical benefit or will that only appear when dedicated training hw at sufficient scale appears?

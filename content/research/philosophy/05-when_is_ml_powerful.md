@@ -32,6 +32,13 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
 - Alphazero alphago, self play not trying to mimic an existing chess engine
 
 - Why did rl for placement not work? In principle ml one ahotting a placement could work better than existing algorithms, but... Wrong problem formulation as a turn by turn game when it is optimization, gridding makes more optimal solutions unlikely, no simultaneous placement due to difficulty in learning long trajectories
+  - Alpha chip e2e which we may call a "generative" model is actually program synthesis
+
+- ML inside the loop (heuristics) vs ml outside the loop (hyper parameter tuning) vs ml monolithic (either as regression for ppa estimation from hls or rtl or for generation where it tries to subsume the cad algorithm)
+- In the loop e.g. simulated annealing move decision
+  - Another ml in the loop is clause selection in cdcl
+- Out of the loop e.g. DSo.ai, simulated annealing parameter guessing, Sat solver selectionRl for tuning within the algorithm, placement example iteratively or sizing like keertana, also iterative. What alpha chip did wrong, formulate optimization as a game, it is easy to do and feels human like but it isn't as good as optimization methods
+- The evolution of fsd from a rule based extraction engine with lots of explicit code to the end to end ml approach
 
 ## From Alberto's Haas Fireside Chat on 4/1/2025
 

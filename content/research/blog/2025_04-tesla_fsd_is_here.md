@@ -38,3 +38,4 @@
   - But they don't own the automotive stack. They retrofit cars. This doesn't scale easily. Tesla has factories churning out 10000+ cars per month. Waymo can't do that.
   - Waymo has to sink a huge cost into every car. Expensive sensors and Lidar. Breakeven is hard to achieve.
   - They rely on HD maps, pre-mapped routes, and sensor fusion. They exhibit failure modes that Teslas don't. They are geofenced - they can't drive on highways.
+- https://www.youtube.com/watch?v=mz8dOCboDz8 ( Comparison of Tesla FSD with 7 Chinese ADAS Systems. | Tesla FSD in China )

@@ -239,6 +239,22 @@ This is similar to a minestrone soup, with some important modifications.
 - Add sliced silken tofu, sliced green onion, dried wakame seaweed
 - Keep the heat **well under a boil** until everything is heated and serve (do not boil miso as it will lose flavor)
 
+### Japanese Curry
+
+- Prepare the curry roux
+  - You can use a store bought Japanese curry cube / powder or store bought spice mix
+  - 3 tbsp unsalted butter, melt, and mix 4 tbsp of flour
+  - Cook and stir on medium heat for 12-15 minutes until a dark chocolate color is reached
+  - Add 1 tbsp curry powder + 1 tbsp garam masala + a small bit of red pepper powder
+  - Mix thoroughly and cool down
+- Chop one onion into strips, 1 carrot into 1" pieces, 2 yukon gold potatoes into large cubes + any other hard squash
+- Grate 1" ginger, chop bell peppers, chop 8 asparagus stems into large pieces, 1 japanese eggplant into large cubes (soak in water), chop 1 tomato
+- Cook hard vegetables in oil on a wide bottom dutch oven with ginger, cover and reduce heat to low, cook for 20 minutes, stirring
+- Once mostly cooked, add 3 cups of vegetable broth, 1 bay leaf, bring to boil and cook 3 minutes, remove from heat and cover
+- In a frypan, add oil, cook eggplant for 8-10 minutes until browned, do the same with bell peppers and asparagus
+- Add to the dutch oven and stir in a bit of curry roux
+- Season with salt, add tomatoes, serve with rice
+
 ### Stir Fry Noodles
 
 #### Prep Notes

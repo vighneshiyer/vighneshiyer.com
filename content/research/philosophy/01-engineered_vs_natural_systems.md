@@ -16,6 +16,8 @@
   - There is only THE natural system (perhaps?)
   - We can model (i.e. simulate) other natural systems (but those end up engineered)
 
+- In engineered vs natural systems talk about how stream engines and airplanes were created without any underlying theory of aerodynamics or thermodynamics, the theory came later which then made these systems more amenable to engineering
+
 ## Engineered Systems
 
 - An engineered system is that which moves from the abstract to the physical, this even applies to software
