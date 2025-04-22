@@ -43,10 +43,24 @@ Yeah, I don't want to judge too early, but come on. This will be fun.
 
 ## Talk Notes
 
-- The 3 guys: Carter Wilcox, Mark Hill, Robert Wachen
+- The 3 guys: Carter Wilcox (ex character.ai), Mark Hill, Robert Wachen (opened the talk)
 - No photos allowed
 - Mark Hill about firmware engineering at Etched - first FW engineer there
 - Talk title: Firmware for ASICs
 - AI HW is the fastest growing market, growing need for specialized AI chips, we're about to make the first one
 - All Harvard undergrads, they claim that AI model spend grows exponentially while cost of custom chips scales linearly at best
+- They assert all major AI models are all transformers, so we must accelerate them
+- Sohu is 10x faster than nvidia GPUs
+- they claim 3 servers with 8x sohu can deliver 1M tokens/sec on Deepseek Llama distill 70B
+  - 10x cheaper
+- 150+ engineers, peter theil, jane street, two sigma
+- sold out first production run
+- the team: Gavin, Mark, Brian, Robert, Ajat, Saptadeep
+- Mark Hill was at berkeley from 2017-2019, liked 151 lol
+  - Worked at Astranis, learned about firmware, now he is qualified to lead a custom datacenter asic firmware team
+- Filling a floor of the San Jose office
+- Learned about AXI in the first few weeks at Etched LMAO
+- He works on the Pcie communications stack
+- they are recruiting for every element of the ASIC and card and stack: RTL, DV, firmware, PD, timing, validation, emulation, devops
+  - all inference sw, ML SW, system SW, RDMA, emulation, chip modeling, architecture
 -
