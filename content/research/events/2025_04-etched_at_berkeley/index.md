@@ -1,4 +1,4 @@
-- https://www.etched.com/announcing-etched
+- https://www.etched.com/announcing-etched (https://news.ycombinator.com/item?id=40788749)
 - https://www.theregister.com/2024/06/26/etched_asic_ai/
 - https://www.chipstrat.com/p/etched-silicon-valleys-speedrun
 
@@ -92,3 +92,16 @@ Yeah, I don't want to judge too early, but come on. This will be fun.
   - "develop an architectural sw model of the chip early", "don't underestimate the benefits of free, limitless cloud-scaling", "licences and hw constraints are hard and expensive to scale" - WOW what an insight! very smart people here.
   - lessons they've learned - can't be serious
 - learn every part of the stack, cross-team movement is good, make projects that get into the 'customer' early and get feedback, avoid projects that lack this feedback loop, you need to be passionate and be with passionate people
+- q and a
+  - when are you going to shop sohu. come by our lab lmao
+  - elam: anything about model/architecture that is interesting? A: dedicated HW for matmul and attention, all transistors are dedicated to just that, way higher utilization than nvidia
+  - q: if models switch architecture, do you have a backup? A: then it isn't a good investment, but we think things are all transformers, classic NRE vs unit cost tradeoff - see 151 lol, everything ends in ASICs that is economically valuable for long enough, bet is that transformers continue to be good, inference time scaling and Sora moving to transformer, we're building the engine to go from new architecture to full system to serve it (oh this is different now). there will be trillion dollar datacenters for every new model for every deployment which is designed specifically. LMAO
+  - sohu designed for transformers up to 100T parameters, co-design model architecture and tapeout. you will tape out a chip that only support fp6 if you think that is what the model will use. LMAO insane. sheer scale means taping out special chips all the time (this is what the founder Robert said!) does he really believe this? and if it is true, then he will be the one to make it happen? very insane
+  - q: is it hard to transition from nvidia? a: we aren't making just the asic, we are making the whole stack, racks and system, software.
+  - q: do you design PCBs? a: yes we do, we do outsource some things.
+  - q: any training? a: only inference for now. carter: character.ai needs millions a day to serve its users, after leaving character.ai he helped founders find compute, founders don't want to use nvidia but they are forced to :(, "every single CEO I've shown this to has been so excited! you saved me millions!" this is a true airhead. carter: this is why i joined etched, we are spending 100M, let's spend it. OK now I understand why they have 'sold out' their hardware in advance LMAO.
+  - Rob: inefficient HW doesn't handle peak load well, spikes in concurrent users so you have to buy dedicated compute that you don't always need
+  - rob: depreciation rates will compress, so specialized hw is even more important, product timeline is on the system level not just chip level, improve performance on the same chip, perf metrics assume 3 year depreciation (industry is 5 years), you have do something disruptively to make people switch
+  - carter: i was in the research AGI hill for the last 3 year building a consumer product, google does 100k queries per second, c.ai has 30k queries per second, relatively nascent product, similar to google throughput, we couldn't do AGI research at the same time we were serving customers LMAO, there is bottled up demand about to explode, "we're going to see the inference singularity in the next 3 years", there will be market consolidation, you need inference clusters, the only thing that matters, bullish: land, power, DC concrete, and chips that do inference, company is completely sold out even without any product, scale of deployment is at gigawatt level, that is huge, 10s of B of chip spend, google spends 75B per year,
+
+- https://github.com/etched-ai
