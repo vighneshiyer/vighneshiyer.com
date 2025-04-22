@@ -40,3 +40,13 @@ Experience:
 > Logistics cases, with capstones in hardware product development (BCG Digital Ventures) and software product development (BCG Gamma).
 
 Yeah, I don't want to judge too early, but come on. This will be fun.
+
+## Talk Notes
+
+- The 3 guys: Carter Wilcox, Mark Hill, Robert Wachen
+- No photos allowed
+- Mark Hill about firmware engineering at Etched - first FW engineer there
+- Talk title: Firmware for ASICs
+- AI HW is the fastest growing market, growing need for specialized AI chips, we're about to make the first one
+- All Harvard undergrads, they claim that AI model spend grows exponentially while cost of custom chips scales linearly at best
+-
