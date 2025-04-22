@@ -74,4 +74,13 @@ Yeah, I don't want to judge too early, but come on. This will be fun.
   - "we have to spec out how many AXI buses we need"
 - they claim to have a rack prototype with a bunch of high bandwidth switches, but it looks like all off-the-shelf stuff
 - how to design a high throughput, low latency comm stack
-  -
+  - they have something called "Kayak" which is the userspace inference runtime
+  - very vanilla 3 segment diagram: kayak (kv cache, HTTP API, PCIe programming, kernel generation) -> kernel driver (io_uring, MSI-X, PCIe interrupts, ring buffers) -> sohu runtime (pcie dma, pcie interrupt registers, host/device comms thread)
+  - now he's just talking about pcie in general (TLP, link initialization, device memory allocation, pcie enumeration, interrupts to the host core)
+  - pcie to axi within the ASIC, MSI is just a memory write, it seems very vanilla
+  - mmap a BAR, access it on the host, showed some GTX 4090 throughput numbers lol, the firmware can issue DMA requests for the PCIe card to do, yeah of course lol
+  - "the host system usually doesn't have any DMAs", we have to rely on the plugin card's DMA
+  - interrupts from host to ASIC happen with doorbell registers (yeah naturally), they have a 256-byte doorbell (with set + ack to send head/tail pointers) - they have a small HW accelerated ring buffer doorbell mechanism, seems vanilla
+  - command descriptors on the host side, send to the driver, it will asynchronously do it, yeah we know
+- to put this in context, this is a 151 / tapeout class talk, so they probably just want to recruit and aren't going to tell us anything
+
