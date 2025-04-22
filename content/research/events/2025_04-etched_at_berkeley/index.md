@@ -53,14 +53,25 @@ Yeah, I don't want to judge too early, but come on. This will be fun.
 - Sohu is 10x faster than nvidia GPUs
 - they claim 3 servers with 8x sohu can deliver 1M tokens/sec on Deepseek Llama distill 70B
   - 10x cheaper
-- 150+ engineers, peter theil, jane street, two sigma
+- 150+ engineers, peter thiel, jane street, two sigma
 - sold out first production run
 - the team: Gavin, Mark, Brian, Robert, Ajat, Saptadeep
 - Mark Hill was at berkeley from 2017-2019, liked 151 lol
   - Worked at Astranis, learned about firmware, now he is qualified to lead a custom datacenter asic firmware team
-- Filling a floor of the San Jose office
+- Filling a floor of the San Jose office, huge fancy office building
 - Learned about AXI in the first few weeks at Etched LMAO
 - He works on the Pcie communications stack
 - they are recruiting for every element of the ASIC and card and stack: RTL, DV, firmware, PD, timing, validation, emulation, devops
   - all inference sw, ML SW, system SW, RDMA, emulation, chip modeling, architecture
--
+  - they also make the chassic, power EE, si EE, mechE + make the racks, liquid cooled - literally everything LMAO this is impossible to believe, what a bad strategy
+- he shows the 151 chip design CAD flow, ahh but see there is 'design iteration' - "co-design" LMAO
+  - then he shows a xdot graph of all the flows in the VLSI flow, rtl dev, simulation, arch, DV, software, compilers, lmao arrows going all over the place
+  - "super iterative effort", "the flow requires lots of circles", "you get to PD and realize you have an issue", "lots of things going on here at etched"
+- 11 people on FW team, 20+ by the end of the year
+- they make firmware that runs on the asic, spec out rtl, asic control path, perpherals, freertos port for their cpu, device drivers, host-asic comm, ai inference runtime, device drivers for custom IP blocks
+  - the firmware that runs on the power/reset sequencing microcontroller - device drivers for external power and telemetry ICs, state machines for ASIC power, reset, and exceptional conditions
+  - linux kernel driver that talks to the asic, host-asic comm stack, userspace API to perform data transfer / commands
+  - "we have to spec out how many AXI buses we need"
+- they claim to have a rack prototype with a bunch of high bandwidth switches, but it looks like all off-the-shelf stuff
+- how to design a high throughput, low latency comm stack
+  -
