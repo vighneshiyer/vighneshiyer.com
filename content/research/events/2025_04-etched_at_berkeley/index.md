@@ -83,4 +83,12 @@ Yeah, I don't want to judge too early, but come on. This will be fun.
   - interrupts from host to ASIC happen with doorbell registers (yeah naturally), they have a 256-byte doorbell (with set + ack to send head/tail pointers) - they have a small HW accelerated ring buffer doorbell mechanism, seems vanilla
   - command descriptors on the host side, send to the driver, it will asynchronously do it, yeah we know
 - to put this in context, this is a 151 / tapeout class talk, so they probably just want to recruit and aren't going to tell us anything
-
+- this guy is just putting up screenshots from various PCIe communication webpages (e.g. for NVMe io_uring usage) and saying that it works
+- they have single request/completion queue for kernel dispatch, but will manage everything in userspace eventually
+- perf opt: PCIe roundtrip is 100-1000ns (minimize), don't do MMIO read (too slow), initiate transfers from devices via DMAs, batch commanding and prefetch can hide setup and PCIe RTT latency
+- now he's talking about IOMMU, so you need to split transactions into multiple descriptors to handle page crossings
+- how his advice for students
+  - develop an arch sw model early, don't iterate with RTL, run software on RTL early and often, make a comprehensive CI
+  - "develop an architectural sw model of the chip early", "don't underestimate the benefits of free, limitless cloud-scaling", "licences and hw constraints are hard and expensive to scale" - WOW what an insight! very smart people here.
+  - lessons they've learned - can't be serious
+- learn every part of the stack, cross-team movement is good, make projects that get into the 'customer' early and get feedback, avoid projects that lack this feedback loop, you need to be passionate and be with passionate people
