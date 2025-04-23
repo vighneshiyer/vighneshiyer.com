@@ -116,3 +116,12 @@ We seem to be very far from achieving intelligence with biological-tier power. P
   - The general idea is a fuzzy second brain with all kinds of random notes and events and the ability to recall and organize them at will based on arbitrary user commands
   - Todo lists, idea boards, events / calendar, tasks, emails, ... getting closer to what we want
   - https://us.nothing.tech/pages/phone-3a
+
+- Ljubisa: all cpu innovations came from 50-100 people total, he is right, companies are huge but innovations are few
+- Drago: go places where talent is generalist and skilled in many areas, Dec was huge but with the right culture they produced a handful of truly elite people and elite research and legacy
+- Ljubisa: publicly traded companies need some stability with respect to projections there isn't an appetite for risk
+
+- AI should be a huge boon for small teams, just looking at Ljubisa and drago I wonder how they can find good people who are truly obsessed with what they do, like in tenstorrent at some point, you have to hire randoms who just want money for job and you end up losing everything important
+  - With good enough agentic AI we can keep the company very small and lean and productive on all the mechanical tasks that can be automated and it can all be intelligent and passionate people and all other randoms can be cut out, very good
+  - This is one way to produce the next DEC without any massive funding machine supporting a research organization (today this is limited to the top 20 firms by market cap in America, which is greatly limiting since they are all public too)
+  - DE Shaw has done a good job here - quite well curated DEC-style lab

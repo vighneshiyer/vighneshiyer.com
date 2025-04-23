@@ -39,3 +39,10 @@
 - Performance evolution: SPECint / MHz or W
 - Specific timelines of products and innovations for:
   - Apple, Intel, AMD, ARM
+
+- https://landley.net/history/mirror/tech/processors/cpu.html
+- https://people.computing.clemson.edu/~mark/architects.html
+- https://www.cpushack.com/CPU/cpu.html
+- https://en.m.wikipedia.org/wiki/List_of_pioneers_in_computer_science
+- https://en.m.wikipedia.org/wiki/History_of_general-purpose_CPUs
+- "list of people who architected CPUs over time"

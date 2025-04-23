@@ -418,3 +418,6 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
   - Even Tenstorrent's recent developer day had plenty of these in-depth tutorials and overviews of their architecture and software stack: https://www.youtube.com/watch?v=t-k_03JQqww
 - CUDA: New Features and Beyond | NVIDIA GTC 2025 (https://www.youtube.com/watch?v=6o_Wme-FdCU)
   - The real "Beyond CUDA"
+
+- https://semianalysis.com/2025/04/23/amd-2-0-new-sense-of-urgency-mi450x-chance-to-beat-nvidia-nvidias-new-moat/
+  - Yeah Dylan and friends have laid out all the ways that NVIDIA is way ahead, and is increasing the gap day by day. AMD is falling further behind.

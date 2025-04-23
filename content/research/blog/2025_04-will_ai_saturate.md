@@ -90,3 +90,7 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
   - There seems to be a tendency that newer models go more haywire more often (see Gemini 2.5 Pro vs older ones) (but particularly o3 and o4-mini vs o1 and Sonnet 3.7 vs 3.5)
   - The models that perform better on aggregate are also more likely to do crazy things more often, with these newer models doing iffy things when coding (adding a bunch of useless or overly complex code, refactoring things that the user didn't specify, )
   - This is a suggestion that post-training RL has diminishing returns and can even degrade certain aspects of these models while the increased base training load makes up for it and more
+
+- https://simonwillison.net/2025/Apr/21/ai-assisted-search ([HN link](https://news.ycombinator.com/item?id=43752262))
+  - Saturation when it comes to novelty, research taste, and discovery isn't relevant when it comes to report generation - that is indeed something humans do poorly and inefficiently.
+  - But having an AI generate "trends" based on its report will just echo what people already say, what you need is the ability to collect data, present it, and let intelligent people draw their own conclusions, which are necessarily opinionated

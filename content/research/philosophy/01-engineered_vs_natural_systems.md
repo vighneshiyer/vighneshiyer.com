@@ -86,3 +86,26 @@ This is kind of irrelevant, but is it true that knowledge can only emerge from o
 - What is intelligence? Abstraction, generalization, connection making, synthesis of ideas into a new whole, anything else?
 - What is consciousness? Let's say we build a mechanistic system that has intelligence and we put it in a human form, you can't see the machinery, does it possess consciousness? At its core consciousness isn't really about responsiveness to the environment, since that can be mechanistic, but rather it is about autonomy, if a mechanistic system can be precisely simulated knowing its initial state then it can't be autonomous. This is just the same argument about human free will, it can't exist in a mechanistic world.
 - What about ensoulment, it seems to be related to consciousness, perhaps I'm just getting the definition of consciousness messed up
+
+### Yufeng question followup
+
+> It seems that the nice layers of abstraction in computer architecture has also introduced many inefficiencies? If so, would "breaking the SW-HW contract" the correct way to optimize a system? (i.e. the ultimate optimized system would just be a soup of stuff mixed together without abstraction)
+>
+> If the abstract is set up for us to better understand the system, it sounds like this should be an AI job to cook this high dimension soup (establish analysis directly between the fundamental blocks and build functionality that way) and give us the most optimal system?
+
+> In theory you're right, it would be a soup that isn't engineered but rather evolved, the complexity is too high to attempt it though
+>
+> There has been work on direct ml signal modulation for rf where the actual modulation scheme is learned dynamically over any channel, idk whether it is viable in reality though
+
+- Harrison's sam Altman fabs idea
+  - Altman was at one point fanatic about opening 100s of fabs in America and investing trillions in doing so
+  - What was the point of this? He wanted to bypass an explicitly engineered system! ML is powerful when we can go from spec to implementation, bypassing the human engineered abstractions we use to handle complexity. This has been shown valuable in RF circuits and evolved antenna design.
+  - Ideally:
+- Rtl simulation as a ml model just as physics sim as a ml model, both are engineered systems
+  - Imagine 'learning' RTL simulation using both supervised training and unsupervised, exploration-driven fine-tuning
+  - No doubt such a thing can 'work'
+  -
+- An engineered system must be simulatable precisely based on its primitives, natural systems can't be simulated directly but only through the engineered model of the natural world
+- Natural systems, our system, can't be simulated due to 2 things: uncertainty principle, quantum stochasticness
+- Evolved antennas and rf circuits and photonic waveguides and couplers, ml is powerful when it can break engineered abstractions
+  - https://news.ycombinator.com/item?id=43772503
