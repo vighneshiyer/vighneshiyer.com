@@ -28,3 +28,11 @@ The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
 
 - On the hw lottery, discuss spiking neural nets or neuromorohic compute, similar to Anton
   - Is there a hw lottery at play here that prevents this idea from traction? Have they even showed a theoretical benefit or will that only appear when dedicated training hw at sufficient scale appears?
+
+- https://en.wikipedia.org/wiki/Von_Neumann_programming_languages
+
+> John Backus asserted that assignment statements in von Neumann languages split programming into two worlds. The first world consists of expressions, an orderly mathematical space with potentially useful algebraic properties: most computation takes place here. The second world consists of statements, a disorderly mathematical space with few useful mathematical properties (structured programming can be seen as a limited heuristic that does apply in this space, though).
+>
+> Backus claimed that by 1978 there existed in computer science a vicious cycle where the long-standing emphasis on von Neumann languages has continued the primacy of the von Neumann computer architecture, and dependency on it has made non-von Neumann languages uneconomical and thus limited their further development: the lack of widely available and effective non-von Neumann languages has deprived computer designers of the motivation and the intellectual foundation needed to develop new computer architectures.[2]
+
+The points made here do seem to point towards a PL/arch 'vicious cycle' (i.e. hardware/software lottery) at play, but I feel that would be a misinterpretation.

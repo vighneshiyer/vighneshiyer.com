@@ -1,3 +1,10 @@
++++
+title = "My Trip to Korea and Japan"
+date = 2025-01-10
+draft = true
+slug = "trip-korea-japan"
+description = "Things I saw and random observations"
++++
 
 ## My Trip to Korea
 

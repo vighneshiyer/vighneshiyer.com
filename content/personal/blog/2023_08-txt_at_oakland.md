@@ -1,3 +1,11 @@
++++
+title = "TXT @ Oakland"
+date = 2024-05-18
+draft = true
+slug = "txt-at-oakland"
+description = "I went to a KPop concert"
++++
+
 - Bias, moa, n:1 vs 1:1, demographics, something for everyone, highly manufactured with lyrics
 - Management company hated, larger venue booked than needed, floor ticket, screaming not clapping, parasocial relationships, very good English skills
 - Merch, would I go again?

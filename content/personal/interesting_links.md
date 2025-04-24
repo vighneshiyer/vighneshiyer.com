@@ -116,13 +116,14 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Smol GPU: An rv32i inspired ISA, SIMT GPU implementation in system-verilog.](https://github.com/Grubre/smol-gpu) (great `README` about GPU architectures and programming models)
 - [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
 - [Taxonomy of RISC-V Vector Extensions](https://fprox.substack.com/p/taxonomy-of-risc-v-vector-extensions)
+- [Three fundamental flaws of SIMD ISAs](https://www.bitsnbites.eu/three-fundamental-flaws-of-simd/) ([HN link](https://news.ycombinator.com/item?id=43783416))
 
 ### Formal Verification
 
 - [Daniel E. Gisselquist: An Introduction to Formal Methods](https://zipcpu.com/tutorial/class-verilog.pdf) (slides)
-- [My first experience with Formal Methods](https://zipcpu.com/blog/2017/10/19/formal-intro.html)
-- [Swapping assumptions and assertions doesn't work](https://zipcpu.com/formal/2018/12/18/skynet.html)
-- [An Exercise in using Formal Induction](https://zipcpu.com/blog/2018/03/10/induction-exercise.html)
+- [ZipCpu: My first experience with Formal Methods](https://zipcpu.com/blog/2017/10/19/formal-intro.html)
+- [ZipCpu: Swapping assumptions and assertions doesn't work](https://zipcpu.com/formal/2018/12/18/skynet.html)
+- [ZipCpu: An Exercise in using Formal Induction](https://zipcpu.com/blog/2018/03/10/induction-exercise.html)
 
 ## Systems
 
@@ -163,7 +164,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 ### Symbolic AI
 
-- [Obituary for Cyc](https://yuxi-liu-wired.github.io/essays/posts/cyc/) ([HN link](https://news.ycombinator.com/item?id=43625474)) (the death of rule-based symbolic AI)
+- [Yuxi Liu: Obituary for Cyc](https://yuxi-liu-wired.github.io/essays/posts/cyc/) ([HN link](https://news.ycombinator.com/item?id=43625474)) (the death of rule-based symbolic AI)
 - [Pedro Domingos on the Symbolist Approach to AI](https://www.youtube.com/watch?v=ogaCzVoRpZs) (Pedro defends symbolic AI approaches)
 
 ### Neuromorphic

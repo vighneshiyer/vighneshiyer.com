@@ -87,6 +87,10 @@ This is kind of irrelevant, but is it true that knowledge can only emerge from o
 - What is consciousness? Let's say we build a mechanistic system that has intelligence and we put it in a human form, you can't see the machinery, does it possess consciousness? At its core consciousness isn't really about responsiveness to the environment, since that can be mechanistic, but rather it is about autonomy, if a mechanistic system can be precisely simulated knowing its initial state then it can't be autonomous. This is just the same argument about human free will, it can't exist in a mechanistic world.
 - What about ensoulment, it seems to be related to consciousness, perhaps I'm just getting the definition of consciousness messed up
 
+- https://news.ycombinator.com/item?id=43776477 (How much math is knowable? [video] (youtube.com))
+
+> What precisely is meant by simulating the laws of physics? There's a common understanding pitfall there, in that a lot of lay people quickly end up talking about "is the universe a computer" or "infinite Turing machines have nothing to do with the real world" sort of confusing arguments.
+
 ### Yufeng question followup
 
 > It seems that the nice layers of abstraction in computer architecture has also introduced many inefficiencies? If so, would "breaking the SW-HW contract" the correct way to optimize a system? (i.e. the ultimate optimized system would just be a soup of stuff mixed together without abstraction)
