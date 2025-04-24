@@ -36,3 +36,5 @@ The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
 > Backus claimed that by 1978 there existed in computer science a vicious cycle where the long-standing emphasis on von Neumann languages has continued the primacy of the von Neumann computer architecture, and dependency on it has made non-von Neumann languages uneconomical and thus limited their further development: the lack of widely available and effective non-von Neumann languages has deprived computer designers of the motivation and the intellectual foundation needed to develop new computer architectures.[2]
 
 The points made here do seem to point towards a PL/arch 'vicious cycle' (i.e. hardware/software lottery) at play, but I feel that would be a misinterpretation.
+
+- https://ieeexplore.ieee.org/document/10207712 (Beyond Von Neumann in the Computing Continuum: Architectures, Applications, and Future Directions)

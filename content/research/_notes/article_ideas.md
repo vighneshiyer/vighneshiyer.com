@@ -103,3 +103,8 @@
   - Lots of reasons besides microarchitectural area optimizations and fresh core design
   - Dft, scan chain, redundancy, power density optimization- trying to lower the power density for more even hotspots and thermal performance, idle state priority such as more number of fine grained power gates and low leakage cells being top priority rather than big numbers for max perf mode, voltage regulators and lots of sensors for pvt
   - Don't believe the smaller core argument from arm or sifive out of the box! There are lots more things than just the rtl design itself
+
+- There is a tendency to look at old inventions / discoveries / innovations and think that if I were alive back then, I could have made the same invention! It's so obvious!
+  - For me, looking at the history of computer architecture, there are many things that look so obvious and trivial. For instance, lots of the things worked on by von Neumann seem to be mere undergrad experiments today.
+  - Consider things like (https://en.wikipedia.org/wiki/Graph_reduction_machine) or (https://en.wikipedia.org/wiki/SECD_machine). Look at the things that early IBM Fellows did. Look at the work of John Backus. No doubt all these people are far far more intelligent than me. But their work seems so simple?
+  -
