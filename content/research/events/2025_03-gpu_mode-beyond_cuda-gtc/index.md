@@ -421,3 +421,4 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 
 - https://semianalysis.com/2025/04/23/amd-2-0-new-sense-of-urgency-mi450x-chance-to-beat-nvidia-nvidias-new-moat/
   - Yeah Dylan and friends have laid out all the ways that NVIDIA is way ahead, and is increasing the gap day by day. AMD is falling further behind.
+  - It seems like Dylan's bullying and geohotz's bullying was necessary to give AMD employees leverage over management to do important things like ship MI boxes to top devs/labs and allocate funding for pytorch CI. If the management is so incompetent that this requires bullying, it doesn't give confidence about AMD's future. There has to be a massive purge, Musk-style. AMD's management seems to be filled with middle-manager salary-drawing airheads with little engineering background - the exact opposite of NVIDIA.

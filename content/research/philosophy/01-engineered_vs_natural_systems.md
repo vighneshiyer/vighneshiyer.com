@@ -100,12 +100,12 @@ This is kind of irrelevant, but is it true that knowledge can only emerge from o
 - Harrison's sam Altman fabs idea
   - Altman was at one point fanatic about opening 100s of fabs in America and investing trillions in doing so
   - What was the point of this? He wanted to bypass an explicitly engineered system! ML is powerful when we can go from spec to implementation, bypassing the human engineered abstractions we use to handle complexity. This has been shown valuable in RF circuits and evolved antenna design.
-  - Ideally:
-- Rtl simulation as a ml model just as physics sim as a ml model, both are engineered systems
+  - Ideally: one-shot generate geometry from RTL (or even from a refined English specification in the extreme case)
+- RTL simulation as a ML model, just as physics sim as a ml model, both are engineered systems
   - Imagine 'learning' RTL simulation using both supervised training and unsupervised, exploration-driven fine-tuning
   - No doubt such a thing can 'work'
-  -
-- An engineered system must be simulatable precisely based on its primitives, natural systems can't be simulated directly but only through the engineered model of the natural world
-- Natural systems, our system, can't be simulated due to 2 things: uncertainty principle, quantum stochasticness
+  - But it doesn't make any sense since you're trying to replicate an engineered algorithm from just data, there is no point in doing this. You can't afford any fuzziness. But this is what a lot of ML for CAD things look like.
+- An engineered system must be simulate-able precisely based on its primitives, natural systems can't be simulated directly but only through an engineered model of the natural world
+  - Natural systems, our system, can't be simulated due to 2 things: uncertainty principle, quantum stochasticness (perhaps there are others)
 - Evolved antennas and rf circuits and photonic waveguides and couplers, ml is powerful when it can break engineered abstractions
   - https://news.ycombinator.com/item?id=43772503
