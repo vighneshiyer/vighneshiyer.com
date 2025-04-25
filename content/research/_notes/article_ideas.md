@@ -107,4 +107,4 @@
 - There is a tendency to look at old inventions / discoveries / innovations and think that if I were alive back then, I could have made the same invention! It's so obvious!
   - For me, looking at the history of computer architecture, there are many things that look so obvious and trivial. For instance, lots of the things worked on by von Neumann seem to be mere undergrad experiments today.
   - Consider things like (https://en.wikipedia.org/wiki/Graph_reduction_machine) or (https://en.wikipedia.org/wiki/SECD_machine). Look at the things that early IBM Fellows did. Look at the work of John Backus. No doubt all these people are far far more intelligent than me. But their work seems so simple?
-  -
+  - Discovery is always hard - there is some insight that can't be seen unless it has already been seen, or through genius. Consider even banal things like a wheel. What enables humans to make these discoveries, and can there be an "AI inventor" in the same way?
