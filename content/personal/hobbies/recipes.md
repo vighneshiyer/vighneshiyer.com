@@ -229,6 +229,16 @@ This is similar to a minestrone soup, with some important modifications.
   - Reduce and caramelize until glossy
   - Add 5g of unsalted butter
   - Low heat and keep warm until serving, top with sesame seeds
+- Tofu and broccoli
+  - Blanch broccoli in salted water and chill in ice water
+  - Cube, add salt+pepper, coat tofu with cornstarch
+  - Grate a few cloves of garlic + 1 in" ginger
+  - Chop green onions and set apart whites and greens
+  - Sauce: 1 tbsp soy sauce, 2 tbsp oyster sauce (use hoisin), 1/2 tsp dark soy sauce, 1 tbsp sugar, 1 tbsp shaoxing wine, 1 tsp of bouilion powder, 1/2 cup water, 1 tbsp cornstarch
+  - Fry tofu for 6-7 minutes until brown, set aside
+  - In oil, fry white parts of green onions, garlic, ginger for 1 minute
+  - Add sauce and reduce 1 minute, add tofu and broccoli and heat through
+  - Turn off heat and add toasted sesame oil + top with green onions
 
 ### Miso Soup
 
