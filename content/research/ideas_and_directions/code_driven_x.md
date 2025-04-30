@@ -29,6 +29,7 @@
   - diagramming
   - 3D CAD
   - PCBs
+    - Skidl, JITX, https://news.ycombinator.com/item?id=43798832 (tscircuit), atopile
   - process engineering / factory floor organization
   - blueprints + building / civil engineering
   - procedural architecture and city design

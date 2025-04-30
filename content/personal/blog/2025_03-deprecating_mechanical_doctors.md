@@ -2,7 +2,7 @@
 title = "Mechanical Doctors are Deprecated"
 date = 2025-05-10
 draft = true
-slug = ""
+slug = "mechanical-doctors-are-deprecated"
 description = "The rise of concierge medicine, AI diagnoses, and the fall of medical cartels"
 +++
 

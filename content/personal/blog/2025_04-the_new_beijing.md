@@ -1,3 +1,10 @@
++++
+title = "The New Beijing"
+date = 2025-05-10
+draft = true
+slug = "the-new-beijing"
+description = ""
++++
 
 - [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) [archive](https://archive.is/rFwoz)
 
@@ -19,3 +26,4 @@ Why should the Chinese pledge fealty to this foreign principle that has no basis
 
 - https://chatgpt.com/c/67eddc32-75c8-8004-8610-6860a403c954 (chat about chinese uprisings and governing philosophy)
 - https://en.wikipedia.org/wiki/Hukou (another example of chinese trying to prevent the downsides of mass urbanization and population concentration that has affected Korean and Japan greatly)
+  - This has been greatly criticized within China as a method of restricting social and economic mobility, but the Chinese know they can't allow city concentration for other reasons that outweigh the one-generation time horizon.

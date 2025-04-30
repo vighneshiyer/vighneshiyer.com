@@ -35,6 +35,7 @@ Just a group of highly motivated and competent people who just kept pushing coll
 > Huuuuuge thank you to our sponsor NVIDIA
 
 - Cuda wasn't application driven, it was first principles driven, Jensen needed to be there to make it happen even when product market got didn't exist for many years even decades, the investment was massive when it didn't seem worth it
+- https://www.youtube.com/watch?v=FtgXueoQkA0 (full video)
 
 ### The Keynote
 

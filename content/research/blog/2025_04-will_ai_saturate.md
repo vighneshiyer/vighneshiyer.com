@@ -94,3 +94,9 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
 - https://simonwillison.net/2025/Apr/21/ai-assisted-search ([HN link](https://news.ycombinator.com/item?id=43752262))
   - Saturation when it comes to novelty, research taste, and discovery isn't relevant when it comes to report generation - that is indeed something humans do poorly and inefficiently.
   - But having an AI generate "trends" based on its report will just echo what people already say, what you need is the ability to collect data, present it, and let intelligent people draw their own conclusions, which are necessarily opinionated
+
+- Is the infinite monkey theorem really true?
+  - Statistically speaking, it "seems" "correct". It doesn't feel reasonable though, if this is the 'scaling law' that LLMs have to contend with, they can't produce great things. Of course, if monkeys could use inductive biases perhaps they could do much better than random, but can they still produce a masterpiece? There is something missing!
+  - https://x.com/Aristos_Revenge/status/1916851455320850478
+  > This is a good way to understand what the weights are in a model. Now consider this exercise with something like a string of text on a picture of a billboard.
+  - This actually cuts to the heart of the issue. What *is* the inductive bias of a language model (or any other kind of model trained with some corpus of normie data)? What does it regress to? Infinite monkeys with the right biases to produce correct grammar, sentence structure, storylines, plots, characters, and dialogue is not enough!

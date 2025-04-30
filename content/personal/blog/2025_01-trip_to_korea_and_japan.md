@@ -2,8 +2,8 @@
 title = "My Trip to Korea and Japan"
 date = 2025-01-10
 draft = true
-slug = "trip-korea-japan"
-description = "Things I saw and random observations"
+slug = "trip-to-korea-and-japan"
+description = "Things I saw and random observations in Korea and Japan."
 +++
 
 ## My Trip to Korea
@@ -349,3 +349,6 @@ Cash is still king in Japan, cards aren't accepted in many places, including the
   - High density to support enough economic activity
   - What else? All I know is it's impossible in America
   - Lowish wages, low prices, no rent seeking, very high efficiency (even if technology isn't used everywhere it could be, the people themselves try to be maximally efficient with their work)
+
+- https://chatgpt.com/share/680d9ca8-e0d4-8004-8046-aedb04000cb9
+  - https://en.wikipedia.org/wiki/Hwabyeong?utm_source=chatgpt.com

@@ -1,3 +1,11 @@
++++
+title = "
+date = 2025-05-10
+draft = true
+slug = "the-new-beijing"
+description = ""
++++
+
 Very early on, got a thinkpad to play with from my dad after he finished his MBA. I think this was sometime in early middle school, around 7th grade.
 installing many random linux distros, it's free!
 damn small linux, ps3 yellow dog linux

@@ -3,7 +3,7 @@ title = "TXT @ Oakland"
 date = 2024-05-18
 draft = true
 slug = "txt-at-oakland"
-description = "I went to a KPop concert"
+description = "I went to a K-pop concert and this is what I saw."
 +++
 
 - Bias, moa, n:1 vs 1:1, demographics, something for everyone, highly manufactured with lyrics

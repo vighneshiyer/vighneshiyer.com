@@ -113,3 +113,4 @@ In general, there is *some* prior work, but it is limited in scope and old.
   - We instead should propose and implement a *methodology* and show that it works on a small scale with reasonable workloads that can be scaled up and applied to any scenario!
 
 - Performance Cloning: A Technique for Disseminating Proprietary Applications as Benchmarks (https://ieeexplore.ieee.org/abstract/document/4086138?casa_token=8SJHteqV4cUAAAAA:n7zaKDDW_GrIsWydonW_bBdMi2AZtrlitT1D9PdqVu3XN5B5Q3QM7i0tJUxh_L8N9V9Z6k5Yhw)
+- https://chatgpt.com/share/680da443-b42c-800e-b8e5-aecae03b6e24 (Where research & tooling must go next in profiling, from Joonho)

@@ -1,3 +1,11 @@
++++
+title = "The Life of Middle America is Grim"
+date = 2025-05-10
+draft = true
+slug = "life-of-middle-america"
+description = ""
++++
+
 - https://news.ycombinator.com/item?id=43744980 (They Were Deactivated from Delivering. Their Finances Were Devastated. (nytimes.com))
 
 I mean just look at what we're dealing with. Instead of a factory job, the American middle class (now increasingly underclass), is doing 'gig work'. This is not even 'unskilled' labor, it is even lower than that.

@@ -725,3 +725,4 @@ Sure, here are a few ideas:
 - https://ericlyun.me/tutorial-asplos2025/ (very impressive set of tools that I didn't appreciate before, all from Yun Liang's lab in Peking University)
   - Hector HLS language and IRs, Cement HDL, Khronos RTL simulator
 - See my email with Scott Beamer and Dustin Richmond - I enumerated languages and they gave some feedback too of ones I missed
+- Unifying Static and Dynamic Intermediate Languages for Accelerator Generators (https://dl.acm.org/doi/pdf/10.1145/3689790)

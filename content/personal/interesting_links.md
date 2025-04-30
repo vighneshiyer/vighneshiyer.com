@@ -56,6 +56,15 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [The LMAX architecture](https://martinfowler.com/articles/lmax.html) in the context of ([HN link: Disruptor-rs: better latency and throughput than crossbeam](https://news.ycombinator.com/item?id=40954104))
 - [Parsing Protobuf at 2+GB/s: How I Learned To Love Tail Calls in C](https://blog.reverberate.org/2021/04/21/musttail-efficient-interpreters.html) ([HN link](https://news.ycombinator.com/item?id=41289114))
+- [Continuous Profiling: Where Have All the Cycles Gone?](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s05/www/papers/p357-anderson.pdf)
+- [Dick Sites: Datacenter Computers - modern challenges in CPU design](https://www.pdl.cmu.edu/SDI/2015/slides/DatacenterComputers.pdf) (see his references too at the end of the talk) ([Talk video](https://www.youtube.com/watch?v=QBu2Ae8-8LM))
+- [Dick Sites Youtube channel](https://www.youtube.com/@dicksites/videos)
+  - [Stanford Seminar - KUtrace 2020](https://www.youtube.com/watch?v=2HE7tSZGna0)
+- [Dick Sites: Understanding Software Dynamics](https://www.oreilly.com/library/view/understanding-software-dynamics/9780137589692/) ([HN link](https://news.ycombinator.com/item?id=40906112))
+- [Dick Sites: Benchmarking "Hello, World!"](https://queue.acm.org/detail.cfm?id=3291278)
+- [My Top 7 Performance Books for Engineers](https://www.jabperf.com/my-top-7-performance-books-for-engineers/)
+  - 1. The Every Computer Performance Book, 3. Understanding Software Dynamics, 4. Systems Performance: Enterprise and the Cloud, 6. The Art of Writing Efficient Programs
+- [Brendan Gregg: Performance Analysis Methodology](https://www.brendangregg.com/methodology.html)
 
 ### Compilers
 
@@ -117,6 +126,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
 - [Taxonomy of RISC-V Vector Extensions](https://fprox.substack.com/p/taxonomy-of-risc-v-vector-extensions)
 - [Three fundamental flaws of SIMD ISAs](https://www.bitsnbites.eu/three-fundamental-flaws-of-simd/) ([HN link](https://news.ycombinator.com/item?id=43783416))
+- [How to Keep Pushing ML Accelerator Performance? Know Your Rooflines!](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10970753)
 
 ### Formal Verification
 
@@ -130,6 +140,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [CACM: Meta’s Hyperscale Infrastructure: Overview and Insights](https://cacm.acm.org/research/metas-hyperscale-infrastructure-overview-and-insights/) ([HN link](https://news.ycombinator.com/item?id=43008920))
 - [Google Search has lost my trust, and I'm not sure where to head next](https://www.androidpolice.com/google-search-engine-lost-my-trust/) ([HN link](https://news.ycombinator.com/item?id=43517828))
   - [The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/), [In Response To Google](https://www.wheresyoured.at/in-response-to-google/), [Requiem for Raghavan](https://www.wheresyoured.at/requiem-for-raghavan/)
+- [Another Periodic Suggestion to Try, Just Try, Switching to Kagi for Search](https://daringfireball.net/2025/04/try_switching_to_kagi) ([HN link](https://news.ycombinator.com/item?id=43829490))
 
 ## Hardware
 

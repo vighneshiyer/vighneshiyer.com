@@ -16,3 +16,11 @@
     - primarily used for kernel developers, not for software engineers
 - security people are full of shit. making counters not visible to userspace is worthless. just give them a CSR to turn off access and let them feel happy.
 - why do we need microarchitecture detail in order to do our tracing / software optimization work? are there really new uarch features or nits that could help, or it is just a matter of system-level optimization?
+
+- https://github.com/dicksites/KUtrace
+- Author of "Understanding Software Dynamics", an excellent book on performance optimization and profiling
+- https://www.youtube.com/@dicksites/playlists (his videos are excellent)
+- https://www.youtube.com/watch?v=QBu2Ae8-8LM ( Dick Sites - "Data Center Computers: Modern Challenges in CPU Design" )
+  - Slides: https://www.pdl.cmu.edu/SDI/2015/slides/DatacenterComputers.pdf
+- Continuous Profiling: Where Have All the Cycles Gone? (https://www.cs.cmu.edu/afs/cs/academic/class/15745-s05/www/papers/p357-anderson.pdf) (a good paper from the DEC era)
+- https://chatgpt.com/share/680ea221-56d0-8001-a1d3-3df9ab157f74

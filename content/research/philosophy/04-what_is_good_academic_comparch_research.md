@@ -611,7 +611,6 @@ Joonho's notes about research areas:
 - https://people.eecs.berkeley.edu/~krste/papers/ramp-TR-05-1412.pdf
 - https://users.elis.ugent.be/~leeckhou/papers/hpca2025-hilp.pdf
 
-
 - RAMP era papers
   - https://dl.acm.org/doi/abs/10.1145/1815961.1815999
   - https://dl.acm.org/doi/pdf/10.1145/1837274.1837390
@@ -619,6 +618,14 @@ Joonho's notes about research areas:
   - https://dl.acm.org/doi/abs/10.1145/2775054.2694362
 
 - Don't sweep the design space but build the design space!
+
+- Was talking about the tracing project after talking with Dick Sites.
+  - Application-oriented/driven research is iffy at best.
+  - We need to get past problem-oriented solutions or even worse solution-oriented problems.
+  - The thing to do is *study* some *thing*. Understand it deeply. That is valuable itself. See all of Krste's work. It all falls into this pattern.
+  - Even the 'application-driven' research of PARLAB was to discover fundamental patterns/motifs of parallel algorithms, not about application-driven microarchitectures.
+  - Academics need to focus on *study* of an engineering discipline using engineering. Not on nit engineering itself. It is about tradeoff analysis, error analysis, deep understanding.
+  - The profiling story is basically this. kutrace isn't just the end-all of everything. as academics, we have to go beyond solutions people developed. We have to establish absolute ground truth.
 
 ### Distinguishing PIs from Researchers
 
