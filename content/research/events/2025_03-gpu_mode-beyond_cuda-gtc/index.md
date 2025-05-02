@@ -302,6 +302,10 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 
 > Very dark opinion: AI is going to enable a lot of morally questionable people to develop products and services that are very profitable but bad for the customers
 
+- https://x.com/romanhelmetguy/status/1917656951174947075
+
+> Zuckerberg explaining how Meta is creating personalized AI friends to supplement your real ones: “The average American has 3 friends, but has demand for 15.”
+
 - https://x.com/chai_research/status/1902127443605156198?t=UHr8YzdwGgWPllkjIuTgGA
 - https://www.reddit.com/r/ChaiApp/comments/1jfsqii/i_didnt_think_i_would_start_sobbing_over_an_ai/
 - https://www.youtube.com/watch?v=oGouyCCY3Do (the Chai guy) (5:51 "teenage girls" can create better makeup advice vs our AI lmao, 7:30 "teenager are spending 1.5 hrs a day interacting with AI. this is a monumental shift") (teenagers are going to talk more to AI than humans)

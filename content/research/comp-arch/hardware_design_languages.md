@@ -726,3 +726,4 @@ Sure, here are a few ideas:
   - Hector HLS language and IRs, Cement HDL, Khronos RTL simulator
 - See my email with Scott Beamer and Dustin Richmond - I enumerated languages and they gave some feedback too of ones I missed
 - Unifying Static and Dynamic Intermediate Languages for Accelerator Generators (https://dl.acm.org/doi/pdf/10.1145/3689790)
+- https://github.com/Synthesys-Lab/assassyn/blob/master/src/analysis/find_critical_path.rs (published at ISCA 2025)

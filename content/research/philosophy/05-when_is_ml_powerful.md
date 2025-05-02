@@ -37,7 +37,8 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
 - ML inside the loop (heuristics) vs ml outside the loop (hyper parameter tuning) vs ml monolithic (either as regression for ppa estimation from hls or rtl or for generation where it tries to subsume the cad algorithm)
 - In the loop e.g. simulated annealing move decision
   - Another ml in the loop is clause selection in cdcl
-- Out of the loop e.g. DSo.ai, simulated annealing parameter guessing, Sat solver selectionRl for tuning within the algorithm, placement example iteratively or sizing like keertana, also iterative. What alpha chip did wrong, formulate optimization as a game, it is easy to do and feels human like but it isn't as good as optimization methods
+- Out of the loop e.g. DSo.ai, simulated annealing parameter guessing, Sat solver selection
+  - Rl for tuning within the algorithm, placement example iteratively or sizing like keertana, also iterative. What alpha chip did wrong, formulate optimization as a game, it is easy to do and feels human like but it isn't as good as optimization methods
 - The evolution of fsd from a rule based extraction engine with lots of explicit code to the end to end ml approach
 
 ## From Alberto's Haas Fireside Chat on 4/1/2025

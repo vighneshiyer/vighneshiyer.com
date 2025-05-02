@@ -32,10 +32,16 @@
   - Ford / GM are dead in the water and they don't even know it.
 - The Mark Rober hoax
   - The Lidar hoax continues to irritate me. It is obvious to me that vision is sufficient. Lidar has so many failure modes that vision doesn't: rain, fog, smoke, snow, occulusion, sensor fusion errors, sensor fusion inconsistency resolutions
-  - There have been many experiments by non-conflicted people (unlike Rober who's friend is the CEO of a lidar company) and indeed, FSD 13.2 on HW4 doesn't have any failure mode like what Rober demonstrated. Perhaps older neural networks on FSD 12.x are worse, but 13.2 is a huge leap in performance.
+  - There have been many experiments by non-conflicted people (unlike Rober who's friend is the CEO of a lidar company) and indeed, FSD 13.2 on HW4 doesn't have any failure mode like what Rober demonstrated. Perhaps older neural networks on FSD 12.x are worse especially on HW3, but 13.2 on HW4 is a huge leap in performance.
 - On Waymo
   - Right now, it feels that Waymo has a lock on the self-driving scene. They have real deployments, millions of miles driven, revenue, satisfied customers. They are expanding.
   - But they don't own the automotive stack. They retrofit cars. This doesn't scale easily. Tesla has factories churning out 10000+ cars per month. Waymo can't do that.
   - Waymo has to sink a huge cost into every car. Expensive sensors and Lidar. Breakeven is hard to achieve.
   - They rely on HD maps, pre-mapped routes, and sensor fusion. They exhibit failure modes that Teslas don't. They are geofenced - they can't drive on highways.
 - https://www.youtube.com/watch?v=mz8dOCboDz8 ( Comparison of Tesla FSD with 7 Chinese ADAS Systems. | Tesla FSD in China )
+  - There is no doubt that even in a geofenced market like China where Tesla can't export any Chinese training data to America for model refinement, Tesla is still far ahead
+- https://www.youtube.com/watch?v=s5IVI3OpVVs ( I Forgot How Good Tesla FSD Actually Is... )
+  - How does no one see this? Shilling Mercedes "Level 3" system and trying to compare it with this is absolutely insane. FSD is too good.
+  - Not just wrt safety, but also all the human aspects of driving - anticipating other vehicle movements, speculation, smoothness of driving and acceleration
+- https://www.youtube.com/watch?v=dKroGHcWeiQ&t=17s ( Tesla FSD sees further than I do. I thought it had made a mistake again. | Tesla FSD in China )
+  - More amazing feats: https://www.youtube.com/watch?v=s2GwXdhstJo ( Nighttime Tire Recognition Ability: Huawei Aito ADS vs. Tesla FSD. | Tesla FSD in China )
