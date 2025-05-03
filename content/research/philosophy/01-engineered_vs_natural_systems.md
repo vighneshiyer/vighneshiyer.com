@@ -113,3 +113,52 @@ This is kind of irrelevant, but is it true that knowledge can only emerge from o
   - Natural systems, our system, can't be simulated due to 2 things: uncertainty principle, quantum stochasticness (perhaps there are others)
 - Evolved antennas and rf circuits and photonic waveguides and couplers, ml is powerful when it can break engineered abstractions
   - https://news.ycombinator.com/item?id=43772503
+
+## Random Notes During Prelude to Group Meeting
+
+Natural systems, two things, they have unknowable or incomplete axioms, they can't be perfectly simulated, see uncertainty principle or godel incompleteness, quantum randomness
+Our physical world and number theory
+How do we study natural systems? That is science
+
+Engineered systems, but wait then is the study of biology the study of a natural system? Something is missing.
+
+Evolved systems, they can evolve naturally or by explicit engineering, no clean abstractions but only vague ones, shapeless,
+
+- FSD rule based to fully learned, not like Waymo
+- The Altman approach to chip design isn't about mimicing the engineered system with all its abstractions. It is about breaking those abstractions in the first place into an engineered evolved system that can understand and optimize for *the* natural system better than human engineered systems.
+- Trying to build engineered evolved systems that mimic natural evolved systems! Not trying to mimic engineered systems!
+- Symbolic AI is a form of engineered system - there is no evolution, but it is fully human specified with rules and knowledge / common sense. It has natural limitations. Linguistics is the same way - trying to engineer a system that mimics a naturally evolved system, when the engineered evolved system works even better.
+
+Out of distribution is a major issue for evolved engineered systems - the natural system itself doesn't have this problem - it is axiomatic! The naturally evolved system is also present in the natural world (e.g. drug discovery by trying random compounds on in-vitro cell cultures). However this is a fatal flaw for the evolved engineered system trying to mimic an engineered system - the solution is to use each system when appropriate, but that is hard.
+
+When ml is powerful is when it is used to model or generate the output of an evolved natural system. When it is applied to the right side, an engineered system, it has to be carefully used, in and/or out of the algorithm loop. Going left, we think generative ai is powerful but going right, in the loop or out the loop is better.
+
+Generative can be in terms of the the usage of ml being end to end or also in the sense that ml generates the algorithm itself (program synthesis), I guess that is just a constrained version of the ml only approach which is just more interpretable
+
+Evolved engineered systems also need an engineered evolution function that works through a fuzzy abstraction, I'm missing that
+
+Need to talk about aeroplane and how they came before the theories of aerodynamics or even those models, I'm talking about systematic engineering vs ad hoc engineering which is more fuzzy and hypothesis driven, more in the area of science
+
+## Random Notes (post-group meeting)
+
+- Lucy had some thoughts she wrote down - check Slack when updating this article.
+
+Function approximates being chained with some Bayesian error limits should be doable right? Yeah but the abstractions are still fixed. Chaining function approximators should give us at least a time benefit over the engineered solution right? Yeah I agree with that. It can be done, but I would say it doesn't break any abstractions and is thus not a boon for QoR (perhaps for design iteration time). Furthermore, can't we improve those algorithms themselves?
+
+A common issue with traditional CAD algorithms is they always start from scratch with no prior knowledge. It doesn't have to be that way. We can incorporate embeddings, hyperparameter estimates, and so forth from prior runs + generalization. We can use RL. Surely that in-the-loop and around-the-loop approach will be computationally superior to the approximation and chain strategy.
+
+There seems to be some tradeoff of model size, rlhf ness, time horizon for a task, and randomness / entropy needed to get a solution
+I predict that with enough sampling and rlhf and self play with human guided objectives, we will degrade aspects of the model like o3 hallucinations, but with enough sampling we can overcome that and do long time horizon tasks
+Importantly, I think only mechanistic reasoning that is expressible in language or even abstract thought described in language is doable. I do believe that true discovery or innovation is of a different nature and there is some magic that is inherently limiting to AI, the saturation point
+I think there is a difference between mechanistic reasoning and innovative intuition that I can't explain
+
+- Resources
+  - Simon's The Sciences of the Artificial: https://en.wikipedia.org/wiki/The_Sciences_of_the_Artificial
+  - "Gödel, Escher, Bach: An Eternal Golden Braid" by Douglas Hofstadter (Amazon): This book explores the interplay between logic, art, and the mind, touching on themes of incompleteness and self-reference, which relate to your mention of Gödel’s incompleteness and the challenges of fully simulating natural systems.
+  - "The Emperor's New Mind" by Roger Penrose (Amazon): Penrose discusses the limits of formal systems and the role of consciousness in understanding the universe, tying into your thoughts on natural systems, uncertainty, and the limitations of engineered systems.
+
+Where does randomness fit into the picture? Is it part of the natural system (and which part) or it is part of an engineered model of noise / randomness? Do quantum random effects become visible in the macro scale? What is the philosophy of mechanistic processes?
+
+It is certainly not the case that 'replicating' the functionality of an engineered algorithim is useless. Take synthesis for example, certainly we can learn a 'one-shot' model which takes RTL to a gate level netlist. In doing so, let's say with infinite training data (starting with bootstrapping from a CAD tool and then doing self-play and RL evolution with human designed reward functions), I can't imagine a world where this wouldn't outperform the hand-engineered CAD algorithms. Synthesis tools have many internal engineered abstractions and pass ordering, which can be suboptimal in many cases - certainly those could be subsumed by an ML blob. So this is a case where Ken has a good point and my theory needs some refinement.
+
+Engineered systems are hierarchical. That is something I failed to mention. This also applies to naturally evolved systems. If we can break abstractions on some part of that hierarchy while preserving others, that is another case where ML is powerful (e.g. within synthesis for example). It doesn't mean that for ML to be powerful it has to mimic a naturally evolved system - it can also be used in a generative fashion within an algorithmic hierarchy, but only will be valuable if it can break abstractions.

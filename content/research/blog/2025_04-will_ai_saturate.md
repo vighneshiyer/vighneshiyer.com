@@ -100,3 +100,11 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
   - https://x.com/Aristos_Revenge/status/1916851455320850478
   > This is a good way to understand what the weights are in a model. Now consider this exercise with something like a string of text on a picture of a billboard.
   - This actually cuts to the heart of the issue. What *is* the inductive bias of a language model (or any other kind of model trained with some corpus of normie data)? What does it regress to? Infinite monkeys with the right biases to produce correct grammar, sentence structure, storylines, plots, characters, and dialogue is not enough!
+
+- https://en.wikipedia.org/wiki/The_Singularity_Is_Near
+  - Looking at this plot (https://en.wikipedia.org/wiki/The_Singularity_Is_Near#/media/File:PPTExponentialGrowthof_Computing.jpg)
+  - It seems insane on its face that one would equate 'all human brains' as just 'one human brain' X 'number of humans'
+  - The value of some brains is infinitely more than the vast majority of others.
+  - Consider, if you had an army of 100 IQ AIs (or humans for that matter). No matter how much randomness you generate, no matter how much you sample their streams of thought, no matter how many tokens you flush in and out, they will never be able to produce discoveries and insights of a single 140 IQ person
+  - There is no 'scaling' you can apply here - some seem to believe as we have exponential scaling of compute, we can just spawn millions of AIs, but if the base capability of them can never produce 'intelligence' with respect to the capacity for independent thought and discovery, then the consortium of them will not either.
+  - One single high IQ brain can produce discoveries and art that no number of monkeys on typewriters can ever hope to replicate.
