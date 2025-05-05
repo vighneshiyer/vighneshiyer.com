@@ -1,6 +1,9 @@
 +++
 title = "Interesting Websites"
 date = 2024-02-12
+draft = true
+slug = "interesting-websites-rss"
+description = ""
 +++
 
 Here are some websites that I generally find interesting.
@@ -34,6 +37,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://graymirror.substack.com/
 - https://www.aporiamagazine.com/
 - https://www.theconundrumcluster.com/
+- https://claytonwramsey.com/blog/
 
 China:
 

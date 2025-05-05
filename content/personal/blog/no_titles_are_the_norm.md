@@ -1,3 +1,11 @@
++++
+title = "No One Uses Titles Anymore"
+date = 2025-05-10
+draft = true
+slug = "no-titles-no-respect-psuedo-flat-society"
+description = ""
++++
+
 # Lack of Respect - Flat Hierarchy
 
 - What does it reflect? No professors want to be called professor anymore. They want to be your 'peers'. Same with your manager or boss. And even teachers are starting to make this fade. What is the problem here? Is it just a curse of modernity?

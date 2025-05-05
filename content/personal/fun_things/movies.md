@@ -1,7 +1,16 @@
-# Movies
++++
+title = "Movies"
+date = 2024-02-12
+draft = true
+slug = "movie-reviews"
+description = ""
++++
+
+So I really don't like movies. But sometimes I see a few. Mostly while on airplanes. Here is what I think of the ones I've seen and bothered to write about.
 
 ## The Angry Birds Movie
 
+- I saw this on a flight to somewhere a while ago
 - I love it
 - all the essentials of a plot are there and shine, plot is very easy to follow (of course, it is a kid's movie) (hard to follow plot doesn't make a movie bad btw)
 - red bird is very relatable and sweet, lots of distinct characters that are developed super fast since they are human archetypes
@@ -9,6 +18,7 @@
 
 ## Equinox Flower
 
+- I saw this at BAMPFA
 - director: yasujiro ozu (good face)
 - so beautiful, so japanese
 - cute plot, a bit drawn out, but still nice
@@ -16,6 +26,7 @@
 
 ## Yi Yi
 
+- I saw this at BAMPFA
 - director: edward yang (suspicious face)
 - ugly, bad, wtf who would consider this one of the best movies of the 21st century? absolutely insane people.
 - the only good scene was japanese (set in japan, with a japanese character)
@@ -53,6 +64,7 @@ Some reviews I found on IMDB that match my experience (the movie is critically a
 
 ## One Week Friends (2022, Chinese Adaptation)
 
+- i saw this on a flight somewhere, to NYC I think?
 - i've never seen the Japanese version
   - i would want to see the japanese version next
 - very sweet and nice movie, i liked it, i appreciate the theme of friendship over romantic love

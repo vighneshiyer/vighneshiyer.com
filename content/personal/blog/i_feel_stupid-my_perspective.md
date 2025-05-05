@@ -1,3 +1,11 @@
++++
+title = "'I Feel Stupid' - My Perspective"
+date = 2025-05-10
+draft = true
+slug = "low-self-esteem-undergrads"
+description = ""
++++
+
 Common feeling of high achieving undergrads and even people in high school and below.
 Caused by comparison with others and lack of acceptance of intrinsic limitations.
 Discuss the notion of intelligence, the correlation to IQ, and what it means wrt the field and sub-speciality you can realistically work in and make an impact in.

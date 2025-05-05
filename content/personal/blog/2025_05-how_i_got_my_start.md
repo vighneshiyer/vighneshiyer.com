@@ -1,8 +1,8 @@
 +++
-title = "
+title = "My Early Education / Exploration"
 date = 2025-05-10
 draft = true
-slug = "the-new-beijing"
+slug = "getting-started-in-life"
 description = ""
 +++
 

@@ -1,3 +1,11 @@
++++
+title = "There is Nothing To Do Here"
+date = 2025-05-10
+draft = true
+slug = "nothing-to-do"
+description = ""
++++
+
 A common refrain about rural living (or even life in Cupertino for that matter): "there is nothing to do". "What is there to do around here?"
 
 - 'nothing to do' syndrome

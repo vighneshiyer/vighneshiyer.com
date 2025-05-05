@@ -1,4 +1,16 @@
-# Principles
++++
+title = "Principles and How to Find Them"
+date = 2025-05-10
+draft = true
+slug = "my-principles"
+description = ""
++++
+
+## Internal Principles
+
+- How did the ancients see this? Contrast the competing views of the classical Greeks.
+
+## External Principles
 
 - Perhaps this is another way of saying 'values' or 'philosophy'.
 - Every company has some version of this, and the big corporate ones are just meaningless

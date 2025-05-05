@@ -1,9 +1,10 @@
 +++
-title = "Tea"
+title = Gongfu Tea"
 date = 2024-07-08
+draft = false
+slug = "gongfu-tea"
+description = ""
 +++
-
-## Gongfu
 
 [Gongfu](https://en.wikipedia.org/wiki/Gongfu_tea) is a Chinese tea brewing methodology that incorporates many infusion cycles and small brewing volumes to explore the many slices of flavors in a single tea.
 
@@ -14,13 +15,13 @@ Sources:
   <a href="https://www.hugotea.com/blogs/making-tea/gongfu">Hugo Tea Company: GONGFU (small-format tea steeping)</a>.
 </small>
 
-### Equipment
+## Equipment
 
 It is recommended that you purchase each piece separately rather than buying a set to work your way into all the equipment.
 However, sets are also nice, especially when they are aesthetically consistent and beautiful.
 I've included links to examples of these equipments.
 
-#### Must Haves
+### Must Haves
 
 Loose leaf tea ([example](https://yunnansourcing.us/collections/curated-tea-samplers/products/starter-pack))
 : The tea itself! Although you can brew tea from a bag or with a strainer, one purpose of Gongfu is to let whole tea leaves open up and spread their flavor
@@ -40,7 +41,7 @@ Filter ([example](https://teaware.house/collections/tools-and-tea-accessories/pr
 Kettle
 : Some way to boil water (ideally with fine temperature control).
 
-#### Nice-to-Haves
+### Nice-to-Haves
 
 - Fairness kettle ([example](https://yunnansourcing.us/collections/cha-hai/products/wood-fired-kiln-cu-tao-clay-cha-hai))
   - After brewing tea in the gaiwan, it is poured into this kettle so you can immediately begin brewing the next infusion in the gaiwan
@@ -53,7 +54,7 @@ Kettle
 - Tea tongs ([example](https://teaware.house/collections/tools-and-tea-accessories/products/bamboo-sliver-tea-tongs))
   - It is nice to use tongs to invert tea cups on the tea tray to discard water used for preheating and tea leaf washing
 
-#### Completing a Set
+### Completing a Set
 
 - Tea storage ([example](https://teaware.house/collections/tools-and-tea-accessories/products/red-jun-yao-porcelain-tea-jar))
   - A pot to store tea leaves after opening any packaging
@@ -72,16 +73,20 @@ Kettle
   - Tea towel for wiping teacups after preheating and discard
   - Coasters for the teacups
 
-### Setting the Environment
+### My Tea Set
+
+- TODO: add photos here
+
+## Setting the Environment
 
 To me, it seems that gongfu is best enjoyed in a small room with floor seating.
 A cool open breeze is ideal.
 Lighting some incense is also a good idea.
 Playing some light instrumental music might be good too.
 
-### The Flow
+## The Flow
 
-#### Prep
+### Prep
 
 1. Set the tea tray, tea cups, gaiwan, and fairness kettle in place
 1. Pick the tea and weigh and set aside the correct amount of leaves. Use a presentation vessel to show the leaves to guests. Use a pick to pick apart pu'er cakes.
@@ -95,13 +100,13 @@ Playing some light instrumental music might be good too.
   - Oolong: 95°C
   - Pu'er: 95-100°C
 
-#### Preheating
+### Preheating
 
 1. Pour water into the gaiwan, let it sit for 10 seconds, and pour it out into the fairness kettle
 1. Then pour from the fairness kettle into the tea cups and let them heat up briefly
 1. Use tongs to discard the water in the tea cups over the tea pet
 
-#### Washing
+### Washing
 
 1. Add tea leaves to the gaiwan
 1. Pour hot water into the gaiwan and let it sit for 10 seconds
@@ -113,7 +118,7 @@ Playing some light instrumental music might be good too.
   - Wash *raw* pu'er once for 20 seconds
   - Wash *ripe* pu'er twice for 15 seconds each time
 
-#### Brewing and Distribution
+### Brewing and Distribution
 
 It's time to extract drinkable tea from the leaves.
 
@@ -127,8 +132,7 @@ It's time to extract drinkable tea from the leaves.
 
 ## Stores
 
-[/r/tea vendor list](https://www.reddit.com/r/tea/wiki/vendors/page_01/)
-
+- [/r/tea vendor list](https://www.reddit.com/r/tea/wiki/vendors/page_01/)
 - Tea
   - [Yunnan Sourcing](https://yunnansourcing.com/) (everything from Yunnan)
   - [o-cha](https://www.o-cha.com/) (Japanese green tea and matcha)

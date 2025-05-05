@@ -26,6 +26,9 @@ Look at the prior article.
 
 - https://ankitmaloo.com/bitter-lesson/
 
+- https://www.youtube.com/watch?v=hFlF33JZbA0
+  - Bitter Lesson: "Assuming 1) abundant compute and 2) abundant data, learning always beats inductive biases"
+
 ## One Shotting
 
 Is one shotting possible? From RTL to GDS? In principle, why not? It can certainly be done, and we have good reason to believe that from computer vision and language models.

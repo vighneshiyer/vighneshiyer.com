@@ -40,6 +40,7 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
 - Out of the loop e.g. DSo.ai, simulated annealing parameter guessing, Sat solver selection
   - Rl for tuning within the algorithm, placement example iteratively or sizing like keertana, also iterative. What alpha chip did wrong, formulate optimization as a game, it is easy to do and feels human like but it isn't as good as optimization methods
 - The evolution of fsd from a rule based extraction engine with lots of explicit code to the end to end ml approach
+  - https://www.youtube.com/watch?v=hFlF33JZbA0 (see 30:29) (FSD in 2023 was Images -> 3D -> actions, and in 2024 images -> actions directly, FSD 12.5 replaced 300k lines of C++ logic with a end-to-end NN blob)
 
 ## From Alberto's Haas Fireside Chat on 4/1/2025
 

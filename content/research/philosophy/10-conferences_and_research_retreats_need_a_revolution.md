@@ -43,6 +43,117 @@ I'll leave some comments about how each of these went.
   - Same issue: no clear topic or goals in mind. No conclusion was drawn. After talking started, everything degenerated into chaos with topics being jumped to and from constantly.
     - Need to comment on a specific proposal rather than commenting on generic problems
 
+Musk's rules for productivity:
+
+- 1) Avoid large meetings. Large meetings waste valuable time and energy.
+- They discourage debate
+- People are more guarded than open
+- There’s not enough time for everyone to contribute
+- Don’t schedule large meetings unless you’re certain they provide value to everyone.
+
+- 2) Leave a meeting if you’re not contributing
+- If a meeting doesn’t require your: Input Value Decisions
+- Your presence is useless. It’s not rude to leave a meeting. But it’s rude to waste people’s time.
+
+- 3) Forget the chain of command
+- Communicate with colleagues directly. Not through supervisors or managers. Fast communicators make fast decisions. Fast decisions = competitive advantage.
+
+- 4) Be clear, not clever
+- Avoid nonsense words and technical jargon. It slows down communication.
+- Choose words that are: Concise To the point Easy to understand
+
+- 5) Ditch frequent meetings
+- There’s no better way to waste everyone’s time.
+- Use meetings to: Collaborate Attack issues head-on Solve urgent problems
+- But once you resolve the issue, frequent meetings are no longer necessary.
+- You can resolve most issues without a meeting.
+
+- 6) Use common sense
+- If a company rule doesn’t: Make sense Contribute to progress Apply to your specific situation
+- Avoid following the rule with your eyes closed. Don’t follow rules. Follow principles.
+
+- https://news.ycombinator.com/item?id=33707022 (High-documentation, low-meeting work culture (tremendous.com)) (https://www.tremendous.com/blog/the-perks-of-a-high-documentation-low-meeting-work-culture)
+    - No 'regular' meetings, no 'check-ins', no 'status updates'
+    > It’s not just about the meeting, which is itself a thirty to sixty-minute intrusion on someone’s day. It’s about the time wasted anticipating a meeting, where people feel they don’t have the time to plunge into an important project. 
+    >
+    > It’s also about the 15 or so minutes after the meeting when people are reorienting their frame of mind to tackle the problems they were focused on before the interruption.
+- How should presentations be done? Should we follow the Amazon strategy of document first - then meeting only for discussion?
+- https://writingcooperative.com/the-anatomy-of-an-amazon-6-pager-fc79f31a41c9
+- https://www.justingarrison.com/blog/2021-03-15-the-document-culture-of-amazon/
+
+- Amazon memo vs meeting strategy (https://twitter.com/nathanbaugh27/status/1605215781268111360)
+> Jeff Bezos said:
+>
+> “There is no way to write a six-page narratively structured memo and not have clear thinking.”
+>
+> Bezos made Amazon into a writing culture by banning powerpoint and forcing everyone to write 6-page memos for meetings.
+>
+> He called them “narratives.”
+>
+> Amazon uses a tailored process and specific writing guidelines to make this happen.
+>
+> But finding *credible* info on what actually goes into these memos is quite difficult.
+>
+> Most of it conflicts with each other.
+>
+> The most credible source I found was Jesse Freeman, who spent five years at Amazon and writes frequently on Medium.
+>
+> He says each memo is structured around the same 6 components:
+>
+> • Intro
+> • Goals
+> • Tenets
+> • Current state
+> • Lessons learned
+> • Strategy
+>
+> Here’s his deep dive on the components: http://writingcooperative.com/the-anatomy-of
+>
+> The structure is remarkably similar to that of a story.
+>
+> • Intro = Hook
+> • Goals and Tenets = Stakes
+> • State = Setting and Backstory
+> • Lessons and Strategic priorities = Plot
+>
+> That’s on purpose…
+>
+> Here’s the email from Bezos outlawing PPT.
+>
+> “The narrative structure… forces better thought and better understanding.
+>
+> PPT-style presentations give permission to gloss over ideas, flatten out any sense of relative importance, and ignore the interconnectedness of ideas.”
+>
+> For the first 20 minutes of each meeting, Amazon holds silent meetings.
+>
+> Each attendee gets 20 minutes to read the document.
+>
+> Then they spend the rest of the meeting tearing apart the ideas it presents.
+>
+> Writing a narrative forces a deep understanding of the ideas presented.
+>
+> Errors in your setting, people notice.
+>
+> Errors in your plot, people notice.
+>
+> Errors in your logic, people notice.
+>
+> This idea is as true for business writing as it is for fantasy.
+>
+> To me, Amazon’s writing and narrative focus does three things:
+>
+> 1. Prioritizes clear thinking
+> 2. Puts idea generation on the individual
+> 3. Makes knowledge transfer easy
+>
+> Plus, imagine how many pointless calls you’d eliminate if the call owner had to write a six-page paper.
+
+
+- The interesting part to me isn’t in the format of the document, but how it is used. Meetings start with reading. Depending on the length of the document, we’ll read anywhere from ten minutes to half an hour. If the meeting has a long document (six-pagers are the longest) and many attendees, the meeting will be scheduled for enough time to read and discuss.
+
+- https://managementconsulted.com/amazon-memo/
+    - Another article on the composition of the Amazon memo
+
 # Article from Yufeng
 
 > ByteDance market this thing as the "SamePage Meeting method" in their EN software Lark, but I think the EN articles are not talking about quite the same thing

@@ -1,6 +1,9 @@
 +++
 title = "Interesting Links"
 date = 2024-02-12
+draft = true
+slug = "interesting-pages-on-the-web"
+description = ""
 +++
 
 Here are a bunch of things from around the internet that I find interesting.
@@ -164,6 +167,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Applications
 
 - [No elephants: Breakthroughs in image generation](https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image) ([HN link](https://news.ycombinator.com/item?id=43590569)) (March 2025)
+- [Jon Barron (Deepmind) - Radiance Fields and the Future of Generative Media](https://www.youtube.com/watch?v=hFlF33JZbA0)
 
 ### Predictions
 
@@ -201,6 +205,26 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Irrational Analysis: Tenstorrent and the State of AI Hardware Startups](https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware)
 - [Corsix: Tenstorrent Wormhole Series Part 1: Physicalities](https://www.corsix.org/content/tt-wh-part1) (A highly detailed 7-part series on the Wormhole architecture and programming model)
+
+## Mathematics
+
+- [Scott Aaronson | How Much Math Is Knowable?](https://www.youtube.com/watch?v=VplMHWSZf5c)
+- [3B1B - But what is quantum computing? (Grover's Algorithm)](https://www.youtube.com/watch?v=RQWpF2Gb-gU)
+- [Computational Phenomena in Physics | Scott Aaronson](https://www.youtube.com/watch?v=boZyu6NhAcI)
+- [Introduction to Information Theory - Edward Witten](https://www.youtube.com/watch?v=XYugyhoohhY)
+- [Edward Frenkel - Where Does Mathematics Come From?](https://www.youtube.com/watch?v=cLV2S8zsLdw&list=PLplZlMKmYMNFUDJny5w1ocKitK2aEI76h&index=24)
+- [Edward Frenkel - Math is the Source Code of Human Mind](https://www.youtube.com/watch?v=glQEM7hjdus&list=PLplZlMKmYMNFUDJny5w1ocKitK2aEI76h&index=25)
+- [Fumiharu Kato - Why is Number Theory So Difficult?](https://www.youtube.com/watch?v=4QRk-deWkRo&list=PLplZlMKmYMNFUDJny5w1ocKitK2aEI76h&index=26)
+- Simons Foundation
+  - [Terence Tao - Machine-Assisted Proofs (February 19, 2025)](https://www.youtube.com/watch?v=5ZIIGLiQWNM)
+  - [Leonardo de Moura - Verified Collaboration: How Lean is Transforming Math...(March 12, 2025)](https://www.youtube.com/watch?v=rmMYFmlUbJ8&list=PLWAzLum_3a18G4fSykHHaFoPKVgrGrchK&index=2)
+  - [Shirley Ho - The First AI Simulation of the Universe is Fast and Accurate (February 26, 2020)](https://www.youtube.com/watch?v=fXhgMRZjDuM)
+  - [Miles Cranmer - The Next Great Scientific Theory is Hiding Inside a Neural Network (April 3, 2024)](https://www.youtube.com/watch?v=fk2r8y5TfNY)
+  - [Lenka Zdeborová - Statistical Physics of Machine Learning (May 1, 2024)](https://www.youtube.com/watch?v=TLHYwbrhGJc)
+  - [Yann LeCun - Could Machines Learn Like Humans? (February 6, 2019)](https://www.youtube.com/watch?v=A8Ry_fhTk_s)
+  - [Stéphane Mallat - Learning Physics with Deep Neural Networks (October 17, 2018)](https://www.youtube.com/watch?v=0DEJ4QL5bcs)
+  - [Matthew Botvinick - AI as a Window on Human Intelligence (December 7, 2022)](https://www.youtube.com/watch?v=BJMVHNj-X6Q)
+  - [Michele Parrinello - Machine learning and molecular dynamics (April 10, 2019)](https://www.youtube.com/watch?v=vnlwE_Sb9ds)
 
 ## Design
 

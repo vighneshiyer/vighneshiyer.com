@@ -1,6 +1,9 @@
 +++
 title = "Credit Cards"
 date = 2024-02-12
+draft = true
+slug = "credit-cards-and-churning"
+description = ""
 +++
 
 ## Spending Strategy

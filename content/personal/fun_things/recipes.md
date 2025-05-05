@@ -1,9 +1,12 @@
 +++
 title = "Recipes"
 date = 2024-03-23
+draft = false
+slug = "recipes-and-food"
+description = ""
 +++
 
-A bunch of random recipes I like or I thought were interesting.
+A bunch of recipes and cooking information I like or think is interesting.
 
 ## General Methodologies
 
@@ -190,6 +193,8 @@ This is similar to a minestrone soup, with some important modifications.
 - Preparation of a separate vegetable broth using all the vegetable scraps, simultaneously with the soup production
 - Fennel seeds used in the base soup seasoning and fennel flower/pollen powder used as garnish
 - Whole cooked sorana beans are added to the soup
+
+## Oriental Foods
 
 ### Ramen
 

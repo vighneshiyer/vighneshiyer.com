@@ -52,6 +52,8 @@ Correct the definitions of 2.5D integration itself vs the usage of a silicon int
   - Yield and cost modeling is always suspect, but I can appreciate the high-level methodology and modeling even if the numbers aren't accurate. That part isn't taken seriously anyways.
 - Chiplet Cloud
   - These guys make very strong claims based on completely fake numbers and napkin math and I don't like that.
+- https://semiengineering.com/challenges-of-optimizing-end-to-end-communication-and-workload-partitioning-in-mcm-accelerators/
+  - https://arxiv.org/abs/2505.00041 (just...)
 
 ### "Scheduling" and "Optimization"
 
@@ -69,6 +71,10 @@ Correct the definitions of 2.5D integration itself vs the usage of a silicon int
 ### 3D Stacking
 
 https://semiwiki.com/ip/349657-maximizing-3dic-design-productivity-with-3dblox-a-look-at-tsmcs-progress-and-innovations-in-2024/
+
+### "Security"
+
+- https://semiengineering.com/cyber-threats-multiply-with-commercial-chiplets/
 
 ### How Were My Predictions from 2023?
 

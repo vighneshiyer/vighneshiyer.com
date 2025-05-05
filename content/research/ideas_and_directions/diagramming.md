@@ -124,3 +124,7 @@ My GPT queries:
   - https://www.reddit.com/r/programming/comments/12gi908/d2_texttodiagram_language_introducing_grid/
   - https://text-to-diagram.com/?b=mermaid&example=shapes
   - Mermaid isn't that great in comparison
+- https://raw.githubusercontent.com/Jollywatt/typst-fletcher/refs/heads/master/docs/manual.pdf
+  - Fletcher for typst (as an alternative to tikz) seems quite beautiful
+  - The line drawing semantics seem really nice: specify arrow directions for every turn and the terminating arrowhead with a label
+  - Coordinates are semantic (not explicit), and the coordinate grid can be stretched / compressed

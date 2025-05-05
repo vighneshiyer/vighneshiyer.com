@@ -2,6 +2,8 @@
 title = "DIY Cosmetics (Lotions, Creams, Soaps, Shampoos, Conditioners)"
 date = 2024-08-10
 draft = true
+slug = "diy-cosmetics"
+description = ""
 +++
 
 I'm a bit frustrated buying products that I have no faith in.
