@@ -2,6 +2,7 @@
 title = "Undergrad Projects in the SLICE Lab (Hardware Verification)"
 date = 2022-08-30
 alises = ["misc/ugrad-projects"]
+draft = false
 +++
 
 - Vighnesh Iyer (vighnesh.iyer@berkeley.edu)

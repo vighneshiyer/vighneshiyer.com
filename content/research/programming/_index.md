@@ -1,5 +1,5 @@
 +++
-title = "Events"
+title = "Programming"
 sort_by = "date"
 render = true
 +++
