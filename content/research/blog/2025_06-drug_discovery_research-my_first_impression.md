@@ -2,7 +2,7 @@
 title = "Drug Discovery Research - My First Impression"
 date = 2023-08-23
 draft = true
-slug = "uarch-security-research"
+slug = "drug-discovery-research"
 description = "This is both a cruel and mechanical field"
 +++
 

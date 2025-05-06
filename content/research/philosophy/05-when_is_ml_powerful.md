@@ -19,6 +19,13 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
   - Gridding reduces maximum potential QoR
   - Reliance on rough proxy metric + also only given at the end of a trajectory, rather than an iteration based optimization algorithm (simulated annealing, genetic evolution, force-directed placement)
 
+- Alphachip
+  - A high level history of abstractions used in placement
+  - First, placement via simulated annealing, step by step, hard first (fixed) then soft cell clusters then soft explosion and force-directed placement with legalization
+  - Then, break abstractions, try to do simultaneous (hard with clustered soft macros, soft non-overlapping constraints)
+  - Then, break abstractions again and do hard and soft without clustering all at once
+  - See, even within classical human engineered algorithms, there is room to break abstractions. ML makes that even easier in theory.
+
 - Out of context generalization, graceful or catastrophic failure
 - Learning from an engineered algorithm vs from scratch as human annotated, consider mnist and hand written digit id heuristics vs from scratch
 - Same principle applies all over the place

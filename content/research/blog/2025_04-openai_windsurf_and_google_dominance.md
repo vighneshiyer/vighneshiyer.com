@@ -18,3 +18,5 @@ description = "Owning the user layer, Google's catchup efforts, and TPUs"
   - The new TPU announcement is quite solid, but fishy at the same time. How much money is this costing vs saving? It is quite unclear how much fanciness in the model architecture is possible with TPUs and their compiler stack (JAX, XLA and the rest) vs the GPU flow (PTX, CUDA, Triton, TorchInductor) - stiff competition
 
 - I should comment on this, Google can't compete with social networks and consumer electronics or produce the next hci innovation like Apple can, but they can own the model architecture side, deepmind has always produced top tier research and breakthroughs
+
+- https://news.ycombinator.com/item?id=43900877 (OpenAI reaches agreement to buy Windsurf for $3B (bloomberg.com))

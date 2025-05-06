@@ -51,3 +51,4 @@ What skills must a computer architect possess and be confident in?
 - What is computer architecture?
   - The essence of hardware acceleration
   - Some discussion of non von Neumann architecture is good but this extreme PIM track stuff has got to go, what are people learning here? What is the point of an academic conference in the first place?
+- Look at the ALP article for things I need to pull into this article

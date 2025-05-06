@@ -52,3 +52,31 @@ Good times are coming.
 > With time, I realized that for most Indian immigrants, this led to a compulsive need to recreate India in the ghettos they moved into. They sought the familiar smells, noise, and constant hustle and bustle. They recreated never-ending emotionalism, fruitless conflicts, chaos, and intellectual inbreeding.
 
 This phenomena is visible in both the UK and Canada but America has thankfully escaped this fate (for now, and in general, it probably applies to high alien density areas).
+
+- https://news.ycombinator.com/item?id=43894305 (The Death of Daydreaming (afterbabel.com)) (https://www.afterbabel.com/p/on-the-death-of-daydreaming)
+  - Quite a good article and discussion about the importance of boredom via lack of continuous and easily available external stimulation
+
+- GPT on noise: https://chatgpt.com/share/681a9eb6-9910-8004-9826-0ea397186feb
+  - Futurism noise music: The Art of Noises by Luigi Russolo
+  - Schopenhauer: On Noise (his particular dislike for whips, perhaps he would have similar feelings towards leafblowers)
+  - John Cage's 4'33" - avant-garde take on ambient noise, not so relevant though, the guy seems like a subversive too
+
+> Greek Philosophy: Schole and Contemplative Leisure
+>
+> In ancient Greece, the term scholē (σχολή) denoted leisure, but not idleness. It referred to time dedicated to learning, contemplation, and philosophical discourse. This concept laid the foundation for the word "school," emphasizing that true education arises from unhurried reflection.
+> Wikipedia
+>
+> Democritus, known as the "laughing philosopher," valued euthymia—a state of contented tranquility. He believed that such peace of mind was achieved through moderation, self-awareness, and philosophical inquiry, rather than through constant activity or external stimulation.
+> Wikipedia
+> Roman Philosophy: Otium and the Value of Solitude
+>
+> The Romans embraced otium, a form of dignified leisure allowing for intellectual and spiritual pursuits. Cicero and Seneca viewed otium as essential for philosophical contemplation and personal growth. Seneca, in his letters, emphasized that true leisure is not mere inactivity but a state wherein the mind engages in meaningful thought, free from the distractions of public life.
+
+Now we're getting somewhere. How could such concepts have been developed and defined in Ancient times but nothing new came of these in the 2000 years following? They discovered the truth, and nothing was left.
+In contrast, the commentary about noise and leisure from Chinese philosophy is so weak and uninspiring (see the GPT chat). The Japanese seem to have better insights at least. The analysis of Hindu philosophy seems weak.
+
+- Grok on noise: https://grok.com/share/c2hhcmQtMg%3D%3D_3f527d73-84d1-45a0-a906-43a2eff72de2
+  - I found Grok's search results to be less interesting than GPT's for this query
+  - This https://plato.stanford.edu/entries/sounds/ isn't as relevant as I would have expected
+  - It seems no one put it better than Schopenhauer'
+  - In general, Grok has produced too many meaningless words and is just rephrasing the prompt over and over again

@@ -1,8 +1,17 @@
++++
+title = "A Timeline of Computing and Heroes"
+date = 2025-02-05
+draft = true
+slug = "timeline-of-computing-and-heroes"
+description = ""
++++
+
 # A Timeline of Computing
 
 - Timeline
   - https://en.wikipedia.org/wiki/Timeline_of_computing
   - Similar style, but native CSS/HTML, and beautiful too
+  - There are lots of these around the internet - but nothing is to my liking, naturally. I can do better. I also don't want a technology focus, but rather an architecture and trends focus.
 - Research Labs
   - University of London
   - MIT Arvind's group

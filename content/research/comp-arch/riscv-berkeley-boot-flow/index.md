@@ -1,6 +1,8 @@
 +++
 title = "The RISC-V Boot and Bringup Flow (Berkeley Edition)"
 date = 2025-02-05
+draft = true
+slug = "riscv-berkeley-boot-and-bringup-flow"
 description = "HTIF, Fesvr, TSI, PLIC, CLINT, spike, what is all of this stuff?"
 +++
 

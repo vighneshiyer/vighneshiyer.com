@@ -1,6 +1,14 @@
-# A Critical Look at the Notion of "Accelerator Level Parallelism"
++++
+title = "A Critical Look at 'Accelerator-Level Parallelism'"
+date = 2025-02-05
+draft = true
+slug = "accelerator-level-parallelism-critique"
+description = ""
++++
 
 - https://arxiv.org/pdf/1907.02064
+
+- This article is dependent on my article about "what is computer architecture". The definition applied there + the history will reveal that so-called "accelerator-level parallelism" is nothing special, and is in fact just about Amdahl's Law. The "research directions" raised in their position paper amount to nothing specific nor tangible. The work that came from this paper (or that cites it) demonstrates this reality. The limitations are always the same - memory bandwidth and power envelope.
 
 - custom functional units
 - parallelism of units
@@ -18,7 +26,6 @@ Improving the performance of any given algorithm comes from only a few sources:
   - I would say these implement hardware-level parallelism that are unlocked by the right software-hardware interface
   - They do not improve the intrinsic accelerate-ability of the algorithm
   - They allow the algorithm to reach closer to the theoretical peak of its performance given a particular hardware system
-
 - Consider that there is a theoretical peak performance of any given code running on a von Neumann architecture (this is our base assumption).
   - I concede that non-von Neumann architectures can achieve even higher peaks, although not higher than peaks of the algorithm itself.
   - non-von Neumann architectures come with their own scaling challenges and costs that are often not considered when evaluating such architectures
@@ -27,5 +34,6 @@ Improving the performance of any given algorithm comes from only a few sources:
   - This already assumes acceleration and specialization to the max (save for specialized functional units)
   - Same with memory bandwidth, parallelism, and so forth
 - Now, we can find the derating factors on a real architecture. Which ones can you practically improve? What are the limits? How far is each factor from its theoretically max utilization peak?
-
-I want to differentiate between
+- So what is interesting to do? I think the authors of this paper glance over the specific areas to be worked on and paint with a broad brush. Let's be specific.
+  - Automatic workload-driven discovery of specializations of general purpose architectures
+  - Microarchitecture and software interface improvements wrt data transfer and memory management across units with different ISAs and memory hierarchies
