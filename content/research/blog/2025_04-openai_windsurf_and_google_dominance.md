@@ -1,3 +1,11 @@
++++
+title = "OpenAI's Windsurf Acquisition"
+date = 2023-08-23
+draft = true
+slug = "openai-windsurf-and-google-gemini"
+description = "Owning the user layer, Google's catchup efforts, and TPUs"
++++
+
 - https://news.ycombinator.com/item?id=43743993 (Why is OpenAI buying Windsurf? (theahura.substack.com))
   - The author is a bit pessimistic, but I like this attempt by OpenAI to own the application layer, at all cost
   - Owning the data produced by this software is also crucial when it comes to RL tuning (if the "environment interaction" hypothesis comes to fruition)

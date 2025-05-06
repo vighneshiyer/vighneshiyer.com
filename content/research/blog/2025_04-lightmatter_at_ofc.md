@@ -1,3 +1,11 @@
++++
+title = "Lightmatter at OFC and CPO"
+date = 2023-08-23
+draft = true
+slug = "lightmatter-and-co-packaged-optics"
+description = ""
++++
+
 Should have some commentary on CPO in general and what it portends for the future.
 
 - https://www.youtube.com/watch?v=-PuhRgmTAYc

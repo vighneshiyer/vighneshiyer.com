@@ -91,3 +91,15 @@ Mediocre doctors will be completely eradicated with the proliferation of AI. The
   - $469 for an insane number of blood tests + CAT scan + other stuff in private hospital Taiwan
   - Don't need any doctor BS, just go in, they give you a menu, and you just order, and it just takes a few hours, DONE
   - Lesson: do medical stuff as a part of flying to Asia for vacation
+
+- https://x.com/VitalNexvs/status/1919144391731728614
+  - A few good notes here. Doctors will barely do surface level investigation of any issue as it presents. This is understandable (I guess) since they are strapped for time and are effectively paid by the number of appointments they can stuff.
+  - But things like black mold proliferation in the house, or really any environmental toxin, or the list of all supplements and medicines you take with a careful inventory of what nutrients are inside (to check for potential allergies, over/under provisioning and associated illnesses). Trying to do everything a functional doctor would try to do would end up consuming lots of time and it isn't backed by the "protocol". The adherence of doctors to "the protocol" is evidence of their mechanical thinking process, and to some degree, protection against malpractice claims.
+  - LLMs do not suffer from limited time issues or lack of information (so long as the patient is very thorough and forces the model to consider all possibilities). But as long as language models can't prescribe tests or medicines or imaging, or anything of the nature, they will be quite limited. Not to say anything about procedures or surgeries! The times will change on all these axes soon enough however.
+  - Doctors are also ignorant of the latest research on any condition. It is always prudent to consult a model which can scour and discover new findings. Dosing is also tricky for doctors who rely on the appointment method for adjusting doses in concert with lab testing, but this adjustment is always made ad-hoc and will not be optimally timed.
+
+- https://x.com/function/status/1919504888242847819
+
+> A Full Body MRI with an FDA-cleared AI that cuts scan time from 60 minutes to 22 minutes, and $1,500 to $499. To help detect early signs of hundreds of diseases. Now available through Function. http://functionhealth.com/scan
+
+It takes a startup to do this. All these fake MRI costs. But something that's quite annoying is that they outsource the actual scans to a normal facility - the startup doesn't actually own anything. The lack of vertical integration is quite concerning and makes it seem like a reseller rather than a health provider that owns the stack. It can't be that much investment to own everything, so the overheads must come from somewhere else.

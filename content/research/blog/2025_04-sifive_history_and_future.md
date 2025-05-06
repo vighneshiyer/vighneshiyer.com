@@ -1,4 +1,10 @@
-# My View on SiFive's Future (and Past)
++++
+title = "SiFive - History and Future"
+date = 2023-08-23
+draft = true
+slug = "sifive-history-and-future"
+description = "How SiFive began, the strong headwinds today, and Chinese dominance"
++++
 
 - https://news.ycombinator.com/item?id=37996295 (The risk of RISC-V: What's going on at SiFive? (morethanmoore.substack.com))
 

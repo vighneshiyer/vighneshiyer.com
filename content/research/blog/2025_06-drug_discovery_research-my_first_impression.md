@@ -1,3 +1,11 @@
++++
+title = "Drug Discovery Research - My First Impression"
+date = 2023-08-23
+draft = true
+slug = "uarch-security-research"
+description = "This is both a cruel and mechanical field"
++++
+
 - On the biology stuff
 - So the first thing that stands out is how much manual effort is required for anything, many mice have to be injected and killed, compare to the bloodless process of running architecture simulation lol
   - In the mice torture mention vivisection verboten and impeachment of man

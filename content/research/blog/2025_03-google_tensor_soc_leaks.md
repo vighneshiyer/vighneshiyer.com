@@ -1,3 +1,11 @@
++++
+title = "Google Tensor G5 Leaks"
+date = 2023-08-23
+draft = true
+slug = "google-tensor-g5-leaks"
+description = ""
++++
+
 # Google Tensor Core Leaks - Looking Bad, Exynos-Track Failure
 
 https://www.reddit.com/r/hardware/comments/1gxri1i/google_sues_exengineer_in_texas_over_leaked_pixel/
@@ -23,3 +31,5 @@ https://www.reddit.com/r/hardware/comments/1gy618r/has_googles_tensor_project_fa
 
 - https://www.reddit.com/r/hardware/comments/1jdh5af/reuters_google_preparing_to_partner_with_taiwans/
   - Broadcom -> MediaTek for TPU VLSI outsourcing
+
+- https://www.gsmarena.com/google_tensor_g5_leak_details_key_changes_-news-67008.php

@@ -1,3 +1,11 @@
++++
+title = "Will AI Saturate?"
+date = 2023-08-23
+draft = true
+slug = "will-ai-saturate"
+description = "Differences between mechanistic chain-of-thought and true discovery"
++++
+
 # Will We Hit a Dead End? Will AI Saturate?
 
 - See the AI 2027 article. (https://ai-2027.com/)
@@ -20,12 +28,14 @@
   - There is some *magic* that we don't yet understand which would explain why these models are so mechanistic and unable to be creative even with millions of instances running (and same with symbolic AI). AI optimists hypothesize that there is no magic and enough training data and enough instances is sufficient to break through the nominal saturation point.
   - Can we combine the grounding of LLMs with symbolic AI? Can this grounding alone generate symbolic facts and heuristics that can break out of saturation? I doubt it.
   - Symbolic "AI scientists" have produced interesting outcomes in the past (https://en.wikipedia.org/wiki/Glauber_discovery_system) just from search and heuristics alone.
+  - I'm sorry but intelligence is not search + data + heuristics. That just seems unlikely. You're simply describing a fuzzy but still mechanistic process. Certainly getting better at all of those will enable lots of coincidental 'discoveries' that we just didn't have the data connection capacity (in our brains) to make. But that is quite different than coming up with new theories altogether. For instance, can we expect search + data + heuristics to invent information theory? Those abstractions came out of nowhere.
 - What is the role of randomness?
   - If it is was the case that randomness was sufficient to induce creativity then we are done. We can just play with many LLM instances and temperature.
   - There is some relationship between entropy, creativity, and reliability / reasoning, but I'm not sure how to think about this. Is the 'randomness' inherent in the physical world (quantum randomness) something that is necessary for creativity to emerge? Why isn't psuedorandomness sufficient? Is there a non-religious explanation for this?
 - Can reasoning exist independently of language? Can it exist independently of knowledge / facts / physical reality?
   - Most would answer yes. Aristotle may say no.
   - But can language alone induce reasoning? Now the symbolic AI people would say no and the language modelers would say maybe yes. They hypothesize: next word prediction with planning = emergent reasoning with enough grounding.
+  - Can reasoning + grounded knowledge alone produce true discovery? I doubt it. Can increased sampling (i.e. more tokens) + fancier sampling methods (i.e. increased or decreased creativity in accordance with the sub-task) offset the negative consequences of longer generation sequences and RLHF-induced increased hallucinations? Probably yes, at least when it comes to execution of longer and longer mechanistic reasoning and action chains. But still, what is the possibility for discovery? Indeed even in AI 2027, they authors predict that mechanical research will be solved much earlier than 'research taste'. I would predict that 'taste' is fundamentally unsolvable via a mechanical system.
 - Is knowledge and reasoning enough? Having infinite knowledge and sufficient 'reasoning' hasn't produced much of anything.
   - https://www.dwarkesh.com/p/scott-daniel
 

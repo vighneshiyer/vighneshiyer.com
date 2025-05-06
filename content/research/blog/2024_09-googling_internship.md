@@ -1,6 +1,15 @@
++++
+title = "An Internship at Google"
+date = 2023-08-23
+draft = true
+slug = "internship-at-google"
+description = ""
++++
+
 ## Googling
 
 - Taking the bus on the first day. My office. Microkitchens. play rooms, internal google maps, ability to use any office, desks randomly assigned, open seating, multiple people on one desk oftentimes with time multiplexing, the coffee bar, the drinks - vitamin water is sniped asap, and rest of the drinks are constantly pulled out, fresh fruits always available, lots of snacks and cereal, and coffee machine of course.
+  - Google's workspace is designed for children, not merely actual children (there are plenty of them too), but adult children
 - Meetings are the mainstay of the googlers. nothing makes them happier than attending and especially organizing meetings. even though a lot of the desks are vacant, the meeting rooms are always packed round the clock.
 - my project itself. poorly organized. lux didn't have anyone to greet him for 2 weeks into his internship. the same useless 'trainings' are required in google as other companies, but it is a lot more time intensive.
 - the googling development platform. blaze, code review tool, kubernetes, borg, CitC, Cider, lots of interesting tools that they have done quite seriously. their build engineers are very competent and skilled.

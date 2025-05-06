@@ -1,3 +1,11 @@
++++
+title = "Tesla FSD is Here"
+date = 2023-08-23
+draft = true
+slug = "tesla-fsd-is-here"
+description = "Hardly anyone realizes how far ahead Tesla is"
++++
+
 - There has been lots of FSD skepticism over the past decade, for good reason
 - The original promise of FSD was made a long time ago, and even HW2 car owners were assured by Musk that their cars could be turned into robotaxis overnight
 - The reality has been a lot more shaky, but the path to real FSD has been steady and consistent

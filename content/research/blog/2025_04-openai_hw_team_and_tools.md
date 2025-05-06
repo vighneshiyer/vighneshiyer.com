@@ -1,3 +1,11 @@
++++
+title = "OpenAI's Hardware Effort"
+date = 2023-08-23
+draft = true
+slug = "openai-hardware-effort"
+description = "XLS, HW design methodology, the supposed imminent tapeout"
++++
+
 # The OpenAI Hardware Effort: I'm Pessimistic
 
 - Poaching of Googlers

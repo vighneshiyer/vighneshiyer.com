@@ -1,4 +1,10 @@
-# Tern AI
++++
+title = "Tern AI - GPS-free Localization"
+date = 2023-08-23
+draft = true
+slug = "tern-ai-gps-free-localization"
+description = "A very cool idea that I'm surprised no one did earlier"
++++
 
 - https://techcrunch.com/2025/03/14/tern-ais-low-cost-gps-alternative-actually-works/
 - https://www.tern.ai/how-it-works/

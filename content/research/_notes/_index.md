@@ -1,5 +1,5 @@
 +++
-title = "Research Themes and Ideas"
+title = "Scratch Notes"
 sort_by = "date"
 render = false
 +++

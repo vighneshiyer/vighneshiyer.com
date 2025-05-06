@@ -1,3 +1,11 @@
++++
+title = "Bureaucracy @ Google"
+date = 2023-08-23
+draft = true
+slug = "bureaucracy-at-google"
+description = ""
++++
+
 # Googling Things
 
 - Post articles that I sent to Joonho and Lux
