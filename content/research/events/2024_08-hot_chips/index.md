@@ -1,6 +1,7 @@
 +++
-title = "Hot Chips 2024 and Dr. Eric Quinnell's Talk @ Berkeley"
+title = "Hot Chips 2024"
 date = 2024-08-28
+draft = true
 +++
 
 ## Conference

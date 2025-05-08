@@ -1,4 +1,8 @@
-# Etched AI: The Most Blatant Investor Swindling I've Ever Seen in Hardware
++++
+title = "Etched AI: Blatant Investor Swindling"
+date = 2022-08-20
+draft = true
++++
 
 Have heard of the founders second-hand.
 - https://substack.com/@zachbe/p-146056411

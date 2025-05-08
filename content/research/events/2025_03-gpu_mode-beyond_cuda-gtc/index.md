@@ -1,4 +1,8 @@
-# GPU Mode, Beyond CUDA, GTC Keynote
++++
+title = "GPU Mode, Beyond CUDA, and the GTC Keynote"
+date = 2025-01-28
+draft = true
++++
 
 Three days of fun. What did I learn?
 

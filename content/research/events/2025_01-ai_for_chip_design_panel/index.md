@@ -1,4 +1,9 @@
-# AI for Chip Design Panel @ Baya Systems (w/ Root Ventures)
++++
+title = "AI for Chip Design Panel @ Baya Systems (w/ Root Ventures)"
+date = 2025-01-28
+draft = true
++++
+
 
 - On Monday, Jan 27th, 2025
 

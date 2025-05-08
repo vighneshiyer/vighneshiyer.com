@@ -1,4 +1,8 @@
-# Shaping AI and the Laude Institute
++++
+title = "Shaping AI and the Laude Institute"
+date = 2025-01-28
+draft = true
++++
 
 A vision for Berkeley-style research labs for shaping AI by Patterson and Andy
 
