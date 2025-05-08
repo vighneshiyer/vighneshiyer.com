@@ -1,3 +1,9 @@
++++
+title = "Peer Review is a Joke"
+date = 2024-05-06
+draft = true
++++
+
 # Review and Conferences
 
 - OpenReview is a huge positive move that has recently been adopted widely
@@ -24,3 +30,15 @@
 > suspect enough of academic science is outright fraud that the median paper is not just worthless but the author of the paper probably *hopes* that nobody reads it. They want the publishing, the citations, but they do not want the science, because there often is none.
 >
 > the more open and searchable, the easier it is for people to attempt replication, the harder it is to hide basic fraud. Not "we stole zillions" fraud but "I'm too lazy or these results don't work but I still want to be seen publishing to get my grant money or phd" fraud.
+
++++
+title = "The Free Market vs Cartels wrt Research"
+date = 2023-08-23
+draft = true
+slug = "free-market-vs-cartels"
++++
+
+- Generally speaking, why do 'free market' squares like HN, reddit, twitter, ... and so forth surface much better research than conferences/journals?
+- Consider the free market system where people pick things that are truly interesting and useful, use aggregate consensus and organic reputation-limited voting, and engage in 'peer review' via comments (this resembles the Roman Republic, not perfect and more reputation orientation would be even better).
+- Compare with the 'conference' system where professor are worked like slaves, 'bidding' for papers, reading a bunch of garbage they don't care about, no involvement of industry experts interested in real problems, and the completely opaque process of 'peer review'.
+- Why do we have to put up with these cartels? These academic conferences are worthless (in nearly all cases). Can an academic research group establish itself solely on self-published works, open source projects, and blog posts? Seems unlikely, but still worth trying, due to the cartel effects of the current academic 'review' system.

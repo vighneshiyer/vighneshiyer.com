@@ -1,3 +1,9 @@
++++
+title = "The Two Types of Engineers"
+date = 2024-03-23
+draft = true
++++
+
 ## Two Types of Engineers
 
 If I may be a little extreme, I find there are broadly two types of engineers.

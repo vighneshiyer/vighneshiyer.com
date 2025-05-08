@@ -1,3 +1,9 @@
++++
+title = "When is ML Powerful?"
+date = 2024-03-23
+draft = true
++++
+
 Include Igor Markov's Synopsys ML for synthesis slides
 
 Talk about learning novel embeddings vs learning surrogate functions

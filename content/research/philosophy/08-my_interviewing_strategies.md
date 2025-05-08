@@ -1,5 +1,5 @@
 +++
-title = "My 'Discriminatory' Approach to Interviewing"
+title = "My Approach to Giving Interviews"
 date = 2024-05-06
 draft = true
 +++

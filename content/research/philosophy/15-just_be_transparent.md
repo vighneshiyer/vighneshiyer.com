@@ -1,3 +1,9 @@
++++
+title = "Just Be Transparent"
+date = 2024-05-06
+draft = true
++++
+
 - Just be transparent
 - Why do no profs publish blog posts, their submitted proposals, meeting notes, slides for their group, wip code, code projects
 - There are a few special ones, Adrian Sampson, kastner, Chris re, yanyan (but they are exceedingly few)

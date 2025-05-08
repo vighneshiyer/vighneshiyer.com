@@ -1,3 +1,9 @@
++++
+title = "Heroes Are All You Need"
+date = 2024-05-06
+draft = true
++++
+
 Idk what to call this article. But I want to write something about heroes.
 
 Behind every great thing, there is always 1 (sometimes 2 or 3) heroes. Heroes shape everything, but this becomes especially apparent in software. The entire field is driven forward and relies on libraries, compilers, tools, operating systems, and so forth that sprung forth from just a single individual.

@@ -1,3 +1,9 @@
++++
+title = "Just Be Honest"
+date = 2024-05-06
+draft = true
++++
+
 # Just Be Honest
 
 - https://jyywiki.cn/Letter.md

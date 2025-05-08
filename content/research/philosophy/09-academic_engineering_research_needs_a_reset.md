@@ -1,4 +1,8 @@
-# Academic Engineering Research Needs a Reset
++++
+title = "Academic Engineering Research Needs a Reset"
+date = 2024-05-06
+draft = true
++++
 
 Disclaimers: I am writing specifically about academic _engineering_ research, so my opinions below shouldn't be misconstrued as relating to the natural sciences. My perspective is geared towards computer architecture, so that is where my positions come from. I do not see the Chinese as a rival to be 'beaten', but rather I believe we should admire what they've accomplished and learn from them.
 

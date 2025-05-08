@@ -1,3 +1,10 @@
++++
+title = "Commentary on Recent CompArch Whitepapers"
+date = 2024-05-06
+draft = true
+description = "'Co-design', 'Architecture 2.0', DSA Design Challenges"
++++
+
 # Commentary on Recent Computer Architecture Whitepapers
 
 ## "Co-Design" - Get Real

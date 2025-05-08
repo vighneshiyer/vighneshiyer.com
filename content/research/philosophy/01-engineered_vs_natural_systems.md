@@ -1,3 +1,9 @@
++++
+title = "Engineered vs Natural Systems"
+date = 2024-03-23
+draft = true
++++
+
 ## Engineered vs Natural Systems and Engineering vs Science
 
 - Natural systems: observations - models - experiments - refined models

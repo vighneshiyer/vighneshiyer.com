@@ -33,3 +33,5 @@ So here is my list of interesting employers.
 - Zendar
 
 - https://github.com/aolofsson/awesome-semiconductor-startups
+
+OK, I take back all of this nit stuff. The solution is simple. No spreadsheets. Just do interviews, understand who you're talking to, figure out how competent the people are and join based on pure instinct. You want to be surrounded by people who are all superior to you. That is how I made my decision.

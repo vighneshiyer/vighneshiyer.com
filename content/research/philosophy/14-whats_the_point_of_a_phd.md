@@ -1,3 +1,9 @@
++++
+title = "What's the Point of Getting a PhD?"
+date = 2024-05-06
+draft = true
++++
+
 Why a PhD?
 
 - Matt mights PhD cartoon, I disagree strongly

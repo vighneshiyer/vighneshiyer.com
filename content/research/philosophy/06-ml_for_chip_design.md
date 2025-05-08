@@ -1,3 +1,9 @@
++++
+title = "ML for Chip Design"
+date = 2024-03-23
+draft = true
++++
+
 # ML for Chip Design: My Philosophy
 
 ## Utility of ML in General

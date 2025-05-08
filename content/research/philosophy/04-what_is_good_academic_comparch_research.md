@@ -1,8 +1,7 @@
 +++
-title = "Worthwhile Directions in Academic Computer Architecture Research"
+title = "What is Good Academic Computer Architecture Research?"
 date = 2023-12-18
-draft = false
-slug = "worthwhile-directions-in-academic-computer-architecture-research"
+draft = true
 +++
 
 This article is a full-form version of a [talk I presented to the SLICE Lab](https://docs.google.com/presentation/d/1K9ljkV5xASLpvs-hxx1Hruop512EWR6atFtepTYHKT0/edit?usp=sharing) in September 2023.

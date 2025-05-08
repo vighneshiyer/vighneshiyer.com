@@ -1,3 +1,9 @@
++++
+title = "What is Computer Architecture?"
+date = 2024-03-23
+draft = true
++++
+
 What is computer architecture?
 
 Computer architecture is the systematic study of the tradeoffs between programmability and efficiency of hardware. This includes programming models, ISA design,microarchitecture, and the *methodology itself* that enables the study of the aforementioned topics. This includes the systematic design of architectures for a particular domain or set of domains.

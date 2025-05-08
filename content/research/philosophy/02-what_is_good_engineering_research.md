@@ -1,3 +1,9 @@
++++
+title = "What is Good Engineering Research?"
+date = 2024-03-23
+draft = true
++++
+
 # What is research?
 
 The term itself is polluted. Is "engineering" "research"? Does the field you are in determine what research is? Is implementation necessarily just 'infrastructure' that doesn't rise to the level of 'research'?
