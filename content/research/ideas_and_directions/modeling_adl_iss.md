@@ -1,3 +1,10 @@
++++
+title = "Modeling, Architectural Description Languages, Instruction Set Simulators"
+date = 2022-08-30
+draft = true
++++
+
+- ADLs + ISS + co-sim + ...
 - There are plenty of notes from here: https://github.com/euphoric-hardware/riscv-functional-sim
 - Migrate those notes here, also look at research-notes
 
@@ -20,3 +27,4 @@ e.g. for a memory block element (whether than be a scratchpad, DRAM, or otherwis
 e.g. for translation mappings (e.g. page table mappings) we can avoid having to specify a "TLB" explicitly in the ISS and instead generate it as a translation cache (which is a generic concept that can be applied to decode logic too)
 e.g. for the main execution loop, the transformation of a switch table based decode and dispatch can be automatically transformed into a threaded interpreter with its own VM and bytecode which can be hand guided by the ISS developer
 
+- Modeling research in general is valuable (ADL, sampled simulation, hybrid modeling, perf modeling, unified RTL and modeling/HLS-ish language)

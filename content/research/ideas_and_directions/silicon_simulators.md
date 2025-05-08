@@ -1,3 +1,9 @@
++++
+title = "Silicon Simulators and Silicon Bringup Infra"
+date = 2023-12-18
+draft = true
++++
+
 # Silicon Simulators (Krste's Idea) and Silicon Bringup Infrastructure
 
 - We already have

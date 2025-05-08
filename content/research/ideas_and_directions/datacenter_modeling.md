@@ -1,3 +1,9 @@
++++
+title = "Datacenter Modeling at uArch Scale"
+date = 2022-08-30
+draft = true
++++
+
 Solve the long-standing problem in computer architecture: how do we perform microarchitecture simulation at rack-scale? No abstract models of the software - run the real thing! No abstract models of the hardware - develop initial IP and iterate it (even if some modeling is required here and there)!
 
 See Joonho's article: https://joonho3020.github.io/articles/me-commons.html

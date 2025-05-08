@@ -5,6 +5,8 @@ alises = ["misc/ugrad-projects"]
 draft = false
 +++
 
+ADD A CALLOUT HERE - OLD ARTICLE - JUST HERE FOR FUN and history keeping
+
 - Vighnesh Iyer (vighnesh.iyer@berkeley.edu)
 - If you're interested in any of the projects below, please contact me by email and we'll set up time to talk and discuss ways to get started.
 

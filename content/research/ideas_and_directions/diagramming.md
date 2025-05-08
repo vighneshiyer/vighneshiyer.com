@@ -1,9 +1,9 @@
 +++
 title = "Code-Driven Diagramming"
-description = ""
-slug = ""
+slug = "code-driven-diagramming"
 date = 2025-04-05
 draft = true
+description = ""
 +++
 
 The most impactful thing you could work on is code-driven diagramming.

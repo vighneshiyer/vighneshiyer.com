@@ -1,3 +1,11 @@
++++
+title = "Open Questions in Core Microarchitecture"
+slug = "open-questions-in-core-uarch"
+date = 2025-04-05
+draft = true
+description = ""
++++
+
 - Specialization identification, DSP Saturn extensions being extracted from kernels alone, and then even functional models, perf improvement estimation, automatic new functional units? So much possibility on the methodology side
 
 - Unsolved questions in general purpose computing

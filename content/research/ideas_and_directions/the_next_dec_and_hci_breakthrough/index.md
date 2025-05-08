@@ -1,4 +1,8 @@
-# The Next DEC and the Next HCI Revolution
++++
+title = "The Next DEC and HCI Revolution"
+date = 2022-08-30
+draft = true
++++
 
 - The next way humans will interact with computers (ultimately HCI) thing
 - Room-scale computer (DEC), desktop computing, cloud computing, laptop computing, mobile computing, smartwatches, ... what's next?

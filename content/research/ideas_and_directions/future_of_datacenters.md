@@ -1,4 +1,10 @@
-# Random Things
++++
+title = "The Future of Datacenters"
+slug = "future-of-datacenters"
+date = 2025-04-05
+draft = true
+description = ""
++++
 
 - Distributed scheduling
 - The impact of 3D IC integration in the future
@@ -31,3 +37,4 @@
   - Oh finally Sagar came to the right conclusion, but his point was brushed away immediately
   - The conclusion was to work on programming models that enable this kind of distributed compute system
   - This is actually interesting! We should build a baseline of the system as it exists today, and then propose a new system that tears down all the old assumptions and applications! That is the point of academic research!
+- https://www.shadaj.me/writing/distributed-programming-stalled
