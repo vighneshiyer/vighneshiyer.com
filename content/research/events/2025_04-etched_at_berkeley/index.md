@@ -1,5 +1,7 @@
 # Etched AI: The Most Blatant Investor Swindling I've Ever Seen in Hardware
 
+Have heard of the founders second-hand.
+- https://substack.com/@zachbe/p-146056411
 - https://www.etched.com/announcing-etched (https://news.ycombinator.com/item?id=40788749)
 - https://www.theregister.com/2024/06/26/etched_asic_ai/
 - https://www.chipstrat.com/p/etched-silicon-valleys-speedrun

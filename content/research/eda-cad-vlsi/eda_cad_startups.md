@@ -1,3 +1,9 @@
++++
+title = "EDA CAD Startup Landscape (2025)"
+date = 2024-04-18
+draft = true
+slug = "eda-cad-startup-landscape"
++++
 
 In this article, I will eviscerate (and sometimes praise) startups I've heard about in the area of chip/PCB design, hardware, VLSI, EDA CAD, and AI hardware.
 
@@ -24,13 +30,26 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
   - Silimate (of course): https://github.com/Silimate/silisizer (the usual)
   - https://mooreslab.ai/ (LMAO) (old commercial LMAO: https://www.youtube.com/watch?v=w6p53_D7vMA&t=19s) (new commercial: https://www.youtube.com/watch?time_continue=32&v=PVadAPgUSKA&embeds_referring_euri=https%3A%2F%2Fmooreslab.ai%2F&source_ve_path=MjM4NTE)
 
-## Some General Notes
+## PCBs
 
-## VerifAI
+### JITX
+
+Very very good, I'm so happy with what they're doing and success is certain with someone like Jonathan Bachrach at the helm.
+Actually tackling a relevant problem with a clear path to success and the potential to obsolete huge swaths of the existing industry.
+
+## Hardware Compilers
+
+### BoolSi
+
+- https://boolsi.com/ ("Turn any codebase into chips")
+
+## Verification
+
+### VerifAI
 
 DAC 2022
 
-## Silogy
+### Silogy
 
 - https://silogy.io/ (YC 23)
 
@@ -40,24 +59,51 @@ DAC 2022
 
 I met these two at Hot Chips 2024.
 
-## Agnisys
+### Agnisys
 
 I met these guys at DAC 2022 and 2024.
 
-## Metrics
+### Metrics
 
 I met these guys at DAC 2024.
 
-## PrimisAI
+## Analog
 
-I saw their booth somewhere.
+### Generation Alpha (Transistor)
 
-## VoltAI
+https://github.com/gen-alpha-xtor/GenAlphaSchematicsDemo
+
+Two guys just playing around, but I'm still quite impressed.
+Dan is an elite SW engineer and circuit designer - he knows what he's doing.
+
+- [Founding Software Engineer](https://wellfound.com/jobs/3132724-founding-software-engineer?utm_campaign=startup_share&utm_content=startup_share_module&utm_medium=social&utm_term=generation-alpha-transistor)
+
+> Develop AI agents for novel chip design problems. Experience with LLM-based systems & agents, foundation models, ML systems, fine-tuning, RAG, GraphRAG all pluses. Develop automated methods to extract structured data from diverse sources including documents & images. Test & characterize natural language AI systems.
+>
+> Develop a web & cross-platform GUI environment, using Typescript, Rust, WebGL, WebGPU. Experience with computational geometry, graphics engines, high-performance rendering a plus, especially in the context of other CAD design systems.
+>
+> Develop novel tactics for existing chip-world problems, commonly known as electronic design automation, EDA. Optimizing placement, routing, extraction, simulation, physical verification (LVS, DRC). Working knowledge of silicon design flow & typical chip data (LEF, DEF, GDS, spice, etc) a plus.
+>
+> We value software generalists & polyglots who are unafraid to try & learn new & valuable tools, wherever they can be found. Past experience in cloud-native B2B and customer-facing engineering roles is a plus. Desire to grow into engineering leadership is a plus. Desire to work in a rapidly changing, high intensity environment is a must.
+
+This is a very good pitch.
+
+- umich, nc state, ...
+- natural language for circuits
+- native 'live' + 'remote' GUI environment for code-driven (but natural language-driven from the user perspective) circuit design and layout
+- autorouting that understands the circuit intent and can beat humans in qor
+  - this is a good idea that doesn't exist in the market for no good reason
+
+- https://natcast.org/nstc-jump-start-anticipated-awardees
+
+## ML for Chips
+
+### VoltAI
 
 https://voltai.com/
 Never met, heard about from others, information-free.
 
-## Silimate
+### Silimate
 
 - https://www.zach.be/p/why-are-so-many-startups-developing
 - https://substack.com/@zachbe/p-148658947
@@ -74,13 +120,19 @@ https://www.ycombinator.com/companies/silimate/jobs
   - 3+ years
 - Founding ML Engineer
   - Same terms
+- Really just a fast PPA estimation tool
 
-## Etched.ai
+### Motivo.ai
 
-Have heard of the founders second-hand.
-- https://substack.com/@zachbe/p-146056411
+- https://motivo.ai/
+- https://techcrunch.com/2021/08/12/motivo-raises-12-5m-series-a-to-speed-up-chip-design-with-ai/
 
-## Chipstack
+## LLMs for Chip Design
+
+- https://chipagents.ai/#intro
+- MooresLab
+
+### Chipstack
 
 - https://www.luxcapital.com/content/the-looming-labor-crisis-in-chip-design
 
@@ -265,46 +317,6 @@ Formatted and relevant parts of the transcript below:
 >
 > As a company, we are around 15 people and growing. We're always looking for smart engineers with backgrounds in chip design, software, or ML who want to change the way chips are designed. It's a fun place because these three verticals come together, which is rare. We have awesome people, great investors like Khosla Ventures backing us, and the product is deployed at multiple companies, from AI chip startups to Fortune 100 companies building CPUs and networking chips. We're still in the early stages and consciously limiting the number of customers to ensure each one is successful. We want to be sure we've built something reliable, lasting, and easy to use before scaling, probably in a year or so.
 
+### PrimisAI
 
-## Generation Alpha (Transistor)
-
-https://github.com/gen-alpha-xtor/GenAlphaSchematicsDemo
-
-Two guys just playing around, but I'm still quite impressed.
-Dan is an elite SW engineer and circuit designer - he knows what he's doing.
-
-- [Founding Software Engineer](https://wellfound.com/jobs/3132724-founding-software-engineer?utm_campaign=startup_share&utm_content=startup_share_module&utm_medium=social&utm_term=generation-alpha-transistor)
-
-> Develop AI agents for novel chip design problems. Experience with LLM-based systems & agents, foundation models, ML systems, fine-tuning, RAG, GraphRAG all pluses. Develop automated methods to extract structured data from diverse sources including documents & images. Test & characterize natural language AI systems.
->
-> Develop a web & cross-platform GUI environment, using Typescript, Rust, WebGL, WebGPU. Experience with computational geometry, graphics engines, high-performance rendering a plus, especially in the context of other CAD design systems.
->
-> Develop novel tactics for existing chip-world problems, commonly known as electronic design automation, EDA. Optimizing placement, routing, extraction, simulation, physical verification (LVS, DRC). Working knowledge of silicon design flow & typical chip data (LEF, DEF, GDS, spice, etc) a plus.
->
-> We value software generalists & polyglots who are unafraid to try & learn new & valuable tools, wherever they can be found. Past experience in cloud-native B2B and customer-facing engineering roles is a plus. Desire to grow into engineering leadership is a plus. Desire to work in a rapidly changing, high intensity environment is a must.
-
-This is a very good pitch.
-
-- umich, nc state, ...
-- natural language for circuits
-- native 'live' + 'remote' GUI environment for code-driven (but natural language-driven from the user perspective) circuit design and layout
-- autorouting that understands the circuit intent and can beat humans in qor
-  - this is a good idea that doesn't exist in the market for no good reason
-
-- https://natcast.org/nstc-jump-start-anticipated-awardees
-
-## JITX
-
-Very very good, I'm so happy with what they're doing and success is certain with someone like Jonathan Bachrach at the helm.
-Actually tackling a relevant problem with a clear path to success and the potential to obsolete huge swaths of the existing industry.
-
-## Motivo.ai
-
-- https://motivo.ai/
-- https://techcrunch.com/2021/08/12/motivo-raises-12-5m-series-a-to-speed-up-chip-design-with-ai/
-
-## ChipAgents
-
-- https://chipagents.ai/#intro
-
-## BoolSi
+I saw their booth somewhere.

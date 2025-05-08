@@ -1,10 +1,12 @@
 +++
-title = "Machine Learning for Chip Placement: The Saga"
+title = "Machine Learning for Macro Placement: The Saga"
 date = 2023-04-08
 aliases = ["misc/ml-for-placement"]
+draft = false
+slug = "machine-learning-for-macro-placement-alphachip-the-saga"
 +++
 
-## Background on Chip Placement
+## Background on Placement
 
 Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal (do not violate any DRCs, snap to a grid, no overlaps) and feasible (routing is likely to succeed with no overlapping wires and a DRC clean layout).
 Traditionally, hard macro placement is done manually, while standard cell placement is done automatically by the PnR (place-and-route) tool.

@@ -1,7 +1,9 @@
 +++
-title = "Ideas for Hammer's Next API"
+title = "The Next PD Flow Tool"
 date = 2023-03-01
 aliases = ["misc/hammer-next"]
+draft = true
+slug = "the-next-pd-flow-tool"
 +++
 
 I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/reviews/dac_2022.md#cad-flow-tools) and what I think the good parts of each tool are.

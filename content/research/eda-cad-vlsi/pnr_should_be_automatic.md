@@ -1,4 +1,9 @@
-# Humans Should Never Have to do Place and Route
++++
+title = "Humans Should Never Have to do Place and Route"
+date = 2023-03-01
+draft = true
+slug = "pnr-should-be-automatic"
++++
 
 - Digital side
   - yeah we already know and everyone agrees

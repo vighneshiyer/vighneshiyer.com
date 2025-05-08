@@ -1,6 +1,8 @@
 +++
 title = "Notes on Build Systems"
 date = 2024-04-18
+draft = true
+slug = "notes-on-build-systems"
 +++
 
 ## Features of Build Systems
@@ -12,6 +14,7 @@ date = 2024-04-18
 - custom language (e.g. Make, ninja) vs embedded in another language (Shake, mill)
 - If you can only read one paper:
   - Microsoft's comprehensive survey of build systems and a unified theory for them: [Build Systems à la Carte: Theory and Practice (2020)](https://www.microsoft.com/en-us/research/uploads/prod/2020/04/build-systems-jfp.pdf)
+
 ## Build Systems in the Wild
 
 - Be able to describe a build graph either using or outside of hammer itself. Look at siliconcompiler or mflowgen

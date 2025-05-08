@@ -1,7 +1,8 @@
 +++
-title = "Power Modeling"
+title = "Next Steps in Power Modeling"
 date = 2022-10-17
 draft = true
+slug = "power-modeling-research"
 +++
 
 ## Infrastructure
