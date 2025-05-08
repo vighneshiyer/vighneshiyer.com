@@ -1,4 +1,34 @@
-# LLMs for HW Design
++++
+title = "LLMs for Chip Design"
+date = 2023-02-28
+draft = true
+slug = "llms-for-chip-design"
+description = ""
++++
+
+- Use cases
+  - Rtl design
+  - Verif collateral
+  - Assertion synthesis, coverage synthesis from verification plan
+  - TCL script generation
+  - Log parsing
+  - Automatic bug fixing
+- Players
+  - Chipnemo Nvidia
+  - 3 startups: ChipStack, ChipAgents, MooresLab
+  - Cadence and Synopsys
+- Things academics did
+  - Lots of benchmarks
+  - Verilog eval
+  - Chisel llm thing (https://ieeexplore.ieee.org/abstract/document/10618053?casa_token=qUwmk-vV0uIAAAAA:0Z2tyVFLk7WGRtrh-LGd3mynCo5UBaSbIPfYTtA69d4z5stHAFbKZv-gsxH8ruDtHT5tVlZDPw) (https://arxiv.org/pdf/2504.19144)
+- Leaders
+  - Chipstack most prominent
+  - See the openai commits
+- Useful usecases
+  - LLM for analyIng English spec, discover any inconsistencies or ambiguities
+  - Spec to sva possibilities, show where they differ, allow user to pick and refine spec
+
+# LLMs for Chip Design
 
 - https://www.zach.be/p/yc-is-wrong-about-llms-for-chip-design
 

@@ -1,7 +1,8 @@
 +++
-title = "Hardware Intermediate Representations (Hardware IRs)"
+title = "Hardware Intermediate Representations and Research Directions"
 date = 2023-08-23
 draft = true
+slug = "hardware-intermediate-representations"
 +++
 
 ## Ideas about HW IRs

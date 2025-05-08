@@ -1,3 +1,10 @@
++++
+title = "Eric Quinnell's Critique of RVV and RVC"
+date = 2023-02-28
+draft = true
+slug = "eric-quinnell-round-2-rvv-rvc"
+description = ""
++++
 
 ## Eric Quinnell's Talk
 

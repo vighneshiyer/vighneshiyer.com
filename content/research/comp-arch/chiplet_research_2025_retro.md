@@ -1,3 +1,11 @@
++++
+title = "Academic Computer Architecture Research in Chiplets (2025 Retrospective)"
+date = 2023-02-28
+draft = true
+slug = "academic-comparch-chiplet-research-2025-retrospective"
+description = ""
++++
+
 # Retrospective
 
 ## A Summary of the 2023 Article

@@ -1,3 +1,10 @@
++++
+title = "Trace-Driven Simulation and Its Limitations"
+date = 2024-03-23
+draft = true
+slug = "trace-driven-simulation"
++++
+
 ## What is a Trace?
 
 ## Trace-Driven uArch Models
@@ -32,3 +39,5 @@
 ## Execution-Driven Simulation: The Only Way
 
 - https://nitish2112.github.io/post/event-driven-simulation/
+
+What is out there? ChampSim, and ... that's it.

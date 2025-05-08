@@ -1,3 +1,10 @@
++++
+title = "Notes on Retiming"
+date = 2024-03-23
+draft = true
+slug = "notes-on-retiming"
++++
+
 You are probably already familiar with retiming support in synthesis tools (e.g. Vivado, Genus, yosys via abc) where you put a chain of registers after a blob of purely combinational logic and it duplicates/pushes back those registers to balance the stage delays.
 There is a [FIRRTL annotation](https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/#retimemoduleannotation) to mark modules that need retiming, which just makes `firtool` dump JSON with paths to those modules.
 You can ingest that JSON and generate tcl for the target synthesis tool to enable retiming for just those modules ([example from Hammer for Genus](https://github.com/ucb-bar/hammer/blob/master/hammer/synthesis/genus/__init__.py#L293)).

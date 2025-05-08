@@ -2,6 +2,7 @@
 title = "Fundamental Works in Microarchitecture"
 date = 2024-03-23
 draft = true
+slug = "fundamental-works-in-microarchitecture"
 +++
 
 - CS152/252

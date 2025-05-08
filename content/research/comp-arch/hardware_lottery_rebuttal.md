@@ -1,3 +1,11 @@
++++
+title = "A Critical Take on the \"Hardware Lottery\""
+date = 2023-02-28
+draft = true
+slug = "hardware-lottery-rebuttal"
+description = ""
++++
+
 # Is There Really a "Hardware Lottery"?
 
 - https://arxiv.org/abs/2009.06489

@@ -1,3 +1,10 @@
++++
+title = "Tracing and Profiling Discussion with Dick Sites"
+date = 2024-03-23
+draft = true
+slug = "tracing-and-profiling-discussion-with-dick-sites"
++++
+
 - Perf debugging and optimization is so one-off, that any interesting cases have to be considered uniquely. You can't generally extract anomalies via some kind of ML model
   - Common techniques are obvious so there is no need to use any models to show them. People would have already applied them - low-hanging fruit.
 - Core-level bottlenecks are revealed via 5 perf counters that have very low latency and can be sampled frequently by software
