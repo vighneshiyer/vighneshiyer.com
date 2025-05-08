@@ -1,3 +1,9 @@
++++
+title = "Article Ideas"
+date = 2023-12-18
+draft = true
++++
+
 - [ ] Chinese labs and social pockets... I need a better title, talk about internationalization of labs and fake notions of diversity. Chinese labs work hard and get papers but what value do they produce?
   - Consider the ASPLOS top submitting universities - top 3 are Chinese, mass paper pushers
 

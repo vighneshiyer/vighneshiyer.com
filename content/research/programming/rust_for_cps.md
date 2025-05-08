@@ -1,3 +1,9 @@
++++
+title = "Rust for Cyber-Physical Systems"
+date = 2024-05-06
+draft = true
++++
+
 # Rust for Cyber-Physical Systems / Robotics
 
 It seems that rather than go down the rabbit hole of running some OS on your embedded device (whether that is a real time OS with a Linux ABI like Zephyr, or Linux itself with some hacks, or a super-lightweight RTOS such as FreeRTOS, or ROS specifically for robotics), one can just use a single baremetal Rust process!

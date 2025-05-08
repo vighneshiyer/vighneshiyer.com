@@ -1,3 +1,9 @@
++++
+title = "Random Notes"
+date = 2023-12-18
+draft = true
++++
+
 Absolutely random notes about random research things.
 
 ## Truly Random Things
