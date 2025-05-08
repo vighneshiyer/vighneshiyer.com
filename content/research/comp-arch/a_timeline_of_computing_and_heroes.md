@@ -6,8 +6,6 @@ slug = "timeline-of-computing-and-heroes"
 description = ""
 +++
 
-# A Timeline of Computing
-
 - Timeline
   - https://en.wikipedia.org/wiki/Timeline_of_computing
   - Similar style, but native CSS/HTML, and beautiful too
@@ -50,8 +48,9 @@ description = ""
   - Apple, Intel, AMD, ARM
 
 - https://landley.net/history/mirror/tech/processors/cpu.html
+  - Very few people made huge contributions to every generation of microprocessors
+  - "list of people who architected CPUs over time"
 - https://people.computing.clemson.edu/~mark/architects.html
 - https://www.cpushack.com/CPU/cpu.html
 - https://en.m.wikipedia.org/wiki/List_of_pioneers_in_computer_science
 - https://en.m.wikipedia.org/wiki/History_of_general-purpose_CPUs
-- "list of people who architected CPUs over time"

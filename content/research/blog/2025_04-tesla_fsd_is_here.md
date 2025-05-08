@@ -53,3 +53,5 @@ description = "Hardly anyone realizes how far ahead Tesla is"
   - Not just wrt safety, but also all the human aspects of driving - anticipating other vehicle movements, speculation, smoothness of driving and acceleration
 - https://www.youtube.com/watch?v=dKroGHcWeiQ&t=17s ( Tesla FSD sees further than I do. I thought it had made a mistake again. | Tesla FSD in China )
   - More amazing feats: https://www.youtube.com/watch?v=s2GwXdhstJo ( Nighttime Tire Recognition Ability: Huawei Aito ADS vs. Tesla FSD. | Tesla FSD in China )
+- https://www.youtube.com/watch?v=kFO1rGYOhcA ( Tesla FSD Clips of the Week - April 2025)
+  - Just watch and observe

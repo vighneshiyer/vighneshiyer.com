@@ -2,11 +2,13 @@
 title = "Discussion on Variable Length ISAs, High Performance CPUs, FSD, Dojo, and Academic CompArch Research with Eric Quinnell from Tesla"
 date = 2022-09-29
 aliases = ["misc/tesla-talk"]
+draft = false
+slug = "eric-quinnell-on-variable-length-isas-cpus-fsd-dojo"
 +++
 
 **Disclaimer**: these are my words, not Eric's. I have used some creative license.
 
-Eric Quinnell from Tesla came to speak to the SLICE lab on 9/28/2022. [Download his slides here.](misc/tesla-talk/Eric_Quinnell_Tesla_Talk.pdf)
+Eric Quinnell from Tesla came to speak to the SLICE lab on 9/28/2022. [Download his slides here.](Eric_Quinnell_Tesla_Talk.pdf)
 
 > Title: Industrial Ranting about Current Computer Micro-Architectures
 >
@@ -173,7 +175,7 @@ A few days later, I saw this conversation [from here](https://twitter.com/TechEm
 >
 > April 9, 2022
 
-{{ image(path="misc/tesla-talk/musk_parag_convo.jpg", width="50%") }}
+{{ image(path="musk_parag_convo.jpg", width="50%") }}
 
 This just confirms to me that Tesla is the place to be.
 
@@ -181,6 +183,5 @@ This just confirms to me that Tesla is the place to be.
 
 - What is the SOTA of industry-tier perf and power models? Do they also consider floorplans / have congestion models?
     - How do these models compare with academic perf models e.g. gem5 - just how bad are the academic models?
-    - Is co-simulation actually used to evaluate new arch features?
+    - Is mixed-simulation (performance model of a core + small uArch feature in RTL) actually used to evaluate new arch features?
 - What metrics do academics fail to focus on?
-

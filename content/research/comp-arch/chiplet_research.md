@@ -1,7 +1,9 @@
 +++
-title = "Chiplet (CompArch) Research in Academia: Is it Sensible?"
+title = "Academic Computer Architecture Research in Chiplets"
 date = 2023-02-28
 aliases = ["misc/chiplet-research"]
+draft = false
+slug = "academic-comparch-chiplet-research"
 +++
 
 ## What Are Chiplets?
@@ -236,6 +238,7 @@ This is not much different than modeling a multi-socket system, except with lowe
 This tradeoff between finely-distributed coherence (Intel) and cluster-level coherence (AMD) seems interesting and worth investigating at the arch modeling level.
 It can be investigated at a much smaller scale (in terms of number of cores and cache sizes) and we should be able to come to the same conclusions as with a larger system.
 
+<!--
 ### Some Supporting Data
 
 - https://chipsandcheese.com/p/amds-turin-5th-gen-epyc-launched
@@ -259,3 +262,4 @@ It can be investigated at a much smaller scale (in terms of number of cores and 
 
 - https://arxiv.org/pdf/2502.01449
   - Figure 1 of this paper is a good overview of SiP methodologies
+-->
