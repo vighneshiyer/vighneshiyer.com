@@ -2,14 +2,13 @@
 title = "59th Design Automation Conference (DAC 2022)"
 date = 2022-08-20
 aliases = ["conference_reviews/dac-2022"]
-slug = "review-of-dac-2022"
 +++
 
 This was my first DAC at Moscone West. It was a good experience - lots of vendors at the exhibition halls to talk to, several decent research paper sessions (but relatively poor engineering track sessions), and interesting panels (where every panelist brought a short set of slides to discuss their perspective on the question posed).
 
 {{ gallery(images=[
-    "reviews/dac-2022/10-registration.jpg",
-    "reviews/dac-2022/kaufman_award.jpg",
+    "10-registration.jpg",
+    "kaufman_award.jpg",
 ],id="gallery-intro") }}
 
 ## Sunday, 7/10/22
@@ -40,10 +39,10 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 #### Nicole Fern of Riscure on "Hardware Shift-Left: Pre-silicon Fault Injection Evaluation and Power Side Channel Testing"
 
 {{ gallery(images=[
-    "reviews/dac-2022/10-riscure1.png",
-    "reviews/dac-2022/10-riscure2.png",
-    "reviews/dac-2022/10-riscure3.png",
-    "reviews/dac-2022/10-riscure4.png"
+    "10-riscure1.png",
+    "10-riscure2.png",
+    "10-riscure3.png",
+    "10-riscure4.png"
 ],id="gallery-side-channel") }}
 
 - They have productized netlist fault injection (similar to Synopsys Z01X) and FIT analysis, and have done some hardware validation with EMFI (electromagnetic fault injection) on a Cortex-M0 devboard
@@ -73,7 +72,7 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 > A critical component of the security verification process is security analysis. This is crucial to ensure that the security requirements are concisely specified, as well as to assist in identifying unknown design weaknesses. By using Radix’s security analysis capabilities, we were able to validate that the random constant key never makes it to the output of the OTP controller in an unscrambled form, which is a good thing.
 
 {{ gallery(images=[
-    "reviews/dac-2022/10-radix.png",
+    "10-radix.png",
 ],id="gallery-radix") }}
 
 > While applying Radix to the OTP controller, we also identified intermediate values of the random constant key appearing on the output of the scrambler. This is interesting and surprising, but was determined to be a low risk since the intermediate values are protected at the boundary of the OTP output. Even so, this information enabled OpenTitan to push a fix mitigating this leakage out of an abundance of caution to potential future threats.
@@ -92,10 +91,10 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 > Historically the semiconductor industry goes through a boom-bust cycle every 3-4 years. Despite the chip shortage headlines, Wall Street is increasingly skeptical about the longevity of the current semiconductor boom cycle. The outlook is still bright, but there are dark clouds on the horizon. If the chip shortage turns into a glut, will a downturn affect the EDA industry? Our answer is no. In this presentation, I will walk you through reasons why EDA industry will power through semiconductor cycles and emerge on the other side stronger.
 
 {{ gallery(images=[
-    "reviews/dac-2022/10-needham_ecosystem.jpg",
-    "reviews/dac-2022/10-needham_trends.jpg",
-    "reviews/dac-2022/10-needham_final.jpg",
-    "reviews/dac-2022/10-needham_summary.jpg",
+    "10-needham_ecosystem.jpg",
+    "10-needham_trends.jpg",
+    "10-needham_final.jpg",
+    "10-needham_summary.jpg",
 ], id="gallery-needham") }}
 
 ## Monday, 7/11/22
@@ -111,17 +110,17 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
     - The tool is designed for early stage RTL-level power estimates, especially for power driven feedback into the RTL design process (e.g. for adding logic gating, zero skipping, and inferrable clock gates)
 
 {{ gallery(images=[
-    "reviews/dac-2022/11-powerpro1.jpg",
-    "reviews/dac-2022/11-powerpro2.jpg",
-    "reviews/dac-2022/11-powerpro3.jpg",
-    "reviews/dac-2022/11-powerpro4.jpg",
-    "reviews/dac-2022/11-powerpro5.jpg",
-    "reviews/dac-2022/11-powerpro6.jpg",
-    "reviews/dac-2022/11-powerpro7.jpg",
-    "reviews/dac-2022/11-powerpro8.jpg",
-    "reviews/dac-2022/11-powerpro9.jpg",
-    "reviews/dac-2022/11-powerpro10.jpg",
-    "reviews/dac-2022/11-powerpro11.jpg",
+    "11-powerpro1.jpg",
+    "11-powerpro2.jpg",
+    "11-powerpro3.jpg",
+    "11-powerpro4.jpg",
+    "11-powerpro5.jpg",
+    "11-powerpro6.jpg",
+    "11-powerpro7.jpg",
+    "11-powerpro8.jpg",
+    "11-powerpro9.jpg",
+    "11-powerpro10.jpg",
+    "11-powerpro11.jpg",
 ], id="gallery-powerpro") }}
 
 - We talked to the reps afterwards and found out:
@@ -189,7 +188,7 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 #### ML Based Abnormal Simulation Detector in SoC Verification (Samsung)
 
 {{ gallery(images=[
-    "reviews/dac-2022/11-abnormal_sim_predictor.jpg",
+    "11-abnormal_sim_predictor.jpg",
 ], id="gallery-abnormal") }}
 
 - At first, I thought this was going to be a predictor based on test generator parameters or runtime test behavior
@@ -206,9 +205,9 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
     - Obviously this only makes sense if you've collected and curated a bunch of this type of data - only applicable to industry
 
 {{ gallery(images=[
-    "reviews/dac-2022/11-debug1.jpg",
-    "reviews/dac-2022/11-debug2.jpg",
-    "reviews/dac-2022/11-debug3.jpg",
+    "11-debug1.jpg",
+    "11-debug2.jpg",
+    "11-debug3.jpg",
 ], id="gallery-debug") }}
 
 
@@ -222,22 +221,22 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
     - What is the dimensionality of each test embedding in practice?
 
 {{ gallery(images=[
-    "reviews/dac-2022/11-smart1.jpg",
-    "reviews/dac-2022/11-smart2.jpg",
-    "reviews/dac-2022/11-smart3.jpg",
-    "reviews/dac-2022/11-smart4.jpg",
-    "reviews/dac-2022/11-smart5.jpg",
-    "reviews/dac-2022/11-smart6.jpg",
-    "reviews/dac-2022/11-smart7.jpg",
-    "reviews/dac-2022/11-smart8.jpg",
-    "reviews/dac-2022/11-smart_poster.jpg",
+    "11-smart1.jpg",
+    "11-smart2.jpg",
+    "11-smart3.jpg",
+    "11-smart4.jpg",
+    "11-smart5.jpg",
+    "11-smart6.jpg",
+    "11-smart7.jpg",
+    "11-smart8.jpg",
+    "11-smart_poster.jpg",
 ], id="gallery-smart") }}
 
 ### [John Cooley's DAC Panel](https://59dac.conference-program.com/session/?sess=sess296)
 
 > Abstract: Come watch the EDA troublemakers answer the edgy, user-submitted questions about this year's most controversial issues! It's an old-style open Q&A from the days before corporate marketing took over every aspect of EDA company images.
 
-{{ image(path="reviews/dac-2022/11-cooley.jpg", width="80%") }}
+{{ image(path="11-cooley.jpg", width="80%") }}
 
 - The classic John Cooley (deepchip.com) panel of EDA bigwigs where he throws random and offensive questions at them and tries to get them to fight each other
     - The only thing I learned is that it's impossible to get any clear answers about what any EDA tool actually does
@@ -275,9 +274,9 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 - [Paper PDF](https://arxiv.org/pdf/2201.06848.pdf)
 
 {{ gallery(images=[
-    "reviews/dac-2022/12-hls_gnn1.png",
-    "reviews/dac-2022/12-hls_gnn2.png",
-    "reviews/dac-2022/12-hls_gnn3.png",
+    "12-hls_gnn1.png",
+    "12-hls_gnn2.png",
+    "12-hls_gnn3.png",
 ], id="gallery-hls_gnn") }}
 
 - Represent SystemC programs as CDFGs with each node annotated with its function (read/write/compute operation)
@@ -299,14 +298,14 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 - These authors have identified that existing netlist -> graph transforms usually only embed facts related to the graph topology rather than the gate logic function - this is very valuable foundational work.
     - e.g. understanding this work is critical to build a generic-gate-level coverage extrapolation model that can generalize to multiple unrelated designs
 
-{{ image(path="reviews/dac-2022/12-netlist_learning1.png", width="60%") }}
+{{ image(path="12-netlist_learning1.png", width="60%") }}
 
 - The solution is to use 'contrastive learning' to learn a graph embedding kernel that maps graphs with identical functionality to similar vectors by taking a seed graph, mutating it while exactly preserving its boolean function, and forcing the network to learn a kernel such that the seed and mutated graphs have a similar embedding.
 
 {{ gallery(images=[
-    "reviews/dac-2022/12-netlist_learning2.png",
-    "reviews/dac-2022/12-netlist_learning3.png",
-    "reviews/dac-2022/12-netlist_learning4.png",
+    "12-netlist_learning2.png",
+    "12-netlist_learning3.png",
+    "12-netlist_learning4.png",
 ], id="gallery-netlist_learning") }}
 
 - The authors, then propose a new GNN architecture called FGNN (functional GNN) which is designed specifically for GL netlists to incorporate gate-level logic functionality into the reduction kernels. This is in contrast to typical GNNs which mostly consider graph topology and connectivity when embedding a node or performing graph-level regression.
@@ -321,7 +320,7 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 - [Paper PDF](https://arxiv.org/pdf/2111.08848.pdf) (Jason Cong's group)
 - This is similar to the first paper, HLS code is transformed into a CDFG, along with pragma embeddings, use a GNN to predict performance, and then wrap that in a DSE that varies HLS-level hardware parameters
 
-{{ image(path="reviews/dac-2022/12-hls_dse.png", width="60%") }}
+{{ image(path="12-hls_dse.png", width="60%") }}
 
 ### Iterate and Scale: Designing Stronger and Safer Embedded Systems
 
@@ -384,8 +383,8 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
 ### Exhibition Floor
 
 {{ gallery(images=[
-    "reviews/dac-2022/exhibition_floor.jpg",
-    "reviews/dac-2022/exhibition_floor2.jpg",
+    "exhibition_floor.jpg",
+    "exhibition_floor2.jpg",
 ], id="gallery-exhibition_floor") }}
 
 #### X-Epic
@@ -426,7 +425,7 @@ param0, param1, param2, cov_metric
 
 #### Analog Innovation
 
-{{ image(path="reviews/dac-2022/12-xmodel.jpg", width="50%") }}
+{{ image(path="12-xmodel.jpg", width="50%") }}
 
 - [XMODEL from scientific analog](https://www.scianalog.com/xmodel/)
     - They claim they can perform SPICE-ish simulations in pure SystemVerilog without invoking a SPICE simulator
@@ -468,7 +467,7 @@ param0, param1, param2, cov_metric
 
 - Cadence delivers a boon to academic researchers (we should migrate to Xcelium and get rid of all Synopsys dependencies in our VLSI flow)
 
-{{ image(path="reviews/dac-2022/12-cadence_statement.jpg", width="60%") }}
+{{ image(path="12-cadence_statement.jpg", width="60%") }}
 
 - Thanks to this, [hammer-cadence-plugins](https://github.com/ucb-bar/hammer-cadence-plugins/) is now public!
 
@@ -518,8 +517,8 @@ param0, param1, param2, cov_metric
         - Something like this would be very awkward with Hammer since the Makefile orchestrating the sweep would have to emit yaml/json fragments for each concrete parameter set
 
 {{ gallery(images=[
-    "reviews/dac-2022/13-mflowgen1.png",
-    "reviews/dac-2022/13-mflowgen2.png",
+    "13-mflowgen1.png",
+    "13-mflowgen2.png",
 ], id="gallery-mflowgen") }}
 
 #### HAMMER Talk
@@ -527,7 +526,7 @@ param0, param1, param2, cov_metric
 - Where are the paper and slides? I could find the other ones by searching "dac 2022 mflowgen" or looking at their Github repo. We need to do a better job with marketing.
 - But regardless, great presentation Bora!
 
-{{ image(path="reviews/dac-2022/13-bora.jpg", width="60%") }}
+{{ image(path="13-bora.jpg", width="60%") }}
 
 ### Designing and Verifying for Power at the Front End
 
@@ -536,12 +535,12 @@ param0, param1, param2, cov_metric
 #### [Learning-based Power Modeling for Versal AI Engine](https://59dac.conference-program.com/presentation/?id=FEDES116&sess=sess163)
 
 {{ gallery(images=[
-    "reviews/dac-2022/13-versal_power1.jpg",
-    "reviews/dac-2022/13-versal_power2.jpg",
-    "reviews/dac-2022/13-versal_power3.jpg",
-    "reviews/dac-2022/13-versal_power4.jpg",
-    "reviews/dac-2022/13-versal_power5.jpg",
-    "reviews/dac-2022/13-versal_power6.jpg",
+    "13-versal_power1.jpg",
+    "13-versal_power2.jpg",
+    "13-versal_power3.jpg",
+    "13-versal_power4.jpg",
+    "13-versal_power5.jpg",
+    "13-versal_power6.jpg",
 ], id="gallery-versal") }}
 
 - Cycle-level granularity on-chip power monitor used for peak draw and IR drop analysis
@@ -567,7 +566,7 @@ param0, param1, param2, cov_metric
 
 #### Coq Based DRAM Timing Model and Property Verifier
 
-{{ image(path="reviews/dac-2022/13-coq_dram_model.jpg", width="20%") }}
+{{ image(path="13-coq_dram_model.jpg", width="20%") }}
 
 - Coq based DRAM model, timing invariants and proof. SystemVerilog lowering is being worked on.
     - flisboa@telecom-paris.fr
@@ -575,15 +574,15 @@ param0, param1, param2, cov_metric
 
 #### Deep RL Placer
 
-{{ image(path="reviews/dac-2022/13-deep_rl_placer.jpg", width="20%") }}
+{{ image(path="13-deep_rl_placer.jpg", width="20%") }}
 
 #### Pulp-Based PMU FPGA Prototype
 
-{{ image(path="reviews/dac-2022/13-pulp_pmc.jpg", width="20%") }}
+{{ image(path="13-pulp_pmc.jpg", width="20%") }}
 
 #### XLS (Google's HLS IR)
 
-{{ image(path="reviews/dac-2022/13-xls_poster.jpg", width="20%") }}
+{{ image(path="13-xls_poster.jpg", width="20%") }}
 
 - HLS has traditionally meant C or SystemC to structural-ish Verilog
     - Algorithms expressed in C are usually feedforward ones with a bit of state, expressed as pure functions - these can be transformed into FSMs with HLS
@@ -614,8 +613,8 @@ param0, param1, param2, cov_metric
 - The exhibition floor wasn't open today. Nice to see how they packed everything into a relatively small area.
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-done1.jpg",
-    "reviews/dac-2022/14-done2.jpg",
+    "14-done1.jpg",
+    "14-done2.jpg",
 ], id="gallery-teardown") }}
 
 ### SemiCon West
@@ -626,11 +625,11 @@ param0, param1, param2, cov_metric
 
 - There was a probe tester that was running on the floor - it is incredibly fast
 
-{{ image(path="reviews/dac-2022/14-semicon_prober.jpg", width="50%") }}
+{{ image(path="14-semicon_prober.jpg", width="50%") }}
 
 <div style="text-align: center;">
 <video controls style="height: 500px;" preload="none">
-  <source src="reviews/dac-2022/14-semicon_prober.mp4" type="video/mp4">
+  <source src="14-semicon_prober.mp4" type="video/mp4">
 </video>
 </div>
 
@@ -644,9 +643,9 @@ param0, param1, param2, cov_metric
     - Weikai Sun - Synopsys
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-analog_panel.jpg",
-    "reviews/dac-2022/14-analog_panel2.jpg",
-    "reviews/dac-2022/14-analog_panel3.jpg",
+    "14-analog_panel.jpg",
+    "14-analog_panel2.jpg",
+    "14-analog_panel3.jpg",
 ], id="gallery-analog") }}
 
 - Analog *was* being dragged into FF nodes
@@ -659,11 +658,11 @@ param0, param1, param2, cov_metric
 #### Synopsys' Take
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-analog_panel_1_1.jpg",
-    "reviews/dac-2022/14-analog_panel_1_2.jpg",
-    "reviews/dac-2022/14-analog_panel_1_3.jpg",
-    "reviews/dac-2022/14-analog_panel_1_4.jpg",
-    "reviews/dac-2022/14-analog_panel_1_5.jpg",
+    "14-analog_panel_1_1.jpg",
+    "14-analog_panel_1_2.jpg",
+    "14-analog_panel_1_3.jpg",
+    "14-analog_panel_1_4.jpg",
+    "14-analog_panel_1_5.jpg",
 ], id="gallery-analog-1") }}
 
 - Custom layout is painful due to parasitic-induced layout iteration
@@ -673,37 +672,37 @@ param0, param1, param2, cov_metric
 #### Elad's Take
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-analog_panel_2_1.jpg",
-    "reviews/dac-2022/14-analog_panel_2_2.jpg",
-    "reviews/dac-2022/14-analog_panel_2_3.jpg",
-    "reviews/dac-2022/14-analog_panel_2_4.jpg",
-    "reviews/dac-2022/14-analog_panel_2_5.jpg",
-    "reviews/dac-2022/14-analog_panel_2_6.jpg",
+    "14-analog_panel_2_1.jpg",
+    "14-analog_panel_2_2.jpg",
+    "14-analog_panel_2_3.jpg",
+    "14-analog_panel_2_4.jpg",
+    "14-analog_panel_2_5.jpg",
+    "14-analog_panel_2_6.jpg",
 ], id="gallery-analog-2") }}
 
 #### Steve Burns' Take
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-analog_panel_3_1.jpg",
-    "reviews/dac-2022/14-analog_panel_3_2.jpg",
-    "reviews/dac-2022/14-analog_panel_3_3.jpg",
-    "reviews/dac-2022/14-analog_panel_3_4.jpg",
-    "reviews/dac-2022/14-analog_panel_3_5.jpg",
-    "reviews/dac-2022/14-analog_panel_3_6.jpg",
-    "reviews/dac-2022/14-analog_panel_3_7.jpg",
-    "reviews/dac-2022/14-analog_panel_3_8.jpg",
+    "14-analog_panel_3_1.jpg",
+    "14-analog_panel_3_2.jpg",
+    "14-analog_panel_3_3.jpg",
+    "14-analog_panel_3_4.jpg",
+    "14-analog_panel_3_5.jpg",
+    "14-analog_panel_3_6.jpg",
+    "14-analog_panel_3_7.jpg",
+    "14-analog_panel_3_8.jpg",
 ], id="gallery-analog-3") }}
 
 #### NVIDIA's Take
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-analog_panel_4_1.jpg",
-    "reviews/dac-2022/14-analog_panel_4_2.jpg",
-    "reviews/dac-2022/14-analog_panel_4_3.jpg",
-    "reviews/dac-2022/14-analog_panel_4_4.jpg",
-    "reviews/dac-2022/14-analog_panel_4_5.jpg",
-    "reviews/dac-2022/14-analog_panel_4_6.jpg",
-    "reviews/dac-2022/14-analog_panel_4_7.jpg",
+    "14-analog_panel_4_1.jpg",
+    "14-analog_panel_4_2.jpg",
+    "14-analog_panel_4_3.jpg",
+    "14-analog_panel_4_4.jpg",
+    "14-analog_panel_4_5.jpg",
+    "14-analog_panel_4_6.jpg",
+    "14-analog_panel_4_7.jpg",
 ], id="gallery-analog-4") }}
 
 - Layout changes are by their nature *visual*, only one thing is touched at a time (and you do it by hand so you feel in full control)
@@ -724,9 +723,9 @@ param0, param1, param2, cov_metric
 - [GATSPI: GPU Accelerated Gate-Level Simulation for Power Improvement](https://research.nvidia.com/publication/2022-03_gatspi-gpu-accelerated-gate-level-simulation-power-improvement)
 
 {{ gallery(images=[
-    "reviews/dac-2022/14-gatspi.jpg",
-    "reviews/dac-2022/14-gatspi1.png",
-    "reviews/dac-2022/14-gatspi2.png",
+    "14-gatspi.jpg",
+    "14-gatspi1.png",
+    "14-gatspi2.png",
 ], id="gallery-gatspi") }}
 
 - Transform gate-level netlists to DGL graphs, extract subgraphs and compile them to CUDA kernels that accurately model delays with SDF input
@@ -736,7 +735,7 @@ param0, param1, param2, cov_metric
 
 ## hgdb
 
-{{ image(path="reviews/dac-2022/14-hgdb.jpg", width="50%") }}
+{{ image(path="14-hgdb.jpg", width="50%") }}
 
 - A great talk! Step through debugging is a bit of a hard sell to RTL designers who are used to waveforms, but Verilog - Scala sourcemaps would be insanely useful especially for temporary / generated nodes.
 

@@ -1,9 +1,10 @@
 <div class="photoswipe-gallery" id="{{ id }}" style="margin-bottom: 1rem;">
   {% for image in images %}
-  {% set meta = get_image_metadata(path=image) %}
-  {% set thumb = resize_image(path=image, width=300, height=300, op="fit_height", format="webp", quality=60) %}
-  {% set thumb_retina = resize_image(path=image, width=600, height=600, op="fit_height", format="webp", quality=60) %}
-  <a href="{{ get_url(path=image) }}" data-pswp-width="{{ meta.width }}" data-pswp-height="{{ meta.height }}" data-cropped="true" target="_blank">
+  {% set image_path = page.colocated_path ~ image %}
+  {% set meta = get_image_metadata(path=image_path) %}
+  {% set thumb = resize_image(path=image_path, width=300, height=300, op="fit_height", format="webp", quality=60) %}
+  {% set thumb_retina = resize_image(path=image_path, width=600, height=600, op="fit_height", format="webp", quality=60) %}
+  <a href="{{ image_path }}" data-pswp-width="{{ meta.width }}" data-pswp-height="{{ meta.height }}" data-cropped="true" target="_blank">
     <img src="{{ thumb.url | safe }}" srcset="{{ thumb_retina.url }} 2x" alt="" />
   </a>
   {% endfor %}

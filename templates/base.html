@@ -10,9 +10,7 @@
     <link rel="shortcut icon"  href="{{ get_url(path="favicon.ico") | safe }}" />
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml") | safe }}">
 
-    {#{% set data = load_data(path="public/style.css", format="plain") -%}#}
     {% set css_path = get_url(path="style.css") -%}
-    {#<style>{{ data | safe }}</style>#}
     <link rel="stylesheet" href="{{ css_path | safe}}">
 
     <base href="/">

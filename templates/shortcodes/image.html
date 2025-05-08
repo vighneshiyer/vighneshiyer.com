@@ -1,3 +1,5 @@
-<div style="text-align: center; margin-bottom: 1rem;">
-  <a href={{ path | safe }}><img width="{{ width }}" src="{{ path }}" /></a>
-</div>
+<figure>
+  {% set image_path = page.colocated_path ~ path %}
+  <a href={{ image_path | safe }}><img width="{{ width }}" src="{{ image_path }}" /></a>
+  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+</figure>

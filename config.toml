@@ -10,6 +10,9 @@ build_search_index = true
 title = "Vighnesh Iyer"
 
 generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+generate_sitemap = true
+generate_robots_txt = true
 
 [markdown]
 # Whether to do syntax highlighting

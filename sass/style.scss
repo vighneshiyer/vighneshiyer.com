@@ -32,10 +32,10 @@ $viewports: (
 // Commons styles
 @import "../node_modules/@picocss/pico/scss/themes/default/styles";
 :root {
-    --font-size: 0.95rem;
-    //--font-family: Helvetica, Arial, sans-serif;
-    --font-family: sans-serif;
-    --typography-spacing-vertical: 0.8rem;
+  --font-size: 0.95rem;
+  //--font-family: Helvetica, Arial, sans-serif;
+  --font-family: sans-serif;
+  --typography-spacing-vertical: 0.8rem;
 }
 h1 {
   --font-size: 1.4rem;
@@ -129,118 +129,132 @@ h5 {
 }
 
 header {
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    h1 {
-        margin-top: 0.25rem;
-        margin-bottom: 0rem;
-        font-size: 1.6rem;
-        a {
-            color: var(--contrast-hover);
-        }
+  padding-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  h1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0rem;
+    font-size: 1.6rem;
+    a {
+      color: var(--contrast-hover);
     }
-    p {
-        margin-bottom: 0rem;
-        margin-top: 0.25rem;
-        text-align: right;
-        font-size: 0.8rem;
-    }
-}
-hr {
-    border-top: 1px solid var(--contrast);
-}
-.header-link {
-    display: inline;
-    margin-left: 1rem;
-    font-weight: 400;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 0.1rem;
-}
-.post-time {
+  }
+  p {
+    margin-bottom: 0rem;
+    margin-top: 0.25rem;
+    text-align: right;
     font-size: 0.8rem;
-    position: relative;
-    bottom: 0.05rem;
-    margin-left: 0.5rem;
+  }
 }
+
+hr {
+  border-top: 1px solid var(--contrast);
+}
+
+.header-link {
+  display: inline;
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0.1rem;
+}
+
+.post-time {
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 0.05rem;
+  margin-left: 0.5rem;
+}
+
 .post-time-article {
-    font-size: 0.9rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    color: var(--muted-color);
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--muted-color);
 }
+
 article {
-    background: none;
-    box-shadow: none;
+  background: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  h1 {
     margin-bottom: 0;
-    padding-bottom: 1rem;
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    h1 {
-        margin-bottom: 0;
-    }
-    > *:last-child {
-        margin-bottom: 0;
-    }
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
+
 body > main {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
+
 blockquote > ul {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
+
 blockquote {
-    > *:last-child {
-        margin-bottom: 0;
-    }
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
+
 code {
-    padding: 0.1rem 0.3rem;
+  padding: 0.1rem 0.3rem;
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 // https://flowbite.com/docs/components/badge/
 @mixin badge {
-    padding-bottom: .125rem;
-    padding-top: .125rem;
-    padding-left: .625rem;
-    padding-right: .625rem;
-    border-radius: 0.25rem;
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  padding-bottom: .125rem;
+  padding-top: .125rem;
+  padding-left: .625rem;
+  padding-right: .625rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .grey-badge {
-    @include badge;
-    background: $grey-100;
-    color: color.scale($grey-900, $blackness: 25%);
+  @include badge;
+  background: $grey-100;
+  color: color.scale($grey-900, $blackness: 25%);
 }
 
 .blue-badge {
-    @include badge;
-    background: $primary-100;
-    color: color.scale($primary-900, $blackness: 25%);
+  @include badge;
+  background: $primary-100;
+  color: color.scale($primary-900, $blackness: 25%);
 }
 
 .amber-badge {
-    @include badge;
-    background: $amber-100;
-    color: color.scale($amber-900, $blackness: 25%);
+  @include badge;
+  background: $amber-100;
+  color: color.scale($amber-900, $blackness: 25%);
 }
 
 .green-badge {
-    @include badge;
-    background: $green-100;
-    color: color.scale($green-900, $blackness: 50%);
+  @include badge;
+  background: $green-100;
+  color: color.scale($green-900, $blackness: 50%);
 }
 
 .red-badge {
-    @include badge;
-    background: $red-100;
-    color: color.scale($red-900, $blackness: 50%);
+  @include badge;
+  background: $red-100;
+  color: color.scale($red-900, $blackness: 50%);
 }
