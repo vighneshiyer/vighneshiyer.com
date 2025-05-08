@@ -1,4 +1,9 @@
-# A Curriculum for Life
++++
+title = "A Curriculum for Higher Education in EECS"
+date = 2023-08-23
+draft = true
+slug = "higher-education-eecs-curriculum"
++++
 
 Focus on philosophy can be found in other articles. This is a very concrete post on specific materials and links to learn about specific things.
 

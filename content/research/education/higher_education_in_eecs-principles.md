@@ -1,3 +1,10 @@
++++
+title = "Principles for Higher Education in EECS"
+date = 2023-08-23
+draft = true
+slug = "higher-education-eecs-principles"
++++
+
 # Steps to A Proper EECS Education
 
 - I have some more notes in 90/research/education.md and School_Curriculum.adoc

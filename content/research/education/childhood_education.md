@@ -1,3 +1,10 @@
++++
+title = "Childhood Education"
+date = 2023-08-23
+draft = true
+slug = "childhood-education"
++++
+
 - https://x.com/JeremyTate41/status/1901833913980403898?t=-j4_-YavKbrFoV5M8vO-nA
 
 > Nearly everything our founders believed made up a good education has now been eliminated.

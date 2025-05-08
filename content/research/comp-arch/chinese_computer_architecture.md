@@ -1,4 +1,9 @@
-# Chinese Ascendancy in Computer Architecture
++++
+title = "Chinese Education and Research in Computer Architecture"
+date = 2023-08-23
+draft = true
+slug = "chinese-comparch-education-research"
++++
 
 - sequencer
 - chipsalliance and rocketchip takeover
