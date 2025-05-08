@@ -29,3 +29,5 @@ https://github.com/hackdac/hackdac_2018_beta
 > This is the only reasonable extension to the bug benchmark paper - trying to compare formal and dynamic verification on designs isn't very convincing to reviewers - we shall motivate the differential coverage metric directly by making it evidently useful on a larger and deeper design like the DDR MC and write a paper exclusively on that. In doing so, we might discover a better API for writing input generators that can switch between formal and dynamic without perf overheads on either side.
 >
 > See notes from 7/18/2022 in verif
+
+- Copy over the note I wrote lucy in 2025

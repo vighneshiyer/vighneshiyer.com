@@ -656,13 +656,6 @@ For the incremental synthesis - one thing we want to do is offline continuous co
 - https://www.nsf.gov/awardsearch/showAward?AWD_ID=1955450&HistoricalAwards=false
 - https://www.nsf.gov/awardsearch/showAward?AWD_ID=2016662&HistoricalAwards=false
 
-## Nathan's Talk on DAM
-
-- How do you handle combinational feedback from input to output ports, do you need to do iteration until steady state
-- How do you model parallel threads within a modeled component, consider multiple requests in flight in a dma unit with reordering possible
-- How do you model peek without pull on a channel when the time of the sending component isn't guaranteed to advance in lock step with the downstream component?
-- Oh the calibration thing is quite iffy it's just like gem5 param calibration, can you actually check that the timing params get closer to rtl or is this just curve fitting?
-
 ## Accelerator Integration
 
 - Change the notion of a thread for a modern os

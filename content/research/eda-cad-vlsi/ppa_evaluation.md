@@ -1,8 +1,15 @@
 +++
-title = "Overview and Research in PPA Evaluation"
+title = "Fast PPA Prediction"
 date = 2024-05-24
 draft = true
+slug = "fast-ppa-prediction"
 +++
+
+- Give an overview of what the problem is.
+- What industry products exist for it (Joules, PowerPro, ...).
+- What academic works have tried to solve it (mostly using learned surrogate functions for existing VLSI/CAD algorithms).
+- What startups are trying to do.
+- The possibility for incrementalism to solve this problem.
 
 - Fast PPA prediction from RTL / elaborated netlist:
   - SNS

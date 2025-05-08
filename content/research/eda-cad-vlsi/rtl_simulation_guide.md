@@ -1,10 +1,20 @@
 +++
-title = "RTL Simulation"
+title = "A Complete Guide to RTL Simulation"
 date = 2023-08-23
 draft = true
+slug = "complete-guide-to-rtl-simulation"
 +++
 
 ## Simulation
+
+- Try to present the problem via Python code, keep it simple and implement a basic single cycle simulator only supporting some simple operators with 2-stage memory element updates and SRAMs
+  - Joonho's attempt: https://joonho3020.github.io/articles/rtl-simulation.html
+- Discuss what the methods are to improve the performance of this process
+  - Preprocessing / optimizing the netlist with boolean optimizations
+  - Scheduling the operations for maximum host cache locality and minimize instruction footprint
+  - Preserve modules and deduplication
+  - Update rule skipping with partial event driven simulation semantics
+  - Use specialized hardware: ASIC-based boolean processor grid, FPGAs (direct and decoupled mappings), manycore architectures (Cyclist, TT Blackhole)
 
 ### Multi-Level, Incrementally Refined and Sampled, Simulation
 

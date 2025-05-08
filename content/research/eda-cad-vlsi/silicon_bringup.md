@@ -1,6 +1,8 @@
 +++
 title = "Academic Silicon Bringup Methodology"
 date = 2024-04-18
+draft = true
+slug = "academic-silicon-bringup-methodology"
 +++
 
 ## The Objective
