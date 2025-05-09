@@ -627,11 +627,7 @@ param0, param1, param2, cov_metric
 
 {{ image(path="14-semicon_prober.jpg", width="50%") }}
 
-<div style="text-align: center;">
-<video controls style="height: 500px;" preload="none">
-  <source src="14-semicon_prober.mp4" type="video/mp4">
-</video>
-</div>
+{{ video(path="14-semicon_prober.mp4", height="500px") }}
 
 ### Automating Analog Layout - Has the time finally come?
 

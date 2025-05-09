@@ -17,7 +17,7 @@ Language
 Runtime algorithm
   - A-port style
   - Global synchronization style for lockstep time advancement
-  - https://en.wikipedia.org/wiki/Chandy%E2%80%93Misra%E2%80%93Haas_algorithm_resource_model
+  - https://eecs.ceas.uc.edu/~wilseypa/classes/ece975/pre2010/applications/vlsi/soule-tomacs91.pdf
 
 Runtime hardware platform
 - FPGA vs GPU vs CPU vs multicore CPU

@@ -1,0 +1,7 @@
+<figure>
+  {% set video_path = page.colocated_path ~ path %}
+  <video controls style="height: {{ height }};" preload="none">
+    <source src="{{ video_path }}" type="video/mp4">
+  </video>
+  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+</figure>
