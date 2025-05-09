@@ -38,6 +38,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://www.aporiamagazine.com/
 - https://www.theconundrumcluster.com/
 - https://claytonwramsey.com/blog/
+- https://outsiderart.substack.com/archive?sort=new
 
 China:
 

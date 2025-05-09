@@ -181,6 +181,10 @@ Here are a bunch of things from around the internet that I find interesting.
 ### Symbolic AI
 
 - [Yuxi Liu: Obituary for Cyc](https://yuxi-liu-wired.github.io/essays/posts/cyc/) ([HN link](https://news.ycombinator.com/item?id=43625474)) (the death of rule-based symbolic AI)
+  - [Applications of Ontology - John F. Sowa](https://www.jfsowa.com/talks/ontology.htm)
+  - [Upper Ontology - Wikipedia](https://en.wikipedia.org/wiki/Upper_ontology)
+  - [SUMO - Github](https://github.com/ontologyportal/sumo)
+  - [Ontologies in the era of large language models by Fabian Neuhaus - Youtube](https://www.youtube.com/watch?v=rLOmAzkqIts)
 - [Pedro Domingos on the Symbolist Approach to AI](https://www.youtube.com/watch?v=ogaCzVoRpZs) (Pedro defends symbolic AI approaches)
 
 ### Neuromorphic

@@ -31,6 +31,8 @@ The reality is that, when prototyping a model architecture idea, you don't have 
 
 - https://web.archive.org/web/20120423063209/http://cacs.usc.edu/education/cs653/Shaw-msMD-SC09.pdf (Anton comes the closest to real HW-SW co-design in a meaningful way, Amir cites this in his paper).
 
+- https://www.sigarch.org/a-computer-architects-guide-to-designing-abstractions-for-intelligent-systems/ (another whitepaper written by Amir)
+
 ## Architecture 2.0
 
 - https://www.computer.org/csdl/magazine/co/2025/02/10857820/23VCdDhsEAo
