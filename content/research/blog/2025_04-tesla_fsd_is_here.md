@@ -55,3 +55,5 @@ description = "Hardly anyone realizes how far ahead Tesla is"
   - More amazing feats: https://www.youtube.com/watch?v=s2GwXdhstJo ( Nighttime Tire Recognition Ability: Huawei Aito ADS vs. Tesla FSD. | Tesla FSD in China )
 - https://www.youtube.com/watch?v=kFO1rGYOhcA ( Tesla FSD Clips of the Week - April 2025)
   - Just watch and observe
+- https://www.youtube.com/watch?v=CE_faqY_P4Q (Some outstanding issues with Tesla FSD in China that need to be addressed. | Tesla FSD in China)
+  - Good review of 3 clips where FSD stalled when it could have kept going

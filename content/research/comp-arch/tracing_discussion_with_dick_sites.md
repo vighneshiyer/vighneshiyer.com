@@ -31,3 +31,4 @@ slug = "tracing-and-profiling-discussion-with-dick-sites"
   - Slides: https://www.pdl.cmu.edu/SDI/2015/slides/DatacenterComputers.pdf
 - Continuous Profiling: Where Have All the Cycles Gone? (https://www.cs.cmu.edu/afs/cs/academic/class/15745-s05/www/papers/p357-anderson.pdf) (a good paper from the DEC era)
 - https://chatgpt.com/share/680ea221-56d0-8001-a1d3-3df9ab157f74
+- https://www.sigarch.org/performance-counters-id-like-to-see-part-ii/
