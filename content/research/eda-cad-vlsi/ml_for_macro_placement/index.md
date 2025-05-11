@@ -311,7 +311,7 @@ This debate is probably over for now.
 The Nature authors have abandoned EDA CAD research, and the UCSD team seems to be taking a victory lap (even though both parties are gracious in "victory" and "defeat").
 I would say that Alberto Sangiovanni-Vincentelli (a father of EDA CAD) and Anirudh Devgan (CEO of Cadence) have been vindicated to some extent, in relying on fundamental algorithmic and solver-based approaches to CAD problems rather than magic ML blackboxes.
 
-Another interesting tidbit is that the man who wrote the original rebuttal to the Nature paper claims that Google tried to woo Synopsys with the RL placer work to secure a cloud contract.
+Another interesting tidbit is that the man who wrote the original rebuttal to the Nature paper claims that [Google tried to woo Synopsys with the RL placer work to secure a cloud contract](https://www.theregister.com/2023/03/27/google_ai_chip_paper_nature/).
 
 > In his complaint against Google, which was amended last month, Chatterjee's lawyers claimed the web giant was thinking about commercializing its AI-based floorplan-generating software with "Company S" while it was negotiating a Google Cloud deal reportedly worth $120 million with S at the time. Chatterjee claimed Google championed the floorplan paper to help convince Company S to get onboard with this significant commercial pact.
 >
@@ -331,7 +331,7 @@ As of September 2023, an editor's note was placed on the [original Nature paper]
 
 > 20 September 2023 Editor’s Note: Readers are alerted that the performance claims in this article have been called into question. The Editors are investigating these concerns, and, if appropriate, editorial action will be taken once this investigation is complete.
 
-Hmm, an investigation?
+<!--Hmm, an investigation?-->
 
 Also Andrew Kahng's article in Nature's "News and Views" ([AI system outperforms humans in designing floorplans for microchips](https://www.nature.com/articles/d41586-021-01515-9)) on the original Nature paper was retracted on September 21, 2023.
 
@@ -343,17 +343,24 @@ See his [review of the original Nature paper](https://drive.google.com/file/d/1b
 ## Retrospective (July 2024)
 
 So the Nature paper still has the same editor's note on it.
-At this point, it is unlikely that there will ever be an outcome of their 'investigation'.
+It is unknown what investigation the Nature editors are performing and what the outcome so far is.
+<!--At this point, it is unlikely that there will ever be an outcome of their 'investigation'.-->
 
 I was also reading the [NYT article about Dr. Chatterjee's firing from Google again](https://www.nytimes.com/2022/05/02/technology/google-fires-ai-researchers.html) and a few things came to mind.
-Firstly, the ridiculous claims made by Google.
+Firstly, the <!--ridiculous-->claims made by Google.
 
 > “We thoroughly vetted the original Nature paper and stand by the peer-reviewed results,” Zoubin Ghahramani, a vice president at Google Research, said in a written statement. “We also rigorously investigated the technical claims of a subsequent submission, and it did not meet our standards for publication.”
 
+It seems unlikely Google performed a rigorous internal evaluation of the Nature paper against the claims of the Stronger Baselines rebuttal.
+The rebuttal is written in a clearer style and contains plenty of hard evidence compared to the Nature paper.
+It seems more likely that the decision to not allow publication of the rebuttal was due to political pressures within Google to suppress evidence against the "AI for AI chips" fanfare.
+
+<!--
 Oh really?
 What a thorough investigation they did.
 And what a coincidence that the preprint that dumped cold water on the 'AI for AI chips' was 'not good enough for publication'.
 If you actually look at Dr. Chatterjee's paper, you will find that it is written in a much clearer style and contains plenty of hard evidence compared to the 'Nature paper'.
+-->
 
 > Ms. Goldie said that Dr. Chatterjee had asked to manage their project in 2019 and that they had declined. When he later criticized it, she said, he could not substantiate his complaints and ignored the evidence they presented in response.
 >
@@ -361,12 +368,19 @@ If you actually look at Dr. Chatterjee's paper, you will find that it is written
 >
 > She said the work had been peer-reviewed by Nature, one of the most prestigious scientific publications. And she added that Google had used their methods to build new chips and that these chips were currently used in Google’s computer data centers.
 
+The rebuttal authors never made any public personal attacks against the two leading Nature authors (Anna and Azalia).
+The Nature authors haven't presented a coherent rebuttal to the evidence provided by the Stronger Baselines or ISPD 2023 paper.
+Claiming that, since the work was reviewed by Nature, it is beyond reproach, doesn't make sense since Nature isn't even a suitable venue for such work.
+Even if Google uses RL for macro placement for their chips, it doesn't say anything about whether the approach is superior to other mixed-placers.
+
+<!--
 Ah yes, he "waged a campaign of misinformation" against these poor innocent ML pushers.
 I was looking at [Dr. Chatterjee's website](https://blif.org/~satrajit/).
 Unlike the applied ML people who want to "learn" surrogates for placement algorithms, he is a serious person investigating *fundamental* questions about DNNs.
 Unlike the people who led the Nature paper effort, he is actually knowledgable in state-of-the-art VLSI CAD algorithms.
 And finally, Dr. Chatterjee is one of us (Berkeley PhD with Brayton and Mishchenko).
 I think it is obvious who is in the right here.
+-->
 
 > While the debate about that research continued, Google pitched another paper to Nature. For the submission, Google made some adjustments to the earlier paper and removed the names of two authors, who had worked closely with Dr. Chatterjee and had also expressed concerns about the paper’s main claims, the people said.
 
@@ -379,27 +393,31 @@ These are clearly two people of high integrity and intelligence.
 ### AlphaChip
 
 On September 26th, I was alerted to an article published on the Google Deepmind blog: [How AlphaChip transformed computer chip design](https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/).
+The Nature authors named their RL for placement algorithm "AlphaChip" in the same vein as AlphaZero, AlphaGo, and AlphaFold, suggesting their algorithm is the SOTA in macro placement (just as the other Alpha projects were SOTA in chess, go, and protein folding simulation).
+They are making the claim that AlphaChip is a fundamental leap in macro placement algorithms.
+<!--
 The Nature authors called their RL for placement algorithm "AlphaChip"!
 Yes, "AlphaChip", just like AlphaGo or AlphaFold!
 These two are not backing down, and continue to insist they have made a fundamental leap in mixed-placement algorithms.
+-->
 
 > AlphaChip has generated superhuman chip layouts used in every generation of Google’s TPU since its publication in 2020. These chips make it possible to massively scale-up AI models based on Google’s Transformer architecture.
 
-They keep saying "superhuman", but aren't they aware that commercial autoplacers outperform humans consistently?
-Nearly any algorithmic technique that can search millions of potential placements for better QoR will be "superhuman" indeed.
-By setting the baseline as manual macro placements picked by Googlers (who we know aren't great VLSI CAD engineers), their "success" is certain!
+They keep saying "superhuman", but aren't they aware that commercial mixed-placers outperform humans consistently (now more than ever)?
+Nearly any technique that can search millions of potential placements for better QoR will be "superhuman" indeed.
+By setting the baseline as manual macro placements picked by Google VLSI CAD engineers<!--(who we know aren't great VLSI CAD engineers)-->, their "success" is certain!
 
 > With each new generation of TPU, including our latest Trillium (6th generation), AlphaChip has designed better chip layouts and provided more of the overall floorplan, accelerating the design cycle and yielding higher-performance chips.
 
 They also claim that TPU blocks (25 hierarchical blocks in the latest TPU v6) have their macro placements done using AlphaChip before sending them off to a 3rd party for the rest of the VLSI flow up to GDS.
-I can believe this, but they never reveal anything about the complexity of those blocks.
+I can believe this, but they never reveal anything about the complexity of these blocks and how similar these blocks are to those in their training dataset.
 Furthermore, this statement says nothing about how their algorithm compares to the SOTA mixed-placers in commercial CAD tools which have only gotten better over the past 3 years.
 
 Then they offer the usual quotes from professors and MediaTek praising their work.
 Again, no actual arguments: just appeals to authority and marketing materials.
 
 One very positive development is they released a [pre-trained checkpoint of the RL policy](https://github.com/google-research/circuit_training/?tab=readme-ov-file#pre-trained-model-checkpoint), which was trained on 20 TPU blocks.
-I hope the UCSD reruns their experiments using this checkpoint to evaluate the benefit of pre-training on final achieved QoR.
+I hope the UCSD team reruns their experiments using this checkpoint to evaluate the benefit of pre-training on final achieved QoR.
 Hopefully this checkpoint can finally put this matter to rest.
 
 ### The Nature Addendum
@@ -407,17 +425,29 @@ Hopefully this checkpoint can finally put this matter to rest.
 The Nature authors released an [addendum to their paper](https://www.nature.com/articles/s41586-024-08032-5) which basically rehashes arguments they have made in the past that I believe the UCSD team refuted.
 It seems the Nature investigation has concluded, without any substantial changes being made to the original article.
 
+They started their addendum with this:
+
+> AlphaChip was one of the first RL methods deployed to solve a real-world engineering problem, and its publication triggered an explosion of work on AI for chip design. Nevertheless, as described in Sutton’s The Bitter Lesson, there is often reluctance to accept the application of machine learning to new areas, and ultimately this has led to some confusion around our work, which we address below.
+
+The arrogance of the Nature authors and their disdain for rigorous evaluation from actual EDA CAD researchers is laid bare with this statement.
+
 ### Hacker News
 
 The next day (September 27th), a friend alerted me that the AlphaChip blog post was [posted on Hacker News](https://news.ycombinator.com/item?id=41672110) and was ascending to the top of the front page very quickly.
-Since the post was filled with dumb comments, I decided to make an account and a [comment of my own](https://news.ycombinator.com/item?id=41673769).
+Since the post was filled with irrelevant comments, I decided to make an account and a [comment of my own](https://news.ycombinator.com/item?id=41673769).
 I would like to thank [clickwiseorange](https://news.ycombinator.com/user?id=clickwiseorange) for his supportive and accurate arguments.
 
 ### Using ML in EDA CAD Algorithms
 
-So just because this technique of using RL to accelerate macro placement didn't pan out, doesn't mean I think there is no room for ML techniques in CAD algorithms.
+So just because this technique of using RL to perform macro placement didn't pan out, doesn't mean I think there is no room for ML techniques in CAD algorithms.
 We know that Cadence/Synopsys are frequently calling out usage of ML in their CAD tools, so there is clearly some value to be had.
+
 Specifically, I think ML might be useful in providing estimates of QoR metrics only known later in the flow (i.e. learning heuristics): traditionally, heuristics are hand-constructed and tuned, so a learned heuristic will probably be more accurate.
+ML is good at learning novel representations of data that humans can't: in doing so, they can make better predictions (e.g. about final routed wirelength or the strength of a given position on a chessboard).
+
+In this case, it seems that the Nature authors are trying to use RL to turn macro placement into a turn-by-turn game with a final reward, rather than treating it like a mixed (continuous + discrete) optimization problem.
+Due to the need to keep RL trajectories short, the placement grid is quite coarse, and therefore the macro placements are often not as dense as they could be, compromising QoR.
+Furthermore, they do not simultaneously place standard cell clusters and hard macros, which is a fundamental limitation of the AlphaChip approach vs mixed-placers.
 
 ### Dr. Chatterjee's Lawsuit
 
@@ -426,3 +456,219 @@ Google had tried to dismiss the lawsuit earlier, but the judge refused to do so 
 Digging into the [original complaint filed by Dr. Chatterjee's lawyers](https://regmedia.co.uk/2023/03/26/satrajit_vs_google.pdf) reveals plenty of evidence that Google leadership conspired to suppress negative results about "AlphaChip" and retaliate against employees who authored the rebuttal or expressed skepticism about the work.
 
 Hopefully this is the last addendum I make to this blog post!
+
+## Ok, One More Thing
+
+This never seems to end...
+
+On October 23, 2024, Igor Markov published an [article on CACM](https://cacm.acm.org/research/reevaluating-googles-reinforcement-learning-for-ic-macro-placement/) titled "Reevaluating Google’s Reinforcement Learning for IC Macro Placement", which is a slightly modified version of [his arXiv manuscript](https://arxiv.org/abs/2306.09633).
+It seems Google's announcement of "AlphaChip" has spurred renewed interest in refuting their inaccurate claims.
+Markov calls out the Nature editorial process and asks that they demand a full reproduction to obtain the numbers reported in the Nature paper.
+
+There was another followup article published on CACM on October 29, 2024 titled ["Updates Spark Uproar"](https://cacm.acm.org/news/updates-spark-uproar/).
+This article collects skeptical quotes from several experts in the field of VLSI CAD that casts doubt on Google's hype.
+
+> AlphaChip detractors also took issue with Google applying the “Alpha” moniker to the chip design method, labeling it as a questionable effort to trade on the solid reputation of Google’s AlphaGo game playing AI software, and AlphaFold, an AI method for protein research...
+
+> “It’s nonsensical to compare AlphaChip to AlphaFold, whose results have been validated by many academic research groups as part of an open competition,” Markov said.
+
+### Jeff Dean's Pronouncement
+
+On the day Google's AlphaChip blog post was released, Jeff Dean made a [Twitter post of his own](https://x.com/JeffDean/status/1839308592408834559).
+
+> Welcome, AlphaChip!
+>
+> Today, we are sharing some exciting updates on our work published in @Nature in 2021 on using reinforcement learning for ASIC chip floorplanning and layout.  We’re also naming this work AlphaChip.
+>
+> Since we first published this work, our use of this approach internally has grown significantly.  It has now been used for multiple generations of TPU chips (TPU v5e, TPU v5p, and Trillium), with AlphaChip placing an increasing number of blocks and with larger wirelength reductions vs. human experts from generation to generation:
+
+Just the usual fanfare.
+
+> Three things we have observed in the external community are described in the Nature Addendum: (1) not doing any pre-training (circumventing the learning aspects of our method by removing its ability to learn from prior experience) (2) not training to convergence (standard practice in ML methods), and (3) using fewer computational resources than described in our Nature paper (using fewer resources is likely to harm performance, or require running for considerably longer to achieve the same performance).
+
+Just like the Nature addendum, Jeff Dean points out supposed 'deficiencies' in the ISPD 2023 paper, which have already been thoroughly refuted by its authors (and by Markov in his CACM article).
+
+> Many organizations have used AlphaChip as a building block for their own chip design efforts.  For example, MediaTek, one of the top chip design companies in the world, extended AlphaChip to accelerate development of their most advanced chips (e.g. the Dimensity Flagship 5G used in Samsung mobile phones), while improving power, performance and chip area.
+
+'Usage' of a VLSI CAD tool in industry is not a replacement for rigorous benchmarking.
+It is unknown what blocks AlphaChip was used on, the characteristics of those blocks, and how AlphaChip fares against other macro placement / mixed-placement algorithms.
+
+## It Truly Never Ends
+
+When CACM published Igor Markov's article, he [posted a link to it on his Linkedin](https://www.linkedin.com/posts/imarkov_happy-to-see-my-acm-communications-article-activity-7258264869114654720-kCyR/).
+In the comments, Igor and Anna Goldie argued about the article, both rebutting each other's claims, and the conversation ended with no consensus.
+Igor took down his post for an unknown reason, but part of it is [still archived here](https://web.archive.org/web/20241111045533/https://www.linkedin.com/posts/imarkov_happy-to-see-my-acm-communications-article-activity-7258264869114654720-kCyR/).
+
+### Nature Authors Publish Another Rebuttal
+
+On November 18th, 2024, Anna Goldie, Azalia Mirhoseini, and Jeff Dean published another rebuttal to Igor Markov's CACM article (LinkedIn posts: [Anna](https://www.linkedin.com/feed/update/urn:li:activity:7264308532643020801/), [Azalia](https://www.linkedin.com/feed/update/urn:li:activity:7264312172661354497/), [Jeff](https://www.linkedin.com/feed/update/urn:li:activity:7264312912532447234/)) (Twitter posts: [Anna](https://x.com/annadgoldie/status/1858531756506558688), [Azalia](https://x.com/Azaliamirh/status/1858534201316000055), [Jeff](https://x.com/JeffDean/status/1858540085794451906)).
+The rebuttal is titled "That Chip Has Sailed: A Critique of Unfounded Skepticism Around AI for Chip Design" and was [released on arXiv](https://arxiv.org/abs/2411.10053).
+
+I have reproduced Jeff Dean's statement below.
+
+> There has been unfounded skepticism in the EDA community about whether our AlphaChip method works as claimed in our Nature paper. @annadgoldie, @Azaliamirh, and I wrote a technical response highlighting these issues:
+>
+> Much of this unfounded skepticism is driven by a deeply flawed non-peer-reviewed publication by Cheng et al. (ISPD 2023) that claimed to replicate our approach but failed to follow our methodology in major ways.
+> In particular the authors did no pre-training (despite pre-training being mentioned 37 times in our Nature article), robbing our learning-based method of its ability to learn from other chip designs, then used 20X less compute and did not train to convergence, preventing our method from fully learning even on the chip design being placed.
+> By analogy, this would be like evaluating a version of AlphaGo that had never seen a game of Go before (instead of being pre-trained on millions of games), and then concluding that AlphaGo is not very good at Go.
+>
+> We also respond to Igor Markov’s “meta-analysis” published in the Nov 2024 issue of CACM.
+> In Markov’s paper (published without disclosing that Markov is a high-level employee at Synopsys, which makes commercial software that competes with our open-source release of AlphaChip), Markov “meta-analyzes” the flawed Cheng et al. paper and another unpublished anonymous PDF (Stronger Baselines) with no listed authors on which Markov is a shadow co-author (effectively regurgitating his own unpublished arguments as if they were independent).
+> The Markov article makes veiled accusations, all completely baseless and already found to be without merit by Nature.
+> I am surprised @Synopsys wants to be associated with this, and I am surprised @CACMmag saw fit to publish these sorts of allegations with no evidence, nor any technical data other than two flawed, non-peer reviewed articles.
+
+The use of hyperbole and belittling language ("deeply flawed", "regurgitating his own unpublished arguments") is surprising, coming from Jeff Dean.
+
+Furthermore, Dean claims that Markov is a "shadow co-author" of the "Stronger Baselines" paper and made an attempt to hide his affiliation when writing his meta-analysis.
+However, both in the [first version of Markov's arXiv preprint](https://arxiv.org/pdf/2306.09633v1) (published in June 2023), and in the [CACM article's supplement](https://dl.acm.org/doi/10.1145/3676845#supplementary-materials), Markov cites his authorship of the "Stronger Baselines" paper.
+Markov was also not employed by Synopsys at the time the meta-analysis was written.
+
+> As an update, Shankar Krishnamoorthy, Head of Technology & Product Development at @Synopsys, reached out to me to say "Regarding the CACM article that Igor Markov's comments and writings do not represent Synopsys views or opinions in any way.
+> Synopsys is also aligned with you on the potential of Reinforcement Learning AI for chip design as evidenced by strong customer adoption of our http://Synopsys.ai/DSO.ai suite of products."
+
+Shankar demonstrates that he is an excellent VP by playing both sides: he does not disavow Igor's technical arguments, while also injecting Synopsys' marketing materials!
+
+### My Perspective
+
+Before I analyze the rebuttal written by the Nature authors, I'll give my high-level thoughts about RL for floorplanning thus far.
+
+#### Technical Questions
+
+<strong>Is a turn-by-turn game the proper formulation for the chip floorplanning / mixed-placement problem?</strong>
+
+Unlike chess or Go, *automatic* chip floorplanning isn't naturally a turn-by-turn game.
+Instead, you have a bunch of hard macros and soft standard cell clusters and you must optimally place them all on an empty canvas (or in some cases, with fixed blockages on the canvas).
+Chip floorplanning is *naturally an optimization problem*.
+
+However, the way humans *manually* perform floorplanning *looks* like a game.
+They first specify the dimensions of the canvas by hand and place the top-level pins of the hierarchical block they're floorplanning on its edges.
+Then, they take one macro (or a group of banked SRAMs), analyze its connections to other macros/standard cells/pins, and harden its coordinates.
+This is repeated until until all hard macros are placed.
+
+I *feel* the Nature authors tried to automate this *human-like* approach to floorplanning by learning a placement policy using reinforcement learning.
+The Nature authors propose placing hard macros *one at a time* on a canvas until they are all placed, and then give their RL agent a reward based on a proxy cost.
+
+This differs substantially from how mixed-placement is approached by commercial CAD tools and other tools like DREAMPlace / AutoDMP.
+They *simultaneously* place both hard and soft macros and *simultaneously* attempt to optimize and legalize their placements.
+They also take advantage of *estimating costs as they are iterating* the proposed placement, rather than only receiving a cost at the end of placement.
+Instinctively, it seems that casting an optimization problem as a turn-by-turn game isn't the best formulation.
+
+<!--While routing can be thought of as a game easily, it is hard to put floorplanning in the same box-->
+
+<strong>How does the RL formulation of floorplanning get around the limitations of a coarse placement grid?</strong>
+
+<!--To train the policy network, which receives a reward at the end of a trajectory, we need to backprop through all the decisions made by the network.-->
+The RL policy network outputs a probability distribution over the chip canvas of where the macro under consideration ought to be placed.
+This probability distribution must be discretized over the chip canvas, since the action space must be discrete.
+The Nature authors propose placing macros onto *grid cells*: a discrete grid of up to 128 x 128 points evenly distributed across the chip canvas.
+<!-- Usually the grid is 30 x 30, according to the authors -->
+
+This coarse gridded action space is required to make training feasible.
+Making the grid finer would increase training time substantially since there are many more potential placement decisions for the RL network to explore.
+However, this 'gridding' necessarily degrades QoR, since it makes tight macro packing and fine adjustments to macro positions impossible during placement (this was seen above in the 'Stronger Baselines' paper).
+
+While there may be ways to get around this problem, it does seem intrinsic to a discrete action space.
+
+<strong>What does 'pre-training' really mean?</strong>
+
+<!--
+- What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
+-->
+
+The Nature authors in their rebuttals have emphasized the need to *pre-train* both the policy and the problem state embedding networks before evaluating them on unseen problems.
+This involves taking several netlists, running the usual RL training loop on all of them, and training until convergence.
+In theory, during pre-training, the policy network should learn a problem embedding and placement procedure that generalizes across many designs.
+In contrast to conventional automatic floorplanning algorithms (SA, RePLAce, AutoDMP), RL floorplanning *should learn* from experience rather than starting from scratch every time.
+<!--This learning is supposed to give it an edge over heuristic algorithms which always start from scratch.-->
+
+When the network sees a new problem, it is *fine-tuned*, which means the network weights are optimized for the current problem as it explores many trajectories to minimize the proxy cost.
+What does fine-tuning mean in practice?
+It boils down to trying a bunch of different trajectories and exploring the space of placement possibilities, but with the pretrained policy and problem embedding networks as a prior.
+In theory, this would yield much faster runtimes vs training the model from scratch while also achieving better QoR.
+
+But is a lack of pre-training as big a deal as the Nature authors make it out to be?
+There are a few complicating factors:
+
+- **Overfitting and data contamination**: when rigorously evaluating an algorithm on a benchmark, it can be unfair to allocate "uncounted" compute to training examples that resemble the benchmark. However, this is a moot point for commercial usage of RL floorplanning.
+- **Marginal demonstrated improvements in QoR**: the original Nature paper shows relatively small improvements to QoR (\< 5%) when using a pre-trained network vs training from scratch. The primary benefit seems to be faster runtime to achieve a particular QoR.
+- **Extreme compute requirements and long runtimes**: pre-training as the Nature authors did requires substantially more compute and memory than is required by the conventional algorithms. Allocating the equivalent number of compute resources to a parallelizable algorithm such as SA, could give it a substantial advantage. Finally, the runtime of a pre-trained network is still in the order of several hours to reach an optimal proxy cost. This is still slower than commercial autofloorplanners and AutoDMP (as seen in the appendix of the ISPD 2023 paper).
+- **Poor correlation of the proxy cost to final PPA**: pre-training optimizes the network to minimize the proxy cost, but the ISPD authors have presented evidence that proxy cost poorly correlates to final area and timing numbers seen after running the entire CAD flow.
+
+<!--
+- **Fixed CAD flow**: the
+fixed flow, no feedback from future steps (unlike commercial CAD tools e.g. Fusion Compiler)
+-->
+
+#### Non-Technical Questions
+
+<strong>Why did the Googlers publish their work in Nature?</strong>
+
+Nature, as its name suggests, is a journal for publishing innovative findings in the *natural sciences* (there is plenty of engineering too, but it is usually in the context of enabling a fundamental scientific innovation).
+AlphaChip is a pure engineering project for a very specific problem in EDA CAD; it isn't a good fit for Nature.
+If the authors had published this paper in DAC, ICCAD, or TCAD, I'm certain it would have been subject to much less criticism post-publication, although it would have been more heavily scrutinized during review.
+<!--By pushing the paper to Nature, presumably for clout-chasing purposes, the authors can get away without evaluating on the standard set of academic placement benchmarks.-->
+
+<strong>Why are the Google authors so adamant in not conceding anything?</strong>
+
+Typically, the authors of a paper are the first ones to point out its flaws, limitations, and caveats.
+It is common that the people most critical of a paper are the authors themselves.
+This case is an anomaly: the authors are uncritical of their own work, do not discuss any of its downsides, and portray it as strictly superior to all other work in the domain, including commercial offerings.
+
+<strong>Why is Jeff Dean acting so hostile towards Igor Markov?</strong>
+
+<!--What is Jeff Dean doing? Why is he burning his reputation?-->
+
+Jeff Dean has been using AlphaChip as an example of "AI chips for AI for AI chips" in many of his talks promoting ML work at Google.
+It seems he has staked quite a bit of his professional reputation on this project's success, and recently he must have seen many detractors of AlphaChip gaining attention and harming Google's reputation.
+However, since his internal Google team asserts they are in the right, he must feel he has to defend them even if he has a weak technical understanding of floorplanning.
+
+### Addressing the Nature Authors' Rebuttal
+
+[Here is the rebuttal again](https://arxiv.org/pdf/2411.10053): "That Chip Has Sailed: A Critique of Unfounded Skepticism Around AI for Chip Design"
+I shall ignore all the personal attacks and insinuations against Igor Markov.
+
+In short, the Nature authors claim a few issues with the ISPD 2023 paper:
+
+1. No pre-training, fewer compute resources, no training to convergence
+2. Evaluation on bad benchmarks (i.e. older PDKs)
+3. The ISPD reimplementation of parts of Circuit Training may contain errors
+
+#### The Pre-Training Issue Again
+
+I believe I have covered pre-training in my paragraphs above.
+
+However, at this point, I will concede that the ISPD paper did indeed do an iffy job of replicating the training procedure used in Google, and they could have done much better.
+Seeing the Tensorboard loss trajectories shows that the RL model wasn't bring trained properly.
+I believe the ISPD team ought to produce new data that performs training in the same manner as the Googlers prescribe.
+
+However, I believe all the points I made above still stand.
+If anything, this shows that deep RL networks and embeddings are very hard to train, require tons of compute, and still can't compete in runtime or compute resources vs mixed-placers.
+
+#### Evaluation on Old Technologies
+
+This is a weak argument from Google.
+There is no evidence that the choice of technology substantially affects the performance of Circuit Training (see the charts in the ISPD paper) besides some handwaving in a footnote.
+If indeed certain hyperparameters and proxy cost coefficients need to be tuned for a technology, that makes Circuit Training even more complex to deploy.
+This is contrast to modern vertically integrated CAD tools which can use full fidelity timing/routing engines to modify macro placements.
+<!--The authors mention that multiple patterning lowers the density at which congestion begins to appear, but ultimately this is just a tuning parameter, and multiple patterning is less frequently used in even more modern nodes that use EUV.-->
+
+#### Other Things
+
+The Nature authors claim that ISPD unnecessarily reverse engineered the proxy cost function and force-directed standard cell placer, by claiming they provided these as binaries.
+This is a bizarre thing to attack since binaries are black boxes and they didn't give a good reason they didn't release the source.
+
+The Nature authors also claim that the ISPD authors haven't shared their benchmarks (specifically synthesized netlists).
+For GF12, this is reasonable, since it is a proprietary technology and they can't share it for NDA reasons.
+For NG45, this is also reasonable, since all the benchmark RTL is available and the Cadence synthesis scripts are completely open (the Googlers can easily run synthesis themselves).
+The Nature authors are attacking a moot point.
+
+### Conclusion
+
+While I concede that there are things the ISPD authors could have done better, their conclusion is still sound.
+The Nature authors do not address the fact that CMP and AutoDMP outperform CT with far less runtime and compute requirements (although they claim CT would be closer/better if they had pre-trained the network and adjusted proxy cost coefficients for the target technology).
+
+This saga isn't over, and I don't expect it to be over for a while longer.
+I feel the ISPD authors still owe the Googlers (and the broader EDA CAD community) a response and a more rigorous refutation.
+
+Interestingly, some people at Intel Labs published an [article on IEEE Spectrum](https://spectrum.ieee.org/chip-design-ai): "AI Alone Isn’t Ready for Chip Design" on November 21, 2024 ([/r/hardware thread](https://www.reddit.com/r/hardware/comments/1gwurmw/ai_alone_isnt_ready_for_chip_design/)).
+They don't broach the topic of AlphaChip, but their article is good nonetheless.
