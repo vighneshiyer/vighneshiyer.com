@@ -40,3 +40,24 @@ Who wouldn't want to work with him?
 
 - The truth hurts. Often. It is important to separate the *essence* of the statement being made from the *manner* in which it is being made.
   - I would argue that no matter the manner of expression, if the essence is understood, the truth alone is as 'offensive' as it could ever be.
+
+- https://zhuanlan.zhihu.com/p/82579410 (Yanyan Jiang's Zhizu answer about his PhD journey)
+  - Grok 3 translation (I think it's reasonably accurate): https://grok.com/share/c2hhcmQtMg%3D%3D_12720437-78c4-4be2-8c43-86612750dec5
+
+> Be Thick-Skinned
+>
+> I bet plenty of PhD students on Zhihu dislike their research topics. That’s where being thick-skinned comes in: *I’ve got legs—if I don’t like this problem, I can bail!*
+>
+> ...
+>
+> After that final thick-skinned move, it was the classic Zhihu routine: read papers, write code, publish papers. Nobody held my hand, but the field had tons of researchers and great papers, perfect for a newbie to learn. The most inspiring papers came from PL, systems, and hardware, and you can imagine how much foundational knowledge I had to cram. So, I always recommend newbies dive into well-researched fields. Publishing might be tougher, but you’ll learn a ton. Conversely, if you enter a niche field with just a few players, your perspective narrows, and even if you can churn out papers, I don’t think it’s great for your long-term career.
+>
+> *The master leads you to the door, but cultivation is up to you.* This time, I finally joined the “big leagues,” and my advisors’ support was indispensable.
+
+> Don’t Stop the Meds
+>
+> Learning shapes your research taste, so don’t obsess over immediate payoffs. Specifically, “learning” trains a classifier in a PhD student’s mind to judge “what’s good stuff” with real contributions. See enough good stuff, and you’ll naturally recoil from the bad. In recent years, papers I deemed above my personal bar rarely got rejected (so my acceptance rate far exceeds conference averages, though some below my bar got accepted too). In short, for self-taught folks to win, reading a lot is key.
+
+> Probing the Edge of Publishing
+>
+> Later, I found Mike Bond published an almost identical “promising idea” at OOPSLA’13, executed far better than my vision at the time. Reflecting, I realized my advisors’ tastes might’ve been skewed by big projects or the field’s trends, thinking technical details were trivial—someone would figure it out, and it’d be explained in a sentence. They craved “sky-shattering” breakthroughs. This taught me the danger of “methodology”—sometimes it’s an excuse to dodge reality. They might say, “That paper just stitched a few ideas together for a small gain, no big deal.” But ask them to do it, and they’d likely fail, unaware of the pitfalls.
