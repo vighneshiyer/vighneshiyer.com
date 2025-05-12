@@ -15,6 +15,7 @@ Here are some websites that I generally find interesting.
 - [AI Junk Generator - Stockimg AI](https://stockimg.ai/)
 - [AI Image Editor - Leonardo AI](https://leonardo.ai/)
 - [AI Image Editor - Pixlr](https://pixlr.com/)
+- https://github.com/katcipis/sophia/tree/main (A smart person's collection of interesting links / websites)
 
 Blogs:
 

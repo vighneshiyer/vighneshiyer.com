@@ -8,6 +8,11 @@ description = ""
 
 Here are a bunch of things from around the internet that I find interesting.
 
+{{ badge(text="Video",class="red") }}
+{{ badge(text="Paper",class="blue") }}
+{{ badge(text="Book",class="amber") }}
+{{ badge(text="Blog Post",class="green") }}
+
 ## Programming
 
 - [Signs that you're a good programmer](https://skatgame.net/mburo//courses/350/signs-that-you-re-a-good-programmer.html)
@@ -130,6 +135,9 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Taxonomy of RISC-V Vector Extensions](https://fprox.substack.com/p/taxonomy-of-risc-v-vector-extensions)
 - [Three fundamental flaws of SIMD ISAs](https://www.bitsnbites.eu/three-fundamental-flaws-of-simd/) ([HN link](https://news.ycombinator.com/item?id=43783416))
 - [How to Keep Pushing ML Accelerator Performance? Know Your Rooflines!](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10970753)
+- The Pentium Chronicles by Robert Colwell
+  - Good overview of the DFA (Dataflow Analyzer) simulator in the Appendix
+- [Intel - P6 Family of Processors Hardware Developer’s Manual](https://download.intel.com/design/PentiumII/manuals/24400101.pdf)
 
 ### Formal Verification
 
