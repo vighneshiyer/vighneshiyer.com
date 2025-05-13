@@ -46,3 +46,6 @@ The "hardware lottery", as portrayed by Sarah Hooker, is a myth.
 The points made here do seem to point towards a PL/arch 'vicious cycle' (i.e. hardware/software lottery) at play, but I feel that would be a misinterpretation.
 
 - https://ieeexplore.ieee.org/document/10207712 (Beyond Von Neumann in the Computing Continuum: Architectures, Applications, and Future Directions)
+
+- https://chatgpt.com/share/68225928-1de8-8004-a9a6-1ad6a507a97c (I had to nudge it a bit to make it emit the correct argument)
+- https://grok.com/share/c2hhcmQtMg%3D%3D_18e4bd3c-364f-4d30-b01a-2ef4e6a208de (Grok does worse in this regard)

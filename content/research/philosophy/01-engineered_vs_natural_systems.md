@@ -97,6 +97,9 @@ This is kind of irrelevant, but is it true that knowledge can only emerge from o
 
 > What precisely is meant by simulating the laws of physics? There's a common understanding pitfall there, in that a lot of lay people quickly end up talking about "is the universe a computer" or "infinite Turing machines have nothing to do with the real world" sort of confusing arguments.
 
+- https://lukesmith.xyz/articles/consciousness-and-materialism/
+- https://www.youtube.com/watch?v=ucn2KzCDnOY ( What's "Natural" anyway? ) (nature = the continuous generative process of creation)
+
 ### Yufeng question followup
 
 > It seems that the nice layers of abstraction in computer architecture has also introduced many inefficiencies? If so, would "breaking the SW-HW contract" the correct way to optimize a system? (i.e. the ultimate optimized system would just be a soup of stuff mixed together without abstraction)

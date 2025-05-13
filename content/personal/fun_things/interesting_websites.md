@@ -41,6 +41,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://claytonwramsey.com/blog/
 - https://outsiderart.substack.com/archive?sort=new
 - garymarcus.substack.com/
+- https://lukesmith.xyz/articles/consciousness-and-materialism/
 
 China:
 

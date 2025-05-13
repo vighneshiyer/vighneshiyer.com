@@ -43,7 +43,8 @@ Systematic comparison of commercial silicon running similar benchmarks (both for
 - Geekerwan
 - https://irrationalanalysis.substack.com/p/a-background-proof-guide-on-communication
 - https://www.fabricatedknowledge.com/p/its-high-time-to-look-at-sitime?utm_source=substack&utm_campaign=post_embed&utm_medium=web
-
+- https://epoch.ai/data/machine-learning-hardware
+- MLPerf
 
 ## Opportunities
 
