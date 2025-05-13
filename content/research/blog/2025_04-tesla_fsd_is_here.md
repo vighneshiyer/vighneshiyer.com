@@ -57,3 +57,9 @@ description = "Hardly anyone realizes how far ahead Tesla is"
   - Just watch and observe
 - https://www.youtube.com/watch?v=CE_faqY_P4Q (Some outstanding issues with Tesla FSD in China that need to be addressed. | Tesla FSD in China)
   - Good review of 3 clips where FSD stalled when it could have kept going
+- https://www.youtube.com/watch?v=XpS3Zj5E1gE ( Tesla FSD can drive in the jungle as long as there's a road. | Tesla FSD in China )
+  - Pure vision end to end algorithm continues to generalize even in foreign terrain
+  - Chinese video data isn't available for training in America. Makes some difference for city driving quirks, but overall not a problem, and already outperforms domestic systems.
+  - Waymo with its largely rule based + sensor fusion algorithm cannot cope with such scenarios. When they realize that to generalize further, they must go end to end, they will have to accept a massive performance drop before they claw their way back after many months of training.
+  - Musk is quite pragmatic too. Tesla launched Dojo, but it is still hardly used in any training workloads with the ramp just beginning. In the meantime, due to pragmatism, he has the largest NVIDIA clusters on the planet. Google isn't so pragmatic - how much 'dogfooding' will Waymo have to endure with TPUs? Google has large NVIDIA clusters too, but internally they try hard to use their huge TPU devops and compiler teams so ML engineers can use their own hardware.
+  - Dojo v2/v3 seem iffy at this point too. Hard to believe they can match NVIDIA's great scaling trends while staying cost competitive and building the suitable compiler infrastructure too.
