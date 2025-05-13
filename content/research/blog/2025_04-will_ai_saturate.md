@@ -118,3 +118,15 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
   - Consider, if you had an army of 100 IQ AIs (or humans for that matter). No matter how much randomness you generate, no matter how much you sample their streams of thought, no matter how many tokens you flush in and out, they will never be able to produce discoveries and insights of a single 140 IQ person
   - There is no 'scaling' you can apply here - some seem to believe as we have exponential scaling of compute, we can just spawn millions of AIs, but if the base capability of them can never produce 'intelligence' with respect to the capacity for independent thought and discovery, then the consortium of them will not either.
   - One single high IQ brain can produce discoveries and art that no number of monkeys on typewriters can ever hope to replicate.
+
+- https://x.com/DanHendrycks/status/1921429850432405827
+
+> AI models are dramatically improving at IQ tests (70 IQ → 120), yet they don't feel vastly smarter than two years ago.
+>
+> At their current level of intelligence, rehashing existing human writings will work better than leaning on their own intelligence to produce novel analysis.
+>
+> Empirical work ("Lotka's law") shows that useful originality rises steeply only at high intelligence levels.
+>
+> Consequently, if they gain another 10 IQ points, AIs will still produce slop. But if they increase by another 30, they may cross a threshold and start providing useful original insights.
+
+- https://en.wikipedia.org/wiki/Lotka%27s_law

@@ -60,6 +60,7 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 - [distbench](https://github.com/google/distbench)
   - RPCs / networking stacks
 - SPECJbb
+- https://github.com/facebookresearch/DCPerf (ISCA 2025) (seems quite good actually)
 
 #### FaaS
 
