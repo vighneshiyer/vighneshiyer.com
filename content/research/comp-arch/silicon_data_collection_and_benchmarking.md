@@ -45,6 +45,7 @@ Systematic comparison of commercial silicon running similar benchmarks (both for
 - https://www.fabricatedknowledge.com/p/its-high-time-to-look-at-sitime?utm_source=substack&utm_campaign=post_embed&utm_medium=web
 - https://epoch.ai/data/machine-learning-hardware
 - MLPerf
+- https://www.guru3d.com/story/intel-lunar-lake-processor-architecture-die-and-pch-annotated/ (using Kurnal's annotated die shots)
 
 ## Opportunities
 
@@ -52,3 +53,9 @@ Systematic comparison of commercial silicon running similar benchmarks (both for
 - Same goes for power analysis, try to build a setup where we can measure core power with detailed current monitors separately from the board power. Currently, most people just report wall power, but we have the modular PSU, which should enable very precise per-pin power measurements + any on-chip power monitors we can access. Be able to analyze static/idle power in multiple sleep states and during OS idling, try to estimate the power consumed by each functional unit and uncore structures depending on activity.
 - Getting per-core-type power/performance curves for every generation P/E/embedded core in a given SoC would be quite useful data
 - Similar to the Chips and Cheese analyses, getting cache line ping-pong latency data + some basic reverse engineering of the microarchitecture's limitations (amount of reordering capacity, ability to rewrite certain instructions, branch predictor history and recall capacity) are very interesting. See how MESS did this for the outer level memory system.
+- Perhaps we can also look at chip variability and characterize it
+  - There is no reason this aspect can't be industry funded, everyone benefits, this is just like industry buying the Linley report lol
+- There are also lots of process and packaging things presented in IEDM, ISSCC, TSMC symposium, CICC
+  - People like me are too dumb to understand this low-level process technology and physics stuff
+  - All these packaging technologies and other fundamental technological innovations too need to be surfaced (new cooling technologies, silicon photonics, optical interconnects)
+  - As an example, IEDM 2024 proceedings (what is the takeaway?, we can extract all kinds of info wrt stdcell / sram density and efficiency scaling trends): https://static1.squarespace.com/static/67a3eee4385dfb3390804f02/t/67d4b9026674b64dfd6d035b/1741994245226/IEDM+2024+Archive.pdf

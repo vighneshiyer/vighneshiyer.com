@@ -171,3 +171,4 @@ Alos :laughing: @ google hw teams struggling with bazel. I don't remember all th
 Some googlers (and maybe others) are also working on: https://github.com/hdl/bazel_rules_hdl
 
 - Need to write about mill and bazel/buck2 and wake. Is the dependency pruning that wake can do actually useful? Does dependency catching that wake can do actually a problem for mill? Nix based builds seem interesting since they capture the environment as well as the build targets.
+- https://mill-build.org/blog/12-direct-style-build-tool.html

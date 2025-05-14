@@ -530,6 +530,9 @@ From slice offsite notes:
 - Instead of predicting 5 years into the future, look back 15 years in the past
   - What has stayed the same and is staying the same due to inertia, what are the issues with that? how do we break out of it?
 
+- https://mlsysbook.ai/contents/appendix/phd_survival_guide.html
+  - Not bad. I doubt the authors interpret the words of Hamming properly though.
+
 Joonho's notes about research areas:
 
 > ## 2023/12/09

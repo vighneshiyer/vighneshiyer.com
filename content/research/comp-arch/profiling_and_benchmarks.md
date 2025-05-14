@@ -38,6 +38,7 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 
 - SPEC (supposedly)
 - BrowserBench 2, Speedometer 3.0
+- https://code.google.com/archive/p/byte-unixbench/
 
 ### HPC
 

@@ -130,3 +130,15 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
 > Consequently, if they gain another 10 IQ points, AIs will still produce slop. But if they increase by another 30, they may cross a threshold and start providing useful original insights.
 
 - https://en.wikipedia.org/wiki/Lotka%27s_law
+
+- https://news.ycombinator.com/item?id=43985489 (AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms (deepmind.google))
+  - Another note related to AI saturation.
+  - Google claims 'discoveries' that seem mechanical in nature (which is still very valuable to be fair) rather than innovative or creative
+  - Their claims about flashattention kernel optimization and their 4x4 complex matmul optimization are indeed good usecases
+  - Their claim about hardware optimization using their agent is a lot more fishy (I left a comment: https://news.ycombinator.com/item?id=43988939)
+
+> This technique doesn't actually use RL at all! There’s no policy-gradient training, value function, or self-play RL loop like in AlphaZero/AlphaTensor/AlphaDev.
+>
+> As far as I can read, the weights of the LLM are not modified. They do some kind of candidate selection via evolutionary algorithms for the LLM prompt, which the LLM then remixes. This process then iterates like a typical evolutionary algorithm.
+
+- Good comment. There isn't much self-play here, but there could be. Instead there is some kind of beam-search guided by the lightweight Gemini model from what I can tell.
