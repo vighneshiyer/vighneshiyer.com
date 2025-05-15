@@ -186,6 +186,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Dwarkesh: 2027 Intelligence Explosion: Month-by-Month Model — Scott Alexander & Daniel Kokotajlo](https://www.dwarkesh.com/p/scott-daniel) (some good counterpoints)
   - [AI 2027 Prediction Tracker](https://spicylemonade.github.io/AI-2027-tracker/)
 - [SITUATIONAL AWARENESS: The Decade Ahead](https://situational-awareness.ai/) (another AI hype story)
+- [Human](https://quarter--mile.com/Human)
 
 ### Symbolic AI
 

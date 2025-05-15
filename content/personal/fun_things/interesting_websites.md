@@ -43,6 +43,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://outsiderart.substack.com/archive?sort=new
 - garymarcus.substack.com/
 - https://lukesmith.xyz/articles/consciousness-and-materialism/
+- https://quarter--mile.com/Human
 
 China:
 

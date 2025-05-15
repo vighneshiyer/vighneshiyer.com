@@ -47,3 +47,12 @@ slug = "free-market-vs-cartels"
   - This is completely the wrong approach. NIPS is trying to reprimand people into reviewing random papers they don't really care about with all kinds of penalties. Trying to force 'reciprocal' reviewing is not a good idea.
   - This doesn't actually solve any problems. The root issue is that people are writing nonsense that no one cares about. And they want to force 'reciprocal' acknowledgement of nonsense to perpetuate this system of paper pushing.
   - Note how when people actually care about some paper, they print it out, read it, write notes, comment on it, talk about it with others, and so forth. It just so happens that only a handful of papers deserve this treatment and people give it this treatment **organically**, no forcing required. The solution is to leave papers to live or die on their own. Put things out there and have the good stuff organically rise to the top, while the vast majority of paper pushers are buried under their own garbage.
+
+- Imagine Aristotle harassing others to review his philosophy, that is a joke
+  - Good things bubble up naturally
+- Imagine a book author harassing others to 'review' their book and saying that in return they will review someone else's 'book'. This is the insanity that passes for 'peer-review'.
+  - If no one cares to review and comment on your work organically, then it is worthless!!!
+  - Imagine if companies demanded other companies 'reviewed' their products.
+- You are not Galileo, fighting against scholars who oppose your views and therefore you deserve a fair and objective hearing of your claims. You are a nitwit paper pusher in a fat bureaucratic bloated academia.
+
+There is no reason why all papers published at a conference can't make their artifact at least available as a condition of publication. There is no justification for this at all. This would quickly root out people. Furthermore, if they used any 'base' code on which their paper built on top of, they must make it explicit what the diff is - or have a systematic way to find the diff (e.g. history in a git repo). Literally publishing anything is better than nothing - it doesn't even have to compile or work or produce results or even produce the same results as in the paper. This is truly a truly bottom of the barrel standard.

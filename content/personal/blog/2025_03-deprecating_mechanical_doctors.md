@@ -103,3 +103,6 @@ Mediocre doctors will be completely eradicated with the proliferation of AI. The
 > A Full Body MRI with an FDA-cleared AI that cuts scan time from 60 minutes to 22 minutes, and $1,500 to $499. To help detect early signs of hundreds of diseases. Now available through Function. http://functionhealth.com/scan
 
 It takes a startup to do this. All these fake MRI costs. But something that's quite annoying is that they outsource the actual scans to a normal facility - the startup doesn't actually own anything. The lack of vertical integration is quite concerning and makes it seem like a reseller rather than a health provider that owns the stack. It can't be that much investment to own everything, so the overheads must come from somewhere else.
+
+- HealthBench – An evaluation for AI systems and human health (openai.com) (https://news.ycombinator.com/item?id=43965608)
+  - This is very very good work.
