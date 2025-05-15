@@ -214,6 +214,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Deep Dive into Matrix Optimization on AMD GPUs (RDNA3)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) ([HN link](https://news.ycombinator.com/item?id=43469535))
   - [Overview of HIP C++](https://rocm.docs.amd.com/projects/HIP/en/docs-develop/how-to/hip_cpp_language_extensions.html) (designed to look like CUDA C with (mostly) the same APIs)
 - [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) (August 2024) ([HN link](news.ycombinator.com/item?id=43736739))
+- [Dynomight: I don't like NumPy](https://dynomight.net/numpy/) ([HN link](https://news.ycombinator.com/item?id=43996431))
 
 ### ML Hardware
 
