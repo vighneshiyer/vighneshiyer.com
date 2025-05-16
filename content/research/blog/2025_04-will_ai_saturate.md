@@ -142,3 +142,23 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
 > As far as I can read, the weights of the LLM are not modified. They do some kind of candidate selection via evolutionary algorithms for the LLM prompt, which the LLM then remixes. This process then iterates like a typical evolutionary algorithm.
 
 - Good comment. There isn't much self-play here, but there could be. Instead there is some kind of beam-search guided by the lightweight Gemini model from what I can tell.
+
+- OpenAI Codex (not Codex CLI, not Codex the model, but Codex the OpenAI hosted agentic coding AI environment)
+  - https://news.ycombinator.com/item?id=44006345
+  - https://openai.com/index/introducing-codex/ (https://www.youtube.com/watch?v=hhdpnbfH6NU - A research preview of Codex in ChatGPT)
+  - This was a long time coming. After Devin, it was clear that OpenAI would launch a competitor that leveraged their own cloud. The interface looks very promising, but unlike Devin 2 which introduced an IDE since the reliability wasn't sufficient, Codex has no integrated IDE at all (you can use your own local IDE on a branch that Codex is working on as usual). This indicates that at least, they expect the model to be good enough to not need spot editing or human intervention for basic tasks, unlike all prior iterations of coding agents. Fully hosting everything on OpenAI's infra also allows easy VM provisioning, aggressive caching, and low latency access to LLMs. How will they handle the security of customer code being spawned and edited on their servers? Idk. Perhaps the targets will be companies that couldn't care less about that stuff.
+  - You could call this "Agent-0" in AI 2027 parlance lol. The first milestone would be its ability to improve its own codebase (first just the webapp aspect and the backend, and much later the LLM itself via RL-based training or eventually the LLM inference serving code itself).
+  - Codex the model appears to be a fine-tuned o3-high, and it doesn't perform much better than o3 itself. There are some signs of saturation, but I'd say that evidence is still weak. There is more evidence of continued growth.
+
+From HN:
+
+> Parallel task execution: You can batch dozens of small edits (refactors, tests, boilerplate) and run them concurrently without context juggling. It's super nice to run a bunch of tasks at the same time (something that's really hard to do in Cursor, Cline, etc.)
+>
+> It kind of feels like a junior engineer on steroids, you just need to point it at a file or function, specify the change, and it scaffolds out most of a PR. You still need to do a lot of work to get it production ready, but it's as if you have an infinite number of junior engineers at your disposal now all working on different things.
+
+This is a big step in the direction of OpenAI owning more verticals and trying to deprecate startups that try to implement the same functionality, but worse (e.g. Devin, Cursor/Windsurf agentic modes, Cline, Roo Code, Aider), since they don't own the base model. OpenAI needs to capture the end-user margin, and can't be relegated to being an API provider, and they know this. They are also leveraging their Microsoft -> Github integration which will enhance customer lock-in. Really it is all down to velocity - will OpenAI be able to continue pushing hard on this and expanding its usage. I think they can kill off Devin at least in the short run. That is key - they don't want to be losing margin to external players in this specific agentic coding vertical.
+
+- https://news.ycombinator.com/item?id=43998472 (The unreasonable effectiveness of an LLM agent loop with tool use (sketch.dev))
+  - Great article
+  - One more from HN comments: https://ampcode.com/how-to-build-an-agent
+  - This is at the core of Codex and similar things, but the engineering on top of it is immense
