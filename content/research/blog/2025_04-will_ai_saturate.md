@@ -3,7 +3,7 @@ title = "Will AI Saturate?"
 date = 2023-08-23
 draft = true
 slug = "will-ai-saturate"
-description = "Differences between mechanistic chain-of-thought and true discovery"
+description = "Hypothesized differences between mechanistic chain-of-thought and true discovery"
 +++
 
 # Will We Hit a Dead End? Will AI Saturate?
@@ -162,3 +162,7 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
   - Great article
   - One more from HN comments: https://ampcode.com/how-to-build-an-agent
   - This is at the core of Codex and similar things, but the engineering on top of it is immense
+
+- https://philosophy.stackexchange.com/questions/34358/how-can-one-refute-john-searles-syntax-is-not-semantics-argument-against-stro
+  - I don't find the Chinese Room Argument that convincing
+  - Related: https://lukesmith.xyz/articles/consciousness-and-materialism/

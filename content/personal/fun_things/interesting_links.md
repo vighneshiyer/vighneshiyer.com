@@ -333,6 +333,7 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Health
 
 - [Bryan Johnson – The World’s Most Expensive Eating Disorder](https://desmolysium.com/bryan-johnson-the-worlds-most-expensive-eating-disorder/)
+- [What I learned gathering thousands of nootropic ratings](https://troof.blog/posts/nootropics/)
 
 ## History
 

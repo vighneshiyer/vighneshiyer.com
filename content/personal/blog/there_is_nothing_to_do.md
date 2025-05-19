@@ -33,3 +33,30 @@ The "doing things in the city" theory, you aren't doing things but rather things
 - Independence to what end?
 
 - "Self care" <-> inducing a superficial feeling of comfort
+
+## Travel
+
+- Travel is a related topic with the 'there is nothing to do around here' discussion
+- I still don't know how to answer this question properly. Clearly there is some benefit to travel. But what are the steps to take to avoid it becoming a mindless consumptive activity?
+- https://x.com/eigenrobot/status/1923719097851969895 (I used to agree completely with this take, now I am more unsure, it seems to describe one particular type of traveler)
+
+> "travel" is fake
+>
+> no one except lord myles has "adventures" when they travel
+>
+> you are staying at a hotel, paying large sums of money to have a far worse experience than you could have in your own home and a far softer experience than you could have by spending a weekend in jail
+>
+> "i love to Travel" why have you failed to establish your home as a place of serenity and joy, to the extent that you feel psychically uncomfortable there and strive to get away from your life whenever you can, viewing it as the highest good?
+>
+> you are not well
+>
+> "i Travel" you can go wherever you like in the world but you will never escape yourself
+>
+> "i want to spend time with people different than myself!" no you dont. there are Different people in your city.
+>
+> go hang out with the homeless or some seniors hmmmm? i guarantee these people are more different from you than are your age and class peers in europe
+>
+> the only really good reason to travel recreationally is to see old friends and travel in this case is, in a real sense, like coming home after a long time spent away
+
+- https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_28 (Another opinion by Seneca)
+- Chesterson's The Riddle of the Ivy: https://catholiclibrary.org/library/view?docId=/Contemporary-EN/XCT.171.html&chunk.id=00000065
