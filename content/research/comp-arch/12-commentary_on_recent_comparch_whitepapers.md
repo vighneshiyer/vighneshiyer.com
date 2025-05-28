@@ -43,6 +43,22 @@ The reality is that, when prototyping a model architecture idea, you don't have 
   - Sounds like extreme minionism is being asked for.
 - What exactly do ML algorithms need to be superior to classical techniques (in RTL design, verification, and various backend VLSI CAD tasks)?
 
+- https://www.linkedin.com/posts/vijay-janapa-reddi-63a6a173_architecture-20-foundations-of-artificial-activity-7312568491394387968-ElHU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+
+> 🎉 How can AI transform and enhance human engineering creativity in computer system design? Excited to share our latest article, Foundations for AI Agents in Computer System Design, co-authored with Amir Yazdanbakhsh.
+>
+> 🔍 Key Insights: We explore how AI agents can transform our workflows—from transistor-level optimizations to high-level system design—while tackling challenges such as data accessibility, verification, and interoperability. But we’re also transparent about AI’s limitations: it’s just another heuristic—a data-driven one—that, like traditional heuristics, can and will most likely sometimes fail. The bigger challenge lies in managing these failures and confronting the ever-present risk of unknown unknowns that could constrain future system designs.
+>
+> 🔗 To address these challenges, we propose a mental "capability framework" that can help foster secure collaboration, standardize evaluation frameworks, and strengthen industry-academia partnerships. Our vision is that AI-driven design systems can amplify (not replace) human creativity, accelerate innovation, and democratize access to cutting-edge design methodologies.
+>
+> 📚 Link to article: https://lnkd.in/eqfp9Aar
+>
+> 🌟 If you are interested in this subject, stay tuned. Next week, we'll share details about an exciting initiative launching for dataset development where the broader community can more easily engage and contribute.
+>
+> 🙏 Special thanks to Timothy Jones and Robert Mullins, the editors who thoughtfully invited us to articulate our ideas in this forward-looking piece.
+>
+> hashtag#ComputerArchitecture hashtag#ArtificialIntelligence hashtag#AI hashtag#MachineLearning hashtag#Innovation hashtag#Architecture20 hashtag#EDA hashtag#ComputerSystems hashtag#IEEE
+
 ## Domain-Specific Accelerator Design Challenges
 
 - The Magnificent Seven Challenges and Opportunities in Domain-Specific Accelerator Design for Autonomous Systems
