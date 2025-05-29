@@ -106,3 +106,6 @@ It takes a startup to do this. All these fake MRI costs. But something that's qu
 
 - HealthBench – An evaluation for AI systems and human health (openai.com) (https://news.ycombinator.com/item?id=43965608)
   - This is very very good work.
+
+- https://news.ycombinator.com/item?id=44130226 (Superhuman performance of an LLM on the reasoning tasks of a physician (arxiv.org))
+  - The only thing standing in the way of general-purpose doctor deprecation are their own cartels (with respect to medical licensing, medical prescriptions and pharmacies, insurance, diagnostic tests and imaging, among others). The things left are physical inspection and most importantly procedures - those aren't so amenable to automation as they aren't really about information and reasoning, but rather physical interaction. Dumping capital into the development of medical devices, surgical automation and robotics will be necessary for continued improvement in medicine. Rare disease research, drug development, and genetic manipulation (including gene and stem cell therapy) are still promising areas. Capital should not be spent in mechanical doctor-ing, which is where the vast majority of medical spending ends up today.
