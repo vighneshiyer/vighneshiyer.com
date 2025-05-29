@@ -382,12 +382,20 @@ This is similar to a minestrone soup, with some important modifications.
   - Very simple, toast baguette slices topped with brie cheese and fresh rosemary/thyme in an oven at 450F
   - Top with honey, serve warm
 
-#### Hazelnut Buratta
+#### Hazelnut Burrata
 
 - I've had this [at Delarosa](https://www.delarosasf.com/menus-bishop-ranch/) and [Doppio Zero](https://www.dzpizzeria.com/san-francisco-menu). It is always very good.
 - [Recipe](https://claudiastastybits.com/2015/03/burrata-hazelnut-and-honey-bruschetta-ode-to-delarosa-in-san-francisco/)
 - On plate, add burrata, drizzle with honey and honey-roasted hazelnuts, sprinkle coarse salt + pepper
 - Toast bread and drizzle with olive oil, serve on side
+
+#### Date, Banana, Burrata Bread
+
+- [Recipe](https://youtube.com/shorts/O4WzsmP9qWI?si=H2Zp8B60NIUhCQok)
+- Use a thick cut of crusty bread, toast on a pan with butter
+- Chop dates into slices, slice banana, cook with butter and cinnamon until mushy
+- Bread, smear date/banana, top with burrata and smear, drizzle with olive oil and fresh thyme
+- Top with chopped walnuts
 
 ### Potatoes
 

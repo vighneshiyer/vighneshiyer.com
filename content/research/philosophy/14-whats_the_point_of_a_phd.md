@@ -27,3 +27,7 @@ Why a PhD?
   - Is your brain static, can you think? Link to my other article about constant distractions and noise that normies run into
 - study history of your field, study old talks, look at old lectures from older people who know the long history of the field and can recite it. there is lots to learn - same things happen over and over again
 - Give lectures ad-hoc on a blackboard, no references, start to finish. Undergrads are eager to have this opportunity and you should be glad you have an audience.
+- Today, you have to be very careful to acquire domain expertise AND knowledge of general purpose techniques (programming, Linux, machine learning, RL, ...)
+  - You need the general techniques / tools as force multipliers on your domain knowledge or you will be left behind / obsoleted
+  - https://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html (I find this advice quite relevant to the purpose of higher education too)
+  - In my case, I have domain expertise in hardware engineering, but also in many adjacent fields although my background in ML is lacking. This is something I need to improve.
