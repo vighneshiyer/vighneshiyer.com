@@ -98,7 +98,7 @@ One king gave his righteous opinion:
 
 > Let's put aside the astonishing fact that a Harvard professor can't write.
 >
-> What else caught my attention was "CO2-efficient computing," which seemed very frivolous. I went to check what it is. https://lnkd.in/e7A8-QkE
+> What else caught my attention was "CO2-efficient computing," which seemed very frivolous. I went to check what it is. https://lnkd.in/e7A8-QkE (https://www.nsf.gov/awardsearch/showAward?AWD_ID=2443033)
 >
 > "Carbon", the keyword that used to open so many doors just a few months ago, is mentioned 24 times on the page. And I don't blame the PI: if I were a GPT-powered grant application app, trained on successful grants for the past 20 years, I'd do the same.
 >
