@@ -60,3 +60,10 @@ The "doing things in the city" theory, you aren't doing things but rather things
 
 - https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_28 (Another opinion by Seneca)
 - Chesterson's The Riddle of the Ivy: https://catholiclibrary.org/library/view?docId=/Contemporary-EN/XCT.171.html&chunk.id=00000065
+
+- Consumptive | Light Consumption into the base of Production | Productive
+  - bad to let consumption leak into production. e.g. listening to a podcast while trying to create something / exercise. best to consume with intention and then use leisure to let thoughts percolate and finally produce.
+  - the middle is often called leisure and scholars / aristocrats spend much of their day in that middle zone. this is closely related to slavery vs free men (https://www.reddit.com/r/askphilosophy/comments/d4eorn/nietzsche_and_free_time/).
+  - 'there is nothing to do' = there isn't much purely consumptive activity to be done
+  - consumptive behavior doesn't have to be useless! consuming writings and music is useful! but it isn't productive, and it is not in leisure either.
+  - leisure can only happen with very light consumption (usually drinks like coffee) and with the intent of building thoughts for production. in other words, it is **idle time**. most people only experience leisure two times per day, and increasingly that is going to zero. on the toilet and in the shower / sitting in a bath. in fact, these are the only two i think normal people experience - and both of those are going away since normies listen to music while showering and they use their phone on the toilet. what a disaster.

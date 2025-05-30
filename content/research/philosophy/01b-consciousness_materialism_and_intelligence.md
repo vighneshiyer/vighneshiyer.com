@@ -80,3 +80,9 @@
   - https://en.wikipedia.org/wiki/Materialism (physical monism)
   - https://en.wikipedia.org/wiki/Mind%E2%80%93body_dualism (dualism)
 - https://news.ycombinator.com/item?id=44089156 (Chomsky on what ChatGPT is good for (2023) (chomsky.info))
+
+- one problem with dualism. when does consciousness emerge? if it is a substance that is ever-present, but only 'ensouls' an organism after a certain point of evolution, there there must be some point in Earth's history when consciousness existed but had no embodiment.
+  - either one can argue that consciousness is pervasive in all things, even inanimate organisms, which tends towards idealist monism
+  - or one can argue that consciousness 'emerges' after a certain point in evolution, which tends towards materialist monism
+  - maintaining the argument that consciousness arbitrarily decides when to 'embody' an organism is a difficult point to defend
+  - perhaps i'm missing yet another argument here a dualist would make, or if they wouldn't consider my premise to be a problem in the first place

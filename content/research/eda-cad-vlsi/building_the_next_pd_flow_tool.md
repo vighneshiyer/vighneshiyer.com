@@ -111,3 +111,32 @@ Use python to set configurations. Get rid of meta-language inside yaml.
 ## Build Tool "Integration"
 
 - mflowgen param space sweeping: https://mflowgen.readthedocs.io/en/latest/ug-param-space.html
+
+## Jerry's Hammer Rant
+
+> List of problems when trying to use hammer
+>
+>     I don't want to install hammer from pip because that sucks and is wrong
+>     Hammer-from-source needs poetry
+>     Poetry install script breaks because my env's python3.11 wasn't built with TLS/SSL
+>     Have to install poetry using the system python3.9
+>     poetry shell command (currently in hammer docs) is deprecated - I will try with the replacement - poetry env activate
+>     hammer-vlsi command (why is this in my ~/.local/bin .... I did not give anything permission to install stuff there) breaks with ModuleNotFoundError: hammer
+>     Have to modify all the hammer scripts to use /usr/bin/python3 instead of my python3.1
+>     ^ apparently that was wrong, I misread what poetry env activate does, it only prints the command to activate the env, it doesn't activate the env for you :exploding_head:
+>
+> Now trying to use hammer intel22 plugin:
+>
+>     SRAM compiler fails, why does it fail? Because example-intech22.yml doesn't exist
+>     I create example-intech22.yml, which needs  to specify the hammer tech plugin namespace - I do hammer.technology.intech22
+>     ^ this was wrong, I try hammer.intech22, because the plugin docs say: "When targeting the tech in the plugin, continue to reference the hammer.intech22 namespace."
+>     ^ this was wrong, I delete the plugin namespace key entirely from the example-intech22.yml, which now seems to fix it?
+>     I try syn target, but get a list index out of range error somehow... probably need to add the bwrc-env.yml
+>     Nope, I probably need to install hammer-intech22-plugin (why is this also a poetry project...) (also this step is not documented anywhere). poetry install doesn't work because the TOML is wrong???
+>     Hack around that with a pip3 install -e . in hammer-intech22-plugin  .... which WORKS
+>
+> Conclusions
+>
+>     Why do we pretend that projects which are really just scripts deserve to be packaged. Hammer is just a script, same as firesim and firemarshal. "Installing" hammer should just install a symlink to a main.py inside of hammer's repo.
+>     YMLs are cancer. How did we fall into this YML-based world... marshal/firesim/hammer all use YMLs, and they all suck. And anyone else building something with a YML/JSON/TOML-based configuration system.
+>     This entire flow is inscrutable. I've done this tons of times already, and it still causes me so much pain when I know generally where to go fix things.
