@@ -96,6 +96,50 @@ This is a very good pitch.
 
 - https://natcast.org/nstc-jump-start-anticipated-awardees
 
+## EDA CAD Algorithms
+
+### Partcl
+
+- https://www.linkedin.com/posts/vamshibalanaga_partcl-is-building-tools-to-make-chip-design-activity-7328193610112253953-bAs2/?utm_source=share&utm_medium=member_android&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+
+> Partcl is building tools to make chip design faster, cutting chip compile times from weeks to minutes.
+>
+> Today’s chip design cycles take 18-24 months, leaving hardware engineers constantly racing against rapidly changing AI models. These same AI models have failed to impact chip design because of a lack of domain-specific data.
+>
+> Partcl’s GPU-based tools use physics-based simulations to run 700× faster than traditional Electronic Design Automation (EDA) software. They also generate synthetic data to train AI models to generate better chip designs.
+>
+> The result is a faster time to market for higher-quality chips.
+>
+> Congrats on the launch, Vamshi Balanaga and William Salcedo!
+
+- Very surprising that YC wants to invest in a traditional CAD company.
+- https://partcl.com/
+
+> Partcl generates post placement Timing and Power estimates for your netlist enabling you to catch timing violations early.
+>
+> Partcl is powered by Boson, a static timing analysis engine that achieves 700x run time improvements over legacy timing analysis tools and Graviton, GPU accelered timing aware placer that runs 100x faster than legacy tools.
+
+- A very reasonable and doable pitch. Static timing, dynamic gate-level power with parasitic extraction, and GPU-accelerated placement. Very sensible area to attack the incumbents. There is plenty of academic work in this from academic groups and NVIDIA (most notably DREAMplace) that can be commercialized. Getting established semiconductor houses to shove GPUs into traditional CAD flows will be tough, but doable with enough evidence of benefits.
+- The founders seem sufficiently competent and experienced to work in this area, and neither of them appear to be 'business' people, which is a good sign.
+- Where does their name come from? PAR + TCL? My advice: CAD tool users don't want to think about PAR and they certainly don't want to think about TCL lmao. Pick another name.
+- The "physics-based simulations" in their description is almost certainly referring to force-directed and other electrostatic-inspired placement algorithms.
+- The static timing engine they're selling is a bit odd fit for GPU acceleration however. The hardest problem in static timing today is not simple timing arc propagation, but rather statistical timing path aggregation with process variation inter-device correlation adjustments to prevent too much pessimism.
+  - This problem is naturally parallelized (but not embarrassingly so) with a huge manycore cluster and graph partitioning. Throwing a GPU into the mix is a bit suspect.
+  - There are open source timing engines they can build on: [OpenSTA](https://github.com/The-OpenROAD-Project/OpenSTA), [OpenTimer](https://github.com/OpenTimer/OpenTimer), [iSTA](https://ieda.oscc.cc/en/tools/ieda-tools/ista.html), but hopefully they're designing something from scratch
+  - Their claims of signoff level performance are too suspect. Why do they claim such absurd things? They must know that a foundry must approve of 'signoff-level' accuracy before they can claim such a thing. This is a huge worry, since these two guys are amateurs with no background in process engineering and variation analysis or SOTA static timing tools.
+- "They also generate synthetic data to train AI models to generate better chip designs"
+  - This seems like something ("ML") you add to your pitch to make a VC happy with their investment decision
+- Relevant papers
+  - Placement algorithms
+    - [DREAMPlace 3.0: multi-electrostatics based robust VLSI placement with region constraints](https://dl.acm.org/doi/abs/10.1145/3400302.3415691)
+    - [DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting](https://yibolin.com/publications/papers/PLACE_DATE2022_Liao.pdf)
+    - [AutoDMP: Automated DREAMPlace-based Macro Placement](https://dl.acm.org/doi/abs/10.1145/3569052.3578923)
+    - [Cypress: VLSI-Inspired PCB Placement with GPU Acceleration](https://dl.acm.org/doi/abs/10.1145/3698364.3705346)
+  - Static timing
+    - [OpenTimer v2: A Parallel Incremental Timing Analysis Engine](https://experts.illinois.edu/en/publications/opentimer-v2-a-parallel-incremental-timing-analysis-engine)
+    - [GPU-accelerated static timing analysis](https://dl.acm.org/doi/abs/10.1145/3400302.3415631)
+    - [Accelerating Static Timing Analysis Using CPU–GPU Heterogeneous Parallelism](https://ieeexplore.ieee.org/abstract/document/10153450)
+
 ## ML for Chips
 
 ### VoltAI
@@ -129,8 +173,16 @@ https://www.ycombinator.com/companies/silimate/jobs
 
 ## LLMs for Chip Design
 
+### ChipAgents.AI
+
 - https://chipagents.ai/#intro
-- MooresLab
+- They are one of the top sponsors for DAC 2025, oddly enough. I do remember them having a DAC booth last year perhaps too.
+
+### MooresLabAI
+
+- https://www.mooreslab.ai/
+- They will also be at DAC 2025
+- It seems that all of these guys are being invested in or trialed at OpenAI - OpenAI is clearly investing in the user-facing application layer in many domains in hopes of capturing that extra margin
 
 ### Chipstack
 
