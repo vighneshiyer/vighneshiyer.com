@@ -109,3 +109,12 @@ Questions from Joonho:
   - Just for NEON, AVX, RVV, no need to even think about GPU just yet
   - Consider other NPUs / mobile DSP cores (e.g. Hexagon) too
 - There are too many layers in this ML compiler stack - need to write a clean survey and comparison
+
+baremetal ML compilers:
+
+- Convert your model into ONNX, cross compile onnxruntime (https://onnxruntime.ai/docs/build/inferencing.html) to riscv, and run that with your model ONNX file on buildroot Linux
+- One additional benefit is you can use the XNNPACK (https://github.com/google/XNNPACK) provider which has some kernels implemented for RVV
+- Try to hack LiteRT (https://ai.google.dev/edge/litert) (this used to be TensorFlow lite) (https://github.com/tensorflow/tflite-micro) to run in a baremetal RISC-V setup, use spike / qemu to try this out
+- You can try Yufeng's Baremetal-NN setup (https://github.com/ucb-bar/Baremetal-NN) which should be the easiest way to get model inference on RISC-V working assuming all the kernels your model uses have implemented
+- You can hack microTVM (https://tvm.apache.org/docs/v0.9.0/topic/microtvm/index.html), but I have no idea how easy this will be
+- You can try IREE's RISC-V baremetal backend (https://iree.dev/guides/deployment-configurations/bare-metal/), which I think Dima or Miles have played with before
