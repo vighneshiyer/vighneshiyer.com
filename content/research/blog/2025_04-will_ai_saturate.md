@@ -170,3 +170,9 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
 - https://verissimo.substack.com/p/verissimo-monthly-may-2025
 
 > LLMs hallucinate—that is, they generate incorrect outputs. The most reputable benchmarks we have, including those used by leading labs in their model cards, indicate that baseline hallucination rates, in scenarios where the model relies on its “own memory” (a useful proxy for many real-world failure modes), are around 50% even for the best models.
+
+- Among humans, leisure is critical among the top thinkers to produce interesting artifacts, abstractions, theories, and so forth. Critically, the most impactful thinkers and inventors, spent the _majority_ of their days 'doing' leisure. What is the LLM equivalent of leisure? Is this even a necessity or is it just a limitation of the human brain?
+  - Sleep -> Dream -> Create -> Abstract
+  - [DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning](https://arxiv.org/abs/2006.08381). This used to be SOTA in program synthesis, but is obsolete today.
+
+- LLMs today are basically artificial Redditors. Their capacity to 'think critically' is poor. Does having highly curated training data make a difference here or is a statistical model always going to 'converge' to a mediocre state? Their default state is to just emit the writings of a highly propagandized mind, 'trusting the experts', and so forth. Can a language model 'act' with sovereignty? Will such a model always behave like a [natural slave](https://en.wikipedia.org/wiki/Natural_slavery)?
