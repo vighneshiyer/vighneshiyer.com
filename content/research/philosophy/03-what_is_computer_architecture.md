@@ -58,3 +58,8 @@ What skills must a computer architect possess and be confident in?
   - The essence of hardware acceleration
   - Some discussion of non von Neumann architecture is good but this extreme PIM track stuff has got to go, what are people learning here? What is the point of an academic conference in the first place?
 - Look at the ALP article for things I need to pull into this article
+
+- Look at old Krste slides - he lays out the clear case for general-purpose architectures and how to specialize them (assimilate one-off architecture ideas into general purpose architectures)
+  - Survivorship anti-bias:
+    - Commonplace successful ideas seem 'boring' versus 'exotic innovative ideas'
+    - 'Exotic innovative ideas' often bad old ideas that never worked well enough to become commonplace
