@@ -166,3 +166,7 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
 - https://philosophy.stackexchange.com/questions/34358/how-can-one-refute-john-searles-syntax-is-not-semantics-argument-against-stro
   - I don't find the Chinese Room Argument that convincing
   - Related: https://lukesmith.xyz/articles/consciousness-and-materialism/
+
+- https://verissimo.substack.com/p/verissimo-monthly-may-2025
+
+> LLMs hallucinate—that is, they generate incorrect outputs. The most reputable benchmarks we have, including those used by leading labs in their model cards, indicate that baseline hallucination rates, in scenarios where the model relies on its “own memory” (a useful proxy for many real-world failure modes), are around 50% even for the best models.
