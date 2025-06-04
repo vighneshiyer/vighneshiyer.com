@@ -74,6 +74,16 @@
 > To get a better feel for how people think about this: Would you consider a clone of yourself to be conscious?
 > I feel it's too easy for people to say a perfect, atomic simulation of their brain wouldn't be conscious, but a biological clone hits a little closer to home on the dualism issue I feel.
 
+- https://x.com/RhysSullivan/status/1929419223845023842
+
+> Philosophy departments have really dropped the ball on this one. They all teach the Chinese Room thought experiment, but almost never teach the full Chinese Room argument (the thought experiment is just axiom 3). So most people are left thinking there's not a clear argument with a well supported and easy to understand conclusion.
+>
+> A lot of discussion of the Chinese Room often comes down to trying to figure out what the point of it is (is it about the material the room is made of, is Searle saying neurons or carbon is important for consciousness? Is he saying that machines can never be conscious? Is it something about parts and whole, etc. etc.)
+>
+> But the full argument comes to a pretty simple conclusion that shouldn't be controversial, a program can't create consciousness. If Philosophy classes had been teaching this for the last 40 years, people would be a lot more prepared to deal with these kinds of questions now.
+
+> w.r.t. Searle's 3 axioms (1. programs = syntax, 2. minds = semantics, 3. syntax can't make semantics by itself), I simply find them to be inconsistent with reality🤷 (in particular axiom 3, though potentially also axiom 1 depending on the definition of "syntax" and "semantics")
+
 - Aristotlean vs Platonic view of knowledge and what is knowable, does the material world matter?
 - None of these ideas or arguments are new, but what do they mean for AI?
   - https://en.wikipedia.org/wiki/Idealism (mental monism)
@@ -86,3 +96,5 @@
   - or one can argue that consciousness 'emerges' after a certain point in evolution, which tends towards materialist monism
   - maintaining the argument that consciousness arbitrarily decides when to 'embody' an organism is a difficult point to defend
   - perhaps i'm missing yet another argument here a dualist would make, or if they wouldn't consider my premise to be a problem in the first place
+
+- https://yuxi-liu-wired.github.io/essays/posts/hole-argument-inverted-qualia/#the-geometry-of-feeling

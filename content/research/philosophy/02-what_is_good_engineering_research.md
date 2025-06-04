@@ -36,6 +36,16 @@ Application-driven vs application-oriented research.
 - generalize something specific: (build new abstractions) -> e.g. building halide to generalize common kernel optimizations and systematically and correctly apply them and then use it to explore shape specialized kernel generation. e.g. building a tool that can analyze the DSP RVV extensions Daniel added and find a way to automatically extract those instructions and ways to use them given some piece of code (aladdin seems similar in some ways).
 - Don't sweep the design space but build the design space!
 
+- x.com/_jasonwei/status/1929621539881996607
+
+> There are traditionally two types of research: problem-driven research and method-driven research. As we’ve seen with large language models and now AlphaEvolve, it should be very clear now that total method-driven research is a huge opportunity.
+>
+> Problem-driven research is nice because you have a consistent and specific goal. The goal is usually virtuous, so it feels good to have a mission and identity. However, it just doesn’t work due to The Bitter Lesson. Basically everything in classical NLP (machine translation, summarization, chatbots) lost to simple scaling. ChatGPT is a prime example—it used nothing from chatbot research and certainly wasn’t the intended end goal of OpenAI’s 2022 research program, but was a huge hit because someone (John Schulman et al) figured out the right way to package large language models as a product.
+>
+> Method-driven research feels less stable because you’re constantly searching for problems and you have to be opportunistic. But I believe AI will allow method-driven research to dominate progress in most fields of science, one-by-one. The latest method (or “hammer”), as we’ve seen in AlphaEvolve, is ruthless search and optimization against a reward function (whether this requires RL or not is a separate discussion). Things that problem-driven researchers have been trying to solve for a long time like the kissing number problem will become nails hit by the hammer. Eventually the hammer will become bigger, stronger, and more general and will hit more and more nails.
+>
+> So a very important meta-skill for the next decade will be knowing how to create the right environments to use The Hammer. Ironically, the problem-driven researchers, who by definition are experts in a specific problem, are well-positioned to create these environments. If, that is, they can put down their egos and pick up the hammer.
+
 ## Research
 
 ### Engineering

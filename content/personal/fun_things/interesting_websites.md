@@ -9,16 +9,12 @@ description = ""
 Here are some websites that I generally find interesting.
 
 - Aggregator websites: [HN: Other sites like HN](https://news.ycombinator.com/item?id=37611708), [HN: Other news feeds besides HN](https://news.ycombinator.com/item?id=36175315), [HN Popularity Contest: The highest-ranking personal blogs of Hacker News](https://refactoringenglish.com/tools/hn-popularity/?start=2024-01-01&end=2024-12-31&limit=100) (https://news.ycombinator.com/item?id=43474505)
-- [KGOnTech: Karl Guttag's blog](https://kguttag.com/)
-- [Chips and Cheese](https://chipsandcheese.com/)
-- [Perplexity](https://www.perplexity.ai/discover)
-- [AI Junk Generator - Stockimg AI](https://stockimg.ai/)
-- [AI Image Editor - Leonardo AI](https://leonardo.ai/)
-- [AI Image Editor - Pixlr](https://pixlr.com/)
 - https://github.com/katcipis/sophia/tree/main (A smart person's collection of interesting links / websites)
 
 Blogs:
 
+- [KGOnTech: Karl Guttag's blog](https://kguttag.com/)
+- [Chips and Cheese](https://chipsandcheese.com/)
 - https://www.paulgraham.com/articles.html
 - https://danluu.com/
 - https://yosefk.com/blog/
@@ -44,6 +40,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - garymarcus.substack.com/
 - https://lukesmith.xyz/articles/consciousness-and-materialism/
 - https://quarter--mile.com/Human
+- https://bronzeagepervert.substack.com/
 
 China:
 
@@ -52,9 +49,10 @@ China:
 - https://danwang.co/
 
 Health:
+
 - https://desmolysium.com/
 
 Productivity:
-https://www.scotthyoung.com/
 
-https://wiki.chadnet.org/ray-peat
+- https://www.scotthyoung.com/
+- https://wiki.chadnet.org/ray-peat

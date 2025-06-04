@@ -31,8 +31,11 @@ The "doing things in the city" theory, you aren't doing things but rather things
 - Independence from what?
 - Modern "Independence" is dependence
 - Independence to what end?
-
 - "Self care" <-> inducing a superficial feeling of comfort
+- Is the modern world more 'independent' / 'individualized' or more collectivist?
+  - There is a sense in which these terms fail to capture what young people feel today.
+  - There is a superficial notion of 'independence'. People moving out of the house and living on their own. But even for children, their lives are more regimented than ever before; they can't roam, they can't just do random things for most of the day.
+  - However, unlike the independence of the Wild West or early American settlers (as examples), the youth aren't forging their own path in any meaningful way. In that sense, society for the youth is more collectivist and suffocating than ever before.
 
 ## Travel
 

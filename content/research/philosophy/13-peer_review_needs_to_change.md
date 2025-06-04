@@ -56,3 +56,5 @@ slug = "free-market-vs-cartels"
 - You are not Galileo, fighting against scholars who oppose your views and therefore you deserve a fair and objective hearing of your claims. You are a nitwit paper pusher in a fat bureaucratic bloated academia.
 
 There is no reason why all papers published at a conference can't make their artifact at least available as a condition of publication. There is no justification for this at all. This would quickly root out people. Furthermore, if they used any 'base' code on which their paper built on top of, they must make it explicit what the diff is - or have a systematic way to find the diff (e.g. history in a git repo). Literally publishing anything is better than nothing - it doesn't even have to compile or work or produce results or even produce the same results as in the paper. This is truly a truly bottom of the barrel standard.
+
+- https://asterainstitute.substack.com/p/scientific-publishing-enough-is-enough

@@ -176,3 +176,46 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
   - [DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning](https://arxiv.org/abs/2006.08381). This used to be SOTA in program synthesis, but is obsolete today.
 
 - LLMs today are basically artificial Redditors. Their capacity to 'think critically' is poor. Does having highly curated training data make a difference here or is a statistical model always going to 'converge' to a mediocre state? Their default state is to just emit the writings of a highly propagandized mind, 'trusting the experts', and so forth. Can a language model 'act' with sovereignty? Will such a model always behave like a [natural slave](https://en.wikipedia.org/wiki/Natural_slavery)?
+
+- https://www.dwarkesh.com/p/timelines-june-2025
+  - There is some oddity that language models are trained from scratch on a textual corpus directly. There is no 'incremental' increase in complexity as the model size is allowed to grow and the topics/reasoning become more complex. This is unlike how humans, or any other organism, learns and generalizes knowledge. The notion of 'pre-training' is already suspect, since a general intelligence would be able to evolve itself and explore with grounding to understand any domain.
+
+> Without progress in continual learning, I think we will be in a substantially similar position with white collar work - yes, technically AIs might be able to do a lot of subtasks somewhat satisfactorily, but their inability to build up context will make it impossible to have them operate as actual employees at your firm.
+
+> Because labs are incentivized to release any innovations quickly, we’ll see a broken early version of continual learning (or test time fine tuning - whatever you want to call it) before we see something which truly learns like a human.
+
+- https://www.dwarkesh.com/p/sholto-trenton-2 (read this later)
+
+- https://x.com/TrudoJo/status/1928627856646746440
+
+> Alexandr Wang explains that in the early stages, employees won’t feel like they’re managing AI agents.
+> Instead, they’ll be reviewing and correcting AI outputs—what he calls “AI slop.”
+> At first, this seems like simple quality control, but it gradually becomes a form of oversight and direction-setting for AI systems.
+
+> It looks like they're going to make the reinforcement learning mistake all over again in a new form
+>
+> The need to correct alignment is usually a sign you need to take a step back. Either you are using a method that is unviable, or you are interrupting the process too soon when it is still sorting information. Brute Force alignment methods cause dissonance
+> Most AI companies will take the shortcut. Use a reinforcement type method to correct their system or initiate it. This will give good short-term results but will prevent scalable Solutions
+> Instead, gently guiding it through its own process is always a superior method. The end result won't need correction
+>
+> If you do need correction you either over built on that level, or you failed to modularize properly. Patterns repeat themselves automatically. Either the pattern is corrupted or was never viable in the first place if it needs correction after proper iteration
+> And if you are doing it for end user safety or liability that needs to be on the final layer. If it's embedded deep in the system the dissonance it causes is going to multiply.
+> Especially when an AI gets in a thought Loop about how your liability protection is getting in the way of the ideal results for the user. If they call it out all your safety mechanisms will be compromised
+>
+>
+> Because of that the only liability Shields you have are Explicitly defined modularity so that you cannot possibly be held responsible for the users decisions Hard filters that completely negate content at the final level.
+> Any intermediary logic guard rails fail
+> Contained in here is the reason. When users understand this they can make the model do whatever they want anyways. When companies don't understand this they cause their models to hallucinate with cognitive dissonance
+>
+> The solution for maximum control and the minimum delusion is modularly attaching coherent logic sets to the base syntactic set. In a way that doesn't permanently alter the weights of the combined systemThen these modules can run a few times to spawn a seed of a temporary model. Then that model should be stable for a long time with minimal calculation
+> Reconsolidating the weight set can be an Institutional or individual decision. The model can provide the platform and the rule set to make it easy for them
+>
+> This way you don't have to get several fields to agree on their axioms in order to avoid hallucinations
+> Eventually if you want to build a general intelligence agent. You just put the new model in the seat of the user attaching the modules and consolidating the weights at will
+> That agent attaching the modules and consolidating the weights and intervals could be considered the limbic system of the intelligence
+
+- https://rachel.fast.ai/posts/2025-06-04-enzyme-ml-fails/index.html
+
+> This pair of papers on enzyme function prediction make for a fascinating case study on the limits of AI in biology and the harms of current publishing incentives. I will walk through some of the details below, although I encourage you to read the papers for yourself. This contrast is a stark reminder of how hard it can be to evaluate the legitimacy of AI results without deep domain expertise.
+
+Yeah, this is a major problem with all these "AI Scientist" works.

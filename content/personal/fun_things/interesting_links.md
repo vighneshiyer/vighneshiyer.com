@@ -221,6 +221,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Irrational Analysis: Tenstorrent and the State of AI Hardware Startups](https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware)
 - [Corsix: Tenstorrent Wormhole Series Part 1: Physicalities](https://www.corsix.org/content/tt-wh-part1) (A highly detailed 7-part series on the Wormhole architecture and programming model)
+- [How to map SIMT model onto tenstorrent device?](https://asplos.dev/wordpress/2025/05/31/how-to-map-simt-model-onto-tenstorrent-device/?utm_source=linkedin&utm_medium=jetpack_social)
 
 ## Mathematics
 
@@ -318,6 +319,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Riding The Tiger: Why The Anglosphere Should Be Wary of India](https://knightsofthegreenshield.substack.com/p/riding-the-tiger-why-the-anglosphere) (accurate)
 - [Dwarkesh: Notes on China](https://www.dwarkesh.com/p/notes-on-china)
 - [Molson Hart: America Underestimates the Difficulty of Bringing Manufacturing Back](https://www.molsonhart.com/blog/america-underestimates-the-difficulty-of-bringing-manufacturing-back) ([HN link](https://news.ycombinator.com/item?id=43692677))
+- [Wikipedia: History of eugenics](https://en.wikipedia.org/w/index.php?title=History_of_eugenics&oldid=1234497124) (archived version of 'Ancient eugenics')
 
 ## Productivity
 
