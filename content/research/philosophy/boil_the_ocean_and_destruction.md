@@ -6,6 +6,7 @@ draft = true
 
 - Need to write something explicit about how to make progress, destruction is necessary. In fact it is just as important as creation and maintenance.
   - Hmm I wonder if there is a basis for this lol? https://en.wikipedia.org/wiki/Trimurti https://en.wikipedia.org/wiki/Moirai
+  - Some people say that destruction is way easier than creation, but the reality is murkier - destruction might be 'easier' to perform, but much harder to actually begin to do
 - Software projects constantly go through destructive cycles
   - Version breakage is common and often is done through a complete rewrite
   - Situations where people try to maintain some 'compatibility' and make sure things work incrementally, usually fail if the effort is not completely coordinated. See the major problems with Python 2 to 3 and Scala 2 to 3 (even though Odersky insisted that wouldn't happen). Scala 3 should have just been a completely different language with a new codebase and completely new libraries.

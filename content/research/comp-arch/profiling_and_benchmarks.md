@@ -23,6 +23,9 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 - [multichase](https://github.com/google/multichase) (Linux)
 - [lmbench](https://github.com/intel/lmbench) (Linux)
 - [STREAM: Sustainable Memory Bandwidth in High Performance Computers](https://www.cs.virginia.edu/stream/) (Linux)
+- [muRISCV-NN](https://github.com/tum-ei-eda/muriscv-nn) (baremetal)
+- https://github.com/ColinIanKing/stress-ng
+- Copy over stuff from `research-notes/rust.md` too
 
 ### Vectors
 
@@ -45,6 +48,10 @@ Not benchmark suites designed to stress test real, running hardware (e.g. Cinebe
 - [MLPerf](https://mlcommons.org/benchmarks/)
 - [NASA Parallel Benchmarks](https://www.nas.nasa.gov/software/npb.html)
 - [GAP (Graph) Benchmark Suite](http://gap.cs.berkeley.edu/benchmark.html)
+- PARSEC
+- https://github.com/staceyson/splash2
+- https://rsim.cs.uiuc.edu/alp/alpbench/
+- https://github.com/yuhc/gpu-rodinia
 
 ### Datacenters
 
