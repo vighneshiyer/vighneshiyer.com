@@ -29,6 +29,8 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
   - Baum: https://www.baum-ds.com/ (Korean!, we talked to these guys in 2024, I like their products, basically trying to commercialize Donggyu's PhD projects lol)
   - Silimate (of course): https://github.com/Silimate/silisizer (the usual)
   - https://mooreslab.ai/ (LMAO) (old commercial LMAO: https://www.youtube.com/watch?v=w6p53_D7vMA&t=19s) (new commercial: https://www.youtube.com/watch?time_continue=32&v=PVadAPgUSKA&embeds_referring_euri=https%3A%2F%2Fmooreslab.ai%2F&source_ve_path=MjM4NTE)
+- Formal methods consulting
+  - Lubis EDA
 
 ## PCBs
 
@@ -371,4 +373,6 @@ Formatted and relevant parts of the transcript below:
 
 ### PrimisAI
 
-I saw their booth somewhere.
+- I saw their booth somewhere in DAC maybe? Also branded as 'RapidGPT'
+- https://primis.ai/
+- https://www.linkedin.com/feed/update/urn:li:activity:7336514885209440256/ (signal driver tracing in RTL demo)

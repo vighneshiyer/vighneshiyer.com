@@ -39,3 +39,10 @@ I will point out the ones I like.
 
 - Assassyn: A Unified Abstraction for Architectural Simulation and Implementation
 - Concorde: Fast and Accurate CPU Performance Modeling with Compositional Analytical-ML Fusion
+- DCPerf
+
+## Hot Chips 2025
+
+## MICRO 2025
+
+Pending...

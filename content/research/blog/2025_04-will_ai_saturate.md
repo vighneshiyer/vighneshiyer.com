@@ -110,6 +110,14 @@ I think the author is a bit too zealous. RL doesn't yet 'work' in a way that res
   - https://x.com/Aristos_Revenge/status/1916851455320850478
   > This is a good way to understand what the weights are in a model. Now consider this exercise with something like a string of text on a picture of a billboard.
   - This actually cuts to the heart of the issue. What *is* the inductive bias of a language model (or any other kind of model trained with some corpus of normie data)? What does it regress to? Infinite monkeys with the right biases to produce correct grammar, sentence structure, storylines, plots, characters, and dialogue is not enough!
+- OK one way to think about this is to examine where generation biases come from for language models (or any ML model for that matter)
+  - 1) from the training dataset itself
+  - 2) as a derivative of the training dataset - "emergent" reasoning capabilities or generalization / extrapolation beyond the dataset
+  - 3) from the prompt
+  - 4) from the tokens the model has generated thus far (either from the model directly or from any tool use)
+  - The infinite monkey theorem assumes that tokens are uniformly sampled from the vocabulary
+  - So the probability of generating a Shakespeare text is 100%, does this change when including these biases? Does the probability then approach 0 as the midwit bias counteracts random sampling?
+  - LMAO the GPT take of this text is quite amusing but not grounded in any statistics: https://chatgpt.com/share/68421db3-7df0-8004-811c-0abd39aa4e41
 
 - https://en.wikipedia.org/wiki/The_Singularity_Is_Near
   - Looking at this plot (https://en.wikipedia.org/wiki/The_Singularity_Is_Near#/media/File:PPTExponentialGrowthof_Computing.jpg)
@@ -166,6 +174,7 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
 - https://philosophy.stackexchange.com/questions/34358/how-can-one-refute-john-searles-syntax-is-not-semantics-argument-against-stro
   - I don't find the Chinese Room Argument that convincing
   - Related: https://lukesmith.xyz/articles/consciousness-and-materialism/
+  - https://thegradient.pub/agi-is-not-multimodal/
 
 - https://verissimo.substack.com/p/verissimo-monthly-may-2025
 

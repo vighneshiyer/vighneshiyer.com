@@ -197,10 +197,13 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Ontologies in the era of large language models by Fabian Neuhaus - Youtube](https://www.youtube.com/watch?v=rLOmAzkqIts)
 - [Pedro Domingos on the Symbolist Approach to AI](https://www.youtube.com/watch?v=ogaCzVoRpZs) (Pedro defends symbolic AI approaches)
 
-### Neuromorphic
+### Neuromorphic Algorithms and HW Architectures
 
 - [A Foundational Theory for Decentralized Sensory Learning](https://arxiv.org/pdf/2503.15130) (Neuromorphic computing, Mar 2025)
   - [Introducing IntuiCell](https://www.youtube.com/watch?v=CBqBTEYSEmA) (company based on this paper)
+- [Sandia turns on brain-like storage-free supercomputer](https://blocksandfiles.com/2025/06/06/sandia-turns-on-brain-like-storage-free-supercomputer/) ([HN link](https://news.ycombinator.com/item?id=44201812))
+  - [Thermodynamic Computing with Memristor Discovery](https://knowm.org/thermodynamic-computing/)
+  - [SpiNNaker2: A Large-Scale Neuromorphic System for Event-Based and Asynchronous Machine Learning](https://arxiv.org/html/2401.04491v1)
 
 ### Compilers
 

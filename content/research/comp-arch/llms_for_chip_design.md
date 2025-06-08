@@ -15,7 +15,7 @@ description = ""
   - Automatic bug fixing
 - Players
   - Chipnemo Nvidia
-  - 3 startups: ChipStack, ChipAgents, MooresLab
+  - 4 startups: ChipStack, ChipAgents, MooresLab, PrimisAI
   - Cadence and Synopsys
 - Things academics did
   - Lots of benchmarks
