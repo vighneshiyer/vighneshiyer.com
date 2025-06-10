@@ -177,3 +177,14 @@ Engineered systems are hierarchical. That is something I failed to mention. This
   - We pay abstraction costs from app -> algorithm -> PL -> OS -> ISA -> uArch -> RTL/GL -> Circuits -> Devices -> Physics to *manage complexity* as engineers
   - Breaking / tunneling through an engineered abstraction can be valuable if we are able to 'abstract' away that abstraction altogether (we ignore it in the engineering flow and treat it as a black box and we're OK with that)
   - In the ideal case, we can tunnel all the way through via an evolved system. After all, aren't biological organisms composed of evolved abstractions that go from 'application' to physics? It is a metaphysical question as to the 'application' of humans (and other organisms), but many people suggest answers to this lol.
+
+- https://x.com/eshear/status/1931513613854122115
+
+> Physics is the search for the rules which are invariantly true, at all times, in every observation we make.
+> Mathematics is the search for the rules which are invariantly true, at all times, in everything we can imagine observing.
+>
+> There’s an interesting midpoint class of the “physically possible”, which is everything we can imagine observing, conditioned on the rules of physics but not our observations themselves.
+>
+> Of course it always turns out the rules we think are invariantly true … vary. Because we are frame-dependent, and so are our thoughts. https://softmax.com/blog/the-frame
+>
+> But frame-dependence doesn’t mean subjective. Math and physics really are being pulled from an objective reality: everything that we can observe. Which isn’t everything that could be observed, but also isn’t nothing.

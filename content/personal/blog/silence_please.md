@@ -84,3 +84,17 @@ In contrast, the commentary about noise and leisure from Chinese philosophy is s
 - https://en.wikipedia.org/wiki/Misophonia
   - Perhaps I suffer from this mental issue. This seems quite common actually. There are many sounds that I find very irritating besides the jarring nosies that Schopenhauer also finds the same way. Conversation can be bad. Breathing is quite annoying - I hate sounds of breathing by others who always seem to be forcing air through their nose and mouth. Keyboard noise is quite bad, I like a very quiet keyboard and hearing others bang on keys is quite annoying. Indeed these all are mentioned as sounds that people with misophonia hate.
   - There seems to be relationship between this issue and high fluid intelligence (https://en.wikipedia.org/wiki/Fluid_and_crystallized_intelligence). Schopenhauer would agree lol.
+
+- https://x.com/karpathy/status/1931426322536132767
+
+> My sleep scores during recent travel were in the 90s. Now back in SF I am consistently back down to 70s, 80s.
+>
+> I am increasingly convinced that this is due to traffic noise from a nearby road/intersection where I live - every ~10min, a car, truck, bus, or motorcycle with a very loud engine passes by (some are 10X louder than others). In the later less deep stages of sleep, it is much easier to wake and then much harder to go back to sleep.
+>
+> More generally I think noise pollution (esp early hours) come at a huge societal cost that is not correctly accounted for. E.g. I wouldn't be too surprised if a single motorcycle riding through a neighborhood at 6am creates millions of dollars in damages in the form of hundreds - thousands of people who are more groggy, more moody, less creative, less energetic for the whole day, and more sick in the long term (cardiovascular, metabolic, cognitive). And I think that many people, like me, might not be aware that this happening for a long time because 1) they don't measure their sleep carefully, and 2) your brain isn't fully conscious when waking and isn't able to make a lasting note / association in that state. I really wish future versions of Whoop (or Oura or etc.) would explicitly track and correlate noise to sleep, and raise this to the population.
+>
+> It's not just traffic, e.g. in SF, as a I recently found out, it is ok by law to begin arbitrarily loud road work or construction starting 7am. Same for leaf blowers and a number of other ways of getting up to 100dB.
+>
+> I ran a few Deep Research sessions and a number of studies that have tried to isolate noise and show depressing outcomes for cohorts of people who sleep in noisy environments, with increased risk across all of mental health (e.g. depression, bipolar disorders, Alzheimer's incidence) but also a lot more broadly, e.g. cardiovascular disease, diabetes.
+>
+> Anyway, it took me a while to notice and after (unsuccessfully) trying a number of mitigations I am moving somewhere quiet. But from what I've seen this is a major public health issue with little awareness and with incorrect accounting by the government.
