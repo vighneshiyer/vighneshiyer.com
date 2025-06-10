@@ -116,6 +116,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [David Patterson - A New Golden Age for Computer Architecture: History, Challenges and Opportunities (2019)](https://www.youtube.com/watch?v=kFT54hO1X8M)
 - [View from the Top: Professor David Patterson](https://www.youtube.com/watch?v=TK6EPvrmcBk)
 - [SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic](https://www.youtube.com/watch?v=8n2HLp2gtYs) (one of the best talks I've ever seen)
+- [Youtube: Yifan&GPU](https://www.youtube.com/@yifangpu/videos)
+  - The channel of [Prof. Yifan Sun](https://sarchlab.org/syifan/teaching). Lectures on GPU programming (AMD HIP), computer architecture (introductory class).
 
 ### Articles / Posts
 
