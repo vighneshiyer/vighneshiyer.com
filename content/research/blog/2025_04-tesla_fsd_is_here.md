@@ -65,3 +65,6 @@ description = "Hardly anyone realizes how far ahead Tesla is"
   - Dojo v2/v3 seem iffy at this point too. Hard to believe they can match NVIDIA's great scaling trends while staying cost competitive and building the suitable compiler infrastructure too.
 - https://www.youtube.com/watch?v=c4_RbWWICnc ( Shocking FSD Error – Almost Caused a Major Accident )
   - A true failure case of 13.2.8. Unable to disambiguate between traffic lights for the crossing road vs the road the car is on. Obvious to a human, but FSD doesn't have enough contextual awareness.
+
+- https://www.reddit.com/r/teslamotors/comments/1kg7k94/elon_responds_with_youre_right_to_someone_saying/
+  - Things still iffy: speed on highways, lane changes being recessive especially when it tries to hop a line, disengagements due to nagging when the user tries to interact with the screen causes bad disengagement data

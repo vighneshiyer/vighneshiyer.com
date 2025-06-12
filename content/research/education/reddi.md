@@ -1,3 +1,10 @@
++++
+title = "A Response to Prof. Vijay Reddi"
+date = 2023-08-23
+draft = true
+description = "The role of the university, NSF research funding, and his dishonesty about politics"
++++
+
 - https://www.linkedin.com/posts/vijay-janapa-reddi-63a6a173_harvard-academicfreedom-leadership-activity-7317702719585071104-WYkO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
 
 > Today, Harvard stood up.

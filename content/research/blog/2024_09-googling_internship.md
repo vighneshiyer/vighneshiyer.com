@@ -72,3 +72,4 @@ description = ""
 - google docs used for everything, documentation is an absolute mess, contrast with apple's confluence beauty
 - checks and balances (CI2 vs PIE), duplicate products, no trust for each other, competition that doesn't produce better results lol
 - no cult at google. who would worship sundar? what a joke. vs anduril, apple, tesla/spacex, microsoft, and even amazon?
+- Watermelon tray is consumed rapidly during lunch and dinner

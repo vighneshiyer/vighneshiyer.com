@@ -1,9 +1,9 @@
 +++
-title = "Will AI Saturate?"
+title = "Part 1c: Will AI Saturate?"
 date = 2023-08-23
 draft = true
 slug = "will-ai-saturate"
-description = "Hypothesized differences between mechanistic chain-of-thought and true discovery"
+description = "Hypothesized differences between mechanistic chain-of-thought and 'true' discovery"
 +++
 
 # Will We Hit a Dead End? Will AI Saturate?
@@ -171,11 +171,6 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
   - One more from HN comments: https://ampcode.com/how-to-build-an-agent
   - This is at the core of Codex and similar things, but the engineering on top of it is immense
 
-- https://philosophy.stackexchange.com/questions/34358/how-can-one-refute-john-searles-syntax-is-not-semantics-argument-against-stro
-  - I don't find the Chinese Room Argument that convincing
-  - Related: https://lukesmith.xyz/articles/consciousness-and-materialism/
-  - https://thegradient.pub/agi-is-not-multimodal/
-
 - https://verissimo.substack.com/p/verissimo-monthly-may-2025
 
 > LLMs hallucinate—that is, they generate incorrect outputs. The most reputable benchmarks we have, including those used by leading labs in their model cards, indicate that baseline hallucination rates, in scenarios where the model relies on its “own memory” (a useful proxy for many real-world failure modes), are around 50% even for the best models.
@@ -228,3 +223,76 @@ This is a big step in the direction of OpenAI owning more verticals and trying t
 > This pair of papers on enzyme function prediction make for a fascinating case study on the limits of AI in biology and the harms of current publishing incentives. I will walk through some of the details below, although I encourage you to read the papers for yourself. This contrast is a stark reminder of how hard it can be to evaluate the legitimacy of AI results without deep domain expertise.
 
 Yeah, this is a major problem with all these "AI Scientist" works.
+
+- There seems to be some tradeoff of model size, rlhf ness, time horizon for a task, and randomness / entropy needed to get a solution
+- I predict that with enough sampling and rlhf and self play with human guided objectives, we will degrade aspects of the model like o3 hallucinations, but with enough sampling we can overcome that and do long time horizon tasks
+- Importantly, I think only mechanistic reasoning that is expressible in language or even abstract thought described in language is doable. I do believe that true discovery or innovation is of a different nature and there is some magic that is inherently limiting to AI, the saturation point
+- I think there is a difference between mechanistic reasoning and innovative intuition that I can't explain
+
+- Where does randomness fit into the picture? Is it part of the natural system (and which part) or it is part of an engineered model of noise / randomness? Do quantum random effects become visible in the macro scale? What is the philosophy of mechanistic processes?
+
+- Leaps of abstraction
+  - Will AI saturate should be part of this 1c article
+  - Abstraction and model synthesis without priors?
+  - But what is the vast majority of research like today, it is quite mechanical in nature, true synthesis and leaps and insights are quite rare
+
+- https://news.ycombinator.com/item?id=44043323
+  - Another example of biological discovery with LLM agents
+
+- https://www.reddit.com/r/singularity/comments/1kr6e4j/microsoft_discovery_ai_agents_go_from_idea_to/
+  - Lots of good skeptical comments too
+
+- Google AI scientist and later alphaevolve
+  - https://thebsdetector.substack.com/p/ai-materials-and-fraud-oh-my
+
+- https://www.reddit.com/r/singularity/comments/1krx820/futurehouses_goal_has_been_to_automate_scientific/
+
+The reasoning models being trained on reasoning chains built by humans and humans rating English reasoning chains seems to force English as a reasoning abstraction, consuming and generating way more tokens than required. English is an abstraction that should be broken, but then how can we RL models to create reasoning chains on their own with English input and output ultimately? There must be prior work on this where models reason in arbitrary non understandable languages which should be more token efficient.
+
+Consider trying to fix failing cases in swe bench that existing agents struggle on but for which we have known solutions. We can inject training data and fine tune models to fix these bugs but this feels a lot like lenat trying to add more rules and facts to his ontology when he discovered there is a deduction mistake or hole that cyc couldn't get over. Will LLMs saturate in the same way where constant human intervention is needed or can self learning with rl and self play overcome these limitations?
+
+Is language sufficient for reasoning? Can reasoning even exist independently of language or knowledge? Does thinking only happen and it directed with respect to the language and vocabulary we know? The book language in action provides one take which is different from the platonic take.
+
+- https://news.ycombinator.com/item?id=44087809
+  - Very relevant from wolfram
+  - What is the min set of language from which all other concepts and words can be derived? Does this exist?
+
+- https://www.reddit.com/r/singularity/comments/1l5eckx/apple_doesnt_see_reasoning_models_as_a_major/
+- https://mashable.com/article/openai-o3-o4-mini-hallucinate-higher-previous-models
+- https://arxiv.org/pdf/2504.13837
+
+All seem to indicate that rl post training isn't that effective and seems to just produce models that make things up although they surface things better. Rlhf, RL from verifiable feedback, and reasoning chains are all things to consider the impacts of, perhaps none of these will produce better ai. Lecunns cherry on top for RL versus arguments that we will use rl for the majority of model training, hard to say.
+Contrast this with the "era of experience" and physical and virtual grounding of language models
+
+- news.ycombinator.com/item?id=44203562
+- https://x.com/scaling01/status/1931783050511126954 a good rebuttal against the apple paper, it's just coping
+- Another rebuttal https://www.reddit.com/r/singularity/comments/1l73qne/the_apple_illusion_of_thinking_paper_maybe/
+- https://x.com/Afinetheorem/status/1931853801293484358
+
+- https://x.com/stevehou0/status/1931540966822814131
+
+- What is understanding? How is it distinguished from intelligence? Is intelligence just rules and search? When we see symbolic AI systems today we think they aren't actually intelligent, but they may be capable of reasoning, this is because we see mechanical rules and think that this is too simple to be intelligence. Otoh, LLMs appear to be intelligent since they have many hidden abstractions we can't understand in the model weights, but we say they can't reason since they can make mistakes that a true reasoner would never make. Symbolic AI is treated as a white box which makes us think it can't be creative, is it just a matter of our own perspective of engineered vs evolved systems?
+- Isn't pattern matching an important part of intelligence? What about abstraction? And finally we have to distinguish intelligence from knowledge or grounding or common sense, this is the difference between rules and the reasoning or deduction engine itself or the search heuristics.
+- Symbolic AI feels 100% mechanical while language model learning AI feels 100% magical, that feeling influences how we define things like reasoning and intelligence and creativity
+
+- Thinking fast and slow
+  - We see that vla models have fast and slow paths
+  - LLMs may be the fast intuitive path that needs to be sampled and explored and grounding is the slow path that might require human intervention
+  - We already see this a bit with AI scientist models with a fast and highly probabilistic planner and a bunch of slower but higher accuracy models for the actual implementations and evaluations
+
+- Getting to the finish line:
+  - accurate and explainable reasoning
+  - continual learning
+  - minimal model size - being able to gradually increase complexity as more facts and abstractions are absorbed, being able to do so organically when limits are self-detected
+  - arbitrary memory and management
+  - "creativity"
+  - thinking "fast and slow"
+  - intelligence = creation of new abstractions continuously, the notion of 'unprompted thinking'
+  - physical grounding
+
+- https://semianalysis.com/2025/06/08/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data/
+  - Lots of good notes here about using RL for continued scaling for verifiable reward tasks (although this does increase hallucination and decreases creativity)
+  - an older article that predicted some RL trends: https://semianalysis.com/2024/12/11/scaling-laws-o1-pro-architecture-reasoning-training-infrastructure-orion-and-claude-3-5-opus-failures/
+
+- https://x.com/StuartHameroff/status/1932092216387998034
+  - Add this to Roger Penrose book mention in the consciousness article

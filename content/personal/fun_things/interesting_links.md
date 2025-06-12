@@ -160,7 +160,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Creating a highly-integrated open-source laptop from scratch. Power in your hands.](https://www.byran.ee/posts/creation/) ([Show HN: I made an open-source laptop from scratch (byran.ee)](https://news.ycombinator.com/item?id=42797260)) (very impressive)
 - [IEEE Spectrum: It’s Time To Rethink 6G](https://spectrum.ieee.org/5g-bandwidth) ([HN link](https://news.ycombinator.com/item?id=43027266))
 
-## Machine Learning (AI/ML)
+## Machine Learning / Artificial Intelligence
 
 ### Model Architectures
 
@@ -207,14 +207,14 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Thermodynamic Computing with Memristor Discovery](https://knowm.org/thermodynamic-computing/)
   - [SpiNNaker2: A Large-Scale Neuromorphic System for Event-Based and Asynchronous Machine Learning](https://arxiv.org/html/2401.04491v1)
 
-### Compilers
+### ML Compilers
 
 - [The Deep Learning Compiler: A Comprehensive Survey (Mar 2021)](https://ieeexplore.ieee.org/abstract/document/9222299)
 - [Modular: Democratizing AI Compute, Part 7: What about Triton and Python eDSLs?](https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls)
   - This entire series by Chris Lattner is excellent
 - [Max Slater: Differentiable Programming from Scratch](https://thenumb.at/Autodiff/) ([HN link](https://news.ycombinator.com/item?id=43713140))
 
-### Performance Optimization
+### NN Performance Optimization
 
 - [Hazy Research: GPUs Go Brrr](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) ([HN link](https://news.ycombinator.com/item?id=40337936))
 - [Deep Dive into Matrix Optimization on AMD GPUs (RDNA3)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) ([HN link](https://news.ycombinator.com/item?id=43469535))
@@ -248,23 +248,15 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Matthew Botvinick - AI as a Window on Human Intelligence (December 7, 2022)](https://www.youtube.com/watch?v=BJMVHNj-X6Q)
   - [Michele Parrinello - Machine learning and molecular dynamics (April 10, 2019)](https://www.youtube.com/watch?v=vnlwE_Sb9ds)
 
+## Simulation
+
+- [A primer on molecular dynamics](https://www.owlposting.com/p/a-primer-on-molecular-dynamics) ([HN link](https://news.ycombinator.com/item?id=44204249))
+
 ## Design
 
 - [Our Interfaces Have Lost Their Senses](https://wattenberger.com/thoughts/our-interfaces-have-lost-their-senses) ([HN link](https://news.ycombinator.com/item?id=43380930))
 - [Coding Font Tournament](https://www.codingfont.com/)
 - [But what if I really want a faster horse?](https://rakhim.exotext.com/but-what-if-i-really-want-a-faster-horse) ([HN link](https://news.ycombinator.com/item?id=43652723))
-
-## Research Philosophies
-
-- [Richard Hamming's "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
-  - [Hamming's Reflection on His Time at Bell Labs](https://sameerismail.org/hamming)
-- [David Patterson's Last Lecture: How to Be a Bad Professor](https://www.youtube.com/watch?v=TK6EPvrmcBk)
-- [David Patterson's How to Build a Bad Research Center](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
-- [David Patterson's How to Have a Bad Career](https://www.youtube.com/watch?v=Rn1w4MRHIhc)
-- [David Patterson: Life Lessons from the First Half-Century of My Career](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/) ([HN link](https://news.ycombinator.com/item?id=42795646))
-- [Alberto Sangiovanni-Vincentelli: The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
-- [Systems Software Research is Irrelevant by Rob Pike of Bell Labs (2/21/2000)](https://doc.cat-v.org/bell_labs/utah2000/utah2000.pdf)
-- [A letter of advice to all the people who have the destiny by Yanyan Jiang](https://jyywiki.cn/Letter.md) ([Translation](https://jyywiki-cn.translate.goog/Letter.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true))
 
 ## Life
 
@@ -307,6 +299,19 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Buddha's Teachings on Women's 84 Manners](https://thedailyenlightenment.com/2022/10/the-buddhas-teachings-on-womens-84-manners/)
 - [Jacobin: Christianity Was Always for the Poor](https://jacobin.com/2024/03/christianity-poor-debt-jesus-moses-wealth) ([HN link - flagged](https://news.ycombinator.com/item?id=43745088))
   - I agree with the leftist. Good article about the truth of Christianity, Catholic "adaptations" are not grounded in the Bible but rather ancient pagan principles
+
+### Research Philosophies
+
+- [Richard Hamming's "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+  - [Hamming's Reflection on His Time at Bell Labs](https://sameerismail.org/hamming)
+- [David Patterson's Last Lecture: How to Be a Bad Professor](https://www.youtube.com/watch?v=TK6EPvrmcBk)
+- [David Patterson's How to Build a Bad Research Center](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.html)
+- [David Patterson's How to Have a Bad Career](https://www.youtube.com/watch?v=Rn1w4MRHIhc)
+- [David Patterson: Life Lessons from the First Half-Century of My Career](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/) ([HN link](https://news.ycombinator.com/item?id=42795646))
+- [Alberto Sangiovanni-Vincentelli: The Tides of EDA](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1246165&tag=1) (The Age of Gods, The Age of Heroes, and The Age of Men)
+- [Systems Software Research is Irrelevant by Rob Pike of Bell Labs (2/21/2000)](https://doc.cat-v.org/bell_labs/utah2000/utah2000.pdf)
+- [A letter of advice to all the people who have the destiny by Yanyan Jiang](https://jyywiki.cn/Letter.md) ([Translation](https://jyywiki-cn.translate.goog/Letter.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true))
+
 
 ## Politics
 

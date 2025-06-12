@@ -272,6 +272,11 @@ This is similar to a minestrone soup, with some important modifications.
 
 ### Stir Fry Noodles
 
+#### Basic Recipe
+
+- Fry tofu / paneer separately, set aside. Coat with cornstarch or potato starch before pan frying using avocado oil. Can also include salt/papper in the mix.
+-
+
 #### Prep Notes
 
 - The ingredient order should be: white-stems of green onions | large onion pieces | shredded cabbage and carrot | crispy tofu | garlic | noodles + sauce | juilenne green onion tops

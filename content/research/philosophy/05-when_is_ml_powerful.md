@@ -1,5 +1,5 @@
 +++
-title = "When is ML Powerful?"
+title = "Part 2: When is ML Powerful?"
 date = 2024-03-23
 draft = true
 +++
@@ -54,6 +54,16 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
   - Rl for tuning within the algorithm, placement example iteratively or sizing like keertana, also iterative. What alpha chip did wrong, formulate optimization as a game, it is easy to do and feels human like but it isn't as good as optimization methods
 - The evolution of fsd from a rule based extraction engine with lots of explicit code to the end to end ml approach
   - https://www.youtube.com/watch?v=hFlF33JZbA0 (see 30:29) (FSD in 2023 was Images -> 3D -> actions, and in 2024 images -> actions directly, FSD 12.5 replaced 300k lines of C++ logic with a end-to-end NN blob)
+
+- https://news.ycombinator.com/item?id=44037941
+  - Perfect article about PINNs and hamiltonian NNs being not that great, compared against bad baselines, seems to be common in ml physics too
+  - Also mentions ML as a solution oriented problem lol
+- https://news.ycombinator.com/item?id=44010046
+
+- https://x.com/jxmnop/status/1927385194601886065
+  - Yet another good example. End to end beats trying to encode implicit biases in the model architecture. In this case one can argue that music is an engineered system, however we only have access to the raw audio itself! If we had access to the DAW tracks, separating sounds and chords would be easy and not require ml. But in this case we have already blasted away all the engineered abstractions to produce yet another natural system, the system has already been manifested! Another analogy is that we can easily perform image segmentation if we still had a world model and a rendering from a virtual camera. But if all we have is the final image raster, then we have broken all the engineered abstractions and yet again end to end semantic segmentation is the only way forward rather than encoding camera and light semantics in the model architecture.
+
+- Note program synthesis in the when is ml powerful article, completely obsolete because the abstractions are destroyed
 
 ## From Alberto's Haas Fireside Chat on 4/1/2025
 

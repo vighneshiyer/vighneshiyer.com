@@ -1,3 +1,10 @@
++++
+title = "Commentary on an Interview of Satnam Singh"
+date = 2023-08-23
+draft = true
+description = "Groq, HDLs, PL for HW design"
++++
+
 - https://www.youtube.com/watch?v=_g5fA9Cy6KU
 
 > Current Continuation is our little interview series where we talk to researchers in the field of programming languages. In this episode, we talk to Dr. Satnam Singh who is a scientist at Groq https://satnam.fpcastle.com/

@@ -1,3 +1,12 @@
++++
+title = "Part 1b: Consciousness, Intelligence, Reasoning, Language, and Understanding"
+description = "Dualist, idealist, and physicalist perspectives"
+date = 2024-03-23
+draft = true
++++
+
+- OK I will not pretend to be a philosophy, so just look at the relevant articles on the Stanford Encyclopedia of Philosophy
+- But I will just ask some questions and present some arguments
 - consciousness vs materialism arguments
 - does not having consciousness actually prevent discovery? can rules produce discovery? perhaps, but can they produce insight? could they derive things that aren't even in the training set e.g. information theory?
 - what is intelligence?
@@ -98,3 +107,70 @@
   - perhaps i'm missing yet another argument here a dualist would make, or if they wouldn't consider my premise to be a problem in the first place
 
 - https://yuxi-liu-wired.github.io/essays/posts/hole-argument-inverted-qualia/#the-geometry-of-feeling
+
+## Notes About Intelligence
+
+- How do you measure self-awareness? What is consciousness?
+- What is intelligence?
+- Can knowledge and reason exist and be acquired independently?
+  - Aristotle would say no
+  - Is number theory a counterexample? No physical reality appears to be needed.
+- Can we build an engineered 'intelligent' system? https://yuxi-liu-wired.github.io/essays/posts/cyc/ (prior experience suggests no.)
+  - Intelligence cannot be fuzzy, so I think? It must evolve from axioms and evolved iteration, but only end up in new axioms? Is this true?
+
+- https://x.com/Devon_Eriksen_/status/1910314718998192537
+
+> Don't get upset. I'm not saying SpaceX plans to fail. I'm pointing out that SpaceX has taken an ultraimportant principle from software engineering, and realized it applies to all engineering.
+>
+> Feedback beats planning.
+>
+> And that, you see, is why SpaceX doesn't do things the NASA way. The NASA way was to gold-plate everything, plan and test and plan and test, and generate mountains of paper detailing every contingency, with every scenario prepared for.
+>
+> SpaceX just shrugs, says "it's unmanned", and sends it.
+>
+>  Half the time it blows up. That's the whole point. They don't actually want it to blow up, of course, but they're anticipating that it might.
+>
+> That possibility is part of the plan. Because one rocket blowing up, or crashing, in an actual end-to-end test, beats many, many man-years of planning and plotting.
+>
+> The key realization here is that knowledge only comes from empirical observation. Everything else is just speculative.
+>
+> The sooner you get into a feedback loop, and the faster you run it, the more iterations you can do in less time. This means, while others are planning and speculating, you actually learn something.
+>
+> Relevant data is the most precious thing in the universe. And it's worth blowing up any number of rockets to get it.
+
+This is kind of irrelevant, but is it true that knowledge can only emerge from observation?
+
+- What is intelligence? Abstraction, generalization, connection making, synthesis of ideas into a new whole, anything else?
+- What is consciousness? Let's say we build a mechanistic system that has intelligence and we put it in a human form, you can't see the machinery, does it possess consciousness? At its core consciousness isn't really about responsiveness to the environment, since that can be mechanistic, but rather it is about autonomy, if a mechanistic system can be precisely simulated knowing its initial state then it can't be autonomous. This is just the same argument about human free will, it can't exist in a mechanistic world.
+- What about ensoulment, it seems to be related to consciousness, perhaps I'm just getting the definition of consciousness messed up
+
+- https://news.ycombinator.com/item?id=43776477 (How much math is knowable? [video] (youtube.com))
+
+> What precisely is meant by simulating the laws of physics? There's a common understanding pitfall there, in that a lot of lay people quickly end up talking about "is the universe a computer" or "infinite Turing machines have nothing to do with the real world" sort of confusing arguments.
+
+- https://lukesmith.xyz/articles/consciousness-and-materialism/
+- https://www.youtube.com/watch?v=ucn2KzCDnOY ( What's "Natural" anyway? ) (nature = the continuous generative process of creation)
+
+- https://x.com/eshear/status/1931513613854122115
+
+> Physics is the search for the rules which are invariantly true, at all times, in every observation we make.
+> Mathematics is the search for the rules which are invariantly true, at all times, in everything we can imagine observing.
+>
+> There’s an interesting midpoint class of the “physically possible”, which is everything we can imagine observing, conditioned on the rules of physics but not our observations themselves.
+>
+> Of course it always turns out the rules we think are invariantly true … vary. Because we are frame-dependent, and so are our thoughts. https://softmax.com/blog/the-frame
+>
+> But frame-dependence doesn’t mean subjective. Math and physics really are being pulled from an objective reality: everything that we can observe. Which isn’t everything that could be observed, but also isn’t nothing.
+
+- Resources
+  - Simon's The Sciences of the Artificial: https://en.wikipedia.org/wiki/The_Sciences_of_the_Artificial
+  - "Gödel, Escher, Bach: An Eternal Golden Braid" by Douglas Hofstadter (Amazon): This book explores the interplay between logic, art, and the mind, touching on themes of incompleteness and self-reference, which relate to your mention of Gödel’s incompleteness and the challenges of fully simulating natural systems.
+  - "The Emperor's New Mind" by Roger Penrose (Amazon): Penrose discusses the limits of formal systems and the role of consciousness in understanding the universe, tying into your thoughts on natural systems, uncertainty, and the limitations of engineered systems.
+
+- Language in Thought and Action by Hayakawa makes some strong claims about language being the core grounding of reasoning.
+
+- https://philosophy.stackexchange.com/questions/34358/how-can-one-refute-john-searles-syntax-is-not-semantics-argument-against-stro
+  - I don't find the Chinese Room Argument that convincing
+  - Related: https://lukesmith.xyz/articles/consciousness-and-materialism/
+  - https://thegradient.pub/agi-is-not-multimodal/
+
