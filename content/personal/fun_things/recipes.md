@@ -274,8 +274,23 @@ This is similar to a minestrone soup, with some important modifications.
 
 #### Basic Recipe
 
-- Fry tofu / paneer separately, set aside. Coat with cornstarch or potato starch before pan frying using avocado oil. Can also include salt/papper in the mix.
--
+- Fry tofu / paneer / whatever separately, set aside. Coat with cornstarch or potato starch before pan frying using avocado oil. Can also include salt/papper in the mix.
+- Blanch greens
+  - e.g. bok choy, broccoli, chard
+  - Blanching greens and dunking them in ice water works out better than trying to cook them in the pan itself
+- Prep the sauce
+  - Soy sauce + rice vinegar + mirin / sake + white pepper + sugar (+ ketchup)
+  - Peanut satay sauce + coconut milk + mirin + soy sauce
+- Cook noodles
+  - Just boil ramen noodles
+- Ingredient order for stir frying:
+  - Whites of green onions, crushed garlic / ginger, chili bean paste in neural oil
+  - Sliced onions, bell peppers, mushrooms
+  - Root vegetables (carrots), cabbage, baby corn, bean sprouts
+  - Blanched vegetables + tofu
+  - Sauce + salt
+  - Noodles, cut the heat quickly after mixing
+  - Toppings: green onions, sesame seeds, crushed peanuts, cilantro, lime juice
 
 #### Prep Notes
 
@@ -302,6 +317,20 @@ This is similar to a minestrone soup, with some important modifications.
   - Oil, onions fry, then cabbage and celery
   - Then add noodles and sauce
   - My take: probably replace the celery with the whites of green onions, add some tofu
+
+### Manchurian
+
+- This is an "Indo-Chinese" dish
+- Pan fry tofu / paneer coated with cornstarch and salt/pepper (and optionally ketchup and sugar and flour) until browned and set aside
+- In the same pan, fry ginger + garlic (grated), greens of green onions, doubanjiang
+- Add finely chopped red onions + bell peppers (1:2 onion to pepper ratio)
+- Add soy sauce, dash of rice vinegar, bit of sugar, tomato ketchup
+- Add garam masala and a bit of 5 spice
+- Add a cornstarch / potato starch slurry to thicken, adjust thickness with water
+- Adjust salt and pepper (use white pepper)
+- Add paneer back and coat
+- Garnish with green onions and serve with rice
+- Alternative: replace doubanjiang and soy sauce and replace with more ketchup and sweet chili garlic sauce
 
 ## Sandwiches
 
