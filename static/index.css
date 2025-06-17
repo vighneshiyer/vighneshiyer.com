@@ -13,7 +13,7 @@
   text-size-adjust: 100%;
   font-style: normal;
 
-  color-scheme: --var(--color-scheme, light);
+  color-scheme: dark; /*--var(--color-scheme, light);*/
   /* Light Tokyonight colors by default, generated from https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/day.lua */
   /* Base colors */
   --bg: #d5d6db;           /* Editor background */
@@ -241,21 +241,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--sans-font);
 }
 
+/* Link styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
 a {
-    text-decoration: none;
-    /* ink styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
-    color: var(--orange);
-    --bg-h: 0.15rem;
-    background: linear-gradient(46.8deg,var(--red) 10%,var(--orange)) no-repeat right bottom / 0 var(--bg-h);
-    &:hover {
-      text-decoration: underline;
-      color: var(--red);
-      transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
-    }
+  position: relative;
+  display: inline;
+  text-decoration: none;
+  color: var(--orange);
+  --bar-height: 1.5px;
+  --bar-offset: 1px;
+  background: linear-gradient(45deg,var(--red1) 10%,var(--orange)) no-repeat right bottom / 0 var(--bar-height);
+  transition: background-size 0.1s ease-in-out, color 0.1s ease-in-out;
+  padding-bottom: var(--bar-offset);
+  &:hover {
+    color: var(--red1);
+    background-size: 100% var(--bar-height);
+    background-position-x: left;
+  }
 }
 
 :root {
-  --content-width: 80rem;
+  --content-width: 70rem;
 }
 
 .header-container {
@@ -278,6 +283,11 @@ a {
         font-weight: 600;
         color: var(--fg-dark);
         letter-spacing: -0.025ch;
+        transform: 0;
+        background: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       .contact p {
         text-align: right;
