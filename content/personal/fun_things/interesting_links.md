@@ -179,6 +179,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [No elephants: Breakthroughs in image generation](https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image) ([HN link](https://news.ycombinator.com/item?id=43590569)) (March 2025)
 - [Jon Barron (Deepmind) - Radiance Fields and the Future of Generative Media](https://www.youtube.com/watch?v=hFlF33JZbA0)
 - [The Physical Turing Test: Jim Fan on Nvidia's Roadmap for Embodied AI](https://www.youtube.com/watch?v=_2NijXqBESI)
+- [Cognition: Don’t Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents#applying-the-principles)
 
 ### Predictions
 

@@ -9,11 +9,9 @@
     <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="favicon-32x32.png") | safe }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") | safe }}">
-
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml") | safe }}">
-
-    {% set css_path = get_url(path="style.css") -%}
-    <link rel="stylesheet" href="{{ css_path | safe}}">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml") | safe }}">
+    <link rel="stylesheet" href="index.css">
 
     <base href="/">
     <script type="module">
@@ -57,53 +55,50 @@
   {% endblock head %}
 
   <body>
-    <main class="container" role="main">
-
-      {% block header %}
+    {% block header %}
+    <div class="header-container">
       <header role="banner">
-        <h1>
-          <a href="{{ config.base_url | safe }}" title="Home">{{ config.title }}</a>
-          <!--<br /><small>{{ config.description }}</small>-->
-        </h1>
-        <!--<h2>PhD Student, UC Berkeley</h2>-->
-        <p>vighnesh.iyer@berkeley.edu<br /><a href="https://github.com/vighneshiyer">Github</a>, <a href="https://linkedin.com/in/vighneshiyer">LinkedIn</a></p>
+        <div id="header-left-gutter"></div>
+        <div class="header-content">
+          <div class="title"><span><a href="{{ config.base_url | safe }}" title="Vighnesh Iyer">{{ config.title }}</a></span></div>
+          <div class="contact">
+            <p>
+              vighnesh.iyer@berkeley.edu<br />
+              <a href="https://github.com/vighneshiyer">Github</a>, <a href="https://linkedin.com/in/vighneshiyer">LinkedIn</a>, <a href="https://news.ycombinator.com/threads?id=vighneshiyer">HN</a>, <a href="./cv/cv.pdf">CV</a>
+            </p>
+          </div>
+        </div>
+        <div id="header-right-gutter"></div>
       </header>
-      <hr />
-      {% endblock header %}
+    </div>
+    {% endblock header %}
 
+    <main role="main">
       {% block content %}
-      <ul class="homepage-list">
+      <!--<ul class="homepage-list">
         {% for post in section.pages %}
           {{ macros::post_in_list(post=post) }}
         {% endfor %}
-      </ul>
+      </ul>-->
       {% endblock content %}
-
-      {% block footer %}
-      <footer role="contentinfo">
-        <hr />
-        {% if config.extra.footer_links %}
-        <nav style="margin-bottom:1rem;" role="navigation">
-          {% for item in config.extra.footer_links %}
-            <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) | safe }}">{{ item.name }}</a>
-            {% if loop.last %}{% else %}
-              <span>&middot;</span>
-            {% endif %}
-          {% endfor %}
-        </nav>
-        {% endif %}
-        {% block taglines %}
-        <small>
-          Built with <a href="https://www.getzola.org/">Zola</a> | Styling <a href="https://www.cs.utexas.edu/~bornholt/">inspired by</a> | Hosted on <a href="https://buyvm.net">BuyVM</a> | <a href="https://github.com/vighneshiyer/vighneshiyer.com">Source of this website</a> | <a href="{{ get_url(path="sitemap.xml") | safe }}">Sitemap</a> | <a href="{{ get_url(path="atom.xml") | safe }}">Atom Feed</a>
-          {% if config.extra.footer_tagline %}{{ config.extra.footer_tagline }}{% endif %}
-        </small>
-      {% endblock taglines %}
-      </footer>
-      {% endblock footer %}
-
     </main>
-    {% block after_main %}
-    {% endblock after_main %}
+
+    <div style="flex-grow: 1;"></div>
+
+    {% block footer %}
+    <footer role="contentinfo">
+      <div class="footer-left-gutter"></div>
+      <div class="footer-content">
+        Built with <a href="https://www.getzola.org/">Zola</a> |
+        Hosted on <a href="https://buyvm.net">BuyVM</a> |
+        <a href="https://github.com/vighneshiyer/vighneshiyer.com">Source</a> of this website |
+        <a href="{{ get_url(path="sitemap.xml") | safe }}">Sitemap</a> |
+        <a href="{{ get_url(path="atom.xml") | safe }}">Atom Feed</a> |
+        <a href="{{ get_url(path="rss.xml") | safe }}">RSS Feed</a>
+      </div>
+      <div class="footer-right-gutter"></div>
+    </footer>
+    {% endblock footer %}
   </body>
 </html>
 

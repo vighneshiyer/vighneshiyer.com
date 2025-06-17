@@ -121,7 +121,7 @@ This is a very good pitch.
 >
 > Partcl is powered by Boson, a static timing analysis engine that achieves 700x run time improvements over legacy timing analysis tools and Graviton, GPU accelered timing aware placer that runs 100x faster than legacy tools.
 
-- A very reasonable and doable pitch. Static timing, dynamic gate-level power with parasitic extraction, and GPU-accelerated placement. Very sensible area to attack the incumbents. There is plenty of academic work in this from academic groups and NVIDIA (most notably DREAMplace) that can be commercialized. Getting established semiconductor houses to shove GPUs into traditional CAD flows will be tough, but doable with enough evidence of benefits.
+- A very reasonable and doable pitch. Static timing, dynamic gate-level power with parasitic extraction, and GPU-accelerated placement. Very sensible area to attack the incumbents. There is plenty of academic work in this from academic groups and NVIDIA that can be commercialized. Getting established semiconductor houses to shove GPUs into traditional CAD flows will be tough, but doable with enough evidence of benefit.
 - The founders seem sufficiently competent and experienced to work in this area, and neither of them appear to be 'business' people, which is a good sign.
 - Where does their name come from? PAR + TCL? My advice: CAD tool users don't want to think about PAR and they certainly don't want to think about TCL lmao. Pick another name.
 - The "physics-based simulations" in their description is almost certainly referring to force-directed and other electrostatic-inspired placement algorithms.
@@ -146,8 +146,9 @@ This is a very good pitch.
 
 ### VoltAI
 
-https://voltai.com/
-Never met, heard about from others, information-free.
+- https://voltai.com/
+- Never met, heard about from others, information-free.
+- Seems to be PCB CAD and firmware oriented
 
 ### Silimate
 

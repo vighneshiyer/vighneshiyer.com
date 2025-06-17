@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+  --serif-font: 'Source Serif 4', serif;
+  --sans-font: 'Source Sans 3', sans-serif;
+  --code-font: 'Source Code Pro', monospace;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-style: normal;
+
+  color-scheme: --var(--color-scheme, light);
+  /* Light Tokyonight colors by default, generated from https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/day.lua */
+  /* Base colors */
+  --bg: #d5d6db;           /* Editor background */
+  --bg-dark: #3b3f56;      /* blend(bg, 0.9, fg) */
+  --bg-dark1: #373d54;     /* blend(bg-dark, 0.9, fg) */
+  --bg-highlight: #e6e7ed; /* lighter highlight for light mode */
+  --fg: #343b58;           /* Editor foreground */
+  --fg-dark: #565a6e;      /* for comments, less contrast text */
+  --fg-gutter: #40434f;    /* gutter / line numbers */
+
+  /* Syntax colors */
+  --comment: #6c6e75;
+  --cyan: #0f4b6e;
+  --blue: #2959aa;
+  --blue0: #0f4b6e;
+  --blue1: #33635c;
+  --blue2: #0f4b6e;
+  --blue5: #7dcfff;
+  --blue6: #b4f9f8;
+  --blue7: #394b70;
+  --green: #33635c;
+  --green1: #385f0d;
+  --green2: #33635c;
+  --magenta: #5a3e8e;
+  --magenta2: #5a3e8e;
+  --orange: #965027;
+  --purple: #5a4a78;
+  --red: #8c4351;
+  --red1: #965027;
+  --teal: #006c86;
+  --yellow: #8f5e15;
+  --terminal-black: #0f0f14;
+
+  /* Git colors (if relevant) */
+  /* You can copy these from dark theme or define new ones */
+  --git-add: #33635c;
+  --git-change: #2959aa;
+  --git-delete: #8c4351;
+
+  /* Override with dark colors if preferred */
+  @media (prefers-color-scheme: dark) {
+    --color-scheme: dark;
+    /* https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/storm.lua */
+    --bg: #24283b;
+    --bg-dark: #1f2335;
+    --bg-dark1: #1b1e2d;
+    --bg-highlight: #292e42;
+    --blue: #7aa2f7;
+    --blue0: #3d59a1;
+    --blue1: #2ac3de;
+    --blue2: #0db9d7;
+    --blue5: #89ddff;
+    --blue6: #b4f9f8;
+    --blue7: #394b70;
+    --comment: #565f89;
+    --cyan: #7dcfff;
+    --dark3: #545c7e;
+    --dark5: #737aa2;
+    --fg: #c0caf5;
+    --fg-dark: #a9b1d6;
+    --fg-gutter: #3b4261;
+    --green: #9ece6a;
+    --green1: #73daca;
+    --green2: #41a6b5;
+    --magenta: #bb9af7;
+    --magenta2: #ff007c;
+    --orange: #ff9e64;
+    --purple: #9d7cd8;
+    --red: #f7768e;
+    --red1: #db4b4b;
+    --teal: #1abc9c;
+    --terminal-black: #414868;
+    --yellow: #e0af68;
+    
+    /* Git colors */
+    --git-add: #449dab;
+    --git-change: #6183bb;
+    --git-delete: #914c54;
+    
+    /* https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/night.lua */
+    --bg: #1a1b26;
+    --bg-dark: #16161e;
+    --bg-dark1: #0C0E14;
+  }
+}
+
+/* https://jakelazaroff.com/words/my-modern-css-reset/ */
+@layer reset {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    color: currentColor;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  :not([class]) {
+    h1&, h2&, h3&, h4&, h5&, h6& {
+      margin-block: 0.75em;
+      line-height: 1.25;
+      text-wrap: balance;
+      letter-spacing: -0.025ch;
+    }
+
+    p&, ol&, ul& {
+      margin-block: 1em;
+    }
+
+    ol&, ul& {
+      padding-inline-start: 1.5em;
+      list-style: revert;
+    }
+
+    li& {
+      margin-block: 0.5em;
+    }
+  }
+}
+
+/* 
+https://layout-breakouts-builder.vercel.app/
+This basic grid is used for the main layout of every page.
+index.html - single column, no popouts
+articles - single column, tufte-style, left TOC, right sidenotes, popouts for images, etc.
+*/
+.page-layout > *, .full-width > * {
+  grid-column: content;
+}
+.page-layout, .full-width {
+--minimum-content-padding: 2rem;
+
+/** TRACK WIDTHS **/
+--full-max-width: 1fr;
+--popout-max-width: 1400px;
+--content-max-width: 1060px;
+--inset-content-max-width: 840px;
+
+/** TRACK SIZES **/
+--full: minmax( var(--minimum-content-padding), 1fr );
+--popout: minmax( 0, calc( ( var(--popout-max-width) - var(--content-max-width)) * 0.5 ) );
+--content: minmax( 0, calc( ( var(--content-max-width) - var(--inset-content-max-width)) * 0.5 ) );
+--inset-content: min( var(--inset-content-max-width), 100% - var(--minimum-content-padding) * 2 );
+
+display: grid;
+grid-template-columns: 
+  [full-start]
+  var(--full)
+    [popout-start]
+    var(--popout)
+      [content-start]
+      var(--content)
+        [inset-content-start]
+        var(--inset-content)
+        [inset-content-end]
+      var(--content)
+      [content-end]
+    var(--popout)
+    [popout-end]
+  var(--full)
+  [full-end];
+}
+
+/** CLASSES **/
+.full { grid-column: full; }
+.full-start { grid-column-start: full-start; }
+.full-end { grid-column-end: full-end; }
+
+.popout { grid-column: popout; }
+.popout-start { grid-column-start: popout-start; }
+.popout-end { grid-column-end: popout-end; }
+
+.content { grid-column: content; }
+.content-start { grid-column-start: content-start; }
+.content-end { grid-column-end: content-end; }
+
+.inset-content { grid-column: inset-content; }
+.inset-content-start { grid-column-start: inset-content-start; }
+.inset-content-end { grid-column-end: inset-content-end; }
+
+.full-width { grid-column: full; }
+.full-content, .full-content-nopad { grid-column: full; }
+.full-content { padding-inline: var(--minimum-content-padding); }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--fg);
+  font-family: var(--serif-font);
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sans-font);
+}
+
+a {
+    text-decoration: none;
+    /* ink styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
+    color: var(--orange);
+    --bg-h: 0.15rem;
+    background: linear-gradient(46.8deg,var(--red) 10%,var(--orange)) no-repeat right bottom / 0 var(--bg-h);
+    &:hover {
+      text-decoration: underline;
+      color: var(--red);
+      transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+    }
+}
+
+:root {
+  --content-width: 80rem;
+}
+
+.header-container {
+  background-color: var(--bg-dark1);
+  border-top: 3px solid var(--red1);
+  header {
+    display: grid;
+    grid-template-columns: auto var(--content-width) auto;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: var(--sans-font);
+    .header-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .title a {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--fg-dark);
+        letter-spacing: -0.025ch;
+      }
+      .contact p {
+        text-align: right;
+        margin: 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+footer {
+  background: var(--bg-dark1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: var(--sans-font);
+  font-size: 0.9rem;
+  color: var(--fg-dark);
+  text-align: left;
+  border-bottom: 3px solid var(--red1);
+  display: grid;
+  grid-template-columns: auto var(--content-width) auto;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: auto var(--content-width) auto;
+}
+
+main {
+
+}

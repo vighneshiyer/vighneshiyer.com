@@ -3,16 +3,14 @@
 
 {% block content %}
 
-{{ macros::section(section_path="research/events/_index.md") }}
+<div class="homepage">
+  <div class="homepage-gutter-left"></div>
+  <div class="homepage-content">
+    {{ macros::section(section_path="research/events/_index.md") }}
+    <p>I'm a PhD student in the EECS department at UC Berkeley advised by Prof. Bora Nikolic.</p>
 
-<p>I'm a PhD student in the EECS department at UC Berkeley advised by Prof. Bora Nikolic.</p>
-
-<p>I work in the areas of <a href="https://github.com/ucb-bar/chipyard">design</a> <a href="https://github.com/ucb-bar/hammer">methodology</a>, hardware modeling and verification, ML for DV, and power modeling. In the past, I have built a <a href="https://github.com/vighneshiyer/simcommand">high-performance monadic RTL testbench API</a>, designed a <a href="https://github.com/TsaiAnson/verif">VIP and random generator library</a> for a <a href="https://github.com/ucb-bar/chiseltest">testing framework for Chisel circuits</a>, built RTL coverage prediction models, and explored specification mining for bug localization.</p>
-
-{#
-{{ macros::listing(title="Experiences", section_path="conference_reviews/_index.md") }}
-{{ macros::listing(title="Random Stuff", section_path="misc/_index.md") }}
-{{ macros::listing(title="Research Topics", section_path="research_topics/_index.md") }}
-#}
-
+    <p>I work in the areas of <a href="https://github.com/ucb-bar/chipyard">design</a> <a href="https://github.com/ucb-bar/hammer">methodology</a>, hardware modeling and verification, ML for DV, and power modeling. In the past, I have built a <a href="https://github.com/vighneshiyer/simcommand">high-performance monadic RTL testbench API</a>, designed a <a href="https://github.com/TsaiAnson/verif">VIP and random generator library</a> for a <a href="https://github.com/ucb-bar/chiseltest">testing framework for Chisel circuits</a>, built RTL coverage prediction models, and explored specification mining for bug localization.</p>
+  </div>
+  <div class="homepage-gutter-right"></div>
+</div>
 {% endblock content %}
