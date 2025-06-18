@@ -263,6 +263,10 @@ a {
   }
 }
 
+p {
+  text-wrap: pretty;
+}
+
 :root {
   --content-width: 70rem;
 }
@@ -332,6 +336,9 @@ footer {
   width: 100%;
   margin-bottom: 1rem;
   display: inline-block;
+  &:last-child {
+    margin-bottom: 0;
+  }
   .section-title {
     display: inline-block;
     margin-bottom: 0.5rem;
@@ -394,6 +401,7 @@ footer {
   font-family: var(--sans-font);
 }
 
+/* This badge type is only used on the homepage */
 .badge-new {
   background-color: var(--blue);
   color: var(--bg-dark1);
