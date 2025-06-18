@@ -1,6 +1,23 @@
+@use '../node_modules/utopia-core-scss/src/utopia' as utopia;
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 :root {
+  @include utopia.generateTypeScale((
+    "minWidth": 320,
+    "maxWidth": 1240,
+    "minFontSize": 14,
+    "maxFontSize": 16,
+    "minTypeScale": 1.2,
+    "maxTypeScale": 1.25,
+    "positiveSteps": 4,
+    "negativeSteps": 2,
+    /* Optional params */
+    "relativeTo": "viewport",
+    "prefix": "step-",
+  ));
+
+  --content-width: 70rem;
+
   --serif-font: 'Source Serif 4', 'Noto Serif', serif;
   --sans-font: 'Source Sans 3', 'Noto Sans',sans-serif;
   --code-font: 'Source Code Pro', monospace;
@@ -137,23 +154,23 @@
   }
 
   :not([class]) {
-    h1&, h2&, h3&, h4&, h5&, h6& {
+    h1#{&}, h2#{&}, h3#{&}, h4#{&}, h5#{&}, h6#{&} {
       margin-block: 0.75em;
       line-height: 1.25;
       text-wrap: balance;
       letter-spacing: -0.025ch;
     }
 
-    p&, ol&, ul& {
+    p#{&}, ol#{&}, ul#{&} {
       margin-block: 1em;
     }
 
-    ol&, ul& {
+    ol#{&}, ul#{&} {
       padding-inline-start: 1.5em;
       list-style: revert;
     }
 
-    li& {
+    li#{&} {
       margin-block: 0.5em;
     }
   }
@@ -165,19 +182,18 @@ This basic grid is used for the main layout of every page.
 index.html - single column, no popouts
 articles - single column, tufte-style, left TOC, right sidenotes, popouts for images, etc.
 */
+/*
 .page-layout > *, .full-width > * {
   grid-column: content;
 }
 .page-layout, .full-width {
 --minimum-content-padding: 2rem;
 
-/** TRACK WIDTHS **/
 --full-max-width: 1fr;
 --popout-max-width: 1400px;
 --content-max-width: 1060px;
 --inset-content-max-width: 840px;
 
-/** TRACK SIZES **/
 --full: minmax( var(--minimum-content-padding), 1fr );
 --popout: minmax( 0, calc( ( var(--popout-max-width) - var(--content-max-width)) * 0.5 ) );
 --content: minmax( 0, calc( ( var(--content-max-width) - var(--inset-content-max-width)) * 0.5 ) );
@@ -202,7 +218,6 @@ grid-template-columns:
   [full-end];
 }
 
-/** CLASSES **/
 .full { grid-column: full; }
 .full-start { grid-column-start: full-start; }
 .full-end { grid-column-end: full-end; }
@@ -222,6 +237,7 @@ grid-template-columns:
 .full-width { grid-column: full; }
 .full-content, .full-content-nopad { grid-column: full; }
 .full-content { padding-inline: var(--minimum-content-padding); }
+*/
 
 html {
   font-size: 16px;
@@ -231,7 +247,6 @@ body {
   background-color: var(--bg-dark);
   color: var(--fg);
   font-family: var(--serif-font);
-  font-size: 1rem;
   line-height: 1.5;
   /* Make the footer stick to the bottom of the page */
   display: flex;
@@ -242,6 +257,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--sans-font);
   font-weight: 600;
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+h4 {
+  font-size: var(--step-0);
+}
+
+p {
+  font-size: var(--step-0);
+  text-wrap: pretty;
 }
 
 /* Link styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
@@ -263,14 +299,6 @@ a {
   }
 }
 
-p {
-  text-wrap: pretty;
-}
-
-:root {
-  --content-width: 70rem;
-}
-
 .header-container {
   background-color: var(--bg-dark1);
   /* border-top: 3px solid var(--red1); */
@@ -288,7 +316,7 @@ p {
       align-items: center;
       .title a {
         text-align: left;
-        font-size: 2rem;
+        font-size: var(--step-3);
         font-weight: 600;
         color: var(--fg);
         letter-spacing: -0.025ch;
@@ -301,7 +329,7 @@ p {
       .contact p {
         text-align: right;
         margin: 0;
-        font-size: 0.9rem;
+        font-size: var(--step-0);
       }
     }
   }
@@ -312,7 +340,7 @@ footer {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: var(--sans-font);
-  font-size: 0.9rem;
+  font-size: var(--step-0);
   color: var(--fg);
   text-align: left;
   border-bottom: 3px solid var(--red1);
@@ -335,29 +363,28 @@ footer {
   border-radius: 0.5rem;
   width: 100%;
   margin-bottom: 1rem;
-  display: inline-block;
-  &:last-child {
-    margin-bottom: 0;
-  }
   .section-title {
     display: inline-block;
     margin-bottom: 0.5rem;
-    /* text-decoration: underline; */
     line-height: 1;
   }
   .section-description {
     color: var(--fg-dark);
     margin-left: 0.5rem;
-    font-size: 0.9rem;
+    font-size: var(--step-0);
     position: relative;
-    top: -0.5ex;
+    top: -0.3ex;
     &::before {
-      content: "⁂"; /* asterism */
+      // content: "⁂"; /* asterism */
       content: "§";
       color: var(--orange);
       margin-right: 0.5rem;
     }
   }
+}
+
+.research-posts .section:last-child {
+  margin-bottom: 0;
 }
 
 .page {
@@ -370,10 +397,10 @@ footer {
   }
   .page-date {
     color: var(--fg-dark);
-    font-size: 0.8rem;
+    font-size: var(--step--1);
     margin-left: 0.25rem;
     position: relative;
-    top: -0.1ex;
+    top: -0.3ex;
     &::before {
       /* content: "⸙"; */
       /* content: "·"; */
@@ -383,19 +410,18 @@ footer {
     }
   }
   .page-description {
-    font-size: 0.85rem;
+    font-size: var(--step-0);
   }
 }
 
-.badge {
+@mixin badge {
   padding-bottom: .1rem;
   padding-top: .1rem;
   padding-left: .5rem;
   padding-right: .5rem;
   border-radius: 0.25rem;
   font-weight: 600;
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: var(--step--1);
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-family: var(--sans-font);
@@ -403,8 +429,9 @@ footer {
 
 /* This badge type is only used on the homepage */
 .badge-new {
+  @include badge;
   background-color: var(--blue);
   color: var(--bg-dark1);
   position: relative;
-  top: -0.2ex;
+  top: -0.4ex;
 }
