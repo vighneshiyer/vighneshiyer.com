@@ -2,7 +2,7 @@
   <div class="page">
     <h3 class="page-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
     <span class="page-date">
-      <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+      <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %Y") }}</time>
     </span>
     <br />
     <p class="page-description">{{ page.description }}</p>

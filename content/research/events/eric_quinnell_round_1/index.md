@@ -4,7 +4,7 @@ date = 2022-09-29
 aliases = ["misc/tesla-talk"]
 draft = false
 slug = "eric-quinnell-from-tesla-on-variable-length-isas-cpus-fsd-dojo"
-description = "A discussion on variable-length ISAs, high-performance CPU uArch, FSD, Dojo, and academic computer architecture research"
+description = "A discussion on variable-length ISAs, high-performance CPU μArch, FSD, Dojo, and academic computer architecture research"
 +++
 
 **Disclaimer**: these are my words, not Eric's. I have used some creative license.

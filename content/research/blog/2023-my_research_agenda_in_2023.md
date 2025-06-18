@@ -1,6 +1,6 @@
 +++
 title = "My Research Agenda Back in 2023"
-date = 2025-06-17
+date = 2023-10-01
 draft = false
 description = "For posterity's sake"
 +++

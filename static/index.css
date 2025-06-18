@@ -335,15 +335,18 @@ footer {
   .section-title {
     display: inline-block;
     margin-bottom: 0.5rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     line-height: 1;
   }
   .section-description {
     color: var(--fg-dark);
     margin-left: 0.5rem;
     font-size: 0.9rem;
+    position: relative;
+    top: -0.5ex;
     &::before {
       content: "⁂"; /* asterism */
+      content: "§";
       color: var(--orange);
       margin-right: 0.5rem;
     }
@@ -351,7 +354,7 @@ footer {
 }
 
 .page {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
   &:last-child {
     margin-bottom: 0;
   }
@@ -362,15 +365,38 @@ footer {
     color: var(--fg-dark);
     font-size: 0.8rem;
     margin-left: 0.25rem;
+    position: relative;
+    top: -0.1ex;
     &::before {
       /* content: "⸙"; */
-      content: "·";
+      /* content: "·"; */
+      content: "☼";
       margin-right: 0.25rem;
       color: var(--orange);
-      font-size: 1rem;
     }
   }
   .page-description {
     font-size: 0.85rem;
   }
+}
+
+.badge {
+  padding-bottom: .1rem;
+  padding-top: .1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-family: var(--sans-font);
+}
+
+.badge-new {
+  background-color: var(--blue);
+  color: var(--bg-dark1);
+  position: relative;
+  top: -0.2ex;
 }
