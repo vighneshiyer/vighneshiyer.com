@@ -5,15 +5,30 @@
   @include utopia.generateTypeScale((
     "minWidth": 320,
     "maxWidth": 1240,
-    "minFontSize": 14,
-    "maxFontSize": 16,
-    "minTypeScale": 1.2,
-    "maxTypeScale": 1.25,
+    "minFontSize": 16,
+    "maxFontSize": 18,
+    "minTypeScale": 1.125,
+    "maxTypeScale": 1.2,
     "positiveSteps": 4,
     "negativeSteps": 2,
     /* Optional params */
     "relativeTo": "viewport",
     "prefix": "step-",
+  ));
+
+  @include utopia.generateSpaceScale((
+    "minWidth": 320,
+    "maxWidth": 1240,
+    "minSize": 16,
+    "maxSize": 18,
+    "positiveSteps": (1.5, 2, 3, 4, 6),
+    "negativeSteps": (0.75, 0.5, 0.25),
+    /* Optional params */
+    "customSizes": ("s-l",),
+    "usePx": false,
+    "relativeTo": "viewport",
+    "prefix": "space-",
+    "allPairs": false,
   ));
 
   --content-width: 70rem;
@@ -329,7 +344,7 @@ a {
       .contact p {
         text-align: right;
         margin: 0;
-        font-size: var(--step-0);
+        font-size: var(--step--1);
       }
     }
   }
@@ -340,7 +355,7 @@ footer {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: var(--sans-font);
-  font-size: var(--step-0);
+  font-size: var(--step--1);
   color: var(--fg);
   text-align: left;
   border-bottom: 3px solid var(--red1);
@@ -371,7 +386,7 @@ footer {
   .section-description {
     color: var(--fg-dark);
     margin-left: 0.5rem;
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     position: relative;
     top: -0.3ex;
     &::before {
@@ -410,7 +425,7 @@ footer {
     }
   }
   .page-description {
-    font-size: var(--step-0);
+    font-size: var(--step--1);
   }
 }
 
