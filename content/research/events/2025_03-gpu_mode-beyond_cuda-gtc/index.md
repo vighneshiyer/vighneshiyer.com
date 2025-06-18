@@ -159,6 +159,8 @@ Chris lattner, modular people, no talk though... Claim good functionality on AMD
 - he likes robotics, nvidia's chip wasn't good enough, designed an o3 like model, can't do low latency inference on the edge, GPU not build for dynamicitiy and batch size 1 on the edge. threw out the nvidia stack since nvidia didn't want to change, so he wanted to build his own chip
 - this guy seems like a scam artist, lots of words, zero meaning
 - https://www.lemurianlabs.com/technology
+- https://www.eetimes.com/can-dsp-math-help-beat-the-gpu-for-ai/
+  - This does seem more promising compared to the talk he gave. But no details on this hardware were provided - perhaps they have tabled the idea of custom silicon.
 
 #### Michael from Spectral Compute
 

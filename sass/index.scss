@@ -293,6 +293,7 @@ h4 {
 p {
   font-size: var(--step-0);
   text-wrap: pretty;
+  // letter-spacing: 0.02ch;
 }
 
 /* Link styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
@@ -301,21 +302,21 @@ a {
   display: inline;
   text-decoration: none;
   color: var(--orange);
-  --bar-height: 1.5px;
-  --bar-offset: 0px;
+  --bar-height: 0.2ex;
+  --bar-offset: 0.2ex;
   background: linear-gradient(45deg,var(--red1) 10%,var(--orange)) no-repeat right bottom / 0 var(--bar-height);
   transition: background-size 0.1s ease-in-out, color 0.1s ease-in-out;
-  padding-bottom: var(--bar-offset);
+  // padding-bottom: var(--bar-offset);
   &:hover {
     color: var(--red1);
     background-size: 100% var(--bar-height);
     background-position-x: left;
-    background-position-y: bottom 1px;
+    background-position-y: bottom var(--bar-offset);
   }
 }
 
 .header-container {
-  background-color: var(--bg-dark1);
+  background-color: var(--bg-dark);
   /* border-top: 3px solid var(--red1); */
   border-bottom: 1px solid var(--dark5);
   header {
@@ -351,7 +352,7 @@ a {
 }
 
 footer {
-  background: var(--bg-dark1);
+  background: var(--bg-dark);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: var(--sans-font);
@@ -367,31 +368,39 @@ footer {
 .homepage {
   display: grid;
   grid-template-columns: auto var(--content-width) auto;
+  background-color: var(--bg-dark1);
   .homepage-content {
     margin-top: 1rem;
   }
 }
 
 .section {
-  background-color: var(--bg-dark1);
-  padding: 1rem;
-  border-radius: 0.5rem;
+  // background-color: var(--bg-dark1);
+  // padding: 1rem;
+  // border-radius: 0.5rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   .section-title {
     display: inline-block;
     margin-bottom: 0.5rem;
     line-height: 1;
+    &::before {
+      content: "§ ";
+      color: var(--orange);
+      margin-left: -1.4ch;
+    }
   }
   .section-description {
     color: var(--fg-dark);
     margin-left: 0.5rem;
     font-size: var(--step--1);
     position: relative;
-    top: -0.3ex;
+    top: -0.2ex;
     &::before {
       // content: "⁂"; /* asterism */
-      content: "§";
+      // content: "§";
+      content: "·";
+      font-size: var(--step-0);
       color: var(--orange);
       margin-right: 0.5rem;
     }
@@ -404,6 +413,7 @@ footer {
 
 .page {
   margin-bottom: 0.5rem;
+  // margin-left: 2ch;
   &:last-child {
     margin-bottom: 0;
   }
@@ -419,7 +429,8 @@ footer {
     &::before {
       /* content: "⸙"; */
       /* content: "·"; */
-      content: "☼";
+      // content: "☼";
+      content: "·";
       margin-right: 0.25rem;
       color: var(--orange);
     }
