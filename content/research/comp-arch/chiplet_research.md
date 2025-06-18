@@ -1,9 +1,10 @@
 +++
-title = "Academic Computer Architecture Research in Chiplets"
+title = "Chiplet Research in Academia"
 date = 2023-02-28
 aliases = ["misc/chiplet-research"]
 draft = false
 slug = "academic-comparch-chiplet-research"
+description = "A critical look at academic computer architecture research with regards to chiplets"
 +++
 
 ## What Are Chiplets?

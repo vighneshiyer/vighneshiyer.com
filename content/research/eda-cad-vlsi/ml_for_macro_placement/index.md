@@ -1,9 +1,10 @@
 +++
 title = "Machine Learning for Macro Placement: The Saga"
-date = 2023-04-08
+date = 2024-11-30
 aliases = ["misc/ml-for-placement"]
 draft = false
 slug = "machine-learning-for-macro-placement-alphachip-the-saga"
+description = "Placement algorithms, Google's Nature paper using RL for macro placement, the infinite cycles of rebuttals, AlphaChip, and more"
 +++
 
 ## Background on Placement

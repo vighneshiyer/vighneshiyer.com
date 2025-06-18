@@ -1,8 +1,9 @@
 +++
-title = "Undergrad Projects in the SLICE Lab (Hardware Verification)"
+title = "Undergrad Projects in the SLICE Lab"
 date = 2022-08-30
 alises = ["misc/ugrad-projects"]
 draft = false
+description = "An old collection of research ideas in hardware verification from 2022"
 +++
 
 ADD A CALLOUT HERE - OLD ARTICLE - JUST HERE FOR FUN and history keeping

@@ -12,8 +12,17 @@ description = "XLS, HW design methodology, the supposed imminent tapeout"
 - Richard Ho
   - Going to all the conferences, being intercepted constantly, trying to peek around
   - The very first hire
+  - https://www.datacenterdynamics.com/en/news/openai-appoints-former-google-tpu-leader-as-head-of-hardware-hiring-for-experts-in-data-center-facility-design/
+
+- https://www.datacenterdynamics.com/en/news/openai-hiring-team-to-work-with-hardware-vendors-for-co-design-of-future-ai-accelerators/
+- https://www.linkedin.com/posts/richard-ho-chips_hwsw-co-design-engineer-openai-activity-7163043897382793217-LfpN
+- https://web.archive.org/web/20250607211859/https://openai.com/careers/hardwaresoftware-co-design-engineer/
+- https://openai.com/careers/hwsw-co-design-engineer/
+- https://web.archive.org/web/20240306205502/https://openai.com/careers/hwsw-co-design-engineer/
+
 - Chris Leary - the creator of XLA (and XLS) - a very smart guy, and ultra competent programmer. But lost in space without microarchitects to guide. Similar tragedy that befell Jeff Dean and many others. Googlers seem particularly suceptible to "moonshot" hysteria.
 - XLS
+  - I wrote about XLS in my DAC 2022 review, link to that! Link to Joonho's article. Link to the zstd example.
   - Very insane
   - Two input arbiter vs Chisel or SystemVerilog
     - Not even close in complexity
@@ -28,6 +37,7 @@ description = "XLS, HW design methodology, the supposed imminent tapeout"
 - Bedrock - Creating an OSS SV stdlib (competitior to basejump and PULP IP and many others)
   - Rebuilding a SystemVerilog library that existed at Google.
   - Testbench generation via LLMs (Chipstack) (and maybe RTL too in the future)
+  - Bazel-first for everything, including regressions and even FPGA builds I'm sure - Googlers at work
 - Topstitch - replacement for custom Verilog stitching tools that are internal in every semiconductor company (usually built on top of Verific: the only company which is guaranteed to continue making lots of money)
   - A medley of Rust, Python, DSLX, Bazel, C++, and other randomness. Is this really any better?
 

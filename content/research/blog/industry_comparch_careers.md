@@ -1,6 +1,7 @@
 +++
 title = "Thoughts About Career"
 date = 2024-05-26
+draft = true
 +++
 
 IMO when starting my career I want to take a bit of risk and understand what the real problems in industry are.

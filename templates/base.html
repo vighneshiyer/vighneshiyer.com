@@ -75,14 +75,10 @@
 
     <main role="main">
       {% block content %}
-      <!--<ul class="homepage-list">
-        {% for post in section.pages %}
-          {{ macros::post_in_list(post=post) }}
-        {% endfor %}
-      </ul>-->
       {% endblock content %}
     </main>
 
+    <!-- This is a spacer to make the footer stick to the bottom of the page -->
     <div style="flex-grow: 1;"></div>
 
     {% block footer %}

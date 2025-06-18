@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 :root {
-  --serif-font: 'Source Serif 4', serif;
-  --sans-font: 'Source Sans 3', sans-serif;
+  --serif-font: 'Source Serif 4', 'Noto Serif', serif;
+  --sans-font: 'Source Sans 3', 'Noto Sans',sans-serif;
   --code-font: 'Source Code Pro', monospace;
   font-optical-sizing: auto;
   font-synthesis: none;
@@ -72,7 +72,8 @@
     --cyan: #7dcfff;
     --dark3: #545c7e;
     --dark5: #737aa2;
-    --fg: #c0caf5;
+    /* --fg: #c0caf5; */
+    --fg: #e6e7ed;
     --fg-dark: #a9b1d6;
     --fg-gutter: #3b4261;
     --green: #9ece6a;
@@ -232,6 +233,7 @@ body {
   font-family: var(--serif-font);
   font-size: 1rem;
   line-height: 1.5;
+  /* Make the footer stick to the bottom of the page */
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -239,6 +241,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--sans-font);
+  font-weight: 600;
 }
 
 /* Link styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
@@ -248,7 +251,7 @@ a {
   text-decoration: none;
   color: var(--orange);
   --bar-height: 1.5px;
-  --bar-offset: 1px;
+  --bar-offset: 0px;
   background: linear-gradient(45deg,var(--red1) 10%,var(--orange)) no-repeat right bottom / 0 var(--bar-height);
   transition: background-size 0.1s ease-in-out, color 0.1s ease-in-out;
   padding-bottom: var(--bar-offset);
@@ -256,6 +259,7 @@ a {
     color: var(--red1);
     background-size: 100% var(--bar-height);
     background-position-x: left;
+    background-position-y: bottom 1px;
   }
 }
 
@@ -265,7 +269,8 @@ a {
 
 .header-container {
   background-color: var(--bg-dark1);
-  border-top: 3px solid var(--red1);
+  /* border-top: 3px solid var(--red1); */
+  border-bottom: 1px solid var(--dark5);
   header {
     display: grid;
     grid-template-columns: auto var(--content-width) auto;
@@ -281,7 +286,7 @@ a {
         text-align: left;
         font-size: 2rem;
         font-weight: 600;
-        color: var(--fg-dark);
+        color: var(--fg);
         letter-spacing: -0.025ch;
         transform: 0;
         background: none;
@@ -304,9 +309,10 @@ footer {
   padding-bottom: 0.5rem;
   font-family: var(--sans-font);
   font-size: 0.9rem;
-  color: var(--fg-dark);
+  color: var(--fg);
   text-align: left;
   border-bottom: 3px solid var(--red1);
+  border-top: 1px solid var(--dark5);
   display: grid;
   grid-template-columns: auto var(--content-width) auto;
 }
@@ -314,8 +320,57 @@ footer {
 .homepage {
   display: grid;
   grid-template-columns: auto var(--content-width) auto;
+  .homepage-content {
+    margin-top: 1rem;
+  }
 }
 
-main {
+.section {
+  background-color: var(--bg-dark1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: inline-block;
+  .section-title {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    line-height: 1;
+  }
+  .section-description {
+    color: var(--fg-dark);
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    &::before {
+      content: "⁂"; /* asterism */
+      color: var(--orange);
+      margin-right: 0.5rem;
+    }
+  }
+}
 
+.page {
+  margin-bottom: 0.35rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .page-title {
+    display: inline-block;
+  }
+  .page-date {
+    color: var(--fg-dark);
+    font-size: 0.8rem;
+    margin-left: 0.25rem;
+    &::before {
+      /* content: "⸙"; */
+      content: "·";
+      margin-right: 0.25rem;
+      color: var(--orange);
+      font-size: 1rem;
+    }
+  }
+  .page-description {
+    font-size: 0.85rem;
+  }
 }

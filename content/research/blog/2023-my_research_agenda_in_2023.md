@@ -1,8 +1,12 @@
 +++
-title = "Old Research Agenda in 2023"
-date = 2023-08-21
-draft = true
+title = "My Research Agenda Back in 2023"
+date = 2025-06-17
+draft = false
+description = "For posterity's sake"
 +++
+
+I'm not so sure about these research directions in 2025, but I'll leave them here just to preserve what once was.
+Don't take these notes too seriously.
 
 ## Fall 2023
 
@@ -21,6 +25,7 @@ draft = true
 
 ### Overall Agenda
 
+<!--
 - CS 294 -> semantic compression with application to NoCs -> ISCA 24
 - CS 264 -> new HDL investigation / multi-abstraction / better graph IR -> rewriting of RTL / workshop paper
 - SimCommand + High perf Sim APIs + other stuff -> ASPLOS 24
@@ -35,6 +40,19 @@ draft = true
         - Limitation of diplomacy,...
         - The complaint isn't really about unit testing - a real selling point would be a methodology to write block level tests and then have it applied with many types of testing strategies (random, fuzzing, unit, directed, property based, etc.)
     - Incentivize people to write tests not just by making it easy - but also making it the default to have statistics to measure how good you're doing - coverage dashboard, coverage in CI by default - people will look at this and then have another motivation to write tests (it is like gamification)
+-->
+
+- Continue to explore a new HDL with multi-abstraction support / better graph IR → evaluate by rewriting some RTL
+- SimCommand / high-performance RTL simulation APIs
+- Parametric fuzzing + ML mutation
+    - rtl2graph + coverage extrapolation
+- Multi-level simulation? Combine different simulators from different abstractions to produce a higher throughput simulator with enough performance estimation fidelity
+- Improve the Hammer VLSI build flow / investigate redoing its API while preserving the TCL generators themselves
+- Revisit using formal to generate comprehensive stimulus for power simulation and power macromodel training
+- Making RTL verification viable and practical for the lab as a whole (some feedback from Prof. Chris Batten)
+    - Make it easier to actually extract block level modules from a top without doing the whole elaboration (or mock the interfaces as they exist in the top, but it is hard to make this trivial, a limitation of diplomacy)
+    - A selling point would be a methodology to write block level tests abstractly and then have them applied with many types of testing strategies (random, fuzzing, unit, directed, property based, etc.). This is ill-defined.
+    - Incentivize people to write tests not just by making it easy, but also by making it the default to have statistics to measure how good you're doing. Coverage dashboard, coverage in CI by default. People will look at this and then have another motivation to write tests (i.e. gamification)
 
 ## Spring 2023
 

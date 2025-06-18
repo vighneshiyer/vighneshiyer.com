@@ -2,6 +2,7 @@
 title = "59th Design Automation Conference (DAC 2022)"
 date = 2022-08-20
 aliases = ["conference_reviews/dac-2022"]
+description = "Random workshops and papers, exhibition floor, Siemens PowerPro vs Cadence Joules, XLS, ML for verification, FOSS VLSI EDA, mflowgen and Hammer, analog layout automation"
 +++
 
 This was my first DAC at Moscone West. It was a good experience - lots of vendors at the exhibition halls to talk to, several decent research paper sessions (but relatively poor engineering track sessions), and interesting panels (where every panelist brought a short set of slides to discuss their perspective on the question posed).
@@ -745,12 +746,3 @@ Some hangups:
 - Research track at least has papers published in the conference proceedings
 - But, panel and engineering track slides just vanish after the conference - people were taking slide photos constantly in every session because of this
 - Most exhibition hall information isn't posted online - it would be nice to know what demo/presentation sessions are taking place in each company's booth on every day
-
-<details>
-<summary>Some followups for me</summary>
-
-- NVIDIA
-- Intel (SDCs and SimCommand benchmark)
-- Coq DRAM model people
-
-</details>

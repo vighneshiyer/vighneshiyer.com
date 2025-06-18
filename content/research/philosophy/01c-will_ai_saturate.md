@@ -296,3 +296,7 @@ Contrast this with the "era of experience" and physical and virtual grounding of
 
 - https://x.com/StuartHameroff/status/1932092216387998034
   - Add this to Roger Penrose book mention in the consciousness article
+
+- It would seem that language models learn in a way that is odd, even if the 'master algorithm' is the same as used by our biological brains.
+  - In principle, we should be able to construct a model which can perform 'logic' and 'deduction' and 'planning' with respect to some task and then be able to query a knowledge base to produce any given chain of thought and conclusion to a query. So, this would mean a model with the knowledge base and reasoning ability of a high-schooler with the addition of a dictionary and an encyclopedia (e.g. internet searches + Wikipedia) should be sufficient to saturate every single benchmark (which is mechanical in nature and not open-ended, e.g. ARG-AGI or SimpleBench or MMLU) we can throw at it.
+  - What this means however, is that the entire corpus of text that models are trained on are unnecessary. It should be possible to create a much smaller LLM with a very tiny training corpus (relatively speaking) and train the model incrementally similar to how a human child is trained on a curriculum to instill the skills of language, deduction, and memory in increasingly complex settings.
