@@ -300,3 +300,43 @@ Contrast this with the "era of experience" and physical and virtual grounding of
 - It would seem that language models learn in a way that is odd, even if the 'master algorithm' is the same as used by our biological brains.
   - In principle, we should be able to construct a model which can perform 'logic' and 'deduction' and 'planning' with respect to some task and then be able to query a knowledge base to produce any given chain of thought and conclusion to a query. So, this would mean a model with the knowledge base and reasoning ability of a high-schooler with the addition of a dictionary and an encyclopedia (e.g. internet searches + Wikipedia) should be sufficient to saturate every single benchmark (which is mechanical in nature and not open-ended, e.g. ARG-AGI or SimpleBench or MMLU) we can throw at it.
   - What this means however, is that the entire corpus of text that models are trained on are unnecessary. It should be possible to create a much smaller LLM with a very tiny training corpus (relatively speaking) and train the model incrementally similar to how a human child is trained on a curriculum to instill the skills of language, deduction, and memory in increasingly complex settings.
+
+- https://x.com/ylecun/status/1935108028891861393
+
+> Why can AIs code for 1h but not 10h?
+>
+> A simple explanation: if there's a 10% chance of error per 10min step (say), the success rate is:
+>
+> 1h: 53%
+> 4h: 8%
+> 10h: 0.002%
+>
+> @tobyordoxford has tested this 'constant error rate' theory and shown it's a good fit for the data
+>
+> chance of success declines exponentially
+
+- https://www.tobyord.com/writing/half-life
+- LeCunn tries to play expert prognosticator, but it comes off too shallow. A constant hazard rate doesn't mean that things become exponentially more difficult to solve the longer the problems get in scope. This is a problem for creativity, but not for mechanical problem solving (more RL will continue to push down the hazard rate and more sampling will further alleviate this issue, but those have the opposite effects on creativity).
+
+- https://x.com/scaling01/status/1935121320460648593
+
+> > be me Yann LeCun
+> > make a useless prediction that "autoregressive LLMs are doomed"
+> > show picture that probability goes to 0
+>
+> > wait until studies come out that show that there is a constant non-zero probability of errors that leads to the observed decay in performance
+>
+> > claim victory
+> > mfw he didn't see the second post in the thread that shows the human data looks exactly the same just scaled
+
+> Because they both show the same family of functions. That means either none of them is doomed or both.
+>
+> And we know humans aren't exactly doomed. We have thousands of years of scientific progress as proof that we are not doomed. So LLMs are in fact not doomed and we can continue scaling them.
+
+- https://x.com/ylecun/status/1935269904976069066
+
+> Human reasoning is not based on auto-regressive discrete symbol (token) prediction.
+> It is based on the manipulation of mental models in continuous representations spaces.
+> It is based on *searching* for a set of manipulations of this model to arrive at a particular result.
+
+This is just wordplay. There is no practical difference between 'reasoning' on discrete token chains and 'continuous latent spaces', since that's what LLMs already appear to do. The discrete tokens merely are a human interpretable 'discrete and sampled' representation of the _model state_ which holds LeCunn's 'continuous representation space'. If he is making a point about the ability for LLMs to abstract over patterns, then I can buy that might be more difficult to prove, but this doesn't have to do much with mechanical problem solving.
