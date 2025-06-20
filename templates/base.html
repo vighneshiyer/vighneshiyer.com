@@ -58,17 +58,13 @@
     {% block header %}
     <div class="header-container">
       <header role="banner">
-        <div id="header-left-gutter"></div>
-        <div class="header-content">
-          <div class="title"><span><a href="{{ config.base_url | safe }}" title="Vighnesh Iyer">{{ config.title }}</a></span></div>
-          <div class="contact">
-            <p>
-              vighnesh.iyer@berkeley.edu<br />
-              <a href="https://github.com/vighneshiyer">Github</a>, <a href="https://linkedin.com/in/vighneshiyer">LinkedIn</a>, <a href="https://news.ycombinator.com/threads?id=vighneshiyer">HN</a>, <a href="./cv/cv.pdf">CV</a>
-            </p>
-          </div>
+        <div class="title"><span><a href="{{ config.base_url | safe }}" title="Vighnesh Iyer">{{ config.title }}</a></span></div>
+        <div class="contact">
+          <p>
+            vighnesh.iyer@berkeley.edu<br />
+            <a href="https://github.com/vighneshiyer">Github</a>, <a href="https://linkedin.com/in/vighneshiyer">LinkedIn</a>, <a href="https://news.ycombinator.com/threads?id=vighneshiyer">HN</a>, <a href="./cv/cv.pdf">CV</a>
+          </p>
         </div>
-        <div id="header-right-gutter"></div>
       </header>
     </div>
     {% endblock header %}

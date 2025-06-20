@@ -321,18 +321,23 @@ This is similar to a minestrone soup, with some important modifications.
 ### Manchurian
 
 - This is an "Indo-Chinese" dish
-- Pan fry tofu / paneer coated with cornstarch and salt/pepper (and optionally ketchup and sugar and flour) until browned and set aside
-- In the same pan, fry ginger + garlic (grated), greens of green onions, doubanjiang
-- Add finely chopped red onions + bell peppers (1:2 onion to pepper ratio)
-- Add soy sauce, dash of rice vinegar, bit of sugar, tomato ketchup
-- Add garam masala and a bit of 5 spice
-- Add a cornstarch / potato starch slurry to thicken, adjust thickness with water
+- Prepare a batter: 3 tbsp cornstarch (sub arrowroot flour), 3 tbsp all-purpose flour, 1/8 tsp salt, 1/4 tsp red chili powder, 1/8 tsp black pepper (optionally add sugar and ketchup). Add 5-6 tbsp water and mix until a thick batter forms
+- Shallow fry the battered paneer until browned and set aside
+- Prepare the sauce: 2 tbsp soy sauce, 1 tbsp vinegar, 3 tbsp ketchup, 2 tbsp brown sugar, 1 tbsp sweet chili-garlic sauce, a few drops of sesame oil
+- In the same pan, stir fry sliced garlic and the greens of green onions for 1 minute on medium heat
+- Add medium-fine cubed red onions + bell peppers (maintain a 1:2 onion:pepper ratio) until partially cooked, 3-4 minutes
+- Add the sauce and continue to cook for 1 minute
+- Add a cornstarch / potato starch slurry to thicken the sauce. Adjust thickness with water until the sauce becomes glossy and thick. Cut the heat.
+- Add a pinch of garam masala
 - Adjust salt and pepper (use white pepper)
-- Add paneer back and coat
+- Add paneer back to the pan and stir through
 - Garnish with green onions and serve with rice
-- Alternative: replace doubanjiang and soy sauce and replace with more ketchup and sweet chili garlic sauce
+
+- https://rainbowplantlife.com/gobi-manchurian/
 
 ## Sandwiches
+
+- Main things: mozzarella slabs, burrata, halloumi, paneer, eggs, avocado, hummus, sprouts
 
 ### Caprese
 

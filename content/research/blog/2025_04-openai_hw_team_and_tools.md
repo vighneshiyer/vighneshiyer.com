@@ -19,6 +19,7 @@ description = "XLS, HW design methodology, the supposed imminent tapeout"
 - https://web.archive.org/web/20250607211859/https://openai.com/careers/hardwaresoftware-co-design-engineer/
 - https://openai.com/careers/hwsw-co-design-engineer/
 - https://web.archive.org/web/20240306205502/https://openai.com/careers/hwsw-co-design-engineer/
+- https://openai.com/careers/hardwaresoftware-co-design-engineer/ (active as of 6/18/2025)
 
 - Chris Leary - the creator of XLA (and XLS) - a very smart guy, and ultra competent programmer. But lost in space without microarchitects to guide. Similar tragedy that befell Jeff Dean and many others. Googlers seem particularly suceptible to "moonshot" hysteria.
 - XLS

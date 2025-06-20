@@ -3,8 +3,8 @@
 
 :root {
   @include utopia.generateTypeScale((
-    "minWidth": 320,
-    "maxWidth": 1240,
+    "minWidth": 314,
+    "maxWidth": 1600,
     "minFontSize": 16,
     "maxFontSize": 18,
     "minTypeScale": 1.125,
@@ -17,8 +17,8 @@
   ));
 
   @include utopia.generateSpaceScale((
-    "minWidth": 320,
-    "maxWidth": 1240,
+    "minWidth": 314,
+    "maxWidth": 1600,
     "minSize": 16,
     "maxSize": 18,
     "positiveSteps": (1.5, 2, 3, 4, 6), // m, l, xl, 2xl, 3xl
@@ -31,7 +31,7 @@
     "allPairs": false,
   ));
 
-  --content-width: 70rem;
+  // --content-width: 70rem;
 
   --serif-font: 'Source Serif 4', 'Noto Serif', serif;
   --sans-font: 'Source Sans 3', 'Noto Sans',sans-serif;
@@ -202,6 +202,8 @@ body {
   color: var(--fg);
   font-family: var(--serif-font);
   line-height: 1.5;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* Make the footer stick to the bottom of the page */
   display: flex;
   min-height: 100vh;
@@ -239,6 +241,7 @@ p {
   font-size: var(--step-0);
   text-wrap: pretty;
   margin-bottom: var(--space-s);
+  hyphens: auto;
 }
 
 ol, ul {
@@ -270,37 +273,59 @@ a {
   }
 }
 
+// Utopia grid using spacing scale
+/* @link https://utopia.fyi/grid/calculator?c=314,14,1.125,1600,16,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,2xl,2xl,12 */
+
+:root {
+  --grid-max-width: 100.00rem;
+  --grid-gutter: var(--space-s-2xl, clamp(0.875rem, 0.112rem + 3.888vw, 4rem));
+  --grid-columns: 12;
+}
+
+@mixin u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+@mixin u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
 .header-container {
   background-color: var(--bg-dark);
   border-bottom: 1px solid var(--dark5);
   header {
-    display: grid;
-    grid-template-columns: auto var(--content-width) auto;
-    align-items: center;
     padding-top: var(--space-2xs);
     padding-bottom: var(--space-2xs);
     font-family: var(--sans-font);
-    .header-content{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      .title a {
-        text-align: left;
-        font-size: var(--step-3);
-        font-weight: 600;
-        color: var(--fg);
-        letter-spacing: -0.025ch;
-        transform: none;
-        background: none;
-        &:hover {
-          text-decoration: underline;
-        }
+
+    align-items: center;
+    @include u-container;
+    @include u-grid;
+    .title {
+      grid-column: 3 / 6;
+    }
+    .title a {
+      text-align: left;
+      font-size: var(--step-3);
+      font-weight: 600;
+      color: var(--fg);
+      letter-spacing: -0.025ch;
+      transform: none;
+      background: none;
+      &:hover {
+        text-decoration: underline;
       }
-      .contact p {
-        text-align: right;
-        margin: 0;
-        font-size: var(--step--1);
-      }
+    }
+    .contact {
+      grid-column: 8 / 12; 
+    }
+    .contact p {
+      text-align: right;
+      margin: 0;
+      font-size: var(--step--1);
     }
   }
 }

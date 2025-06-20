@@ -340,3 +340,8 @@ Contrast this with the "era of experience" and physical and virtual grounding of
 > It is based on *searching* for a set of manipulations of this model to arrive at a particular result.
 
 This is just wordplay. There is no practical difference between 'reasoning' on discrete token chains and 'continuous latent spaces', since that's what LLMs already appear to do. The discrete tokens merely are a human interpretable 'discrete and sampled' representation of the _model state_ which holds LeCunn's 'continuous representation space'. If he is making a point about the ability for LLMs to abstract over patterns, then I can buy that might be more difficult to prove, but this doesn't have to do much with mechanical problem solving.
+
+- https://news.ycombinator.com/item?id=44314423
+  - Karpathy's talk is pretty good, as a resource at least and a snapshot in time for llm ability
+  - https://www.youtube.com/watch?v=LCEmiRjPEtQ
+

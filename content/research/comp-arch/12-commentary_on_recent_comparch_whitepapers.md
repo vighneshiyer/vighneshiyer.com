@@ -59,6 +59,8 @@ The reality is that, when prototyping a model architecture idea, you don't have 
 >
 > hashtag#ComputerArchitecture hashtag#ArtificialIntelligence hashtag#AI hashtag#MachineLearning hashtag#Innovation hashtag#Architecture20 hashtag#EDA hashtag#ComputerSystems hashtag#IEEE
 
+- https://www.youtube.com/watch?v=LCEmiRjPEtQ - quite funny looking at this in 2025 how "Architecture 2.0" is just a straight ripoff off Karpathy's "Software 2.0" (see 3:31 in the video). And now that Karpathy has introduced "Software 3.0", I'm sure we will see "Architecture 3.0" in the near future.
+
 ## Domain-Specific Accelerator Design Challenges
 
 - The Magnificent Seven Challenges and Opportunities in Domain-Specific Accelerator Design for Autonomous Systems
