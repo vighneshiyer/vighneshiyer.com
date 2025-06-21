@@ -61,11 +61,15 @@ $max-font-size: 18;
 :root {
   --inset-content-begin: 5;
   --inset-content-end: 8;
-  --content-begin: 4;
+  --content-begin: 3;
   --grid-middle: 6;
-  --content-end: 9;
+  --content-end: 11;
   --popout-begin: 3;
   --popout-end: 10;
+  @media screen and (max-width: 600px) {
+    --content-begin: 1;
+    --content-end: 13;
+  }
 }
 
 :root {
@@ -273,6 +277,10 @@ h4 {
   margin-bottom: var(--space-xs);
 }
 
+strong {
+  font-weight: 600;
+}
+
 p {
   font-size: var(--step-0);
   text-wrap: pretty;
@@ -288,6 +296,42 @@ ol, ul {
 
 li {
   margin-bottom: var(--space-xs);
+  font-size: var(--step-0);
+}
+
+// Nested list special cases
+ul > li > ul > li {
+  font-size: var(--step--1);
+}
+
+ul > li > ul {
+  margin-top: var(--space-2xs);
+}
+
+ul > li:last-child {
+  margin-bottom: 0;
+  > ul {
+    margin-bottom: 0;
+  }
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr
+hr {
+  border: none;
+  border-top: 3px double var(--comment);
+  color: var(--orange);
+  overflow: visible;
+  text-align: center;
+  height: 1ex;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-m);
+  &::after {
+    background: var(--bg-dark1);
+    content: "⁂";
+    padding: 0 var(--space-s);
+    position: relative;
+    top: -1.6ex;
+  }
 }
 
 /* Link styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
@@ -315,7 +359,7 @@ a {
 
 .header-container {
   background-color: var(--bg-dark);
-  border-bottom: 1px solid var(--dark5);
+  // border-bottom: 1px solid var(--dark5);
   font-family: var(--sans-font);
   header {
     align-items: center;
@@ -356,8 +400,8 @@ a {
   font-family: var(--sans-font);
   font-size: var(--step--1);
   color: var(--fg);
-  border-bottom: var(--space-3xs) solid var(--red1);
-  border-top: 1px solid var(--dark5);
+  border-bottom: var(--space-4xs) solid var(--red1);
+  // border-top: 1px solid var(--dark5);
   footer {
     @include u-container;
     @include u-grid;
@@ -436,6 +480,71 @@ a {
   .page-description {
     font-size: var(--step--1);
     margin-bottom: var(--space-xs);
+  }
+}
+
+@mixin hashtag($content) {
+  &::before {
+    content: $content;
+    color: var(--orange);
+    opacity: 0.5;
+    margin-right: var(--space-2xs);
+  }
+}
+
+.article-title-container {
+  @include u-container;
+  @include u-grid;
+  margin-top: var(--space-s);
+  .article-title {
+    margin-bottom: var(--space-m);
+    grid-column: var(--content-begin) / var(--content-end);
+    h1 {
+      margin-bottom: var(--space-2xs);
+      @include hashtag("#");
+    }
+    .article-description {
+      font-size: var(--step-1);
+      margin-bottom: var(--space-2xs);
+    }
+    .article-date {
+      color: var(--fg-dark);
+      font-size: var(--step--1);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.article-content-container {
+  background-color: var(--bg-dark1);
+  padding-top: var(--space-m);
+}
+
+.article-content {
+  @include u-container;
+  @include u-grid;
+  p {
+    grid-column: var(--content-begin) / var(--content-end);
+  }
+
+  ul, ol {
+    grid-column: var(--content-begin) / var(--content-end);
+  }
+
+  h2, h3, h4 {
+    grid-column: var(--content-begin) / var(--content-end);
+  }
+
+  h2 {
+    @include hashtag("##");
+  }
+
+  h3 {
+    @include hashtag("###");
+  }
+
+  h4 {
+    @include hashtag("####");
   }
 }
 

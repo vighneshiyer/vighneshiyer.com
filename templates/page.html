@@ -12,15 +12,20 @@
   {%- endif -%}
 {%- endblock ogimage %}
 
-
 {% block content %}
-<article>
-  <h1>{{ page.title }}</h1>
+<div class="article-title-container">
+  <div class="article-title">
+    <h1>{{ page.title }}</h1>
+    <p class="article-description">{{ page.description }}</p>
+    {% if page.date %}
+      <p class="article-date"><time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time></p>
+    {% endif %}
+  </div>
+</div>
 
-  {% if page.date %}
-    <p class="post-time-article"><time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time></p>
-  {% endif %}
-
-  {{ page.content | safe }}
-</article>
+<div class="article-content-container">
+  <article class="article-content">
+    {{ page.content | safe }}
+  </article>
+</div>
 {% endblock content %}
