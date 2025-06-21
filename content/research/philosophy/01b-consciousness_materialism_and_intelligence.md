@@ -174,3 +174,10 @@ This is kind of irrelevant, but is it true that knowledge can only emerge from o
   - Related: https://lukesmith.xyz/articles/consciousness-and-materialism/
   - https://thegradient.pub/agi-is-not-multimodal/
 
+- https://x.com/politicalmath/status/1935704307481129143
+
+> I find this sinister, because euphemisms like “unalived” are part of a broader dumbing down of language. Orwell warned about “narrowing the range of thought” in 1984: “We shall make thoughtcrime literally impossible, because there shall be no words in which to express it.”
+>
+> > One thing that makes 1984 such a transcendent work of art is how Orwell infuses the book with this deep theory of how language enables thought and how our core freedom (the freedom to think) can be restricted by limiting permissible language
+
+hmmmm

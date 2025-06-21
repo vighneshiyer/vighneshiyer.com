@@ -1,9 +1,6 @@
 {% macro page_summary(page) %}
   <div class="page">
-    <h3 class="page-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
-    <span class="page-date">
-      <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %Y") }}</time>
-    </span>
+    <h3 class="page-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3><span class="page-date"><time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %Y") }}</time></span>
     <p class="page-description">{{ page.description }}</p>
   </div>
 {% endmacro page_summary %}
@@ -11,8 +8,9 @@
 {% macro section(section_path) %}
   <div class="section">
     {% set section = get_section(path=section_path) %}
-    <h2 class="section-title">{{ section.title }}</h2>
-    <span class="section-description">{{ section.description }}</span>
+    <div class="section-header">
+      <h2 class="section-title">{{ section.title }}</h2><span class="section-description">{{ section.description }}</span>
+    </div>
     {% for page in section.pages %}
       {{ macros::page_summary(page=page) }}
     {% endfor %}

@@ -78,18 +78,18 @@
     <div style="flex-grow: 1;"></div>
 
     {% block footer %}
-    <footer role="contentinfo">
-      <div class="footer-left-gutter"></div>
-      <div class="footer-content">
-        Built with <a href="https://www.getzola.org/">Zola</a> |
-        Hosted on <a href="https://buyvm.net">BuyVM</a> |
-        <a href="https://github.com/vighneshiyer/vighneshiyer.com">Source</a> of this website |
-        <a href="{{ get_url(path="sitemap.xml") | safe }}">Sitemap</a> |
-        <a href="{{ get_url(path="atom.xml") | safe }}">Atom Feed</a> |
-        <a href="{{ get_url(path="rss.xml") | safe }}">RSS Feed</a>
-      </div>
-      <div class="footer-right-gutter"></div>
-    </footer>
+    <div class="footer-container">
+      <footer role="contentinfo">
+        <div class="footer-content">
+          Built with <a href="https://www.getzola.org/">Zola</a> |
+          Hosted on <a href="https://buyvm.net">BuyVM</a> |
+          <a href="https://github.com/vighneshiyer/vighneshiyer.com">Source</a> of this website |
+          <a href="{{ get_url(path="sitemap.xml") | safe }}">Sitemap</a> |
+          <a href="{{ get_url(path="atom.xml") | safe }}">Atom Feed</a> |
+          <a href="{{ get_url(path="rss.xml") | safe }}">RSS Feed</a>
+        </div>
+      </footer>
+    </div>
     {% endblock footer %}
   </body>
 </html>
