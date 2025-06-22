@@ -31,6 +31,15 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
   - https://mooreslab.ai/ (LMAO) (old commercial LMAO: https://www.youtube.com/watch?v=w6p53_D7vMA&t=19s) (new commercial: https://www.youtube.com/watch?time_continue=32&v=PVadAPgUSKA&embeds_referring_euri=https%3A%2F%2Fmooreslab.ai%2F&source_ve_path=MjM4NTE)
 - Formal methods consulting
   - Lubis EDA
+- https://www.linkedin.com/posts/veriest-venture-ltd_semiconduntor-artificialintelligence-vcs-activity-7341900487723499520-3t91?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+  - HLS: BoolSi, RISE Design Automation
+  - RTL creation: PrimisAI, Silimate
+  - System design: volt.ai
+  - Verification: Bronco AI, Chipagents, Chipstack, MooresLabAI, Normal Computing, Oboe, Silogy, TheWaveChat, verifAI, Verifaix
+  - Physical implementation: HyperPV, Motivo
+  - Advanced packaging: MZ technologies
+  - https://www.linkedin.com/company/chip-inventor/
+  - A lot of these seem very fishy, but there are few good ones (motivo)
 
 ## PCBs
 

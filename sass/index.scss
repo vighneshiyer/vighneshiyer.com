@@ -61,9 +61,9 @@ $max-font-size: 18;
 :root {
   --inset-content-begin: 5;
   --inset-content-end: 8;
-  --content-begin: 3;
+  --content-begin: 4;
   --grid-middle: 6;
-  --content-end: 11;
+  --content-end: 10;
   --popout-begin: 3;
   --popout-end: 10;
   @media screen and (max-width: 600px) {
@@ -289,14 +289,57 @@ p {
 }
 
 ol, ul {
-  list-style: revert;
-  padding-inline-start: var(--space-m);
+  list-style: none;
+  // padding-inline-start: var(--space-m);
   margin-bottom: var(--space-s);
 }
 
 li {
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-s);
+  margin-left: var(--space-l);
   font-size: var(--step-0);
+}
+
+ol > li::before {
+  color: var(--blue);
+  font-size: var(--step-2);
+  position: absolute;
+  margin-left: calc(var(--space-l) * -1);
+  font-weight: 400;
+  margin-top: -0.4ex;
+}
+
+ol > li:nth-child(1)::before { content: "⓵ "; }
+ol > li:nth-child(2)::before { content: "⓶ "; }
+ol > li:nth-child(3)::before { content: "⓷ "; }
+ol > li:nth-child(4)::before { content: "⓸ "; }
+ol > li:nth-child(5)::before { content: "⓹ "; }
+ol > li:nth-child(6)::before { content: "⓺ "; }
+ol > li:nth-child(7)::before { content: "⓻ "; }
+ol > li:nth-child(8)::before { content: "⓼ "; }
+ol > li:nth-child(9)::before { content: "⓽ "; }
+ol > li:nth-child(10)::before { content: "⓾ "; }
+
+ol > li > ul > li {
+  margin-left: var(--space-l);
+  &:before {
+    margin-left: calc(var(--space-l) * -1);
+  }
+}
+
+ol > li > ul {
+  margin-top: var(--space-xs);
+}
+
+ul > li:before {
+  // content: "✶";
+  content: "◍";
+  // content: "◉";
+  // content: "›";
+  color: var(--blue);
+  font-size: var(--step-0);;
+  position: absolute;
+  margin-left: calc(var(--space-l) * -1);
 }
 
 // Nested list special cases
