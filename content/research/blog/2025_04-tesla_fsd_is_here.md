@@ -68,3 +68,11 @@ description = "Hardly anyone realizes how far ahead Tesla is"
 
 - https://www.reddit.com/r/teslamotors/comments/1kg7k94/elon_responds_with_youre_right_to_someone_saying/
   - Things still iffy: speed on highways, lane changes being recessive especially when it tries to hop a line, disengagements due to nagging when the user tries to interact with the screen causes bad disengagement data
+
+- Robotaxi has happened, Sunday 6/22/2025
+- The naysayers continue to nitpick, but who cares at this point, we are at the starting line and have just taken the first step
+- Waymo is constantly brought up - but they already have millions of miles and many 100ks of trips made! FSD is the very first *vision-only* *end-to-end ML* robotaxi service in operation. The consequence of this is not appreciated.
+- This is the SpaceX Falcon 9 moment. It's only 10 cars! They all have safety drivers! Only 20 people have gotten an invite! It is geofenced to 50% of the waymo Austin service area! And on and on...
+  - https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches
+  - Calm before the storm. It appears that others are ahead and operational and SpaceX is the late underdog with very fishy experimental technology. Then suddenly, in a matter of years, there is no competition left and SpaceX is the only game in town. Everyone else gets crushed not only by pricing, but SpaceX enjoys a fat margin too, and they increasingly dominate in volume.
+- Waymo is a shaky system (literally, the steering isn't smooth like FSD). It is rule-based. It only survives due to thousands of special cases programmed for explicitly after every failure in reality and also in simulation.

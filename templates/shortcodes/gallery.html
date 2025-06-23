@@ -1,6 +1,7 @@
-<div class="photoswipe-gallery" id="{{ id }}" style="margin-bottom: 1rem;">
+{% set gallery_id = "gallery-" ~ images[0] %}
+<div class="photoswipe-gallery" id="{{ gallery_id }}">
   {% for image in images %}
-  {% set image_path = page.permalink ~ image %}
+  {% set image_path = page.colocated_path ~ image %}
   {% set meta = get_image_metadata(path=image_path) %}
   {% set thumb = resize_image(path=image_path, width=300, height=300, op="fit_height", format="webp", quality=60) %}
   {% set thumb_retina = resize_image(path=image_path, width=600, height=600, op="fit_height", format="webp", quality=60) %}

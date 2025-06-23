@@ -17,7 +17,7 @@
     <script type="module">
       import PhotoSwipeLightbox from './photoswipe-lightbox.esm.min.js';
       const lightbox = new PhotoSwipeLightbox({
-        gallery: document.querySelectorAll('[id^="gallery"]'),
+        gallery: document.querySelectorAll('[id^="gallery"]'), // apply photoswipe to all #image and #gallery shortcodes
         children: 'a',
         pswpModule: () => import('./photoswipe.esm.min.js')
       });

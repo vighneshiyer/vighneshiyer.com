@@ -1,5 +1,16 @@
+{% set gallery_id = "gallery-" ~ path %}
+{% if popout and popout == true %}
+<figure class="popout">
+{% else %}
 <figure>
-  {% set image_path = page.permalink ~ path %}
-  <a href={{ image_path | safe }}><img width="{{ width }}" src="{{ image_path }}" /></a>
+{% endif %}
+  {% set image_real_path = page.permalink ~ path %}
+  {% set image_raw_path = page.colocated_path ~ path %}
+  {% set meta = get_image_metadata(path=image_raw_path) %}
+  <div id="{{ gallery_id}}">
+    <a href="{{ image_real_path | safe }}" data-pswp-width="{{ meta.width }}" data-pswp-height="{{ meta.height }}" target="_blank">
+      <img width="{{ width }}" src="{{ image_real_path }}" />
+    </a>
+  </div>
   {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
 </figure>

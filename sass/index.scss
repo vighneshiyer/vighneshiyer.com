@@ -355,7 +355,7 @@ p {
 
 ol, ul {
   list-style: none;
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-m);
 }
 
 li {
@@ -393,6 +393,7 @@ ol > li > ul > li {
 
 ol > li > ul {
   margin-top: var(--space-xs);
+  margin-bottom: var(--space-s);
 }
 
 ul > li:before {
@@ -416,7 +417,8 @@ ul > li > ul > li {
 }
 
 ul > li > ul {
-  margin-top: var(--space-2xs);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-s);
 }
 
 ul > li:last-child {
@@ -426,20 +428,23 @@ ul > li:last-child {
   }
 }
 
+ol > li:last-child {
+  margin-bottom: 0;
+}
+
 // https://practicaltypography.com/block-quotations.html
 blockquote {
   * {
     font-size: var(--step--1);
-    line-height: 1.45;
     &:last-child {
       margin-bottom: 0;
     }
   }
   background-color: var(--bg-dark);
-  padding-top: var(--space-xs);
-  padding-bottom: var(--space-xs);
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
   padding-left: var(--space-m);
-  padding-right: var(--space-s);
+  padding-right: var(--space-m);
   margin-left: var(--space-s);
   margin-right: var(--space-s);
   border-left: var(--space-3xs) solid var(--orange);
@@ -693,6 +698,7 @@ a {
   }
   figure.popout {
     grid-column: var(--popout-begin) / var(--popout-end);
+    margin-top: var(--space-s); // A bit more space for popout images
   }
 }
 

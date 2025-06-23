@@ -118,6 +118,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [SiFive Tech Talk on Accelerating AI: Past, Present, and Future by Krste Asanovic](https://www.youtube.com/watch?v=8n2HLp2gtYs) (one of the best talks I've ever seen)
 - [Youtube: Yifan&GPU](https://www.youtube.com/@yifangpu/videos)
   - The channel of [Prof. Yifan Sun](https://sarchlab.org/syifan/teaching). Lectures on GPU programming (AMD HIP), computer architecture (introductory class).
+- [Has Machine Learning for Systems Reached an Inflection Point? - Martin Maas - ASPLOS 2025 Keynote](https://www.asplos-conference.org/asplos2025/wp-content/uploads/2025/05/maas-asplos25-keynote.pdf)
 
 ### Articles / Posts
 
