@@ -1,4 +1,14 @@
 {% set gallery_id = "gallery-" ~ images[0] %}
+{% if popout and popout == true %}
+<figure class="popout">
+{% else %}
+<figure>
+{% endif %}
+
+
+  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+</figure>
+
 <div class="photoswipe-gallery" id="{{ gallery_id }}">
   {% for image in images %}
   {% set image_path = page.colocated_path ~ image %}

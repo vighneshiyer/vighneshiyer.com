@@ -19,6 +19,10 @@
       const lightbox = new PhotoSwipeLightbox({
         gallery: document.querySelectorAll('[id^="gallery"]'), // apply photoswipe to all #image and #gallery shortcodes
         children: 'a',
+        mouseMovePan: true,
+        initialZoomLevel: 'fit',
+        secondaryZoomLevel: 'fit',
+        maxZoomLevel: 3,
         pswpModule: () => import('./photoswipe.esm.min.js')
       });
       lightbox.init();
