@@ -11,15 +11,15 @@ description = "A discussion on variable-length ISAs, high-performance CPU μArch
 
 Eric Quinnell from Tesla came to speak to the SLICE lab on 9/28/2022. [Download his slides here.](Eric_Quinnell_Tesla_Talk.pdf)
 
-> Title: Industrial Ranting about Current Computer Micro-Architectures
+> _Title_: Industrial Ranting about Current Computer Micro-Architectures
 >
-> Abstract:
+> _Abstract_
 >
 > Industrial Silicon design provides incredible opportunities, including designing gaming consoles that elevate you as a veritable demi-god to your nephews, while later handing you a severance package as your machine is out-designed. This talk covers an analysis of current CPU micro-architectures, showing what works, what does not, and why OP Caches and SMT designs are The Worst™.
 >
 > Be your ISA x86, ARM, or RISC-V – any bad micro-architecture can equally ruin them all! Come learn how to see the big picture in CPU micro-architecture so that you too can one day work on completely unrelated AI Silicon for self-driving cars and robots.
 >
-> Bio:
+> _Bio_
 >
 > Dr. Eric Quinnell received his BSEE/MSEE and in 2006 his Ph.D. from the University of Texas at Austin in the topic of Floating-Point Fused Multiply-Adders. He began his industrial career at AMD designing floating-point and cryptography units on the Bobcat x86 and Jaguar x86 CPUs, the latter being the CPU core in the XboxOne and PS4.
 >

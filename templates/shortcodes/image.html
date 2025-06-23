@@ -1,5 +1,5 @@
 <figure>
-  {% set image_path = page.colocated_path ~ path %}
+  {% set image_path = page.permalink ~ path %}
   <a href={{ image_path | safe }}><img width="{{ width }}" src="{{ image_path }}" /></a>
   {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
 </figure>

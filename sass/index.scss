@@ -1,4 +1,5 @@
 @use '../node_modules/utopia-core-scss/src/utopia' as utopia;
+@use 'sass:color';
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 // Utopia type scale, space scale, and grid using spacing scale
@@ -59,13 +60,14 @@ $max-font-size: 18;
 }
 
 :root {
+  --popout-begin: 2;
+  --content-begin: 3;
   --inset-content-begin: 5;
-  --inset-content-end: 8;
-  --content-begin: 4;
+  --inset-content-end: 9;
+  --content-end: 11;
+  --popout-end: 12;
+
   --grid-middle: 6;
-  --content-end: 10;
-  --popout-begin: 3;
-  --popout-end: 10;
   @media screen and (max-width: 600px) {
     --content-begin: 1;
     --content-end: 13;
@@ -84,92 +86,155 @@ $max-font-size: 18;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-style: normal;
+}
 
-  color-scheme: dark; /*--var(--color-scheme, light);*/
-  /* Light Tokyonight colors by default, generated from https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/day.lua */
-  /* Base colors */
-  --bg: #d5d6db;           /* Editor background */
-  --bg-dark: #3b3f56;      /* blend(bg, 0.9, fg) */
-  --bg-dark1: #373d54;     /* blend(bg-dark, 0.9, fg) */
-  --bg-highlight: #e6e7ed; /* lighter highlight for light mode */
-  --fg: #343b58;           /* Editor foreground */
-  --fg-dark: #565a6e;      /* for comments, less contrast text */
-  --fg-gutter: #40434f;    /* gutter / line numbers */
+// https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/night.lua
+// https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/storm.lua
+$tn-dark-bg: #1a1b26;
+$tn-dark-bg-dark: #16161e;
+$tn-dark-bg-dark1: #0C0E14;
+$tn-dark-bg-highlight: #292e42;
+$tn-dark-blue: #7aa2f7;
+$tn-dark-blue0: #3d59a1;
+$tn-dark-blue1: #2ac3de;
+$tn-dark-blue2: #0db9d7;
+$tn-dark-blue5: #89ddff;
+$tn-dark-blue6: #b4f9f8;
+$tn-dark-blue7: #394b70;
+$tn-dark-comment: #565f89;
+$tn-dark-cyan: #7dcfff;
+$tn-dark-dark3: #545c7e;
+$tn-dark-dark5: #737aa2;
+$tn-dark-fg: #c0caf5;
+$tn-dark-fg: color.lighten($tn-dark-fg, 10%); // Override the fg color, the default one is too dark for sufficient contrast
+$tn-dark-fg-dark: #a9b1d6;
+$tn-dark-fg-gutter: #3b4261;
+$tn-dark-green: #9ece6a;
+$tn-dark-green1: #73daca;
+$tn-dark-green2: #41a6b5;
+$tn-dark-magenta: #bb9af7;
+$tn-dark-magenta2: #ff007c;
+$tn-dark-orange: #ff9e64;
+$tn-dark-purple: #9d7cd8;
+$tn-dark-red: #f7768e;
+$tn-dark-red1: #db4b4b;
+$tn-dark-teal: #1abc9c;
+$tn-dark-terminal-black: #414868;
+$tn-dark-yellow: #e0af68;
+$tn-dark-git-add: #449dab;
+$tn-dark-git-change: #6183bb;
+$tn-dark-git-delete: #914c54;
 
-  /* Syntax colors */
-  --comment: #6c6e75;
-  --cyan: #0f4b6e;
-  --blue: #2959aa;
-  --blue0: #0f4b6e;
-  --blue1: #33635c;
-  --blue2: #0f4b6e;
-  --blue5: #7dcfff;
-  --blue6: #b4f9f8;
-  --blue7: #394b70;
-  --green: #33635c;
-  --green1: #385f0d;
-  --green2: #33635c;
-  --magenta: #5a3e8e;
-  --magenta2: #5a3e8e;
-  --orange: #965027;
-  --purple: #5a4a78;
-  --red: #8c4351;
-  --red1: #965027;
-  --teal: #006c86;
-  --yellow: #8f5e15;
-  --terminal-black: #0f0f14;
+// Light colors are just inverted from the dark colors
+$tn-light-bg: color.invert($tn-dark-bg);
+$tn-light-bg-dark: color.invert($tn-dark-bg-dark);
+$tn-light-bg-dark1: color.invert($tn-dark-bg-dark1);
+$tn-light-bg-highlight: color.invert($tn-dark-bg-highlight);
+$tn-light-blue: color.invert($tn-dark-blue);
+$tn-light-blue0: color.invert($tn-dark-blue0);
+$tn-light-blue1: color.invert($tn-dark-blue1);
+$tn-light-blue2: color.invert($tn-dark-blue2);
+$tn-light-blue5: color.invert($tn-dark-blue5);
+$tn-light-blue6: color.invert($tn-dark-blue6);
+$tn-light-blue7: color.invert($tn-dark-blue7);
+$tn-light-comment: color.invert($tn-dark-comment);
+$tn-light-cyan: color.invert($tn-dark-cyan);
+$tn-light-dark3: color.invert($tn-dark-dark3);
+$tn-light-dark5: color.invert($tn-dark-dark5);
+$tn-light-fg: color.invert($tn-dark-fg);
+$tn-light-fg-dark: color.invert($tn-dark-fg-dark);
+$tn-light-fg-gutter: color.invert($tn-dark-fg-gutter);
+$tn-light-green: color.invert($tn-dark-green);
+$tn-light-green1: color.invert($tn-dark-green1);
+$tn-light-green2: color.invert($tn-dark-green2);
+$tn-light-magenta: color.invert($tn-dark-magenta);
+$tn-light-magenta2: color.invert($tn-dark-magenta2);
+$tn-light-orange: color.invert($tn-dark-orange);
+$tn-light-purple: color.invert($tn-dark-purple);
+$tn-light-red: color.invert($tn-dark-red);
+$tn-light-red1: color.invert($tn-dark-red1);
+$tn-light-teal: color.invert($tn-dark-teal);
+$tn-light-terminal-black: color.invert($tn-dark-terminal-black);
+$tn-light-yellow: color.invert($tn-dark-yellow);
+$tn-light-git-add: color.invert($tn-dark-git-add);
+$tn-light-git-change: color.invert($tn-dark-git-change);
+$tn-light-git-delete: color.invert($tn-dark-git-delete);
+// The bg colors are blended  (see https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/day.lua)
+$tn-light-bg-dark: color.mix($tn-light-bg, $tn-light-fg, 90%);
+$tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 90%);
 
-  /* Git colors (if relevant) */
-  /* You can copy these from dark theme or define new ones */
-  --git-add: #33635c;
-  --git-change: #2959aa;
-  --git-delete: #8c4351;
+:root {
+  color-scheme: light; /*--var(--color-scheme, light);*/
+  --bg: #{$tn-light-bg};
+  --bg-dark: #{$tn-light-bg-dark};
+  --bg-dark1: #{$tn-light-bg-dark1};
+  --bg-highlight: #{$tn-light-bg-highlight};
+  --fg: #{$tn-light-fg};
+  --fg-dark: #{$tn-light-fg-dark};
+  --fg-gutter: #{$tn-light-fg-gutter};
 
-  /* Override with dark colors if preferred */
+  --comment: #{$tn-light-comment};
+  --cyan: #{$tn-light-cyan};
+  --blue: #{$tn-light-blue};
+  --blue0: #{$tn-light-blue0};
+  --blue1: #{$tn-light-blue1};
+  --blue2: #{$tn-light-blue2};
+  --blue5: #{$tn-light-blue5};
+  --blue6: #{$tn-light-blue6};
+  --blue7: #{$tn-light-blue7};
+  --dark3: #{$tn-light-dark3};
+  --dark5: #{$tn-light-dark5};
+  --green: #{$tn-light-green};
+  --green1: #{$tn-light-green1};
+  --green2: #{$tn-light-green2};
+  --magenta: #{$tn-light-magenta};
+  --magenta2: #{$tn-light-magenta2};
+  --orange: #{$tn-light-orange};
+  --purple: #{$tn-light-purple};
+  --red: #{$tn-light-red};
+  --red1: #{$tn-light-red1};
+  --teal: #{$tn-light-teal};
+  --terminal-black: #{$tn-light-terminal-black};
+  --yellow: #{$tn-light-yellow};
+  --git-add: #{$tn-light-git-add};
+  --git-change: #{$tn-light-git-change};
+  --git-delete: #{$tn-light-git-delete};
+
   @media (prefers-color-scheme: dark) {
-    --color-scheme: dark;
-    /* https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/storm.lua */
-    --bg: #24283b;
-    --bg-dark: #1f2335;
-    --bg-dark1: #1b1e2d;
-    --bg-highlight: #292e42;
-    --blue: #7aa2f7;
-    --blue0: #3d59a1;
-    --blue1: #2ac3de;
-    --blue2: #0db9d7;
-    --blue5: #89ddff;
-    --blue6: #b4f9f8;
-    --blue7: #394b70;
-    --comment: #565f89;
-    --cyan: #7dcfff;
-    --dark3: #545c7e;
-    --dark5: #737aa2;
-    /* --fg: #c0caf5; */
-    --fg: #e6e7ed;
-    --fg-dark: #a9b1d6;
-    --fg-gutter: #3b4261;
-    --green: #9ece6a;
-    --green1: #73daca;
-    --green2: #41a6b5;
-    --magenta: #bb9af7;
-    --magenta2: #ff007c;
-    --orange: #ff9e64;
-    --purple: #9d7cd8;
-    --red: #f7768e;
-    --red1: #db4b4b;
-    --teal: #1abc9c;
-    --terminal-black: #414868;
-    --yellow: #e0af68;
-    
-    /* Git colors */
-    --git-add: #449dab;
-    --git-change: #6183bb;
-    --git-delete: #914c54;
-    
-    /* https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/night.lua */
-    --bg: #1a1b26;
-    --bg-dark: #16161e;
-    --bg-dark1: #0C0E14;
+    --bg: #{$tn-dark-bg};
+    --bg-dark: #{$tn-dark-bg-dark};
+    --bg-dark1: #{$tn-dark-bg-dark1};
+    --bg-highlight: #{$tn-dark-bg-highlight};
+    --fg: #{$tn-dark-fg};
+    --fg-dark: #{$tn-dark-fg-dark};
+    --fg-gutter: #{$tn-dark-fg-gutter};
+
+    --comment: #{$tn-dark-comment};
+    --cyan: #{$tn-dark-cyan};
+    --blue: #{$tn-dark-blue};
+    --blue0: #{$tn-dark-blue0};
+    --blue1: #{$tn-dark-blue1};
+    --blue2: #{$tn-dark-blue2};
+    --blue5: #{$tn-dark-blue5};
+    --blue6: #{$tn-dark-blue6};
+    --blue7: #{$tn-dark-blue7};
+    --dark3: #{$tn-dark-dark3};
+    --dark5: #{$tn-dark-dark5};
+    --green: #{$tn-dark-green};
+    --green1: #{$tn-dark-green1};
+    --green2: #{$tn-dark-green2};
+    --magenta: #{$tn-dark-magenta};
+    --magenta2: #{$tn-dark-magenta2};
+    --orange: #{$tn-dark-orange};
+    --purple: #{$tn-dark-purple};
+    --red: #{$tn-dark-red};
+    --red1: #{$tn-dark-red1};
+    --teal: #{$tn-dark-teal};
+    --terminal-black: #{$tn-dark-terminal-black};
+    --yellow: #{$tn-dark-yellow};
+    --git-add: #{$tn-dark-git-add};
+    --git-change: #{$tn-dark-git-change};
+    --git-delete: #{$tn-dark-git-delete};
   }
 }
 
@@ -290,7 +355,6 @@ p {
 
 ol, ul {
   list-style: none;
-  // padding-inline-start: var(--space-m);
   margin-bottom: var(--space-s);
 }
 
@@ -300,7 +364,18 @@ li {
   font-size: var(--step-0);
 }
 
+@counter-style custom-circled {
+  system: fixed;
+  symbols: '⓵' '⓶' '⓷' '⓸' '⓹' '⓺' '⓻' '⓼' '⓽' '⓾';
+  suffix: " ";
+}
+
+ol {
+  list-style: none;
+}
+
 ol > li::before {
+  content: counter(list-item, custom-circled);
   color: var(--blue);
   font-size: var(--step-2);
   position: absolute;
@@ -308,17 +383,6 @@ ol > li::before {
   font-weight: 400;
   margin-top: -0.4ex;
 }
-
-ol > li:nth-child(1)::before { content: "⓵ "; }
-ol > li:nth-child(2)::before { content: "⓶ "; }
-ol > li:nth-child(3)::before { content: "⓷ "; }
-ol > li:nth-child(4)::before { content: "⓸ "; }
-ol > li:nth-child(5)::before { content: "⓹ "; }
-ol > li:nth-child(6)::before { content: "⓺ "; }
-ol > li:nth-child(7)::before { content: "⓻ "; }
-ol > li:nth-child(8)::before { content: "⓼ "; }
-ol > li:nth-child(9)::before { content: "⓽ "; }
-ol > li:nth-child(10)::before { content: "⓾ "; }
 
 ol > li > ul > li {
   margin-left: var(--space-l);
@@ -333,8 +397,8 @@ ol > li > ul {
 
 ul > li:before {
   // content: "✶";
-  content: "◍";
-  // content: "◉";
+  // content: "◍";
+  content: "◉";
   // content: "›";
   color: var(--blue);
   font-size: var(--step-0);;
@@ -345,6 +409,10 @@ ul > li:before {
 // Nested list special cases
 ul > li > ul > li {
   font-size: var(--step--1);
+  &:before {
+    content: "◍";
+    font-size: var(--step--1);
+  }
 }
 
 ul > li > ul {
@@ -355,6 +423,34 @@ ul > li:last-child {
   margin-bottom: 0;
   > ul {
     margin-bottom: 0;
+  }
+}
+
+// https://practicaltypography.com/block-quotations.html
+blockquote {
+  * {
+    font-size: var(--step--1);
+    line-height: 1.45;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  background-color: var(--bg-dark);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  padding-left: var(--space-m);
+  padding-right: var(--space-s);
+  margin-left: var(--space-s);
+  margin-right: var(--space-s);
+  border-left: var(--space-3xs) solid var(--orange);
+  margin-bottom: var(--space-m);
+}
+
+figure {
+  margin-bottom: var(--space-m);
+  text-align: center;
+  img {
+    margin: auto;
   }
 }
 
@@ -588,6 +684,15 @@ a {
 
   h4 {
     @include hashtag("####");
+  }
+  blockquote {
+    grid-column: var(--content-begin) / var(--content-end);
+  }
+  figure {
+    grid-column: var(--content-begin) / var(--content-end);
+  }
+  figure.popout {
+    grid-column: var(--popout-begin) / var(--popout-end);
   }
 }
 
