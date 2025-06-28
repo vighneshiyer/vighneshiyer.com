@@ -118,11 +118,15 @@ This seems good for kernel engineers until they have to contend with some unsupp
 - Mojo GPU Puzzles
 - https://github.com/modular/mojo-gpu-puzzles
 
-I'm kind of familiar with CUDA, so working with Mojo feels very much like CUDA in Python.
-The LayoutTensor abstraction is nice.
+I'm vaguely familiar with CUDA, so working with Mojo feels very much like CUDA in Python.
+The LayoutTensor abstraction is nice, albeit a bit verbose.
 
 In general, GPU programming with explicit casting of grids and blocks, seems very unnecessary (to my untrained eye).
 How it is possible that these low-level hardware-oriented abstractions haven't been superceded by now?
+Why I can't I just describe my per-thread kernel and have the grid/block dimensions chosen by the compiler? Well, these new "tile-oriented" DSLs do indeed go in that direction (Triton, NVIDIA Tile IR).
+Why do I have to muck with guards to prevent out of bounds access if I can control the grid/block casting?
+
+My perspective may be skewed by only looking at BLAS2 functions so far and my opinion may change as I play with matmul in Mojo.
 
 I do worry about the future of Mojo considering that NVIDIA is investing so deeply into the Python eDSL ecosystem and CUDA integration.
 The CUTLASS Python eDSL + the Python CUDA low-level eDSL are quite hard to beat.
