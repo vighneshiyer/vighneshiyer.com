@@ -327,11 +327,18 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Apple fires some Indians over donation fraud; TANA under scrutiny](https://timesofindia.indiatimes.com/city/hyderabad/apple-fires-some-indians-over-donation-fraud-tana-under-scrutiny/articleshow/117034457.cms)
 - [Debate Club by Lomez (12/29/2024)](https://www.lomez.press/p/debate-club)
 - [Moral Foundations Theory (Wikipedia)](https://en.wikipedia.org/wiki/Moral_foundations_theory)
-- [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) (an interesting look at Xiong’an)
+- [Wikipedia: History of eugenics](https://en.wikipedia.org/w/index.php?title=History_of_eugenics&oldid=1234497124) (archived version of 'Ancient eugenics')
 - [Riding The Tiger: Why The Anglosphere Should Be Wary of India](https://knightsofthegreenshield.substack.com/p/riding-the-tiger-why-the-anglosphere) (accurate)
+- [The Case Against Indian Immigration: A Misaligned Elite in the Making](https://arctotherium.substack.com/p/the-case-against-indian-immigration/comments)
+- [Overpopulation FAQs: Understanding Population Dynamics, Overpopulation, and Population Control](https://zerocontradictions.net/faqs/overpopulation)
+- [Sapir-Whorf Theory: How Language And Semantics Influence Thought](https://zerocontradictions.net/language/sapir-whorf-theory)
+
+### China
+
 - [Dwarkesh: Notes on China](https://www.dwarkesh.com/p/notes-on-china)
 - [Molson Hart: America Underestimates the Difficulty of Bringing Manufacturing Back](https://www.molsonhart.com/blog/america-underestimates-the-difficulty-of-bringing-manufacturing-back) ([HN link](https://news.ycombinator.com/item?id=43692677))
-- [Wikipedia: History of eugenics](https://en.wikipedia.org/w/index.php?title=History_of_eugenics&oldid=1234497124) (archived version of 'Ancient eugenics')
+- [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) (an interesting look at Xiong’an)
+- [Structure and Interpretation of the Chinese Economy](https://yuxi-liu-wired.github.io/essays/posts/structure-interpretation-chinese-economy/)
 
 ## Productivity
 

@@ -199,6 +199,7 @@ https://www.ycombinator.com/companies/silimate/jobs
 ### Chipstack
 
 - https://www.luxcapital.com/content/the-looming-labor-crisis-in-chip-design
+- https://www.chipstack.ai/blog/why-llms-are-best-thing-for-chips
 
 - chipstack.ai
   - Yet another LLM for RTL design / testbench generation / RTL understanding / etc

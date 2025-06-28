@@ -76,3 +76,7 @@ description = "Hardly anyone realizes how far ahead Tesla is"
   - https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches
   - Calm before the storm. It appears that others are ahead and operational and SpaceX is the late underdog with very fishy experimental technology. Then suddenly, in a matter of years, there is no competition left and SpaceX is the only game in town. Everyone else gets crushed not only by pricing, but SpaceX enjoys a fat margin too, and they increasingly dominate in volume.
 - Waymo is a shaky system (literally, the steering isn't smooth like FSD). It is rule-based. It only survives due to thousands of special cases programmed for explicitly after every failure in reality and also in simulation.
+- Robotaxi is also a shaky system to be fair. There have been some clear mistakes that are caught on video that resemble mistakes made by v13.2.9 on individually owned Teslas.
+  - Shaky semantic understanding of reversing behavior of other cars, especially when they try to parallel park and the Tesla wants to go into the same spot
+  - Sun glare causing phantom breaking
+  - Inability to follow lead car when making unprotected left turns in some edge cases, especially when navigation permits either going straight or left

@@ -37,9 +37,19 @@ I will point out the ones I like.
 
 ## ISCA 2025
 
-- Assassyn: A Unified Abstraction for Architectural Simulation and Implementation
+- [Assassyn: A Unified Abstraction for Architectural Simulation and Implementation](https://dl.acm.org/doi/pdf/10.1145/3695053.3731004)
 - Concorde: Fast and Accurate CPU Performance Modeling with Compositional Analytical-ML Fusion
-- DCPerf
+- Evaluating Ruche Networks: Physically Scalable, Cost-Effective, Bandwidth-Flexible NoCs
+- DX100: Programmable Data Access Accelerator for Indirection
+- Industry session
+  - DCPerf: An Open-Source, Battle-Tested Performance Benchmark Suite for Datacenter Workloads
+  - Meta's Second Generation AI Chip: Model-Chip Co-Design and Productionization Experiences
+  - Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures
+
+## DAC 2025
+
+- GEM (nvidia)
+- INSTA (also nvidia)
 
 ## Hot Chips 2025
 

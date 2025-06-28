@@ -5,14 +5,17 @@ aliases = ["conference_reviews/dac-2022"]
 description = "Random workshops and papers, exhibition floor, Siemens PowerPro vs Cadence Joules, XLS, ML for verification, FOSS VLSI EDA, mflowgen and Hammer, analog layout automation"
 +++
 
-This was my first DAC at Moscone West. It was a good experience - lots of vendors at the exhibition halls to talk to, several decent research paper sessions (but relatively poor engineering track sessions), and interesting panels (where every panelist brought a short set of slides to discuss their perspective on the question posed).
+This was my first DAC at Moscone West.
+It was a good experience - lots of vendors at the exhibition halls to talk to, several decent research paper sessions (but relatively poor engineering track sessions), and interesting panels (where every panelist brought a short set of slides to discuss their perspective on the question posed).
 
 {{ gallery(images=[
     "10-registration.jpg",
     "kaufman_award.jpg",
-],id="gallery-intro") }}
+]) }}
 
-## Sunday, 7/10/22
+## Random Workshops
+
+On Sunday (7/10/2022), I attended some workshops hoping they would be interesting.
 
 ### [Workshop on Design Automation for the Certification of Autonomous Systems (DAC-AS)](https://sites.google.com/view/dac-as2022/home?authuser=0)
 
@@ -44,7 +47,7 @@ This was my first DAC at Moscone West. It was a good experience - lots of vendor
     "10-riscure2.png",
     "10-riscure3.png",
     "10-riscure4.png"
-],id="gallery-side-channel") }}
+]) }}
 
 - They have productized netlist fault injection (similar to Synopsys Z01X) and FIT analysis, and have done some hardware validation with EMFI (electromagnetic fault injection) on a Cortex-M0 devboard
 - They've also looked at power side channel identification (gate-level power traces -> CPA/TVLA (correlation power attack / test vector leakage assessment) and constrained synthesis with dummies to mitigate these attacks

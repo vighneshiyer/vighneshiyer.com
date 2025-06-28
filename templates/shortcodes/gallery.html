@@ -1,14 +1,31 @@
 {% set gallery_id = "gallery-" ~ images[0] %}
+{% set total_images = images | length %}
+{% set num_cols = num_cols | default(value=total_images) %}
+{% set num_rows = (total_images + num_cols - 1) / num_cols %}
+{% set row_height = row_height | default(value=300) %}
+
 {% if popout and popout == true %}
 <figure class="popout">
 {% else %}
 <figure>
 {% endif %}
 
-
-  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+  <div class="gallery-grid">
+    {% for row in range(start=0, end=num_rows) %}
+      <div class="gallery-row">
+        {% set start = row * num_cols %}
+        {% set end = start + num_cols %}
+        {% for path in images | slice(start=start, end=end) %}
+          {% set meta = get_image_metadata(path=path) %}
+          {% set ratio = meta.width | float / meta.height %}
+          <img src="{{ path }}" style="flex: {{ ratio }} 1 0%" alt="">
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
 </figure>
 
+{#
 <div class="photoswipe-gallery" id="{{ gallery_id }}">
   {% for image in images %}
   {% set image_path = page.colocated_path ~ image %}
@@ -20,3 +37,8 @@
   </a>
   {% endfor %}
 </div>
+
+
+  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+</figure>
+#}

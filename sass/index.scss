@@ -700,6 +700,25 @@ a {
     grid-column: var(--popout-begin) / var(--popout-end);
     margin-top: var(--space-s); // A bit more space for popout images
   }
+  figure {
+    .gallery-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .gallery-row {
+      display: flex;
+      height: 300px;
+      gap: 0.5rem;
+    }
+
+    .gallery-row img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
 }
 
 @mixin badge {
