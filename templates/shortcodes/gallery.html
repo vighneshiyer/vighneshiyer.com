@@ -1,44 +1,35 @@
 {% set gallery_id = "gallery-" ~ images[0] %}
 {% set total_images = images | length %}
 {% set num_cols = num_cols | default(value=total_images) %}
-{% set num_rows = (total_images + num_cols - 1) / num_cols %}
-{% set row_height = row_height | default(value=300) %}
+{% set num_rows = total_images / num_cols | round(method="ceil") | int %}
 
 {% if popout and popout == true %}
 <figure class="popout">
 {% else %}
 <figure>
 {% endif %}
-
-  <div class="gallery-grid">
+  <div class="gallery-grid" id="{{ gallery_id }}">
     {% for row in range(start=0, end=num_rows) %}
+      {% set start = row * num_cols %}
+      {% set end = start + num_cols %}
       <div class="gallery-row">
-        {% set start = row * num_cols %}
-        {% set end = start + num_cols %}
         {% for path in images | slice(start=start, end=end) %}
-          {% set meta = get_image_metadata(path=path) %}
-          {% set ratio = meta.width | float / meta.height %}
-          <img src="{{ path }}" style="flex: {{ ratio }} 1 0%" alt="">
+          {% set image_real_path = page.permalink ~ path %}
+          {% set image_raw_path = page.colocated_path ~ path %}
+
+          {% set meta = get_image_metadata(path=image_raw_path) %}
+          {% set img600 = resize_image(path=image_raw_path, width=600, op="fit_width", format="webp", quality=60) %}
+          {% set img1000 = resize_image(path=image_raw_path, width=1000, op="fit_width", format="webp", quality=60) %}
+          {% set img1600 = resize_image(path=image_raw_path, width=1600, op="fit_width", format="webp", quality=60) %}
+          {% set_global image_width = meta.width %}
+          {% set_global image_height = meta.height %}
+          {% set ratio = image_width | float / image_height %}
+          <a href="{{ image_real_path | safe }}" style="flex: {{ ratio | round(precision=3) }} 1 0%" data-pswp-width="{{ image_width }}" data-pswp-height="{{ image_height }}" target="_blank">
+            <img src="{{ image_real_path }}" alt="" loading="lazy" srcset="{{ img600.url | safe }} 600w, {{ img1000.url | safe }} 1000w, {{ img1600.url | safe }} 1600w, {{ image_real_path | safe }} 2000w" sizes="(min-width: 720px) 720px">
+          </a>
         {% endfor %}
       </div>
     {% endfor %}
   </div>
-</figure>
-
-{#
-<div class="photoswipe-gallery" id="{{ gallery_id }}">
-  {% for image in images %}
-  {% set image_path = page.colocated_path ~ image %}
-  {% set meta = get_image_metadata(path=image_path) %}
-  {% set thumb = resize_image(path=image_path, width=300, height=300, op="fit_height", format="webp", quality=60) %}
-  {% set thumb_retina = resize_image(path=image_path, width=600, height=600, op="fit_height", format="webp", quality=60) %}
-  <a href="{{ image_path }}" data-pswp-width="{{ meta.width }}" data-pswp-height="{{ meta.height }}" data-cropped="true" target="_blank">
-    <img src="{{ thumb.url | safe }}" srcset="{{ thumb_retina.url }} 2x" alt="" />
-  </a>
-  {% endfor %}
-</div>
-
-
   {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
 </figure>
-#}

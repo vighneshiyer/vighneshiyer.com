@@ -11,7 +11,7 @@ It was a good experience - lots of vendors at the exhibition halls to talk to, s
 {{ gallery(images=[
     "10-registration.jpg",
     "kaufman_award.jpg",
-]) }}
+], popout=true) }}
 
 ## Random Workshops
 
@@ -47,7 +47,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "10-riscure2.png",
     "10-riscure3.png",
     "10-riscure4.png"
-]) }}
+], num_cols=2, popout=true) }}
 
 - They have productized netlist fault injection (similar to Synopsys Z01X) and FIT analysis, and have done some hardware validation with EMFI (electromagnetic fault injection) on a Cortex-M0 devboard
 - They've also looked at power side channel identification (gate-level power traces -> CPA/TVLA (correlation power attack / test vector leakage assessment) and constrained synthesis with dummies to mitigate these attacks
@@ -75,9 +75,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
 
 > A critical component of the security verification process is security analysis. This is crucial to ensure that the security requirements are concisely specified, as well as to assist in identifying unknown design weaknesses. By using Radix’s security analysis capabilities, we were able to validate that the random constant key never makes it to the output of the OTP controller in an unscrambled form, which is a good thing.
 
-{{ gallery(images=[
-    "10-radix.png",
-],id="gallery-radix") }}
+{{ image(path="10-radix.png", width="80%") }}
 
 > While applying Radix to the OTP controller, we also identified intermediate values of the random constant key appearing on the output of the scrambler. This is interesting and surprising, but was determined to be a low risk since the intermediate values are protected at the boundary of the OTP output. Even so, this information enabled OpenTitan to push a fix mitigating this leakage out of an abundance of caution to potential future threats.
 
@@ -99,7 +97,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "10-needham_trends.jpg",
     "10-needham_final.jpg",
     "10-needham_summary.jpg",
-], id="gallery-needham") }}
+], popout=true, num_cols=2) }}
 
 ## Monday, 7/11/22
 
@@ -125,7 +123,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "11-powerpro9.jpg",
     "11-powerpro10.jpg",
     "11-powerpro11.jpg",
-], id="gallery-powerpro") }}
+], num_cols=4, popout=true) }}
 
 - We talked to the reps afterwards and found out:
     - They have an educational license now - so we should be able to play with PowerPro
@@ -187,13 +185,11 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
 
 ### Automating the Front End and Facing the Big Picture (Engineering Track)
 
-- There were a few interesting presentations here
+There were a few interesting presentations here.
 
 #### ML Based Abnormal Simulation Detector in SoC Verification (Samsung)
 
-{{ gallery(images=[
-    "11-abnormal_sim_predictor.jpg",
-], id="gallery-abnormal") }}
+{{ image(path="11-abnormal_sim_predictor.jpg", width="50%") }}
 
 - At first, I thought this was going to be a predictor based on test generator parameters or runtime test behavior
 - Instead, they describe an "ML approach" to detect tests that execute too long and will eventually time out and terminate them early to save compute and debug overhead. They didn't give any details about what model they used, or even the input features they selected.
@@ -212,7 +208,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "11-debug1.jpg",
     "11-debug2.jpg",
     "11-debug3.jpg",
-], id="gallery-debug") }}
+], popout=true) }}
 
 
 #### SMART Adaptive Regression Using Nearest Neighbors Algorithm
@@ -234,7 +230,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "11-smart7.jpg",
     "11-smart8.jpg",
     "11-smart_poster.jpg",
-], id="gallery-smart") }}
+], num_cols=3, popout=true) }}
 
 ### [John Cooley's DAC Panel](https://59dac.conference-program.com/session/?sess=sess296)
 
@@ -281,7 +277,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "12-hls_gnn1.png",
     "12-hls_gnn2.png",
     "12-hls_gnn3.png",
-], id="gallery-hls_gnn") }}
+], popout=true) }}
 
 - Represent SystemC programs as CDFGs with each node annotated with its function (read/write/compute operation)
 - Use GNN architectures to perform either:
@@ -310,7 +306,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
     "12-netlist_learning2.png",
     "12-netlist_learning3.png",
     "12-netlist_learning4.png",
-], id="gallery-netlist_learning") }}
+], popout=true) }}
 
 - The authors, then propose a new GNN architecture called FGNN (functional GNN) which is designed specifically for GL netlists to incorporate gate-level logic functionality into the reduction kernels. This is in contrast to typical GNNs which mostly consider graph topology and connectivity when embedding a node or performing graph-level regression.
     - Independent aggregator functions (kernels) for each gate type (AND, OR, INV, MAJ, MUX, NAND, NOR and XOR)
@@ -389,7 +385,7 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
 {{ gallery(images=[
     "exhibition_floor.jpg",
     "exhibition_floor2.jpg",
-], id="gallery-exhibition_floor") }}
+]) }}
 
 #### X-Epic
 
@@ -420,12 +416,12 @@ On Sunday (7/10/2022), I attended some workshops hoping they would be interestin
 
 An example csv file:
 
-```csv
+{% code(language="plaintext") %}
 param0, param1, param2, cov_metric
 0.5, 0.2, 0.4, 4
 0.6, 0.1, 0.3, 5
 0.2, 0.9, 0.2 2
-```
+{% end %}
 
 #### Analog Innovation
 
@@ -523,7 +519,7 @@ param0, param1, param2, cov_metric
 {{ gallery(images=[
     "13-mflowgen1.png",
     "13-mflowgen2.png",
-], id="gallery-mflowgen") }}
+]) }}
 
 #### HAMMER Talk
 
@@ -545,7 +541,7 @@ param0, param1, param2, cov_metric
     "13-versal_power4.jpg",
     "13-versal_power5.jpg",
     "13-versal_power6.jpg",
-], id="gallery-versal") }}
+], popout=true, num_cols=4) }}
 
 - Cycle-level granularity on-chip power monitor used for peak draw and IR drop analysis
     - Feeds back to PDN controllers and P-state tuning logic
@@ -568,25 +564,26 @@ param0, param1, param2, cov_metric
 
 ### Posters
 
-#### Coq Based DRAM Timing Model and Property Verifier
+{{ gallery(images=[
+  "13-coq_dram_model.jpg",
+  "13-deep_rl_placer.jpg",
+  "13-pulp_pmc.jpg",
+  "13-xls_poster.jpg",
+]) }}
 
-{{ image(path="13-coq_dram_model.jpg", width="20%") }}
+There were a few interesting posters:
 
-- Coq based DRAM model, timing invariants and proof. SystemVerilog lowering is being worked on.
+- Coq Based DRAM Timing Model and Property Verifier
+  - This is a DRAM model, with timing invariants and a proof. The SystemVerilog lowering is being worked on.
+- Deep RL placer similar to what Google published in Nature
+- Pulp-Based PMU FPGA prototype
+
+<!--
     - flisboa@telecom-paris.fr
     - See: Matthias Jung - Petri nets - DRAM timing formal models
-
-#### Deep RL Placer
-
-{{ image(path="13-deep_rl_placer.jpg", width="20%") }}
-
-#### Pulp-Based PMU FPGA Prototype
-
-{{ image(path="13-pulp_pmc.jpg", width="20%") }}
+-->
 
 #### XLS (Google's HLS IR)
-
-{{ image(path="13-xls_poster.jpg", width="20%") }}
 
 - HLS has traditionally meant C or SystemC to structural-ish Verilog
     - Algorithms expressed in C are usually feedforward ones with a bit of state, expressed as pure functions - these can be transformed into FSMs with HLS
@@ -609,7 +606,6 @@ param0, param1, param2, cov_metric
     - They propose a standardized Verilog / C++ interface for processor trace, reference model comparison, and peripherals (e.g. UART, interrupts)
     - This is definetely a good idea and we should keep abreast of these developments - ideally they would publish a Verilog and C++ (Verilator) testbench that can just slot in any RISC-V SoC if it has the conforming ports
 
-
 ## Thursday, 7/14/22
 
 ### Teardown
@@ -619,7 +615,7 @@ param0, param1, param2, cov_metric
 {{ gallery(images=[
     "14-done1.jpg",
     "14-done2.jpg",
-], id="gallery-teardown") }}
+])}}
 
 ### SemiCon West
 
@@ -646,7 +642,7 @@ param0, param1, param2, cov_metric
     "14-analog_panel.jpg",
     "14-analog_panel2.jpg",
     "14-analog_panel3.jpg",
-], id="gallery-analog") }}
+], popout=true) }}
 
 - Analog *was* being dragged into FF nodes
     - 5-10 years ago this was because of the integration trend
@@ -663,7 +659,7 @@ param0, param1, param2, cov_metric
     "14-analog_panel_1_3.jpg",
     "14-analog_panel_1_4.jpg",
     "14-analog_panel_1_5.jpg",
-], id="gallery-analog-1") }}
+], popout=true, num_cols=3) }}
 
 - Custom layout is painful due to parasitic-induced layout iteration
     - The focus should be layout automation assistance with guidance around parasitics - not a fully automated flow.
@@ -678,7 +674,7 @@ param0, param1, param2, cov_metric
     "14-analog_panel_2_4.jpg",
     "14-analog_panel_2_5.jpg",
     "14-analog_panel_2_6.jpg",
-], id="gallery-analog-2") }}
+], popout=true, num_cols=4) }}
 
 #### Steve Burns' Take
 
@@ -691,7 +687,7 @@ param0, param1, param2, cov_metric
     "14-analog_panel_3_6.jpg",
     "14-analog_panel_3_7.jpg",
     "14-analog_panel_3_8.jpg",
-], id="gallery-analog-3") }}
+], popout=true, num_cols=4) }}
 
 #### NVIDIA's Take
 
@@ -703,7 +699,7 @@ param0, param1, param2, cov_metric
     "14-analog_panel_4_5.jpg",
     "14-analog_panel_4_6.jpg",
     "14-analog_panel_4_7.jpg",
-], id="gallery-analog-4") }}
+], popout=true, num_cols=4) }}
 
 - Layout changes are by their nature *visual*, only one thing is touched at a time (and you do it by hand so you feel in full control)
     - In contrast to code changes which are *non-visual* and many layout attributes can change with one code change (this is the cause of frustration around layout automation)
@@ -715,7 +711,6 @@ param0, param1, param2, cov_metric
 - The panelists often refered to analog designers as a 'sub-species' of humanity, one that needs a lot of coaxing and is prone to sticking with behavior patterns for life and resisting change.
     - The analog designer is a fickle thing: very good at what they do and they possess great intuition, but they suffer from low productivity and superstition, making analog automation difficult when they have to be convinced to adopt it.
 
-
 ### So You Want a Better Design? Go with Faster Timing and Lower Power Please!
 
 #### GATSPI: GPU Accelerated Gate-Level Simulation for Power Improvement
@@ -726,7 +721,7 @@ param0, param1, param2, cov_metric
     "14-gatspi.jpg",
     "14-gatspi1.png",
     "14-gatspi2.png",
-], id="gallery-gatspi") }}
+], popout=true) }}
 
 - Transform gate-level netlists to DGL graphs, extract subgraphs and compile them to CUDA kernels that accurately model delays with SDF input
 - Specialzed kernel code to avoid thread divergence and remove need for conditionals. Gates are simulated in parallel across many waveforms.

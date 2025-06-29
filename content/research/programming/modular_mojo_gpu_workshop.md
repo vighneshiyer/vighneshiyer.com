@@ -1,3 +1,15 @@
++++
+title = "Mojo GPU Workshop @ Modular"
+date = 2025-06-28
+draft = true
+description = "My first experience with the Mojo language and commentary on GPU programming models"
++++
+
+Modular held a Mojo workshop
+I first heard about it when it was announced by Chris Lattner at AMD's Advancing AI event a few weeks earlier.
+
+## The Mojo Workshop Prelude
+
 - Meta's pytorch to standalone inference binary slides (attach photos here, take 4 photos from joonho, some others in yufeng thread)
   - Very useful functionality
   - How does this compare with IREE's standalone binary generation or even its baremetal binary mode?
@@ -113,6 +125,10 @@ Or does Mojo / MLIR elide emission of CUDA altogether and instead emits PTX?
 The details that would let me understand the limitations and performance implications of the programming model aren't presented up-front, and are quite hidden from sight.
 This seems good for kernel engineers until they have to contend with some unsupported or poorly performing construct without the knowledge of the compilation flow and its limitations.
 
+The startup time is quite long from a `pixi run mojo ...` command.
+It takes a few seconds to execute on quite a beefy machine - what is exactly taking up so much time?
+The parsing, the JIT compilation, spawning the Python / Mojo runtime, starting the CUDA runtime, dispatching the kernel to the GPU, copies to/from host/GPU memory?
+
 ### GPU Programming
 
 - Mojo GPU Puzzles
@@ -129,4 +145,11 @@ Why do I have to muck with guards to prevent out of bounds access if I can contr
 My perspective may be skewed by only looking at BLAS2 functions so far and my opinion may change as I play with matmul in Mojo.
 
 I do worry about the future of Mojo considering that NVIDIA is investing so deeply into the Python eDSL ecosystem and CUDA integration.
-The CUTLASS Python eDSL + the Python CUDA low-level eDSL are quite hard to beat.
+The CUTLASS Python eDSL + the Python CUDA low-level eDSL will be quite hard to beat in terms of adoption and feature-parity.
+Trying to limit the frontend language to only features and abstractions supported by both NVIDIA and AMD GPUs will harm uptake too.
+
+### GPU Emulation in Software
+
+One thing that I find quite odd is that there is no way to develop GPU kernels without a physical GPU.
+I guess for most people this seems quite irrelevant: GPUs are cheap enough and you can rent them easily on the cloud with the litany of cloud credits VCs are handing out.
+But from a computer architect's perspective, it would be nice to simulate what the kernel is doing (and catch potential race conditions) on a model of a GPU

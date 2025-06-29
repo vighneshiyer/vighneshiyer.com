@@ -13,6 +13,7 @@
     <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml") | safe }}">
     <link rel="stylesheet" href="{{ get_url(path="index.css") | safe }}">
 
+    <!-- PhotoSwipe -->
     <base href="/">
     <script type="module">
       import PhotoSwipeLightbox from './photoswipe-lightbox.esm.min.js';
@@ -28,6 +29,15 @@
       lightbox.init();
     </script>
     <link rel="stylesheet" href="photoswipe.css">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="tokyo-night-dark.min.css">
+    <script type="module">
+      import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
+      import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/plaintext.min.js';
+      hljs.registerLanguage('plaintext', plaintext);
+      hljs.highlightAll();
+    </script>
 
     {% block seo -%}
       <meta property="og:site_name" content="{% block ogsitename %}{{config.title}}{% endblock ogsitename %}">

@@ -66,6 +66,10 @@ My GPT queries:
 
 ## typst tikz alternative
 
+- cetz
+  - fletcher (built on cetz)
+  - these two are actually quite great. some examples would be instructive.
+
 ## Illustrator / Inkscape
 
 ## Mathcha
