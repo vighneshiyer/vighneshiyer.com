@@ -50,7 +50,7 @@ $max-font-size: 18;
 @mixin u-container {
   max-width: var(--grid-max-width);
   padding-inline: var(--grid-gutter);
-  margin-inline: auto;
+  // margin-inline: auto;
 }
 
 @mixin u-grid {
@@ -562,17 +562,19 @@ details {
 }
 
 .header-container {
+  @include u-container;
+  @include u-grid;
   background-color: var(--bg-dark);
   // border-bottom: 1px solid var(--dark5);
   font-family: var(--sans-font);
   header {
-    align-items: center;
-    @include u-container;
-    @include u-grid;
+    grid-column: var(--content-begin) / var(--content-end);
     padding-top: var(--space-2xs);
     padding-bottom: var(--space-2xs);
-    .title {
-      grid-column: 1 / var(--grid-middle);
+    display: flex;
+    flex-direction: row;
+    .spacer {
+      flex-grow: 1;
     }
     .title a {
       text-align: left;
@@ -585,9 +587,6 @@ details {
       &:hover {
         text-decoration: underline;
       }
-    }
-    .contact {
-      grid-column: var(--grid-middle) / -1;
     }
     .contact p {
       text-align: right;
@@ -623,7 +622,7 @@ details {
     @include u-grid;
     .homepage-content {
       margin-top: var(--space-s);
-      grid-column: 1 / -1;
+      grid-column: var(--content-begin) / var(--content-end);
     }
   }
 }
