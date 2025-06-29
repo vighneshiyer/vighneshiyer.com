@@ -98,7 +98,7 @@ They cast the macro placement problem as a Markov decision process (rather than 
 >
 > (4) Rewards are 0 for all actions except the last action, where the reward is a negative weighted sum of proxy wirelength, congestion and density, as described below.
 
-{{ image(path="rl_placement.webp", width="80%") }}
+{{ image(path="rl_placement.webp", width="80%", padding=true) }}
 
 The RL agent receives an embedding of a particular placement and the current macro that the agent should act upon.
 The details of the embedding aren't that clear, but the rough idea is that a GNN can capture relationships between macros and stdcell clusters with regards to connectivity and overlaps, and is able to estimate a proxy metric for the agent to use.
@@ -108,13 +108,13 @@ The encoder is replaced with the policy network once it is trained.
 The RL agent places macros one by one, and once all are placed, a force-directed method is used to place the standard cell clusters.
 A commercial CAD tool seems to take care of the detailed placement and the rest of the flow (including post-place optimization and routing).
 
-{{ image(path="embedding_and_policy_network.webp", width="100%", popout=true) }}
+{{ image(path="embedding_and_policy_network.webp", width="100%", popout=true, padding=true) }}
 
 For a given target block they are evaluating, they train the policy network on all the other blocks in their dataset, and then evaluate the policy on the unseen block.
 They demonstrate that pre-training on blocks before doing fine-tuning for the unseen block gives better and faster results than training a policy from scratch (indicating that transfer learning is a viable approach for macro placement).
 They claim that with a trained policy network, they can place all the macros for a new block in under one second, with decent results.
 
-{{ image(path="transfer_learning.webp", width="50%") }}
+{{ image(path="transfer_learning.webp", width="50%", padding=true) }}
 
 They compare their technique against manual macro placement and the academic RePLAce tool and show superior QoR for their placer.
 
@@ -152,7 +152,7 @@ The rebuttal starts off by clarifying the methodology used in the RL paper, poin
 2. The macro placement grid is as fine as 128 X 128, which is rather coarse; a larger grid would make RL harder to train
 3. The macros are placed first, and then the standard cell clusters are placed after the macro placement is fully hardened (the placement of macros and standard cells is not simultaneous)
 
-{{ image(path="reconstructed_flow.png", width="90%") }}
+{{ image(path="reconstructed_flow.png", width="90%", padding=true) }}
 
 Note these implementation details from the Nature paper:
 
@@ -174,7 +174,7 @@ In response to using a limited "place macros, then stdcell clusters" technique i
 
 The results are interesting.
 
-{{ image(path="rebuttal_results.png", width="80%") }}
+{{ image(path="rebuttal_results.png", width="80%", padding=true) }}
 
 They suggest that RePLAce was handicapped in the original evaluation, by forcing it to place standard cells only after macro placements were hardened.
 The rebuttal also contains evidence that the coarse placement grid used by RL fares poorly when a netlist contains many small macros, while RePLAce still performs appreciably.
@@ -245,7 +245,7 @@ The results in this paper are reasonable - there is no clear winner: humans can 
 Additionally, it makes sense that CMP would perform the best (being the SOTA in commercial fully-integrated CAD tools).
 The Nature paper was suspect since it claimed an absolute advantage in all cases for CT over humans, SA, or RePLAce, and didn't benchmark against any commercial mixed-placement tools.
 
-{{ image(path="placement_comparison.png", width="100%", popout=true) }}
+{{ image(path="placement_comparison.png", width="100%", popout=true, padding=true) }}
 
 This image is very telling: notice how the results from CT and SA are quite similar, but are distinct from the CMP and AutoDMP placements?
 This seems to suggest that CT is refining an initial placement in a similar manner to SA, rather than truly exploring the entire placement space like the other two algorithms.

@@ -150,14 +150,14 @@ We also use software-like structural coverage metrics such as line, branch, and 
 But we also have hardware specific metrics such as toggle coverage (which measures whether each flip-flop in the design has transitioned from 0 → 1 and 1 → 0).
 In addition to these structural metrics, hardware coverage also includes user-defined coverpoints which, among other things, can measure how often some hardware signal lands in a user-specified range.
 
-```systemverilog
+{% code(language="verilog") %}
 module tb();
     logic [1:0] state;
     covergroup state_cg @(posedge clk);
         coverpoint state;
     endgroup
 endmodule
-```
+{% end %}
 
 For instance, in this example, the `state_cg` covergroup will measure how many times `state` lands in each of its bins (0, 1, 2, 3) during a test execution.
 The [SystemVerilog covergroup and coverpoint specification API](https://www.chipverify.com/systemverilog/systemverilog-covergroup-coverpoint) provides all kinds of more sophisticated functionality.
