@@ -71,6 +71,8 @@ $max-font-size: 18;
   @media screen and (max-width: 600px) {
     --content-begin: 1;
     --content-end: 13;
+    --popout-begin: 1;
+    --popout-end: 13;
   }
 }
 
@@ -162,9 +164,12 @@ $tn-light-git-delete: color.invert($tn-dark-git-delete);
 // The bg colors are blended  (see https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/day.lua)
 $tn-light-bg-dark: color.mix($tn-light-bg, $tn-light-fg, 90%);
 $tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 90%);
+// Now we swap some colors
+$tn-light-bg-dark1: $tn-light-bg;
+$tn-light-bg: $tn-light-bg-dark1;
 
 :root {
-  color-scheme: light; /*--var(--color-scheme, light);*/
+  color-scheme: --var(--color-scheme);
   --bg: #{$tn-light-bg};
   --bg-dark: #{$tn-light-bg-dark};
   --bg-dark1: #{$tn-light-bg-dark1};
@@ -200,7 +205,9 @@ $tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 90%);
   --git-change: #{$tn-light-git-change};
   --git-delete: #{$tn-light-git-delete};
 
-  @media (prefers-color-scheme: dark) {
+  /* page preference is "dark" */
+  &:has(#color-scheme input[value="dark"]:checked) {
+    --color-scheme: dark;
     --bg: #{$tn-dark-bg};
     --bg-dark: #{$tn-dark-bg-dark};
     --bg-dark1: #{$tn-dark-bg-dark1};
@@ -236,6 +243,50 @@ $tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 90%);
     --git-change: #{$tn-dark-git-change};
     --git-delete: #{$tn-dark-git-delete};
   }
+
+  @media (prefers-color-scheme: dark) {
+    &:has(#color-scheme input[value="dark"]:checked) {
+      --bg: #{$tn-dark-bg};
+      --bg-dark: #{$tn-dark-bg-dark};
+      --bg-dark1: #{$tn-dark-bg-dark1};
+      --bg-highlight: #{$tn-dark-bg-highlight};
+      --fg: #{$tn-dark-fg};
+      --fg-dark: #{$tn-dark-fg-dark};
+      --fg-gutter: #{$tn-dark-fg-gutter};
+
+      --comment: #{$tn-dark-comment};
+      --cyan: #{$tn-dark-cyan};
+      --blue: #{$tn-dark-blue};
+      --blue0: #{$tn-dark-blue0};
+      --blue1: #{$tn-dark-blue1};
+      --blue2: #{$tn-dark-blue2};
+      --blue5: #{$tn-dark-blue5};
+      --blue6: #{$tn-dark-blue6};
+      --blue7: #{$tn-dark-blue7};
+      --dark3: #{$tn-dark-dark3};
+      --dark5: #{$tn-dark-dark5};
+      --green: #{$tn-dark-green};
+      --green1: #{$tn-dark-green1};
+      --green2: #{$tn-dark-green2};
+      --magenta: #{$tn-dark-magenta};
+      --magenta2: #{$tn-dark-magenta2};
+      --orange: #{$tn-dark-orange};
+      --purple: #{$tn-dark-purple};
+      --red: #{$tn-dark-red};
+      --red1: #{$tn-dark-red1};
+      --teal: #{$tn-dark-teal};
+      --terminal-black: #{$tn-dark-terminal-black};
+      --yellow: #{$tn-dark-yellow};
+      --git-add: #{$tn-dark-git-add};
+      --git-change: #{$tn-dark-git-change};
+      --git-delete: #{$tn-dark-git-delete};
+    }
+  }
+}
+
+@import "../node_modules/highlight.js/scss/tokyo-night-light.scss";
+@media (prefers-color-scheme: dark) {
+  @import "../node_modules/highlight.js/scss/tokyo-night-dark.scss";
 }
 
 /* https://jakelazaroff.com/words/my-modern-css-reset/ */
@@ -582,6 +633,7 @@ details {
     grid-column: var(--content-begin) / var(--content-end);
     display: flex;
     flex-direction: row;
+    // align-items: center;
     .spacer {
       flex-grow: 1;
     }
@@ -602,6 +654,66 @@ details {
       margin: 0;
       font-size: var(--step--1);
     }
+    #color-scheme {
+      // align-items: center;
+      margin-left: var(--space-s);
+      display: grid;
+      align-items: center;
+      input[type="radio"] {
+        appearance: none;
+      }
+      .light {
+        display: inline-block;
+        position: absolute;
+        // z-index: 100;
+        background: var(--bg-highlight);
+        padding-left: var(--space-2xs);
+        padding-right: var(--space-2xs);
+        padding-top: var(--space-3xs);
+        padding-bottom: var(--space-3xs);
+        border-radius: var(--space-2xs);
+        cursor: pointer;
+        &:before {
+          content: "🌞";
+          // content: "☼";
+          // content: "☉";
+          // color: var(--orange);
+          font-size: var(--step--1);
+        }
+      }
+      .dark {
+        display: inline-block;
+        position: absolute;
+        // z-index: 10;
+        background: var(--orange);
+        padding-left: var(--space-2xs);
+        padding-right: var(--space-2xs);
+        padding-top: var(--space-3xs);
+        padding-bottom: var(--space-3xs);
+        border-radius: var(--space-2xs);
+        cursor: pointer;
+        &:before {
+          content: "🌙";
+          // content: "☾";
+          // color: var(--blue);
+          font-size: var(--step--1);
+        }
+      }
+    }
+  }
+}
+
+:root:has(#color-scheme input[value="dark"]:checked) {
+  --color-scheme: dark;
+  #color-scheme .dark{
+    display: none;
+  }
+}
+
+:root:has(#color-scheme input[value="light"]:checked) {
+  --color-scheme: light;
+  #color-scheme .light{
+    display: none;
   }
 }
 

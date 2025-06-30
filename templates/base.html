@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="{{ get_url(path="photoswipe.css") | safe }}">
 
     <!-- highlight.js -->
-    <link rel="stylesheet" href="{{ get_url(path="tokyo-night-dark.min.css") | safe }}">
+    <!-- <link rel="stylesheet" href="{{ get_url(path="tokyo-night-dark.min.css") | safe }}"> -->
     <script type="module">
       import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
       import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/plaintext.min.js';
@@ -38,6 +38,52 @@
       hljs.registerLanguage('plaintext', plaintext);
       hljs.registerLanguage('verilog', verilog);
       hljs.highlightAll();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const lightRadio = document.querySelector('#color-scheme .light');
+        const darkRadio = document.querySelector('#color-scheme .dark');
+        
+        // Function to get system preference
+        function getSystemColorScheme() {
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        
+        // Initialize color scheme
+        function initializeColorScheme() {
+          const savedScheme = localStorage.getItem('color-scheme');
+          const systemScheme = getSystemColorScheme();
+          const currentScheme = savedScheme || systemScheme;
+          
+          // Check the appropriate radio button
+          if (currentScheme === 'light') {
+            lightRadio.checked = true;
+            darkRadio.checked = false;
+          } else {
+            darkRadio.checked = true;
+            lightRadio.checked = false;
+          }
+        }
+        
+        // Event listeners for radio buttons
+        lightRadio.addEventListener('click', function() {
+          console.log('Light radio clicked');
+          localStorage.setItem('color-scheme', 'light');
+          lightRadio.checked = true;
+          darkRadio.checked = false;
+        });
+        
+        darkRadio.addEventListener('click', function() {
+          console.log('Dark radio clicked');
+          localStorage.setItem('color-scheme', 'dark');
+          darkRadio.checked = true;
+          lightRadio.checked = false;
+        });
+        
+        // Initialize on page load
+        initializeColorScheme();
+      });
     </script>
 
     {% block seo -%}
@@ -80,6 +126,10 @@
             vighnesh.iyer@berkeley.edu<br />
             <a href="https://github.com/vighneshiyer">Github</a>, <a href="https://linkedin.com/in/vighneshiyer">LinkedIn</a>, <a href="https://news.ycombinator.com/threads?id=vighneshiyer">HN</a>, <a href="./cv/cv.pdf">CV</a>
           </p>
+        </div>
+        <div id="color-scheme">
+          <input class="light" type="radio" name="color" value="light" />
+          <input class="dark" type="radio" name="color" value="dark" />
         </div>
       </header>
     </div>

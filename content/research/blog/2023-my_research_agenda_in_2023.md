@@ -5,8 +5,10 @@ draft = false
 description = "For posterity's sake"
 +++
 
+{% callout(title="✧ A disclaimer (2025 update)") %}
 I'm not so sure about these research directions in 2025, but I'll leave them here just to preserve what once was.
 Don't take these notes too seriously.
+{% end %}
 
 ## Fall 2023
 
