@@ -516,6 +516,14 @@ a:has(img) {
   }
 }
 
+a.anchor {
+  background: none;
+  color: inherit;
+  &:hover {
+    color: var(--orange);
+  }
+}
+
 ::selection {
   background-color: var(--bg-highlight);
 }
@@ -693,6 +701,12 @@ details {
     color: var(--orange);
     opacity: 0.5;
     margin-right: var(--space-2xs);
+    transition: opacity 0.1s ease-in-out;
+  }
+  &:hover {
+    &::before {
+      opacity: 0.75;
+    }
   }
 }
 
@@ -737,6 +751,8 @@ details {
 
   h2, h3, h4 {
     grid-column: var(--content-begin) / var(--content-end);
+    display: inline-block;
+    width: fit-content;
   }
 
   h2 {
@@ -750,6 +766,7 @@ details {
   h4 {
     @include hashtag("####");
   }
+
   blockquote {
     grid-column: var(--content-begin) / var(--content-end);
   }

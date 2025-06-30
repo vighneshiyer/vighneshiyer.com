@@ -230,7 +230,7 @@ This is not much different than modeling a multi-socket system, except with lowe
 
 ### Cache Partitioning Strategies Seem Interesting
 
-- [Chips and Cheese: A Peek at Sapphire Rapids](https://chipsandcheese.com/2023/03/12/a-peek-at-sapphire-rapids/)
+[Chips and Cheese: A Peek at Sapphire Rapids](https://chipsandcheese.com/2023/03/12/a-peek-at-sapphire-rapids/).
 
 > On Intel DevCloud, the chip appears to be set up to expose all four chiplets as a monolithic entity, with a single large L3 instance. Interconnect optimization gets harder when you have to connect more nodes, and SPR is a showcase of this. Intel’s mesh has to connect 56 cores with 56 L3 slices. Because L3 accesses are evenly hashed across all slices, there’s a lot of traffic going across that mesh.
 
