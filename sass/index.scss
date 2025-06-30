@@ -655,7 +655,6 @@ details {
       font-size: var(--step--1);
     }
     #color-scheme {
-      // align-items: center;
       margin-left: var(--space-s);
       display: grid;
       align-items: center;
@@ -664,8 +663,6 @@ details {
       }
       .light {
         display: inline-block;
-        position: absolute;
-        // z-index: 100;
         background: var(--bg-highlight);
         padding-left: var(--space-2xs);
         padding-right: var(--space-2xs);
@@ -683,8 +680,6 @@ details {
       }
       .dark {
         display: inline-block;
-        position: absolute;
-        // z-index: 10;
         background: var(--orange);
         padding-left: var(--space-2xs);
         padding-right: var(--space-2xs);
