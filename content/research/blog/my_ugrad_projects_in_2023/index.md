@@ -3,10 +3,12 @@ title = "Undergrad Projects in the SLICE Lab"
 date = 2022-08-30
 alises = ["misc/ugrad-projects"]
 draft = false
-description = "An old collection of research ideas in hardware verification from 2022"
+description = "A collection of research ideas in hardware verification"
 +++
 
-ADD A CALLOUT HERE - OLD ARTICLE - JUST HERE FOR FUN and history keeping
+{% callout(title="✧ A disclaimer (2025 update)") %}
+This is an old article. It's just here for fun and history keeping. Don't take the proposed projects below too seriously, even though I'm still quite positive about some of them.
+{% end %}
 
 - Vighnesh Iyer (vighnesh.iyer@berkeley.edu)
 - If you're interested in any of the projects below, please contact me by email and we'll set up time to talk and discuss ways to get started.

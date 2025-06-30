@@ -62,8 +62,8 @@ $max-font-size: 18;
 :root {
   --popout-begin: 2;
   --content-begin: 3;
-  --inset-content-begin: 5;
-  --inset-content-end: 9;
+  --inset-content-begin: 4;
+  --inset-content-end: 10;
   --content-end: 11;
   --popout-end: 12;
 
@@ -701,11 +701,12 @@ details {
     color: var(--orange);
     opacity: 0.5;
     margin-right: var(--space-2xs);
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, text-decoration 0.1s ease-in-out;
   }
   &:hover {
     &::before {
       opacity: 0.75;
+      // text-decoration: underline var(--space-4xs) var(--red);
     }
   }
 }
@@ -810,6 +811,20 @@ details {
   }
   pre {
     grid-column: var(--content-begin) / var(--content-end);
+  }
+  div.callout {
+    grid-column: var(--inset-content-begin) / var(--inset-content-end);
+    background-color: var(--bg-dark);
+    padding: var(--space-s);
+    border-radius: var(--space-2xs);
+    border: 1px solid var(--dark5);
+    margin-bottom: var(--space-s);
+    .callout-title {
+      font-family: var(--sans-font);
+      font-size: var(--step-1);
+      font-weight: 700;
+      margin-bottom: var(--space-3xs);
+    }
   }
 }
 
