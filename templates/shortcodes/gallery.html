@@ -28,6 +28,19 @@
             <img src="{{ image_real_path }}" alt="" loading="lazy" srcset="{{ img600.url | safe }} 600w, {{ img1000.url | safe }} 1000w, {{ img1600.url | safe }} 1600w, {{ image_real_path | safe }} 2000w" sizes="(min-width: 720px) 720px">
           </a>
         {% endfor %}
+        {% if row == (num_rows - 1) %}
+          {# Use the last image to compute the ratio #}
+          {% set last_image = images | last %}
+          {% set image_raw_path = page.colocated_path ~ last_image %}
+          {% set meta = get_image_metadata(path=image_raw_path) %}
+          {% set image_width = meta.width %}
+          {% set image_height = meta.height %}
+          {% set ratio = image_width | float / image_height %}
+
+          {% for col in range(start=0, end= num_rows * num_cols - total_images) %}
+            <div style="flex: {{ ratio | round(precision=3) }} 1 0%"></div>
+          {% endfor %}
+        {% endif %}
       </div>
     {% endfor %}
   </div>
