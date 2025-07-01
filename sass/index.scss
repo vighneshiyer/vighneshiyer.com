@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 // Utopia type scale, space scale, and grid using spacing scale
-/* @link https://utopia.fyi/grid/calculator?c=340,16,1.125,1800,18,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,2xl,2xl,12 */
+// https://utopia.fyi/grid/calculator?c=330,18,1.2,1500,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,xl,xl,12
 
 $min-width: 340;
-$max-width: 1800;
+$max-width: 1653;
 $min-font-size: 16;
-$max-font-size: 18;
+$max-font-size: 19;
 
 :root {
   @include utopia.generateTypeScale((
@@ -16,8 +16,8 @@ $max-font-size: 18;
     "maxWidth": $max-width,
     "minFontSize": $min-font-size,
     "maxFontSize": $max-font-size,
-    "minTypeScale": 1.125,
-    "maxTypeScale": 1.2,
+    "minTypeScale": 1.2,
+    "maxTypeScale": 1.25,
     "positiveSteps": 4,
     "negativeSteps": 2,
     /* Optional params */
@@ -33,7 +33,7 @@ $max-font-size: 18;
     "positiveSteps": (1.5, 2, 3, 4, 6), // m, l, xl, 2xl, 3xl
     "negativeSteps": (0.75, 0.5, 0.25, 0.125, 0.0625), // xs, 2xs, 3xs, 4xs, 5xs
     /* Optional params */
-    "customSizes": ("s-l","s-2xl"),
+    "customSizes": ("s-l", "s-xl", "s-2xl"),
     "usePx": false,
     "relativeTo": "viewport",
     "prefix": "space-",
@@ -42,8 +42,8 @@ $max-font-size: 18;
 }
 
 :root {
-  --grid-max-width: 112.50rem;
-  --grid-gutter: var(--space-s-2xl, clamp(1rem, 0.1849rem + 3.8356vw, 4.5rem));
+  --grid-max-width: 103.31rem;
+  --grid-gutter: var(--space-s-xl, clamp(1rem, 0.3364rem + 3.1226vw, 3.5625rem));
   --grid-columns: 12;
 }
 
@@ -168,8 +168,7 @@ $tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 90%);
 $tn-light-bg-dark1: $tn-light-bg;
 $tn-light-bg: $tn-light-bg-dark1;
 
-:root {
-  color-scheme: --var(--color-scheme);
+@mixin color-scheme-light {
   --bg: #{$tn-light-bg};
   --bg-dark: #{$tn-light-bg-dark};
   --bg-dark1: #{$tn-light-bg-dark1};
@@ -204,82 +203,60 @@ $tn-light-bg: $tn-light-bg-dark1;
   --git-add: #{$tn-light-git-add};
   --git-change: #{$tn-light-git-change};
   --git-delete: #{$tn-light-git-delete};
+}
+
+@mixin color-scheme-dark {
+  --color-scheme: dark;
+  --bg: #{$tn-dark-bg};
+  --bg-dark: #{$tn-dark-bg-dark};
+  --bg-dark1: #{$tn-dark-bg-dark1};
+  --bg-highlight: #{$tn-dark-bg-highlight};
+  --fg: #{$tn-dark-fg};
+  --fg-dark: #{$tn-dark-fg-dark};
+  --fg-gutter: #{$tn-dark-fg-gutter};
+
+  --comment: #{$tn-dark-comment};
+  --cyan: #{$tn-dark-cyan};
+  --blue: #{$tn-dark-blue};
+  --blue0: #{$tn-dark-blue0};
+  --blue1: #{$tn-dark-blue1};
+  --blue2: #{$tn-dark-blue2};
+  --blue5: #{$tn-dark-blue5};
+  --blue6: #{$tn-dark-blue6};
+  --blue7: #{$tn-dark-blue7};
+  --dark3: #{$tn-dark-dark3};
+  --dark5: #{$tn-dark-dark5};
+  --green: #{$tn-dark-green};
+  --green1: #{$tn-dark-green1};
+  --green2: #{$tn-dark-green2};
+  --magenta: #{$tn-dark-magenta};
+  --magenta2: #{$tn-dark-magenta2};
+  --orange: #{$tn-dark-orange};
+  --purple: #{$tn-dark-purple};
+  --red: #{$tn-dark-red};
+  --red1: #{$tn-dark-red1};
+  --teal: #{$tn-dark-teal};
+  --terminal-black: #{$tn-dark-terminal-black};
+  --yellow: #{$tn-dark-yellow};
+  --git-add: #{$tn-dark-git-add};
+  --git-change: #{$tn-dark-git-change};
+  --git-delete: #{$tn-dark-git-delete};
+}
+
+:root {
+  color-scheme: --var(--color-scheme);
+  transition-duration: 1s;
+  transition-property: background-color, background, color;
+  @include color-scheme-light;
 
   /* page preference is "dark" */
   &:has(#color-scheme input[value="dark"]:checked) {
-    --color-scheme: dark;
-    --bg: #{$tn-dark-bg};
-    --bg-dark: #{$tn-dark-bg-dark};
-    --bg-dark1: #{$tn-dark-bg-dark1};
-    --bg-highlight: #{$tn-dark-bg-highlight};
-    --fg: #{$tn-dark-fg};
-    --fg-dark: #{$tn-dark-fg-dark};
-    --fg-gutter: #{$tn-dark-fg-gutter};
-
-    --comment: #{$tn-dark-comment};
-    --cyan: #{$tn-dark-cyan};
-    --blue: #{$tn-dark-blue};
-    --blue0: #{$tn-dark-blue0};
-    --blue1: #{$tn-dark-blue1};
-    --blue2: #{$tn-dark-blue2};
-    --blue5: #{$tn-dark-blue5};
-    --blue6: #{$tn-dark-blue6};
-    --blue7: #{$tn-dark-blue7};
-    --dark3: #{$tn-dark-dark3};
-    --dark5: #{$tn-dark-dark5};
-    --green: #{$tn-dark-green};
-    --green1: #{$tn-dark-green1};
-    --green2: #{$tn-dark-green2};
-    --magenta: #{$tn-dark-magenta};
-    --magenta2: #{$tn-dark-magenta2};
-    --orange: #{$tn-dark-orange};
-    --purple: #{$tn-dark-purple};
-    --red: #{$tn-dark-red};
-    --red1: #{$tn-dark-red1};
-    --teal: #{$tn-dark-teal};
-    --terminal-black: #{$tn-dark-terminal-black};
-    --yellow: #{$tn-dark-yellow};
-    --git-add: #{$tn-dark-git-add};
-    --git-change: #{$tn-dark-git-change};
-    --git-delete: #{$tn-dark-git-delete};
+    @include color-scheme-dark;
   }
 
   @media (prefers-color-scheme: dark) {
     &:has(#color-scheme input[value="dark"]:checked) {
-      --bg: #{$tn-dark-bg};
-      --bg-dark: #{$tn-dark-bg-dark};
-      --bg-dark1: #{$tn-dark-bg-dark1};
-      --bg-highlight: #{$tn-dark-bg-highlight};
-      --fg: #{$tn-dark-fg};
-      --fg-dark: #{$tn-dark-fg-dark};
-      --fg-gutter: #{$tn-dark-fg-gutter};
-
-      --comment: #{$tn-dark-comment};
-      --cyan: #{$tn-dark-cyan};
-      --blue: #{$tn-dark-blue};
-      --blue0: #{$tn-dark-blue0};
-      --blue1: #{$tn-dark-blue1};
-      --blue2: #{$tn-dark-blue2};
-      --blue5: #{$tn-dark-blue5};
-      --blue6: #{$tn-dark-blue6};
-      --blue7: #{$tn-dark-blue7};
-      --dark3: #{$tn-dark-dark3};
-      --dark5: #{$tn-dark-dark5};
-      --green: #{$tn-dark-green};
-      --green1: #{$tn-dark-green1};
-      --green2: #{$tn-dark-green2};
-      --magenta: #{$tn-dark-magenta};
-      --magenta2: #{$tn-dark-magenta2};
-      --orange: #{$tn-dark-orange};
-      --purple: #{$tn-dark-purple};
-      --red: #{$tn-dark-red};
-      --red1: #{$tn-dark-red1};
-      --teal: #{$tn-dark-teal};
-      --terminal-black: #{$tn-dark-terminal-black};
-      --yellow: #{$tn-dark-yellow};
-      --git-add: #{$tn-dark-git-add};
-      --git-change: #{$tn-dark-git-change};
-      --git-delete: #{$tn-dark-git-delete};
+      @include color-scheme-dark;
     }
   }
 }
@@ -374,23 +351,55 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
+$page-elements: p, ul, ol, blockquote, figure, pre, details, "div.callout";
+
 h1 {
   font-size: var(--step-3);
 }
 
 h2 {
   font-size: var(--step-2);
-  margin-bottom: var(--space-m);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-l);
 }
 
 h3 {
   font-size: var(--step-1);
-  margin-bottom: var(--space-s);
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-m);
 }
 
 h4 {
   font-size: var(--step-0);
-  margin-bottom: var(--space-xs);
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-s);
+}
+
+// Whatever element comes immediately before a heading should not contribute to the heading's margin-top
+@each $element in $page-elements {
+  #{$element}:has(+ h2) {
+    margin-bottom: 0;
+  }
+}
+
+@each $element in $page-elements {
+  #{$element}:has(+ h3) {
+    margin-bottom: 0;
+  }
+}
+
+@each $element in $page-elements {
+  #{$element}:has(+ h4) {
+    margin-bottom: 0;
+  }
+}
+
+h2 + h3 {
+  margin-top: 0;
+}
+
+h3 + h4 {
+  margin-top: 0;
 }
 
 strong {
@@ -415,6 +424,39 @@ li {
   font-size: var(--step-0);
 }
 
+ul > li:before {
+  // content: "✶";
+  // content: "◍";
+  content: "◉";
+  // content: "›";
+  color: var(--blue);
+  font-size: var(--step-0);;
+  position: absolute;
+  margin-left: calc(var(--space-l) * -1);
+}
+
+ul > li:last-child {
+  margin-bottom: 0;
+}
+
+ul > li > ul {
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+ul > li > ul:last-child {
+  margin-bottom: 0;
+}
+
+ul > li > ul > li {
+  font-size: var(--step--1);
+  margin-bottom: var(--space-xs);
+  &:before {
+    content: "◍";
+    font-size: var(--step--1);
+  }
+}
+
 @counter-style custom-circled {
   system: fixed;
   symbols: '⓵' '⓶' '⓷' '⓸' '⓹' '⓺' '⓻' '⓼' '⓽' '⓾';
@@ -432,58 +474,32 @@ ol > li::before {
   position: absolute;
   margin-left: calc(var(--space-l) * -1);
   font-weight: 400;
-  margin-top: -0.4ex;
+  margin-top: -0.6ex;
 }
 
-ol > li > ul > li {
-  margin-left: var(--space-l);
-  &:before {
-    margin-left: calc(var(--space-l) * -1);
-  }
-}
-
-ol > li > ul {
-  margin-top: var(--space-xs);
-  margin-bottom: var(--space-s);
-}
-
-ul > li:before {
-  // content: "✶";
-  // content: "◍";
-  content: "◉";
-  // content: "›";
-  color: var(--blue);
-  font-size: var(--step-0);;
-  position: absolute;
-  margin-left: calc(var(--space-l) * -1);
-}
-
-// Nested list special cases
-ul > li > ul > li {
-  font-size: var(--step--1);
-  &:before {
-    content: "◍";
-    font-size: var(--step--1);
-  }
-}
-
-ul > li > ul {
-  margin-top: var(--space-xs);
-  margin-bottom: var(--space-s);
-}
-
-ul > li:last-child {
-  margin-bottom: 0;
-  > ul {
-    margin-bottom: 0;
-  }
-  > p {
-    margin-bottom: 0;
-  }
+ol > li {
+  margin-left: var(--space-l);  
 }
 
 ol > li:last-child {
   margin-bottom: 0;
+}
+
+ol > li > ul {
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+ol > li > ul:last-child {
+  margin-bottom: 0;
+}
+
+ol > li > ul > li {
+  margin-left: var(--space-l);
+  margin-bottom: var(--space-xs);
+  &:before {
+    margin-left: calc(var(--space-l) * -1);
+  }
 }
 
 // https://practicaltypography.com/block-quotations.html
@@ -502,10 +518,11 @@ blockquote {
   margin-left: var(--space-s);
   margin-right: var(--space-s);
   border-left: var(--space-3xs) solid var(--orange);
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-s);
 }
 
 figure {
+  margin-top: var(--space-s);
   margin-bottom: var(--space-m);
   text-align: center;
   img {
@@ -580,7 +597,8 @@ a.anchor {
 }
 
 pre {
-  margin-bottom: var(--space-s);
+  // margin-top: var(--space-m);
+  margin-bottom: var(--space-m);
   code {
     font-family: var(--mono-font);
   }
@@ -602,6 +620,7 @@ p > code {
 }
 
 details {
+  // margin-top: var(--space-s);
   margin-bottom: var(--space-s);
   padding-left: var(--space-l);
   padding-right: var(--space-l);
@@ -620,6 +639,20 @@ details {
   }
 }
 
+div.callout {
+  background-color: var(--bg-dark);
+  padding: var(--space-s);
+  border-radius: var(--space-2xs);
+  border: 1px solid var(--dark5);
+  margin-bottom: var(--space-m);
+  .callout-title {
+    font-family: var(--sans-font);
+    font-size: var(--step-1);
+    font-weight: 700;
+    margin-bottom: var(--space-3xs);
+  }
+}
+
 .header-container {
   @include u-container;
   @include u-grid;
@@ -633,13 +666,12 @@ details {
     grid-column: var(--content-begin) / var(--content-end);
     display: flex;
     flex-direction: row;
-    // align-items: center;
     .spacer {
       flex-grow: 1;
     }
     .title a {
       text-align: left;
-      font-size: var(--step-3);
+      font-size: var(--step-2);
       font-weight: 600;
       color: var(--fg);
       letter-spacing: -0.025ch;
@@ -654,6 +686,7 @@ details {
       margin: 0;
       font-size: var(--step--1);
     }
+    // https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
     #color-scheme {
       margin-left: var(--space-s);
       display: grid;
@@ -719,7 +752,7 @@ details {
   font-family: var(--sans-font);
   font-size: var(--step--1);
   color: var(--fg);
-  border-bottom: var(--space-4xs) solid var(--red1);
+  border-bottom: var(--space-3xs) solid var(--orange);
   // border-top: 1px solid var(--dark5);
   footer {
     @include u-container;
@@ -738,8 +771,12 @@ details {
     @include u-grid;
     .homepage-content {
       margin-top: var(--space-s);
+      margin-bottom: var(--space-s);
       grid-column: var(--content-begin) / var(--content-end);
     }
+  }
+  hr + h2 {
+    margin-top: 0;
   }
 }
 
@@ -750,6 +787,7 @@ details {
     .section-title {
       display: inline-block;
       margin-bottom: 0;
+      margin-top: 0;
       &::before {
         content: "§ ";
         color: var(--orange);
@@ -759,7 +797,7 @@ details {
         // content: "⁂"; asterism
         // content: "§";
         content: "·";
-        font-size: var(--step-0);
+        font-size: var(--step-1);
         color: var(--orange);
         margin-right: var(--space-2xs);
         margin-left: var(--space-2xs);
@@ -779,6 +817,7 @@ details {
   .page-title {
     display: inline-block;
     margin-bottom: var(--space-3xs);
+    margin-top: 0;
     &::after {
       /* content: "⸙"; */
       /* content: "·"; */
@@ -821,13 +860,14 @@ details {
 .article-title-container {
   @include u-container;
   @include u-grid;
-  margin-top: var(--space-s);
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-m);
   .article-title {
-    margin-bottom: var(--space-m);
     grid-column: var(--content-begin) / var(--content-end);
     h1 {
-      margin-bottom: var(--space-2xs);
       @include hashtag("#");
+      margin-bottom: var(--space-2xs);
+      margin-top: 0;
     }
     .article-description {
       font-size: var(--step-1);
@@ -835,7 +875,7 @@ details {
     }
     .article-date {
       color: var(--fg-dark);
-      font-size: var(--step--1);
+      font-size: var(--step-0);
       margin-bottom: 0;
     }
   }
@@ -844,11 +884,18 @@ details {
 .article-content-container {
   background-color: var(--bg-dark1);
   padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
 }
 
 .article-content {
   @include u-container;
   @include u-grid;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
   p {
     grid-column: var(--content-begin) / var(--content-end);
   }
@@ -883,7 +930,6 @@ details {
   }
   figure.popout {
     grid-column: var(--popout-begin) / var(--popout-end);
-    margin-top: var(--space-s); // A bit more space for popout images
   }
   figure {
     .gallery-grid {
@@ -921,17 +967,6 @@ details {
   }
   div.callout {
     grid-column: var(--inset-content-begin) / var(--inset-content-end);
-    background-color: var(--bg-dark);
-    padding: var(--space-s);
-    border-radius: var(--space-2xs);
-    border: 1px solid var(--dark5);
-    margin-bottom: var(--space-s);
-    .callout-title {
-      font-family: var(--sans-font);
-      font-size: var(--step-1);
-      font-weight: 700;
-      margin-bottom: var(--space-3xs);
-    }
   }
 }
 

@@ -248,15 +248,19 @@ If you're interested in any of these, email me and I'll be happy to elaborate.
     - [A Comparative Survey of Open-Source Application-Class RISC-V Processor Implementations - Alexander Dörflinger et. al.](https://publikationsserver.tu-braunschweig.de/servlets/MCRFileNodeServlet/dbbs_derivate_00048213/riscv-survey-cf-zweitpublikation_v2.pdf)
 - A Netlist-Level Power Estimation Tool (see below for rough notes)
 
-> - write a tool to estimate power from generic cell netlist + generic cell simulation waveforms
->     - use chiseltest to drive blackbox of generic Verilog to get generic VCD
->     - tool computes per-cycle power
->     - need a way to estimate power of a generic cell
->         - start with unitless estimate based on logical effort sizing model (relative to inverter)
->         - refine with per-pin transition power also based on simple cap model
->         - reference 1x inverter power from C_{gate} = W*L*C_{ox} (from MOS spice model) or C_{gate} = 1-3 fF/um
->         - later: derive generic cell power model from process .lib (undergrad project)
->     - reference power from Joules (using RTL VCD, rtlstim2gate, Joules synthesized circuit)
+{% callout(title="Rough Notes") %}
+
+- Write a tool to estimate power from generic cell netlist + generic cell simulation waveforms
+    - Use chiseltest to drive blackbox of generic Verilog to get generic VCD
+    - Tool computes per-cycle power
+- Need a way to estimate power of a generic cell
+    - Start with unitless estimate based on logical effort sizing model (relative to inverter)
+    - Refine with per-pin transition power also based on simple cap model
+    - Reference 1x inverter power from C_{gate} = W*L*C_{ox} (from MOS spice model) or C_{gate} = 1-3 fF/um
+    - Later: derive generic cell power model from process .lib (undergrad project)
+- Reference power from Joules (using RTL VCD, rtlstim2gate, Joules synthesized circuit)
+
+{% end %}
 
 This writeup is inspired by [Kevin Laeufer's undergrad research info document](Kevin_Laeufer_Undergraduate_Research_Project_Info.pdf) ([drive link](https://docs.google.com/presentation/d/1Tt3lf3G8HVGeqw_Ocha_-6l9IdUESixWX4t3oNUjPv0/edit?usp=sharing)).
 
@@ -267,20 +271,20 @@ The single pager I laid out at the research fair [can be found here](2022_09-Ugr
 This is just a reference for anyone interested in understanding my high-level agenda and objectives.
 If you can think of another project that's aligned with my efforts, please feel free to email me.
 
-> We will be concentrating our dynamic verification effort in 2 areas:
->
-> 1. High performance testbench APIs and a SystemVerilog/UVM parity DV environment
->     - The ideal DV environment should:
->         - Use a high-level general-purpose language to describe the testbench logic, including VIPs, scoreboards, and the constrained random stimulus generator
->         - It should enable polyglot testbenches (use of Python libraries for common workloads like linear algebra or ML or C/C++ to interface with driver/kernel code for co-simulation)
->         - It must achieve performance parity with the industry standard UVM + SystemVerilog + VCS/Xcelium toolchain, but be composed of open source components
->         - It must achieve feature parity with SystemVerilog (temporal property specification language and functional coverage APIs)
->     - The full scope of this problem is massive, so we will focus our work on a few areas:
->         - Extending our prior work in SimCommand to improve the feature set and testbench performance, in addition to performance improvements within chiseltest
->         - Standardizing interfaces throughout Chisel RTL codebases to enable unified VIPs and test environments
->         - Reviving cosimulation infrastructure for accelerators, such as Gemmini, to evaluate large workloads accurately without resorting to FPGA simulation
-> 2. Machine learning for coverage closure, bug hunting, constraint tuning, and regression suite construction
->     - We are investigating techniques for predicting RTL-level coverage from stimulus / random generator features
->     - We will evaluate different methods for solving the 'missing data problem' associated with blackbox supervised learning approaches
->     - We will investigate the utility of fine-grained input features in predicting complex output features such as time-domain coverage metrics
->     - We will use this infrastructure to evaluate coverage-model-guided bug hunting / state exploration techniques and constraint tuning approaches for targeting specific coverpoints
+We will be concentrating our dynamic verification effort in 2 areas:
+
+1. High performance testbench APIs and a SystemVerilog/UVM parity DV environment
+    - The ideal DV environment should:
+        - Use a high-level general-purpose language to describe the testbench logic, including VIPs, scoreboards, and the constrained random stimulus generator
+        - It should enable polyglot testbenches (use of Python libraries for common workloads like linear algebra or ML or C/C++ to interface with driver/kernel code for co-simulation)
+        - It must achieve performance parity with the industry standard UVM + SystemVerilog + VCS/Xcelium toolchain, but be composed of open source components
+        - It must achieve feature parity with SystemVerilog (temporal property specification language and functional coverage APIs)
+    - The full scope of this problem is massive, so we will focus our work on a few areas:
+        - Extending our prior work in SimCommand to improve the feature set and testbench performance, in addition to performance improvements within chiseltest
+        - Standardizing interfaces throughout Chisel RTL codebases to enable unified VIPs and test environments
+        - Reviving cosimulation infrastructure for accelerators, such as Gemmini, to evaluate large workloads accurately without resorting to FPGA simulation
+2. Machine learning for coverage closure, bug hunting, constraint tuning, and regression suite construction
+    - We are investigating techniques for predicting RTL-level coverage from stimulus / random generator features
+    - We will evaluate different methods for solving the 'missing data problem' associated with blackbox supervised learning approaches
+    - We will investigate the utility of fine-grained input features in predicting complex output features such as time-domain coverage metrics
+    - We will use this infrastructure to evaluate coverage-model-guided bug hunting / state exploration techniques and constraint tuning approaches for targeting specific coverpoints

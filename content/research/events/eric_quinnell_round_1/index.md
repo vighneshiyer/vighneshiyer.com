@@ -7,7 +7,9 @@ slug = "eric-quinnell-from-tesla-on-variable-length-isas-cpus-fsd-dojo"
 description = "A discussion on variable-length ISAs, high-performance CPU μArch, FSD, Dojo, and academic computer architecture research"
 +++
 
-**Disclaimer**: these are my words, not Eric's. I have used some creative license.
+{% callout(title="Disclaimer") %}
+These are my words, not Eric's. I have used some creative license.
+{% end %}
 
 Eric Quinnell from Tesla came to speak to the SLICE lab on 9/28/2022. [Download his slides here.](Eric_Quinnell_Tesla_Talk.pdf)
 
