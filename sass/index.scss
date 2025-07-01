@@ -565,7 +565,7 @@ a {
   display: inline;
   text-decoration: none;
   color: var(--accent-color);
-  --bar-height: 0.2cap;
+  --bar-height: 0.15cap;
   --bar-offset: 0.1cap;
   background: linear-gradient(45deg,var(--accent-color-dark) 10%,var(--accent-color)) no-repeat right bottom / 0 var(--bar-height);
   background-position-x: left;
@@ -642,7 +642,11 @@ div.callout {
     font-family: var(--sans-font);
     font-size: var(--step-1);
     font-weight: 700;
-    margin-bottom: var(--space-3xs);
+    margin-bottom: var(--space-2xs);
+    line-height: 1;
+  }
+  .callout-content > *:last-child {
+    margin-bottom: 0;
   }
 }
 
