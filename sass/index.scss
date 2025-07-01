@@ -69,6 +69,8 @@ $max-font-size: 19;
 
   --grid-middle: 6;
   @media screen and (max-width: 600px) {
+    --inset-content-begin: 2;
+    --inset-content-begin: 12;
     --content-begin: 1;
     --content-end: 13;
     --popout-begin: 1;
@@ -245,8 +247,6 @@ $tn-light-bg: $tn-light-bg-dark1;
 
 :root {
   color-scheme: --var(--color-scheme);
-  transition-duration: 1s;
-  transition-property: background-color, background, color;
   @include color-scheme-light;
 
   /* page preference is "dark" */
@@ -565,8 +565,8 @@ a {
   display: inline;
   text-decoration: none;
   color: var(--accent-color);
-  --bar-height: 0.2ex;
-  --bar-offset: 0.2ex;
+  --bar-height: 0.2cap;
+  --bar-offset: 0.1cap;
   background: linear-gradient(45deg,var(--accent-color-dark) 10%,var(--accent-color)) no-repeat right bottom / 0 var(--bar-height);
   background-position-x: left;
   background-position-y: bottom var(--bar-offset);
@@ -587,20 +587,11 @@ a:has(img) {
   }
 }
 
-a.anchor {
-  background: none;
-  color: inherit;
-  &:hover {
-    color: var(--accent-color);
-  }
-}
-
 ::selection {
   background-color: var(--bg-highlight);
 }
 
 pre {
-  // margin-top: var(--space-m);
   margin-bottom: var(--space-m);
   code {
     font-family: var(--mono-font);
@@ -623,7 +614,6 @@ p > code {
 }
 
 details {
-  // margin-top: var(--space-s);
   margin-bottom: var(--space-s);
   padding-left: var(--space-l);
   padding-right: var(--space-l);
@@ -661,7 +651,6 @@ div.callout {
   @include u-grid;
   width: 100%;
   background-color: var(--bg-dark);
-  // border-bottom: 1px solid var(--dark5);
   font-family: var(--sans-font);
   padding-top: var(--space-2xs);
   padding-bottom: var(--space-2xs);
@@ -850,12 +839,33 @@ div.callout {
     color: var(--accent-color);
     opacity: 0.5;
     margin-right: var(--space-2xs);
-    transition: opacity 0.1s ease-in-out, text-decoration 0.1s ease-in-out;
   }
+}
+
+a.anchor {
+  background: none;
+  color: inherit;
+  transition: color 0.1s ease-in-out;
+  
   &:hover {
-    &::before {
-      opacity: 0.75;
-    }
+    color: var(--accent-color);
+  }
+  
+  &::after {
+    // content: "🔗";
+    // content: "☉";
+    // content: "✶";
+    content: "⁂";
+    margin-left: var(--space-2xs);
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    position: relative;
+    top: -0.15cap;
+    font-size: 75%;
+  }
+  
+  &:hover::after {
+    opacity: 1;
   }
 }
 
