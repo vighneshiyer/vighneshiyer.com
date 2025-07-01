@@ -259,6 +259,9 @@ $tn-light-bg: $tn-light-bg-dark1;
       @include color-scheme-dark;
     }
   }
+  --accent-color: var(--orange);
+  --accent-color-dark: var(--red1);
+  --accent-color-2: var(--blue);
 }
 
 @import "../node_modules/highlight.js/scss/tokyo-night-light.scss";
@@ -429,7 +432,7 @@ ul > li:before {
   // content: "◍";
   content: "◉";
   // content: "›";
-  color: var(--blue);
+  color: var(--accent-color-2);
   font-size: var(--step-0);;
   position: absolute;
   margin-left: calc(var(--space-l) * -1);
@@ -469,7 +472,7 @@ ol {
 
 ol > li::before {
   content: counter(list-item, custom-circled);
-  color: var(--blue);
+  color: var(--accent-color-2);
   font-size: var(--step-2);
   position: absolute;
   margin-left: calc(var(--space-l) * -1);
@@ -517,7 +520,7 @@ blockquote {
   padding-right: var(--space-m);
   margin-left: var(--space-s);
   margin-right: var(--space-s);
-  border-left: var(--space-3xs) solid var(--orange);
+  border-left: var(--space-3xs) solid var(--accent-color);
   margin-bottom: var(--space-s);
 }
 
@@ -541,7 +544,7 @@ figure {
 hr {
   border: none;
   border-top: 3px double var(--comment);
-  color: var(--orange);
+  color: var(--accent-color);
   overflow: visible;
   text-align: center;
   height: 1ex;
@@ -561,16 +564,16 @@ a {
   position: relative;
   display: inline;
   text-decoration: none;
-  color: var(--orange);
+  color: var(--accent-color);
   --bar-height: 0.2ex;
   --bar-offset: 0.2ex;
-  background: linear-gradient(45deg,var(--red1) 10%,var(--orange)) no-repeat right bottom / 0 var(--bar-height);
+  background: linear-gradient(45deg,var(--accent-color-dark) 10%,var(--accent-color)) no-repeat right bottom / 0 var(--bar-height);
   background-position-x: left;
   background-position-y: bottom var(--bar-offset);
   transition: background-size 0.1s ease-in-out, color 0.1s ease-in-out;
   // padding-bottom: var(--bar-offset);
   &:hover {
-    color: var(--red1);
+    color: var(--accent-color-dark);
     background-size: 100% var(--bar-height);
   }
 }
@@ -588,7 +591,7 @@ a.anchor {
   background: none;
   color: inherit;
   &:hover {
-    color: var(--orange);
+    color: var(--accent-color);
   }
 }
 
@@ -752,7 +755,7 @@ div.callout {
   font-family: var(--sans-font);
   font-size: var(--step--1);
   color: var(--fg);
-  border-bottom: var(--space-3xs) solid var(--orange);
+  border-bottom: var(--space-3xs) solid var(--accent-color);
   // border-top: 1px solid var(--dark5);
   footer {
     @include u-container;
@@ -790,7 +793,7 @@ div.callout {
       margin-top: 0;
       &::before {
         content: "§ ";
-        color: var(--orange);
+        color: var(--accent-color);
         margin-left: -1.4ch;
       }
       &::after {
@@ -798,7 +801,7 @@ div.callout {
         // content: "§";
         content: "·";
         font-size: var(--step-1);
-        color: var(--orange);
+        color: var(--accent-color);
         margin-right: var(--space-2xs);
         margin-left: var(--space-2xs);
       }
@@ -825,7 +828,7 @@ div.callout {
       content: "·";
       margin-right: var(--space-2xs);
       margin-left: var(--space-2xs);
-      color: var(--orange);
+      color: var(--accent-color);
     }
   }
   .page-date {
@@ -844,7 +847,7 @@ div.callout {
 @mixin hashtag($content) {
   &::before {
     content: $content;
-    color: var(--orange);
+    color: var(--accent-color);
     opacity: 0.5;
     margin-right: var(--space-2xs);
     transition: opacity 0.1s ease-in-out, text-decoration 0.1s ease-in-out;
@@ -852,7 +855,6 @@ div.callout {
   &:hover {
     &::before {
       opacity: 0.75;
-      // text-decoration: underline var(--space-4xs) var(--red);
     }
   }
 }
@@ -989,7 +991,7 @@ div.callout {
 /* This badge type is only used on the homepage */
 .badge-new {
   @include badge;
-  background-color: var(--blue);
+  background-color: var(--accent-color-2);
   color: var(--bg-dark1);
   position: relative;
   top: -0.4ex;
