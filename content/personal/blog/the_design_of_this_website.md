@@ -202,6 +202,7 @@ It's much easier to build everything yourself in a minimal way, use CSS variable
   - https://sqlsync.dev/posts/stop-syncing-everything/ (vertical rhythm, sidenotes, callouts, colorscheme switcher)
   - https://jakelazaroff.com/words/isomorphic-web-components/ (sidenotes, code blocks / inline code)
   - https://www.shadaj.me/writing/distributed-programming-stalled (sidenotes)
+  - https://cacm.acm.org/research/defying-moore-envisioning-the-economics-of-a-semiconductor-revolution-through-12nm-specialization/ (left-hand TOC)
 
 ### Front Page
 
