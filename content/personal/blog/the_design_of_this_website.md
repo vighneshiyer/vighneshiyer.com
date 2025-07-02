@@ -1,11 +1,118 @@
 +++
 title = "The Design of This Website"
 date = 2025-07-01
-draft = true
+draft = false
 description = "My design process, inspirational websites, fonts, colorschemes, layouts, and more"
 +++
 
-# Website Design
+My old website contained all the same articles as this current one, but I didn't like how it looked.
+Back then (in 2022), I still used [zola](https://www.getzola.org/) as the static site generator, [pico.css](https://picocss.com/) v1.5 for the base template, and I stitched together my own top-level SCSS and HTML template.
+For this new website design, I decided to continue using zola, but re-do the CSS from scratch.
+
+## My Design Process
+
+To begin with, one must first be inspired by those superior to him.
+Here are my main inspirations.
+
+Firstly, [Butterick's Practical Typography](https://practicaltypography.com/) is excellent, in particular his [key rules](https://practicaltypography.com/summary-of-key-rules.html).
+His website's vertical rhythm is ideal, his [free font suggestions](https://practicaltypography.com/font-basics.html) are good, and his [ordered and unordered list styling](https://practicaltypography.com/introduction.html) is clean.
+My other top inspirations include:
+
+- [Fatih Arslan's blog](https://arslan.io/2025/05/12/barbican-estate/) (images, galleries, popouts using [photoswipe](https://photoswipe.com/))
+- [magick.css](https://css.winterveil.net/) (typography, blockquotes, small-caps headings, fonts, sidenotes)
+- [Unison's documentation](https://www.unison-lang.org/docs/the-big-idea/) (callouts, sidenotes, left-hand TOC)
+- [Tufte CSS](https://edwardtufte.github.io/tufte-css/) (sidenotes, fonts, vertical rhythm)
+- [scripter.co](https://scripter.co/sidenotes-using-only-css/) (sidenotes, headings)
+- [sqlsync.dev](https://sqlsync.dev/posts/stop-syncing-everything/) (vertical rhythm, sidenotes, callouts, colorscheme switcher)
+- [Jake Lazaroff's blog](https://jakelazaroff.com/words/isomorphic-web-components/) (sidenotes, code blocks / inline code)
+- [Shadaj Laddad's blog](https://www.shadaj.me/writing/distributed-programming-stalled) (sidenotes)
+- [CACM blog](https://cacm.acm.org/research/defying-moore-envisioning-the-economics-of-a-semiconductor-revolution-through-12nm-specialization/) (left-hand TOC)
+
+Here is the design process I went through.
+
+1. Pick the font family
+    - I wanted a serif font for the body, a sans-serif for the headings and other thematic elements, and a monospaced font for code segments
+    - I also wanted a high quality font available on Google Fonts and a consistent style among all 3 fonts
+    - I decided on [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4), [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3), and [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro), all part of the same font family
+2. Pick the colors
+    -
+2. Setup the parameters for the body text
+  - I created a basic HTML page with one column and used text from my one of my existing articles. The text should contain 3 levels of headings (h1 - title, h2 - section, h3 - subsection).
+  - I wanted to nail down the appropriate
+  - the font size, line spacing, paragraph spacing, headings, line width, letter spacing, colorscheme (both light and dark). Get some text on a page and play with this using Utopia flexible spacing and font sizing. Decide on the right fonts (sans, serif, headings, small caps), visual tweaks, and colors.
+3. Use Utopia
+2. Design the other common thematic elements
+  - It should also contain other thematic elements you want like subheadings / short summaries which sit under h1
+  - Lists (ul / ol), blockquotes, callouts, code segments / monospaced fonts, math, images with captions, galleries
+
+### Front Page
+
+{% code(language="plaintext") %}
+Header
+Vighnesh Iyer       email, Github, LinkedIn, HN
+---
+Research articles organized by section (blog, philosophy, ...) (moasic 2 column layout)
+Article name (date, month abbreviated / year) (NEW! badge made visible via javascript)
+  Short description / summary in 1 line
+---
+About Me | Pic
+Short CV history, CV link, links (slice, bwrc, github, comic)
+---
+Projects (+ links to research articles with in progress work and finished work)
+Talks / Slides (links to HTML slides)
+Publications (+ Posters, Preprints)
+---
+Personal articles by section
+---
+Footer
+{% end %}
+
+### Article Pages
+
+#### Layout
+
+- Tufte-style is crucial, sidenotes keep the main article from being too cluttered with points in parentheses
+  - magick.css sidenotes will drive everything (I like having right-hand sidenotes fold into the main article)
+- 3 breakpoints
+  - Full width: TOC | Main content | Sidenotes (Tufte-style)
+  - Next point: TOC -> Main content | Sidenotes
+  - Mobile: TOC -> Main content (sidenotes superscript clickable to reveal underneath the paragraph)
+  - Custom grid with viewport-oriented max width, popout images
+- Contrast color article heading with summary (like https://yuxi-liu-wired.github.io/essays/posts/cyc/)
+  - With author, modified, and published timestamps
+- Looking at all the tufte-style websites, I realized that the TOC and sidenotes are placed using `display: absolute | relative` and NOT using CSS grid, I'll do that too and keep the image popouts cleared by hand
+  - Also, I will keep the article centered, and offset the sidenotes and TOC
+
+#### Components
+
+- Headings
+  - Hashes on headings to indicate nesting levels
+- Typography
+  - Fluid font sizing at full-width breakpoint. Fixed sizing at other 2 breakpoints.
+- Figures
+  - Fixed width into the article main body, captions
+- Callouts (like https://www.unison-lang.org/docs/the-big-idea/)
+  - For article updates / retrospectives and outbound relevant links
+- Blockquotes
+  - Need to make a custom short-tag with a author/attribution signoff + optional caption
+- Accordion blocks
+  - TBD
+- Code blocks (use a custom Tera template)
+  - File name + language at the top bar
+  - Internal text highlighted via highlight.js on the client side
+  - Don't use the default Zola highlighter that works server-side (it is just too underpowered)
+  - Use Fira Code or Source Code Pro
+  - Inspiration: https://tavianator.com/2025/configure.html
+- Left sidebar TOC
+  - Use the nav component from picocss in an aside (see the picocss docs themselves)
+  - Generate the nav with zola templates
+  - Inject javascript to highlight and open/close the navigation elements (custom)
+  - ~~Then generate that with tocbot (https://github.com/tscanlin/tocbot)~~
+- Taxonomy badges: each taxonomy has a set of terms
+  - e.g. language is a *taxonomy* and Python, Scala, C++, Rust are *terms*
+  - The badge should look like `|Language|Scala|`.
+  - Each taxonomy should have an assigned color
+  - The term should be uncolored or have its own color scheme (this can become too messy to parse)
 
 ## Inspiration
 
@@ -22,7 +129,7 @@ I will try to keep this enumeration short since there are too many websites to l
   - This is suitable for fluid font size rhythm based on viewport width interpolation using CSS `clamp`
 - Typography
   - https://practicaltypography.com/line-spacing.html (an excellent website)
-  - The Elements of Typography Style
+  - The Elements of Typographic Style
   - Thinking with Type
 - Grids
   - Making and Breaking the Grid
@@ -129,6 +236,7 @@ It's much easier to build everything yourself in a minimal way, use CSS variable
 - https://www.unison-lang.org/docs/the-big-idea/
   - Beautiful: sidebar for footnotes on right (I would elide this), menubar on left, centered text, perfect code blocks, beautiful callouts, shallow per-article heading hierarchy (2 levels only), responsiveness is ideal (5 breakpoints)
   - Similar website: https://snarky.ca/how-virtual-environments-work/
+- https://docs.modular.com/mojo/manual/get-started/
 
 ### Exotic
 
@@ -181,94 +289,3 @@ It's much easier to build everything yourself in a minimal way, use CSS variable
 - Commento
 - https://utteranc.es/ (Github issue based comment system - very cool, no special hosting required!) although you give up control of the comment data
 - https://github.com/umputun/remark42 (remark42 seems very nice and easy, anon commenting is first class supported as well as other SSO offerings)
-
-## My Design
-
-1. Pick the font(s), font size, line spacing, paragraph spacing, headings, line width, letter spacing, colorscheme (both light and dark). Get some text on a page and play with this using Utopia flexible spacing and font sizing. Decide on the right fonts (sans, serif, headings, small caps), visual tweaks, and colors.
-  - Your test page should contain some real text you want to publish with 3 levels of headings (title - h1, only one, section - h2, subsection - h3) and maybe h4 which should not contain any line breaks.
-  - It should also contain other thematic elements you want like subheadings / short summaries which sit under h1
-  - https://practicaltypography.com/typography-in-ten-minutes.html
-  - https://practicaltypography.com/summary-of-key-rules.html
-2. Design the other common thematic elements
-  - Lists (ul / ol), blockquotes, callouts, code segments / monospaced fonts, math, images with captions, galleries
-
-- Main inspirations
-  - https://practicaltypography.com/websites.html (general typography, ol/ul)
-  - https://arslan.io/2025/05/12/barbican-estate/ (for images, galleries, popouts)
-  - https://css.winterveil.net/#extras
-  - https://www.unison-lang.org/docs/the-big-idea/ (callouts, sidenotes, left-hand TOC)
-  - https://edwardtufte.github.io/tufte-css/ (sidenotes, fonts)
-  - https://scripter.co/sidenotes-using-only-css/ (sidenotes)
-  - https://sqlsync.dev/posts/stop-syncing-everything/ (vertical rhythm, sidenotes, callouts, colorscheme switcher)
-  - https://jakelazaroff.com/words/isomorphic-web-components/ (sidenotes, code blocks / inline code)
-  - https://www.shadaj.me/writing/distributed-programming-stalled (sidenotes)
-  - https://cacm.acm.org/research/defying-moore-envisioning-the-economics-of-a-semiconductor-revolution-through-12nm-specialization/ (left-hand TOC)
-
-### Front Page
-
-```text
-Header
-Vighnesh Iyer       email, Github, LinkedIn, HN
----
-Research articles organized by section (blog, philosophy, ...) (moasic 2 column layout)
-Article name (date, month abbreviated / year) (NEW! badge made visible via javascript)
-  Short description / summary in 1 line
----
-About Me | Pic
-Short CV history, CV link, links (slice, bwrc, github, comic)
----
-Projects (+ links to research articles with in progress work and finished work)
-Talks / Slides (links to HTML slides)
-Publications (+ Posters, Preprints)
----
-Personal articles by section
----
-Footer
-```
-
-### Article Pages
-
-#### Layout
-
-- Tufte-style is crucial, sidenotes keep the main article from being too cluttered with points in parentheses
-  - magick.css sidenotes will drive everything (I like having right-hand sidenotes fold into the main article)
-- 3 breakpoints
-  - Full width: TOC | Main content | Sidenotes (Tufte-style)
-  - Next point: TOC -> Main content | Sidenotes
-  - Mobile: TOC -> Main content (sidenotes superscript clickable to reveal underneath the paragraph)
-  - Custom grid with viewport-oriented max width, popout images
-- Contrast color article heading with summary (like https://yuxi-liu-wired.github.io/essays/posts/cyc/)
-  - With author, modified, and published timestamps
-- Looking at all the tufte-style websites, I realized that the TOC and sidenotes are placed using `display: absolute | relative` and NOT using CSS grid, I'll do that too and keep the image popouts cleared by hand
-  - Also, I will keep the article centered, and offset the sidenotes and TOC
-
-#### Components
-
-- Headings
-  - Hashes on headings to indicate nesting levels
-- Typography
-  - Fluid font sizing at full-width breakpoint. Fixed sizing at other 2 breakpoints.
-- Figures
-  - Fixed width into the article main body, captions
-- Callouts (like https://www.unison-lang.org/docs/the-big-idea/)
-  - For article updates / retrospectives and outbound relevant links
-- Blockquotes
-  - Need to make a custom short-tag with a author/attribution signoff + optional caption
-- Accordion blocks
-  - TBD
-- Code blocks (use a custom Tera template)
-  - File name + language at the top bar
-  - Internal text highlighted via highlight.js on the client side
-  - Don't use the default Zola highlighter that works server-side (it is just too underpowered)
-  - Use Fira Code or Source Code Pro
-  - Inspiration: https://tavianator.com/2025/configure.html
-- Left sidebar TOC
-  - Use the nav component from picocss in an aside (see the picocss docs themselves)
-  - Generate the nav with zola templates
-  - Inject javascript to highlight and open/close the navigation elements (custom)
-  - ~~Then generate that with tocbot (https://github.com/tscanlin/tocbot)~~
-- Taxonomy badges: each taxonomy has a set of terms
-  - e.g. language is a *taxonomy* and Python, Scala, C++, Rust are *terms*
-  - The badge should look like `|Language|Scala|`.
-  - Each taxonomy should have an assigned color
-  - The term should be uncolored or have its own color scheme (this can become too messy to parse)
