@@ -59,6 +59,9 @@ $max-font-size: 19;
   grid-template-columns: repeat(var(--grid-columns), 1fr);
 }
 
+// Be generous and cover all mobile devices
+$mobile-breakpoint: 600px;
+
 :root {
   --popout-begin: 2;
   --content-begin: 3;
@@ -66,11 +69,11 @@ $max-font-size: 19;
   --inset-content-end: 10;
   --content-end: 11;
   --popout-end: 12;
-
   --grid-middle: 6;
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: $mobile-breakpoint) {
     --inset-content-begin: 2;
-    --inset-content-begin: 12;
+    --inset-content-end: 12;
     --content-begin: 1;
     --content-end: 13;
     --popout-begin: 1;
@@ -378,6 +381,12 @@ h4 {
   margin-bottom: var(--space-s);
 }
 
+h5 {
+  font-size: var(--step-0);
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-s);
+}
+
 // Whatever element comes immediately before a heading should not contribute to the heading's margin-top
 @each $element in $page-elements {
   #{$element}:has(+ h2) {
@@ -397,11 +406,21 @@ h4 {
   }
 }
 
+@each $element in $page-elements {
+  #{$element}:has(+ h5) {
+    margin-bottom: 0;
+  }
+}
+
 h2 + h3 {
   margin-top: 0;
 }
 
 h3 + h4 {
+  margin-top: 0;
+}
+
+h4 + h5 {
   margin-top: 0;
 }
 
@@ -823,6 +842,12 @@ div.callout {
   }
 }
 
+@media screen and (max-width: $mobile-breakpoint) {
+  .section .section-header .section-title::before {
+    display: none;
+  }
+}
+
 .page {
   .page-title {
     display: inline-block;
@@ -934,7 +959,7 @@ a.anchor {
     grid-column: var(--content-begin) / var(--content-end);
   }
 
-  h2, h3, h4 {
+  h2, h3, h4, h5 {
     grid-column: var(--content-begin) / var(--content-end);
     display: inline-block;
     width: fit-content;
@@ -950,6 +975,10 @@ a.anchor {
 
   h4 {
     @include hashtag("####");
+  }
+
+  h5 {
+    @include hashtag("#####");
   }
 
   blockquote {

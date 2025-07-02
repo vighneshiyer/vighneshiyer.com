@@ -535,7 +535,7 @@ Before I analyze the rebuttal written by the Nature authors, I'll give my high-l
 
 #### Technical Questions
 
-<strong>Is a turn-by-turn game the proper formulation for the chip floorplanning / mixed-placement problem?</strong>
+##### Is a turn-by-turn game the proper formulation for the chip floorplanning / mixed-placement problem?
 
 Unlike chess or Go, *automatic* chip floorplanning isn't naturally a turn-by-turn game.
 Instead, you have a bunch of hard macros and soft standard cell clusters and you must optimally place them all on an empty canvas (or in some cases, with fixed blockages on the canvas).
@@ -556,7 +556,7 @@ Instinctively, it seems that casting an optimization problem as a turn-by-turn g
 
 <!--While routing can be thought of as a game easily, it is hard to put floorplanning in the same box-->
 
-<strong>How does the RL formulation of floorplanning get around the limitations of a coarse placement grid?</strong>
+##### How does the RL formulation of floorplanning get around the limitations of a coarse placement grid?
 
 <!--To train the policy network, which receives a reward at the end of a trajectory, we need to backprop through all the decisions made by the network.-->
 The RL policy network outputs a probability distribution over the chip canvas of where the macro under consideration ought to be placed.
@@ -570,7 +570,7 @@ However, this 'gridding' necessarily degrades QoR, since it makes tight macro pa
 
 While there may be ways to get around this problem, it does seem intrinsic to a discrete action space.
 
-<strong>What does 'pre-training' really mean?</strong>
+##### What does 'pre-training' really mean?
 
 <!--
 - What does 'pre-training' really mean? What is the 'training' data? Consider both the state embedding and policy networks. What is actually being learned? What is accomplished by training to convergence, and what is lost if training is stopped beforehand?
@@ -602,20 +602,20 @@ fixed flow, no feedback from future steps (unlike commercial CAD tools e.g. Fusi
 
 #### Non-Technical Questions
 
-<strong>Why did the Googlers publish their work in Nature?</strong>
+##### Why did the Googlers publish their work in Nature?
 
 Nature, as its name suggests, is a journal for publishing innovative findings in the *natural sciences* (there is plenty of engineering too, but it is usually in the context of enabling a fundamental scientific innovation).
 AlphaChip is a pure engineering project for a very specific problem in EDA CAD; it isn't a good fit for Nature.
 If the authors had published this paper in DAC, ICCAD, or TCAD, I'm certain it would have been subject to much less criticism post-publication, although it would have been more heavily scrutinized during review.
 <!--By pushing the paper to Nature, presumably for clout-chasing purposes, the authors can get away without evaluating on the standard set of academic placement benchmarks.-->
 
-<strong>Why are the Google authors so adamant in not conceding anything?</strong>
+##### Why are the Google authors so adamant in not conceding anything?
 
 Typically, the authors of a paper are the first ones to point out its flaws, limitations, and caveats.
 It is common that the people most critical of a paper are the authors themselves.
 This case is an anomaly: the authors are uncritical of their own work, do not discuss any of its downsides, and portray it as strictly superior to all other work in the domain, including commercial offerings.
 
-<strong>Why is Jeff Dean acting so hostile towards Igor Markov?</strong>
+##### Why is Jeff Dean acting so hostile towards Igor Markov?
 
 <!--What is Jeff Dean doing? Why is he burning his reputation?-->
 
