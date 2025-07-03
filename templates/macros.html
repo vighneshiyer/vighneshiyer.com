@@ -4,7 +4,7 @@
     {% if page.extra.new %}
       <span class="badge-new">NEW</span>
     {% endif %}
-    <p class="page-description">{{ page.description }}</p>
+    <div class="page-description">{{ page.description | markdown | safe }}</div>
   </div>
 {% endmacro page_summary %}
 
