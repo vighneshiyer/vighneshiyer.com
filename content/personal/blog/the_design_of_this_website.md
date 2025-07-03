@@ -3,6 +3,9 @@ title = "The Design of This Website"
 date = 2025-07-01
 draft = false
 description = "My design process, inspirational websites, fonts, colorschemes, layouts, and more"
+
+[extra]
+new = true
 +++
 
 My old website contained all the same articles as this current one, but I didn't like how it looked.

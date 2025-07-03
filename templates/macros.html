@@ -1,6 +1,9 @@
 {% macro page_summary(page) %}
   <div class="page">
     <h3 class="page-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3><span class="page-date"><time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %Y") }}</time></span>
+    {% if page.extra.new %}
+      <span class="badge-new">NEW</span>
+    {% endif %}
     <p class="page-description">{{ page.description }}</p>
   </div>
 {% endmacro page_summary %}
