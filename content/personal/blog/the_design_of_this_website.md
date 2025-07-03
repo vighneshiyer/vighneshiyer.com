@@ -227,6 +227,7 @@ Here are some more nice center column blogs, but they are more _vanilla_ than th
 - [michael.stapelberg.ch](https://michael.stapelberg.ch/posts/2017-12-11-dell-up3218k/)
 - [chiraaggohel.com](https://chiraaggohel.com/posts/llms-eda/) (clean code blocks, nice Q&A blockquotes with colored bars)
 - [answer.ai](https://www.answer.ai/posts/2025-01-08-devin.html#what-is-devin) (vanilla and clean, nice right-aligned TOC)
+- [zerocontradictions.net](https://zerocontradictions.net/epistemology/representationalism) (argument and rebuttal / pro-con blockquotes)
 - [fetchfox.ai](https://fetchfox.ai/a/founding-engineer-compensation) (clean single column, nice fonts)
 - [blog.joway.io](https://blog.joway.io/posts/golang-rethink-program-in-realworld/) (I like the header)
 - [peteris.rocks](https://peteris.rocks/blog/htop/) (unique, full width code, simple, code oriented)
