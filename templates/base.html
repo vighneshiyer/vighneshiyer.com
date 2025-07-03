@@ -44,18 +44,18 @@
       document.addEventListener('DOMContentLoaded', function() {
         const lightRadio = document.querySelector('#color-scheme .light');
         const darkRadio = document.querySelector('#color-scheme .dark');
-        
+
         // Function to get system preference
         function getSystemColorScheme() {
           return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
-        
+
         // Initialize color scheme
         function initializeColorScheme() {
           const savedScheme = localStorage.getItem('color-scheme');
           const systemScheme = getSystemColorScheme();
           const currentScheme = savedScheme || systemScheme;
-          
+
           // Check the appropriate radio button
           if (currentScheme === 'light') {
             lightRadio.checked = true;
@@ -65,7 +65,7 @@
             lightRadio.checked = false;
           }
         }
-        
+
         // Event listeners for radio buttons
         lightRadio.addEventListener('click', function() {
           console.log('Light radio clicked');
@@ -73,14 +73,14 @@
           lightRadio.checked = true;
           darkRadio.checked = false;
         });
-        
+
         darkRadio.addEventListener('click', function() {
           console.log('Dark radio clicked');
           localStorage.setItem('color-scheme', 'dark');
           darkRadio.checked = true;
           lightRadio.checked = false;
         });
-        
+
         // Initialize on page load
         initializeColorScheme();
       });
