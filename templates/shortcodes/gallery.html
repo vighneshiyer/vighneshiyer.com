@@ -44,5 +44,5 @@
       </div>
     {% endfor %}
   </div>
-  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+  {% if caption %}<figcaption>{{ caption | markdown | safe }}</figcaption>{% endif %}
 </figure>

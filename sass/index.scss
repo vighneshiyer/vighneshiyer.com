@@ -557,6 +557,13 @@ figure {
   video {
     margin: auto;
   }
+  figcaption {
+    margin-top: var(--space-s);
+    > p {
+      color: var(--fg-dark);
+      font-size: var(--step--1);
+    }
+  }
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr
@@ -1032,6 +1039,11 @@ a.anchor {
   }
   div.callout {
     grid-column: var(--inset-content-begin) / var(--inset-content-end);
+  }
+  div.twitter-tweet {
+    grid-column: var(--content-begin) / var(--content-end);
+    margin: auto;
+    margin-bottom: var(--space-m);
   }
 }
 

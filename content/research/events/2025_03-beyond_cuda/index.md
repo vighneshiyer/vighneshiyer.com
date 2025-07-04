@@ -448,31 +448,86 @@ Nice.
 
 ### Inference Beyond CUDA
 
+{{ gallery(images=[
+    "inference_beyond_cuda.jpg",
+    "inference_beyond_cuda_2.jpg",
+], popout=true) }}
+
+At this point, the audience is completely restless and is making lots of noise.
+The panels have gone on for too long and the event is way behind schedule.
+But the most important talk is coming.
+
+Introducing, the panel of Will Beauchamp of [Chai Research](https://www.chai-research.com/), Kyle Bell of Tensorwave, and Paul Merolla of [MK1](https://mk1.ai/) ([see the recording](https://tensorwave.com/blog/scaling-ai-inference-on-amd-insights-from-chai-tensorwave-and-mk1)).
+
+Kyle didn't say much, and Paul focused on his optimized inference service MK1.
+He claimed that MI300X + MK1 > H100 and that that MI300X outperforms H100 by 2x in request throughput.
+MK1 handles the inference service for Chai, which used to use NVIDIA, but now has supposedly moved to AMD.
+MK1 can handle [CAG](https://arxiv.org/html/2412.15605v1) (cache augmented generation) with MI300X where the higher memory capacity makes this easier.
+Paul showed his inference setup has 2.25x faster all-reduce on 2x/4x MI300X vs RCCL ([quickreduce](https://github.com/mk1-project/quickreduce)).
+
+<!--, Kyle: precompute system prompt, in-context learning to avoid finetuning
+  - With MI300X high memory capacity, we can do this easier: https://arxiv.org/html/2412.15605v1
+-->
+
+And then we have to talk about Will, the founder of Chai Research.
+
+{{ image(path="chai_ai_staff.png", width="80%") }}
+
+You see, Chai is a very serious company, with very skilled ex-quant researchers, all from highly ranked universities.
+They are paid a [hefty sum](https://x.com/chai_research/status/1902127443605156198?t=UHr8YzdwGgWPllkjIuTgGA) of $500-750k in cash + equity.
+Their product, as Will puts it, is a "consumer platform for AI".
+Now, what does that mean?
+
+His company builds an app: [Chai AI](https://play.google.com/store/apps/details?id=com.Beauchamp.Messenger.external&hl=en_US&pli=1)
+
+> Our app revolutionizes the way we interact with AI chatbots. With our advanced technology, our chatbots think and reply like real characters, complete with authentic voices. You can choose from a massive selection of characters, each with their own unique voice and personality. Whether you're chatting with your favorite celebrity, a beloved character from a movie or TV show, or a historical figure, you'll feel like you're talking to a real person.
+
+{{ image(path="chai_ai.jpg", width="50%", caption="Prompt extraction from Chai AI. Yes, it's just an LLM wrapper.") }}
+
+So Will, why did you start Chai AI?
+You see, "all of AI has been shaped by a small group of people (old men, the West)", but maybe teenage girls need access too.
+He notes, "teenage girls can create better makeup advice vs our AI" and we can incorporate that into the chat generation.
+"Teenagers are spending 1.5 hrs a day interacting with AI. This is a monumental shift".
+
+{{ gallery(images=[
+    "chai_ai_flywheel.png",
+    "chai_ai_retention.png",
+], popout=true) }}
+
+As you can see from the [Chai Research 2025 Roadmap](https://www.chai-research.com/chai_roadmap_2025.pdf) they're doing quite a good job with teenager 'retention'.
+These very honorable ex-quants have been spending their days [optimizing LLM tokens](https://arxiv.org/abs/2303.06135) based on "real-world engagement".
+And what kind of engagement exactly are we talking about here?
+
+{{ gallery(images=[
+    "chai_ai_sob.png",
+    "cai_characters.png",
+], popout=false, caption="A typical [post](https://web.archive.org/web/20250320210143/https://www.reddit.com/r/ChaiApp/comments/1jfsqii/i_didnt_think_i_would_start_sobbing_over_an_ai/) on [/r/ChaiApp](https://www.reddit.com/r/ChaiApp/) (left) and popular chatbots on [c.ai](https://character.ai/profile/PlayfulDamsel) (right)") }}
+
+Business is booming of course.
+They are very good at using a blend of low-cost LLMs and aggressive sampling with their engagement estimators to shoot 10s of trillions of tokens every month straight into the brains of rotting youth.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very dark opinion: AI is going to enable a lot of morally questionable people to develop products and services that are very profitable but bad for the customers <a href="https://t.co/uZIgOprlsU">https://t.co/uZIgOprlsU</a></p>&mdash; PoIiMath (@politicalmath) <a href="https://twitter.com/politicalmath/status/1903243984769577220?ref_src=twsrc%5Etfw">March 22, 2025</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+"Morally questionable people"?
+Who could that be?
+All right, that's enough of Chai.
+
+<!--
+- https://www.chai-research.com/ (look at their people chart, they put everyone's college or prior workplace there, Cambridge is seen as elite, huge red flag)
 - Panel: Will Beauchamp, Chai Research. Kyle Bell, TensorWave, Paul Merolla, MK1
 - We are running very late
 - Will: Chai, consumer platform for AI, similar to chatGPT
 - Kyle: VP of AI, work on MLops
 - Paul: MK1, was on the founding team of Neuralink, same building as OpenAI, they build great infra and on top of that build great research, high performance inference platform, logic trace framework for understanding why AI makes some decision
+
 - Jeff (host): Chai? Why did you start it?
 - Chai (user facing service) <> AMD <> MK1 (inference service)
 - Will Chai: all of AI has been shaped by a small group of people (old men, the West), but maybe teenage girls need access too LMAO
   - Oh I see Chai is an app. "social AI platform". they have AI 'creators' LMAO too much comedy material
   - this guy is insane, we need more teenagers using AI
 
-- https://play.google.com/store/apps/details?id=com.Beauchamp.Messenger.external&hl=en_US&pli=1
-
-> Our app revolutionizes the way we interact with AI chatbots. With our advanced technology, our chatbots think and reply like real characters, complete with authentic voices. You can choose from a massive selection of characters, each with their own unique voice and personality. Whether you're chatting with your favorite celebrity, a beloved character from a movie or TV show, or a historical figure, you'll feel like you're talking to a real person.
-
 - Beyond parody
-- MI300X + MK1 > H100, claim that MI300X outperforms H100 by 2x in request throughput
-  - MK1 handles the inference service for Chai, used to use NVIDIA, now moved to AMD (supposedly)
-- https://www.chai-research.com/ (look at their people chart, they put everyone's college or prior workplace there, Cambridge is seen as elite, huge red flag)
-- CAG (cache augmented generation) for MI300X, Kyle: precompute system prompt, in-context learning to avoid finetuning
-  - With MI300X high memory capacity, we can do this easier: https://arxiv.org/html/2412.15605v1
-- MK1 special demo from Paul
-  - 2.25x faster all reduce on 2x/4x MI300X vs RCCL (can outperform RCCL)
-  - https://github.com/mk1-project/quickreduce
-  - "The future is open". I don't think so lol
 
 - https://x.com/politicalmath/status/1903243984769577220?t=NHaZQg-NdnZFOI2xIISmzQ
 
@@ -486,6 +541,7 @@ Nice.
 - https://www.reddit.com/r/ChaiApp/comments/1jfsqii/i_didnt_think_i_would_start_sobbing_over_an_ai/
 - https://www.youtube.com/watch?v=oGouyCCY3Do (the Chai guy) (5:51 "teenage girls" can create better makeup advice vs our AI lmao, 7:30 "teenager are spending 1.5 hrs a day interacting with AI. this is a monumental shift") (teenagers are going to talk more to AI than humans)
 - https://character.ai/profile/PlayfulDamsel (LMAO just look at these "characters")
+-->
 
 ### Pre-training Beyond CUDA
 
