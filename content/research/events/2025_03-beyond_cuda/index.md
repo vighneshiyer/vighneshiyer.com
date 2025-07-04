@@ -14,7 +14,7 @@ With his 10x and growing profit margin on the hottest commodity known to man, pe
 But no one has stepped up to the plate.
 
 Billions of precious VC capital is lit on fire every month as each AGI optimist tries to outcompete the others.
-But no matter your model architecture, training data or post-training, token sampling, slop generation strategy, you are always at _his_ mercy.
+But no matter your model architecture, training data or post-training, token sampling, or slop generation strategy, you are always at _his_ mercy.
 
 He insists: "The more you _buy_, the more you _save_".
 And now he has gone even further: "The more you _buy_, the more you _earn_."
@@ -751,6 +751,8 @@ We added a Pytorch CI just recently; see, we're trying to improve performance an
 - Rocm performance is improving, improving over H200 lol
 -->
 
+{{ image(path="raffle.jpg", width="50%", caption="Dylan and Jeff picking raffle tickets for the MI200 giveaway") }}
+
 ### Epilogue
 
 After this event concluded, I saw this [Ask HN: Why hasn’t AMD made a viable CUDA alternative?](https://news.ycombinator.com/item?id=43547309).
@@ -764,7 +766,14 @@ I recommend you read that thread.
 
 About a week after _Beyond CUDA_, SemiAnalysis released an article ["The GPU Cloud ClusterMAX™ Rating System"](https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/).
 
-{{ image(path="hot_takes_panel.jpg", width="80%") }}
+{{ image(path="semianalysis_ranking.png", width="50%") }}
+
+Sitting as undisputed #1 is NVIDIA's golden child, CoreWeave, while TensorWave (and any other AMD neocloud) is just a Bronze-tier GPU cloud.
+Certainly, we can expect the AMD neoclouds to move up the list, but it will take time.
+
+There have been some more favorable articles from SemiAnalysis recently: ["AMD 2.0 – New Sense of Urgency"](https://semianalysis.com/2025/04/23/amd-2-0-new-sense-of-urgency-mi450x-chance-to-beat-nvidia-nvidias-new-moat/) and [AMD vs NVIDIA Inference Benchmark: Who Wins?](https://semianalysis.com/2025/05/23/amd-vs-nvidia-inference-benchmark-who-wins-performance-cost-per-million-tokens/).
+But just as AMD is starting to ramp MI350X, NVIDIA is ramping B200, and there is no comparison - B200 wipes the floor.
+
 <!--
 - https://tensorwave.com/blog/the-future-of-rocm-amds-developer-first-bet-for-the-ai-era
 - https://www.youtube.com/watch?v=3sG1_ARTa04
@@ -775,8 +784,41 @@ About a week after _Beyond CUDA_, SemiAnalysis released an article ["The GPU Clo
 ## Comedy Show
 
 But wait, _Beyond CUDA_ isn't done yet.
-You thought the comedy show was the actual event, but no, there was an actual comedy show!
+You may have thought the comedy show was the actual event, but no, there was an actual comedy show by the 3 [Tech Roast](https://sociallyinept.io/) guys!
+You should checkout their [Youtube channel](https://www.youtube.com/c/TechRoastShow).
 
+{{ gallery(images=[
+    "comedy1.jpg",
+    "comedy2.jpg",
+    "comedy3.jpg",
+], popout=true) }}
+
+There were too many good moments.
+Their very first roast was aimed at the entire audience who "were rejected from or were too poor to afford to attend GTC" 😆.
+Well I have to admit, I am too poor to attend GTC.
+
+The comedians moved from 'founder' to 'founder', and it was hard to believe that these 'founders' weren't audience plants.
+From [Tixfix.ai](https://tixfix.ai/) which has nothing to do with AI and who's entire dev team is located in Nepal, to the founder of [Fillers AI](https://fillers.ai/) who's a plastic surgeon who uses "AI" to model the impact of lip and cheek fillers.
+These are real people!
+Reality is beyond any Silicon Valley parody.
+
+In the final segment, the comedians pulled people from the crowd and had them make fools of themselves.
+In one act, they forced everyone to line up from least to greatest TC.
+Dylan, who was made part of this routine, very slyly walked over to the greatest TC corner 😆.
+
+{{ image(path="the_girl.jpg", width="50%") }}
+
+At the very end, Dylan and this girl needed to act in a skit to prove they weren't an AI.
+The skit asked for the girl to console a man (played by a comic) who didn't have enough money to buy NVIDIA GPUs.
+
+Comic: "NVIDIA GPUs aren't in stock 😭 and I can't afford them either 😭, is there any alternative? What should I do!? I need some GPUs".
+This poor girl had no clue what GPUs even were, she just went "I'm so sorry, hope you feel better, it's ok".
+And someone from the audience yelled out "Intel" and she became quite enthusiastic to the sad comic: "OHHH! You can buy Intel GPUs!" 😆
+
+What a fitting end to the night.
+<!--This was too good; what a good sport!-->
+
+<!--
 - The comedians roasted AMD so badly. These were the people rejected or too poor to afford GTC lmao. True true.
 - TixFix.ai, I am a founder, entire team is in Nepal lmao
 - Fillers.ai, the girl is responding to clients, recommending doctors, and is herself a plastic surgeon it seems. Her face looked plastic and stiff, she does talk the talk and walk the walk.
@@ -786,18 +828,22 @@ You thought the comedy show was the actual event, but no, there was an actual co
 - This isn't a parody, these aren't audience plants, these are real people! Reality is actually beyond any Silicon Valley parody.
 - The audience is filled with ignorant random people who have no clue what's going on. But the event was sold as this 'exclusive' event.
   - I would bet that at least 50% of the people there couldn't explain any CUDA code. Lots of people who 'want to be in the scene'. LMAO what a joke
+-->
 
+## Conclusion
 
-- this entire event is a circuitous ad for nvidia, completely backfired
-- lots of videographers and photographers, lots of event staff, lots of AV people
+I would like to thank TensorWave for being good sports, not giving up, making the event professional with pro videographers and photographers, and for inviting a bunch of us to this event.
+But honestly, I wouldn't be surprised if this event was shadow funded by NVIDIA.
+It just reinforced that AMD is way _behind_ NVIDIA, and that if there is anyone can go _beyond CUDA_, it is NVIDIA (and indeed, just the next day at GTC, [NVIDIA's Tile IR](https://x.com/JokerEph/status/1902758983116657112) was announced).
 
-## What Actually Happened?
+<!--- this entire event is a circuitous ad for nvidia, completely backfired-->
 
-Lisa su didn't show up, supposed secret speaker
+<!-- Lisa su didn't show up, supposed secret speaker-->
+
+<!--
 Lots of technical problems, talks running way over 5 minutes
 Organizers did the best they could, given this was their first time
 Panels got broken into talks as presenters wanted the ability to present their own marketing slides instead of talking out loud during the panel. Not many useful takeaways from the panels.
+-->
 
-I wouldn't be surprised if this event was shadow funded by NVIDIA.
-It just reinforced that AMD is way "behind" CUDA.
-If anyone can go "beyond CUDA", it is NVIDIA.
+<!--- lots of videographers and photographers, lots of event staff, lots of AV people-->
