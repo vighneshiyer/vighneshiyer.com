@@ -327,6 +327,7 @@ All the others use NVIDIA, and I'm sure she wanted to too.
 
 Next was Eugene Cheah from [featherless.ai](https://featherless.ai/).
 I'll admit my knowledge of his [RWKV](https://www.rwkv.com/) is very weak, so I can't judge, but he claims this model architecture achieves linear attention scaling and no quadratic KV cache growth.
+Again, hardly any mention of AMD GPUs, but near the end he rambled on about building a "personal AGI" that can tune its memory in the night and extract your experiences during the day.
 
 <!--
 - RWKV OSS project, AI model under the Linux foundation, running on all windows devices today lmao
@@ -347,11 +348,41 @@ I'll admit my knowledge of his [RWKV](https://www.rwkv.com/) is very weak, so I 
 ### Are You Bored Yet?
 
 So was everyone here.
+All the speakers were so dull that the majority of the audience got up and started gabbing at the back near the bar.
+The background noise was so loud, the organizers had to keep shutting them up, since you could hardly hear the speakers.
+
+{{ image(path="dead_crowd.jpg", width="80%") }}
 
 ## Post-Training Beyond CUDA
 
-#### Alex from Higgsfields AI
+Undeterred, we move onto the next session.
 
+### Higgsfield AI
+
+We heard from a former GenAI engineer at Snapchat, Alex, who now runs [Higgsfield AI](https://higgsfield.ai/).
+This is a video generation tool that pulls from open source video generation models (e.g. [Wan](https://www.wan-ai.org/)) and stitches together an entire pipeline: your product images or ideas, storyboarding, dialogue generation, camera angle and action scripting, and final video generation.
+
+> The world's first multi-agent AI video creation platform that turns story ideas into ready-to-watch, long-form content.
+
+Alex showed us a plot of 'pixels generated over time' and noted that models can generate more and more pixels today, to the point where soon they can generate TV shows and movies.
+He says that AI generated videos outperform human-generated videos on social media, and in the future all pixels will be model generated.
+"AI generated videos are outperforming 'conventional' video on social media" (he actually said this).
+What an inspiring future!
+
+{{ image(path="higgsfield.png", width="80%") }}
+
+He showed us an ad they generated for Monster Energy, where a Viking climbs a mountain, reaches the top, and drinks a can of Monster.
+No cameras, actors, directors, or editors required! So cool!
+Of course, it looked absolutely ridiculous.
+
+The next step is of course AI-generated music videos.
+He then showed us an example of a rap music video - made in under a day by one person with "studio level quality and camera control and visual elements that typically require teams of 10 people + weeks of work", "Hollywood level quality", "you can make the final scene of Game of Thrones yourself" (he actually said this).
+TensorWave didn't share the recording of this talk on Youtube (I wonder why), and I was too busy laughing to take a video, but to get an idea of what the rap video was like, you can [ask the Mavericks](https://www.chron.com/sports/article/dallas-mavericks-ai-generated-video-anthony-davis-20228149.php).
+
+OK but what does this have to do with AMD?
+Turns out, he claims, MI300X are 25% faster than "NVIDIA" for some video generation model.
+OK fine. Real convincing.
+<!--
 - Former genAI at snapchat
 - This guy is showing pixels generated over time (models can generate more and more pixels lol), this is about generating TV shows and movies
 - https://higgsfield.ai/
@@ -371,9 +402,33 @@ So was everyone here.
 - "Hollywood level quality", "make the final scene of game of thrones yourself"
 - "AI generated videos are outperforming 'conventional' video on social media", ok this sounds great lmao
 - This reminds me of the Mavs AI generated jumbotron video - it was *that* tier of garbage
+-->
 
-#### Aton and Yurii from Open Babylon
+### OpenBabylon
 
+The insanity continues with Anton and Yurii from [OpenBabylon](https://www.openbabylon.com/).
+
+{{ gallery(images=[
+    "open_babylon.jpg",
+    "openbabylon2.jpeg",
+], popout=false) }}
+
+They've built some infrastructure for [adapting LLMs for underrepresented languages](https://arxiv.org/abs/2404.09138).
+That on its own is pretty useful.
+
+But this talk was about the aftermath of the Ukraine War, specifically LLM-based test generation for students in Ukraine for teachers.
+It's quite simple really: there is a war, so let's fine tune an LLM.
+But Ukraine may not have many servers to host a large model, so they chose a small one.
+
+They noticed that models have worse instruction following, and emit more harmful content when using non-English languages, and models encode "Silicon Valley centric biases".
+They fine-tuned Llama 3.1 8B with "domain-specific knowledge" (i.e. Ukrainian history) and Ukrainian optimized tokenization.
+And guess what, the teachers accepted 55% of the test questions that came from their model.
+
+But what about AMD?
+Well, they used the TensorWave cloud to fine-tune this Llama model.
+Nice.
+
+<!--
 - infra for model adaptation, AI performance in any language and any domain
 - LMAO ukraine war, LLM test generation for students in ukraine, gap in domain knowledge and ukrainian language
 - history of ukraine domain specific knowledge lol
@@ -389,9 +444,7 @@ So was everyone here.
 
 - this is a parody, there is a war so let's fine tune an llm
 - roast will be so brutal
-
-- this entire event is a circuitous ad for nvidia, completely backfired
-- lots of videographers and photographers, lots of event staff, lots of AV people
+-->
 
 ### Inference Beyond CUDA
 
@@ -545,6 +598,9 @@ So was everyone here.
 - The audience is filled with ignorant random people who have no clue what's going on. But the event was sold as this 'exclusive' event.
   - I would bet that at least 50% of the people there couldn't explain any CUDA code. Lots of people who 'want to be in the scene'. LMAO what a joke
 
+
+- this entire event is a circuitous ad for nvidia, completely backfired
+- lots of videographers and photographers, lots of event staff, lots of AV people
 
 ## What Actually Happened?
 
