@@ -543,10 +543,17 @@ All right, that's enough of Chai.
 - https://character.ai/profile/PlayfulDamsel (LMAO just look at these "characters")
 -->
 
-### Pre-training Beyond CUDA
+## Pre-training Beyond CUDA
 
-#### Koosh Azimian from 310 AI
+There was only one talk from Koosh Azimian of [310 AI](https://310.ai/).
+They do some kind of GenAI for biology.
+It's not clear if they develop and train their own models or if they just provide an interface to open-source models.
+It seems interesting, but I can't comment much on their models or service.
 
+The AMD angle is they did some training on 6 nodes of 8x MI250 for 70 days.
+They made a claim that their Pytorch models were ported to run on ROCm in one engineer day without any code modifications.
+
+<!--
 - https://310.ai/
 - They do genAI for biology
   - Features a Class II Histidinyl-tRNA synthetase HisRS-like catalytic core domain and a histodine metabolic process
@@ -557,16 +564,30 @@ All right, that's enough of Chai.
 - Pretty good docs actually: https://310.ai/docs/folding
 - It seems they don't build many models themselves, they use existing models from others (and few of their own) and try to mash them together (with a 'copilot' protein design cockpit)
 - They claim that their Pytorch models can work on Rocm in one engineer day, same code no modifications from CUDA to Rocm
+-->
 
-### Open Source beyond CUDA
+## Open Source beyond CUDA
 
-- Philippe Tillet (Triton), Liz Li (AMD), Greg (TensorWave), Andrey Cheptsov (dstack)
+{{ image(path="open_source_beyond_cuda.jpg", width="80%") }}
+
+This was a panel / presentation with Philippe Tillet (OpenAI / Triton), Liz Li (AMD), Greg (TensorWave), and Andrey Cheptsov (dstack).
+Philippe says that OpenAI uses Triton for all of their kernels and they kind of work with AMD's hardware team.
+AMD themselves has a Triton team which tries to keep the ROCm backend up to date, optimized, and upstream with good performance on MI300X.
+Philippe then says that there are still cases with MI300 is slower than H100, but he's hoping that within a year or two, they will reach parity.
+
+Liz from AMD says that they've been moving their Pytorch CI/CD pipeline in-house, continuing to work on OSS models, making sure huggingface models run out of the box on AMD hardware, and trying to get DeepSeek to run reliably on an AMD cluster.
+<!--
 - Liz works on perf opt
 - Phil openai, joined as intern working on triton, full time by 2020 to work on kernels, wrote kernels for gpt4, triton is used for all of their kernels, managing kernels team at openai, write all training kernels and some inference ones, managing compilers group working on triton, working with hardware partners like AMD
 - Talk about triton and work with AMD: create a language and compiler for perf portable kernels, write once run anywhere, tricky to find right abstractions, don't know how hw will evolve and get all the features in one abstraction that isn't device specific, AMD has a triton team that was able to upstream their backend, claims good perf on MI300X
 - Phil: there are still cases when MI300 is slower than H100, hoping in a year or two we will get there LMAO
 - Liz: what are you seeing inside AMD wrt customers and open source? pytorch ci/cd pipeline in house, autotuning libraries, working on OSS models too (dataset + weights open source), trying to make sure huggingface things run cleanly on AMD, trying to get Deepseek to run on AMD
+-->
 
+Andrey from [dstack](https://dstack.ai/) gave a talk on his container orchestration platform.
+Some Kubernetes-based thing that takes care of storage, data, models, training launches, and so forth.
+Overall, nothing that interesting.
+<!--
 - Andrey dstack: container orchestration for AI teams
 - kubernetes something something, their thing takes care of storage, data, models, tries to abstract away kubernetes for container deployment and scaling, wow so useful lmao
 - https://dstack.ai/
@@ -574,19 +595,106 @@ All right, that's enough of Chai.
 - similar to skypilot
 
 - you know, disaggregation is interesting. can we make dynamic server provisioning so fast + making the OS boot so fast that we can provision, launch, and get thing running in under a few hundred milliseconds.
+-->
 
-#### Scalar LM - ML stack on TensorWave
+Finally, we heard from Gregory of [ScalarLM](https://www.scalarlm.com/) ([see recording here](https://tensorwave.com/blog/scalarlm-open-source-llm-training-inference-on-amd-rocm)).
+This appears to be an LLM training and inference software stack that runs out-of-the-box on MI300X.
+
+{{ image(path="scalar_lm.jpg", width="80%") }}
+
+<!--
+### Scalar LM - ML stack on TensorWave
 
 - "super alignment". this is a braindead talk.
 - ScalarLLM, ML framework for training and inference, Megatron Core training stack ported to AMD, model library from HugglingFace, and vLLM.
 - Single framework that runs out of the box on MI300X
 - http://scalarlm.com/
+-->
 
-### Hot Takes Panel
+## Hot Takes Panel
 
-- Dylan, Anush (AMD, VP of AI), Darrick (TensorWave), Mark (Meta/ GPU mode), Eugene (RWKV guy)
-- 12345
-- Dylan said MI300X was bad on Semianalysis, please share. AMD were very scared when they saw that. Lisa called Dylan with panic.
+{{ image(path="hot_takes_panel.jpg", width="80%") }}
+
+The panelists were Dylan (Semianalysis), Anush (AMD, VP of AI), Darrick (TensorWave), Mark (Meta/ GPU mode), and Eugene (RWKV guy).
+Now, this was interesting.
+
+### SemiAnalysis' Article
+
+Dylan began by talking about his [article benchmarking MI300X against H100](https://semianalysis.com/2024/12/22/mi300x-vs-h100-vs-h200-benchmark-part-1-training/), which was quite unfavorable towards AMD.
+He said that when AMD saw this, they got scared.
+Lisa called him in a panic.
+
+His team had spent 5 months working with MI300X GPUs on TensorWave to compare against H100.
+Getting started with AMD was very rough, scaled dot product attention wouldn't even compute proper numbers, and there were memory leaks, among many other problems.
+AMD's Anush worked hard to fix all the issues, but there were still many lingering issues, and performance was still bad.
+By the end of the 5 month period, performance was still bad, but things kind of "worked".
+Out of the box Pytorch performance was still bad, while NVIDIA gives you near peak performance right away.
+NVIDIA has 50k GPUs for internal purposes that they use to keep up library software standards, while AMD has much less pay, custom driver builds for customers, and no unified driver.
+
+Lisa talked to SemiAnalysis the next day for 1.5hrs.
+She was very receptive to feedback, and the ROCm user group said AMD engineers were happier that they finally got a Pytorch CI/CD pipeline from management.
+
+AMD's Anush took the brunt of this brutalization.
+He's very active on Twitter, indeed he's the face of AMD on Twitter.
+On stage, Anush was asked what AMD can do to improve.
+
+Anush said that he acknowledges all the problems, that AMD was working on things that weren't visible to the benchmarker, they had been too focused on hyperscalers, and were just slowly coming down to the long tail of customers.
+He knows the custom driver builds were bad, and that AMD is catching up now.
+He urged the audience to contact him directly if they encounter any issues.
+He says they are trying a first principles approach to everything (supposedly).
+After all, the Pytorch CI is up and running, GPU Mode has some AMD GPUs now, and we're trying to get quantizers to work cleanly (with Mark).
+We're trying hard, stop bullying so much OK?
+
+This part of the panel was just so brutal.
+You get the impression that AMD has no chance of being competitive versus NVIDIA.
+
+### TensorWave
+
+The moderator asked why TensorWave went all in on AMD. Customers ask them for NVIDIA, but they said no. Why?
+
+Darrick said that it was about "alignment of ethos".
+TensorWave started in 2023 during compute shortages, all that existed was NVIDIA's locked closed ecosystem with minimal open source.
+We wanted to solve that problem and provide a viable alternative to the market, so naturally they must use AMD.
+AMD was the only HW provider that could check all the boxes: the resources to threaten NVIDIA's dominance, and public support of open source.
+
+Yeah I'm sure TensorWave is AMD-only because of "ethos".
+Surely it has nothing to do with AMD funding their company.
+
+### Open Source
+
+The moderator asks for hot takes on open source.
+What is the right way to do this?
+
+Mark of GPU Mode says that NVIDIA leverages open source (e.g. Pytorch).
+You need the right leverage.
+Pytorch makes it easy to safely depend on it for the long term, which encourages contributions.
+GPU Mode is just a reading group, and it quickly evolved to host parties, hackathons, sponsorships.
+Open source attracts high agency people.
+
+Dylan claimed that NVIDIA only released the Blackwell ISA just a month ago, just to prevent AMD from copying it.
+Anush remarked that AMD was a fast follower.
+But Mark doesn't buy Dylan's argument: after all, people could just fork Pytorch, but they don't.
+
+### Rapid Fire Questions
+
+- What if Taiwan is invaded?
+  - Dylan: everyone is affected.
+- What about non-GPU custom hardware?
+  - Anush: AMD has a big footprint from embedded up to cluster, but we don't have a uniform software stack yet, we are trying. We're trying to make it possible to run a model on your laptop and port it to Instinct in the cloud without software hacking.
+  - Dylan: all hardware needs a dev ecosystem. Google can dogfood their own ecosystem including OpenXLA. There is no code in Pytorch to run any other accelerator. There are teams of people doing assembly programming per kernel. It's not going to work for any hardware company that can't make massive investments.
+  - Darrick: alternative accelerators are not worth offering, and are not good for customers. Only GPUs are flexible enough for new model architectures. Software is also the most mature on GPUs, nothing else.
+- What will happen in next 2 years for TensorWave, which customers?
+  - Darrick: past year was mostly about inference, software support, but we still need to solve training. This year is about training and scale
+- Is there anything beyond backprop with respect to scaling?
+  - Anush: at nod.ai we tried a few things. Keep an eye out. We just need to be ready for it.
+  - Eugene: distributed training and optimizers are still a pipe dream, but could happen eventually.
+- NVIDIA created a mixed CPU and GPU product. What about AMD?
+  - Anush: AMD had silos of hardware excellence (Xilinx for FPGAs, datacnter CPUs). We're moving up the stack, and AMD has done well at backwards compatibility before, so we will persist that.
+- Rank the top 5 AI hardware vendors today and in 2030 if you think non-GPU architectures will become dominant
+  - Dylan: 1 is NVIDIA, 2 is TPU, 3 is AMD, 4 is Trainium, and 5 is nothing else. Unfortunately Trainium is even below AMD.
+
+<!--
+- MI300X was bad on Semianalysis, please share. AMD were very scared when they saw that. Lisa called Dylan with panic.
   - 5 months working on MI300X on TensorWave GPUs. Beginning was very rough, scaled product attention wouldn't even compute proper numbers, memory leaks, Anush worked hard to fix all the issues, still many lingering issues, performance was still bad
   - By the end perf was still bad, but things kind of worked, out of the box Pytorch was bad, nvidia gives you near peak perf lmao
   - nvidia has 50k nvidia gpu for internal purposes, amd has less pay, amd has custom builds for customers, no unified driver
@@ -619,30 +727,55 @@ All right, that's enough of Chai.
   - Dylan: 1 is nvidia, 2 is tpu, 3 is amd, 4 is trainium, 5 is nothing else. crazy that trainium is below amd.
 - Q: what will change in HPC?
   - Darrick: gpu cloud ~=~ HPC, for training. inference cloud is much easier to start.
+-->
 
-### Final Talk by Anush - What's Next
+## Final Talk by Anush - What's Next
 
+And with that, we're onto our final talk of the day by AMD's Anush ([see the recording](https://tensorwave.com/blog/the-future-of-rocm-amds-developer-first-bet-for-the-ai-era)).
+
+{{ gallery(images=[
+    "anush1.jpg",
+    "anush2.jpg",
+    "anush3.jpg",
+], popout=true) }}
+
+He began with the chant of "developers, developers, developers!".
+Anush pledges to help you get started on ROCm.
+Lots of people complain about it, but it will get better!
+We added a Pytorch CI just recently; see, we're trying to improve performance and driver stability.
+
+<!--
 - What are we going to do about Rocm? More developers lmao, focus on devs
 - Lots of people complain about rocm
 - CI lmao
 - Rocm performance is improving, improving over H200 lol
+-->
 
-- https://news.ycombinator.com/item?id=43547309 (Ask HN: Why hasn’t AMD made a viable CUDA alternative?)
+### Epilogue
 
-> This ticket, finally closed after being open for 2 years, is a pretty good micocosm of this problem:
->
-> https://github.com/ROCm/ROCm/issues/1714
+After this event concluded, I saw this [Ask HN: Why hasn’t AMD made a viable CUDA alternative?](https://news.ycombinator.com/item?id=43547309).
+I recommend you read that thread.
+
+> [This ticket](https://github.com/ROCm/ROCm/issues/1714), finally closed after being open for 2 years, is a pretty good micocosm of this problem:
 >
 > Users complaining that the docs don't even specify which cards work.
 >
 > But it goes deeper - a valid complaint is that "this only supports one or two consumer cards!" A common rebuttal is that it works fine on lots of AMD cards if you set some environment flag to force the GPU architecture selection. The fact that this is so close to working on a wide variety of hardware, and yet doesn't, is exactly the vibe you get with the whole ecosystem.
 
+About a week after _Beyond CUDA_, SemiAnalysis released an article ["The GPU Cloud ClusterMAX™ Rating System"](https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/).
+
+{{ image(path="hot_takes_panel.jpg", width="80%") }}
+<!--
 - https://tensorwave.com/blog/the-future-of-rocm-amds-developer-first-bet-for-the-ai-era
 - https://www.youtube.com/watch?v=3sG1_ARTa04
 - https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/
   - CoreWeave (NVIDIA backed) is #1, TensorWave (AMD backed) (and all AMD backed clouds for that matter) are way behind (close to underperform territory).
+-->
 
 ## Comedy Show
+
+But wait, _Beyond CUDA_ isn't done yet.
+You thought the comedy show was the actual event, but no, there was an actual comedy show!
 
 - The comedians roasted AMD so badly. These were the people rejected or too poor to afford GTC lmao. True true.
 - TixFix.ai, I am a founder, entire team is in Nepal lmao
