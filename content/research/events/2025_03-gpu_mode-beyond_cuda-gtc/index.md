@@ -1,6 +1,6 @@
 +++
-title = "GPU Mode, Beyond CUDA, and the GTC Keynote"
-date = 2025-01-28
+title = "GPU Mode and the GTC Keynote"
+date = 2025-03-28
 draft = true
 +++
 
@@ -55,7 +55,6 @@ Just a group of highly motivated and competent people who just kept pushing coll
 > The unit of progress becomes the network, not the parameter count.
 
 Idk, this hasn't been demonstrated yet.
-
 
 ## GTC
 

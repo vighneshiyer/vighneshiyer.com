@@ -14,11 +14,11 @@ With his 10x and growing profit margin on the hottest commodity known to man, pe
 But no one has stepped up to the plate.
 
 Billions of precious VC capital is lit on fire every month as each AGI optimist tries to outcompete the others.
-But no matter your model architecture, training data or post-training token slop generation strategy, you are always at _his_ mercy.
+But no matter your model architecture, training data or post-training, token sampling, slop generation strategy, you are always at _his_ mercy.
 
 He insists: "The more you _buy_, the more you _save_".
-And now he has gone further: "The more you _buy_, the more you _earn_."
-Indeed, we have no choice but to accept his words as the truth.
+And now he has gone even further: "The more you _buy_, the more you _earn_."
+Indeed, we have no choice but to accept his words and buy his overpriced racks.
 
 Still, some arrogant fools think they can build their own hardware and undercut his fat margin.
 But after Microsoft [delayed their custom AI chip](https://www.techspot.com/news/108489-microsoft-custom-ai-chip-hits-delays-giving-nvidia.html?utm_source=tldrai) once again, he didn't hesitate to remind the world who's boss:
@@ -33,12 +33,12 @@ Is there truly no escape?
 
 But what if, someone went _beyond_?
 Beyond what, you might ask?
-Why, of course, to defeat Team Green, we must go [_Beyond CUDA_](https://lu.ma/beyondcuda25).
+Why, of course, to defeat Team Green, we must go beyond _CUDA_.
 Ah yes, the impenetrable moat of Team Green: the CUDA language, programming model, compiler, a vast set of optimized libraries, and a rock solid runtime (among many other fortifications).
 
 No one has gone _beyond_, but many fools continue to dare to try.
 Today, I had a first-row seat to see a showcase of Team Red's latest attempt.
-Hosted by their own neocloud, [Tensorwave](https://tensorwave.com/), they put together a show with many users and contributors to Team Red's CUDA killer.
+Hosted by their own neocloud, [TensorWave](https://tensorwave.com/), they put together a show with many users and contributors to Team Red's CUDA killer.
 
 So, how did it go?
 Is Mr. Leather-Jacket shaking in his leathers?
@@ -65,7 +65,9 @@ So what actually happened?
 {{ gallery(images=[
     "beyond_cuda_stage.jpg",
     "beyond_cuda_stage_2.jpg",
-]) }}
+    "mi210_giveaway.jpg",
+    "tech_roast_coming.jpg"
+], popout=true) }}
 
 Let's dive into each session.
 <!--
@@ -83,7 +85,7 @@ This panel was originally slated to have Jim Keller and Raja Koduri.
 Hearing from them was highly anticipated by the crowd.
 But Jim claimed he had some personal affairs to attend to and Raja was sick (or vice versa) and neither of them showed up!
 
-Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuocelot/gpuocelot), has worked on DL deployment at Baidu), Davor from [Tenstorrent](https://tenstorrent.com/en), Micah from [Mihira AI](https://mihira.ai/) (worked at NVIDIA/AIT in the past), and Nicholas (the author of ["The CUDA Handbook"](https://www.cudahandbook.com/)).
+Instead, we had Greg from TensorWave (built [GPUOcelot](https://github.com/gpuocelot/gpuocelot), has worked on DL deployment at Baidu), Davor from [Tenstorrent](https://tenstorrent.com/en), Micah from [Mihira AI](https://mihira.ai/) (worked at NVIDIA/AIT in the past), and Nicholas (the author of ["The CUDA Handbook"](https://www.cudahandbook.com/)) (see the [recording here](https://tensorwave.com/blog/past-present-future-of-ai-compute)).
 <!--
 , seemed like lots of parallel programming models, fpga, etc, but didn't turn out that way lol
 - Micah, worked at Nvidia and ati, working with raja on his startup
@@ -92,32 +94,100 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
 
 ### Why is CUDA NVIDIA's Moat?
 
+Greg started by stating that the SW stack is the most important thing to get right; CUTLASS enables 90+% HW utilization for many kernels, and they achieved that through NVIDIA's investment of engineer hours in intense cache blocking + other optimizations.
+
+Micah followed by saying it's not just the SW, but keeping the SW in sync with the HW.
+You can't stick CUDA on another HW platform and get the same performance; AMD had its own programming model, but it wasn't mature and in sync/ubiquitous across its HW platforms.
+
+Nicholas pointed out that NVIDIA took a risk to build CUDA in the first place, sacrificing die area for general purpose programmable logic.
+CUDA is also highly portable: taking speculative risks in HW (such as power tradeoffs in Pascal and Volta) is enabled by portability.
+
+Davor said that NVIDIA puts lots of effort into benchmarks: MLPerf, HPC applications, showing that CUDA works for many domains.
+HW vendors should not try to reinvent the stack - reuse host and device APIs, programming models, device integration (as PCIe cards), just as Tenstorrent does.
+
+<!--
 - Greg, multicore to simd compilers is important, sw stack is the most important, look at how Cutlass enables 90 percent utilization for many kernels, labor intensive cache blocking and optimizations, Nvidia invested so much labor into this
 - Micah, not just the sw, sw in sync with the hw, can't stick cuda on another hw platform and get same performance, amd had its own programming model, but it wasn't mature and in sync
 - Nicholas, Nvidia took die area risk to build cuda in the first place, in volta needed small risc core too, SW is portable to so many contexts, reason for cuda pervasiveness, Nvidia explored pascal and volta power tradeoffs, hW speculative risks are enabled by portability
 - Davor, Nvidia puts effort into benchmarks, ml perf, general purpose hpc technique, showed that it works for many domains, no need to reinvent the stack, reuse host apis, device apis, the concepts, pcie card! Reuse them, tenstorrent does. Good benchnarks, he sw, good general programming model
+-->
 
 ### The CUDA Language
 
+Micah said that CUDA C++ can't live for much longer; we need new languages as we can't rely on undergrads knowing C++.
+Davor noted that by the end of his grad school life, all parallel programming became CUDA, and you increasingly need the knowledge and ability to inject code across the full stack (raw PTX, CUDA, CUTLASS, cuDNN, Pytorch).
+Customers for new HW platforms can't be expected to rewrite lots of primitives on their own.
+
+Greg mentioned that CUDA is a huge ecosystem including Tensor cores with massive local parallelism, NVLink massive scale out, and structured sparsity / MoE support.
+NVIDIA has optimized for these applications and features, but there could be an opportunity to optimize for a different application target.
+All these pillars of NVIDIA's architecture are at their limits (supposedly).
+
+Nicholas said that the SOTA is advancing very quickly, and NVIDIA is the _best platform_ for them to evaluate their new operators / training techniques.
+Davor pointed out that SIMT was the original CUDA programming model - there were no Tensor Cores, no Tensor Memory Accelerators.
+NVIDIA is throwing in more stuff and it isn't even CUDA as it was when Nicholas wrote the book.
+
+<!--
 - Micah, Need new languages, can't rely on undergrads knowing C++
 - Davor, by the end of grad school, all parallel programming became CUDA (not pthreads, ...), need performance and usability, need the full stack (raw CUDA/PTX, CUTLASS / cuDNN, Pytorch frontend), can't make customers rewrite lots of primitives (indeed this is the tenstorrent story)
 - Greg, need to have applications beyond CUDA, tensor cores within CUDA - massive local parallelism (1), NVlink massive scale out (2), structured sparsity / MoE (3), nvidia has optimized for these apps, but opportunity to optimize for a different application target? all these pillars of nvidia architecture are at their limits. (but this seems wrongheaded lol)
 - Nichols, SOTA is advancing so quickly, and NVIDIA is the best platform for them to evaluate their new operators / training techniques,
 - Davor, SIMT was the original CUDA model, no tensorcores, no ..., no tensor memory accelerators, nvidia is throwing in more stuff, it isn't even CUDA as it was when you wrote the book lol
 - Greg, CUDA is always adding more stuff
+-->
 
 ### Accelerator Programming Models
 
+Someone from the audience asked a question.
+There are many companies building AI hardware, but CUDA is tuned to NVIDIA's HW.
+If you try to build another accelerator, it won't be ideal to compile CUDA to that target.
+What are your thoughts on building consensus for the software stack?
+
+Micah said that the AI world likes numpy-based Python, and if we can compile that to your accelerator, there isn't a CUDA problem anymore.
+Old CUDA code has CUDA assumptions and features in it, so we should throw it away and rewrite it (like Tenstorrent has done).
+But there is no solution for porting existing CUDA to your accelerator, and he doesn't know what the bridge is - he can't imagine someone can develop a robust and performant version of a CUDA bridge.
+
+Davor concurred that if you have Pytorch as input, then we can use vertically stovepiped compilers (from the user's perspective).
+However, if you're talking about porting cuDNN / cuBLAS, that is much harder and will require manual effort.
+
+Greg hoped that PTX would be performance portable, but it actually is not.
+Today, PTX is tuned for every device architecture (it would be hard to go from PTX to your accelerator).
+Davor concurred that we can't rely on PTX as the lowest level, and we need to educate developers / go back to first principles for a parallel programming model.
+He even suggested that we can use Cursor to translate PTX to another low-level IR and this wouldn't be an issue in the future.
+
+<!--
 - Audience Q: many companies building aI hardware, CUDA is tuned to nvidia HW, if you try to build another accel, it will never be good to compile Cuda to that target, what are your thoughts for consensus to the software stack?
   - Mocah, AI world likes numpy based python, then compile to your accelerator, no CUDA problem anymore (lol i doubt this), old CUDA code has CUDA assumptions and features in it, so throw it away and rewrite it (tenstorrent), but no solution for porting existing CUDA to your accelerator, don't know what the bridge is - can't believe anyone can develop this well
   - Davor, if you have pytorch, you're all good, vertically stovepiped compilers exist, then you're talking about CUdnn / CUTLASS porting, and that is much harder
   - Greg, hope that PTX would have been perf portable, but actually not, today, PTX is tuned for every device architecture (can't go from PTX to your accelerator)
   - Davor, can't rely on PTX as the lowest level, need to educate developers and go back to first principles on a parallel programming model (i doubt it), leverage cursor to translate ptx into another low level code lol, this won't be an issue in the future lol (doubt it)
+-->
 
-### Crossing the CUDA Moat
+### Commentary
 
-#### Waleed from Mako
+OK after reading all this, you may be wondering, doesn't all this discussion imply that CUDA can't be easily beaten?
+My feeling was that this panel just reinforced CUDA's dominance and why it was here to stay.
+Some of the suggestions by the panelists, such as using LLMs for writing kernels for new hardware targets, seem too far-fetched.
 
+## Crossing the CUDA Moat
+
+Onto the next set of presentations.
+
+### Mako
+
+The first talk was by Waleed Atallah of [Mako](https://mako.dev/) ([see the recording](https://tensorwave.com/blog/gpu-kernel-optimization-makos-plan-to-outrun-cuda)).
+His company builds AI-powered (_read_: LLM-in-a-loop) GPU kernel generation and optimization tools.
+
+His main claim is that with new DNN operators, more GPU kernels need to be written and tuned.
+It took 5 years from the original attention paper to get FlashAttention, so there is clearly lots of inefficiency and hard manual work required to produce optimized / fused GPU kernels.
+They've built some kind of "auto-tuned" AI stack where they sweep over the space of `torch.compile` options and kernel implementations, with a global cache of all optimizations they've tried and compiler artifacts.
+
+He mentions that they're working on LLM powered kernel generation and pointed to [KernelBench](https://github.com/ScalingIntelligence/KernelBench) as a good starting point.
+There is work to be done on teaching an LLM how to optimally use the hardware, add the right documentation in the context, and use profiling data as feedback for optimization.
+
+This guy and Mako aren't _incompetent_ per se, but the talk had nothing to do with ROCm or HIP.
+The techniques described were also very vague.
+
+<!--
 - build AI powered GPU kernel optimization
 - they claim more GPU kernels need to be written (new operators...), need to select and tune proper kernel implementations for a given logical kernel
   - Pytorch code -> operator graph -> library call dispatch (kernel fusion is crucial, cuBLAS, custom kernels like flashattention, compiler generated - TorchInductor, AI-generated kernels)
@@ -136,9 +206,20 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
   - NVIDIA also did blog post on LLM agent to generate GPU kernels (who did this, Mark ren?)
   - need to teach the language model on how to use the hardware, need to add documentation in context to the LLM lmao
   - need to use profiling feedback from the hardware profiler back to the prompting engine
+-->
 
-#### Jay Dawani from Lemerian Labs
+### Lemurian Labs
 
+Up next was Jay Dawani from [Lemurian Labs](https://www.lemurianlabs.com/).
+Now this guy was a little weird: he said lots of words with very little meaning ([see the recording](https://tensorwave.com/blog/shoulda-woulda-cuda-breaking-the-gpu-mold-with-jay-dawani-from-lemurian-labs-2)).
+He blathered on about how they built some [compiler](https://www.lemurianlabs.com/technology) and "dynamic runtime" that can "solve heterogeneity" (Pytorch to CPU, GPU, NPU, … and so forth).
+And of course, his magic compiler is able to do _something_ 30-40% faster than CUDA (the something was never specified).
+
+My initial impression from this conversation is that this guy is a smooth talking scam artist.
+In the past, he pushed for the design of a custom chip to execute math using a [logarithmic number system](https://www.eetimes.com/can-dsp-math-help-beat-the-gpu-for-ai/) over INT8 or the like.
+It seems this idea, and the custom silicon, has been abandoned or at least relegated to second priority.
+
+<!--
 - used to do robotics and was an early person at openai
 - trying to do a chip early in Lemerian's history
 - he believes we have to do 'accelerated software' and hw perf scaling will end
@@ -151,9 +232,25 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
 - https://www.lemurianlabs.com/technology
 - https://www.eetimes.com/can-dsp-math-help-beat-the-gpu-for-ai/
   - This does seem more promising compared to the talk he gave. But no details on this hardware were provided - perhaps they have tabled the idea of custom silicon.
+-->
 
-#### Michael from Spectral Compute
+### Spectral Compute
 
+Up next was Michael from [Spectral Compute](https://spectralcompute.co.uk/) ([see the recording](https://tensorwave.com/blog/scale-by-spectral-compute-run-your-cuda-workloads-faster-on-affordable-amd-gpus)).
+Now, this guy and his team are _highly competent_.
+They built a [compiler called SCALE](https://docs.scale-lang.com/stable/) which can compile unmodified CUDA programs for AMD GPU targets.
+The work that must have gone into this is insane.
+
+Their compiler is fully compatible with `nvcc` semantics and quirks, and they actually duplicate the `nvcc` oddities precisely.
+They claim to have 90+% compatibility for math APIs and 70% for runtime APIs, so far.
+Another caveat is that CUDA code is often written with the assumption of a warp size of 32, and their compiler will detect if your code is written this way and warn you to make your code generic to accommodate AMD's 64-thread warp size.
+They even support inline PTX in CUDA kernels by translating it to another IR and then re-targeting it for the AMD APIs.
+
+What's even more impressive is they can outperform HIP (by 2x on average on MI300X) on the [Rodinia benchmark](https://github.com/yuhc/gpu-rodinia) by compiling the CUDA code there out-of-the-box.
+This company has done lots of GPU work, including building a [GPU-accelerated regex engine](https://spectralcompute.co.uk/regex)!
+This was by far the most compelling talk given in this summit, and I hope they have the strength to continue their work.
+
+<!--
 - Competent CUDA compiler/translator team
 - opencl, hip, ... didn't  oneapi, triton, mojo, didn't work, no uptake from others
 - SCALE: compile a superset of CUDA to AMDGPU machine instructions, no emulation, no overhead
@@ -171,11 +268,20 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
 - they have a discord QR code on the final slide lol, join our discord lol
 - https://docs.scale-lang.com/
 - https://spectralcompute.co.uk/regex
+-->
 
-### Pre-training Beyond CUDA
+## Pre-training Beyond CUDA
 
-#### Quinten Anthony - Model Training Lead from Zyphra
+OK so far, you may have noticed that the speakers have only barely mentioned AMD GPUs in their talks.
+This trend shall continue.
 
+### Zyphra
+
+The next talk is from Quentin Anthony, a Model Training Lead at [Zyphra](https://www.zyphra.com/) ([see the recording](https://tensorwave.com/blog/maximizing-gpu-efficiency-model-sizing-insights-from-zyphras-quentin-anthony)).
+All I could gather from this talk is that making sure layer dimensions are powers of 2 is quite important for performance.
+They wrote a blog post "[The Zyphra Training Cookbook](https://www.zyphra.com/post/the-zyphra-training-cookbook)", which I think is pretty good.
+
+<!--
 - Trying to match model architecture with hardware, trying to target snapdragon, gpu, ..., need tuned model architecture for each hw arch
 - massive slowdowns when you don't use powers of two, efficient sizes are important, small tweaks of existing sizes gives lots of perf improvement for free! (accuracy not affected by such small nudges)
 - they have a paper online
@@ -190,9 +296,19 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
 - https://www.zyphra.com/post/the-zyphra-training-cookbook
   - This is great actually!!! Should add to my ML links document
 - this guy was super nervous, not a good presenter lol
+-->
 
-#### Neah Prakriya from UCLA
+### UCLA VAST Lab
 
+The next speaker was Neha Prakriya from UCLA ([see the recording](https://tensorwave.com/blog/data-efficient-training-on-amd-gpus)), from Jason Cong's lab.
+They looked into techniques to minimize the corpus of pretraining text you need using embedding and sampling: sounds sensible.
+And then they did some fine-tuning and distillation using their sampling approach with a small 7B Llama and showed it worked well.
+They used this technique to develop a HLS coding assistant (it just injects `#pragma`s in the right places).
+
+OK fine, but what does this have to do with AMD?
+Turns out, there are lots of people doing this exact same research, but AMD gave her lab a MI300X, so she did this experiment with one AMD GPU.
+All the others use NVIDIA, and I'm sure she wanted to too.
+<!--
 - Working with Jason Cong, VAST
 - AMD GPU training lab, typical memory wall plots, they focus on dataset selection
 - humans use spaced repetition, focus on hard topics, so they apply this to pretraining
@@ -205,9 +321,14 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
 - they got a MI300X GPU, thank you AMD lol
   - HLS coding assistant for FPGAs: MVT kernel from Polybench. the LLM injects the correct pragmas lol.
 - very poor minion, AMD minion at UCLA, this is just a random academic PhD talk, nothing AMD related. seems like this is a huge field, but she is the only one doing this with AMD GPUs
+-->
 
-#### Eugene from featherless.ai
+### RWKV
 
+Next was Eugene Cheah from [featherless.ai](https://featherless.ai/).
+I'll admit my knowledge of his [RWKV](https://www.rwkv.com/) is very weak, so I can't judge, but he claims this model architecture achieves linear attention scaling and no quadratic KV cache growth.
+
+<!--
 - RWKV OSS project, AI model under the Linux foundation, running on all windows devices today lmao
 - transformer context length limitations, larger length slows down generation...
 - https://featherless.ai/ (serverless LLM hosting service)
@@ -221,8 +342,13 @@ Instead, we had Greg from Tensorwave (built [GPUOcelot](https://github.com/gpuoc
 - there are so many finetunes on hugging face, we want to support them all on featherless
 - lots of words, personal AGI, memory tune in the night, extract your experiences during the day
 - https://www.convex.dev/ai-town
+-->
 
-### Post-Training Beyond CUDA
+### Are You Bored Yet?
+
+So was everyone here.
+
+## Post-Training Beyond CUDA
 
 #### Alex from Higgsfields AI
 
