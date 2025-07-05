@@ -1,8 +1,10 @@
 +++
 title = "61st Design Automation Conference (DAC 2024)"
 date = 2024-07-05
-slug = "review-of-dac-2024"
-draft = true
+draft = false
+
+[extra]
+new = true
 +++
 
 - https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/

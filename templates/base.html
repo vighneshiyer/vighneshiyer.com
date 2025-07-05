@@ -5,40 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{% block title %}{{ config.title }} {% if config.description %} &middot; {{ config.description }} {% endif %} {% endblock title %}</title>
-    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path="favicon.png") | safe }}">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
-    <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml") | safe }}">
-    <link rel="stylesheet" href="{{ get_url(path="index.css") | safe }}">
-
-    <!-- PhotoSwipe -->
-    <script type="module">
-      import PhotoSwipeLightbox from '{{ get_url(path="photoswipe-lightbox.esm.min.js") | safe }}';
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: document.querySelectorAll('[id^="gallery"]'), // apply photoswipe to all #image and #gallery shortcodes
-        children: 'a',
-        mouseMovePan: true,
-        initialZoomLevel: 'fit',
-        secondaryZoomLevel: 'fit',
-        maxZoomLevel: 3,
-        pswpModule: () => import('{{ get_url(path="photoswipe.esm.min.js") | safe }}')
-      });
-      lightbox.init();
-    </script>
-    <link rel="stylesheet" href="{{ get_url(path="photoswipe.css") | safe }}">
-
-    <!-- highlight.js -->
-    <!-- <link rel="stylesheet" href="{{ get_url(path="tokyo-night-dark.min.css") | safe }}"> -->
-    <script type="module">
-      import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
-      import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/plaintext.min.js';
-      import verilog from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/verilog.min.js';
-      hljs.registerLanguage('plaintext', plaintext);
-      hljs.registerLanguage('verilog', verilog);
-      hljs.highlightAll();
-    </script>
-
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const lightRadio = document.querySelector('#color-scheme .light');
@@ -85,6 +51,40 @@
       });
     </script>
 
+    <title>{% block title %}{{ config.title }} {% if config.description %} &middot; {{ config.description }} {% endif %} {% endblock title %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path="favicon.png") | safe }}">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml") | safe }}">
+    <link rel="stylesheet" href="{{ get_url(path="index.css") | safe }}">
+
+    <!-- PhotoSwipe -->
+    <script type="module">
+      import PhotoSwipeLightbox from '{{ get_url(path="photoswipe-lightbox.esm.min.js") | safe }}';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: document.querySelectorAll('[id^="gallery"]'), // apply photoswipe to all #image and #gallery shortcodes
+        children: 'a',
+        mouseMovePan: true,
+        initialZoomLevel: 'fit',
+        secondaryZoomLevel: 'fit',
+        maxZoomLevel: 3,
+        pswpModule: () => import('{{ get_url(path="photoswipe.esm.min.js") | safe }}')
+      });
+      lightbox.init();
+    </script>
+    <link rel="stylesheet" href="{{ get_url(path="photoswipe.css") | safe }}">
+
+    <!-- highlight.js -->
+    <!-- <link rel="stylesheet" href="{{ get_url(path="tokyo-night-dark.min.css") | safe }}"> -->
+    <script type="module">
+      import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
+      import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/plaintext.min.js';
+      import verilog from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/verilog.min.js';
+      hljs.registerLanguage('plaintext', plaintext);
+      hljs.registerLanguage('verilog', verilog);
+      hljs.highlightAll();
+    </script>
+
     {% block seo -%}
       <meta property="og:site_name" content="{% block ogsitename %}{{config.title}}{% endblock ogsitename %}">
       {% if config.extra.author -%}
@@ -110,7 +110,6 @@
 
     {% block extra_head %}
     {% endblock extra_head %}
-
   </head>
   {% endblock head %}
 

@@ -10,7 +10,7 @@ new = true
 
 It is a dark, dark world.
 Mr. Leather-Jacket isn't relenting.
-With his 10x and growing profit margin on the hottest commodity known to man, people are screaming for relief.
+With his 10x (and growing) profit margin on the hottest commodity known to man, people are screaming for relief.
 But no one has stepped up to the plate.
 
 Billions of precious VC capital is lit on fire every month as each AGI optimist tries to outcompete the others.

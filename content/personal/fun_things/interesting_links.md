@@ -174,6 +174,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [AI is killing some companies, yet others are thriving - let's look at the data (2/28/2025)](https://www.elenaverna.com/p/ai-is-killing-some-companies-yet) ([HN link](https://news.ycombinator.com/item?id=43206491))
 - [Andrej: Power to the people: How LLMs flip the script on technology diffusion](https://karpathy.bearblog.dev/power-to-the-people/) ([HN link](https://news.ycombinator.com/item?id=43619367))
 - [Anthropic: Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model) ([HN link](https://news.ycombinator.com/item?id=43495617))
+- [Frequently Asked Questions (And Answers) About AI Evals](https://hamel.dev/blog/posts/evals-faq/) ([HN link](https://news.ycombinator.com/item?id=44430117))
 
 ### Applications
 
