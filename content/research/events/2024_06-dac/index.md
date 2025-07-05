@@ -2,15 +2,24 @@
 title = "61st Design Automation Conference (DAC 2024)"
 date = 2024-07-05
 draft = false
+description = "The Cooley panel, fun on the exhibition floor with X-Epic, OSS EDA CAD, and much much more!"
 
 [extra]
 new = true
 +++
 
-- https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/
-- Where is JITX?
+## Cooley Troublemakers Panel
 
-Cooley Session
+### Digital Twins
+
+- A “Digital Twin” is so important!
+  - Cadence claims it is so important to model the datacenter physically along with the silicon that’s running on each rack
+  - Synopsys agrees! Of course, more tools to sell to people who don’t need them
+  - Justification for acquisition of Ansys’s tools for non-VLSI-CAD areas
+- Joe refutes them!
+  - Digital twins of physical environments for co-simulation with digital architectures only needed in very niche scenarios
+  - High-level modeling is sufficient. Not physics simulation!
+
 
 Digital twin from tony
 Sony wants to know about how noise suppression works in a factory that is noisy, need a factory model for full end to end simulation, need to design the model of the environment along with the chip specs too, this is a good point, be able to simulate things up front yo design the specs in the first place, this extends to package design and so forth, the question is at what fidelity we need to model that external environment along with the chip, it's not just the ic but the full product and the factory where it will be produced and used, how do you bin die? Need to bin dies based on their end to end performance on the real system
@@ -37,6 +46,30 @@ Joe says it makes industry sense, rtl sim is the most important, why for free? T
 Synopsis has pay per minutes on the cloud since 2022, Paul says me too
 Metrics make this easy, no need for license random stuff, unlike cadence or synopsys, Paul is encouraging joe
 
+### A Free RTL Simulator: Metrics
+
+- Joe used to run Metrics
+  - DSim: a free, cloud-native RTL simulator with full SV/UVM support
+  - Sounds cool right?
+- But it is a huge pain to actually use
+  - Depends on some VSCode plugin, there is no binary you can download and run
+- Now Metrics is acquired by Altair
+- Someone should look into this, eventually…
+
+### "IP Management" Tools
+
+- What are these “IP Management” Tools?
+- IC Manage
+  - Design data management is a system that provides secure access to all design and IP data for system and semiconductor designs for purposes of team collaboration, revision tracking & control, IP sharing & reuse, and design & verification progress analytics.
+  - What?
+- [Perforce Helix IPLM](https://www.perforce.com/products/helix-iplm)
+  - You need to be able to track IPs and their projects from conception through implementation. End-to-end traceability of those IPs is a requirement in the enterprise, especially for those with functional safety requirements.
+  - What?
+- Cooley made fun of them as “folder zipping services”
+- Dean and Paul threw a fit
+
+
+
 Dean, everyone has ip management things, is your product dead? Ic manage has design and IP and holodeck product, we can manage cloud data transfers easily with large data files, dedup and random stuff, components the eda cloud bursting solutions, we are moving to sass model, need to specify what data to run which simulation, holodeck seems kind of stupid lol, seems like a adhoc build system and spec system and cloud system, but seems ugly, multi cloud thing, holodeck claims to be complementary, AMD is a user of this, claim they can accelerate synopsys, cadence stuff using cloud magic, basically orchestration tool
 Data is spread out over data centers, many data management systems, orgs cant reuse their things across new acquisitions and other cross team stuff, can integrate with random vcs tools, creates catalog, can handle ip objects and versioning and traceability, seems similar to perforce IP thing
 Tony, team center, apply to semi lifecycle management, supply chain management, program schedule, timing, need bom tool, cadence is growing in this area, gf micron Samsung is using it
@@ -48,6 +81,21 @@ We are a static signoff company, shift left for security for data transfer and i
 But capacity is limited to 2-3M gates, we can process 5M gate in minutes, 100m gate in an hour, but we have false failures, but we can just waive them by hand lol
 Paul says if it checks clean it doesn't guarantee fully correct, can only do that with formal, I see them as complementary
 Prakash disagrees, we don't need formal to check if a key can be leaked, static signoff cannot miss a problem, but they can have false positives, we have secret sauce
+
+### The New Era of RTL -> GDS Tools
+
+- Synopsys IC2 was a disaster
+- Cadence jumped in with Innovus and was winning all Synopsys’ customers
+- Now Fusion Compiler is overtaking Innovus
+  - Step-by-step PD flow just doesn’t give good QoR
+  - Too much margining required at every PD step
+  - Fusion compiler was a full rewrite of the data model algorithms operate on
+- Software engineering matters
+  - Unified data model across all synthesis / PnR algorithms
+  - Single cockpit, no miscorrelations / bad estimates
+- Destruction enables new creation
+  - If huge companies can do it, why are academics so hesitant? Quite cowardly!
+
 
 Shankar, ic 2 was a disaster and let cadence into the market, how did you clean?
 Signoff gets complex at latest nodes, need pnr to correlate with signoff, and synthesis too, and if not then add lots of margin lol but that didn't work
@@ -75,13 +123,17 @@ Aso.ai for analog automation, migration and optimization done automatically, gen
 cAe is mostly bs for ic engineers, Joe says, not the same business doesn't interact design engineers,maybe only at edge like 3dic, need to make it fun for the engineers, tools suck lol
 They think analog migration and auto opt saves lots of effort, Shankar says he can do it and not cadence lol
 
-Ansys powerartist
+## Exhibition Floor
 
-Try to email Siemens, they have had students try to get rtl running in emulation and report how it goes to them lol
+### GenAI Startups
 
-Your tool is not the top level! It is a library! Stop using TCL and other garbage and expose actual apis
+- https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/
+  - Where is JITX?
+  - Silimate discussion
+  - LLM for X
 
-X-Epic Fun Time
+
+### X-Epic Fun Time
 
 - Nothing changes, there is no difference in 3 months vs Shanghai, look at airport, streets, transit
 - Can't you ship homeless to Nevada? It's too comfortable here it seems
@@ -106,13 +158,88 @@ X-Epic Fun Time
 - Quality of life keeps increasing in China, Chinese manufacturing keeps lowering cost and improving automation, just saw the Oakland port, they have constraints wrt dockworkers while Chinese automated the entire thing, what about pollution? Yes indeed China drops rockets with toxic waste onto villages but for the average person just look at the clean cities, factories are also quite industrialized and waste is sequestered in most cases
 - It has been just 4 years of work and look how far they've gotten, very impressive
 
+#### X-Epic Emulation Machines
+
+- Synopsys HAPS vs X-Epic HuaPro P2E
+  - Can you spot the difference?
+- X-Epic is nearly at feature parity with Zebu
+  - Supports waveforms, prototype + emulation mode, speed bridges to real hardware, …
+
+- X-Epic was founded in 2020, they are already so far!
+- Rapid Chinese progress is a hallmark of DAC
+- Add Synopsys Zebu images
+
+#### X-Epic GalaxSim
+
+- Fully Chinese, from scratch, Xcelium equivalent RTL simulator
+- Does the waveform viewer look familiar?
+- They poached off many Verdi engineers and built it again
+- But it looks even nicer than Verdi! Equivalent functionality
+
+
+### FPGA-Based Prototyping Systems
+
+- S2C, Huins, Corigine - specialized FPGA proto vendors (VU19P is the king)
+
+#### S2C
+
+#### Huins
+
+#### Corigine
+
+### Quick Takes
+
+#### Agnisys
+
+#### AlphaWave
+
+- UCIe IP is popular, AlphaWave among many others showcasing it
+
+#### Exostiv
+
+#### allspice.io
+
+- visual PCB diffs
+
+#### Scientific Analog
+
+#### Siemens
+
+- Try to email Siemens, they have had students try to get rtl running in emulation and report how it goes to them lol
+- Veloce
+
+#### Sigasi
+
+#### Intel Foundry
+
+- 18A image from synopsys
+
+## OSS EDA CAD Birds-of-a-Feather
+
+- https://open-source-eda-birds-of-a-feather.github.io/README_2024.html
+- iEDA: https://open-source-eda-birds-of-a-feather.github.io/doc/slides_2024/DAC-BoF_iEDA.pdf
+Your tool is not the top level! It is a library! Stop using TCL and other garbage and expose actual apis
+- Zero asic missing, precision innovations lmao
+- OpenROAD is oversold
+  - Luca Benini gave a talk on 10/31/24 at Berkeley - OpenROAD has advanced significantly from 2022
+- iEDA (Chinese) is undersold
+  - Lots of LLM talk, mostly useless and nonproductive
+- OSS CAD vision is weak and uninspiring
+
+### Precision Innovations
+
+### Chinese (iEDA)
+
+### Germans / Europeans (still writing proposals)
+
+### ChipFlow
+
+## Other Takeaways
+
 - Main theme of dac, Chinese emergence and early dominance
 - What about those who aren't there? Cedar eda, verifai, and look at others from dac 22
-
 - Dac vs other academic conferences, drinks and fun, would academics even know what's going on lol?
-- Zero asic missing, precision innovations lmao
 - No sifive presence, less riscv mention than last time but still quite a bit
-- Random tilelink ip lol
 
-- https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/
-- Silimate discussion
+<!--- Random tilelink ip lol-->
+<!-- - Ansys powerartist-->
