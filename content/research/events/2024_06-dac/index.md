@@ -8,10 +8,106 @@ description = "The Cooley panel, fun on the exhibition floor with X-Epic, OSS ED
 new = true
 +++
 
+I went to [DAC in 2022](@/research/events/2022-06-dac/index.md) and it quickly became my favorite conference.
+So after missing it in 2023, I signed up with the free "I Love DAC" registration for DAC in 2024.
+Since I realized that the academic / engineering tracks in 2022 were basically worthless, I was very happy to use the free registration to attend the most important part of DAC: _the exhibition floor_.
+Here is what I saw.
+
 ## Cooley Troublemakers Panel
+
+To kick off the 61st DAC, we had the classic panel of EDA CAD executives put together by John Cooley of [deepchip.com](https://deepchip.com/).
+This panel was way more fun than the one I saw in 2022.
+You can watch [the recording here](https://www.youtube.com/watch?v=r0vWASJYbFY).
+
+{{ image(path="cooley_panel.jpg", width="50%") }}
+
+Sitting on the panel were: Prakash Narain of [Real Intent](https://www.realintent.com/), Paul Cunningham of Cadence, Dean Drako of [IC Manage](https://www.icmanage.com/) (and [Drako Motors](https://www.drakomotors.com/)), Tony Hemmelgarn of Siemens, Shankar Krishnamoorthy of Synopsys, and Joe Costello of [Metrics](https://altair.com/newsroom/news-releases/altair-signs-agreement-to-acquire-metrics-design-automation-inc).
 
 ### Digital Twins
 
+The panel got started with Cooley asking the execs about the recent EDA CAD hype around "digital twins".
+
+Tony began by talking about one of his customers: Sony.
+They wanted to build some kind of noise suppression headphones that would be used in a factory, so it goes.
+So naturally, they had to model the factory itself for "end-to-end simulation" where they designed the model of the environment along with the chip that goes into the headphones.
+They wanted to simulate things up front to design the specs in the first place, and this extends to package design and so forth.
+
+The question is at what fidelity we need to model that external environment along with the chip, so it's not just the IC, but the full product, and the factory where it will be produced and used.
+For instance, how do you determine how to bin dies?
+Well, you need to bin dies based on their end-to-end performance in the full + real system.
+
+There's a good chance I'm getting what Tony said wrong, but this seems quite far-fetched to me 😆.
+
+Shankar stepped in and said that the concept of digital twins goes back to SPICE.
+We often need to build a virtual product in its environment where you can evaluate it.
+For instance, silicon companies like NVIDIA are becoming systems companies.
+Consider the DGX box: one needs to evaluate package stress and thermals, the motherboard, the chassis, the pod, and cluster all at once with thermal and cooling models.
+We need multi-physics analysis and EDA tools that can interplay with them.
+
+<!--
+Digital twin from tony
+Sony wants to know about how noise suppression works in a factory that is noisy, need a factory model for full end to end simulation, need to design the model of the environment along with the chip specs too, this is a good point, be able to simulate things up front yo design the specs in the first place, this extends to package design and so forth, the question is at what fidelity we need to model that external environment along with the chip, it's not just the ic but the full product and the factory where it will be produced and used, how do you bin die? Need to bin dies based on their end to end performance on the real system
+Shankar, digital twin goes back to spice, need to build a virtual product in its entirely where you can evaluate it
+Silicon systems like nvidia are becoming systems companies, like the dgx, need to eval package stress and thermals, the motherboard, the chassis, the pod and cluster and thermals and cooling, need multi physics analysis, and eda tools that can interplay with them
+-->
+
+Now it's Dean's turn.
+He says that we've been doing this (building digital twins) for a long time and we are simply extending the scope of this task.
+Shankar says that the entire product development process is based on all-encompassing virtual simulation.
+Paul suggests that there is move overlap as we move from package to system; we need to do more co-design for system-level optimization and better simulation scaling techniques as abstractions overlap.
+
+Shankar dives in and says that originally people would first build a chip, and then write software.
+But the new way is to write software simultaneously as the chip is being developed.
+This is the "digital twin" in action: software has to know how the chip interacts with the product and environment.
+
+Paul says that we can leverage knowledge from EDA CAD to multi-physics simulation - we are already good at building digital twins for ICs, but we need to extend this upwards.
+For example, can we simulate the airplane mechanics and aerodynamics along with the silicon hardware?
+This is Paul's call to action: make this happen!
+Digital twins are mechanical now - it has gone way beyond purely digital-domain modeling, and also includes stress, thermals, and 3DIC modeling too.
+
+<!--
+Dean says we have been doing this for long time and we are just extending the scope of them. Shankar is saying that the entire product dev process is the entire virtual simulation, all encompassing
+Paul, more overlap as we move from package to system, need to do more codesign for opt, need better physical scaling due to abstractions overlap
+Shankar, first build chip then write software, but new way is to write software directly as the chip is being developed, digital twin in action, software has to know how the chip interacts with the product and environment
+Paul, can we leverage knowledge from eda cad to the multi physics simulation, we are good at a chip digital twin, but need to extend this upwards
+Paul, can we simulate the airplane along with the hardware, let's do call to action, let's deliver that
+Digital twin stuff is mechanical now, it has gone beyond digital stuff, stress, thermals, 3dic things too
+-->
+
+#### Synopsys + Ansys
+
+Cooley asks Shankar, "how are you going to build 3DICs without a good PCB tool?" (too much mocking 😆)
+If Synopsys doesn't even have good package design software, and there's no unified cockpit for signoff from 2D to 3D, this seems hard.
+There must be deep integration between IC, packaging, and PCB design tools along with multi-physics analysis for stress and thermals.
+
+Without much hesitation Cooley then discusses the news that [Synopsys will acquire Ansys](https://news.synopsys.com/2024-01-16-Synopsys-to-Acquire-Ansys,-Creating-a-Leader-in-Silicon-to-Systems-Design-Solutions).
+Paul, "how does Cadence cope"?
+
+Paul said he's OK, they are still competing, Cadence can also do multi-physics simulation, [Clarity](https://www.cadence.com/en_US/home/tools/system-analysis/em-solver/clarity-3d-solver.html) is good vs [HFSS](https://www.ansys.com/products/electronics/ansys-hfss), [Celsius](https://www.cadence.com/en_US/home/tools/system-analysis/thermal-solutions/celsius-thermal-solver.html) is good vs [Icepak](https://www.ansys.com/products/electronics/ansys-icepak), we also have [Fidelity CFD](https://www.cadence.com/en_US/home/tools/system-analysis/computational-fluid-dynamics/fidelity.html) from our [acquisition of Cascade](https://community.cadence.com/cadence_blogs_8/b/cfd/posts/cadence-welcomes-cascade-technologies-1221740980).
+Lots of good stuff.
+And Anirudh is working on large numerical solvers at Cadence.
+We feel confident, but we acknowledge that Ansys has a good position too.
+
+Then Cooley turns to Shankar: Did you just buy old software?
+
+<!--
+Shankar is going to build 3dic without a PCB tool lol, they think packaging people don't have good software yet, no unified cockpit for signoff from 2d to 3d, deep integration between chip and PCB and package tools, and multiphysics abalysis
+Synopsis acquire Ansys, how does cadence cope? Paul is ok lol, they are still competing, we can also do multiphysics, clarity is good vs hfss, Celsius vs icepack, fidelity cfd, Cascade, lots of good stuff of course lol, anirudh is doing large numerical solvers at cadence, feels confidence but acknowledge Ansys has a good position
+Shankar, did you buy old sw lol, but Ansys is gold standard for si, Ansys has dominant position,
+Hfss seems old lol, cadence has modern algos in clarity, are you still ok lol?
+Shankar says he is still better, we are still good lol, complex design people use Ansys for hfss, he will keep driving
+Paul says coupling between multiphysics and digital is good
+-->
+
+#### Digital Twin Hype
+
+Joe says digital twin is hype cycle, cae, intersection between ic stuff and cae stuff, digital twin is ideally about simplifying models, Joe believes that we shouldn't need digital twin a lot, only at the fringes where we can't model things too abstractly, the intersection is actually quite narrow, don't solve excess problems, only at leading edge
+Joe is giving away rtl simulators lol, where is the upside lol? Is this just a joke
+Joe says it makes industry sense, rtl sim is the most important, why for free? The model in this business has to change, everyone wants a good digital simulator, use it for code, debug, no money on small things, nearly all simulator cycles happen in the data center for regression, make the creative system free to do work and create, just play with it for free, but we charge for data center cloud for regression, don't use half assed DC for regression, use a commercial inexpensive cloud for the rest, you can't build stuff for free anymore by yourself as an engineer but we want to enable that, free tool do your design and then if you want to do big then you can use cloud
+Synopsis has pay per minutes on the cloud since 2022, Paul says me too
+Metrics make this easy, no need for license random stuff, unlike cadence or synopsys, Paul is encouraging joe
+
+<!--
 - A “Digital Twin” is so important!
   - Cadence claims it is so important to model the datacenter physically along with the silicon that’s running on each rack
   - Synopsys agrees! Of course, more tools to sell to people who don’t need them
@@ -19,32 +115,7 @@ new = true
 - Joe refutes them!
   - Digital twins of physical environments for co-simulation with digital architectures only needed in very niche scenarios
   - High-level modeling is sufficient. Not physics simulation!
-
-
-Digital twin from tony
-Sony wants to know about how noise suppression works in a factory that is noisy, need a factory model for full end to end simulation, need to design the model of the environment along with the chip specs too, this is a good point, be able to simulate things up front yo design the specs in the first place, this extends to package design and so forth, the question is at what fidelity we need to model that external environment along with the chip, it's not just the ic but the full product and the factory where it will be produced and used, how do you bin die? Need to bin dies based on their end to end performance on the real system
-Shankar, digital twin goes back to spice, need to build a virtual product in its entirely where you can evaluate it
-
-Silicon systems like nvidia are becoming systems companies, like the dgx, need to eval package stress and thermals, the motherboard, the chassis, the pod and cluster and thermals and cooling, need multi physics analysis, and eda tools that can interplay with them
-Dean says we have been doing this for long time and we are just extending the scope of them. Shankar is saying that the entire product dev process is the entire virtual simulation, all encompassing
-Paul, more overlap as we move from package to system, need to do more codesign for opt, need better physical scaling due to abstractions overlap
-Shankar, first build chip then write software, but new way is to write software directly as the chip is being developed, digital twin in action, software has to know how the chip interacts with the product and environment
-Paul, can we leverage knowledge from eda cad to the multi physics simulation, we are good at a chip digital twin, but need to extend this upwards
-Paul, can we simulate the airplane along with the hardware, let's do call to action, let's deliver that
-Digital twin stuff is mechanical now, it has gone beyond digital stuff, stress, thermals, 3dic things too
-
-Shankar is going to build 3dic without a PCB tool lol, they think packaging people don't have good software yet, no unified cockpit for signoff from 2d to 3d, deep integration between chip and PCB and package tools, and multiphysics abalysis
-Synopsis acquire Ansys, how does cadence cope? Paul is ok lol, they are still competing, we can also do multiphysics, clarity is good vs hfss, Celsius vs icepack, fidelity cfd, Cascade, lots of good stuff of course lol, anirudh is doing large numerical solvers at cadence, feels confidence but acknowledge Ansys has a good position
-Shankar, did you buy old sw lol, but Ansys is gold standard for si, Ansys has dominant position,
-Hfss seems old lol, cadence has modern algos in clarity, are you still ok lol?
-Shankar says he is still better, we are still good lol, complex design people use Ansys for hfss, he will keep driving
-Paul says coupling between multiphysics and digital is good
-
-Joe says digital twin is hype cycle, cae, intersection between ic stuff and cae stuff, digital twin is ideally about simplifying models, Joe believes that we shouldn't need digital twin a lot, only at the fringes where we can't model things too abstractly, the intersection is actually quite narrow, don't solve excess problems, only at leading edge
-Joe is giving away rtl simulators lol, where is the upside lol? Is this just a joke
-Joe says it makes industry sense, rtl sim is the most important, why for free? The model in this business has to change, everyone wants a good digital simulator, use it for code, debug, no money on small things, nearly all simulator cycles happen in the data center for regression, make the creative system free to do work and create, just play with it for free, but we charge for data center cloud for regression, don't use half assed DC for regression, use a commercial inexpensive cloud for the rest, you can't build stuff for free anymore by yourself as an engineer but we want to enable that, free tool do your design and then if you want to do big then you can use cloud
-Synopsis has pay per minutes on the cloud since 2022, Paul says me too
-Metrics make this easy, no need for license random stuff, unlike cadence or synopsys, Paul is encouraging joe
+-->
 
 ### A Free RTL Simulator: Metrics
 
@@ -55,6 +126,11 @@ Metrics make this easy, no need for license random stuff, unlike cadence or syno
   - Depends on some VSCode plugin, there is no binary you can download and run
 - Now Metrics is acquired by Altair
 - Someone should look into this, eventually…
+
+{{ gallery(images=[
+    "altair_metrics.jpg",
+    "altair_metrics_2.jpg",
+], popout=false) }}
 
 ### "IP Management" Tools
 
@@ -132,6 +208,9 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
   - Silimate discussion
   - LLM for X
 
+#### PrimisAI
+
+- One of the first to the scene, (looking back from 2025, this was quite early, along with Agnisys)
 
 ### X-Epic Fun Time
 
@@ -213,6 +292,12 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 #### Intel Foundry
 
 - 18A image from synopsys
+
+### NoC Startups
+
+#### Arteris
+
+#### Baya Systems
 
 ## OSS EDA CAD Birds-of-a-Feather
 
