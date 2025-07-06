@@ -88,7 +88,12 @@ Lots of good stuff.
 And Anirudh is working on large numerical solvers at Cadence.
 We feel confident, but we acknowledge that Ansys has a good position too.
 
-Then Cooley turns to Shankar: Did you just buy old software?
+Then Cooley turns to Shankar, "did you just buy old software"?
+Shankar says that Ansys is the gold standard for signal integrity, and they still have a dominant position.
+
+Cooley says, "But HFSS seems old, and Cadence has modern algorithms in Clarity, are you still OK with this acquisition"?
+Shankar says he is still better off, since for complex designs, people still trust Ansys HFSS the most.
+Paul keeps the hype going by noting that tool coupling between digital and multi-physics simulations is good.
 
 <!--
 Shankar is going to build 3dic without a PCB tool lol, they think packaging people don't have good software yet, no unified cockpit for signoff from 2d to 3d, deep integration between chip and PCB and package tools, and multiphysics abalysis
@@ -101,11 +106,24 @@ Paul says coupling between multiphysics and digital is good
 
 #### Digital Twin Hype
 
+Suddenly Joe jumps in, and says that all this "digital twin" stuff is just a hype cycle!
+There is indeed an intersection between IC stuff and CAE stuff, but this is overblown.
+Digital twins are ultimately about building simplifying models - we shouldn't need to use "digital twins" a lot, but only at the fringes where we can't model things too abstractly.
+He asserts that the intersection between IC design and multi-physics simulation of the environment the chip operates in is quite narrow.
+We shouldn't overengineer simulations.
+
+{{ gallery(images=[
+    "cadence_celsius.png",
+    "cadence_celsius2.png",
+    "cadence_celsius3.png",
+], popout=false) }}
+
+Cadence still insists there are good use cases, such as modeling the datacenter physically along with the silicon that's running on each rack to simulate datacenter thermals.
+And Synopsys concurs: it's a good opportunity to sell more tools to people who don't need them.
+After all, this is one justification for the acquisition of Ansys' tools for multi-physics simulation.
+<!--
 Joe says digital twin is hype cycle, cae, intersection between ic stuff and cae stuff, digital twin is ideally about simplifying models, Joe believes that we shouldn't need digital twin a lot, only at the fringes where we can't model things too abstractly, the intersection is actually quite narrow, don't solve excess problems, only at leading edge
-Joe is giving away rtl simulators lol, where is the upside lol? Is this just a joke
-Joe says it makes industry sense, rtl sim is the most important, why for free? The model in this business has to change, everyone wants a good digital simulator, use it for code, debug, no money on small things, nearly all simulator cycles happen in the data center for regression, make the creative system free to do work and create, just play with it for free, but we charge for data center cloud for regression, don't use half assed DC for regression, use a commercial inexpensive cloud for the rest, you can't build stuff for free anymore by yourself as an engineer but we want to enable that, free tool do your design and then if you want to do big then you can use cloud
-Synopsis has pay per minutes on the cloud since 2022, Paul says me too
-Metrics make this easy, no need for license random stuff, unlike cadence or synopsys, Paul is encouraging joe
+-->
 
 <!--
 - A “Digital Twin” is so important!
@@ -119,6 +137,40 @@ Metrics make this easy, no need for license random stuff, unlike cadence or syno
 
 ### A Free RTL Simulator: Metrics
 
+<!--
+Joe is giving away rtl simulators lol, where is the upside lol? Is this just a joke
+Joe says it makes industry sense, rtl sim is the most important, why for free? The model in this business has to change, everyone wants a good digital simulator, use it for code, debug, no money on small things, nearly all simulator cycles happen in the data center for regression, make the creative system free to do work and create, just play with it for free, but we charge for data center cloud for regression, don't use half assed DC for regression, use a commercial inexpensive cloud for the rest, you can't build stuff for free anymore by yourself as an engineer but we want to enable that, free tool do your design and then if you want to do big then you can use cloud
+Synopsis has pay per minutes on the cloud since 2022, Paul says me too
+Metrics make this easy, no need for license random stuff, unlike cadence or synopsys, Paul is encouraging joe
+-->
+
+After talking about the folly of highly detailed "digital twins" for simulation, Joe moved onto his own company.
+We're giving away RTL simulators!
+
+And Cooley asked him, "where is the upside? Is this just a joke?".
+Joe says that it makes industry sense. Everyone uses RTL simulation and it's very important.
+
+And why should we give it away for free?
+He says the model in this business has to change.
+Everyone wants a good digital simulator: and you should be able to use it for free for RTL design and debug for small things for free.
+But nearly all simulation cycles happen in the datacenter for regressions.
+So let's make the simulator free so you can be creative and design RTL and play around.
+But we will charge you for the datacenter cloud for regression runs.
+
+{{ gallery(images=[
+    "altair_metrics.jpg",
+    "altair_metrics_2.jpg",
+], popout=false) }}
+
+Shankar came in and said that Synopsys has had pay-per-minute VCS cloud since 2022, and Paul says Cadence too!
+But Joe claims that Metrics makes this easy with no need for getting licences ahead of time, unlike Cadence or Synopsys.
+
+Later, I looked into [Metrics DSim](https://altair.com/dsim).
+And it turns out, it is a huge pain to use.
+You need to use it within VSCode with their plugin, but there is no DSim binary you can just download and run.
+Not good...
+
+<!--
 - Joe used to run Metrics
   - DSim: a free, cloud-native RTL simulator with full SV/UVM support
   - Sounds cool right?
@@ -126,14 +178,11 @@ Metrics make this easy, no need for license random stuff, unlike cadence or syno
   - Depends on some VSCode plugin, there is no binary you can download and run
 - Now Metrics is acquired by Altair
 - Someone should look into this, eventually…
-
-{{ gallery(images=[
-    "altair_metrics.jpg",
-    "altair_metrics_2.jpg",
-], popout=false) }}
+-->
 
 ### "IP Management" Tools
 
+<!--
 - What are these “IP Management” Tools?
 - IC Manage
   - Design data management is a system that provides secure access to all design and IP data for system and semiconductor designs for purposes of team collaboration, revision tracking & control, IP sharing & reuse, and design & verification progress analytics.
@@ -143,14 +192,20 @@ Metrics make this easy, no need for license random stuff, unlike cadence or syno
   - What?
 - Cooley made fun of them as “folder zipping services”
 - Dean and Paul threw a fit
+-->
 
+Cooley asks Dean, "everyone has these IP management things, so it your product (IC Manage) dead"?
+Well, IC Manage has this Holodeck product that has
 
-
+<!--
 Dean, everyone has ip management things, is your product dead? Ic manage has design and IP and holodeck product, we can manage cloud data transfers easily with large data files, dedup and random stuff, components the eda cloud bursting solutions, we are moving to sass model, need to specify what data to run which simulation, holodeck seems kind of stupid lol, seems like a adhoc build system and spec system and cloud system, but seems ugly, multi cloud thing, holodeck claims to be complementary, AMD is a user of this, claim they can accelerate synopsys, cadence stuff using cloud magic, basically orchestration tool
 Data is spread out over data centers, many data management systems, orgs cant reuse their things across new acquisitions and other cross team stuff, can integrate with random vcs tools, creates catalog, can handle ip objects and versioning and traceability, seems similar to perforce IP thing
 Tony, team center, apply to semi lifecycle management, supply chain management, program schedule, timing, need bom tool, cadence is growing in this area, gf micron Samsung is using it
 Plm tool
 Dean says it isn't about grouping files lol, idk this is just semantics, he is taking about IP not full chips and revs
+-->
+
+### Real Intent Sentry
 
 Real intent sentry, security signoff tool lol, it is static but the competition is formal, why is that important
 We are a static signoff company, shift left for security for data transfer and integrity and leakage avoidance, security arch defines rules and the product analyze failures, competition is jasper and vc formal and formal tools
@@ -270,9 +325,16 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 
 #### Agnisys
 
+{{ gallery(images=[
+    "agnisys.jpg",
+    "agnisys_2.jpg",
+], popout=false) }}
+
 #### AlphaWave
 
 - UCIe IP is popular, AlphaWave among many others showcasing it
+
+{{ image(path="alphawave_ucie_d2d.jpg", width="50%") }}
 
 #### Exostiv
 
@@ -310,6 +372,11 @@ Your tool is not the top level! It is a library! Stop using TCL and other garbag
 - iEDA (Chinese) is undersold
   - Lots of LLM talk, mostly useless and nonproductive
 - OSS CAD vision is weak and uninspiring
+
+{{ gallery(images=[
+    "birds_of_a_feather.jpg",
+    "birds_of_a_feather_2.jpg",
+], popout=false) }}
 
 ### Precision Innovations
 
