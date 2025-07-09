@@ -160,7 +160,9 @@ But we will charge you for the datacenter cloud for regression runs.
 {{ gallery(images=[
     "altair_metrics.jpg",
     "altair_metrics_2.jpg",
-], popout=false) }}
+    "metrics_card.jpg",
+    "metrics_card_2.jpg",
+], popout=true) }}
 
 Shankar came in and said that Synopsys has had pay-per-minute VCS cloud since 2022, and Paul says Cadence too!
 But Joe claims that Metrics makes this easy with no need for getting licences ahead of time, unlike Cadence or Synopsys.
@@ -196,6 +198,11 @@ Not good...
 
 Cooley asks Dean, "everyone has these IP management things, so it your product (IC Manage) dead"?
 Well, IC Manage has this Holodeck product that has
+
+{{ gallery(images=[
+    "ic_manage.jpg",
+    "perforce.jpg",
+], popout=false) }}
 
 <!--
 Dean, everyone has ip management things, is your product dead? Ic manage has design and IP and holodeck product, we can manage cloud data transfers easily with large data files, dedup and random stuff, components the eda cloud bursting solutions, we are moving to sass model, need to specify what data to run which simulation, holodeck seems kind of stupid lol, seems like a adhoc build system and spec system and cloud system, but seems ugly, multi cloud thing, holodeck claims to be complementary, AMD is a user of this, claim they can accelerate synopsys, cadence stuff using cloud magic, basically orchestration tool
@@ -256,6 +263,13 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 
 ## Exhibition Floor
 
+{{ gallery(images=[
+    "exhibition_hall.jpg",
+    "exhibition_hall_3.jpg",
+    "exhibition_hall_4.jpg",
+    "exhibition_hall_5.jpg",
+], popout=true) }}
+
 ### GenAI Startups
 
 - https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/
@@ -266,6 +280,8 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 #### PrimisAI
 
 - One of the first to the scene, (looking back from 2025, this was quite early, along with Agnisys)
+
+{{ image(path="primis_ai.jpg", width="80%") }}
 
 ### X-Epic Fun Time
 
@@ -303,6 +319,18 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 - Rapid Chinese progress is a hallmark of DAC
 - Add Synopsys Zebu images
 
+{{ gallery(images=[
+    "synopsys_zebu.jpg",
+    "synopsys_zebu_2.jpg",
+], popout=false) }}
+
+{{ gallery(images=[
+    "x_epic_box.jpg",
+    "x_epic_box_2.jpg",
+    "x_epic_huapro.jpg",
+    "x_epic_huapro_2.jpg",
+], popout=false) }}
+
 #### X-Epic GalaxSim
 
 - Fully Chinese, from scratch, Xcelium equivalent RTL simulator
@@ -310,6 +338,11 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 - They poached off many Verdi engineers and built it again
 - But it looks even nicer than Verdi! Equivalent functionality
 
+{{ gallery(images=[
+    "x_epic_waves.jpg",
+    "x_epic_waves_2.jpg",
+    "x_epic_fusion_debug.jpg",
+], popout=false) }}
 
 ### FPGA-Based Prototyping Systems
 
@@ -317,9 +350,28 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 
 #### S2C
 
+<!-- "s2c_huge_board.jpg", -->
+{{ gallery(images=[
+    "s2c_4x_board.jpg",
+    "s2c_prodigy.jpg",
+    "s2c_prodigy_system.jpg",
+], popout=false) }}
+
 #### Huins
 
+{{ gallery(images=[
+    "huins.jpg",
+    "huins_2.jpg",
+    "huins_3.jpg",
+], popout=false) }}
+
 #### Corigine
+
+{{ gallery(images=[
+    "corigine_booth.jpg",
+    "corigine_prototyping_system.jpg",
+    "corigine_prototyping_system2.jpg",
+], popout=false) }}
 
 ### Quick Takes
 
@@ -338,22 +390,37 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 
 #### Exostiv
 
+{{ gallery(images=[
+    "exostiv.jpg",
+    "exostiv_2.jpg",
+    "exostiv_3.jpg",
+    "exostiv_4.jpg",
+], popout=false) }}
+
 #### allspice.io
 
 - visual PCB diffs
 
 #### Scientific Analog
 
+{{ image(path="scientific_analog.jpg", width="50%") }}
+
 #### Siemens
 
 - Try to email Siemens, they have had students try to get rtl running in emulation and report how it goes to them lol
 - Veloce
 
+{{ image(path="siemens_veloce.jpg", width="50%") }}
+
 #### Sigasi
+
+{{ image(path="sigasi.jpg", width="50%") }}
 
 #### Intel Foundry
 
 - 18A image from synopsys
+
+{{ image(path="synopsys_intel_18a.jpg", width="50%") }}
 
 ### NoC Startups
 
@@ -380,11 +447,35 @@ Your tool is not the top level! It is a library! Stop using TCL and other garbag
 
 ### Precision Innovations
 
+{{ gallery(images=[
+    "precision_innovations.jpg",
+    "precision_innovations_2.jpg",
+], popout=false) }}
+
 ### Chinese (iEDA)
+
+{{ gallery(images=[
+    "i_eda.jpg",
+    "i_eda_2.jpg",
+    "i_eda_3.jpg",
+    "i_eda_4.jpg",
+], popout=true) }}
 
 ### Germans / Europeans (still writing proposals)
 
+{{ gallery(images=[
+    "germans.jpg",
+    "germans_2.jpg",
+    "germans_3.jpg",
+    "germans_4.jpg",
+], popout=true) }}
+
 ### ChipFlow
+
+{{ gallery(images=[
+    "chipflow.jpg",
+    "chipflow_2.jpg",
+], popout=false) }}
 
 ## Other Takeaways
 
