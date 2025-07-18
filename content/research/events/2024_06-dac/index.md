@@ -196,13 +196,23 @@ Not good...
 - Dean and Paul threw a fit
 -->
 
-Cooley asks Dean, "everyone has these IP management things, so it your product (IC Manage) dead"?
-Well, IC Manage has this Holodeck product that has
+Cooley asks Dean, "everyone has these IP management things, so is your product (IC Manage) dead"?
+Well, says Dean, IC Manage has this Holodeck product that "can manage cloud data transfers easily with large data files", can do deduplication, EDA cloud bursting, and so forth.
+And, we're moving to a SaaS model.
+
+You see, AMD is a user of IC Manage, and they claim they can 'accelerate' development using cloud EDA tools (Synopsys / Cadence).
+The problem is that data is often spread out over many datacenters, there are many competing data management systems, and organizations can't reuse their IP across new acquisitions and cross-teams.
+We can integrate with arbitrary VCS tools, create an IP catalog, and handle versioning and traceability.
 
 {{ gallery(images=[
     "ic_manage.jpg",
     "perforce.jpg",
 ], popout=false) }}
+
+The reader should look at [Holodeck](https://www.icmanage.com/io-scale-out-high-speed-holodeck/) and [Perforce Helix IPLM](https://www.perforce.com/products/helix-iplm).
+It is very very hard to understand what these tools actually do.
+Cooley mocked them as "folder zipping services" 😆.
+
 
 <!--
 Dean, everyone has ip management things, is your product dead? Ic manage has design and IP and holodeck product, we can manage cloud data transfers easily with large data files, dedup and random stuff, components the eda cloud bursting solutions, we are moving to sass model, need to specify what data to run which simulation, holodeck seems kind of stupid lol, seems like a adhoc build system and spec system and cloud system, but seems ugly, multi cloud thing, holodeck claims to be complementary, AMD is a user of this, claim they can accelerate synopsys, cadence stuff using cloud magic, basically orchestration tool
@@ -214,14 +224,36 @@ Dean says it isn't about grouping files lol, idk this is just semantics, he is t
 
 ### Real Intent Sentry
 
+Moving on, Cooley asked Prakash of Real Intent about his [Sentry](https://www.realintent.com/hardware-security-sign-off-verification-sentry/) hardware security tool.
+"It claims to be static, but the competition is formal. Why is that important?"
+
+Prakash says that Real Intent is a _static signoff_ company.
+This tool is about security for on-chip data transfer / integrity / leakage avoidance.
+The user specifies security architecture rules and the product finds failures.
+The competition is [JasperGold](https://www.cadence.com/en_US/home/tools/system-design-and-verification/formal-and-static-verification.html) and [VC Formal](https://www.synopsys.com/verification/static-and-formal-verification/vc-formal.html).
+
+The main issue with formal tools is their capacity is limited to 2-3M gates, but Real Intent tools can process 5M gates in minutes, and 100M gates in an hour.
+The drawback, is that Real Intent's static tools have false failures, which need to be waived or refined by hand.
+
+Paul suggested that static tools can't guarantee fully correct designs, so formal tools must also exist, and he sees them as complementary.
+However, Prakash disagreed and asserted that we don't need formal to check if a key can be leaked.
+In the same way that static timing can't miss a problem, but it can have false failures, Real Intent's tools can't miss real bugs, but they may require user intervention to reduce pessimism.
+<!--
 Real intent sentry, security signoff tool lol, it is static but the competition is formal, why is that important
 We are a static signoff company, shift left for security for data transfer and integrity and leakage avoidance, security arch defines rules and the product analyze failures, competition is jasper and vc formal and formal tools
 But capacity is limited to 2-3M gates, we can process 5M gate in minutes, 100m gate in an hour, but we have false failures, but we can just waive them by hand lol
 Paul says if it checks clean it doesn't guarantee fully correct, can only do that with formal, I see them as complementary
 Prakash disagrees, we don't need formal to check if a key can be leaked, static signoff cannot miss a problem, but they can have false positives, we have secret sauce
+-->
 
-### The New Era of RTL -> GDS Tools
+### The New Era of RTL → GDS Tools
 
+Cooley interrogated Shankar about why [Synopsys IC2](https://www.synopsys.com/implementation-and-signoff/physical-implementation/ic-compiler.html) was a disaster, allowed Cadence into the digital PD market, and how Synopsys recovered from that.
+
+Shankar said that in modern nodes, PnR results need to correlate well with signoff as well as early synthesis, and if that wasn't the case, excess pessimistic margin needs to be added at every step of the VLSI flow.
+
+
+<!--
 - Synopsys IC2 was a disaster
 - Cadence jumped in with Innovus and was winning all Synopsys’ customers
 - Now Fusion Compiler is overtaking Innovus
@@ -233,7 +265,6 @@ Prakash disagrees, we don't need formal to check if a key can be leaked, static 
   - Single cockpit, no miscorrelations / bad estimates
 - Destruction enables new creation
   - If huge companies can do it, why are academics so hesitant? Quite cowardly!
-
 
 Shankar, ic 2 was a disaster and let cadence into the market, how did you clean?
 Signoff gets complex at latest nodes, need pnr to correlate with signoff, and synthesis too, and if not then add lots of margin lol but that didn't work
@@ -247,8 +278,11 @@ Getting the arch right is leaving things on the table
 Paul says must keep focusing on improving the engines too, need to reduce margining still
 Shankar says no margins are needed lol, but he doesn't force margins through the flow
 Prakash believes that integration isn't the way to deliver the best product, he says that he has data models for each product that are specialized for each product, unified models are nice in theory but he has different experience, maybe from the frontend side
-Tony Siemens acquired mentor a long time ago, was this a disaster? They claim doubled revenue from 7 years ago, out side ic space they did well, PCB with expedition, they do well on cfd similar to Ansys with Airbus, Boeing uses mentor stuff too, combining electrical system modeling with ic stuff
+-->
 
+### Multi-Physics CAD
+
+Tony Siemens acquired mentor a long time ago, was this a disaster? They claim doubled revenue from 7 years ago, out side ic space they did well, PCB with expedition, they do well on cfd similar to Ansys with Airbus, Boeing uses mentor stuff too, combining electrical system modeling with ic stuff
 Paul don't you have cfd stuff, synopsys is paying for cfd stuff, are you in trouble? Fidelity, combining core solvers and pre and post process mesh they feel well about it, they claim to displace Ansys in some customers
 Tony, Joe sawiki is gone, is calibre dying, they have been doing succession planning already, people are rising to the occasion, there are lots of people behind calibre too, feel good,
 Shankar is respecting calibre team, he will compete on rule complexity at latest nodes, with synopsys tool, drc runtime is too long, we have the best arch, same-day runsets for many founders, Intel nvidia Cisco AMD mediatek all using synopsys phys verification signoff

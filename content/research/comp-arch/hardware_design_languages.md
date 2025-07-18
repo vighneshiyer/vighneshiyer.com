@@ -99,6 +99,8 @@ Execution of the hardware generator in the host language constructs an in-memory
 - nMigen (Amaranth) (https://github.com/amaranth-lang/amaranth) (Python)
 - PyRTL (https://github.com/UCSBarchlab/PyRTL) (Python)
 - Intel ROHD (https://github.com/intel/rohd) (Dart)
+  - https://www.linkedin.com/posts/desmond-kirkpatrick-57470b7_rohd-hcldocreadmemd-at-main-intelrohd-hcl-activity-7348065915504103425-dkOD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+  - https://github.com/intel/rohd-hcl/tree/main?tab=readme-ov-file
 - HardCaml (https://github.com/janestreet/hardcaml) (OCaml)
 
 ### Custom Compiler
