@@ -74,7 +74,7 @@ Paul, can we simulate the airplane along with the hardware, let's do call to act
 Digital twin stuff is mechanical now, it has gone beyond digital stuff, stress, thermals, 3dic things too
 -->
 
-#### Synopsys + Ansys
+### Synopsys + Ansys
 
 Cooley asks Shankar, "how are you going to build 3DICs without a good PCB tool?" (too much mocking 😆)
 If Synopsys doesn't even have good package design software, and there's no unified cockpit for signoff from 2D to 3D, this seems hard.
@@ -104,7 +104,7 @@ Shankar says he is still better, we are still good lol, complex design people us
 Paul says coupling between multiphysics and digital is good
 -->
 
-#### Digital Twin Hype
+### Digital Twin Hype
 
 Suddenly Joe jumps in, and says that all this "digital twin" stuff is just a hype cycle!
 There is indeed an intersection between IC stuff and CAE stuff, but this is overblown.
@@ -248,10 +248,17 @@ Prakash disagrees, we don't need formal to check if a key can be leaked, static 
 
 ### The New Era of RTL → GDS Tools
 
-Cooley interrogated Shankar about why [Synopsys IC2](https://www.synopsys.com/implementation-and-signoff/physical-implementation/ic-compiler.html) was a disaster, allowed Cadence into the digital PD market, and how Synopsys recovered from that.
+Cooley interrogated Shankar about why [Synopsys IC2](https://www.synopsys.com/implementation-and-signoff/physical-implementation/ic-compiler.html) was a disaster, which allowed Cadence to dominate the digital PD market with [Genus](https://www.cadence.com/en_US/home/tools/digital-design-and-signoff/synthesis/genus-synthesis-solution.html) and [Innovus](https://www.cadence.com/en_US/home/tools/digital-design-and-signoff/soc-implementation-and-floorplanning/innovus-implementation-system.html), and how Synopsys recovered from that.
 
 Shankar said that in modern nodes, PnR results need to correlate well with signoff as well as early synthesis, and if that wasn't the case, excess pessimistic margin needs to be added at every step of the VLSI flow.
+IC2 had to add margin everywhere due to its step-by-step VLSI flow.
 
+For [Fusion Compiler](https://www.synopsys.com/implementation-and-signoff/physical-implementation/fusion-compiler.html), Synopsys did a full rewrite of the data model that the VLSI algorithms operate on.
+They used a _unified data model_ across all synthesis and PnR algorithms, with a unified timing engine, to avoid the pessimistic margining problems of IC2.
+
+Shankar emphasized that _software engineering matters_.
+Synopsys took a risk to _rewrite their entire stack_ with the bet that using the same algorithms (timing estimation, congestion estimation, cell sizing, and so forth) on a unified data model would allow them to create a fully fused VLSI flow with no unnecessary margining between steps.
+It is embarrassing to see how huge enterprises with billions at stake are willing to rewrite massive software projects from scratch, while academics are afraid to rewrite and improve tiny pieces of evaluation infrastructure.
 
 <!--
 - Synopsys IC2 was a disaster
@@ -280,8 +287,9 @@ Shankar says no margins are needed lol, but he doesn't force margins through the
 Prakash believes that integration isn't the way to deliver the best product, he says that he has data models for each product that are specialized for each product, unified models are nice in theory but he has different experience, maybe from the frontend side
 -->
 
-### Multi-Physics CAD
+<!-- ### Multi-Physics CAD -->
 
+<!--
 Tony Siemens acquired mentor a long time ago, was this a disaster? They claim doubled revenue from 7 years ago, out side ic space they did well, PCB with expedition, they do well on cfd similar to Ansys with Airbus, Boeing uses mentor stuff too, combining electrical system modeling with ic stuff
 Paul don't you have cfd stuff, synopsys is paying for cfd stuff, are you in trouble? Fidelity, combining core solvers and pre and post process mesh they feel well about it, they claim to displace Ansys in some customers
 Tony, Joe sawiki is gone, is calibre dying, they have been doing succession planning already, people are rising to the occasion, there are lots of people behind calibre too, feel good,
@@ -294,8 +302,11 @@ Shankar, virtuoso is being used a lot, no one uses custom compiler, all Intel cu
 Aso.ai for analog automation, migration and optimization done automatically, general approach that goes beyond circuit type, getting good traction
 cAe is mostly bs for ic engineers, Joe says, not the same business doesn't interact design engineers,maybe only at edge like 3dic, need to make it fun for the engineers, tools suck lol
 They think analog migration and auto opt saves lots of effort, Shankar says he can do it and not cadence lol
+-->
 
 ## Exhibition Floor
+
+And now time for the best part of DAC, walking around the exhibition hall and talking to whoever seems interesting.
 
 {{ gallery(images=[
     "exhibition_hall.jpg",
@@ -306,16 +317,115 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 
 ### GenAI Startups
 
+This was the first DAC in which we saw a bunch of "GenAI" (i.e. _LLM for X_) startups come onto the scene.
+EETimes wrote an article about it: ["Wider Context For Systems Design, Plus GenAI EDA Startups"](https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/).
+
+<!--
 - https://www.eetimes.com/dac-2024-day-2-wider-context-for-systems-design-plus-genai-eda-startups/
   - Where is JITX?
   - Silimate discussion
   - LLM for X
+-->
 
 #### PrimisAI
 
-- One of the first to the scene, (looking back from 2025, this was quite early, along with Agnisys)
+[PrimisAI](https://primis.ai/) was one of the first LLM for X startups to the EDA CAD scene.
+They built some LLM integration for RTL generation.
+They had a demo of an LLM generating trivial Verilog modules.
+Here's a flyer.
 
-{{ image(path="primis_ai.jpg", width="80%") }}
+<!-- (looking back from 2025, this was quite early, along with Agnisys) -->
+
+{{ image(path="primis_ai.jpg", width="50%") }}
+
+In 2025, undoubtedly, one could use Cursor or Windsurf out-of-the-box to do the same things.
+
+#### Silimate
+
+Another early entrant was [Silimate](https://www.silimate.com/) (YC S23).
+They were quite unwilling to share any specifics about their tool.
+All they would say were just variations of the quote on their website:
+
+> “Silimate is the co-pilot for chip designers; it finds functional bugs, predicts PPA issues, and recommends fixes in real-time alongside RTL development.”
+
+It seems there are 2 tools they are building.
+
+1. A early stage [PPA prediction tool](https://marketplace.visualstudio.com/items?itemName=Silimate.preqorsor)
+2. Some kind of LLM-based agent for DV, RTL generation, and bug fixing
+
+If you look at their [Github organization](https://github.com/silimate), you can see a [fork of yosys](https://github.com/Silimate/yosys) with some optimizations, a fork of slang-yosys with some fixes, a [fork of OpenSTA](https://github.com/Silimate/OpenSTA), a [fork of Synopsys' Liberty parser](https://github.com/Silimate/liberty-parser), and a [fork of verilog-eval](https://github.com/Silimate/verilog-eval), among other repos.
+It seems they are trying to leverage open source VLSI tools for synthesis, timing estimation, and power simulation, and build a fast PPA estimator on top of them.
+
+And to get YC to invest, they probably had to throw in some random LLM thing.
+
+<!--
+Very standoffish founder, but still insistent on hiring
+“Silimate is the co-pilot for chip designers; it finds functional bugs, predicts PPA issues, and recommends fixes in real-time alongside RTL development.”
+What does this mean?
+Look at their Github
+Fork of yosys with some optimizations
+Fork of slang-yosys with some fixes
+Fork of OpenSTA
+Fork of Synopsys’ liberty parser
+Fork of VerilogEval
+Seems to be
+Leverage open source VLSI tools, build a PPA estimator on top
+Do some random LLM thing to entice VCs
+-->
+
+### X-Epic
+
+This company, [X-Epic](https://www.x-epic.com/), came out of the blue with a bunch of EDA CAD tools.
+This is a Chinese EDA CAD company that started in 2020, but has already produced many useful tools and has acquired significant market share within China.
+
+#### Emulation Machines
+
+You may be familiar with [Synopsys' HAPS prototyping platform](https://www.synopsys.com/verification/emulation-prototyping/prototyping/haps-100.html) and their [ZeBu emulator](https://www.synopsys.com/verification/emulation-prototyping/emulation/zebu-200.html).
+These are both big boxes with many FPGAs that are used for pre-silicon verification.
+To build such a platform requires an enormous investment in research and engineering and typically takes 5-10 years to gain adoption in the market.
+
+<!--
+- Synopsys HAPS vs X-Epic HuaPro P2E
+  - Can you spot the difference?
+-->
+
+{{ gallery(images=[
+    "synopsys_zebu.jpg",
+    "synopsys_zebu_2.jpg",
+], popout=false, caption="Synopsys ZeBu boxes being demoed at the Synopsys booth") }}
+
+
+And now we turn to the X-Epic _Hua-Pro P2E_ prototyping box.
+
+{{ gallery(images=[
+    "x_epic_box.jpg",
+    "x_epic_box_2.jpg",
+    "x_epic_huapro.jpg",
+    "x_epic_huapro_2.jpg",
+], popout=false, caption="X-Epic Hua-Pro P2E being demoed at their booth") }}
+
+Can you spot the differences?
+Besides the logo on the front of the box, they are very similar!
+X-Epic has managed to develop this system in just a few years and it is at near feature-parity with Synopsys' offerings (at least for the single blade form-factor).
+The Hua-Pro P2E supports waveform dumping, switching between prototyping and emulation modes, speed bridges for hardware-in-the-loop testing,
+
+<!--
+- X-Epic is nearly at feature parity with Zebu
+  - Supports waveforms, prototype + emulation mode, speed bridges to real hardware, …
+-->
+
+#### X-Epic GalaxSim
+
+- Fully Chinese, from scratch, Xcelium equivalent RTL simulator
+- Does the waveform viewer look familiar?
+- They poached off many Verdi engineers and built it again
+- But it looks even nicer than Verdi! Equivalent functionality
+
+{{ gallery(images=[
+    "x_epic_waves.jpg",
+    "x_epic_waves_2.jpg",
+    "x_epic_fusion_debug.jpg",
+], popout=false) }}
 
 ### X-Epic Fun Time
 
@@ -342,41 +452,6 @@ They think analog migration and auto opt saves lots of effort, Shankar says he c
 - Quality of life keeps increasing in China, Chinese manufacturing keeps lowering cost and improving automation, just saw the Oakland port, they have constraints wrt dockworkers while Chinese automated the entire thing, what about pollution? Yes indeed China drops rockets with toxic waste onto villages but for the average person just look at the clean cities, factories are also quite industrialized and waste is sequestered in most cases
 - It has been just 4 years of work and look how far they've gotten, very impressive
 
-#### X-Epic Emulation Machines
-
-- Synopsys HAPS vs X-Epic HuaPro P2E
-  - Can you spot the difference?
-- X-Epic is nearly at feature parity with Zebu
-  - Supports waveforms, prototype + emulation mode, speed bridges to real hardware, …
-
-- X-Epic was founded in 2020, they are already so far!
-- Rapid Chinese progress is a hallmark of DAC
-- Add Synopsys Zebu images
-
-{{ gallery(images=[
-    "synopsys_zebu.jpg",
-    "synopsys_zebu_2.jpg",
-], popout=false) }}
-
-{{ gallery(images=[
-    "x_epic_box.jpg",
-    "x_epic_box_2.jpg",
-    "x_epic_huapro.jpg",
-    "x_epic_huapro_2.jpg",
-], popout=false) }}
-
-#### X-Epic GalaxSim
-
-- Fully Chinese, from scratch, Xcelium equivalent RTL simulator
-- Does the waveform viewer look familiar?
-- They poached off many Verdi engineers and built it again
-- But it looks even nicer than Verdi! Equivalent functionality
-
-{{ gallery(images=[
-    "x_epic_waves.jpg",
-    "x_epic_waves_2.jpg",
-    "x_epic_fusion_debug.jpg",
-], popout=false) }}
 
 ### FPGA-Based Prototyping Systems
 
@@ -517,6 +592,8 @@ Your tool is not the top level! It is a library! Stop using TCL and other garbag
 - What about those who aren't there? Cedar eda, verifai, and look at others from dac 22
 - Dac vs other academic conferences, drinks and fun, would academics even know what's going on lol?
 - No sifive presence, less riscv mention than last time but still quite a bit
+- X-Epic was founded in 2020, they are already so far!
+- Rapid Chinese progress is a hallmark of DAC
 
 <!--- Random tilelink ip lol-->
 <!-- - Ansys powerartist-->
