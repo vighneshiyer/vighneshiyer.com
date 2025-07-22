@@ -85,3 +85,37 @@ What distinguishes ML from search (genetic algorithms)? Learning from experience
   - Don't trust underwriters with valuations. They have every incentive to inflate the value of your company as they make money on the public share offering price (based on their promoted valuation) vs what they buy the shares for from the company (the immediate cash injection the company receives).
 - Nvidia was lucky with CUDA (when it didn't have many applications) and their hardware architecture (optimized for parallel "sum of product" arithmetic used by graphics)
   - I don't think luck has much to do with this. It is just maximally exploitable DLP with a good general-purpose programming model (CUDA) - the exact arithmetic primitives don't matter much, those are universal, there is no other special ALU unit you could have - you can cast any other arithmetic in terms of the primitives of math that the hardware natively supports.
+
+## An Example
+
+- Consider CDCL for SAT. Let's analyze the in-the-loop ML vs around-the-loop ML vs generative ML (e.g. using RL to perform optimization turn-by-turn)
+- In-the-loop: GPT does a decent job summarizing what others have done
+
+> • Graph‑Q‑SAT (Q‑learning + GNN)
+>
+> This model formulates branching decisions as a Markov Decision Process. It uses GNNs to embed the current instance and a Q‑learning policy to pick variables. Across benchmarks it reduced iteration counts by ~2–3× and exhibited zero‑shot generalization to larger instances. (Trained via reinforcement learning interfacing with MiniSat.)
+> arXiv+13arXiv+13arXiv+13
+> • RLAF: Reinforcement Learning from Algorithm Feedback (May 2025)
+>
+> This approach assigns GNN‑predicted variable weights and polarities in a single forward pass, guiding a standard solver’s branching heuristic. It achieves >2× speedups in solve time and outperforms expert‑crafted heuristics.
+> arXiv
+> • NeuroBack / NeuroCore (phase selection, unsat‑core/backbone)
+>
+>     NeuroCore infers unsat‑core variables online to re‑rank branch choices (supervised learning + dynamic inference).
+>
+>     NeuroBack predicts variable phases based on backbone detection using GNNs applied offline, thereby improving phase selection in CDCL.
+>     arXiv+1ar5iv+1
+>
+> • Hybrid Strategy: early ML, then fallback
+>
+> Shirokikh et al. (2023) propose using ML-guided branching for the initial few decisions, then reverting to classical heuristics once warmed up—balancing model overhead vs early gains.
+
+- Out-of-the-loop: solver hyperparameter tuning
+- End-to-end: yet again GPT digs one paper about this
+
+> Alpha‐Zero‑style SAT solver (2018) by Cameron et al. (originally “From Gameplay to Symbolic Reasoning”) represents CNF instances as sparse adjacency matrices, uses a CNN to embed the state, and learns via Q‑learning + Monte Carlo Tree Search (MCTS) to make branching decisions as moves in a game turn by turn. They treat each branching as an action, allowing simulation rollouts to evaluate consequences—almost exactly casting SAT search as a turn-based game environment
+
+- The broader point is that "end-to-end" doesn't make much sense when there are hardly any abstractions to be broken. All it does is create a highly inefficient and brittle solver (also without the ability to detect when a formula is UNSAT).
+  - CDCL is already highly general purpose. If we're reusing the notions / abstractions of boolean formulas, state assignment, backtracking, and so forth, it is highly unlikely that a learning approach will deliver any benefit with respect to QoR (but it could potentially improve runtime on common problem instances when applied in-the-loop or around-the-loop)
+- https://chatgpt.com/s/t_687feaf561708191aa5003b588cd6c10 (GPT on in-the-loop ML)
+- https://chatgpt.com/s/t_687fec422bd48191ae5a7ba03747a0c1 (GPT on end-to-end ML)
