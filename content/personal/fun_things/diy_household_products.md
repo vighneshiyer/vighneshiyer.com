@@ -81,6 +81,8 @@ Stir in sweet orange, tea tree, cedarwood, and Vitamin E if used. This keeps E
 5. Jar it
 Pour the mixture into your 10oz glass jar. Leave uncovered until fully set at room temp (about 1–2 hours), then cap and store.
 
+- For next time: https://chatgpt.com/s/t_68895198f0c48191bf1908db0513af22 (add zinc oxide, improve texture, add a chelating agent)
+
 ## Laundry
 
 - Use a simple detergent: Persil Proclean Original, All Unscented
