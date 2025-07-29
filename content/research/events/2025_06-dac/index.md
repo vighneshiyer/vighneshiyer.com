@@ -64,7 +64,7 @@ https://chipagents.ai/careers/forward-deployed-engineer
 - https://www.youtube.com/watch?v=Dcis6Dcu80g ( Revolutionizing Chip Design with AI: William Wang, CEO of ChipAgents, on AI-Powered EDA Tools )
 https://www.ycombinator.com/companies/bronco-ai
 https://www.reddit.com/r/ycombinator/comments/13jicib/2nd_startup_officially_added_to_yc_s23/
-
+- https://semiengineering.com/eda-startups-at-dac-2025/
 
 Arteris
 Mix of diplomacy and firrtl passes lol, so painful

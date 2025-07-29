@@ -49,7 +49,9 @@ Mythic (deprecated)
 Cerebras
   - https://x.com/Tim_Dettmers/status/1858977311569440955
 SambaNova (looking good)
-Groq
+- Groq
+  - https://x.com/JordanNanos/status/1949883300576928202
+  - Good SemiAnalysis guy analyzes Groq from a cost perspective for large model inference vs NVIDIA alternatives
 Graphcore???
 
 ## Hosted Chips

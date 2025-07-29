@@ -175,6 +175,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Andrej: Power to the people: How LLMs flip the script on technology diffusion](https://karpathy.bearblog.dev/power-to-the-people/) ([HN link](https://news.ycombinator.com/item?id=43619367))
 - [Anthropic: Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model) ([HN link](https://news.ycombinator.com/item?id=43495617))
 - [Frequently Asked Questions (And Answers) About AI Evals](https://hamel.dev/blog/posts/evals-faq/) ([HN link](https://news.ycombinator.com/item?id=44430117))
+- [Sergey Levine: Sporks of AGI](https://sergeylevine.substack.com/p/sporks-of-agi)
 
 ### Applications
 
