@@ -84,6 +84,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Speeding up the Rust edit-build-run cycle (davidlattimore.github.io)](https://news.ycombinator.com/item?id=42140164)
 - [Crabtime: Zig’s Comptime in Rust (crates.io)](https://news.ycombinator.com/item?id=43415820)
+- [Blog Series on "Writing an OS in Rust"](https://os.phil-opp.com/) ([HN link](https://news.ycombinator.com/item?id=44733094))
 
 ### Scala
 

@@ -1,7 +1,6 @@
 @use '../node_modules/utopia-core-scss/src/utopia' as utopia;
 @use 'sass:color';
-// @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 // Utopia type scale, space scale, and grid using spacing scale
 // https://utopia.fyi/grid/calculator?c=330,18,1.2,1500,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,xl,xl,12
@@ -64,12 +63,12 @@ $max-font-size: 21;
 $mobile-breakpoint: 600px;
 
 :root {
-  --popout-begin: 2;
-  --content-begin: 3;
+  --popout-begin: 3;
+  --content-begin: 4;
   --inset-content-begin: 5;
   --inset-content-end: 9;
-  --content-end: 11;
-  --popout-end: 12;
+  --content-end: 10;
+  --popout-end: 11;
   --grid-middle: 6;
 
   @media screen and (max-width: $mobile-breakpoint) {
@@ -83,10 +82,8 @@ $mobile-breakpoint: 600px;
 }
 
 :root {
-  //--serif-font: 'Source Serif 4', 'Noto Serif', serif;
-  //--sans-font: 'Source Sans 3', 'Noto Sans',sans-serif;
-  --serif-font: 'Alegreya', 'Noto Serif', serif;
-  --sans-font: 'Alegreya SC', 'Noto Sans',sans-serif;
+  --serif-font: 'Source Serif 4', 'Noto Serif', serif;
+  --sans-font: 'Source Sans 3', 'Noto Sans',sans-serif;
   --mono-font: 'Source Code Pro', monospace;
   font-optical-sizing: auto;
   font-synthesis: none;
@@ -432,6 +429,7 @@ strong {
 
 p {
   font-size: var(--step-0);
+  font-weight: 370;
   text-wrap: pretty;
   margin-bottom: var(--space-s);
   hyphens: auto;
@@ -538,21 +536,23 @@ ol > li > ul > li {
 // https://practicaltypography.com/block-quotations.html
 blockquote {
   * {
-    font-size: var(--step-0);
+    font-size: calc(var(--step-0) * 0.9);
     line-height: 1.5; // slightly less than regular text
     &:last-child {
       margin-bottom: 0;
     }
   }
-  //background-color: var(--bg-dark);
-  padding-top: var(--space-s);
-  padding-bottom: var(--space-s);
-  padding-left: var(--space-m);
-  padding-right: var(--space-m);
-  margin-left: var(--space-l);
-  margin-right: var(--space-l);
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--bg-highlight);
+  border-bottom: 1px solid var(--bg-highlight);
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+  padding-left: var(--space-l);
+  padding-right: var(--space-l);
+  // margin-left: var(--space-l);
+  // margin-right: var(--space-l);
   margin-bottom: var(--space-s);
-  border-left: var(--space-3xs) solid var(--accent-color);
+  // border-left: var(--space-3xs) solid var(--accent-color);
 }
 
 figure {
@@ -718,6 +718,7 @@ div.callout {
     .title a {
       text-align: left;
       font-size: var(--step-2);
+      font-family: var(--sans-font);
       font-weight: 600;
       color: var(--fg);
       letter-spacing: -0.025ch;
@@ -727,10 +728,15 @@ div.callout {
         text-decoration: underline;
       }
     }
+    .contact {
+      display: grid;
+      align-items: center;
+    }
     .contact p {
       text-align: right;
       margin: 0;
-      font-size: var(--step--1);
+      font-size: var(--step--2);
+      font-family: var(--sans-font);
     }
     // https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
     #color-scheme {
@@ -833,7 +839,6 @@ div.callout {
       display: inline-block;
       margin-bottom: 0;
       margin-top: 0;
-      font-family: var(--serif-font);
       &::before {
         content: "§ ";
         color: var(--accent-color);
@@ -870,7 +875,6 @@ div.callout {
     display: inline-block;
     margin-bottom: var(--space-3xs);
     margin-top: 0;
-    font-family: var(--serif-font);
     &::after {
       /* content: "⸙"; */
       /* content: "·"; */
@@ -939,7 +943,7 @@ a.anchor {
   margin-top: var(--space-m);
   margin-bottom: var(--space-m);
   .article-title {
-    grid-column: var(--content-begin) / var(--content-end);
+    grid-column: var(--popout-begin) / var(--popout-end);
     h1 {
       @include hashtag("#");
       margin-bottom: var(--space-2xs);
