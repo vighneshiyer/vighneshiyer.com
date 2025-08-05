@@ -9,6 +9,7 @@ description = ""
 The most impactful thing you could work on is code-driven diagramming.
 Diagrams are a PITA and there is no doubt that we haven't produced the best diagramming methodology yet.
 Everyone has their own strategy, but they all suck.
+
 d2 is the best programmatic diagramming tool I have found thus far, but its best layout engine (TALA) is closed source (and even that isn't great).
 Furthermore, the constraint language of d2 is too limiting - you can't use it to describe arbitrary diagrams... (enforced node-to-node spacing, no metaprogramming).
 Ideally we can unify all the diagrammers under one framework (things like mermaid's random diagram types or graphviz generic-graph visualization).
@@ -40,13 +41,24 @@ My GPT queries:
 - https://chatgpt.com/share/67edcff8-dc58-8004-83be-2c6b82ca2648
 - https://chatgpt.com/share/67edd008-1894-8004-98e5-cd0aa5bc420e
 
+## First Steps
+
+- Try to replicate the "Graph Drawing via Gradient Descent" paper using Jax. Forget the web interface, just have the tool emit an SVG once the loss has stopped decreasing.
+- Then try to adapt the Typst [fletcher](https://typst.app/universe/package/fletcher) library by taking inspiration from its primitives / schema / DSL and build something similar in Python
+- It might be easier to instead build a frontend eDSL for d2 in Python and that way we can emit d2 and have it do the layout and we can also do the layout ourselves using the gradient descent engine
+
+## Digital-Circuit Specific
+
+- https://github.com/drom/logidrom?tab=readme-ov-file
+- https://github.com/tilk/digitaljs
+- https://github.com/logisim-evolution/logisim-evolution (not an automatic layout engine)
+- The schematic visualizers in Verdi and Vivado
 
 ## Visio / Omnigraffle
 
 ## draw.io / Excalidraw
 
 ## Figma
-
 
 - https://www.figma.com/slides/VwKtWwQQiiOevrTa8OeIXR/Tracer-Series-Presentation-Template?node-id=48-847
 
@@ -67,8 +79,8 @@ My GPT queries:
 ## typst tikz alternative
 
 - cetz
-  - fletcher (built on cetz)
-  - these two are actually quite great. some examples would be instructive.
+- fletcher (built on cetz)
+- these two are actually quite great. some examples would be instructive.
 
 ## Illustrator / Inkscape
 
@@ -77,8 +89,6 @@ My GPT queries:
 - https://www.mathcha.io/
 - https://x.com/vtabbott_/status/1874449446056177717
   - DeepSeek-V3, diagrammed.
-
-## Something New?
 
 ## Old Notes
 
