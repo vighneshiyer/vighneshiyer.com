@@ -82,7 +82,7 @@ In contrast, the commentary about noise and leisure from Chinese philosophy is s
   - In general, Grok has produced too many meaningless words and is just rephrasing the prompt over and over again
 
 - https://en.wikipedia.org/wiki/Misophonia
-  - Perhaps I suffer from this mental issue. This seems quite common actually. There are many sounds that I find very irritating besides the jarring nosies that Schopenhauer also finds the same way. Conversation can be bad. Breathing is quite annoying - I hate sounds of breathing by others who always seem to be forcing air through their nose and mouth. Keyboard noise is quite bad, I like a very quiet keyboard and hearing others bang on keys is quite annoying. Indeed these all are mentioned as sounds that people with misophonia hate.
+  - Perhaps I suffer from this mental issue. This seems quite common actually. There are many sounds that I find very irritating besides the jarring nosies that Schopenhauer also finds the same way. Conversation can be bad. Breathing is quite annoying - I hate sounds of breathing by others who always seem to be forcing air through their nose and mouth - perhaps this is related to the high incidence of deviated septums today due to bad breathing posture. Keyboard noise is quite bad, I like a very quiet keyboard and hearing others bang on keys is quite annoying. Indeed these all are mentioned as sounds that people with misophonia hate.
   - There seems to be relationship between this issue and high fluid intelligence (https://en.wikipedia.org/wiki/Fluid_and_crystallized_intelligence). Schopenhauer would agree lol.
 
 - https://x.com/karpathy/status/1931426322536132767

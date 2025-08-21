@@ -25,12 +25,18 @@ slug = "complete-guide-to-rtl-simulation"
 - State of the art Verilog simulators
   - Synopsys VCS, Cadence Xcelium
   - Verilator
+- Other ones
+  - Arcilator (still a WIP)
+  - CXXRTL (based on yosys)
+  - Vivado XSim (proprietary, but freeware)
+  - Icarus Verilog
 - Emulation style systems
   - Palladium (of course)
   - [RTLFlow: From RTL to CUDA: A GPU Acceleration Flow for RTL Simulation with Batch Stimulus (ICPP 22)](https://dl.acm.org/doi/abs/10.1145/3545008.3545091)
   - [Manticore: Hardware-Accelerated RTL Simulation with Static Bulk-Synchronous Parallelism (ASPLOS 23)](https://dl.acm.org/doi/abs/10.1145/3623278.3624750)
   - [Accelerating RTL Simulation with Hardware-Software Co-Design (MICRO 23)](https://dl.acm.org/doi/10.1145/3613424.3614257)
   - [Parendi: Thousand-Way Parallel RTL Simulation (Arxiv Preprint 24)](https://arxiv.org/abs/2403.04714)
+  - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](https://guozz.cn/publication/gemdac-25/gemdac-25.pdf) (DAC 2025, NVIDIA Research)
 - SW simulator improvements
   - [A Case for Accelerating Software RTL Simulation by Scott Beamer (IEEE Micro 20)](https://ieeexplore.ieee.org/abstract/document/9099598)
   - [ESSENT: Efficiently Exploiting Low Activity Factors to Accelerate RTL Simulation (DAC 20)](https://ieeexplore.ieee.org/abstract/document/9218632)
@@ -39,6 +45,7 @@ slug = "complete-guide-to-rtl-simulation"
   - [On Accelerating PyRTL Simulation with Essential Signal Simulation Techniques (ISEDA 23)](https://ieeexplore.ieee.org/abstract/document/10218453)
   - [Khronos: Fusing Memory Access for Improved Hardware RTL Simulation (MICRO 23)](https://dl.acm.org/doi/abs/10.1145/3613424.3614301)
   - [TaroRTL: Accelerating RTL Simulation using Coroutine-based Heterogeneous Task Graph Scheduling (Euro-Par 24)](https://jsm.ece.wisc.edu/docs/lin-europar2024.pdf)
+  - [GSIM: Accelerating RTL Simulation for Large-Scale Designs](https://arxiv.org/pdf/2508.02236) (2025, Xiangshan team)
 
 ### ???
 

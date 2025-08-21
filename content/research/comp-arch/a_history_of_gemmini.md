@@ -2,7 +2,7 @@
 title = "A Brief History of Gemmini"
 date = 2025-07-01
 draft = true
-description = "A retrospective on what once was the 'Berkeley Systolic Array Generator'"
+description = "A retrospective on what was once the 'Berkeley Systolic Array Generator'"
 +++
 
 ## Links

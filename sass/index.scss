@@ -7,8 +7,8 @@
 
 $min-width: 330;
 $max-width: 1575;
-$min-font-size: 18;
-$max-font-size: 21;
+$min-font-size: 16;
+$max-font-size: 19;
 
 :root {
   @include utopia.generateTypeScale((

@@ -194,6 +194,12 @@ This is similar to a minestrone soup, with some important modifications.
 - Fennel seeds used in the base soup seasoning and fennel flower/pollen powder used as garnish
 - Whole cooked sorana beans are added to the soup
 
+### Ribollita (Tuscan Bread Soup)
+
+- https://www.allrecipes.com/ribollita-tuscan-bread-soup-recipe-11782482
+
+### Fasolada (Greek White Bean Soup)
+
 ## Oriental Foods
 
 ### Ramen
@@ -382,6 +388,10 @@ This is similar to a minestrone soup, with some important modifications.
 - This seems to be a great recipe and quite easy to make with just some flour, instant yeast, and a dutch oven
 
 ## Sides
+
+### Horta (Greek Boiled Greens in Oil)
+
+### Creamed Spinach
 
 ### Breads
 

@@ -42,6 +42,7 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://quarter--mile.com/Human
 - https://bronzeagepervert.substack.com/
 - https://zerocontradictions.net/#blogroll
+- https://bitsbytesgates.com/archive.html
 
 China:
 

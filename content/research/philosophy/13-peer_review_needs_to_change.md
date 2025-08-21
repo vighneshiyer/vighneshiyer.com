@@ -84,3 +84,15 @@ Poor review quality isn't a 'problem' that needs to be 'solved' by new "review s
 
 The root cause is: no one cares about nitwit work.
 So the solution is to simply cast it aside.
+
+- https://www.acm.org/publications/policies/new-acm-policy-on-authorship
+  - READ READ READ. Claiming to be an author without meeting these criteria is FRAUD. How many professors are guilty of authorship fraud? Easily tens to hundreds of the 'most published' 'highly cited' professors in computer architecture.
+- https://www.usenix.org/sites/default/files/sec25_message.pdf
+  - The security people have had to deal with this nonsense too.
+
+> An analysis of the submissions revealed that 14 authors were listed on at least 15 papers. While this represents a tiny fraction of the 6,590 registered authors, the extremes are concerning: six individuals appear as co-authors on 20 or more submissions, with two authors appearing on 36 and 39 submissions respectively. At such volume, it becomes difficult not to question the nature and depth of the contributions attributed to these individuals.
+
+So this is basically an admission that there is fraud going on. Why so secretive about who's involved though? Why so cowardly? At least accuse them and let them produce their own response. The public will decide.
+
+- Point how out everyone is a coward and no one is willing to call out authorship fraud even though it is so obvious, especially in the extreme cases
+- Peer review through forcing reviews is such a dumb idea
