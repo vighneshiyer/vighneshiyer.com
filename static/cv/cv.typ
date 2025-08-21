@@ -8,6 +8,7 @@
 
 #set text(font: "Source Serif 4", size: 10pt, lang: "en")
 #set par(leading: 1em, justify: false)
+#set strong(delta: 200)
 
 #let dash = "–"
 #let split = text(weight: 700)[|]
@@ -43,7 +44,7 @@
   v(0.5em)
 }
 
-#let experience-entry(place, title, start_date, end_date, body) = {
+#let experience-entry(place, title, start_date, end_date, loc, body) = {
   grid(
     columns: (1fr, 0.5fr),
     column-gutter: 1em,
@@ -53,7 +54,11 @@
       #text(size: 1em)[#smallcaps[#title]]
     ],
     [
-      #align(right + horizon)[#text(style: "italic")[#start_date] #dash #text(style: "italic")[#end_date]]
+      #align(right + horizon)[
+        #text(style: "italic")[#start_date] #dash #text(style: "italic")[#end_date]
+        #linebreak()
+        #text(size: 0.8em)[#loc]
+      ]
     ]
   )
   v(0.5em)
@@ -85,7 +90,7 @@
 
 I am a graduating EECS PhD student from UC Berkeley.
 I am a generalist with skills spanning hardware engineering (RTL design, verification, architecture, FPGA / ASIC PD, prototyping, PCB design, silicon bringup) and software engineering (functional programming, hardware modeling, firmware design, Linux).
-I am looking for opportunities to apply first principles engineering greenfield,
+I am looking for opportunities to apply first-principles, full-stack engineering to greenfield custom silicon projects.
 
 = Research Interests
 
@@ -110,6 +115,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "PhD EECS",
   "2018",
   "2025",
+  "",
   []
 )
 #experience-entry(
@@ -117,6 +123,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "BS EECS",
   "2014",
   "2018",
+  "",
   []
 )
 
@@ -127,8 +134,32 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Hardware Engineer (Contract)",
   "June 2025",
   "August 2025",
+  "Remote",
   [
-    - RTL and verification for an LLM accelerator ASIC
+    - RTL design (SystemVerilog), verification (Verilator + Python), and architectural modeling for an LLM inference accelerator ASIC
+  ],
+)
+
+#experience-entry(
+  "Google",
+  "Student Researcher",
+  "May 2024",
+  "November 2024",
+  "Sunnyvale, CA",
+  [
+    - Trace-driven sampled simulation for multi-threaded workloads
+    - Trace analysis and scheduling toolkit for trace embedding of DynamoRIO traces and Berkeley (FireSim, RTL simulation, spike) traces
+  ]
+)
+
+#experience-entry(
+  "Jane Street",
+  "FPGA Engineering Intern",
+  "May 2023",
+  "August 2023",
+  "New York City, NY",
+  [
+    - FPGA infrastructure work
   ]
 )
 
@@ -137,6 +168,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Graduate Student Researcher",
   "August 2023",
   "May 2025",
+  "Berkeley, CA",
   [
     - High throughput, low latency, high accuracy microarchitecure simulation.
       - Combine functional (ISA-level), uArch trace-driven models, and RTL simulation to exploit the best traits of each simulation methodology
@@ -158,31 +190,11 @@ I am looking for opportunities to apply first principles engineering greenfield,
 )
 
 #experience-entry(
-  "Google",
-  "Student Researcher",
-  "May 2024",
-  "September 2024",
-  [
-    - Investigating trace-driven sampled simulation for multi-threaded workloads
-    - Built a trace analysis and scheduling toolkit for trace embedding of DynamoRIO traces and Berkeley (FireSim, RTL simulation, spike) traces
-  ]
-)
-
-#experience-entry(
-  "Jane Street",
-  "FPGA Engineering Intern",
-  "May 2023",
-  "August 2023",
-  [
-    - FPGA infrastructure work
-  ]
-)
-
-#experience-entry(
   "UC Berkeley",
   "Graduate Student Researcher",
   "August 2018",
   "May 2023",
+  "Berkeley, CA",
   [
     - Worked on a functional API for random stimulus generation that decouples the description of constraints from the interpreter that generates legal stimulus. In doing so, we enable automatic extraction of the randomization graph for stimulus embedding and coverage for the generator itself as well as the generated stimulus.
     - Worked on a monadic simulation API for high-performance testbench fork/join threading.
@@ -200,6 +212,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "CPU Verification Intern",
   "May 2021",
   "August 2021",
+  "Cupertino, CA",
   [
     - Investigated the usage of machine learning to guide random stimulus generation for coverage targetting
     - Designed a framework to evaluate various predictive models from data collected during stimulus generation to impact in RTL simulation
@@ -211,6 +224,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Research Intern (ASIC and VLSI Research Group)",
   "May 2020",
   "August 2020",
+  "Remote",
   [
     - Developed models to predict RTL-level structural coverage from functional simulation features with the intention to accelerate coverage closure and guide stimulus generation
   ]
@@ -221,6 +235,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Research Intern (ASIC and VLSI Research Group)",
   "Jan 2018",
   "August 2018",
+  "Santa Clara, CA",
   [
     - Emulated a ML inference accelerator testchip with a RISC-V controller on a VCU118 board; found bugs and workarounds pre and post silicon
     - Developed a Microzed-based stimulus board for driving a testchip during radiation beamtesting
@@ -236,6 +251,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Undergraduate Researcher",
   "Jan 2017",
   "Jan 2018",
+  "Berkeley, CA",
   [
     - Developed FPGA RTL and simulation framework to interface between an ASIC and a host machine.
     - Debugged and tested SERDES links connecting a RISC-V core's memory backend to an FPGA's DDR backing store.
@@ -247,6 +263,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Digital Verification Intern",
   "June 2016",
   "August 2016",
+  "San Jose, CA",
   [
     - Developed a UVM testbench using SystemVerilog from scratch to stress test a NVM controller to be integrated into the digital portion of a mixed-signal chip
     - Designed 2 verification IP blocks to be used in block-level and system/chip-level testbenches
@@ -259,6 +276,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "TA for EECS 151 (Digital Design and Circuits)",
   "Jan 2016",
   "Dec 2017",
+  "Berkeley, CA",
   [
     - Designed six FPGA labs to introduce students to fundamental concepts of digital design encompassing FSMs, serial I/O, and chip-to-chip communication
     - Expanded the class FPGA project consisting of a RISC-V core to include AC97 audio and DVI link video components
@@ -270,6 +288,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "Software Engineering Intern",
   "June 2015",
   "May 2016",
+  "Foster City, CA",
   [
     - Developed a SPA using AngularJS on the front end and Spring + Jersey on the backend, that enabled users to perform administrative tasks; deployed to internal admins and Guidewire customers
     - Wrote comprehensive unit and integration tests using Protractor and Karma/Jasmine; standardized CSS across all admin apps
@@ -281,6 +300,7 @@ I am looking for opportunities to apply first principles engineering greenfield,
   "iOS/Web Application Developer",
   "June 2014",
   "April 2015",
+  "Los Angeles, CA",
   [
     - Created an iOS mobile app and REST API service to disseminate information regarding Zurich’s IT Security Standards throughout the entire organization
     - Deployed the mobile app to hundreds of IT architects throughout the enterprise
@@ -300,35 +320,36 @@ I am looking for opportunities to apply first principles engineering greenfield,
 
 = Coursework
 
-*CS 61A/B/C* (Data Structures, Computer Architecture)\
-*CS 152* (Computer Architecture and Engineering)\
-*CS 162* (Operating Systems and Systems Programming)\
-*CS 188* (AI)\
-*CS 294* (Recent Topics on Program Synthesis, Compilation, and Debugging)\
-*CS 294* (Architectures and Systems for Warehouse-Scale Computers)\
-*EE 16A/B* (Designing Information Devices and Systems)\
-*EE 105* (Microelectronic Devices and Circuits)\
-*EE 120* (Signals and Systems)\
-*EE 123* (DSP)\
-*EE 128* (Feedback Control Systems)\
-*EE 140* (Analog ICs)\
-*EE 142* (RF Circuits)\
-*EE 219C* (Formal Methods)\
-*EE 227* (Convex Optimization)\
-*EE 240C* (VLSI Analog-Digital Interface ICs)\
-*EE 241B* (Advanced Digital ICs)\
-*EE 290C* (DSP Circuits)\
-*EE 290* (Hardware for Machine Learning)\
-*EECS 149* (Embedded Systems)\
-*EECS 151* (Digital Design, Digital ICs)\
-*Math 53/54* (Multivariable Calculus, Linear Algebra, Differential Equations)\
-*Math 128A* (Numerical Analysis)\
-*Math 221* (Advanced Matrix Computations)\
-*Stat 133* (Concepts in Computing with Data)\
-*Stat 134* (Concepts of Probability)\
-*Stat 135* (Concepts of Statistics)\
-*Stat 150* (Stochastic Processes)
+- CS 61A/B/C (Data Structures, Computer Architecture)
+- CS 152 (Computer Architecture and Engineering)
+- CS 162 (Operating Systems and Systems Programming)
+- CS 188 (AI)
+- CS 294 (Recent Topics on Program Synthesis, Compilation, and Debugging)
+- CS 294 (Architectures and Systems for Warehouse-Scale Computers)
+- EE 16A/B (Designing Information Devices and Systems)
+- EE 105 (Microelectronic Devices and Circuits)
+- EE 120 (Signals and Systems)
+- EE 123 (DSP)
+- EE 128 (Feedback Control Systems)
+- EE 140 (Analog ICs)
+- EE 142 (RF Circuits)
+- EE 219C (Formal Methods)
+- EE 227 (Convex Optimization)
+- EE 240C (VLSI Analog-Digital Interface ICs)
+- EE 241B (Advanced Digital ICs)
+- EE 290C (DSP Circuits)
+- EE 290 (Hardware for Machine Learning)
+- EECS 149 (Embedded Systems)
+- EECS 151 (Digital Design, Digital ICs)
+- Math 53/54 (Multivariable Calculus, Linear Algebra, Differential Equations)
+- Math 128A (Numerical Analysis)
+- Math 221 (Advanced Matrix Computations)
+- Stat 133 (Concepts in Computing with Data)
+- Stat 134 (Concepts of Probability)
+- Stat 135 (Concepts of Statistics)
+- Stat 150 (Stochastic Processes)
 
-#heading(level: 1)[Awards]
+= Awards
+
 - _2018_ - Outstanding Graduate Student Instructor Award (UC Berkeley)
 - _2024_ - Demetri Angelakos Memorial Achievement Award (UC Berkeley)
