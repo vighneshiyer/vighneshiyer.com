@@ -153,9 +153,13 @@ Here are a bunch of things from around the internet that I find interesting.
 ## Systems
 
 - [CACM: Meta’s Hyperscale Infrastructure: Overview and Insights](https://cacm.acm.org/research/metas-hyperscale-infrastructure-overview-and-insights/) ([HN link](https://news.ycombinator.com/item?id=43008920))
+
+## Misc Engineering / Self-Hosting
+
 - [Google Search has lost my trust, and I'm not sure where to head next](https://www.androidpolice.com/google-search-engine-lost-my-trust/) ([HN link](https://news.ycombinator.com/item?id=43517828))
   - [The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/), [In Response To Google](https://www.wheresyoured.at/in-response-to-google/), [Requiem for Raghavan](https://www.wheresyoured.at/requiem-for-raghavan/)
 - [Another Periodic Suggestion to Try, Just Try, Switching to Kagi for Search](https://daringfireball.net/2025/04/try_switching_to_kagi) ([HN link](https://news.ycombinator.com/item?id=43829490))
+- [Why I Ditched Spotify, and How I Set Up My Own Music Stack](https://leshicodes.github.io/blog/spotify-migration/) ([HN link](https://news.ycombinator.com/item?id=45133109))
 
 ## Hardware
 

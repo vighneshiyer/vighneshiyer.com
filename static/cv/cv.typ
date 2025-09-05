@@ -33,7 +33,7 @@
   }
 }
 
-#let entry(left, right) = {
+#let simple-entry(left, right) = {
   grid(
     columns: (0.5fr, 1fr),
     column-gutter: 1em,
@@ -66,6 +66,27 @@
   v(1.5em)
 }
 
+#let education-entry(place, title, extra, start_date, end_date) = {
+  grid(
+    columns: (1fr, 0.5fr),
+    column-gutter: 1em,
+    [
+      #text(size: 1.2em, weight: 600)[#place]
+      #linebreak()
+      #text(size: 1em)[#smallcaps[#title]]
+      #linebreak()
+      #text(size: 1em)[#extra]
+    ],
+    [
+      #align(right + horizon)[
+        #text(style: "italic")[#start_date] #dash #text(style: "italic")[#end_date]
+        #linebreak()
+      ]
+    ]
+  )
+  v(1.5em)
+}
+
 // https://www.youtube.com/watch?v=UP-S9rvAYYo
 // Top third = snapshot of you (what type of job are you targeting?, why are you qualified?, no objective, tease the rest of the resume, objective replacement is an executive summary, include areas of expertise as bullets or points)
 // for each job: paragraph for roles and responsibilities, then bullets for bragging points
@@ -88,43 +109,38 @@
 
 = Overview
 
-I am a graduating EECS PhD student from UC Berkeley.
+I am a graduating EECS PhD student from UC Berkeley, specializing in computer architecture.
 I am a generalist with skills spanning hardware engineering (RTL design, verification, architecture, FPGA / ASIC PD, prototyping, PCB design, silicon bringup) and software engineering (functional programming, hardware modeling, firmware design, Linux).
-I am looking for opportunities to apply first-principles, full-stack engineering to greenfield custom silicon projects.
-
-= Research Interests
-
-//#entry("Design", "Domain-specific accelerators")
-#entry("Design Methodology", "DSLs for hardware design, hardware-specific IRs, architectural description languages")
-#entry("Simulation", "Microarchitecture simulation and modeling, sampled simulation, FPGA-accelerated emulation")
-#entry("Verification", "RTL verification and debugging methodologies / tools, stimulus generation techniques, specification mining, machine learning for DV, RTL fuzzing")
-#entry("CAD", "FPGA-accelerated RTL-level power/performance estimation, RTL power modeling")
+In particular, I am looking for opportunities to apply first-principles, full-stack engineering to greenfield custom silicon projects, but I am also capable of working with large, mature, hardware codebases.
 
 = Skills
 
-#entry("FPGA Engineering", "Low-level Xilinx, SERDES, architecture, FPGA emulation, Xilinx FPGAs, Vivado")
-#entry("ASIC Engineering", "VCS / Xcelium / Verilator, Cadence VLSI flow")
-#entry("RTL Design", "Chisel/FIRRTL")
-#entry("RTL Verification", "UVM, cocotb, PyVerilator, transaction-level modeling")
-#entry("Languages","SystemVerilog, Scala, Rust, Python, C++, Java, C, OCaml")
+#simple-entry("FPGA Engineering", "Low-level Xilinx, SERDES, architecture, FPGA emulation, Xilinx FPGAs, Vivado")
+#simple-entry("ASIC Engineering", "VCS / Xcelium / Verilator, Cadence VLSI flow")
+#simple-entry("RTL Design", "Chisel/FIRRTL")
+#simple-entry("RTL Verification", "UVM, cocotb, PyVerilator, transaction-level modeling")
+#simple-entry("Languages","SystemVerilog, Scala, Rust, Python, C++, Java, C, OCaml")
 
 = Education
 
-#experience-entry(
+#education-entry(
   "UC Berkeley",
-  "PhD EECS",
+  [PhD EECS],
+
+  [
+    #link("https://slice.eecs.berkeley.edu/")[ADEPT/SLICE Lab]
+    #linebreak()
+    #link("https://bwrc.berkeley.edu/")[Berkeley Wireless Research Center]
+  ],
   "2018",
   "2025",
-  "",
-  []
 )
-#experience-entry(
+#education-entry(
   "UC Berkeley",
   "BS EECS",
+  "",
   "2014",
   "2018",
-  "",
-  []
 )
 
 = Experience
@@ -307,6 +323,14 @@ I am looking for opportunities to apply first-principles, full-stack engineering
     - Created a SPA and API for the internal distribution of security research
   ]
 )
+
+= Research Interests
+
+//#entry("Design", "Domain-specific accelerators")
+#simple-entry("Design Methodology", "DSLs for hardware design, hardware-specific IRs, architectural description languages")
+#simple-entry("Simulation", "Microarchitecture simulation and modeling, sampled simulation, FPGA-accelerated emulation")
+#simple-entry("Verification", "RTL verification and debugging methodologies / tools, stimulus generation techniques, specification mining, machine learning for DV, RTL fuzzing")
+#simple-entry("CAD", "FPGA-accelerated RTL-level power/performance estimation, RTL power modeling")
 
 = Publications
 
