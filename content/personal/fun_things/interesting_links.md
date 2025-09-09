@@ -28,6 +28,8 @@ Here are a bunch of things from around the internet that I find interesting.
   - [John Backus: Can Programming Be Liberated from the von Neumann Style? A Functional Style and Its Algebra of Programs](https://dl.acm.org/doi/pdf/10.1145/359576.359579)
   - [Daniel Hillis and Guy Steele: DATA PARALLEL ALGORITHMS](https://rsim.cs.illinois.edu/arch/qual_papers/systems/3.pdf)
   - [c2: Connection Machine](https://wiki.c2.com/?ConnectionMachine)
+- [Protobuffers Are Wrong](https://reasonablypolymorphic.com/blog/protos-are-wrong/) ([HN link](https://news.ycombinator.com/item?id=45139656)) (a classic)
+  - [typical: Data interchange with algebraic data types.](https://github.com/stepchowfun/typical)
 
 ### Functional Programming
 

@@ -110,16 +110,16 @@
 = Overview
 
 I am a graduating EECS PhD student from UC Berkeley, specializing in computer architecture.
-I am a generalist with skills spanning hardware engineering (RTL design, verification, architecture, FPGA / ASIC PD, prototyping, PCB design, silicon bringup) and software engineering (functional programming, hardware modeling, firmware design, Linux).
-In particular, I am looking for opportunities to apply first-principles, full-stack engineering to greenfield custom silicon projects, but I am also capable of working with large, mature, hardware codebases.
+I am a generalist with skills spanning hardware engineering (RTL design, verification, architecture, physical design, prototyping, PCB design, silicon bringup) and software engineering (functional programming, hardware modeling, firmware, Linux).
+I am looking for opportunities to apply first-principles, full-stack engineering to greenfield custom silicon projects, but I am also capable of working with large, mature, hardware codebases.
 
 = Skills
 
-#simple-entry("FPGA Engineering", "Low-level Xilinx, SERDES, architecture, FPGA emulation, Xilinx FPGAs, Vivado")
-#simple-entry("ASIC Engineering", "VCS / Xcelium / Verilator, Cadence VLSI flow")
-#simple-entry("RTL Design", "Chisel/FIRRTL")
-#simple-entry("RTL Verification", "UVM, cocotb, PyVerilator, transaction-level modeling")
-#simple-entry("Languages","SystemVerilog, Scala, Rust, Python, C++, Java, C, OCaml")
+#simple-entry("RTL Design", "Chisel, SystemVerilog, RISC-V, Accelerator Design (ML arithmetic, GEMM, wide-datapaths, systolic arrays)")
+#simple-entry("RTL Verification", "Verilator / VCS / Xcelium, UVM, cocotb, PyVerilator, SVA, Transaction-Level Modeling, Constrained Random, RISC-V Program Generators, Property-Based Testing")
+#simple-entry("FPGA Engineering", "Xilinx 7-Series/UltraScale+ FPGAs, Xilinx GTH/GTY Transceivers, Multi-SLR Design, AWS F1, FPGA-based ASIC Prototyping, Vivado, AMBA / AXI-4, PCIe")
+#simple-entry("ASIC Engineering", "Cadence VLSI Flow (Genus, Innovus), Power Modeling (Joules / Voltus), Floorplanning, STA (Tempus, PT)")
+#simple-entry("SW Languages","Scala, Python, Rust, C / C++, Java, Shell, TCL, OCaml")
 
 = Education
 
@@ -128,7 +128,7 @@ In particular, I am looking for opportunities to apply first-principles, full-st
   [PhD EECS],
 
   [
-    #link("https://slice.eecs.berkeley.edu/")[ADEPT/SLICE Lab]
+    #link("https://adept.eecs.berkeley.edu/")[ADEPT] / #link("https://slice.eecs.berkeley.edu/")[SLICE] Lab
     #linebreak()
     #link("https://bwrc.berkeley.edu/")[Berkeley Wireless Research Center]
   ],
@@ -152,7 +152,7 @@ In particular, I am looking for opportunities to apply first-principles, full-st
   "August 2025",
   "Remote",
   [
-    - RTL design (SystemVerilog), verification (Verilator + Python), and architectural modeling for an LLM inference accelerator ASIC
+    - RTL design (SystemVerilog), verification (Verilator + Python), and architectural modeling for a dedicated #link("https://taalas.com/")[LLM inference ASIC]
   ],
 )
 
@@ -341,6 +341,9 @@ In particular, I am looking for opportunities to apply first-principles, full-st
 + #link("https://dl.acm.org/doi/10.1145/3582016.3582019")[Simulator Independent Coverage for RTL Hardware Languages]. _ASPLOS 2023_. Kevin Laeufer, *Vighnesh Iyer*, David Biancolin, Jonathan Bachrach, Borivoje Nikolic, Koushik Sen
 + #link("https://pldi23.sigplan.org/details/plarch-2023-papers/16/Mixed-Abstraction-HDLs-and-A-Discussion-on-Other-Aspects-of-HDL-Design")[Mixed-Abstraction HDLs and A Discussion on Other Aspects of HDL Design]. _Programming Languages for Architecture (PLARCH) Workshop at ISCA 2023_. *Vighnesh Iyer*, Borivoje Nikolic
 + #link("https://pldi23.sigplan.org/details/plarch-2023-papers/15/New-Embedded-DSLs-for-Hardware-Design-and-Verification")[New Embedded DSLs for Hardware Design and Verification]. _Programming Languages for Architecture (PLARCH) Workshop at ISCA 2023_. *Vighnesh Iyer*, Kevin Laeufer, Young-Jin Park, Rohit Agarwal, Lixiang Yin, Bryan Ngo, Oliver Yu, Koushik Sen, Borivoje Nikolic
++ #link("https://dl.acm.org/doi/abs/10.1145/3620666.3651346")[RTL-Repair: Fast Symbolic Repair of Hardware Design Code]. _ASPLOS 2024_. Kevin Laeufer, Brandon Fajardo, Abhik Ahuja, *Vighnesh Iyer*, Borivoje Nikolić, Koushik Sen
++ #link("https://dl.acm.org/doi/abs/10.1145/3658617.3697760")[DEMOTIC: A differentiable sampler for multi-level digital circuits]. _ASPDAC 2025_. Arash Ardakani, Minwoo Kang, Kevin He, Qijing Huang, *Vighnesh Iyer*, Suhong Moon, John Wawrzynek
++ #link("https://ieeexplore.ieee.org/abstract/document/11075163/")[MAVERIC: A 16nm 72 FPS, 10 mJ/Frame Heterogeneous Robotics SoC with 4 Cores and 13 INT8/FP32 Accelerators]. _VLSI 2025_. Seah Kim, Jerry Zhao, Roger Hsiao, Yufeng Chi, *Vighnesh Iyer*, Vikram Jain, Borivoje Nikolić, Yakun Sophia Shao
 
 = Coursework
 
