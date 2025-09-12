@@ -38,6 +38,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - ["Unison: a new distributed programming language" by Paul Chiusano @ Strange Loop 2019](https://www.youtube.com/watch?v=gCWtkvDQ2ZI)
   - [Unison: The Big Idea](https://www.unison-lang.org/docs/the-big-idea/)
   - [Abilities for the monadically inclined](https://www.unison-lang.org/docs/fundamentals/abilities/for-monadically-inclined/)
+- [Algebraic Effects in Practice with Flix](https://www.relax.software/blog/flix-effects-intro/) ([HN link](https://news.ycombinator.com/item?id=45157466))
 
 ### Concurrent Programming
 
@@ -144,6 +145,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - The Pentium Chronicles by Robert Colwell
   - Good overview of the DFA (Dataflow Analyzer) simulator in the Appendix
 - [Intel - P6 Family of Processors Hardware Developer’s Manual](https://download.intel.com/design/PentiumII/manuals/24400101.pdf)
+- [/r/riscv: What is the worst ratified RISC-V instruction?](https://www.reddit.com/r/RISCV/comments/1n6hvqr/what_is_the_worst_ratified_riscv_instruction/)
 
 ### Formal Verification
 

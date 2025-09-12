@@ -56,11 +56,20 @@ My GPT queries:
 
 ## Visio / Omnigraffle
 
-## draw.io / Excalidraw
+## draw.io
+
+## Excalidraw
+
+- The sketch style is very common to see nowadays
 
 ## Figma
 
 - https://www.figma.com/slides/VwKtWwQQiiOevrTa8OeIXR/Tracer-Series-Presentation-Template?node-id=48-847
+
+## Balsamiq
+
+- https://balsamiq.com/
+- Quite similar to Figma. Designed for wireframing and UI elements, not general diagramming.
 
 ## Google Slides / Drawings
 

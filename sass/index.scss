@@ -5,10 +5,10 @@
 // Utopia type scale, space scale, and grid using spacing scale
 // https://utopia.fyi/grid/calculator?c=330,18,1.2,1500,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,xl,xl,12
 
-$min-width: 330;
-$max-width: 1575;
+$min-width: 352;
+$max-width: 1275;
 $min-font-size: 16;
-$max-font-size: 19;
+$max-font-size: 17;
 
 :root {
   @include utopia.generateTypeScale((
@@ -16,8 +16,8 @@ $max-font-size: 19;
     "maxWidth": $max-width,
     "minFontSize": $min-font-size,
     "maxFontSize": $max-font-size,
-    "minTypeScale": 1.2,
-    "maxTypeScale": 1.25,
+    "minTypeScale": 1.125,
+    "maxTypeScale": 1.2,
     "positiveSteps": 4,
     "negativeSteps": 2,
     /* Optional params */
@@ -42,8 +42,8 @@ $max-font-size: 19;
 }
 
 :root {
-  --grid-max-width: 98.44rem;
-  --grid-gutter: var(--space-s-xl, clamp(1.125rem, 0.3795rem + 3.6145vw, 3.9375rem));
+  --grid-max-width: 79.69rem;
+  --grid-gutter: var(--space-s-xl, clamp(1rem, 0.1658rem + 3.792vw, 3.1875rem));
   --grid-columns: 12;
 }
 
@@ -63,12 +63,12 @@ $max-font-size: 19;
 $mobile-breakpoint: 600px;
 
 :root {
-  --popout-begin: 3;
-  --content-begin: 4;
-  --inset-content-begin: 5;
-  --inset-content-end: 9;
-  --content-end: 10;
-  --popout-end: 11;
+  --popout-begin: 1;
+  --content-begin: 3;
+  --inset-content-begin: 4;
+  --inset-content-end: 10;
+  --content-end: 11;
+  --popout-end: 13;
   --grid-middle: 6;
 
   @media screen and (max-width: $mobile-breakpoint) {
@@ -95,156 +95,84 @@ $mobile-breakpoint: 600px;
   font-style: normal;
 }
 
-// https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/night.lua
-// https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/storm.lua
-$tn-dark-bg: #1a1b26;
-$tn-dark-bg-dark: #16161e;
-$tn-dark-bg-dark1: #0C0E14;
-$tn-dark-bg-highlight: #292e42;
-$tn-dark-blue: #7aa2f7;
-$tn-dark-blue0: #3d59a1;
-$tn-dark-blue1: #2ac3de;
-$tn-dark-blue2: #0db9d7;
-$tn-dark-blue5: #89ddff;
-$tn-dark-blue6: #b4f9f8;
-$tn-dark-blue7: #394b70;
-$tn-dark-comment: #565f89;
-$tn-dark-cyan: #7dcfff;
-$tn-dark-dark3: #545c7e;
-$tn-dark-dark5: #737aa2;
-$tn-dark-fg: #c0caf5;
-$tn-dark-fg: color.lighten($tn-dark-fg, 10%); // Override the fg color, the default one is too dark for sufficient contrast
-$tn-dark-fg-dark: #a9b1d6;
-$tn-dark-fg-gutter: #3b4261;
-$tn-dark-green: #9ece6a;
-$tn-dark-green1: #73daca;
-$tn-dark-green2: #41a6b5;
-$tn-dark-magenta: #bb9af7;
-$tn-dark-magenta2: #ff007c;
-$tn-dark-orange: #ff9e64;
-$tn-dark-purple: #9d7cd8;
-$tn-dark-red: #f7768e;
-$tn-dark-red1: #db4b4b;
-$tn-dark-teal: #1abc9c;
-$tn-dark-terminal-black: #414868;
-$tn-dark-yellow: #e0af68;
-$tn-dark-git-add: #449dab;
-$tn-dark-git-change: #6183bb;
-$tn-dark-git-delete: #914c54;
+// https://github.com/tokyo-night/tokyo-night-vscode-theme
+// Terminal colors: red, green, yellow, blue, magenta, cyan, orange (special one)
 
-// Light colors are just inverted from the dark colors
-$tn-light-bg: color.invert($tn-dark-bg);
-$tn-light-bg-dark: color.invert($tn-dark-bg-dark);
-$tn-light-bg-dark1: color.invert($tn-dark-bg-dark1);
-$tn-light-bg-highlight: color.invert($tn-dark-bg-highlight);
-$tn-light-blue: color.invert($tn-dark-blue);
-$tn-light-blue0: color.invert($tn-dark-blue0);
-$tn-light-blue1: color.invert($tn-dark-blue1);
-$tn-light-blue2: color.invert($tn-dark-blue2);
-$tn-light-blue5: color.invert($tn-dark-blue5);
-$tn-light-blue6: color.invert($tn-dark-blue6);
-$tn-light-blue7: color.invert($tn-dark-blue7);
-$tn-light-comment: color.invert($tn-dark-comment);
-$tn-light-cyan: color.invert($tn-dark-cyan);
-$tn-light-dark3: color.invert($tn-dark-dark3);
-$tn-light-dark5: color.invert($tn-dark-dark5);
-$tn-light-fg: color.invert($tn-dark-fg);
-$tn-light-fg-dark: color.invert($tn-dark-fg-dark);
-$tn-light-fg-gutter: color.invert($tn-dark-fg-gutter);
-$tn-light-green: color.invert($tn-dark-green);
-$tn-light-green1: color.invert($tn-dark-green1);
-$tn-light-green2: color.invert($tn-dark-green2);
-$tn-light-magenta: color.invert($tn-dark-magenta);
-$tn-light-magenta2: color.invert($tn-dark-magenta2);
-$tn-light-orange: color.invert($tn-dark-orange);
-$tn-light-purple: color.invert($tn-dark-purple);
-$tn-light-red: color.invert($tn-dark-red);
-$tn-light-red1: color.invert($tn-dark-red1);
-$tn-light-teal: color.invert($tn-dark-teal);
-$tn-light-terminal-black: color.invert($tn-dark-terminal-black);
-$tn-light-yellow: color.invert($tn-dark-yellow);
-$tn-light-git-add: color.invert($tn-dark-git-add);
-$tn-light-git-change: color.invert($tn-dark-git-change);
-$tn-light-git-delete: color.invert($tn-dark-git-delete);
-// The bg colors are blended  (see https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors/day.lua)
-$tn-light-bg-dark: color.mix($tn-light-bg, $tn-light-fg, 95%);
-$tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 95%);
-// Now we swap some colors
-//$tn-light-bg-dark1: $tn-light-bg;
+//// Dark theme
+$tn-dark-bg: #1a1b26;
+$tn-dark-bg-contrast: color.darken($tn-dark-bg, 3%);
+$tn-dark-bg-contrast1: color.darken($tn-dark-bg, 5%);
+$tn-dark-bg-highlight: color.lighten($tn-dark-bg, 5%);
+$tn-dark-fg: #c0caf5;
+$tn-dark-fg-contrast: #a9b1d6;
+
+$tn-dark-red: #f7768e;
+$tn-dark-green: #9ece6a;
+$tn-dark-yellow: #e0af68;
+$tn-dark-blue: #7aa2f7;
+$tn-dark-magenta: #bb9af7;
+$tn-dark-cyan: #7dcfff;
+$tn-dark-orange: #ff9e64;
+
+//// Light theme
+$tn-light-bg: #e6e7ed;
+$tn-light-bg-contrast: color.lighten($tn-light-bg, 3%);
+$tn-light-bg-contrast1: color.lighten($tn-light-bg, 5%);
+$tn-light-bg-highlight: color.darken($tn-light-bg, 5%);
+$tn-light-fg: #343b58;
+$tn-light-fg-contrast: #40434f;
+
+$tn-light-red: #8c4351;
+$tn-light-green: #385f0d;
+$tn-light-yellow: #8f5e15;
+$tn-light-blue: #2959aa;
+$tn-light-magenta: #5a3e8e;
+$tn-light-cyan: #0f4b6e;
+$tn-light-orange: #965027;
 
 @mixin color-scheme-light {
-  --bg: #{$tn-light-bg};
-  --bg-dark: #{$tn-light-bg-dark};
-  --bg-dark1: #{$tn-light-bg-dark1};
+  --bg:           #{$tn-light-bg};
+  --bg-contrast:  #{$tn-light-bg-contrast};
+  --bg-contrast1: #{$tn-light-bg-contrast1};
   --bg-highlight: #{$tn-light-bg-highlight};
-  --fg: #{$tn-light-fg};
-  --fg-dark: #{$tn-light-fg-dark};
-  --fg-gutter: #{$tn-light-fg-gutter};
-
-  --comment: #{$tn-light-comment};
-  --cyan: #{$tn-light-cyan};
-  --blue: #{$tn-light-blue};
-  --blue0: #{$tn-light-blue0};
-  --blue1: #{$tn-light-blue1};
-  --blue2: #{$tn-light-blue2};
-  --blue5: #{$tn-light-blue5};
-  --blue6: #{$tn-light-blue6};
-  --blue7: #{$tn-light-blue7};
-  --dark3: #{$tn-light-dark3};
-  --dark5: #{$tn-light-dark5};
-  --green: #{$tn-light-green};
-  --green1: #{$tn-light-green1};
-  --green2: #{$tn-light-green2};
-  --magenta: #{$tn-light-magenta};
-  --magenta2: #{$tn-light-magenta2};
-  --orange: #{$tn-light-orange};
-  --purple: #{$tn-light-purple};
-  --red: #{$tn-light-red};
-  --red1: #{$tn-light-red1};
-  --teal: #{$tn-light-teal};
-  --terminal-black: #{$tn-light-terminal-black};
-  --yellow: #{$tn-light-yellow};
-  --git-add: #{$tn-light-git-add};
-  --git-change: #{$tn-light-git-change};
-  --git-delete: #{$tn-light-git-delete};
+  --fg:           #{$tn-light-fg};
+  --fg-contrast:  #{$tn-light-fg-contrast};
+  --red:          #{$tn-light-red};
+  --green:        #{$tn-light-green};
+  --yellow:       #{$tn-light-yellow};
+  --blue:         #{$tn-light-blue};
+  --magenta:      #{$tn-light-magenta};
+  --cyan:         #{$tn-light-cyan};
+  --orange:       #{$tn-light-orange};
+  --accent-color: var(--orange);
+  --accent-color-contrast: var(--yellow);
+  --accent-color-2: var(--blue);
+  --content-font-weight: 400;
+  --bold-font-weight: 600;
+  --content-letter-spacing: -0.01ch;
 }
 
 @mixin color-scheme-dark {
   --color-scheme: dark;
-  --bg: #{$tn-dark-bg};
-  --bg-dark: #{$tn-dark-bg-dark};
-  --bg-dark1: #{$tn-dark-bg-dark1};
+  --bg:           #{$tn-dark-bg};
+  --bg-contrast:  #{$tn-dark-bg-contrast};
+  --bg-contrast1: #{$tn-dark-bg-contrast1};
   --bg-highlight: #{$tn-dark-bg-highlight};
-  --fg: #{$tn-dark-fg};
-  --fg-dark: #{$tn-dark-fg-dark};
-  --fg-gutter: #{$tn-dark-fg-gutter};
-
-  --comment: #{$tn-dark-comment};
-  --cyan: #{$tn-dark-cyan};
-  --blue: #{$tn-dark-blue};
-  --blue0: #{$tn-dark-blue0};
-  --blue1: #{$tn-dark-blue1};
-  --blue2: #{$tn-dark-blue2};
-  --blue5: #{$tn-dark-blue5};
-  --blue6: #{$tn-dark-blue6};
-  --blue7: #{$tn-dark-blue7};
-  --dark3: #{$tn-dark-dark3};
-  --dark5: #{$tn-dark-dark5};
-  --green: #{$tn-dark-green};
-  --green1: #{$tn-dark-green1};
-  --green2: #{$tn-dark-green2};
-  --magenta: #{$tn-dark-magenta};
-  --magenta2: #{$tn-dark-magenta2};
-  --orange: #{$tn-dark-orange};
-  --purple: #{$tn-dark-purple};
-  --red: #{$tn-dark-red};
-  --red1: #{$tn-dark-red1};
-  --teal: #{$tn-dark-teal};
-  --terminal-black: #{$tn-dark-terminal-black};
-  --yellow: #{$tn-dark-yellow};
-  --git-add: #{$tn-dark-git-add};
-  --git-change: #{$tn-dark-git-change};
-  --git-delete: #{$tn-dark-git-delete};
+  --fg:           #{$tn-dark-fg};
+  --fg-contrast:  #{$tn-dark-fg-contrast};
+  --red:          #{$tn-dark-red};
+  --green:        #{$tn-dark-green};
+  --yellow:       #{$tn-dark-yellow};
+  --blue:         #{$tn-dark-blue};
+  --magenta:      #{$tn-dark-magenta};
+  --cyan:         #{$tn-dark-cyan};
+  --orange:       #{$tn-dark-orange};
+  --accent-color: var(--blue);
+  --accent-color-contrast: var(--cyan);
+  --accent-color-2: var(--orange);
+  --content-font-weight: 370;
+  --bold-font-weight: 550;
+  --content-letter-spacing: 0ch;
 }
 
 :root {
@@ -261,9 +189,9 @@ $tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 95%);
       @include color-scheme-dark;
     }
   }
-  --accent-color: var(--orange);
-  --accent-color-dark: var(--red1);
-  --accent-color-2: var(--blue);
+  --content-line-height: 1.5;
+  --blockquote-line-height: 1.5;
+  --heading-line-height: 1.25;
 }
 
 @import "../node_modules/highlight.js/scss/tokyo-night-light.scss";
@@ -305,30 +233,6 @@ $tn-light-bg-dark1: color.mix($tn-light-bg-dark, $tn-light-fg, 95%);
   ol, ul {
     list-style: none;
   }
-
-  /*
-  :not([class]) {
-    h1#{&}, h2#{&}, h3#{&}, h4#{&}, h5#{&}, h6#{&} {
-      margin-block: 0.75em;
-      line-height: 1.25;
-      text-wrap: balance;
-      letter-spacing: -0.025ch;
-    }
-
-    p#{&}, ol#{&}, ul#{&} {
-      margin-block: 1em;
-    }
-
-    ol#{&}, ul#{&} {
-      padding-inline-start: 1.5em;
-      list-style: revert;
-    }
-
-    li#{&} {
-      margin-block: 0.5em;
-    }
-  }
-  */
 }
 
 html {
@@ -336,10 +240,10 @@ html {
 }
 
 body {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-contrast);
   color: var(--fg);
   font-family: var(--serif-font);
-  line-height: 1.55;
+  line-height: var(--content-line-height);
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Make the footer stick to the bottom of the page */
@@ -350,10 +254,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--sans-font);
-  font-weight: 500;
+  font-weight: var(--bold-font-weight);
   text-wrap: balance;
-  //letter-spacing: -0.025ch;
-  line-height: 1.25;
+  line-height: var(--heading-line-height);
 }
 
 $page-elements: p, ul, ol, blockquote, figure, pre, details, "div.callout";
@@ -424,12 +327,11 @@ h4 + h5 {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: var(--bold-font-weight);
 }
 
 p {
   font-size: var(--step-0);
-  font-weight: 370;
   text-wrap: pretty;
   margin-bottom: var(--space-s);
   hyphens: auto;
@@ -449,10 +351,10 @@ li {
 ul > li:before {
   // content: "✶";
   // content: "◍";
-  content: "◉";
   // content: "›";
+  content: "◉";
   color: var(--accent-color-2);
-  font-size: var(--step-0);;
+  font-size: var(--step-0);
   position: absolute;
   margin-left: calc(var(--space-l) * -1);
 }
@@ -537,20 +439,20 @@ ol > li > ul > li {
 blockquote {
   * {
     font-size: calc(var(--step-0) * 0.9);
-    line-height: 1.5; // slightly less than regular text
+    line-height: var(--blockquote-line-height);
     &:last-child {
       margin-bottom: 0;
     }
   }
-  background-color: var(--bg-dark);
+  background-color: var(--bg-contrast);
   border-top: 1px solid var(--bg-highlight);
   border-bottom: 1px solid var(--bg-highlight);
   padding-top: var(--space-m);
   padding-bottom: var(--space-m);
   padding-left: var(--space-l);
   padding-right: var(--space-l);
-  // margin-left: var(--space-l);
-  // margin-right: var(--space-l);
+  margin-left: var(--space-m);
+  margin-right: var(--space-m);
   margin-bottom: var(--space-s);
   // border-left: var(--space-3xs) solid var(--accent-color);
 }
@@ -581,7 +483,7 @@ figure {
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr
 hr {
   border: none;
-  border-top: 3px double var(--comment);
+  border-top: 3px double var(--fg-contrast);
   color: var(--accent-color);
   overflow: visible;
   text-align: center;
@@ -589,7 +491,7 @@ hr {
   margin-top: var(--space-m);
   margin-bottom: var(--space-m);
   &::after {
-    background: var(--bg-dark1);
+    background: var(--bg-contrast1);
     content: "⁂";
     padding: 0 var(--space-s);
     position: relative;
@@ -605,13 +507,13 @@ a {
   color: var(--accent-color);
   --bar-height: 0.15cap;
   --bar-offset: 0.1cap;
-  background: linear-gradient(45deg,var(--accent-color-dark) 10%,var(--accent-color)) no-repeat right bottom / 0 var(--bar-height);
+  background: linear-gradient(45deg,var(--accent-color-contrast) 10%,var(--accent-color)) no-repeat right bottom / 0 var(--bar-height);
   background-position-x: left;
   background-position-y: bottom var(--bar-offset);
   transition: background-size 0.1s ease-in-out, color 0.1s ease-in-out;
   // padding-bottom: var(--bar-offset);
   &:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-contrast);
     background-size: 100% var(--bar-height);
   }
 }
@@ -657,7 +559,7 @@ details {
   padding-right: var(--space-l);
   padding-top: var(--space-m);
   padding-bottom: var(--space-m);
-  background-color: var(--bg-dark);
+  background-color: var(--bg-contrast);
   summary {
     font-size: var(--step-0);
     cursor: pointer;
@@ -685,14 +587,14 @@ details {
 }
 
 div.callout {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-contrast);
   padding: var(--space-s);
   border-radius: var(--space-2xs);
-  border: 1px solid var(--dark5);
+  border: 1px solid var(--bg-contrast1);
   margin-bottom: var(--space-m);
   .callout-title {
     font-size: var(--step-1);
-    font-weight: 700;
+    font-weight: var(--bold-font-weight);
     margin-bottom: var(--space-2xs);
     line-height: 1;
   }
@@ -705,11 +607,11 @@ div.callout {
   @include u-container;
   @include u-grid;
   width: 100%;
-  background-color: var(--bg-dark);
+  background-color: var(--bg-contrast);
   padding-top: var(--space-2xs);
   padding-bottom: var(--space-2xs);
   header {
-    grid-column: var(--popout-begin) / var(--popout-end);
+    grid-column: var(--content-begin) / var(--content-end);
     display: flex;
     flex-direction: row;
     .spacer {
@@ -719,9 +621,8 @@ div.callout {
       text-align: left;
       font-size: var(--step-2);
       font-family: var(--sans-font);
-      font-weight: 600;
+      font-weight: var(--bold-font-weight);
       color: var(--fg);
-      letter-spacing: -0.025ch;
       transform: none;
       background: none;
       &:hover {
@@ -735,7 +636,7 @@ div.callout {
     .contact p {
       text-align: right;
       margin: 0;
-      font-size: var(--step--2);
+      font-size: var(--step--1);
       font-family: var(--sans-font);
     }
     // https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
@@ -798,13 +699,13 @@ div.callout {
 }
 
 .footer-container {
-  background: var(--bg-dark);
+  background: var(--bg-contrast);
   padding-top: var(--space-2xs);
   padding-bottom: var(--space-2xs);
   font-size: var(--step--1);
   color: var(--fg);
-  border-bottom: var(--space-4xs) solid var(--accent-color);
-  // border-top: 1px solid var(--dark5);
+  border-bottom: var(--space-3xs) solid var(--accent-color);
+  font-family: var(--sans-font);
   footer {
     @include u-container;
     @include u-grid;
@@ -816,14 +717,14 @@ div.callout {
 }
 
 .homepage-container {
-  background-color: var(--bg-dark1);
+  background-color: var(--bg-contrast1);
   .homepage {
     @include u-container;
     @include u-grid;
     .homepage-content {
       margin-top: var(--space-s);
       margin-bottom: var(--space-s);
-      grid-column: var(--popout-begin) / var(--popout-end);
+      grid-column: var(--content-begin) / var(--content-end);
     }
   }
   hr + h2 {
@@ -923,7 +824,7 @@ a.anchor {
     // content: "🔗";
     // content: "☉";
     // content: "✶";
-    content: "⁂";
+    // content: "⁂";
     margin-left: var(--space-2xs);
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
@@ -943,7 +844,7 @@ a.anchor {
   margin-top: var(--space-m);
   margin-bottom: var(--space-m);
   .article-title {
-    grid-column: var(--popout-begin) / var(--popout-end);
+    grid-column: var(--content-begin) / var(--content-end);
     h1 {
       @include hashtag("#");
       margin-bottom: var(--space-2xs);
@@ -965,7 +866,7 @@ a.anchor {
 }
 
 .article-content-container {
-  background-color: var(--bg-dark1);
+  background-color: var(--bg-contrast1);
   padding-top: var(--space-m);
   padding-bottom: var(--space-m);
 }
@@ -973,7 +874,8 @@ a.anchor {
 .article-content {
   @include u-container;
   @include u-grid;
-  letter-spacing: 0.01ch;
+  letter-spacing: var(--content-letter-spacing);
+  font-weight: var(--content-font-weight);
   > :first-child {
     margin-top: 0;
   }
@@ -1069,8 +971,7 @@ a.anchor {
   padding-left: var(--space-2xs);
   padding-right: var(--space-2xs);
   border-radius: var(--space-3xs);
-  font-weight: 500;
-  letter-spacing: 0.05ch;
+  font-weight: var(--bold-font-weight);
   font-size: var(--step--1);
   margin-left: var(--space-2xs);
   margin-right: var(--space-2xs);
@@ -1084,7 +985,7 @@ a.anchor {
 .badge-new {
   @include badge;
   background-color: var(--accent-color-2);
-  color: var(--bg-dark1);
+  color: var(--bg-contrast1);
   position: relative;
   top: -0.4ex;
   padding-left: var(--space-2xs);

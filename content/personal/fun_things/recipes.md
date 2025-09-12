@@ -40,6 +40,7 @@ A bunch of recipes and cooking information I like or think is interesting.
   - Keep the pan for sauce making warm, but not on a flame. Add pasta water to the pepper 2-3 minutes before the pasta is al dente.
   - Stir aggressively when making the sauce. Make sure the pasta **has cooled down** (wait 1 minute) before adding pecorino or it will become clumpy and stringy. Add a little pecorino (2 handfuls, then the rest slowly) at a time along with pasta water to maintain temperature under 180F.
   - Before plating, warm plates in microwave for 30 seconds to get hot
+- [This Pasta Looks Easy. It’s Not.](https://www.youtube.com/watch?v=W830FdF0yo8) - A masterful execution of cacio e pepe with rigatoni.
 
 <details>
   <summary>Retrospective after 3/24/2024 preparation</summary>
@@ -162,6 +163,15 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
   - Add 200g heavy cream + a bit of water
   - Simmer and let reduce, should glaze a spoon. Adjust salt.
   - Cook ravioli and add
+
+### Brown Butter + Sage Pasta
+
+- https://www.youtube.com/watch?v=v50OQFhc16U
+- Quite simple, but beautiful.
+- Melt unsalted butter and infuse with thinly sliced fresh sage. Continue cooking on low heat until the butter is slightly browned. Add starchy pasta water and cook down on low heat to form a sauce.
+- In a separate bowl, grate parmesean and pecorino. Add a bit of starchy pasta water to form a cheese paste
+- Dump almost-cooked rigatoni into the sage butter and continue to cook and absorb the remaining liquid. Continue to boil the pasta in the pan and add more water as needed. Add more unsalted butter near the end and emulsify. You want a nice and creamy butter sauce so keep shaking the pan and cooking down the liquid.
+- Spoon the pasta onto a plate. Then add the cheese paste into the pan, some pasta water, and emulsify with the remaining butter. Pour the cheese sauce over the pasta. Top with more microplaned parm.
 
 ## Soups
 

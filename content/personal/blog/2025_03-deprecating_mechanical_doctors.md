@@ -66,6 +66,7 @@ Mediocre doctors will be completely eradicated with the proliferation of AI. The
         - screenings - e.g. colonoscopy
         - anxiety - maybe measured via HRV
         - sleep patterns - measured by smartwatch
+- https://www.empirical.health/product/heart-health-panel/
 
 - Peter Attia's concierge medicine startup: https://www.biograph.com/about
     - Office in San Mateo - measures: ADMA, High sensitivity CRP, OxLDL, Myelperoxidase

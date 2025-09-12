@@ -25,3 +25,4 @@ slug = "pnr-should-be-automatic"
 
 - https://news.ycombinator.com/item?id=43499992 (Things I would have told myself before building an autorouter (autorouting.com))
   - Some good lessons here, but ultimately the author makes a mistake in dismissing stochastic techniques
+- [SO3-Cell: Standard Cell Layout Automation Framework for Simultaneous Optimization of Topology, Placement, and Routing](https://vlsicad.ucsd.edu/Publications/Conferences/418/c418.pdf)

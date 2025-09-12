@@ -590,10 +590,10 @@ In theory, this would yield much faster runtimes vs training the model from scra
 But is a lack of pre-training as big a deal as the Nature authors make it out to be?
 There are a few complicating factors:
 
-- **Overfitting and data contamination**: when rigorously evaluating an algorithm on a benchmark, it can be unfair to allocate "uncounted" compute to training examples that resemble the benchmark. However, this is a moot point for commercial usage of RL floorplanning.
-- **Marginal demonstrated improvements in QoR**: the original Nature paper shows relatively small improvements to QoR (\< 5%) when using a pre-trained network vs training from scratch. The primary benefit seems to be faster runtime to achieve a particular QoR.
-- **Extreme compute requirements and long runtimes**: pre-training as the Nature authors did requires substantially more compute and memory than is required by the conventional algorithms. Allocating the equivalent number of compute resources to a parallelizable algorithm such as SA, could give it a substantial advantage. Finally, the runtime of a pre-trained network is still in the order of several hours to reach an optimal proxy cost. This is still slower than commercial autofloorplanners and AutoDMP (as seen in the appendix of the ISPD 2023 paper).
-- **Poor correlation of the proxy cost to final PPA**: pre-training optimizes the network to minimize the proxy cost, but the ISPD authors have presented evidence that proxy cost poorly correlates to final area and timing numbers seen after running the entire CAD flow.
+- _Overfitting and data contamination_: when rigorously evaluating an algorithm on a benchmark, it can be unfair to allocate "uncounted" compute to training examples that resemble the benchmark. However, this is a moot point for commercial usage of RL floorplanning.
+- _Marginal demonstrated improvements in QoR_: the original Nature paper shows relatively small improvements to QoR (\< 5%) when using a pre-trained network vs training from scratch. The primary benefit seems to be faster runtime to achieve a particular QoR.
+- _Extreme compute requirements and long runtimes_: pre-training as the Nature authors did requires substantially more compute and memory than is required by the conventional algorithms. Allocating the equivalent number of compute resources to a parallelizable algorithm such as SA, could give it a substantial advantage. Finally, the runtime of a pre-trained network is still in the order of several hours to reach an optimal proxy cost. This is still slower than commercial autofloorplanners and AutoDMP (as seen in the appendix of the ISPD 2023 paper).
+- _Poor correlation of the proxy cost to final PPA_: pre-training optimizes the network to minimize the proxy cost, but the ISPD authors have presented evidence that proxy cost poorly correlates to final area and timing numbers seen after running the entire CAD flow.
 
 <!--
 - **Fixed CAD flow**: the

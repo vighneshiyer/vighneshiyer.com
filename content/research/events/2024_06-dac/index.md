@@ -1,7 +1,7 @@
 +++
 title = "61st Design Automation Conference (DAC 2024)"
 date = 2024-07-05
-draft = false
+draft = true
 description = "The Cooley panel, fun on the exhibition floor with X-Epic, OSS EDA CAD, and much much more!"
 
 [extra]
