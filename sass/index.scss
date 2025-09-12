@@ -500,6 +500,7 @@ hr {
 }
 
 /* Link styling stolen from: https://sqlsync.dev/posts/stop-syncing-everything/ */
+/*
 a {
   position: relative;
   display: inline;
@@ -517,7 +518,22 @@ a {
     background-size: 100% var(--bar-height);
   }
 }
+*/
 
+// The above link styling was way too flashy, stick with something more subtle
+// Inspired by: https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/
+a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent-color) 30%, transparent);
+  text-underline-offset: 1px;
+  &:hover {
+    text-decoration-color: var(--accent-color);
+    transition: text-decoration 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+  }
+}
+
+/*
 a:has(img) {
   background: none;
   color: inherit;
@@ -526,6 +542,7 @@ a:has(img) {
     color: inherit;
   }
 }
+*/
 
 ::selection {
   background-color: var(--bg-highlight);
@@ -590,7 +607,7 @@ div.callout {
   background-color: var(--bg-contrast);
   padding: var(--space-s);
   border-radius: var(--space-2xs);
-  border: 1px solid var(--bg-contrast1);
+  border: 1px solid var(--bg-highlight);
   margin-bottom: var(--space-m);
   .callout-title {
     font-size: var(--step-1);
@@ -623,10 +640,10 @@ div.callout {
       font-family: var(--sans-font);
       font-weight: var(--bold-font-weight);
       color: var(--fg);
-      transform: none;
-      background: none;
+      text-decoration: none;
       &:hover {
         text-decoration: underline;
+        text-decoration-color: var(--fg);
       }
     }
     .contact {
@@ -666,7 +683,7 @@ div.callout {
       }
       .dark {
         display: inline-block;
-        background: var(--orange);
+        background: var(--blue);
         padding-left: var(--space-2xs);
         padding-right: var(--space-2xs);
         padding-top: var(--space-3xs);
@@ -776,6 +793,12 @@ div.callout {
     display: inline-block;
     margin-bottom: var(--space-3xs);
     margin-top: 0;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: revert;
+      }
+    }
     &::after {
       /* content: "⸙"; */
       /* content: "·"; */
@@ -812,9 +835,9 @@ div.callout {
 }
 
 a.anchor {
-  background: none;
   color: inherit;
   transition: color 0.1s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     color: var(--accent-color);
@@ -956,7 +979,7 @@ a.anchor {
     grid-column: var(--content-begin) / var(--content-end);
   }
   div.callout {
-    grid-column: var(--inset-content-begin) / var(--inset-content-end);
+    grid-column: var(--content-begin) / var(--content-end);
   }
   div.twitter-tweet {
     grid-column: var(--content-begin) / var(--content-end);
