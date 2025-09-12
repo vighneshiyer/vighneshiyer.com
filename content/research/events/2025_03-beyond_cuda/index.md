@@ -351,7 +351,7 @@ So was everyone here.
 All the speakers were so dull that the majority of the audience got up and started gabbing at the back near the bar.
 The background noise was so loud, the organizers had to keep shutting them up, since you could hardly hear the speakers.
 
-{{ image(path="dead_crowd.jpg", width="80%") }}
+{{ image(path="dead_crowd.jpg", class="content") }}
 
 ## Post-Training Beyond CUDA
 
@@ -369,7 +369,7 @@ He says that AI generated videos outperform human-generated videos on social med
 "AI generated videos are outperforming 'conventional' video on social media" (he actually said this).
 What an inspiring future!
 
-{{ image(path="higgsfield.png", width="80%") }}
+{{ image(path="higgsfield.png", class="content") }}
 
 He showed us an ad they generated for Monster Energy, where a Viking climbs a mountain, reaches the top, and drinks a can of Monster.
 No cameras, actors, directors, or editors required! So cool!
@@ -471,7 +471,7 @@ Paul showed his inference setup has 2.25x faster all-reduce on 2x/4x MI300X vs R
 
 And then we have to talk about Will, the founder of Chai Research.
 
-{{ image(path="chai_ai_staff.png", width="80%") }}
+{{ image(path="chai_ai_staff.png", class="content") }}
 
 You see, Chai is a very serious company, with very skilled ex-quant researchers, all from highly ranked universities.
 They are paid a [hefty sum](https://x.com/chai_research/status/1902127443605156198?t=UHr8YzdwGgWPllkjIuTgGA) of $500-750k in cash + equity.
@@ -482,7 +482,7 @@ His company builds an app: [Chai AI](https://play.google.com/store/apps/details?
 
 > Our app revolutionizes the way we interact with AI chatbots. With our advanced technology, our chatbots think and reply like real characters, complete with authentic voices. You can choose from a massive selection of characters, each with their own unique voice and personality. Whether you're chatting with your favorite celebrity, a beloved character from a movie or TV show, or a historical figure, you'll feel like you're talking to a real person.
 
-{{ image(path="chai_ai.jpg", width="50%", caption="Prompt extraction from Chai AI. Yes, it's just an LLM wrapper.") }}
+{{ image(path="chai_ai.jpg", class="inset", caption="Prompt extraction from Chai AI. Yes, it's just an LLM wrapper.") }}
 
 So Will, why did you start Chai AI?
 You see, "all of AI has been shaped by a small group of people (old men, the West)", but maybe teenage girls need access too.
@@ -568,7 +568,7 @@ They made a claim that their Pytorch models were ported to run on ROCm in one en
 
 ## Open Source beyond CUDA
 
-{{ image(path="open_source_beyond_cuda.jpg", width="80%") }}
+{{ image(path="open_source_beyond_cuda.jpg", class="content") }}
 
 This was a panel / presentation with Philippe Tillet (OpenAI / Triton), Liz Li (AMD), Greg (TensorWave), and Andrey Cheptsov (dstack).
 Philippe says that OpenAI uses Triton for all of their kernels and they kind of work with AMD's hardware team.
@@ -600,7 +600,7 @@ Overall, nothing that interesting.
 Finally, we heard from Gregory of [ScalarLM](https://www.scalarlm.com/) ([see recording here](https://tensorwave.com/blog/scalarlm-open-source-llm-training-inference-on-amd-rocm)).
 This appears to be an LLM training and inference software stack that runs out-of-the-box on MI300X.
 
-{{ image(path="scalar_lm.jpg", width="80%") }}
+{{ image(path="scalar_lm.jpg", class="content") }}
 
 <!--
 ### Scalar LM - ML stack on TensorWave
@@ -613,7 +613,7 @@ This appears to be an LLM training and inference software stack that runs out-of
 
 ## Hot Takes Panel
 
-{{ image(path="hot_takes_panel.jpg", width="80%") }}
+{{ image(path="hot_takes_panel.jpg", class="content") }}
 
 The panelists were Dylan (Semianalysis), Anush (AMD, VP of AI), Darrick (TensorWave), Mark (Meta/ GPU mode), and Eugene (RWKV guy).
 Now, this was interesting.
@@ -751,7 +751,7 @@ We added a Pytorch CI just recently; see, we're trying to improve performance an
 - Rocm performance is improving, improving over H200 lol
 -->
 
-{{ image(path="raffle.jpg", width="50%", caption="Dylan and Jeff picking raffle tickets for the MI200 giveaway") }}
+{{ image(path="raffle.jpg", class="inset", caption="Dylan and Jeff picking raffle tickets for the MI200 giveaway") }}
 
 ### Epilogue
 
@@ -766,7 +766,7 @@ I recommend you read that thread.
 
 About a week after _Beyond CUDA_, SemiAnalysis released an article ["The GPU Cloud ClusterMAX™ Rating System"](https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/).
 
-{{ image(path="semianalysis_ranking.png", width="50%") }}
+{{ image(path="semianalysis_ranking.png", class="inset") }}
 
 Sitting as undisputed #1 is NVIDIA's golden child, CoreWeave, while TensorWave (and any other AMD neocloud) is just a Bronze-tier GPU cloud.
 Certainly, we can expect the AMD neoclouds to move up the list, but it will take time.
@@ -806,7 +806,7 @@ In the final segment, the comedians pulled people from the crowd and had them ma
 In one act, they forced everyone to line up from least to greatest TC.
 Dylan, who was made part of this routine, very slyly walked over to the greatest TC corner 😆.
 
-{{ image(path="the_girl.jpg", width="50%") }}
+{{ image(path="the_girl.jpg", class="inset") }}
 
 At the very end, Dylan and this girl needed to act in a skit to prove they weren't an AI.
 The skit asked for the girl to console a man (played by a comic) who didn't have enough money to buy NVIDIA GPUs.

@@ -91,7 +91,7 @@ See their blog post: [Security Verification of an Open Source Hardware Root of T
 > This is crucial to ensure that the security requirements are concisely specified, as well as to assist in identifying unknown design weaknesses.
 > By using Radix’s security analysis capabilities, we were able to validate that the random constant key never makes it to the output of the OTP controller in an unscrambled form, which is a good thing.
 
-{{ image(path="10-radix.png", width="80%") }}
+{{ image(path="10-radix.png", class="inset") }}
 
 > While applying Radix to the OTP controller, we also identified intermediate values of the random constant key appearing on the output of the scrambler. This is interesting and surprising, but was determined to be a low risk since the intermediate values are protected at the boundary of the OTP output. Even so, this information enabled OpenTitan to push a fix mitigating this leakage out of an abundance of caution to potential future threats.
 
@@ -217,7 +217,7 @@ There were a few interesting presentations here.
 
 ### ML Based Abnormal Simulation Detector in SoC Verification (Samsung)
 
-{{ image(path="11-abnormal_sim_predictor.jpg", width="50%") }}
+{{ image(path="11-abnormal_sim_predictor.jpg", class="inset") }}
 
 At first, I thought this was going to be a predictor based on test generator parameters or runtime test behavior.
 Instead, they describe an "ML approach" to detect tests that execute too long and will eventually time out and terminate them early to save compute and debug overhead.
@@ -274,7 +274,7 @@ We attended [John Cooley's DAC Panel](https://59dac.conference-program.com/sessi
 
 > Abstract: Come watch the EDA troublemakers answer the edgy, user-submitted questions about this year's most controversial issues! It's an old-style open Q&A from the days before corporate marketing took over every aspect of EDA company images.
 
-{{ image(path="11-cooley.jpg", width="80%") }}
+{{ image(path="11-cooley.jpg", class="content") }}
 
 This is a DAC tradition from John Cooley of [deepchip.com](https://deepchip.com/) where he assembles a panel of EDA bigwigs, throws random and offensive questions at them, and tries to get them to fight each other.
 
@@ -331,7 +331,7 @@ I attended a Research Track session titled _"Machine Learning for Synthesis and 
 - These authors have identified that existing netlist -> graph transforms usually only embed facts related to the graph topology rather than the gate logic function - this is very valuable foundational work.
     - e.g. understanding this work is critical to build a generic-gate-level coverage extrapolation model that can generalize to multiple unrelated designs
 
-{{ image(path="12-netlist_learning1.png", width="60%") }}
+{{ image(path="12-netlist_learning1.png", class="inset") }}
 
 - The solution is to use 'contrastive learning' to learn a graph embedding kernel that maps graphs with identical functionality to similar vectors by taking a seed graph, mutating it while exactly preserving its boolean function, and forcing the network to learn a kernel such that the seed and mutated graphs have a similar embedding.
 
@@ -353,7 +353,7 @@ I attended a Research Track session titled _"Machine Learning for Synthesis and 
 - Here is the [paper PDF](https://arxiv.org/pdf/2111.08848.pdf) from [Jason Cong's group](https://vast.cs.ucla.edu/)
 - This is similar to the first paper, HLS code is transformed into a CDFG, along with pragma embeddings, use a GNN to predict performance, and then wrap that in a DSE that varies HLS-level hardware parameters
 
-{{ image(path="12-hls_dse.png", width="60%") }}
+{{ image(path="12-hls_dse.png", class="inset") }}
 
 ## Embedded Systems
 
@@ -468,7 +468,7 @@ param0, param1, param2, cov_metric
 
 ### Scientific Analog
 
-{{ image(path="12-xmodel.jpg", width="50%") }}
+{{ image(path="12-xmodel.jpg", class="inset") }}
 
 Scientific Analog offers [XMODEL](https://www.scianalog.com/xmodel/), which is a framework to perform SPICE-ish simulations in pure SystemVerilog without invoking a SPICE simulator.
 They also have a way to convert an AMS model into their library primitives that use the SystemVerilog event-driven simulation model to trigger state updates.
@@ -520,7 +520,7 @@ Here are my notes from this session.
 Cadence delivers a boon to academic researchers (we should migrate to Xcelium and get rid of all Synopsys dependencies in our VLSI flow).
 Thanks to this, [hammer-cadence-plugins](https://github.com/ucb-bar/hammer-cadence-plugins/) is now public!
 
-{{ image(path="12-cadence_statement.jpg", width="60%") }}
+{{ image(path="12-cadence_statement.jpg", class="inset") }}
 
 ### Metrics4ML
 
@@ -580,7 +580,7 @@ I could find the other ones by searching "dac 2022 mflowgen" or looking at their
 We need to do a better job with marketing.
 But regardless, great presentation Bora!
 
-{{ image(path="13-bora.jpg", width="60%") }}
+{{ image(path="13-bora.jpg", class="inset") }}
 
 ## Power Session
 
@@ -683,7 +683,7 @@ The focus was on vendors for everything related to semiconductor manufacturing.
 Lots of robots, gantries, testing rigs, special chemical suppliers, lithography machines, and clean room equipment.
 There was a probe tester that was running on the floor — it is incredibly fast!
 
-{{ image(path="14-semicon_prober.jpg", width="50%") }}
+{{ image(path="14-semicon_prober.jpg", class="inset") }}
 {{ video(path="14-semicon_prober.mp4", height="500px") }}
 
 ## Automating Analog Layout - Has The Time Finally Come?
@@ -787,7 +787,7 @@ This excellent paper from NVIDIA, [GATSPI: GPU Accelerated Gate-Level Simulation
 
 ## Source-Level Debugging for New HDLs
 
-{{ image(path="14-hgdb.jpg", width="50%") }}
+{{ image(path="14-hgdb.jpg", class="inset") }}
 
 Another excellent paper and talk about _hgdb_: ["Bringing Source-Level Debugging Frameworks to Hardware Generators"](https://arxiv.org/pdf/2203.05742).
 Step through debugging is a bit of a hard sell to RTL designers who are used to waveforms, but Verilog ⇔ Scala sourcemaps would be insanely useful especially for temporary / generated nodes.

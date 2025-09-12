@@ -178,7 +178,7 @@ A few days later, I saw this conversation [from here](https://twitter.com/TechEm
 >
 > April 9, 2022
 
-{{ image(path="musk_parag_convo.jpg", width="50%") }}
+{{ image(path="musk_parag_convo.jpg", class="inset-x") }}
 
 This just confirms to me that Tesla is the place to be.
 

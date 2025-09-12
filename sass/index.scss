@@ -65,15 +65,19 @@ $mobile-breakpoint: 600px;
 :root {
   --popout-begin: 1;
   --content-begin: 3;
-  --inset-content-begin: 4;
-  --inset-content-end: 10;
+  --inset-begin: 4;
+  --inset-x-begin: 5;
+  --inset-x-end: 9;
+  --inset-end: 10;
   --content-end: 11;
   --popout-end: 13;
   --grid-middle: 6;
 
   @media screen and (max-width: $mobile-breakpoint) {
-    --inset-content-begin: 2;
-    --inset-content-end: 12;
+    --inset-begin: 2;
+    --inset-end: 12;
+    --inset-x-begin: 2;
+    --inset-x-end: 12;
     --content-begin: 1;
     --content-end: 13;
     --popout-begin: 1;
@@ -105,6 +109,7 @@ $tn-dark-bg-contrast1: color.darken($tn-dark-bg, 5%);
 $tn-dark-bg-highlight: color.lighten($tn-dark-bg, 5%);
 $tn-dark-fg: #c0caf5;
 $tn-dark-fg-contrast: #a9b1d6;
+$tn-dark-fg: color.lighten($tn-dark-fg, 5%);
 
 $tn-dark-red: #f7768e;
 $tn-dark-green: #9ece6a;
@@ -474,7 +479,7 @@ figure {
   figcaption {
     margin-top: var(--space-s);
     > p {
-      color: var(--fg-dark);
+      color: var(--fg-contrast);
       font-size: var(--step--1);
     }
   }
@@ -773,7 +778,7 @@ div.callout {
       }
     }
     .section-description {
-      color: var(--fg-dark);
+      color: var(--fg-contrast);
       font-size: var(--step--1);
       position: relative;
       top: -0.2ex;
@@ -810,7 +815,7 @@ div.callout {
     }
   }
   .page-date {
-    color: var(--fg-dark);
+    color: var(--fg-contrast);
     font-size: var(--step--1);
     position: relative;
     top: -0.3ex;
@@ -881,7 +886,7 @@ a.anchor {
       margin-bottom: var(--space-2xs);
     }
     .article-date {
-      color: var(--fg-dark);
+      color: var(--fg-contrast);
       font-size: var(--step-0);
       margin-bottom: 0;
     }
@@ -938,11 +943,17 @@ a.anchor {
   blockquote {
     grid-column: var(--content-begin) / var(--content-end);
   }
-  figure {
+  figure, figure.content {
     grid-column: var(--content-begin) / var(--content-end);
   }
   figure.popout {
     grid-column: var(--popout-begin) / var(--popout-end);
+  }
+  figure.inset {
+    grid-column: var(--inset-begin) / var(--inset-end);
+  }
+  figure.inset-x {
+    grid-column: var(--inset-x-begin) / var(--inset-x-end);
   }
   figure {
     .gallery-grid {
