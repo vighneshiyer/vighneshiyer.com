@@ -26,8 +26,30 @@
 </div>
 
 <div class="article-content-container">
+  <aside class="toc">
+{% if page.toc %}
+    <ul>
+    {% for h1 in page.toc %}
+        <li>
+            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            {% if h1.children %}
+                <ul>
+                    {% for h2 in h1.children %}
+                        <li>
+                            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+  </aside>
   <article class="article-content">
     {{ page.content | safe }}
   </article>
+  <aside class="notes">
+  </aside>
 </div>
 {% endblock content %}

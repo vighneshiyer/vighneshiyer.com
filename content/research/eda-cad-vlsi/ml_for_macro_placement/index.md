@@ -9,10 +9,14 @@ description = "Placement algorithms, Google's Nature paper using RL for macro pl
 
 ## Background on Placement
 
-Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal (do not violate any DRCs, snap to a grid, no overlaps) and feasible (routing is likely to succeed with no overlapping wires and a DRC clean layout).
+Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal and feasible [^1].
 Traditionally, hard macro placement is done manually, while standard cell placement is done automatically by the PnR (place-and-route) tool.
 Hard macros, such as SRAMs and other hard IP blocks (e.g. PLLs, PHYs), need to be placed with knowledge of their pin locations to ensure good routability.
 Since the number of hard macros per hierarchical block is usually small (under 100) and their placement is critical, manual placement is seen as reasonable.
+
+[^1]: _Legal_: macro placements do not violate DRC rules, snap to the placement grid, and do not overlap.
+
+    _Feasible_: routing is likely to succeed with no shorted wires and a DRC clean layout.
 
 ### Placement Metrics
 
@@ -58,8 +62,10 @@ Finally, during *detailed placement*, the clusters of standard cells are explode
 
 Modern EDA CAD placement algorithms have some additional features.
 For one, they constantly track the proxy metrics as they make placement decisions to avoid exploring bad placements.
-Modern synthesis is placement-aware and will come up with a standard cell floorplan as its deciding what PDK cells to use, considering the timing constraints (see [Synopsys' overview of "Physical Synthesis"](https://www.synopsys.com/glossary/what-is-physical-synthesis.html), [Cadence Genus iSpatial](https://community.cadence.com/cadence_blogs_8/b/di/posts/ispatial-flow-in-genus-a-modern-approach-for-physical-synthesis)).
+Modern synthesis is placement-aware and will come up with a standard cell floorplan as its deciding what PDK cells to use, considering the timing constraints.[^2]
 This floorplan from physical synthesis is fed into the PnR algorithm to seed its initial coarse placements.
+
+[^2]: Synopsys ["Physical Synthesis"](https://www.synopsys.com/glossary/what-is-physical-synthesis.html), Cadence [Genus iSpatial](https://community.cadence.com/cadence_blogs_8/b/di/posts/ispatial-flow-in-genus-a-modern-approach-for-physical-synthesis)
 
 Also, placement isn't part of a linear (synthesis → placement → routing) flow, rather every algorithm in the flow is aware of the others, and they constantly call back to each other.
 For instance, if placement determines that a timing constraint will be violated based on the proposed hardened placement of a few standard cells, it may call back to synthesis to see if those cells can be upsized (or use a different Vt flavor) or if a logic path can be further optimized.
@@ -184,7 +190,7 @@ The proxy metrics (wirelength and congestion) in the results table may not match
 
 The rebuttal concludes stating that there is no reason to believe that humans can outperform algorithms in macro placement, so not only are the RL placer results not surprising, but the rebuttal has shown that SOTA academic placers are even better.
 
-## A Lull
+### A Lull
 
 After the Nature paper and rebuttal were published, there was some minor debate, but no resolution, since Google's benchmarks and RL agent code were closed source.
 There were a few spinoff papers, but nothing substantial.
@@ -322,11 +328,11 @@ Another interesting tidbit is that the man who wrote the original rebuttal to th
 
 The moral of the story is to always be skeptical of magical results in CAD, and to learn the fundamental algorithms at work rather than generating tons of data to train some model.
 
-## P.S. (August 2023)
+### P.S. (August 2023)
 
 One more article was published by Dr. Igor Markov in August 2023 which runs through the ML for placement saga and provides an accurate critique of the RL placement algorithm: [The False Dawn: Reevaluating Google's Reinforcement Learning for Chip Macro Placement](https://arxiv.org/abs/2306.09633).
 
-## P.P.S. (September 2023)
+### P.P.S. (September 2023)
 
 As of September 2023, an editor's note was placed on the [original Nature paper](https://www.nature.com/articles/s41586-021-03544-w).
 
@@ -341,7 +347,7 @@ Also Andrew Kahng's article in Nature's "News and Views" ([AI system outperforms
 Igor Markov, the author of one of the rebuttal papers, presented a talk to the [Fall 2023 CS 294 class at UC Berkeley (ML for Hardware Design)](https://ucb-cs294-256.github.io/).
 See his [review of the original Nature paper](https://drive.google.com/file/d/1bhz0LfBvzwA7UaALZxCcNk3d5bFxmimc/view) ([local mirror](research/eda-cad/ml-for-placement/Igor_Markov-RL_for_MP_Review_Slides.pdf)) and [his rebuttal](https://drive.google.com/file/d/1krf1w-pNV5BfO9S2OrlVy6Dcr6cPzOzC/view) ([local mirror](research/eda-cad/ml-for-placement/Igor_Markov-False_Dawn_Slides.pdf)).
 
-## Retrospective (July 2024)
+### Retrospective (July 2024)
 
 So the Nature paper still has the same editor's note on it.
 It is unknown what investigation the Nature editors are performing and what the outcome so far is.
@@ -389,7 +395,7 @@ This is something interesting I had not noticed before.
 There are two people (Sungmin Bae, Anand Babu) whose names appear on the arXiv preprint, but not on the Nature paper.
 These are clearly two people of high integrity and intelligence.
 
-## A Few More Things (September 2024)
+## A Few More Things
 
 ### AlphaChip
 

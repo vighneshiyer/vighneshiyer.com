@@ -30,7 +30,8 @@ My other top inspirations include:
 - [Jake Lazaroff's blog](https://jakelazaroff.com/words/isomorphic-web-components/) (sidenotes, code blocks / inline code)
 - [Shadaj Laddad's blog](https://www.shadaj.me/writing/distributed-programming-stalled) (sidenotes)
 - [CACM blog](https://cacm.acm.org/research/defying-moore-envisioning-the-economics-of-a-semiconductor-revolution-through-12nm-specialization/) (left-hand TOC)
-- [](https://worksinprogress.co/issue/the-rise-and-fall-of-the-hanseatic-league/) (typography, images and captions, article heading, main column width)
+- [worksinprogress.co](https://worksinprogress.co/issue/the-rise-and-fall-of-the-hanseatic-league/) (typography, images and captions, article heading, main column width)
+- [thinkingmachines.ai](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/) (typography, left-hand TOC, right-hand sidenotes, ideal content width)
 
 Here is the design process I went through.
 
