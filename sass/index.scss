@@ -917,6 +917,8 @@ a.anchor {
   align-self: start;
   top: var(--space-m);
   font-family: var(--sans-font);
+  max-height: 95vh;
+  overflow-y: scroll;
   ul > li {
     &::before {
       content: none;
