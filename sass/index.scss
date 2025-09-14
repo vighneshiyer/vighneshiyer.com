@@ -60,7 +60,8 @@ $max-font-size: 17;
 }
 
 // Be generous and cover all mobile devices
-$mobile-breakpoint: 600px;
+$tablet-breakpoint: 900px;
+$mobile-breakpoint: 650px;
 
 :root {
   --popout-begin: 1;
@@ -81,6 +82,16 @@ $mobile-breakpoint: 600px;
   --subgrid-content-end: 9;
   --subgrid-popout-end: 13;
 
+  --toc-display: block;
+  --footnote-begin: var(--subgrid-content-end);
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    --content-begin: 1;
+    --content-end: 13;
+    --toc-display: none;
+    --footnote-begin: 10;
+  }
+
   @media screen and (max-width: $mobile-breakpoint) {
     --inset-begin: 2;
     --inset-end: 12;
@@ -92,7 +103,10 @@ $mobile-breakpoint: 600px;
     --popout-end: 13;
 
     --subgrid-content-begin: 1;
-    --subgrid-content-end: 9;
+    --subgrid-content-end: 13;
+    --footnote-begin: 1;
+    
+    --toc-display: none;
   }
 }
 
@@ -135,7 +149,7 @@ $tn-light-bg-contrast: color.lighten($tn-light-bg, 3%);
 $tn-light-bg-contrast1: color.lighten($tn-light-bg, 5%);
 $tn-light-bg-highlight: color.darken($tn-light-bg, 5%);
 $tn-light-fg: color.darken(#343b58, 3%);
-$tn-light-fg-contrast: color.darken(#40434f, 3%);
+$tn-light-fg-contrast: color.lighten(#40434f, 3%);
 
 $tn-light-red: #8c4351;
 $tn-light-green: #385f0d;
@@ -903,6 +917,10 @@ a.anchor {
   }
 }
 
+.article-background {
+  background-color: var(--bg-contrast1);
+}
+
 .article-content-container {
   background-color: var(--bg-contrast1);
   padding-top: var(--space-m);
@@ -913,6 +931,7 @@ a.anchor {
 
 .toc {
   grid-column: 1 / 3;
+  display: var(--toc-display);
   position: sticky;
   align-self: start;
   top: var(--space-m);
@@ -964,13 +983,28 @@ a.anchor {
     grid-column: var(--subgrid-content-begin) / var(--subgrid-content-end);
   }
 
+  sup.footnote-reference {
+    font-family: var(--sans-font);
+    //vertical-align: baseline;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    background-color: var(--bg);
+    a {
+      text-decoration: none;
+    }
+  }
+
   div.footnote-definition {
-    grid-column: var(--subgrid-content-end) / -1;
+    grid-column: var(--footnote-begin) / -1;
     color: var(--fg-contrast);
     font-family: var(--sans-font);
     sup {
       float: left;
-      margin-right: var(--space-2xs);
+      margin-right: var(--space-3xs);
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+      background-color: var(--bg);
+      color: var(--accent-color);
       font-size: var(--step--2);
     }
     p {

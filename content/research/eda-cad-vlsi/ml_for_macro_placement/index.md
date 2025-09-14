@@ -9,7 +9,7 @@ description = "Placement algorithms, Google's Nature paper using RL for macro pl
 
 ## Background on Placement
 
-Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal and feasible [^1].
+Placement is the EDA CAD problem of placing standard cells and hard macros on a rectangular canvas such that the placements are legal and feasible. [^1]
 Traditionally, hard macro placement is done manually, while standard cell placement is done automatically by the PnR (place-and-route) tool.
 Hard macros, such as SRAMs and other hard IP blocks (e.g. PLLs, PHYs), need to be placed with knowledge of their pin locations to ensure good routability.
 Since the number of hard macros per hierarchical block is usually small (under 100) and their placement is critical, manual placement is seen as reasonable.
