@@ -105,7 +105,7 @@ $mobile-breakpoint: 650px;
     --subgrid-content-begin: 1;
     --subgrid-content-end: 13;
     --footnote-begin: 1;
-    
+
     --toc-display: none;
   }
 }
@@ -769,7 +769,7 @@ div.callout {
     @include u-grid;
     .homepage-content {
       margin-top: var(--space-s);
-      margin-bottom: var(--space-s);
+      //margin-bottom: var(--space-s);
       grid-column: var(--content-begin) / var(--content-end);
     }
   }
