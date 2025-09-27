@@ -39,3 +39,7 @@ Harvard, Berkeley, Stanford, I'm sure many others are on this same path.
   - https://www.linkedin.com/posts/koushik-sen-80b99a_disrupting-systems-research-with-ai-activity-7374945690751447040-5X-h?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
 - https://cs329a.stanford.edu/
   - Asking the model in a loop. This isn't that bad compared to the others honestly.
+  - https://x.com/Azaliamirh/status/1970610290724339804
+  > Very excited to teach CS329A: Self-Improving AI Agents, with @achowdhery for the second time in 2025!
+
+- https://www.derekthompson.org/p/the-end-of-thinking

@@ -240,6 +240,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Irrational Analysis: Tenstorrent and the State of AI Hardware Startups](https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware)
 - [Corsix: Tenstorrent Wormhole Series Part 1: Physicalities](https://www.corsix.org/content/tt-wh-part1) (A highly detailed 7-part series on the Wormhole architecture and programming model)
 - [How to map SIMT model onto tenstorrent device?](https://asplos.dev/wordpress/2025/05/31/how-to-map-simt-model-onto-tenstorrent-device/?utm_source=linkedin&utm_medium=jetpack_social)
+- [Programming Tenstorrent processors](https://clehaxze.tw/gemlog/2025/04-21-programming-tensotrrent-processors.gmi)
+- [tinytpu](https://www.tinytpu.com/)
 
 ## Mathematics
 
@@ -350,6 +352,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Molson Hart: America Underestimates the Difficulty of Bringing Manufacturing Back](https://www.molsonhart.com/blog/america-underestimates-the-difficulty-of-bringing-manufacturing-back) ([HN link](https://news.ycombinator.com/item?id=43692677))
 - [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) (an interesting look at Xiong’an)
 - [Structure and Interpretation of the Chinese Economy](https://yuxi-liu-wired.github.io/essays/posts/structure-interpretation-chinese-economy/)
+- [What role does technology play for China's transition from a "low-trust" society to a potentially high-trust one?](https://www.china-translated.com/p/what-role-does-technology-play-for)
 
 ## Productivity
 

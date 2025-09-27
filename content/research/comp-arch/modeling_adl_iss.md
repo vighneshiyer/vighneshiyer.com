@@ -20,6 +20,8 @@ draft = true
 - Leveraging this for state transfer across simulators and eventually state injection and sampling
 - Serializable and portable testbench / device state is crucial, but often overlooked and it leads to failure of state restoration and resumption
 
+- https://bitsbytesgates.com/zuspec/2025/09/22/Zuspec_PythonicModelDrivenHardwareDevelopment.html
+
 ## ISS Ideas
 
 Separation of concerns ala halide for generation of functional models from a specification description of an ISA

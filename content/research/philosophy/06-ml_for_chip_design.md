@@ -98,4 +98,5 @@ But there is room for good stuff too (and most of it uses very classical ML tech
 ## Where is the Opportunity?
 
 - https://www.luxcapital.com/content/the-looming-labor-crisis-in-chip-design
-  - Add to ml for chip design article
+- https://www.zach.be/p/rl-isnt-the-silver-bullet-for-ai
+  - This isn't right either. Tool speed isn't an issue. Neither is data. Both can be solved, but it wouldn't help. The issue is there is *no breakage* of abstractions. If you're in the box, you can't escape it just by making the input/output function faster

@@ -18,3 +18,5 @@ description = "I went to a K-pop concert and this is what I saw."
 - The fading of girl groups but staying power of bts
 - Pirate fashion of boys and Seinfeld's puffy shirt
 - Barking, jacket posing
+
+- https://www.youtube.com/watch?v=f7gz4Qc-Bgk
