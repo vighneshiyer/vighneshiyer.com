@@ -372,7 +372,7 @@ Ask the model to propose grand changes to some existing codebase.
 Then, ask the model to produce some code to manipulate a repo and see what happens.
 Just go with the flow.
 
-"The Conch knows all! The Conch has spoken!" &mdash; Patrick Star
+"The shell knows all! The shell has spoken!" &mdash; Patrick Star
 
 <!--
   - "vibe research"
@@ -410,9 +410,9 @@ But recently, at [YC's "AI Startup School"](https://events.ycombinator.com/ai-su
 
 So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time for Architecture 3.0: aka "ask the model".
 
-{{ image(path="arch_20.png", class="inset", caption="The model explains Architecture 2.0 (really should be Architecture 3.0)") }}
+{{ image(path="arch_20.png", class="content", caption="The model explains Architecture 2.0 (really should be Architecture 3.0)") }}
 
-{{ image(path="moonshot.png", class="inset", caption="Architecture 3.0 methodology in practice. Ask the model (in a loop).") }}
+{{ image(path="moonshot.png", class="content", caption="Architecture 3.0 methodology in practice. Ask the model (in a loop).") }}
 
 <!--
 - An entirely LLM generated website. This is the most obscene example.
