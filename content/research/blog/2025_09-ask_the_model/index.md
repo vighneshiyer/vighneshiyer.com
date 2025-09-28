@@ -286,23 +286,34 @@ Perhaps some will construct a new dataset from thin air, which they pose as a "b
 Of course, this LLM mania isn't limited to computer architecture papers.
 We see this in all disciplines, where the 'solution' proposed by a paper is "asking Mr. Model", and the 'problem' is whatever fake problem they invent.
 
-Furthermore, due to the high latency of conference paper deadlines and review cycles, by the time a paper is published, its "results" are already suspect.
+Furthermore, due to the high latency of conference paper deadlines and review cycles[^8], by the time a paper is published, its "results" are already suspect.
 The authors will have run all their experiments with Mr. Model v7 and by the time the world sees their work, Mr. Model v8 has been released, and large parts of their specialized 'prompting' techniques and scaffolding are made obsolete.
+
+[^8]: It will usually take 6+ months from running experiments to public paper release
 
 <!--
 They will test some problem with Mr. Model v10 and then by the time the paper is done and experiments are final, Mr. Model v11 has been released and everything is done for. So many papers like this.
 -->
 
-The problem is that these people have made "asking the model" its own area of research.
-Rather than using the model as a productivity booster or powerful search tool to
+It is just too easy for a professor to latch onto the "ask the model" methodology and enjoy the feeling of being part of the hype.
+At this point, "asking the model" has become its own area of research.
+Why bother using the model as a productivity booster or powerful search tool to produce impactful research, faster[^9], when you could just ask Mr. Model to write a bunch of kernels and report that?
 
+[^9]: You will find that Mr. Model becomes useless very quickly when exploring an untouched area
 <!--
 produce high impact research products! That is the root of the problem. This is just lazy work.
 -->
 
-Why are academics doing this when there are VCs throwing billions of dollars at it. Aren't academics supposed to do things that have both intellectual, logistical, and financial risk? There are no risks here!
-LLM for X is lucrative. Just get paid for it!
+My final point is that academics should work on projects that have substantial intellectual, logistical, and financial risks; risks that are so high that industry researchers would not take on such projects.
+What is the risk here? That Mr. Model may not always be correct?
+Why are academics "asking the model" when there are VCs investing billions of dollars and accepting infinite risk for startups to pursue "LLM for X"?[^10]
 
+[^10]: I can appreciate that some academics use papers as a launching pad for a startup. That's fine I guess
+
+<!--
+There are no risks here!
+LLM for X is lucrative. Just get paid for it!
+-->
 
 <!--
 Look at "MLArchSys", MLSys, and so forth...
@@ -319,25 +330,81 @@ This isn't the article to rant about the bitter lesson lmao. Leave it for later.
 
 ## "Asking the Model" as a Course
 
+Not only has "asking the model" become its own area of research within an engineering domain (e.g. RTL design, GPU performance engineering), but "asking the model" more generally has become an acceptable topic for courses.
+Let me go over three examples from Stanford, Berkeley, and Harvard.
+
+<!--
 Harvard, Berkeley, Stanford, I'm sure many others are on this same path.
+-->
 
-- https://harvard-edge.github.io/cs249r_fall2025/
-  - An entirely LLM generated website. This is the most obscene example.
-  - https://www.linkedin.com/posts/vijay-janapa-reddi-63a6a173_agentic-ai-for-computer-systems-design-activity-7371588955328155648-DFKl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+### Stanford
 
-Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
+[CS329A: Self-Improving AI Agents](https://cs329a.stanford.edu/) is being offered for the second time at Stanford.
+
+> The course will start with self-improvement techniques for LLMs, such as constitutional AI, using verifiers, scaling test-time compute, combining search with LLMs, and train time scaling with RL. We will then discuss the latest research in augmenting LLMs with tool use, code, and memory, and orchestrating AI capabilities with multimodal interaction. We will next discuss multi-step reasoning and planning problems for agentic workflows, and the challenges in building robust evaluation frameworks.
+
+It all sounds very fancy, but it boils down to asking the model in a loop.
+I believe this paper ([The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)) is emblematic of the method being promoted.
+If this method can produce 'papers' that are so 'high-quality' that even humans would accept them to a ML conference, then we should be questioning the value of what humans are working on.
+
+With that being said, the reading list for this class isn't bad at all.
+These papers are interesting and worth skimming just to understand the state of the field.
+All I ask is that the students don't make their class projects about getting Mr. Model to solve some problem.
+
+<!--
+  - Asking the model in a loop. This isn't that bad compared to the others honestly.
+  - https://x.com/Azaliamirh/status/1970610290724339804
+  > Very excited to teach CS329A: Self-Improving AI Agents, with @achowdhery for the second time in 2025!
+-->
+
+### UC Berkeley
 
 
-- https://ucbsky.github.io/ucbsky-cs294-264-fall2025/course-website.html
+[CS294: Disrupting Systems Research with AI](https://ucbsky.github.io/ucbsky-cs294-264-fall2025/course-website.html) is being offered for the first time at UC Berkeley.
+
+> We are now at the beginning of a significant shift, where a new class of AI tools can autonomously generate algorithms that match and sometimes exceed the best human-designed solutions.
+
+> This course explores the frontiers of this new methodology, examining the future role of the researcher as a "strategic advisor" who guides powerful AI assistants rather than manually engineering solutions.
+
+This is quite similar to the Stanford class, albeit a bit more hyped up.
+The proposed methodology boils down to "vibe research".
+Ask the model to propose grand changes to some existing codebase.
+Then, ask the model to produce some code to manipulate a repo and see what happens.
+Just go with the flow.
+
+"The Conch knows all! The Conch has spoken!" &mdash; Patrick Star
+
+<!--
   - "vibe research"
   - Absolutely insane that this is considered 'academic'
   - https://www.linkedin.com/posts/koushik-sen-80b99a_disrupting-systems-research-with-ai-activity-7374945690751447040-5X-h?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
   - Add Sagar's class too, but point out that there isn't any extreme "asking the model" insanity directly in the reading list as of yet.
-- https://cs329a.stanford.edu/
-  - Asking the model in a loop. This isn't that bad compared to the others honestly.
-  - https://x.com/Azaliamirh/status/1970610290724339804
-  > Very excited to teach CS329A: Self-Improving AI Agents, with @achowdhery for the second time in 2025!
+-->
 
+### Harvard
+
+And now, this is the most egregious example of model-brained nonsense by far.
+
+Presenting, [CS249r: Architecture 2.0](https://harvard-edge.github.io/cs249r_fall2025/), being offered at Harvard for the first time.
+I urge the reader to read the "blog posts" on the website, such as: ["Week 2: The Fundamental Challenges Nobody Talks About"](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/09/08/week-2-fundamental-challenges/).
+It is very obvious that all these "blog posts" are written by Mr. Model.
+In fact, *the entire website* is generated by Mr. Model.
+
+{{ image(path="reddi-1.png", class="inset", caption="I couldn't have said it any better myself. See [Reddi's slides here](https://github.com/harvard-edge/cs249r_fall2025/releases/download/sep-3/CS249r_.Architecture.2.0.-.Part.1.pdf).") }}
+
+This class is about a concept that Prof. Vijay Janapa Reddi has coined: "[Architecture 2.0](https://sites.google.com/g.harvard.edu/arch2/home)".
+All this boils down to is generating tons of "data"[^11], training some models on that data, and hoping for the best.
+After all, if this method has yielded good results in image classification and English emission, then surely the same method will yield fruit in computer architecture.
+It's just a matter of more and more data, and more and more compute: this is the "Bitter Lesson" at work.
+
+[^11]: "Data" includes random RTL designs, gate-level netlists, PPA estimates, instruction traces and so forth: the "corpus" of computer architecture.
+
+<!--
+- An entirely LLM generated website. This is the most obscene example.
+- https://www.linkedin.com/posts/vijay-janapa-reddi-63a6a173_agentic-ai-for-computer-systems-design-activity-7371588955328155648-DFKl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+
+Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
+-->
 
 ## A Better Path
 
@@ -346,7 +413,8 @@ This is a counterexample from Mark Ren. He's not just asking the model as the re
 
 ## Conclusion
 
-Just as one should hesitate when picking up the phone to mitigate a moment of boredom, one must hesitate before shooting a question at the model. Think! Losing boredom is bad enough, losing your sovereignity is even worse.
+Just as one should hesitate when picking up their phone to mitigate a moment of boredom, one must hesitate before shooting a question at the model. Think! Losing your boredom is bad enough, but losing your sovereignty is even worse.
+There is a huge risk that biological general intelligence will dry up way before AGI can come on the scene to save us.
 
 <!-- At the end of the article, pic of sponge and the ranger, all hail the magic conch! -->
 
