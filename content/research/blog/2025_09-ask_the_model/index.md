@@ -399,6 +399,21 @@ It's just a matter of more and more data, and more and more compute: this is the
 
 [^11]: "Data" includes random RTL designs, gate-level netlists, PPA estimates, instruction traces and so forth: the "corpus" of computer architecture.
 
+Astute readers will note that Reddi's "Architecture 2.0" is just a ripoff of Andrej Karpathy's ["Software 2.0"](https://karpathy.medium.com/software-2-0-a64152b37c35).
+But recently, at [YC's "AI Startup School"](https://events.ycombinator.com/ai-sus), Karpathy presented his talk, [Software Is Changing (Again)](https://www.youtube.com/watch?v=LCEmiRjPEtQ), where he coined "Software 3.0"!
+
+{{ gallery(images=[
+  "software_30-1.png",
+  "software_30-2.png"
+], popout=true, caption="Karpathy's slides on Software 3.0")
+}}
+
+So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time for Architecture 3.0: aka "ask the model".
+
+{{ image(path="arch_20.png", class="inset", caption="The model explains Architecture 2.0 (really should be Architecture 3.0)") }}
+
+{{ image(path="moonshot.png", class="inset", caption="Architecture 3.0 methodology in practice. Ask the model (in a loop).") }}
+
 <!--
 - An entirely LLM generated website. This is the most obscene example.
 - https://www.linkedin.com/posts/vijay-janapa-reddi-63a6a173_agentic-ai-for-computer-systems-design-activity-7371588955328155648-DFKl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
@@ -408,12 +423,28 @@ Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpath
 
 ## A Better Path
 
-https://www.linkedin.com/posts/mark-h-r-4837318_nvidiaresearch-ugcPost-7374877258735558656-Vm8H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+As was discussed before, the focus should not be on asking the model and evaluating how it does, but rather on using the model to build better software.
+I recently saw a good example of this from Mark Ren's group[^12] called [SALUTION](https://www.linkedin.com/posts/mark-h-r-4837318_nvidiaresearch-ugcPost-7374877258735558656-Vm8H/).
+They aren't presenting "asking the model" as the goal itself, but instead asking the model to produce a better SAT solver, which is the main contribution.
+They can discuss the *specific elements of the code* that the model generated to produce a faster solver.
+The focus is on the product, not the model.
+
+[^12]: Mark Ren and his team at NVIDIA Research are one of the few competent actors in the field of "ML for CAD"
+
+> Our new framework, SATLUTION, autonomously evolves Boolean Satisfiability (SAT) solvers via LLM agents that outperformed the 2025 SAT Competition champions by more than 10%
+
+<!--
 This is a counterexample from Mark Ren. He's not just asking the model as the research itself, but he's asking the model to produce a better SAT solver as the main contribution and can discuss what code it generated to produce a better solver. The focus is on the product, not the model. Excellent work.
+-->
+
+It would be good if more work like this was done.
+Work as a domain expert who is trying to improve some algorithm or work on a specific problem and use the model (who cares how you're using it) to help you make things better.
 
 ## Conclusion
 
-Just as one should hesitate when picking up their phone to mitigate a moment of boredom, one must hesitate before shooting a question at the model. Think! Losing your boredom is bad enough, but losing your sovereignty is even worse.
+Just as one should hesitate when picking up their phone to mitigate a moment of boredom, one must hesitate before shooting a query at the model.
+Think!
+Losing your boredom is bad enough, but losing your sovereignty is even worse.
 There is a huge risk that biological general intelligence will dry up way before AGI can come on the scene to save us.
 
 <!-- At the end of the article, pic of sponge and the ranger, all hail the magic conch! -->
