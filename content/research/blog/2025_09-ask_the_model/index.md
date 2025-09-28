@@ -70,8 +70,8 @@ But luckily, Squidward is part of Club Spongebob, and they have one trick up the
 > **Patrick**: The shell knows all!
 
 {{ gallery(images=[
-    "club_spongebob_8-0.webp",
     "club_spongebob_8-1.webp",
+    "club_spongebob_8-0.webp",
 ], popout=false) }}
 
 > **SpongeBob**: Oh, Magic Conch Shell. What do we need to do to get out of the Kelp Forest?
@@ -224,7 +224,7 @@ I can't blame them. After all, if you ask the model, it will claim that *embeddi
 When they speak, they will put words together that *appear* close in the embedding space, but are actually unrelated with respect to their real semantics.
 This is just a matter of training data: both for the professor and the model.
 Without enough good quality data, embeddings will tend to just capture which words occur together, rather than how they are related.
-Of course, a professor should be able to think with grounding, so I can give the model a pass.
+Of course, a professor should be able to think with grounding, so I can give the model a pass here.
 
 <!--
 If insufficient data is available, then the model will emit things that are adjacent in the embedding space. The 'intelligence' appears when the suitable training data exists to actually disambiguate the semantics of words that appear close, but are actually different.
@@ -240,8 +240,8 @@ Professors have become biological frontends for the model.[^6]
 [^6]: I don't mean to bash on professors too much. All professions have degraded thusly.
 
 When a student asks for advice, the questions are forwarded to the model, and the model's response comes out of the professor's mouth.
-The professor asks the model for research ideas and criticisms, and then recites the responses to their students.
-When reviewing papers for a conference, they are fed straight into ChatGPT Pro [^7], and the outputs are massaged into the HotCRP boxes.
+The professor asks the model for research ideas, and then recites the responses to their students.
+When reviewing papers for a conference, the PDFs are fed straight into ChatGPT Pro [^7], and the outputs are massaged into the HotCRP boxes.
 
 [^7]: It's research-grade intelligence after all
 
@@ -252,20 +252,61 @@ They ask the model first rather than think and the model taints their thinking a
 
 #### Context Pollution
 
-Models suffer from *context pollution*, where
+Models suffer from *context pollution*, where garbage can accumulate in its context window that distracts the model from the task its supposed to perform.
+Being able to tell what the relevant context is, while discarding the rest, is an essential aspect of intelligence.
 
+If you look at the managerial class in general, they are increasingly falling victim to context pollution.
+They attend all kinds of useless meetings and conferences where the executive class jumbles together words that have no relation to each other.
+Their heads are filled with words from these continuous meetings and, when they are prompted to discuss something with their subordinates, they bring up unrelated nonsense from their context window.
+Buzzword speak has become more and more ubiquitous.
+
+<!--
 Context pollution, when some moron says some buzzword it isn't forgotten or contextualized, instead it is brought up over and over again in unrelated contexts just because it has a similar embedding
+-->
 
-### "Asking the Model" as Research
+## "Asking the Model" as Research
 
-The problem I have is that these people have made "asking the model/agent" its own area of research, rather than using the model/agent as an accelerator to produce high impact research products! That is the root of the problem. This is just lazy work.
+Day after day, I will look at my Google Scholar notifications and will see the same paper repeated 100 times.
+Here are some recent examples:
 
-Look at "MLArchSys", MLSys, and so forth...
+- [VerilogMonkey: Exploring Parallel Scaling for Automated Verilog Code Generation with LLMs](https://arxiv.org/pdf/2509.16246)
+- [Automated Multi-Agent Workflows for RTL Design](https://arxiv.org/pdf/2509.20182)
+- [QuArch: A Question-Answering Dataset for AI Agents in Computer Architecture](https://arxiv.org/abs/2501.01892)
+- [AutoChip: Automating HDL Generation Using LLM Feedback](https://arxiv.org/pdf/2311.04887)
+- [Chip-Chat: Challenges and Opportunities in Conversational Hardware Design](https://ieeexplore.ieee.org/abstract/document/10299874?)
+- [RTLCoder: Fully Open-Source and Efficient LLM-Assisted RTL Code Generation Technique](https://ieeexplore.ieee.org/abstract/document/10720939?)
+- [Multi-Agent Reinforcement Learning for Microprocessor Design Space Exploration](https://arxiv.org/pdf/2211.16385)
+- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](https://arxiv.org/abs/2407.21787)
+- [CodeMonkeys: Monkey SWE, Monkey Do](https://scalingintelligence.stanford.edu/blogs/codemonkeys/)
 
+All of these thousands of papers just amount to "asking the model" in a loop, with some scaffolding, some tool use, some "prompt engineering", and perhaps some training data for supervised fine-tuning.
+Perhaps some will conduct a beam search across many samples provided to them by Mr. Model.
+Perhaps some will construct a new dataset from thin air, which they pose as a "benchmark".
+
+Of course, this LLM mania isn't limited to computer architecture papers.
+We see this in all disciplines, where the 'solution' proposed by a paper is "asking Mr. Model", and the 'problem' is whatever fake problem they invent.
+
+Furthermore, due to the high latency of conference paper deadlines and review cycles, by the time a paper is published, its "results" are already suspect.
+The authors will have run all their experiments with Mr. Model v7 and by the time the world sees their work, Mr. Model v8 has been released, and large parts of their specialized 'prompting' techniques and scaffolding are made obsolete.
+
+<!--
 They will test some problem with Mr. Model v10 and then by the time the paper is done and experiments are final, Mr. Model v11 has been released and everything is done for. So many papers like this.
+-->
 
-- VerilogMonkey: https://arxiv.org/pdf/2509.16246
+The problem is that these people have made "asking the model" its own area of research.
+Rather than using the model as a productivity booster or powerful search tool to
 
+<!--
+produce high impact research products! That is the root of the problem. This is just lazy work.
+-->
+
+Why are academics doing this when there are VCs throwing billions of dollars at it. Aren't academics supposed to do things that have both intellectual, logistical, and financial risk? There are no risks here!
+LLM for X is lucrative. Just get paid for it!
+
+
+<!--
+Look at "MLArchSys", MLSys, and so forth...
+-->
 
 <!--
 This isn't the article to rant about the bitter lesson lmao. Leave it for later.
