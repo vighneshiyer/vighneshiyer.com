@@ -27,7 +27,7 @@ He had to join! And so up he went.
     "club_spongebob_2-1.webp",
 ], popout=false) }}
 
-But once inside, he found out that indeed he couldn't physically "fit in" the clubhouse and was now squished next to Bob and Patrick.
+But once inside, he found out that, indeed, he couldn't physically "fit in" the clubhouse and was now squished next to Bob and Patrick.
 
 {{ gallery(images=[
     "club_spongebob_3-0.webp",
@@ -41,7 +41,8 @@ Squidward, desperate to escape, reaches for a branch and tries to pull himself d
     "club_spongebob_4-1.webp",
 ], popout=false) }}
 
-But instead, the branch rips apart, and the treehouse is catapulted across the sea floor into the thick Kelp Forest.
+As he's almost down, the branch rips apart, and the treehouse is launched into the sky (sea).
+The clubhouse flies through the sea and comes crashing down in the thick Kelp Forest.
 
 {{ gallery(images=[
     "club_spongebob_5-0.webp",
@@ -109,7 +110,7 @@ They inform Squid that *only the Conch* can approve his request.
 And so he asks the Conch, again and again, "may I have something to eat?"
 
 {{ gallery(images=[
-    "club_spongebob_12-0.webp",
+ ^   "club_spongebob_12-0.webp",
     "club_spongebob_12-1.webp",
 ], popout=false) }}
 
@@ -143,18 +144,38 @@ But to Squid's dismay, the ranger also has a Conch of his own.
     "club_spongebob_15-0.webp",
 ], popout=false) }}
 
+### Sound Familiar?
 
-<!-- And so they sit, in silence, praising the Conch, until another miracle falls from the sky, right into the camp of SpongeBob and Patrick. -->
+And so they sit, in silence, in devotion to the Conch, until another miracle falls from the sky.
+Perhaps, if they ask it again and again, it will give them the answer to their problem.
+Perhaps, a new version of the Conch will do better than the old one.
 
-So, does all this sound familiar now?[^2]
+Whenever you have a question, don't think, just ask the Conch[^2].
+And whatever the Conch tells you, is what you should parrot to others and follow diligently.
 
-[^2]: Just replace the Magic Conch with "the model"
+[^2]: The Conch = a large language model (henceforth called "the model")
+
+But, just because it worked for SpongeBob, doesn't mean it will work for you.
+As I will discuss, there is indeed a growing movement of people who believe the Conch will enable them to do nothing, and that good things will fall out of the sky.
 
 <!-- Patrick: The shell has spoken! The shell knows all! - Patrick Star -->
 
+<!--
+Bikini bottom, squid tried to join, flung into the forest, and to get out they reach for the model! Sound familiar? Ask the model and do what it says. Don't think further. Just because it worked for SpongeBob doesn't mean it will work for you 😆. Do nothing and good things will happen and they will fall out of the sky lmao.
+-->
+
 ## The Situation
 
+There has been a lot said over the past two decades about how electronics can sap away our thinking powers.
+When humans lose the ability to *be bored* and produce something from nothing, their mental faculties decay.
+
+
+Electronics have always reduced attention spans, and the test scores are going down year after year. Some of this is due to dysgenic breeding, others due to demographic shifts into populations with lower IQ, but in just the past 2 years, a lot can be attributed to the model. The highest performer won't be affected and they will actually be supercharged, but the rest will lump into the bottom mode.
+
+The bimodal distribution of students, very smart first year ugrads that can learn themselves. Also morons who can't learn and just ask the model and produce garbage code they don't understand and can't explain.
+
 ### The End of Thinking
+
 
 - https://www.derekthompson.org/p/the-end-of-thinking
 
@@ -164,12 +185,15 @@ The problem I have is that these people have made "asking the model/agent" its o
 
 Look at "MLArchSys", MLSys, and so forth...
 
+They will test some problem with Mr. Model v10 and then by the time the paper is done and experiments are final, Mr. Model v11 has been released and everything is done for. So many papers like this.
 
 ### Thinking in "Embedding Space"
 
 If I could peer into their head I'm sure all I would find is a vector database.
 
 "Semantics". If insufficient data is available, then the model will emit things that are adjacent in the embedding space. The 'intelligence' appears when the suitable training data exists to actually disambiguate the semantics of words that appear close, but are actually different.
+
+The degeneration of the professor class, they are nothing more than frontends for Mr. Model, they operate and think in embedding space. They ask the model first rather than think and the model taints their thinking and makes original thought impossible.
 
 ## Sutton's "Bitter Lesson"
 
@@ -208,6 +232,6 @@ Perhaps "asking the model" is the most useful, impactful, and important thing we
 
 In the next few years, I may be the one saying:
 
-{{ image(path="club_spongebob_16.webp", class="inset") }}
-
 > **Squidward**: *All hail the Magic Conch*
+
+{{ image(path="club_spongebob_16.webp", class="inset") }}
