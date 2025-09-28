@@ -1,3 +1,10 @@
++++
+title = "Research vs Engineering - A False Dichotomy"
+date = 2023-09-25
+draft = true
+description = ""
++++
+
 - https://www.linkedin.com/posts/yann-lecun_there-is-a-difference-between-research-and-activity-7356606929554567169-_iT2/
 
 > There is a difference between research and engineering in (1) modus operandi, (2) methodology, (3) openness, (4) evaluation criteria.
