@@ -110,7 +110,7 @@ They inform Squid that *only the Conch* can approve his request.
 And so he asks the Conch, again and again, "may I have something to eat?"
 
 {{ gallery(images=[
- ^   "club_spongebob_12-0.webp",
+    "club_spongebob_12-0.webp",
     "club_spongebob_12-1.webp",
 ], popout=false) }}
 
@@ -124,11 +124,11 @@ And then, someone cuts a path into the forest!
     "club_spongebob_13-0.webp",
 ], popout=false, caption="The Kelp Forest ranger has arrived to save Squidward!") }}
 
-Squidward screams in delight - someone is here to save them!
+Squidward screams in delight &mdash; someone is here to save them!
 
 {{ gallery(images=[
-    "club_spongebob_14-0.webp",
     "club_spongebob_14-1.webp",
+    "club_spongebob_14-0.webp",
 ], popout=false) }}
 
 But to Squid's dismay, the ranger also has a Conch of his own.
@@ -147,7 +147,7 @@ But to Squid's dismay, the ranger also has a Conch of his own.
 ### Sound Familiar?
 
 And so they sit, in silence, in devotion to the Conch, until another miracle falls from the sky.
-Perhaps, if they ask it again and again, it will give them the answer to their problem.
+Perhaps, if they ask the Conch again and again, it will give them the answer to their problem.
 Perhaps, a new version of the Conch will do better than the old one.
 
 Whenever you have a question, don't think, just ask the Conch[^2].
@@ -156,7 +156,7 @@ And whatever the Conch tells you, is what you should parrot to others and follow
 [^2]: The Conch = a large language model (henceforth called "the model")
 
 But, just because it worked for SpongeBob, doesn't mean it will work for you.
-As I will discuss, there is indeed a growing movement of people who believe the Conch will enable them to do nothing, and that good things will fall out of the sky.
+There is a growing mass of people who believe the Conch will enable them to do nothing, and that good things will fall out of the sky.
 
 <!-- Patrick: The shell has spoken! The shell knows all! - Patrick Star -->
 
@@ -168,16 +168,93 @@ Bikini bottom, squid tried to join, flung into the forest, and to get out they r
 
 There has been a lot said over the past two decades about how electronics can sap away our thinking powers.
 When humans lose the ability to *be bored* and produce something from nothing, their mental faculties decay.
+I believe Cal Newport put this phenomena into the public consciousness with his book "Deep Work"[^3] where he discusses how electronics, especially phones, have put humans in an unprecedented situation where they can go through life and *never* be bored.
+Whatever attention span degradation phones have already caused has been or will soon be dwarfed by the advent of the model.
 
+[^3]: I started hearing about the importance of boredom from 2016 or so when Newport's book was published
 
+In the past two years, in addition to the phone, which can prevent even a few seconds of boredom from setting in, we now have "the model".
+As people begin to use the model, they start by asking it a few questions about topics that they would have used a search engine for in the past.
+However, as model dependency grows, people begin to outsource their *thinking* and even *thoughts* wholesale to the model.
+I need not dwell on this point too much, since others have made it much better[^4].
+
+[^4]: See the article ["The End of Thinking"](https://www.derekthompson.org/p/the-end-of-thinking) by Derek Thompson
+
+<!--
 Electronics have always reduced attention spans, and the test scores are going down year after year. Some of this is due to dysgenic breeding, others due to demographic shifts into populations with lower IQ, but in just the past 2 years, a lot can be attributed to the model. The highest performer won't be affected and they will actually be supercharged, but the rest will lump into the bottom mode.
 
 The bimodal distribution of students, very smart first year ugrads that can learn themselves. Also morons who can't learn and just ask the model and produce garbage code they don't understand and can't explain.
+-->
 
-### The End of Thinking
+### Bimodal Undergrads
 
+I've been in the university system for a long time. Almost certainly too long.
+Every year, I get a sample of the current class of undergrads to examine &mdash; both from teaching classes and from advising them on research.
+Year after year, the mean quality of undergrads has degraded &mdash; the average undergrad is increasingly motivated by money, status, and job prospects rather than any intrinsic interest in computer science.
+However, this trend about averages says nothing about the extremes.
 
-- https://www.derekthompson.org/p/the-end-of-thinking
+The mediocre undergrads are crashing to the level of the barely literate ones, while the elite undergrads can rival senior grad students in programming competence, inquisitiveness, and instinct.
+Just in the past year, I've seen a few truly spectacular undergrads the likes of which I haven't seen before.
+They can work autonomously, ask all the right questions, learn on the fly, and somehow have enough time to be at the top of their classes and do self-driven research.
+I know, that when I was an undergrad, I was very far below their level.
+
+You can probably predict why this bimodal shift has occurred.
+It's the model.
+
+What's happening is that even the 80th percentile undergrads are falling victim to model dependency.
+The majority of undergrads are not only preempting their boredom via their phones, but they are also preempting their thoughts via the model.
+We often see undergrads that produce reams of code from the model, but are unable to explain what is going on, and more importantly, what are they trying to do.
+
+The elite undergrads are always in control of their own thoughts.
+They use the model as just an enhanced search engine, which gives them confidence to enter new areas.
+Their knowledge compounds rapidly as they use the model to pull information, but use their own brains to synthesize it.
+
+### Thinking in "Embedding Space"
+
+After talking about undergrads, I must now talk about those 'above' me: *the professor class*.
+If you thought professors were speaking in meaningless platitudes before, you haven't seen anything.[^5]
+I swear, if I could peer inside the head of a typical professor, I'm sure all I would find is a vector database.
+
+[^5]: There are still some intelligent professors, but among the mediocre, the recent degradation has been extreme
+
+I often joke that professors (and the model) think in "embedding space".
+What I mean to say, is that they think as if *embeddings are semantics*.
+I can't blame them. After all, if you ask the model, it will claim that *embeddings capture semantics*.
+
+When they speak, they will put words together that *appear* close in the embedding space, but are actually unrelated with respect to their real semantics.
+This is just a matter of training data: both for the professor and the model.
+Without enough good quality data, embeddings will tend to just capture which words occur together, rather than how they are related.
+Of course, a professor should be able to think with grounding, so I can give the model a pass.
+
+<!--
+If insufficient data is available, then the model will emit things that are adjacent in the embedding space. The 'intelligence' appears when the suitable training data exists to actually disambiguate the semantics of words that appear close, but are actually different.
+-->
+
+### Biological Frontends for Mr. Model
+
+What could be worse than people becoming dependent on the model?
+What if people *became* the model?
+Indeed, this is what I witness nowadays.
+Professors have become biological frontends for the model.[^6]
+
+[^6]: I don't mean to bash on professors too much. All professions have degraded thusly.
+
+When a student asks for advice, the questions are forwarded to the model, and the model's response comes out of the professor's mouth.
+The professor asks the model for research ideas and criticisms, and then recites the responses to their students.
+When reviewing papers for a conference, they are fed straight into ChatGPT Pro [^7], and the outputs are massaged into the HotCRP boxes.
+
+[^7]: It's research-grade intelligence after all
+
+<!--
+paper reviews for their own students, research ideas and criticisms, conference review process lmao
+They ask the model first rather than think and the model taints their thinking and makes original thought impossible.
+-->
+
+#### Context Pollution
+
+Models suffer from *context pollution*, where
+
+Context pollution, when some moron says some buzzword it isn't forgotten or contextualized, instead it is brought up over and over again in unrelated contexts just because it has a similar embedding
 
 ### "Asking the Model" as Research
 
@@ -187,27 +264,29 @@ Look at "MLArchSys", MLSys, and so forth...
 
 They will test some problem with Mr. Model v10 and then by the time the paper is done and experiments are final, Mr. Model v11 has been released and everything is done for. So many papers like this.
 
-### Thinking in "Embedding Space"
+- VerilogMonkey: https://arxiv.org/pdf/2509.16246
 
-If I could peer into their head I'm sure all I would find is a vector database.
 
-"Semantics". If insufficient data is available, then the model will emit things that are adjacent in the embedding space. The 'intelligence' appears when the suitable training data exists to actually disambiguate the semantics of words that appear close, but are actually different.
-
-The degeneration of the professor class, they are nothing more than frontends for Mr. Model, they operate and think in embedding space. They ask the model first rather than think and the model taints their thinking and makes original thought impossible.
-
+<!--
+This isn't the article to rant about the bitter lesson lmao. Leave it for later.
 ## Sutton's "Bitter Lesson"
 
 - https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf
   - Ahhh the "bitter lesson". Grossly misunderstood and misapplied.
   - It is kind of like the "central limit theorem". Also misunderstood and misapplied.
+-->
 
-## Model Hysteria in Academia
+## "Asking the Model" as a Course
 
 Harvard, Berkeley, Stanford, I'm sure many others are on this same path.
 
 - https://harvard-edge.github.io/cs249r_fall2025/
   - An entirely LLM generated website. This is the most obscene example.
   - https://www.linkedin.com/posts/vijay-janapa-reddi-63a6a173_agentic-ai-for-computer-systems-design-activity-7371588955328155648-DFKl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVUAnMBjBFeQj_67eMIA1E2610ABsluQic
+
+Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
+
+
 - https://ucbsky.github.io/ucbsky-cs294-264-fall2025/course-website.html
   - "vibe research"
   - Absolutely insane that this is considered 'academic'
@@ -225,6 +304,10 @@ https://www.linkedin.com/posts/mark-h-r-4837318_nvidiaresearch-ugcPost-737487725
 This is a counterexample from Mark Ren. He's not just asking the model as the research itself, but he's asking the model to produce a better SAT solver as the main contribution and can discuss what code it generated to produce a better solver. The focus is on the product, not the model. Excellent work.
 
 ## Conclusion
+
+Just as one should hesitate when picking up the phone to mitigate a moment of boredom, one must hesitate before shooting a question at the model. Think! Losing boredom is bad enough, losing your sovereignity is even worse.
+
+<!-- At the end of the article, pic of sponge and the ranger, all hail the magic conch! -->
 
 You know what?
 Perhaps I'm wrong.
