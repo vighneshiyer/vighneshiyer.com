@@ -241,7 +241,7 @@ Professors have become biological frontends for the model.[^6]
 
 When a student asks for advice, the questions are forwarded to the model, and the model's response comes out of the professor's mouth.
 The professor asks the model for research ideas, and then recites the responses to their students.
-When reviewing papers for a conference, the PDFs are fed straight into ChatGPT Pro [^7], and the outputs are massaged into the HotCRP boxes.
+When reviewing papers for a conference, the PDFs are fed straight into ChatGPT Pro [^7], and its outputs are massaged into the HotCRP boxes.
 
 [^7]: It's research-grade intelligence after all
 
@@ -458,3 +458,30 @@ In the next few years, I may be the one saying:
 > **Squidward**: *All hail the Magic Conch*
 
 {{ image(path="club_spongebob_16.webp", class="inset") }}
+
+## Response to Objections
+
+I appreciate criticism of anything I wrote in this article. Just email me.
+
+Let me begin by saying this article is *not* a formal academic argument, as should be clear.
+It is just a rant.
+However, if I were to distill the article into some statements I believe in, here are a few:
+
+1. Do not use the model as a substitute for thinking or learning. You want to be a domain expert. You want the ability to produce insightful thoughts. Use the model as a search and exploration tool to get to that point first. Then, you can begin to use the model as the creator / editor of a codebase (or a piece of writing, or so forth).
+
+2. Academics should be careful about what they work on to avoid getting on a hype train they aren't capable of riding. Academics aren't rich, both in terms of economic resources and capital. The risks that academics take should be wholly different than those taken by VCs or megacap corporations.
+
+3. The model is powerful. It's getting more powerful every month. You would be a fool to dismiss the power of the model and not use it altogether.
+
+### Agents are Hard
+
+> Agents are not as trivial as you make them out to be.
+> They aren't just a combination of prompts, RAG, fine-tuning, tool calling, tool output post-processing, beam search, hardware / profiler feedback, and so forth, in a big loop.
+>
+> If you look at SOTA agents like Cursor, Claude Code, Codex CLI, Windsurf, Aider, Devin, and so forth, they are growing in complexity, rather than their scaffolding being subsumed by the base model.
+
+- I agree. They are also expensive. Take your VC money or go to Anthropic, Cognition. Or contribute to Aider. Otherwise, as an academic, do something else.
+
+### Asking the Model Works
+
+- Domain knowledge is crucial. Asking the model without understanding the domain is vibe research.
