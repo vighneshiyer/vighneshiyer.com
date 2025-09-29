@@ -57,3 +57,19 @@ description = ""
 > Both are necessary to the advancement of science and technology.
 
 - Something has to be said about this. This mentality is laughable.
+
+- Science vs engineering
+- Research vs implementation
+  - Aesthetic engineering is a research topic
+
+- These are two separate axes! There is no research vs engineering. You're comparing an approach with a discipline, which I think leads to wrong conclusions.
+
+- All about abstraction refinement vs usage
+- LeCunn is wrong, nothing is about papers or h index or citations or a degree
+
+- Academic engineering research should be similar to being a palantir fde
+
+- Comp arch PhD in the same vein as a palantir forward deployed engineer
+- Goes into the trenches in industry and discovers problems and implements a bespoke solution with many many hacks
+- Goes back to the main company and figures out how to generalize the solution and make it broadly useful
+- Then goes into the next assignment at a company and uses the foundational tool that was built to build a more general and powerful bespoke solution
