@@ -463,25 +463,59 @@ In the next few years, I may be the one saying:
 
 I appreciate criticism of anything I wrote in this article. Just email me.
 
-Let me begin by saying this article is *not* a formal academic argument, as should be clear.
+Let me begin by saying this article is *not* a formal academic argument, as it should be clear.
 It is just a rant.
 However, if I were to distill the article into some statements I believe in, here are a few:
 
-1. Do not use the model as a substitute for thinking or learning. You want to be a domain expert. You want the ability to produce insightful thoughts. Use the model as a search and exploration tool to get to that point first. Then, you can begin to use the model as the creator / editor of a codebase (or a piece of writing, or so forth).
+1. Do not use the model as a substitute for thinking or learning. You want to be a domain expert. You want the ability to produce insightful thoughts. Use the model as a search and exploration tool to get to that point first. Only then, can you can begin to use the model as the creator / editor of a codebase (or a piece of writing, or so forth).
 
-2. Academics should be careful about what they work on to avoid getting on a hype train they aren't capable of riding. Academics aren't rich, both in terms of economic resources and capital. The risks that academics take should be wholly different than those taken by VCs or megacap corporations.
+2. Academics should be careful about what they work on to avoid getting on a hype train they aren't capable of riding. Academics aren't rich, both in terms of free cash and GPU capital. The risks that academics take should be wholly different than those taken by VCs or megacap corporations.
 
 3. The model is powerful. It's getting more powerful every month. You would be a fool to dismiss the power of the model and not use it altogether.
+
+<!--
+I already agree that the model is very powerful and should be used. The main arguments are against losing your thinking skills and about what academics should be doing
+-->
+
+Now, I'll discuss some objections to this article and give my responses.
 
 ### Agents are Hard
 
 > Agents are not as trivial as you make them out to be.
 > They aren't just a combination of prompts, RAG, fine-tuning, tool calling, tool output post-processing, beam search, hardware / profiler feedback, and so forth, in a big loop.
 >
-> If you look at SOTA agents like Cursor, Claude Code, Codex CLI, Windsurf, Aider, Devin, and so forth, they are growing in complexity, rather than their scaffolding being subsumed by the base model.
+> If you look at SOTA agents like Cursor, Claude Code, Codex CLI, Cline, Windsurf, Aider, Devin, and so forth, they are growing in complexity, rather than their scaffolding being subsumed by the base model.
+> In fact, as the models become more powerful, and their tool calling abilities improve, the scaffolding may have to become more complex to accommodate these new abilities.
 
+I agree that reliable agents are hard to build, and I do not want to take away from the valuable engineering and research efforts invested in these agents.
+However, I believe that to do good work in the area of agent architecture / optimization / sampling, one needs to have real use cases and evaluation criteria, beyond just the published "standard" benchmarks (e.g. SWE-Bench).
+Furthermore, agent architecture research is very expensive when it comes to running evals for each proposed change.
+
+All of this is to say, that if one wants to pursue research in this area, they should either (1) go to Anthropic, Cognition, or the like and work on real problems or (2) take the VC money that is freely flowing and build a domain-specific agent or (3) contribute to open source agents such as Aider.
+
+I believe it isn't reasonable to do coding agent work in academia anymore &mdash; it was reasonable for a short period of a year or so, but today the resources needed to make a dent are too substantial.
+Academics are flooding this area because (in my opinion), it feels easy to pick a niche domain and build an agent for it that outperforms some stale baseline on a niche benchmark.
+I have to say though that I'm a fan of [DSPy](https://github.com/stanfordnlp/dspy) and I think work along this line should be pursued by academics.
+
+<!--
 - I agree. They are also expensive. Take your VC money or go to Anthropic, Cognition. Or contribute to Aider. Otherwise, as an academic, do something else.
+I think you're right. I agree orchestrating the model isn't easy, the point is rather that to do good research in that area you need real use cases and lots of money, academics chase it not because they can do it better but rather because it feels like an easy win
+-->
 
-### Asking the Model Works
+### "Asking the Model" Does Work
 
-- Domain knowledge is crucial. Asking the model without understanding the domain is vibe research.
+> As the readings from these classes have shown, asking the model does indeed work to optimize existing software or even propose new research ideas, produce evaluations, and write an entire paper that passes scrutiny by humans.
+> You pointed out research on optimizing SAT solvers using LLMs &mdash; this is another example of the model being able to produce useful outputs given the right scaffolding.
+>
+> How can you claim that "asking the model" should be avoided, when we can see that is does yield fruit?
+> How can you claim that academics shouldn't pursue agent engineering research when it's about how to leverage LLMs effectively to improve software / systems?
+
+Firstly, I agree that the "asking the model" does often produce good results, and that the right scaffolding around the model greatly impacts the quality of its results.
+However, I do believe that some discretion is needed here with regards to choosing the right problem to work on and leveraging existing agentic frameworks vs rolling your own.
+My point is that the result of domain-specific research should be the product rather than the model loop that is used to create the product.
+
+Furthermore, it is much more valuable to build something using the model and report how it went via a blog post rather than evaluating some bespoke agent you built on some benchmark and publishing the results for them to only arrive 6 months in the future.
+
+Lastly, I believe that domain knowledge is crucial when it comes to building the right scaffolding, choosing a good problem, and picking a strong baseline to compare against.
+Building that domain knowledge should be the priority for anyone entering a domain.
+Asking the model without understanding the domain is vibe research, and should be avoided.
