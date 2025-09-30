@@ -421,11 +421,11 @@ So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time
 Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
 -->
 
-{% callout(title="✧ Another Funny Note") %}
+#### More Model-Brained Fun
 
 Look at the ["Week 5" section](https://harvard-edge.github.io/cs249r_fall2025/course/schedule/) of Reddi's CS249r website.
 
-{{ image(path="reddi-week5.png", class="inset") }}
+{{ image(path="reddi-week5.png", class="content") }}
 
 Near the bottom, do you see the paper that's supposedly titled "Reinforcement Learning for FPGA Placement"?
 Why is that there?
@@ -441,7 +441,7 @@ The picks for "main papers" for each topic are not what an actual expert would p
 
 The great irony, is that on the [syllabus page](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/), the model has already warned about itself!
 
-{{ image(path="reddi-how_to_use_genai.png", class="inset") }}
+{{ image(path="reddi-how_to_use_genai.png", class="content") }}
 
 "Verify everything", right?
 But it seems the professor himself is incapable of using GenAI effectively.
@@ -460,12 +460,36 @@ The incorrect link to the ECO paper is still up on the [Week 4 blog post](https:
 Even funnier are the Disqus comments at the bottom of the blog post: Reddi has made his students write comments, and it is evident that Mr. Model has written many of those too 😆.
 -->
 
+Reddi uses a ["discussion agent"](https://github.com/harvard-edge/cs249r_fall2025/commit/1ec2340f9dcc52ca352f835918c7c4778df6739c) that writes 'discussion questions' to be discussed in class.
+
+{{ image(path="reddi-discussion_agent.png", class="inset") }}
+
+I'm sure the students will appreciate an agentic discussion.
+
+{{ image(path="reddi-syllabus_learning.png", class="content", caption="The students shouldn't bring AI-generated responses to the AI-generated discussion") }}
+
+Reddi uses a ["blog writer agent"](https://github.com/harvard-edge/cs249r_fall2025/commit/ffeb541d45e285d5942a425c8bc3d85e4b771859) that provides "editorial feedback".
+
+{{ image(path="reddi-blog_agent.png", class="inset", caption="Mr. Model, please 'present the draft blog post to the instructor'") }}
+
+The "blog writer agent" [needed some coaxing](https://github.com/harvard-edge/cs249r_fall2025/commit/849d5833dfd365548a007a00224eeea640019edc) to not produce text that was too easily attributable to Mr. Model.
+
+{{ image(path="reddi-llm_patterns.png", class="inset", caption="Mr. Model, '**AVOID LLM Writing Patterns**'. It didn't work 😆") }}
+
+The "blog writer agent" knew that Claude was the actual author of the model-generated prose, so Reddi had to [patch that](https://github.com/harvard-edge/cs249r_fall2025/commit/3ef98547cd33ef72abda72a683fc390193e73692) too.
+
+{{ image(path="reddi-co_authorship.png", class="inset", caption="Mr. Model, don't attribute yourself as the author!") }}
+
+When faced with a moral quandry about authorship, it is best to ask the model.
+The model's opinion is on [Reddi's syllabus](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/) of course.
+
+{{ image(path="reddi-syllabus_authorship.png", class="content", caption="**Transparent attribution**: When AI significantly contributes, acknowledge it. How about it Reddi?") }}
+
 I will remind the reader that Prof. Vijay Janapa Reddi is a *tenured associate professor* at Harvard University.
+Undergraduates pay Harvard $59k in tuition every year to be "taught" by biological model frontends like Prof. Reddi.
 <!--
 At this point, I'd say a good half of professors are already obsolete.
 -->
-
-{% end %}
 
 ## A Better Path
 
