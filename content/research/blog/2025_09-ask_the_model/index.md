@@ -87,7 +87,7 @@ But luckily, Squidward is part of Club Spongebob, and they have one trick up the
 {{ gallery(images=[
     "club_spongebob_9-0.webp",
     "club_spongebob_9-1.webp",
-], popout=false, caption="Just do what the Conch tells you to do.") }}
+], popout=false, caption="Just do what the Conch tells you to do") }}
 
 Squidward thinks he's smarter than the Magic Conch, so he runs and runs to escape the forest, only to find out he's running in circles and is right back at Club Spongebob.
 He sets up a camp with the resources he has while SpongeBob and Patrick continue to listen to the Conch.
@@ -420,6 +420,52 @@ So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time
 
 Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
 -->
+
+{% callout(title="✧ Another Funny Note") %}
+
+Look at the ["Week 5" section](https://harvard-edge.github.io/cs249r_fall2025/course/schedule/) of Reddi's CS249r website.
+
+{{ image(path="reddi-week5.png", class="inset") }}
+
+Near the bottom, do you see the paper that's supposedly titled "Reinforcement Learning for FPGA Placement"?
+Why is that there?
+Isn't this section supposed to be about "GPU Kernels and Parallel Programming"?
+
+If you look at the [linked paper](https://dl.acm.org/doi/abs/10.1145/3400302.3415618) it's actually titled: "Dynamic minimization of bi-kronecker functional decision diagrams".
+So it seems Mr. Model just put some random paper in the reading list that seemed close in the embedding space.
+
+<!--
+Someone knowledgable in this field would be able to tell these paper listings are model generated.
+The picks for "main papers" for each topic are not what an actual expert would pick.
+-->
+
+The great irony, is that on the [syllabus page](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/), the model has already warned about itself!
+
+{{ image(path="reddi-how_to_use_genai.png", class="inset") }}
+
+"Verify everything", right?
+But it seems the professor himself is incapable of using GenAI effectively.
+The model is more aware than the people using it.
+
+Additionally, several variants of Mr. Model are being used together.
+See [this commit](https://github.com/harvard-edge/cs249r_fall2025/commit/49934ce85ac98750b765667139ed5ccb85c2fcbc) where Reddi uses Claude Code to clean up a verbose "blog post" likely originally created by Gemini or GPT.
+
+Also note [this commit](https://github.com/harvard-edge/cs249r_fall2025/commit/4effb622ab31027fb508f6ba4ab00bc065590af3) where Reddi uses Mr. Model to remove model-isms from the "blog posts", such as em dashes and hyphenated words.
+But the model also [made a mistake](https://github.com/harvard-edge/cs249r_fall2025/commit/4effb622ab31027fb508f6ba4ab00bc065590af3#diff-69871943f636f280de8fe5c2a82cfde2243b9ff6c2b58dd5b3f38308b9b30889L241)!
+It inadvertently updated the link of the [ECO paper](https://arxiv.org/pdf/2503.15669) to a [random paper](https://arxiv.org/abs/2402.13327) titled "Positivity Bounds on Massive Vectors".
+I didn't know that Reddi was so interested in high energy physics!
+The incorrect link to the ECO paper is still up on the [Week 4 blog post](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/09/24/performance-engineering/).
+
+<!--
+Even funnier are the Disqus comments at the bottom of the blog post: Reddi has made his students write comments, and it is evident that Mr. Model has written many of those too 😆.
+-->
+
+I will remind the reader that Prof. Vijay Janapa Reddi is a *tenured associate professor* at Harvard University.
+<!--
+At this point, I'd say a good half of professors are already obsolete.
+-->
+
+{% end %}
 
 ## A Better Path
 
