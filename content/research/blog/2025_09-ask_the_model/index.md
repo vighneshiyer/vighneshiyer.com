@@ -241,7 +241,7 @@ Professors have become biological frontends for the model.[^6]
 
 When a student asks for advice, the questions are forwarded to the model, and the model's response comes out of the professor's mouth.
 The professor asks the model for research ideas, and then recites the responses to their students.
-When reviewing papers for a conference, the PDFs are fed straight into ChatGPT Pro [^7], and its outputs are massaged into the HotCRP boxes.
+When reviewing papers for a conference, the PDFs are fed straight into ChatGPT Pro[^7], and its outputs are massaged into the HotCRP boxes.
 
 [^7]: It's research-grade intelligence after all
 
@@ -480,7 +480,7 @@ The "blog writer agent" knew that Claude was the actual author of the model-gene
 
 {{ image(path="reddi-co_authorship.png", class="inset", caption="Mr. Model, don't attribute yourself as the author!") }}
 
-When faced with a moral quandry about authorship, it is best to ask the model.
+When faced with a moral quandary about authorship, it is best to ask the model.
 The model's opinion is on [Reddi's syllabus](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/) of course.
 
 {{ image(path="reddi-syllabus_authorship.png", class="content", caption="**Transparent attribution**: When AI significantly contributes, acknowledge it. How about it Reddi?") }}
