@@ -57,6 +57,13 @@ Tools to evaluate:
 - https://arxiv.org/pdf/2502.10517
   - CuDNN, CUTLASS, Apple MLX, ThunderKittens, Triton, torch.compile, JAX JIT, FlexAttention, CuBLAS
 - CUDA / OpenCL / OMP / oneAPI / Vulkan compute / SPIR-V / GLSL
+- Kernel languages
+  - Halide, EXO
+  - Pallas for Jax
+  - Gluon for Triton
+  - Mojo
+  - CUDA C++ of course
+  - CuTile / CUTLASS Python version
 
 > Can you search for an image that summarizes the "ML stack". I mean ML libraries like pytorch and jax and tensorflow, and then ML compilers like iree, and then low level ML routines like TensorRT and then lower level stuff like CUDA, and so forth? And sitting above the ML libraries are runtimes like onxx runtime or custom implementations of models like llama.cpp
 

@@ -589,3 +589,45 @@ Furthermore, it is much more valuable to build something using the model and rep
 Lastly, I believe that domain knowledge is crucial when it comes to building the right scaffolding, choosing a good problem, and picking a strong baseline to compare against.
 Building that domain knowledge should be the priority for anyone entering a domain.
 Asking the model without understanding the domain is vibe research, and should be avoided.
+
+## Addendum
+
+### Thinking in Embedding Space
+
+Take a look at Prof. Reddi's latest model-generated "blog post": [Week 5: From CPU Transparency to GPU Complexity - The Performance Engineering Frontier](https://harvard-edge.github.io/cs249r_fall2025/cs249r_fall2025/blog/2024/10/01/gpu-performance-engineering/).
+
+There is one section that is quite revealing:
+
+{{ image(path="reddi-the_latency_imperative.png", class="content") }}
+
+> maintaining low latency in the prediction process is crucial for AI coding assistants
+
+OK sure.
+Cursor has to optimize for low time-to-first-token to please its typical user when not operating in agent mode (e.g. tab completions, directed code edits, code analysis).
+
+> He noted that the cost of efficient inference scheduling, both for rollout generation and reward computation, often dominates the training pipeline. This observation captures a fundamental tension in production AI systems: the very optimizations that make training efficient can create bottlenecks during inference
+
+So perhaps inference can dominate the total runtime of an RL pipeline.
+But why would any training optimizations affect the performance of the model when just running inference?
+
+> While research systems can afford to spend significant time optimizing kernels offline, production systems must balance optimization quality against response time.
+
+What?
+Kernel optimization is almost by definition done offline.
+Why would a "production system" have to "balance" anything?
+Why is "response time" important when you're optimizing a GPU kernel?
+Even if we were to concede that TTFT makes an agentic optimization loop run faster, it is still throughput-bound.
+
+This is a great example of the model *thinking in embedding space*.
+It first notices that "low latency" is important in interactive LLM applications.
+Then it jumbles up the meaning of the word "latency" in different contexts in the subsequent paragraphs and produces unintelligible slop that sounds like a deep insight.
+
+<!--
+The Latency Imperative
+
+In research settings, we often focus on throughput optimization, maximizing the performance of long-running computations. But production AI systems face a different constraint: latency. Rush emphasized that maintaining low latency in the prediction process is crucial for AI coding assistants. Users expect near-instantaneous responses, which constrains the optimization techniques that can be applied in practice.
+
+Rush’s perspective on this challenge was particularly insightful. He noted that the cost of efficient inference scheduling, both for rollout generation and reward computation, often dominates the training pipeline. This observation captures a fundamental tension in production AI systems: the very optimizations that make training efficient can create bottlenecks during inference, where user-facing latency requirements are paramount.
+
+This latency requirement fundamentally changes the optimization problem. While research systems can afford to spend significant time optimizing kernels offline, production systems must balance optimization quality against response time. The most sophisticated kernel optimization might be worthless if it takes too long to generate.
+-->

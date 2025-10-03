@@ -21,3 +21,8 @@ slug = "the-next-vlsi-tools"
 - Multiplier ir
 - Mixed abstraction design
 - Unifying primitives (e.g. tracing / event API) across models and design layers
+
+- Work towards a true fusion compiler tool that is able to handle multiple abstractions at once when doing vlsi cad. Be able to not deal with compiler optimization steps like we have within synthesis in a monolithic way, be able to explore the entire ppa space of a design simultaneously, be able to move past fixed abstractions like a clock tree and power grid
+  - Sounds way too ambitious, but it would be cool to shoot a design into all the corners of the PPA place using very coarse synthesis and then refine towards the desired point
+  - Take some inspiration from the greats: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=25691 (SID: Synthesis of Integral Design from the DEC guys)
+  - https://en.wikipedia.org/wiki/VAX_9000#SID_Scalar_and_Vector_Processor_Synthesis (very very cool, the era of expert systems)
