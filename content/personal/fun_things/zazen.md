@@ -1,7 +1,7 @@
 +++
 title = "Zazen"
 date = 2025-10-02
-draft = false
+draft = true
 description = "Zen meditation in contrast to Dhyana"
 +++
 

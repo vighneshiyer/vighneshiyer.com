@@ -614,7 +614,7 @@ At this point, I'd say a good half of professors are already obsolete.
 
 ### Thinking in Embedding Space
 
-Take a look at Prof. Reddi's latest model-generated "blog post": [Week 5: From CPU Transparency to GPU Complexity - The Performance Engineering Frontier](https://harvard-edge.github.io/cs249r_fall2025/cs249r_fall2025/blog/2024/10/01/gpu-performance-engineering/).
+Take a look at Prof. Reddi's latest model-generated "blog post": [Week 5: From CPU Transparency to GPU Complexity - The Performance Engineering Frontier](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/10/01/gpu-performance-engineering/).
 
 There is one section that is quite revealing:
 
