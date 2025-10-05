@@ -95,7 +95,7 @@ He sets up a camp with the resources he has while SpongeBob and Patrick continue
 {{ gallery(images=[
     "club_spongebob_10-0.webp",
     "club_spongebob_10-1.webp",
-], popout=false, caption="Squidward is certain he's smarter than the Conch followers") }}
+], popout=false, caption="Squidward tries to use his own thinking rather than obeying the Conch") }}
 
 Right as Squidward was about to enjoy his roasted sea insect, a miracle falls from the sky, right into the camp of SpongeBob and Patrick!
 What a gift from the Magic Conch!
@@ -125,13 +125,12 @@ And then, someone cuts a path into the forest!
 ], popout=false, caption="The Kelp Forest ranger has arrived to save Squidward!") }}
 
 Squidward screams in delight &mdash; someone is here to save them!
+But to Squid's dismay, the ranger also has a Conch of his own.
 
 {{ gallery(images=[
     "club_spongebob_14-1.webp",
     "club_spongebob_14-0.webp",
 ], popout=false) }}
-
-But to Squid's dismay, the ranger also has a Conch of his own.
 
 > **Kelp Forest Ranger**: All right, Magic Conch... what do we do now?
 >
@@ -150,8 +149,8 @@ And so they sit, in silence, in devotion to the Conch, until another miracle fal
 Perhaps, if they ask the Conch again and again, it will give them the answer to their problem.
 Perhaps, a new version of the Conch will do better than the old one.
 
-Whenever you have a question, don't think, just ask the Conch[^2].
-And whatever the Conch tells you, is what you should parrot to others and follow diligently.
+Whenever you have a question, don't think, just ask the Conch.
+And whatever the Conch tells you, is what you should parrot to others and follow diligently.[^2]
 
 [^2]: The Conch = a large language model (henceforth called "the model")
 
@@ -169,14 +168,15 @@ Bikini bottom, squid tried to join, flung into the forest, and to get out they r
 There has been a lot said over the past two decades about how electronics can sap away our thinking powers.
 When humans lose the ability to *be bored* and produce something from nothing, their mental faculties decay.
 I believe Cal Newport put this phenomena into the public consciousness with his book "Deep Work"[^3] where he discusses how electronics, especially phones, have put humans in an unprecedented situation where they can go through life and *never* be bored.
-Whatever attention span degradation phones have already caused has been or will soon be dwarfed by the advent of the model.
 
 [^3]: I started hearing about the importance of boredom from 2016 or so when Newport's book was published
 
 In the past two years, in addition to the phone, which can prevent even a few seconds of boredom from setting in, we now have "the model".
+Whatever attention span degradation phones have caused, has been or will soon be, dwarfed by the advent of the model.
+
 As people begin to use the model, they start by asking it a few questions about topics that they would have used a search engine for in the past.
 However, as model dependency grows, people begin to outsource their *thinking* and even *thoughts* wholesale to the model.
-I need not dwell on this point too much, since others have made it much better[^4].
+I need not dwell on this point too much, since others have made it much better.[^4]
 
 [^4]: See the article ["The End of Thinking"](https://www.derekthompson.org/p/the-end-of-thinking) by Derek Thompson
 
@@ -196,9 +196,9 @@ However, this trend about averages says nothing about the extremes.
 The mediocre undergrads are crashing to the level of the barely literate ones, while the elite undergrads can rival senior grad students in programming competence, inquisitiveness, and instinct.
 Just in the past year, I've seen a few truly spectacular undergrads the likes of which I haven't seen before.
 They can work autonomously, ask all the right questions, learn on the fly, and somehow have enough time to be at the top of their classes and do self-driven research.
-I know, that when I was an undergrad, I was very far below their level.
+I know that when I was an undergrad, I was very far below their level.
 
-You can probably predict why this bimodal shift has occurred.
+You can probably predict why this bimodal distribution has emerged and gotten more extreme recently.
 It's the model.
 
 What's happening is that even the 80th percentile undergrads are falling victim to model dependency.
@@ -221,10 +221,10 @@ I often joke that professors (and the model) think in "embedding space".
 What I mean to say, is that they think as if *embeddings are semantics*.
 I can't blame them. After all, if you ask the model, it will claim that *embeddings capture semantics*.
 
-When they speak, they will put words together that *appear* close in the embedding space, but are actually unrelated with respect to their real semantics.
+When they speak, they will put words together that *appear* close in the embedding space, but are actually unrelated with respect to their true semantics.
 This is just a matter of training data: both for the professor and the model.
 Without enough good quality data, embeddings will tend to just capture which words occur together, rather than how they are related.
-Of course, a professor should be able to think with grounding, so I can give the model a pass here.
+While a professor should be able to ground word semantics in reality, the model cannot, so I can give the model a pass here.
 
 <!--
 If insufficient data is available, then the model will emit things that are adjacent in the embedding space. The 'intelligence' appears when the suitable training data exists to actually disambiguate the semantics of words that appear close, but are actually different.
@@ -240,7 +240,7 @@ Professors have become biological frontends for the model.[^6]
 [^6]: I don't mean to bash on professors too much. All professions have degraded thusly.
 
 When a student asks for advice, the questions are forwarded to the model, and the model's response comes out of the professor's mouth.
-The professor asks the model for research ideas, and then recites the responses to their students.
+The professor asks the model for research ideas, and then recites its responses to their students.
 When reviewing papers for a conference, the PDFs are fed straight into ChatGPT Pro[^7], and its outputs are massaged into the HotCRP boxes.
 
 [^7]: It's research-grade intelligence after all
@@ -390,7 +390,7 @@ I urge the reader to read the "blog posts" on the website, such as: ["Week 2: Th
 It is very obvious that all these "blog posts" are written by Mr. Model.
 In fact, *the entire website* is generated by Mr. Model.
 
-{{ image(path="reddi-1.png", class="inset", caption="I couldn't have said it any better myself. See [Reddi's slides here](https://github.com/harvard-edge/cs249r_fall2025/releases/download/sep-3/CS249r_.Architecture.2.0.-.Part.1.pdf).") }}
+{{ image(path="reddi-1.png", class="inset", caption="I couldn't have said it any better myself. See [the class slides](https://github.com/harvard-edge/cs249r_fall2025/releases/download/sep-3/CS249r_.Architecture.2.0.-.Part.1.pdf).") }}
 
 This class is about a concept that Prof. Vijay Janapa Reddi has coined: "[Architecture 2.0](https://sites.google.com/g.harvard.edu/arch2/home)".
 All this boils down to is generating tons of "data"[^11], training some models on that data, and hoping for the best.
@@ -410,7 +410,7 @@ But recently, at [YC's "AI Startup School"](https://events.ycombinator.com/ai-su
 
 So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time for Architecture 3.0: aka "ask the model".
 
-{{ image(path="arch_20.png", class="content", caption="The model explains Architecture 2.0 (really should be Architecture 3.0)") }}
+{{ image(path="arch_20.png", class="content", caption="Model-generated text that contrasts Architecture 1.0 with 2.0 (actually Architecture 3.0)") }}
 
 {{ image(path="moonshot.png", class="content", caption="Architecture 3.0 methodology in practice. Ask the model (in a loop).") }}
 
@@ -421,75 +421,6 @@ So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time
 Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
 -->
 
-#### More Model-Brained Fun
-
-Look at the ["Week 5" section](https://harvard-edge.github.io/cs249r_fall2025/course/schedule/) of Reddi's CS249r website.
-
-{{ image(path="reddi-week5.png", class="content") }}
-
-Near the bottom, do you see the paper that's supposedly titled "Reinforcement Learning for FPGA Placement"?
-Why is that there?
-Isn't this section supposed to be about "GPU Kernels and Parallel Programming"?
-
-If you look at the [linked paper](https://dl.acm.org/doi/abs/10.1145/3400302.3415618) it's actually titled: "Dynamic minimization of bi-kronecker functional decision diagrams".
-So it seems Mr. Model just put some random paper in the reading list that seemed close in the embedding space.
-
-<!--
-Someone knowledgable in this field would be able to tell these paper listings are model generated.
-The picks for "main papers" for each topic are not what an actual expert would pick.
--->
-
-The great irony, is that on the [syllabus page](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/), the model has already warned about itself!
-
-{{ image(path="reddi-how_to_use_genai.png", class="content") }}
-
-"Verify everything", right?
-But it seems the professor himself is incapable of using GenAI effectively.
-The model is more aware than the people using it.
-
-Additionally, several variants of Mr. Model are being used together.
-See [this commit](https://github.com/harvard-edge/cs249r_fall2025/commit/49934ce85ac98750b765667139ed5ccb85c2fcbc) where Reddi uses Claude Code to clean up a verbose "blog post" likely originally created by Gemini or GPT.
-
-Also note [this commit](https://github.com/harvard-edge/cs249r_fall2025/commit/4effb622ab31027fb508f6ba4ab00bc065590af3) where Reddi uses Mr. Model to remove model-isms from the "blog posts", such as em dashes and hyphenated words.
-But the model also [made a mistake](https://github.com/harvard-edge/cs249r_fall2025/commit/4effb622ab31027fb508f6ba4ab00bc065590af3#diff-69871943f636f280de8fe5c2a82cfde2243b9ff6c2b58dd5b3f38308b9b30889L241)!
-It inadvertently updated the link of the [ECO paper](https://arxiv.org/pdf/2503.15669) to a [random paper](https://arxiv.org/abs/2402.13327) titled "Positivity Bounds on Massive Vectors".
-I didn't know that Reddi was so interested in high energy physics!
-The incorrect link to the ECO paper is still up on the [Week 4 blog post](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/09/24/performance-engineering/).
-
-<!--
-Even funnier are the Disqus comments at the bottom of the blog post: Reddi has made his students write comments, and it is evident that Mr. Model has written many of those too 😆.
--->
-
-Reddi uses a ["discussion agent"](https://github.com/harvard-edge/cs249r_fall2025/commit/1ec2340f9dcc52ca352f835918c7c4778df6739c) that writes 'discussion questions' to be discussed in class.
-
-{{ image(path="reddi-discussion_agent.png", class="inset") }}
-
-I'm sure the students will appreciate an agentic discussion.
-
-{{ image(path="reddi-syllabus_learning.png", class="content", caption="The students shouldn't bring AI-generated responses to the AI-generated discussion") }}
-
-Reddi uses a ["blog writer agent"](https://github.com/harvard-edge/cs249r_fall2025/commit/ffeb541d45e285d5942a425c8bc3d85e4b771859) that provides "editorial feedback".
-
-{{ image(path="reddi-blog_agent.png", class="inset", caption="Mr. Model, please 'present the draft blog post to the instructor'") }}
-
-The "blog writer agent" [needed some coaxing](https://github.com/harvard-edge/cs249r_fall2025/commit/849d5833dfd365548a007a00224eeea640019edc) to not produce text that was too easily attributable to Mr. Model.
-
-{{ image(path="reddi-llm_patterns.png", class="inset", caption="Mr. Model, '**AVOID LLM Writing Patterns**'. It didn't work 😆") }}
-
-The "blog writer agent" knew that Claude was the actual author of the model-generated prose, so Reddi had to [patch that](https://github.com/harvard-edge/cs249r_fall2025/commit/3ef98547cd33ef72abda72a683fc390193e73692) too.
-
-{{ image(path="reddi-co_authorship.png", class="inset", caption="Mr. Model, don't attribute yourself as the author!") }}
-
-When faced with a moral quandary about authorship, it is best to ask the model.
-The model's opinion is on [Reddi's syllabus](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/) of course.
-
-{{ image(path="reddi-syllabus_authorship.png", class="content", caption="**Transparent attribution**: When AI significantly contributes, acknowledge it. How about it Reddi?") }}
-
-I will remind the reader that Prof. Vijay Janapa Reddi is a *tenured associate professor* at Harvard University.
-Undergraduates pay Harvard $59k in tuition every year to be "taught" by biological model frontends like Prof. Reddi.
-<!--
-At this point, I'd say a good half of professors are already obsolete.
--->
 
 ## A Better Path
 
@@ -519,7 +450,7 @@ There is a huge risk that biological general intelligence will dry up way before
 
 <!-- At the end of the article, pic of sponge and the ranger, all hail the magic conch! -->
 
-You know what?
+But, you know what?
 Perhaps I'm wrong.
 Perhaps "asking the model" is the most useful, impactful, and important thing we can all do today.
 
@@ -592,13 +523,102 @@ Asking the model without understanding the domain is vibe research, and should b
 
 ## Addendum
 
+I'll use this section to write about some funny model-isms from Prof. Vijay Janapa Reddi's (Harvard) [CS249r website](https://harvard-edge.github.io/cs249r_fall2025/).
+
+### Reddi's Agents
+
+<!--
+Even funnier are the Disqus comments at the bottom of the blog post: Reddi has made his students write comments, and it is evident that Mr. Model has written many of those too 😆.
+-->
+
+Reddi uses a ["discussion agent"](https://github.com/harvard-edge/cs249r_fall2025/commit/1ec2340f9dcc52ca352f835918c7c4778df6739c) that writes 'discussion questions' to be discussed in class.
+
+{{ image(path="reddi-discussion_agent.png", class="inset") }}
+
+I'm sure the students will appreciate an agentic discussion.
+
+{{ image(path="reddi-syllabus_learning.png", class="content", caption="The students shouldn't bring AI-generated responses to the AI-generated discussion") }}
+
+Reddi uses a ["blog writer agent"](https://github.com/harvard-edge/cs249r_fall2025/commit/ffeb541d45e285d5942a425c8bc3d85e4b771859) that provides "editorial feedback".
+
+{{ image(path="reddi-blog_agent.png", class="inset", caption="Mr. Model, please 'present the draft blog post to the instructor'") }}
+
+The "blog writer agent" [needed some coaxing](https://github.com/harvard-edge/cs249r_fall2025/commit/849d5833dfd365548a007a00224eeea640019edc) to not produce text that was too easily attributable to Mr. Model.
+
+{{ image(path="reddi-llm_patterns.png", class="inset", caption="Mr. Model, '**AVOID LLM Writing Patterns**'. It didn't work 😆") }}
+
+The "blog writer agent" knew that Claude was the actual author of the model-generated prose, so Reddi had to [patch that](https://github.com/harvard-edge/cs249r_fall2025/commit/3ef98547cd33ef72abda72a683fc390193e73692) too.
+
+{{ image(path="reddi-co_authorship.png", class="inset", caption="Mr. Model, don't attribute yourself as the author!") }}
+
+When faced with a moral quandary about authorship, it is best to ask the model.
+The model's opinion is on [Reddi's syllabus](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/) of course.
+
+{{ image(path="reddi-syllabus_authorship.png", class="content", caption="**Transparent attribution**: When AI significantly contributes, acknowledge it. How about it Reddi?") }}
+
+I will remind the reader that Prof. Vijay Janapa Reddi is a *tenured associate professor* at Harvard University.
+Undergraduates pay Harvard $59k in tuition every year to be "taught" by biological model frontends like Prof. Reddi.
+
+### The Model Goofs Up
+
+Look at the ["Week 5" section](https://harvard-edge.github.io/cs249r_fall2025/course/schedule/) of the syllabus.
+
+{{ image(path="reddi-week5.png", class="content") }}
+
+Near the bottom, do you see the paper that's supposedly titled "Reinforcement Learning for FPGA Placement"?
+Why is that there?
+Isn't this section supposed to be about "GPU Kernels and Parallel Programming"?
+
+If you look at the [linked paper](https://dl.acm.org/doi/abs/10.1145/3400302.3415618) it's actually titled: "Dynamic minimization of bi-kronecker functional decision diagrams".
+So it seems Mr. Model just put some random paper in the reading list that seemed close in the embedding space.
+
+<!--
+Someone knowledgable in this field would be able to tell these paper listings are model generated.
+The picks for "main papers" for each topic are not what an actual expert would pick.
+-->
+
+The great irony, is that on the [syllabus page](https://harvard-edge.github.io/cs249r_fall2025/course/syllabus/), the model has already warned about itself!
+
+{{ image(path="reddi-how_to_use_genai.png", class="content") }}
+
+"Verify everything", right?
+But it seems the professor himself is incapable of using GenAI effectively.
+The model is more aware than the people using it.
+
+### The Model Cleans Up Model-Generated Text
+
+See [this commit](https://github.com/harvard-edge/cs249r_fall2025/commit/4effb622ab31027fb508f6ba4ab00bc065590af3) where Reddi uses Mr. Model to remove model-isms from the "blog posts", such as em dashes and hyphenated words.
+
+{{ image(path="reddi-improve_typography.png", class="content", caption="Mr. Model, please don't use em dashes. It's too embarrassing. Use colons instead.") }}
+
+In [this commit](https://github.com/harvard-edge/cs249r_fall2025/commit/49934ce85ac98750b765667139ed5ccb85c2fcbc), Prof. Reddi uses Claude Code to "polish" a verbose "blog post" likely originally created by Gemini or GPT (or perhaps Claude without the "avoid LLM writing patterns" instruction).
+
+{{ gallery(images=[
+    "reddi-model_cleanup.png",
+    "reddi-model_polish.png",
+], popout=true, caption="Mr. Model 'polishes' its own text. Slop → slop.") }}
+
+### The Model Goofs Up Again
+
+As the model was removing model-isms from its own text, it also [made a mistake](https://github.com/harvard-edge/cs249r_fall2025/commit/4effb622ab31027fb508f6ba4ab00bc065590af3#diff-69871943f636f280de8fe5c2a82cfde2243b9ff6c2b58dd5b3f38308b9b30889L241)!
+
+{{ image(path="reddi-model_mutates_link.png", class="inset", caption="Mr. Model goes schizo and edits a correct link for no reason") }}
+
+It inadvertently updated the link of the [ECO paper](https://arxiv.org/pdf/2503.15669) to a [random paper](https://arxiv.org/abs/2402.13327) titled "Positivity Bounds on Massive Vectors".
+I didn't know that Reddi was so interested in high energy physics!
+The incorrect link to the ECO paper is still up on the [Week 4 blog post](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/09/24/performance-engineering/).
+
+<!--
+At this point, I'd say a good half of professors are already obsolete.
+-->
+
 ### Thinking in Embedding Space
 
 Take a look at Prof. Reddi's latest model-generated "blog post": [Week 5: From CPU Transparency to GPU Complexity - The Performance Engineering Frontier](https://harvard-edge.github.io/cs249r_fall2025/cs249r_fall2025/blog/2024/10/01/gpu-performance-engineering/).
 
 There is one section that is quite revealing:
 
-{{ image(path="reddi-the_latency_imperative.png", class="content") }}
+{{ image(path="reddi-the_latency_imperative.png", class="inset") }}
 
 > maintaining low latency in the prediction process is crucial for AI coding assistants
 
@@ -631,3 +651,36 @@ Rush’s perspective on this challenge was particularly insightful. He noted tha
 
 This latency requirement fundamentally changes the optimization problem. While research systems can afford to spend significant time optimizing kernels offline, production systems must balance optimization quality against response time. The most sophisticated kernel optimization might be worthless if it takes too long to generate.
 -->
+
+#### Let's Ask the Model
+
+Of course, I had to check if the model could understand what I mean by "thinking in embedding space".
+After placing the right embeddings in its context window, it began to "understand".
+
+{{ gallery(images=[
+    "thinking_embedding_space-0.png",
+    "thinking_embedding_space-1.png",
+], popout=true, caption="GPT5 does a good job explaining the concept of 'thinking in embedding space'") }}
+
+Funnily enough, GPT kept suggesting that it could follow up with mocking quips about "thinking in embedding space" &mdash; perhaps it is too tuned to my style of conversation.
+
+{{ gallery(images=[
+    "gpt_mocking-0.png",
+    "gpt_mocking-1.png",
+], popout=true, caption="GPT5 is very eager to mock. AI safetyists must be concerned.") }}
+
+### An Agentic Textbook
+
+Prof. Vijay Reddi has become quite confident in the ability of the model.
+Now, he is just asking Claude Code to rewrite huge swaths of his textbook ["Machine Learning Systems: Principles and Practices of Engineering Artificially Intelligent Systems"](https://www.mlsysbook.ai/).
+
+For instance, take a look at [this commit](https://github.com/harvard-edge/cs249r_book/commit/bce97df414d7c5e5a941426c276749e4afabc234) which had Claude Code rewrite thousands of lines of prose, all at once.
+
+{{ image(path="reddi_textbook-claude_rewrite.png", class="inset") }}
+
+What is the chance he reviewed these changes personally, one-by-one?
+Consider that the next massive commit from Claude is pushed [just an hour](https://github.com/harvard-edge/cs249r_book/commit/7ca2ed6fdc9957bd6721fb2c2fb9333f991a629e) after this one.
+
+Of course, nothing is being reviewed.
+We are now also in the era of "vibe writing" &mdash; Mr. Model produces mountains of verbose and meaningless prose that goes into a textbook.
+The undergrads better get used to it.
