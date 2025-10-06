@@ -1,6 +1,6 @@
 @use '../node_modules/utopia-core-scss/src/utopia' as utopia;
 @use 'sass:color';
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Noto+Sans+Symbols&family=Noto+Sans+Symbols+2&display=swap');
 
 // Utopia type scale, space scale, and grid using spacing scale
 // https://utopia.fyi/grid/calculator?c=330,18,1.2,1500,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,xl,xl,12
@@ -114,8 +114,9 @@ $mobile-breakpoint: 650px;
 
 :root {
   --serif-font: 'Source Serif 4', 'Noto Serif', serif;
-  --sans-font: 'Source Sans 3', 'Noto Sans',sans-serif;
+  --sans-font: 'Source Sans 3', 'Noto Sans', sans-serif;
   --mono-font: 'Source Code Pro', monospace;
+  --symbol-font: "Noto Sans Symbols 2", "Noto Sans Symbols", sans-serif;
   font-optical-sizing: auto;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -220,7 +221,7 @@ $tn-light-orange: #965027;
       @include color-scheme-dark;
     }
   }
-  --content-line-height: 1.5;
+  --content-line-height: 1.55;
   --blockquote-line-height: 1.5;
   --heading-line-height: 1.25;
 }
@@ -384,10 +385,12 @@ ul > li:before {
   // content: "◍";
   // content: "›";
   content: "◉";
+  font-family: var(--symbol-font);
   color: var(--accent-color-2);
-  font-size: var(--step-0);
+  font-size: var(--step--1);
   position: absolute;
   margin-left: calc(var(--space-l) * -1);
+  margin-top: 0.5ex;
 }
 
 ul > li:last-child {
@@ -410,6 +413,8 @@ ul > li > ul > li {
     //content: "◍";
     content: "◎";
     font-size: var(--step--1);
+    font-family: var(--symbol-font);
+    margin-top: 0.25ex;
   }
 }
 
@@ -433,12 +438,12 @@ ol {
 
 ol > li::before {
   content: counter(list-item, custom-circled);
+  font-family: var(--symbol-font);
   color: var(--accent-color-2);
   font-size: var(--step-2);
   position: absolute;
   margin-left: calc(var(--space-l) * -1);
-  font-weight: 300;
-  margin-top: -0.6ex;
+  margin-top: -0.2ex;
 }
 
 ol > li {
@@ -475,6 +480,11 @@ blockquote {
       margin-bottom: 0;
     }
   }
+
+  ul > li:before {
+    margin-top: 0.43ex;
+  }
+
   background-color: var(--bg-contrast);
   border-top: 1px solid var(--bg-highlight);
   border-bottom: 1px solid var(--bg-highlight);
@@ -522,11 +532,13 @@ hr {
   margin-top: var(--space-m);
   margin-bottom: var(--space-m);
   &::after {
+    font-family: var(--symbol-font);
     background: var(--bg-contrast1);
     content: "⁂";
     padding: 0 var(--space-s);
     position: relative;
-    top: -1.6ex;
+    top: -1.8ex;
+    font-size: var(--step--1);
   }
 }
 
@@ -617,6 +629,7 @@ details {
     }
     &::before{
       content: "❯";
+      font-family: var(--symbol-font);
       color: var(--accent-color);
       margin-right: var(--space-s);
       display: inline-block;
@@ -939,7 +952,7 @@ a.anchor {
   top: var(--space-m);
   font-family: var(--sans-font);
   max-height: 95vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   ul > li {
     &::before {
       content: none;

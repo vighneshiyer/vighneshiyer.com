@@ -5,7 +5,7 @@ draft = false
 description = "Team Green is dominant. Can Team Red go _beyond_?"
 
 [extra]
-new = true
+new = false
 +++
 
 It is a dark, dark world.
