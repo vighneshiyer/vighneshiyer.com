@@ -194,6 +194,7 @@ First, here are the Tufte-style ones.
 - [craftinginterpreters.com](https://craftinginterpreters.com/the-lox-language.html) (another amazing Tufte style website, left sidebar for TOC, right for sidenotes, very responsive for mobile), [composingprograms.com](https://www.composingprograms.com/pages/24-mutable-data.html) (similar)
 - [rachit.pl](https://rachit.pl/post/personal-infrastructure/)
 - [martinfowler.com](https://martinfowler.com/articles/lmax.html)
+- [fi-le.net](https://fi-le.net/oss/)
 
 And now here are blogs that have just a center column.
 Here are the ones I consider somewhat _unique_ and _special_.
