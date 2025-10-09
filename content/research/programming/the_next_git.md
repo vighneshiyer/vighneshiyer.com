@@ -1,0 +1,18 @@
++++
+title = "The Next Git"
+date = 2025-04-05
+draft = true
+description = ""
++++
+
+- When Markdown I sent someone was copied into Google docs to comment on it, that's wrong.
+- What SW do we need to break that?
+- Crdt and git is one.
+  - The next git: there is some element of fossil that I like - keep PRs and other repo working state with the repo itself rather than an external service like Github
+  - The major one is the ability to not think about version control explicitly. Allow continuous remote collaboration using language-aware CRDTs.
+  - Be able to do the Google Docs workflow completely locally, with comment sync, threads, and resolution being part of the repo state for every given file (file-type specific)
+- But also some new GUI for comments and back and forth via a text file, I don't want this file to leave version control, but I want to collaborate and comment on threads and use plain text
+- Submodules...
+- Large files...
+- There is some overlap with the `code_driven_x.md` post
+  - That post veered too much into the version control and hosting aspect, when it should be focused on the 2-way sync aspect between code and visuals

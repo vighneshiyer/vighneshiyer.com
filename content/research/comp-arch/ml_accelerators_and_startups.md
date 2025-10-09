@@ -26,6 +26,19 @@ Axes to consider:
 - https://www.zach.be/p/most-ai-chips-arent-cost-effective (on d-matrix corsair)
 - https://fleetwood.dev/posts/domain-specific-architectures (good general overview for transformer oriented hardware)
 
+> Groq, TT, TPU, Blackwell and more
+> Get clear die shots, categorize sram and compute area and capacity and performance
+> How much area is consumed in each process by the MAC units. Is the tpu density way below what one would expect?
+>
+> I think trying to give a detailed overview of the physical design as well as the arch characteristics would be crucial to understand the landscape. Such as, how much instruction amortization is actually required. Or also to contrast the tpu model with the TT one. How much benefit can be derived from timing determinism and only SRAM usage vs variable memory traffic and hbm? I think both of these are negligible. Does groq do a lot better than a TT style arch in the same process wrt compute and memory density? Are their claims of inst dispatch amortization actually relevant?
+
+The TPU architecture looks very different than the others. Groq is very VLIW, cycle-by-cycle static scheduling. Cerebras is a bunch of tiny cores. TT is the only sensible one that resembles a SIMT machine. SambaNova is going to fail.
+
+- https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware
+- https://irrationalanalysis.substack.com/p/very-long-incoherent-writeup
+
+Some of these points are good.
+
 ## Discrete Chips/Cards You can Buy
 
 NVIDIA (of course) (you can buy boxes and racks too)
