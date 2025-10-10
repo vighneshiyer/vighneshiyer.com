@@ -16,3 +16,10 @@ description = ""
 - Large files...
 - There is some overlap with the `code_driven_x.md` post
   - That post veered too much into the version control and hosting aspect, when it should be focused on the 2-way sync aspect between code and visuals
+
+- Git worktrees
+  - multiple things going off at once for throughput-oriented methodology
+- No more submodules, something much better is required for ad-hoc dependencies
+- Remote build server and execution + remote build cache to make git worktrees locally actually viable
+- A repo is its own universe. Proper dependency and universe construction is required. Solutions like docker or Nix are only part of the way there
+- A lot of ideas that Google has in their codebase are quite good in principle: Cider, CitC, Bazel (remote build execution + global build artifact caching)

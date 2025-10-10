@@ -521,6 +521,20 @@ Lastly, I believe that domain knowledge is crucial when it comes to building the
 Building that domain knowledge should be the priority for anyone entering a domain.
 Asking the model without understanding the domain is vibe research, and should be avoided.
 
+### The Magic Conch is not an LLM
+
+> Your analogy is bad.
+> The magic conch is similar to a magic 8 ball: it can't give sophisticated answers to questions, but rather just picks random phrases from a pre-programmed list.
+> The Conch doesn't consider the context of the question you ask it, it doesn't possess a world model, and it cannot use tools to prepare its answer.
+>
+> In contrast, Mr. Model is a very powerful statistical token generator trained on a massive corpus of world knowledge that has common sense and can reason.
+> How can you claim these two things are equivalent, when they are so obviously not?
+
+Mr. Model is certainly more sophisticated than the Conch, there can be no doubt.
+However, the comparison has more to do with how the Conch is used rather than what it says.
+Uncritically taking the Conch at its word, following its instruction as if it came from the Gods, and delegating every question you have immediately to the Conch are the problems.
+Don't take this analogy too seriously.
+
 ## Addendum
 
 I'll use this section to write about some funny model-isms from Prof. Vijay Janapa Reddi's (Harvard) [CS249r website](https://harvard-edge.github.io/cs249r_fall2025/).

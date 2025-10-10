@@ -56,3 +56,6 @@ I will point out the ones I like.
 ## MICRO 2025
 
 Pending...
+
+- Icicle: Open-Source Hardware Support for Top-Down Microarchitectural Analysis on RISC-V (https://www.cs.columbia.edu/~sedwards/papers/weingarten2025icicle.pdf)
+  - Very good work, good job
