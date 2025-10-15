@@ -500,7 +500,7 @@ blockquote {
 
 figure {
   margin-top: var(--space-s);
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-s);
   text-align: center;
   img {
     margin: auto;
@@ -1107,6 +1107,9 @@ a.anchor {
     grid-column: var(--subgrid-content-begin) / var(--subgrid-content-end);
     margin: auto; // Center the tweet
     margin-bottom: var(--space-m) !important; // need to override the style that's applied in the HTML
+  }
+  hr {
+    grid-column: var(--subgrid-content-begin) / var(--subgrid-content-end);
   }
 }
 

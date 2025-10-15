@@ -238,6 +238,7 @@ Here are some more nice center column blogs, but they are more _vanilla_ than th
 - [fetchfox.ai](https://fetchfox.ai/a/founding-engineer-compensation) (clean single column, nice fonts)
 - [blog.joway.io](https://blog.joway.io/posts/golang-rethink-program-in-realworld/) (I like the header)
 - [peteris.rocks](https://peteris.rocks/blog/htop/) (unique, full width code, simple, code oriented)
+- [Neil Madden's blog](https://neilmadden.blog/2025/09/12/rating-26-years-of-java-changes/)
 
 Now, here are more center column blogs, but they have wide (often full-width) images / galleries.
 

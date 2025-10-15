@@ -6,7 +6,11 @@ slug = "openai-hardware-effort"
 description = "XLS, HW design methodology, the supposed imminent tapeout"
 +++
 
-# The OpenAI Hardware Effort: I'm Pessimistic
+OpenAI, of course, started off as an AI research lab, but as their userbase has grown and afforded them the ability to raise at insane valuations on expected future profitability, the organization has begun to sprawl out.
+In this context, [Stargate](), their effort to build multiple gigawatt datacenters[^1],
+
+[^1]: What Jensen would term "AI factories"
+One of the largest sprawl efforts
 
 - Poaching of Googlers
 - Richard Ho
@@ -60,3 +64,36 @@ There are also AI accelerator startups that can simply be acquired (Sambanova, C
 
 - Recent Broadcom tapeout. What could it be? The team seems under 50 people. They try to hide as "technical staff" on LinkedIn, probably to avoid competitiors piecing together the OpenAI org chart. Look at their hardware job postings. Likely there is just a blob of Synopsys/Cadence/ARM IP and all the integration is contracted out. The effort needed to build datacenter-scale systems, let alone a single blade, is enormous - what is their advantage?
 - https://www.reuters.com/technology/openai-set-finalize-first-custom-chip-design-this-year-2025-02-10/
+
+- https://www.youtube.com/watch?v=qqAbVTFnfk8 (openai broadcom partnership announcement via podcast) - way too funny
+  - If you control your own chips, you control your own destiny - Broadcom
+  - LMAO way too much considering that he is the one extracting money from openai and has no stake in the success of the first gen lol. They will never admit fault and work with broadcom for the second gen.
+
+> OpenAI President Greg Brockman said the company used its own models to accelerate chip design and improve efficiency.“We’ve been able to get massive area reductions,” he said in the podcast. “You take components that humans have already optimized and just pour compute into it, and the model comes out with its own optimizations.”
+
+> learn2xls being announced publicly
+
+> “Our collaboration with Broadcom will power breakthroughs in AI and bring the technology’s full potential closer to reality,” said OpenAI co-founder and President, Greg Brockman. “By building our own chip, we can embed what we’ve learned from creating frontier models and products directly into the hardware, unlocking new levels of capability and intelligence.”
+
+- Sam: more intelligence per watt. These other chip startups don't know what the future models look like and openai can only nudge them but can't influence the direction. So we decided to build our own chip.
+
+## There is Nothing New Under the Sun
+
+- The architectures that you can choose broadly speaking:
+  - large systolic array - single instruction stream + dispatch: TPU, Etched, MatX (my guess)
+  - many core MIMD machine with vector/matrix engines: Dojo, TT, Cerebras, GPUs (to some degree), Furiosa (check), Rebellions (check), Trainium/Inferentia (check), d-matrix
+  - streaming dataflow with kernel dispatch / instruction decode/dispatch amorization: SambaNova, Groq, Blaize
+  - exotic physics-inspired / Neuromorphic architectures: IBM truenorth, Intel Loihi, whatever Normal computing and extropic are doing
+- The storage mechanics you can choose:
+  - all SRAM + inter-chip link heavy communication
+  - hardcoded weight ROMs (mixed with a mostly SRAM architecture)
+  - GDDR6/7 for prefill optimized chips / large memory capacity / workloads with high arithmetic intensity (TT made this bet)
+  - HBM for general purpose everything + decode optimized chips / workloads with low arithmetic intensity that are memory bandwidth bound
+
+So what will it be? My guess is a many core MIMD machine with local per-core scratchpads, a large system-level scratchpad, and each core having a scalar dispatch unit that directs instructions to the vector lanes / matrix unit and can perform DMAs to and from the per-core scratchpad from the global chip one + external HBM
+- Why? This is the most logical architecture.
+- So where can they innovate?
+  - Off-chip links from broadcom might be better than everything on the market except NVLink (beating NVLink 5/6 by the time of Rubin rollout seems very very unlikely)
+  - Highly specialized datatypes and minimal ALUs may give higher compute density and maybe lower leakage power over NVIDIA
+  - And that's it... the software will be a far cry from the maturity of the CUDA stack
+  - Oh, and of course TCO. That's all that matters for them perhaps. But in the larger context, TCO includes SW optimization costs and silicon underutilization opportunity costs too. Hard to believe you can beat GB300 NVL72 (see Semianalysis InferenceMAX).

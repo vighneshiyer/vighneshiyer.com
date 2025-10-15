@@ -30,6 +30,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [c2: Connection Machine](https://wiki.c2.com/?ConnectionMachine)
 - [Protobuffers Are Wrong](https://reasonablypolymorphic.com/blog/protos-are-wrong/) ([HN link](https://news.ycombinator.com/item?id=45139656)) (a classic)
   - [typical: Data interchange with algebraic data types.](https://github.com/stepchowfun/typical)
+- [Rating 26 years of Java changes](https://neilmadden.blog/2025/09/12/rating-26-years-of-java-changes/) ([HN link](https://news.ycombinator.com/item?id=45551450))
 
 ### Functional Programming
 
@@ -212,6 +213,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [SUMO - Github](https://github.com/ontologyportal/sumo)
   - [Ontologies in the era of large language models by Fabian Neuhaus - Youtube](https://www.youtube.com/watch?v=rLOmAzkqIts)
 - [Pedro Domingos on the Symbolist Approach to AI](https://www.youtube.com/watch?v=ogaCzVoRpZs) (Pedro defends symbolic AI approaches)
+- [On the foolishness of "natural language programming".](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html)
 
 ### Neuromorphic Algorithms and HW Architectures
 
@@ -235,6 +237,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Overview of HIP C++](https://rocm.docs.amd.com/projects/HIP/en/docs-develop/how-to/hip_cpp_language_extensions.html) (designed to look like CUDA C with (mostly) the same APIs)
 - [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) (August 2024) ([HN link](news.ycombinator.com/item?id=43736739))
 - [Dynomight: I don't like NumPy](https://dynomight.net/numpy/) ([HN link](https://news.ycombinator.com/item?id=43996431))
+- [AdapTive-LeArning Speculator System (ATLAS): A New Paradigm in LLM Inference via Runtime-Learning Accelerators](https://www.together.ai/blog/adaptive-learning-speculator-system-atlas) ([HN link](https://news.ycombinator.com/item?id=45556474))
 
 ### ML Hardware
 

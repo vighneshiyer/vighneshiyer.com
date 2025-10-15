@@ -59,3 +59,5 @@ Pending...
 
 - Icicle: Open-Source Hardware Support for Top-Down Microarchitectural Analysis on RISC-V (https://www.cs.columbia.edu/~sedwards/papers/weingarten2025icicle.pdf)
   - Very good work, good job
+- Bridging Simulation and Silicon: A Study of RISC-V Hardware and FireSim Simulation (https://arxiv.org/abs/2509.18472)
+  - The methodology isn't great, but at least this is something worth exploring. Much more than I can say about other work.

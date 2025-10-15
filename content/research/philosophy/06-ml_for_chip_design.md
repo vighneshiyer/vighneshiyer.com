@@ -41,6 +41,15 @@ Is one shotting possible? From RTL to GDS? In principle, why not? It can certain
 But what are the impediments? Firstly, we have to learn from physics onwards to do something revolutionary. Altman's original fab idea leans in this direction.
 Otherwise, we require preciseness. No fuzziness is permissible. This is a big difference from CV and language modeling / reasoning. The RTL to GDS process is naturally algorithmic because it governs an engineered abstraction stack. If you wish to break free from this stack, and one shot across from microarchitecture to mask sets, then you need to rethink the training data. You can't train on data provided by CAD tools alone and expect to do any better with respect to QoR (perhaps just runtime), and the opportunities for error abound.
 
+- Write an article about the Altman ml for hw gamble
+- This is required, abstractions must be broken to get any better qor
+- Initially train the model using tcad simulations and when it becomes necessary we need to use fabrication
+- How much better can we really do?
+- Consider path logic gate sizing when we are no longer constrained by standard cells and their fixed up sizing ratios
+- Or when we can draw arbitrary clock trees or don't have to obey drc rules, since we can learn what should be drawn to begin with
+- Similar ideas have been deployed for the design of rfic components like filters, see the square patch based filter design method which does better than hand engineered filters
+- I imagine similar ideas must be used in silicon photonics for the design of waveguides or in mems for the design of switches
+
 # ML for Chip Design: My Perspective
 
 Before discussing ML specifically in the context of chip design, let me first discuss ML in general, and where it has found success.
