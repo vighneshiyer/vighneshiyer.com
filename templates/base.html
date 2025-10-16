@@ -110,6 +110,102 @@
 
     {% block extra_head %}
     {% endblock extra_head %}
+
+    <!-- TOC Active Header Tracking Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Only run on pages with TOC
+        const toc = document.querySelector('.toc');
+        if (!toc) return;
+
+        const articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        // Get all h2 and h3 headers in the article
+        const headers = articleContent.querySelectorAll('h2, h3');
+        if (headers.length === 0) return;
+
+        // Create a map of header IDs to TOC links
+        const tocLinks = new Map();
+        const tocLinkElements = toc.querySelectorAll('a[href^="#"]');
+        
+        tocLinkElements.forEach(link => {
+          const href = link.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            const id = href.substring(1);
+            tocLinks.set(id, link);
+          }
+        });
+
+        console.log(tocLinkElements);
+        // Function to get the element that should be active
+        function getActiveHeader() {
+          const viewportHeight = window.innerHeight;
+          const viewportCenter = window.scrollY + (viewportHeight / 2);
+          
+          let activeHeader = null;
+          let activeDistance = Infinity;
+
+          headers.forEach(header => {
+            const rect = header.getBoundingClientRect();
+            const headerTop = window.scrollY + rect.top;
+            const headerBottom = headerTop + rect.height;
+            const headerCenter = headerTop + (rect.height / 2);
+
+            // Check if header is in viewport
+            if (rect.top < viewportHeight && rect.bottom > 0) {
+              // Calculate distance from viewport center
+              const distance = Math.abs(headerCenter - viewportCenter);
+              
+              // Only consider headers that have passed the 50% point
+              if (headerCenter <= viewportCenter && distance < activeDistance) {
+                activeDistance = distance;
+                activeHeader = header;
+              }
+            }
+          });
+
+          return activeHeader;
+        }
+
+        // Function to update active TOC link
+        function updateActiveTOCLink() {
+          const activeHeader = getActiveHeader();
+          
+          // Remove active class from all TOC links
+          tocLinkElements.forEach(link => {
+            link.classList.remove('active');
+          });
+
+          // Add active class to the corresponding TOC link
+          if (activeHeader) {
+            const headerId = activeHeader.id;
+            const tocLink = tocLinks.get(headerId);
+            if (tocLink) {
+              tocLink.classList.add('active');
+            }
+          }
+        }
+
+        // Throttled scroll handler
+        let scrollTimeout;
+        function handleScroll() {
+          if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+          }
+          scrollTimeout = setTimeout(updateActiveTOCLink, 10);
+        }
+
+        // Initial call
+        updateActiveTOCLink();
+
+        // Add scroll listener
+        window.addEventListener('scroll', handleScroll);
+        
+        // Also update on resize
+        window.addEventListener('resize', handleScroll);
+      });
+    </script>
   </head>
   {% endblock head %}
 

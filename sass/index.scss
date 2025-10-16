@@ -976,6 +976,19 @@ a.anchor {
       font-size: var(--step--2);
     }
   }
+  
+  // Active TOC link styling
+  a.active {
+    color: var(--accent-color) !important;
+    font-weight: var(--bold-font-weight);
+    position: relative;
+    
+    &::before {
+      content: "→";
+      margin-right: var(--space-3xs);
+      color: var(--accent-color);
+    }
+  }
 }
 
 .article-content {

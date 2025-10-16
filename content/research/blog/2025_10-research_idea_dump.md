@@ -1,5 +1,5 @@
 +++
-title = "Random Research Ideas"
+title = "Research Ideas in Computer Architecture"
 date = 2025-10-14
 draft = true
 +++
