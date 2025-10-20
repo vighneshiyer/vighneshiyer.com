@@ -426,7 +426,7 @@ I have collected many model-isms from Prof. Reddi's course and placed them in th
 ## A Better Path
 
 As was discussed before, the focus should not be on asking the model and evaluating how it does, but rather on using the model to build better software.
-I recently saw a good example of this from Mark Ren's group[^12] called [SALUTION](https://www.linkedin.com/posts/mark-h-r-4837318_nvidiaresearch-ugcPost-7374877258735558656-Vm8H/).
+I recently saw a good example of this from Mark Ren's group[^12] called [SALUTION: Autonomous SAT Solver Evolution](https://www.linkedin.com/posts/mark-h-r-4837318_nvidiaresearch-ugcPost-7374877258735558656-Vm8H/).
 They aren't presenting "asking the model" as the goal itself, but instead asking the model to produce a better SAT solver, which is the main contribution.
 They can discuss the *specific elements of the code* that the model generated to produce a faster solver.
 The focus is on the product, not the model.
@@ -441,6 +441,12 @@ This is a counterexample from Mark Ren. He's not just asking the model as the re
 
 It would be good if more work like this was done.
 Work as a domain expert who is trying to improve some algorithm or work on a specific problem and use the model (who cares how you're using it) to help you make things better.
+
+Another recent example is the paper ["ASPEN: LLM-Guided E-Graph Rewriting for RTL Datapath Optimization"](https://www.csl.cornell.edu/~zhiruz/pdfs/aspen-mlcad2025.pdf).
+Here, e-graphs are used to perform word-level datapath optimization, which is usually done by hand for arithmetic circuits.
+The LLM is used to generate additional rewrite rules for the e-graph engine and prioritize them based on PPA feedback from the CAD tools.
+This process, which would normally require human intervention, is done autonomously, and it produces improved results over a static rewrite rule set.
+While I believe it would be better to fold back these improvements into more robust abstractions in the e-graph engine, I can appreciate that the model did do something cool.
 
 ## Conclusion
 
@@ -517,6 +523,7 @@ However, I do believe that some discretion is needed here with regards to choosi
 My point is that the result of domain-specific research should be the product rather than the model loop that is used to create the product.
 
 Furthermore, it is much more valuable to build something using the model and report how it went via a blog post rather than evaluating some bespoke agent you built on some benchmark and publishing the results for them to only arrive 6 months in the future.
+Here is a good example: [Vibing a Non-Trivial Ghostty Feature](https://mitchellh.com/writing/non-trivial-vibing).
 
 Lastly, I believe that domain knowledge is crucial when it comes to building the right scaffolding, choosing a good problem, and picking a strong baseline to compare against.
 Building that domain knowledge should be the priority for anyone entering a domain.
@@ -673,7 +680,7 @@ https://grok.com/share/c2hhcmQtMg%3D%3D_72a6ec7a-c0c3-4b5f-8b5d-f384ea157af6
 ## Addendum
 
 With all the argumentation out of the way, it's time for fun.
-I'll use this section to write about some funny model-isms from Prof. Vijay Janapa Reddi's (Harvard) [CS249r website](https://harvard-edge.github.io/cs249r_fall2025/).
+I'll use this section to write about some funny model-isms from Prof. Vijay Janapa Reddi's CS249r (*Architecture 2.0: Agentic AI for Computer Systems Design*) [website](https://harvard-edge.github.io/cs249r_fall2025/).
 
 ### Reddi's Agents
 
