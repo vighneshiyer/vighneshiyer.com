@@ -50,6 +50,7 @@ China:
 - https://www.eastisread.com/
 - https://www.pekingnology.com/
 - https://danwang.co/
+- https://www.readingthechinadream.com/
 
 Health:
 

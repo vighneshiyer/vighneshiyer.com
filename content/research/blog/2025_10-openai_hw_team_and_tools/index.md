@@ -97,3 +97,108 @@ So what will it be? My guess is a many core MIMD machine with local per-core scr
   - Highly specialized datatypes and minimal ALUs may give higher compute density and maybe lower leakage power over NVIDIA
   - And that's it... the software will be a far cry from the maturity of the CUDA stack
   - Oh, and of course TCO. That's all that matters for them perhaps. But in the larger context, TCO includes SW optimization costs and silicon underutilization opportunity costs too. Hard to believe you can beat GB300 NVL72 (see Semianalysis InferenceMAX).
+
+## Latest Announcement
+
+- https://x.com/OpenAI/status/1977794196955374000
+
+> We’re designing our own chips — taking what we’ve learned from building frontier models and bringing it directly into the hardware. Building our own hardware, in addition to our other partnerships, will help all of us meet the world’s growing demand for AI.
+>
+> In Episode 8 of the OpenAI Podcast, @sama and @gdb join Broadcom’s Hock Tan and Charlie Kawwas with host @andrewmayne to discuss how OpenAI-designed chips will power the world’s growing AI demand.
+
+The podcast has many gems
+
+- Sam: etching transistors to the token that comes out
+- Kawwas: networking, scale up, scale out, scale across
+- Brockman: conceptual pieces in place -> then AGI
+- Brockman: massive design space
+- Brockman: teams within openai, their output is a direct function of how much compute they get
+
+- https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/
+
+- https://x.com/theaustinlyons/status/1977795942234353757
+
+> The $AVGO partnership isn't just a custom chip, but entire rack-scale cluster for reasoning inference, per the Broadcom + OpenAI podcast this morning:
+>
+> "Andrew Mayne: So this is going to entail both compute and chip design and scaling out?
+>
+> Sam Altman: This is a full system... the vertical integration point is really important... design the whole system, all of the stuff about the chip, the way we design these racks, the networking between them, how the algorithms that we're using fit the inference chip itself, a lot of other stuff all the way to the end product."
+
+- https://x.com/itsclivetime/status/1977772728850817263
+
+> Really happy to be announcing the chips we’ve been cooking the past 18 months! OpenAI kicked off the reasoning wave with o1, but months before that we’d already started designing a chip tuned precisely for reasoning inference of OpenAI models.
+>
+> In January 2024, I joined OpenAI as a hybrid gpu programmer & custom chip designer, the first IC on an oddly positioned hardware team that hadn’t yet committed to the idea of custom chips. These past 21 months I’m so lucky to have gotten the chance to learn from this incredibly talented and tiny team, accelerated by tight codesign with our ML team, Broadcom, and a few really cool new AI tools ;)
+>
+> Now we’re 9 months away from what is I think the fastest and largest volume ramp of any first time chip. Looking forward to pushing the cost and latency of intelligence to zero.
+
+- https://x.com/dnystedt/status/1977988409080901873
+
+> OpenAI – Broadcom Podcast Interview on custom chip tie-up.
+>
+> Sam Altman: “To zoom out a little bit, if you simplify what we do in this whole process, you know, melt sand, run energy through it, and get intelligence out the other end…” 1/14 $AVGO $TSM $NVDA $AMD #OpenAI
+>
+> 2/14 More than a chip:
+> Sam: “…as we realized we were going to really need the whole system together to support this – it’s just gotten more and more complex – it turns out Broadcom is also incredible at helping design systems. So we are working together on that entire package…”
+>
+> 3/14 Co-designers, specific work
+> Sam: “We are able to think from etching the transistors all the way up to the token that comes out when you ask ChatGPT a question, and design the whole system – all of the stuff about the chip, the way we design the racks, the networking between them, how the algorithms that we’re using fit the inference chip itself – all the way to the end product.”
+>
+> 4/14 Importance of computing hardware
+>
+> OpenAI President Greg Brockman: Years ago... “…we really saw if you scale it by 2x, then suddenly your agent is 2x better and it’s like, okay, we have to push this to the limit.”
+>
+> 5/14 Semiconductors
+>
+> Sam: “To zoom out a little bit, if you simplify what we do in this whole process, to, you know, melt sand, run energy through it, and get intelligence out the other end -  you’re not literally melting sand – but it’s a nice visual”
+>
+> Broadcom CEO Hock Tan (laughing): “That’s a good one. I like that.”
+>
+> Sam: “What we want is the most amount of intelligence we can get out of each unit of energy, because that will become the gate at some point. I hope what this whole process will show us (is) from the model we design to the chip to the rack, we will be able to wring out so much more intelligence per watt.”
+>
+> Hock: “And you control your own destiny. You do your own chips, you control your own destiny.”
+>
+> 6/14 Big Fail for AI accelerator firms
+>
+> Brockman: “There were all sorts of chip startups, with novel approaches that were very different from GPUs and we started giving them a ton of feedback, saying ‘here’s where we think things are going, it needs to be models of this shape’ and honestly, a lot of them just didn’t listen to us. And so it’s very frustrating to be in this position where you say ‘we see the direction the future should be going (but) we have no ability to really influence it besides just sort of trying to influence other people’s roadmaps.”
+>
+> 7/14 Building ChatGPT’s chip expertise
+>
+> Brockman: “…we’ve been able to apply our own models to designing this chip, which has been really cool. We’ve been able to pull in the schedule, we’ve been able to get massive area reductions – you take components that humans have already optimized and just port compute into it and the model comes out with its own optimizations. And it’s very interesting. We’re at the point now where, I don’t think any of the optimizations we have are ones that human designers couldn’t have come up with, like usually our experts take a look at it later, and say yeah, this was on my list, but it was like 20-things that would have taken them another month to get to.” $SNPS $CDNS
+>
+> 8/14 More ChatGPT
+>
+> Broadcom chip chief Charlie Kawwas: “…my software engineers now already use that from a software point of view and it’s delivering efficiencies of dozens of engineers. On the hardware side, we’re not there yet. But you know, the good news – we’ll get there (with OpenAI) – yes, we should absolutely leverage this.”
+>
+> 9/14 OpenAI loves GPUs
+>
+> Sam: “…the GPUs of today are incredible, incredible things. I’m very grateful, and we will continue to really need a lot of those. The flexibility and the ability to let us do fast research is amazing.
+>
+> Greg: “…in 2017 when we started looking at all these other accelerators, it was actually very non-obvious about what the landscape would look like in 5-10 years. I think it’s really a testament to companies like Nvidia, AMD for how much the GPU has moved forward and continued to be the dominant accelerator.”
+>
+> 10/14 Training vs Inference
+>
+> Hock: “If you want to train, you design chips that are much stronger in computing, capacity – measured in TFLOPS – as well as network, because it’s not just one chip that makes it happen, it’s a cluster. But if you want to do inference, you put in more memory and memory access relative to compute. So you are, actually over time, creating chips optimized for particular workloads, applications, as we go along.”
+>
+> (TFLOPS: Tera Floating Point Operations Per Second)
+>
+> 11/14 OpenAI Chip Roadmap
+>
+> Hock: “…ChatGPT-5, 6, 7, on and on and each of them will require a different chip, a better chip, a more developed chip, advanced chip that we haven’t even begun to figure out how to get there. But we will.”
+>
+> “…it’s really incumbent on us to keep optimizing, pushing the envelope on leading-edge technology, and there’s still room to grow…as we go to 2-nanometers going forward, as we start doing all kinds of different technology, it is really great, exciting times, especially for hardware and the semiconductor industry.”
+>
+> OpenAI will begin to deploy the chips in late 2026.
+>
+> 12/14 Bigger and bigger clusters
+>
+> Sam: “The first cluster OpenAI had, the first one that I can remember the energy size for, was 2-megawatts (2MW). I don’t remember when we got to 20MW, but I remember when we got to 200MW…and we will finish this year a little bit over 2-gigawatts (2GW). And these recent partnerships will take us close to 30GW.”
+>
+> 13/14 Broadcom chip expertise / OpenAI workload understanding
+>
+> Greg: “…building our own chips for our own specific workloads was not something we could get into from a total standstill without working with Hock and Charlie and Broadcom. It’s been incredible to lean on their expertise with our understanding of the workload…to accelerate what’s possible through this project.”
+>
+> 14/14 End
+> Sama: The AI computing infrastructure buildout right now is “…the biggest joint industrial project in human history.”
+>
+> “This requires a lot of companies, a lot of countries, a lot of industries to come together, and a lot of stuff has to happen at the same time and we’ve all got to invest together… (and given everything we’ve seen) I think the whole industry has decided this is a good bet to take.”

@@ -349,6 +349,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Case Against Indian Immigration: A Misaligned Elite in the Making](https://arctotherium.substack.com/p/the-case-against-indian-immigration/comments)
 - [Overpopulation FAQs: Understanding Population Dynamics, Overpopulation, and Population Control](https://zerocontradictions.net/faqs/overpopulation)
 - [Sapir-Whorf Theory: How Language And Semantics Influence Thought](https://zerocontradictions.net/language/sapir-whorf-theory)
+- [The Great Feminization](https://www.compactmag.com/article/the-great-feminization/) ([X](https://x.com/herandrews/status/1978793394978603116))
 
 ### China
 
@@ -357,6 +358,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [In the new Beijing](https://www.lrb.co.uk/the-paper/v47/n06/long-ling/diary) (an interesting look at Xiong’an)
 - [Structure and Interpretation of the Chinese Economy](https://yuxi-liu-wired.github.io/essays/posts/structure-interpretation-chinese-economy/)
 - [What role does technology play for China's transition from a "low-trust" society to a potentially high-trust one?](https://www.china-translated.com/p/what-role-does-technology-play-for)
+- [Youthology on China's Vulnerable Generation](https://www.readingthechinadream.com/youthology-on-chinas-vulnerable-generation.html) ([thread](https://x.com/favelaoverlord/status/1976328970246451641))
 
 ## Productivity
 

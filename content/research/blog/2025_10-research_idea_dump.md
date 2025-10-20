@@ -12,12 +12,30 @@ Research ideas
 
 
 - Mess for Gemmini
-- Tt blackhole emulation
-- Adl and compilation, taidl, openvadl, pydrofoil
+- Adl and compilation, taidl, openvadl, pydrofoil (https://arxiv.org/pdf/2510.09932 - Act: Automatically Generating Compiler Backends from Tensor Accelerator ISA Descriptions)
 - Yufeng question article / project
 - Ai accelerator understanding
 - Ml compiler understanding
 - Diagramming using gradient descent, maybe first an overview of what exists already in the world of diagramming
+- HDL design
+- Look at the picture that me and joonho drew on the whiteboard a long time ago - consolidation and linkages of all fundamental projects that could be done
+- Full stack, simulation-driven profiling
+  - See "hello world" profiling article by Richard Sites
+
+## RTL Simulation with TT Blackhole
+
+Efficient RTL simulation requires 2 things
+
+- Blackhole has one "T2" Baby RISC-V core within each Tensix Core which supports a substantial subset of RVV with decent performance: https://camel-cdr.github.io/rvv-bench-results/tt_t2/index.html
+- Ronin (https://github.com/tenstorrent/ronin) is an abandoned TT project that tried to create a better, more CUDA-like programming model for TT. Most importantly for this project, Ronin contained a functional simulator of TT Wormhole called Jitte. An emulator for TT Blackhole is a requirement for the RTL emulator project (can't rely on having the TT hardware available).
+- TT SW stack (https://docs.tenstorrent.com/getting-started/tt-software-stack.html)
+  - Pretty much only TT-Metal is relevant for this project and all the higher-level operators are not useful
+  - But even TT-Metal is filled with difficult abstractions for us to use
+- https://docs.tenstorrent.com/tt-metal/latest/tt-metalium/tt_metal/advanced_topics/memory_for_kernel_developers.html#risc-v-address-space (some notes)
+- Architecture
+  - 5 Baby RISC-V cores per Tensix Core (https://github.com/tenstorrent/tt-isa-documentation/tree/main/BlackholeA0/TensixTile/BabyRISCV) the architecture is described in detail
+  - These Baby cores aren't powerful enough to use for RTL emulation. They can have bubbles in their pipelines, limited support for forwarding, but overall okok maybe.
+  - Baby cores all access instructions via the L1 scratchpad (1.5 MiB per Tensix core)
 
 ## Yufeng's Question
 

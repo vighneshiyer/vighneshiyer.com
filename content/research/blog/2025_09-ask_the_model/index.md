@@ -569,20 +569,31 @@ The argument the whitepaper uses to justify "ADRS" goes like this:
 
 **Therefore**: Asking the model is a suitable and effective way of conducting systems research. Humans should focus on *guiding* the agent and *formulating* useful problems to solve.
 
-### My Take
+### My Opinion
 
 At first glance, everything here seems reasonable.
 I would say that their argument is airtight, *except for the first premise*.
 
-#### What is Systems Research?
+#### What is Being Argued For?
 
 Here is the sentence from the whitepaper that I paraphrased into the first premise:
 
 > In this paper, we advocate an AI-driven approach to systems performance problems. While performance optimization is not the only focus of systems research, it remains a central one—a brief survey of top systems, networking, and database venues (NSDI, OSDI, SIGMOD, SOSP, and VLDB) shows that over one-third of published papers feature performance optimization algorithms as their core contribution.
 
-The authors concede that not all of systems research can be boiled down to performance optimization, but the focus of ADRS is in this area.
-In this formulation, the paper has already been written before the work has been done.
-In the extreme case, the solution has been specified even before the problem has been identified (solution-oriented problem).
+The authors concede that not all of systems research can be boiled down to performance optimization.
+However, for the sake of argument, and since ADRS is most suitable for it, let's first examine the case of performance optimization systems research.
+
+In this case, I would argue that the paper has *already been written* before any work has been done.
+The researcher has found a problem (i.e. bottleneck, performance pathology) in an existing system that he knows is solvable (i.e. amenable to optimization) using the typical techniques used in the field (e.g. better heuristics, more suitable data structures, speculation).
+It is just[^13] a matter of doing the profiling and implementation to show that an improvement has been made and to characterize how significant it is.
+
+[^13]: I don't mean to trivialize the difficulty of implementation, but it is often mechanical in nature (which is why ADRS can work)
+
+In the case of ADRS, the situation is even more extreme &mdash; the solution is known even before the problem has been specified.
+The solution being, "ask the model".[^14]
+Perhaps the details of prompting, test-time scaling, and Monte Carlo tree search aren't known in advance, but this doesn't change the fact that the *model is primal* in ADRS.
+
+[^14]: "Asking the model" is a solution in search of a problem, a 'solution-oriented' problem.
 
 #### Why Can't We Go All the Way?
 
@@ -591,15 +602,27 @@ Consider this statement from the whitepaper:
 > In the broader context of AI-driven research, our focus is deliberately narrow.
 > Not only do we restrict our scope to the systems domain, but in this context, we focus only on the task of solution discovery, while largely ignoring other aspects in the research process, like problem formulation, literature survey, or paper writing.
 
-The whitepaper focuses on the task of writing / editing code (which they term "solution discovery"), and they leave the other aspects of the research process in the hands of humans.
-But if we were to [consult the charts](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/), it would seem that Mr. Model can take over the other aspects soon enough too.
+ADRS is focused on the task of writing / editing code (which they term "solution discovery"), while the other aspects of the research process (problem identification, setting up the model's scaffold, writing a paper) are left in the hands of humans.
+But if we were to [consult the charts](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/), it seems that Mr. Model can take over these other aspects too, very soon.
 
 Why can't the last step ("Paper Write-Up") be done agentically?
 This is often the most mechanical and uninspiring part of the research process.
-We can even "close the loop" by having the model come up with new problems to solve on its own.
+We can even "close the loop" by having the model come up with new problems to solve on its own &mdash; this is just a matter of search over existing code and literature + profiling production machines.
 
-The argument for ADRS taken to its conclusion would end up turning systems research into a fully
+The argument for ADRS, taken to its logical conclusion, would end up turning systems research into a fully model-driven paper pumping machine.
+Arguably, systems research in its current form is already a human-driven paper pumping machine.
+We can see the first inklings of ADRS transitioning the paper machine from being human to model driven.[^15]
 
+[^15]: This methodology has been put into action by [Sakana AI](https://sakana.ai/ai-scientist-first-publication/)
+
+#### What is Systems Research?
+
+But of course, systems research is not merely a matter of finding some bottleneck and alleviating it with the right code edits (i.e. "performance optimization").
+Ray, Spark, Hadoop, Mesos, SkyPilot,
+<!--
+https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/peyton-jones.pdf
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-write-a-great-research-paper.pdf
+-->
 
 #### What Should Academics Do?
 
