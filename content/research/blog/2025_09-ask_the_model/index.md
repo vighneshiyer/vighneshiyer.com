@@ -421,6 +421,7 @@ So, Prof. Reddi, Architecture 2.0 has already been superseded! It should be time
 Reddi, architecture 2.0 a ripoff from karpathys software 2.0. but reddi! Karpathys recently announced software 3.0! Where's the update? Get with the times! Natural language will be used to generate architectures. The googling moonshot. These people don't appreciate systematic engineering. It's all just a blob for them and they don't wish to interact with the abstractions.
 -->
 
+I have collected many model-isms from Prof. Reddi's course and placed them in the [addendum of this article](#addendum).
 
 ## A Better Path
 
@@ -611,25 +612,67 @@ We can even "close the loop" by having the model come up with new problems to so
 
 The argument for ADRS, taken to its logical conclusion, would end up turning systems research into a fully model-driven paper pumping machine.
 Arguably, systems research in its current form is already a human-driven paper pumping machine.
-We can see the first inklings of ADRS transitioning the paper machine from being human to model driven.[^15]
+We can already see the first inklings of ADRS transitioning the paper machine from being human to model driven.[^15]
 
 [^15]: This methodology has been put into action by [Sakana AI](https://sakana.ai/ai-scientist-first-publication/)
 
+#### What Should Academics Do?
+
+Even if we were to concede that ADRS is a good research methodology, what exactly does this process produce?
+In the best case, it produces a system (e.g. an application server, inference service, load balancer, workload scheduler) that is slightly more optimized than what already exists.
+
+This form of research is *justifiable* and *undoubtedly valuable* for a large hyperscaler such as Google: see their paper ["ECO: An LLM-Driven Efficient Code Optimizer for Warehouse Scale Computers"](https://arxiv.org/abs/2503.15669).
+They show the model many historical examples of performance anti-patterns and their fixes, and then ask the model to find additional opportunities in the `google3` codebase.
+The model autonomously makes the right code edits, checks that its changes are valid with existing unit/integration tests, makes a PR for a Googler to review, and once deployed in production, the model-written code is monitored to validate its correctness and characterize its performance improvement.
+
+> Currently deployed on Google's hyperscale production fleet, this system has driven >25k changed lines of production code, across over 6.4k submitted commits, with a >99.5% production success rate.
+> Over the past year, ECO has consistently resulted in significant performance savings every quarter. On average, the savings produced per quarter are equivalent to over 500k normalized CPU cores.
+
+How can anyone argue with this?
+Indeed, I must concede that this work is valuable and impactful.
+
+While we should be impressed by this research, we should also ask, *"is this what academics should be doing"*?
+It makes sense for a hyperscaler to optimize every bit of code they can, where even a tiny performance optimization makes a significant impact on the scale they operate at.
+But does it make sense for an academic research lab to do the same?
+
+I would argue the answer is *no*.
+For one, academics should be *prototyping new systems* rather than making nit optimizations to existing ones.
+If academics are relegated to doing the same work as industry research labs, but on open source repositories, it begs the question as to why academics exist in the first place.
+Where is the risk in ADRS?
+Do something the industry players can't do!
+
 #### What is Systems Research?
 
+Let's go back to the original point I made about the first premise being fishy.
+As the authors concede, systems research *is not* just about finding some bottleneck and alleviating it with the right code edits ("performance optimization").
+If ADRS picks up steam and begins to dominate the conference proceedings, which I suspect it will, it will crowd out the other, more interesting, aspects of systems research.
+
+I claim that the most impactful and interesting systems research projects involve building completely new libraries, tools, abstractions, programming models, compiler infrastructures, and *paradigms*.
+Let me illustrate by example.
+
+Just from the lab of the ADRS authors, came these wildly successful projects: [Mesos](https://mesos.apache.org/) (which led to its modern incarnation, [Kubernetes](https://kubernetes.io/)), [Spark](https://spark.apache.org/) (which pioneered modern data processing abstractions and was commercialized as [Databricks](https://www.databricks.com/spark/about)), [Ray](https://www.ray.io/) (which is widely used for distributed AI jobs, arguably a successor to Spark, and was commercialized as [Anyscale](https://www.anyscale.com/)), and [Skypilot](https://github.com/skypilot-org/skypilot) (which implements a "cloud-neutal" abstraction layer and will certainly be commercialized soon).[^16]
+
+[^16]: Other impactful systems projects: ML (TensorFlow, PyTorch, JAX, MLIR, Triton), data (Dask, Polars, DuckDB), infra (gRPC, Terraform, Kafka, Nix), databases (Cassandra, RocksDB, ClickHouse)
+
+While these projects are arguably too industrial and commercialization-focused for academic research, their impact can't be understated.
+Impactful systems research involves building real systems and new abstractions, and free-form *exploration* of some unknown space.
+Can the ADRS methodology alone produce high impact academic research?
+It seems unlikely.
+
+<!--
 But of course, systems research is not merely a matter of finding some bottleneck and alleviating it with the right code edits (i.e. "performance optimization").
-Ray, Spark, Hadoop, Mesos, SkyPilot,
+-->
+
 <!--
 https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/peyton-jones.pdf
 https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-write-a-great-research-paper.pdf
+https://chatgpt.com/share/68f68f73-6fe4-8004-ae13-6e58b07802f1
+https://grok.com/share/c2hhcmQtMg%3D%3D_72a6ec7a-c0c3-4b5f-8b5d-f384ea157af6
 -->
-
-#### What Should Academics Do?
-
-While this form of systems research is justifyable and undoubtedly valualble (link to ECO paper) in an industry setting, it is hard to justify that this is what academics should be doing.
 
 ## Addendum
 
+With all the argumentation out of the way, it's time for fun.
 I'll use this section to write about some funny model-isms from Prof. Vijay Janapa Reddi's (Harvard) [CS249r website](https://harvard-edge.github.io/cs249r_fall2025/).
 
 ### Reddi's Agents
