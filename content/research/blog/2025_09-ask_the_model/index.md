@@ -524,6 +524,7 @@ My point is that the result of domain-specific research should be the product ra
 
 Furthermore, it is much more valuable to build something using the model and report how it went via a blog post rather than evaluating some bespoke agent you built on some benchmark and publishing the results for them to only arrive 6 months in the future.
 Here is a good example: [Vibing a Non-Trivial Ghostty Feature](https://mitchellh.com/writing/non-trivial-vibing).
+More examples can be found on [Simon Willison’s blog](https://simonwillison.net/series/using-llms/) such as ["Getting DeepSeek-OCR working on an NVIDIA Spark via brute force using Claude Code"](https://simonwillison.net/2025/Oct/20/deepseek-ocr-claude-code/).
 
 Lastly, I believe that domain knowledge is crucial when it comes to building the right scaffolding, choosing a good problem, and picking a strong baseline to compare against.
 Building that domain knowledge should be the priority for anyone entering a domain.
