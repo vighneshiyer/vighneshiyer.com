@@ -521,6 +521,12 @@ figure {
   }
 }
 
+@media screen and (max-width: $mobile-breakpoint) {
+  figure img.padding {
+    padding: 0;
+  }
+}
+
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr
 hr {
   border: none;
@@ -976,13 +982,13 @@ a.anchor {
       font-size: var(--step--2);
     }
   }
-  
+
   // Active TOC link styling
   a.active {
     color: var(--accent-color) !important;
     font-weight: var(--bold-font-weight);
     position: relative;
-    
+
     &::before {
       content: "→";
       margin-right: var(--space-3xs);
