@@ -55,9 +55,25 @@ I will point out the ones I like.
 
 ## MICRO 2025
 
-Pending...
+- Titan-I: An Open-Source, High Performance RISC-V Vector Core (https://dl.acm.org/doi/full/10.1145/3725843.3756059)
+- OASIS: A Commercial High Performance Terminal AI Processor Supporting RISC-V Tensor Extension Instructions (https://dl.acm.org/doi/pdf/10.1145/3725843.3756054)
+  - Haven't read this too closely, but it seems interesting and it is about a real SoC from SOPHGO
+- TAIDL: Tensor Accelerator ISA Definition Language with Auto-generation of Scalable Test Oracles (https://dl.acm.org/doi/pdf/10.1145/3725843.3756075)
+  - Read: "scalable test oracle" -> "functional simulator"
+  - This is about an architectural description language (ADL) and generating functional simulators from it, but the title completely obfuscates what they're doing, as is usual among academics
+  - Gemmini comparison is fishy, but I'll let it slide.
+  - The TAIDL codebase is a mess, v2 (https://github.com/act-compiler/taidl), v1 - for the paper(https://github.com/act-compiler/taidl/tree/v1.1.1)
+  - But I like the idea generally. Why are academics so bad at software engineering
+- PyTorchSim: A Comprehensive, Fast, and Accurate NPU Simulation Framework (https://dl.acm.org/doi/pdf/10.1145/3725843.3756045)
+  - I have to look at this carefully as it is another simulation framework paper, and those are often fishy
+  - But again, I like the high level idea
+
+## Others
 
 - Icicle: Open-Source Hardware Support for Top-Down Microarchitectural Analysis on RISC-V (https://www.cs.columbia.edu/~sedwards/papers/weingarten2025icicle.pdf)
   - Very good work, good job
 - Bridging Simulation and Silicon: A Study of RISC-V Hardware and FireSim Simulation (https://arxiv.org/abs/2509.18472)
   - The methodology isn't great, but at least this is something worth exploring. Much more than I can say about other work.
+- The Saturn Microarchitecture Manual (https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-215.pdf)
+- Instruction Set Migration at Warehouse Scale (https://arxiv.org/pdf/2510.14928)
+  - A great practical paper from Google
