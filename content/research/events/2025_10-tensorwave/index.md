@@ -1,19 +1,118 @@
 +++
 title = "TensorWave: Massive Scale Training & Inference"
 date = 2025-10-21
-draft = true
-description = ""
+draft = false
+description = "How is it looking for AMD in late 2025? ScalarLM, ZLUDA, the CUDA moat, and more!"
+
+[extra]
+new = true
 +++
 
-- Nice and fun event held at the HockeyStack office in SF.
-- Small panel discussion from 7pm for around 45 minutes
-- Idk why TensorWave is allowed to host these events anymore. AMD shouldn't allow it. There were 250+ people on the invite but maybe 50 people showed up to the event, counting the TensorWave employees. The space was huge and really could accommodate hundreds of people. Lots of seating was set up. Lots of pizza and poison was ready to go.
+On October 21, 2025, [TensorWave](https://tensorwave.com/) (the all-AMD neocloud) held an event titled ["Massive Scale Training & Inference Panel + Networking"](https://luma.com/user/tensorwave?e=evt-uYChiLUtDtmCprG) at the very spacious HockeyStack office in San Francisco.
+Featuring a lot of drinks, pizza, a panel, and plenty of opportunity for mixing, I had a fun time.
+Let's get into it.
+
+## The Setup
+
+> The panel will explore Massive Scale Training and Inference for the enterprise with ScalarLM.
+>
+> Panelists: A curated lineup of leaders and community builders from leading tech companies and foundations including:
+>
+> - Greg Diamos - Architect, ScalarLM
+>
+> - Molham Aref - Founder & CEO, RelationalAI
+>
+> - Farbod Tavakkoli - Data Scientist, AT&T
+>
+> - Jeff Tatarchuk – Moderator, Co-Founder, TensorWave
+
+{{ image(path="room.jpg", class="content", padding=false) }}
+
+I came to this event expecting a deep discussion of the internals of [ScalarLM](https://www.scalarlm.com/), a unified training / inference stack that runs on AMD GPUs.
+I wanted to know its low-level internals, performance and profiling details, and the challenges in porting vLLM to run various models on AMD GPUs cleanly and efficiently.
+I was expecting a discussion of what has been done so far, what doesn't work, and how things will change in the coming months.
+
+But, none of this happened: the panel was disappointing.
+Perhaps I should have gone to the PyTorch or Triton Developers Conference instead.[^1]
+
+[^1]: Turns out that it is ["Open Source AI Week"](https://events.linuxfoundation.org/open-source-ai-week/) in SF
+
+## The Panel
+
+After getting some drinks, we all sat down for the panel at 7pm which lasted around 45 minutes.
+
+{{ gallery(images=[
+    "panel.jpg",
+    "panel_speakers.jpg",
+], popout=false, caption="The panelists. Ilya substituted for Jeff.") }}
+
+### ScalarLM
+
+We began with some pleasantries and then Greg jumped into some slides about ScalarLM.
+
+{{ gallery(images=[
+    "scalar_lm_tensorwave.jpg",
+    "scalar_lm.jpg",
+], popout=false) }}
+
+So ScalarLM does run on the TensorWave cloud, and it's a framework that glues together [Megatron-Core](https://developer.nvidia.com/megatron-core) (a PyTorch training building-block library developed by NVIDIA and ported to run on ROCm), [vLLM](https://github.com/vllm-project/vllm) as an inference engine, and can, in principle, be used for inference or fine-tuning of any model available on [HuggingFace](https://huggingface.co/models).
+
+<!--
 - The panel discussion didn't have anything to do with ScalarLM! Which I why I came here in the first place. Greg was there, but he only talked about ScalarLM at a very high level. I wanted to know the low-level internals, performance and profiling details (perhaps discussion of inclusion in InferenceMAX and MLPerf), and the challenges in porting vLLM to run random HF models on AMD GPUs cleanly. And what does and doesn't work so far, and how that will change in the coming months.
+-->
+
+{{ gallery(images=[
+    "scalar_lm_kube.jpg",
+    "scalar_lm_overview.jpg",
+], popout=false) }}
+
+This was followed by a few slides discussing the high-level APIs provided by ScalarLM and support for Kubernetes deployments on TensorWave.
+Sure.
+Nice.
+But I could have just found this on the [ScalarLM website](https://www.scalarlm.com/architecture/)[^2].
+And that was it for ScalarLM 😞.
+Switching gears now.
+
+[^2]: ScalarLM is very light on documentation; expected for such a new and understaffed project.
+
+### Time for Enterprise AI
+
+Enterprises are very serious operations.
+AI is absolutely required to make critical business decisions.
+If you aren't using the model to accelerate the decision making process, what are you even doing?
+
+{{ gallery(images=[
+    "ai_for_decision_intelligence.jpg",
+    "superalignment.jpg",
+], popout=false, caption="Mr. Model, what should I charge for these widgets?") }}
+
+The [RelationalAI](https://www.relational.ai/) stressed that "superalignment", .
+The "superalignment" they're talking about has nothing to do with the "superalignment" of the squealing AI safetyists.
+
+### AT&T 'Telco' Fine-Tuning
+
+And now, for the highlight of the panel.
+Behold, the "enterprise" usecase for ScalarLM presented by a data scientist from AT&T.
+
+- The panel itself was quite laughable. The AT&T guy presented some Telco-specific fine-tuning of Gemma 4B using ScalarLM on a TensorWave cluster, but I think everyone saw this as a joke. Why would anyone bother to use AMD unless they were penny pinching (which no one has to do today considering how well funded all these AI companies are)? And AMD systems aren't even cheaper once you consider the time spent porting software. As Jensen said, even if his competitors give their hardware away for free, it still isn't enough for them to get traction in the market. I would think he is right.
+
+
+## TensorWave Today
+
+- Idk why TensorWave is allowed to host these events anymore. AMD shouldn't allow it. There were 250+ people on the invite but maybe 50 people showed up to the event, counting the TensorWave employees. The space was huge and really could accommodate hundreds of people. Lots of seating was set up. Lots of pizza and poison was ready to go.
 - The relationship between RelationalAI, TensorWave, and ScalarLM are still unclear. They are 3 separate entities, but they seem to have overlapping employees.
+- TensorWave DC side is not bad actually - the best of the AMD GPU clouds so far. From what we heard, TensorWave has improved their rack and cluster level networking reliability to the point where it can be used like any other tier-1 GPU cloud's systems. They have decent telemetry. They have decent provisioning speed. I haven't tried it myself, but I get the impression that it has improved substantially over the past 6 months.
+
+## The Market
+
+- What GPU markets exist? 1. Gaming 2. HPC / Workstation applications 3. Training 4. Inference
+  - How does the AMD programming model allow them to capture each one? In the current form, it doesn't.
+
+## The CUDA Moat Today
+
+
 - https://parallelprogrammer.substack.com/
   - The CUDA Handbook
-- TensorWave DC side is not bad actually - the best of the AMD GPU clouds so far. From what we heard, TensorWave has improved their rack and cluster level networking reliability to the point where it can be used like any other tier-1 GPU cloud's systems. They have decent telemetry. They have decent provisioning speed. I haven't tried it myself, but I get the impression that it has improved substantially over the past 6 months.
-- The panel itself was quite laughable. The AT&T guy presented some Telco-specific fine-tuning of Gemma 4B using ScalarLM on a TensorWave cluster, but I think everyone saw this as a joke. Why would anyone bother to use AMD unless they were penny pinching (which no one has to do today considering how well funded all these AI companies are)? And AMD systems aren't even cheaper once you consider the time spent porting software. As Jensen said, even if his competitors give their hardware away for free, it still isn't enough for them to get traction in the market. I would think he is right.
 - AMD software side isn't great. Kernel drivers are still flaky. Lots of random bugs everywhere, especially in the cross-GPU communication libraries (which are just a fork of NCCL).
 - NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler. AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
 - ZLUDA has a revival! After it was shot down by AMD management (don't want to be stuck with the CUDA APIs and let NVIDIA always make the first move) and legal (what if it is illegal to work on PTX directly?), it seems those very smart guys moved out of AMD and kept working thanks to external funding coming online. (https://github.com/vosen/ZLUDA)
@@ -28,8 +127,6 @@ description = ""
 - Dojo stories. No precise exceptions. No step-by-step debugger. No compiler. No pre-silicon emulator. And all these and more led to the failure of Dojo.
   - The importance of building the entire software stack BEFORE tapeout is so essential. AMD can't do this. Nearly all SW dev only happens after the silicon is back and brought up. The internal uarch is a total mess.
   - NVIDIA does this all the time. They have a robust chip emulator. Firmware and drivers are nailed down before the silicon is back and it's running full workloads on the power up day.
-- What GPU markets exist? 1. Gaming 2. HPC / Workstation applications 3. Training 4. Inference
-  - How does the AMD programming model allow them to capture each one? In the current form, it doesn't.
 
 - https://x.com/SemiAnalysis_/status/1980840184905158712
 
@@ -40,7 +137,5 @@ description = ""
 > NVIDIA continues to be the leader in collective libraries but Jensen must not taken it for granted given the heavily increased competition in the open source collective communication space. Just like how TRTLLM moved to an GitHub first development when facing heavy competition from SGLang/vLLM, Jensen should seriously consider moving NCCL to GitHub first open development model due to the competition in the collective front too. To draw parallel comparisons to the inference engine world, Collective Communication Libraries are moving from the 2021 "FasterTransformer" era to the 2025 "SGLang/vLLM/TRTLLM" era.
 >
 > The main competitors in the collective library space include China's DeepEP library, AMD's new MORI, AMD's upcoming MORI-CCL, Meta's CTran & NCCLX, NVIDIA's NCCL (which has released their new NCCL Device API, NCCL's new GPU-Initiated Networking, etc). Competition breeds innovation! 🚀
-
-The "superalignment" they're talking about has nothing to do with the "superalignment" of the squealing AI safetyists.
 
 Use `gthumb` for cropping
