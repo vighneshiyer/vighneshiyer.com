@@ -81,13 +81,24 @@ Enterprises are very serious operations.
 AI is absolutely required to make critical business decisions.
 If you aren't using the model to accelerate the decision making process, what are you even doing?
 
+{{ image(path="ai_for_decision_intelligence.jpg", class="inset", padding=false, caption="Mr. Model, what should I charge for these widgets?") }}
+
+This part was presented by [RelationalAI](https://www.relational.ai/), a company that builds "decision agents" that are "aligned to your business".
+
+{{ image(path="relational_ai.png", class="inset", padding=false, caption="Rel is here to help you make business decisions.") }}
+
+The [RelationalAI](https://www.relational.ai/) guy stressed that "superalignment" of the foundation model was crucial to its performance in real-world tasks.[^3]
+To be clear, the "superalignment" they're talking about has nothing to do with the "superalignment" of the squealing AI safetyists.
+They are talking about fine-tuning, RAG, and context engineering using a business' internal, domain-specific data.
+
+[^3]: I don't mean to mock RelationalAI too much, it is a serious company
+
 {{ gallery(images=[
     "ai_for_decision_intelligence.jpg",
     "superalignment.jpg",
 ], popout=false, caption="Mr. Model, what should I charge for these widgets?") }}
 
-The [RelationalAI](https://www.relational.ai/) stressed that "superalignment", .
-The "superalignment" they're talking about has nothing to do with the "superalignment" of the squealing AI safetyists.
+We're not ready to fire the data scientists who do manual English to SQL translation yet, but we're one step closer, thanks to the focus on "superalignment".
 
 ### AT&T 'Telco' Fine-Tuning
 
