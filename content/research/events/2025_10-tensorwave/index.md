@@ -66,7 +66,7 @@ So ScalarLM does run on the TensorWave cloud, and it's a framework that glues to
     "scalar_lm_overview.jpg",
 ], popout=false) }}
 
-This was followed by a few slides discussing the high-level APIs provided by ScalarLM and support for Kubernetes deployments on TensorWave.
+This was followed by a few slides discussing support for Kubernetes deployments on TensorWave and the high-level APIs provided by ScalarLM.
 Sure.
 Nice.
 But I could have just found this on the [ScalarLM website](https://www.scalarlm.com/architecture/)[^2].
@@ -81,32 +81,44 @@ Enterprises are very serious operations.
 AI is absolutely required to make critical business decisions.
 If you aren't using the model to accelerate the decision making process, what are you even doing?
 
-{{ image(path="ai_for_decision_intelligence.jpg", class="inset", padding=false, caption="Mr. Model, what should I charge for these widgets?") }}
+{{ image(path="ai_for_decision_intelligence.jpg", class="inset", padding=false, caption="Mr. Model, what should I charge for these widgets to maximize profits?") }}
 
 This part was presented by [RelationalAI](https://www.relational.ai/), a company that builds "decision agents" that are "aligned to your business".
 
-{{ image(path="relational_ai.png", class="inset", padding=false, caption="Rel is here to help you make business decisions.") }}
+{{ image(path="relational_ai.png", class="inset", padding=false, caption="Rel, the decision agent, is here to help you make business decisions.") }}
 
-The [RelationalAI](https://www.relational.ai/) guy stressed that "superalignment" of the foundation model was crucial to its performance in real-world tasks.[^3]
+The [RelationalAI](https://www.relational.ai/) guy stressed that "superalignment" of the foundation model was crucial to its performance in real-world tasks.
+
+{{ image(path="superalignment.jpg", class="inset", padding=false) }}
+
 To be clear, the "superalignment" they're talking about has nothing to do with the "superalignment" of the squealing AI safetyists.
-They are talking about fine-tuning, RAG, and context engineering using a business' internal, domain-specific data.
+They are talking about fine-tuning, RAG, and context engineering using a business' internal, domain-specific data.[^3]
+So what does superalignment enable?
 
 [^3]: I don't mean to mock RelationalAI too much, it is a serious company
 
 {{ gallery(images=[
-    "ai_for_decision_intelligence.jpg",
-    "superalignment.jpg",
-], popout=false, caption="Mr. Model, what should I charge for these widgets?") }}
+    "spider_20_benchmark.jpg",
+    "bird_benchmark.jpg",
+], popout=false, caption="'Superalignment' for accurately writing SQL from English requests") }}
 
-We're not ready to fire the data scientists who do manual English to SQL translation yet, but we're one step closer, thanks to the focus on "superalignment".
+They presented improvements on a few text-to-SQL benchmarks: [Spider 2.0](https://spider2-sql.github.io/) and [BIRD-SQL Mini-Dev](https://github.com/bird-bench/mini_dev).
+With RelationalAI, we're one step closer to being able to replace data scientists, thanks to the special sauce of "superalignment".
+You may have noticed that this has nothing to do with AMD GPUs, TensorWave, or ScalarLM.
 
 ### AT&T 'Telco' Fine-Tuning
 
 And now, for the highlight of the panel.
-Behold, the "enterprise" usecase for ScalarLM presented by a data scientist from AT&T.
+Behold, the "enterprise" use case for ScalarLM, presented by a data scientist from AT&T.
+
+{{ gallery(images=[
+    "ask_att.jpg",
+    "telco_ai_asset.jpg",
+], popout=false, caption="Just ask the AT&T model") }}
+
+
 
 - The panel itself was quite laughable. The AT&T guy presented some Telco-specific fine-tuning of Gemma 4B using ScalarLM on a TensorWave cluster, but I think everyone saw this as a joke. Why would anyone bother to use AMD unless they were penny pinching (which no one has to do today considering how well funded all these AI companies are)? And AMD systems aren't even cheaper once you consider the time spent porting software. As Jensen said, even if his competitors give their hardware away for free, it still isn't enough for them to get traction in the market. I would think he is right.
-
 
 ## TensorWave Today
 
@@ -114,7 +126,7 @@ Behold, the "enterprise" usecase for ScalarLM presented by a data scientist from
 - The relationship between RelationalAI, TensorWave, and ScalarLM are still unclear. They are 3 separate entities, but they seem to have overlapping employees.
 - TensorWave DC side is not bad actually - the best of the AMD GPU clouds so far. From what we heard, TensorWave has improved their rack and cluster level networking reliability to the point where it can be used like any other tier-1 GPU cloud's systems. They have decent telemetry. They have decent provisioning speed. I haven't tried it myself, but I get the impression that it has improved substantially over the past 6 months.
 
-## The Market
+## GPU Markets Today
 
 - What GPU markets exist? 1. Gaming 2. HPC / Workstation applications 3. Training 4. Inference
   - How does the AMD programming model allow them to capture each one? In the current form, it doesn't.

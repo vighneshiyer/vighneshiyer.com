@@ -350,6 +350,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Overpopulation FAQs: Understanding Population Dynamics, Overpopulation, and Population Control](https://zerocontradictions.net/faqs/overpopulation)
 - [Sapir-Whorf Theory: How Language And Semantics Influence Thought](https://zerocontradictions.net/language/sapir-whorf-theory)
 - [The Great Feminization](https://www.compactmag.com/article/the-great-feminization/) ([X](https://x.com/herandrews/status/1978793394978603116))
+- [The Patel Cartel: Inside the Quiet Motel Monopoly](https://mythosnoir.substack.com/p/the-patel-cartel)
 
 ### China
 
