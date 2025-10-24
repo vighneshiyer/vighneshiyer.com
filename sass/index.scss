@@ -132,11 +132,11 @@ $mobile-breakpoint: 650px;
 
 //// Dark theme
 $tn-dark-bg: #1a1b26;
-$tn-dark-bg-contrast: color.darken($tn-dark-bg, 3%);
-$tn-dark-bg-contrast1: color.darken($tn-dark-bg, 5%);
-$tn-dark-bg-highlight: color.lighten($tn-dark-bg, 5%);
-$tn-dark-fg: color.lighten(#c0caf5, 3%);
-$tn-dark-fg-contrast: color.lighten(#a9b1d6, 3%);
+$tn-dark-bg-contrast: color.darken($tn-dark-bg, 5%);
+$tn-dark-bg-contrast1: color.darken($tn-dark-bg, 7%);
+$tn-dark-bg-highlight: color.lighten($tn-dark-bg, 7%);
+$tn-dark-fg: color.lighten(#c0caf5, 5%);
+$tn-dark-fg-contrast: color.lighten(#a9b1d6, 5%);
 
 $tn-dark-red: #f7768e;
 $tn-dark-green: #9ece6a;
@@ -148,11 +148,11 @@ $tn-dark-orange: #ff9e64;
 
 //// Light theme
 $tn-light-bg: #e6e7ed;
-$tn-light-bg-contrast: color.lighten($tn-light-bg, 3%);
-$tn-light-bg-contrast1: color.lighten($tn-light-bg, 5%);
-$tn-light-bg-highlight: color.darken($tn-light-bg, 5%);
-$tn-light-fg: color.darken(#343b58, 3%);
-$tn-light-fg-contrast: color.lighten(#40434f, 3%);
+$tn-light-bg-contrast: color.lighten($tn-light-bg, 5%);
+$tn-light-bg-contrast1: color.lighten($tn-light-bg, 7%);
+$tn-light-bg-highlight: color.darken($tn-light-bg, 7%);
+$tn-light-fg: color.darken(#343b58, 5%);
+$tn-light-fg-contrast: color.lighten(#40434f, 5%);
 
 $tn-light-red: #8c4351;
 $tn-light-green: #385f0d;
