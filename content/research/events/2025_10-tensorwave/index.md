@@ -194,17 +194,45 @@ To understand NVIDIA's continued dominance, I'll go over the big GPU markets and
 
 ### GPU Markets
 
-I think there are 4 significant markets for GPUs today:
+I think there are 5 significant markets for GPUs today:
 
-1. Gaming
-2. HPC / workstation applications
-3. ML Training
-4. ML Inference
+1. **Gaming**
 
-- What GPU markets exist? 1. Gaming 2. HPC / Workstation applications 3. Training 4. Inference
-  - How does the AMD programming model allow them to capture each one? In the current form, it doesn't.
+This was the original GPU market, but it has declined in importance in the past 5 years.
+Since this market is shrinking as a percentage of total revenue, being competitive in gaming isn't good enough for AMD.
+AMD serves the gaming market just fine with slightly cheaper and more available consumer GPUs vs NVIDIA.
+3D rendering APIs (DirectX, OpenGL, Vulkan) generally work well enough regardless of GPU vendor.
+
+2. **HPC / workstation applications**
+
+Consider the use of GPUs in CAD (AutoCAD, SolidWorks), CAE (FEA / CFD / MBD tools), weather simulation, 3D rendering (Blender, Maya), astrophysics, computational chemistry, data processing, medical imaging, and so forth.
+These applications are quite bespoke and domain-specific, and are also a small fraction of total GPU revenue.
+However, NVIDIA has a strong advantage here.
+Tons of custom CUDA kernels everywhere and no one will bother to HIP-ify them, unless. (keep reading)
+
+3. **ML Training**
+
+This is the largest GPU market by revenue so far, but will (or perhaps already has been) be eclipsed by ML inference.
+ML engineers want to write PyTorch and have the compiler handle everything else.
+In practice, after some experimentation, the top labs will have engineers hand-write CUDA kernels (or tune a higher-level compiler) for production training runs &mdash; they will try their best to max out the utilization of each GPU and network resources.
+
+4. **ML Inference**
+
+This market resembles the training one, but there are many more chip vendors and hyperscalers getting into the inference game (e.g. Tenstorrent, Groq, Cerebras, d-Matrix, AWS, Microsoft) while still relying on GPUs for training.
+
+5. **Edge**
+
+Think about applications like VR headsets, smart cameras, and autonomous vehicles.
+In the low-power domain (sub-10W), there is plenty of competition, but low margins.
+However, in the high-performance tier (required for robotics and AVs), the NVIDIA Jetson series of products completely dominates with basically zero competition.
+
+*The question is*: how does AMD's programming model, software stack, and compiler allow them to capture each GPU market?
 
 ### Why is CUDA Great?
+
+- https://parallelprogrammer.substack.com/
+  - The CUDA Handbook
+- NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler. AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
 
 #### Lessons from Dojo
 
@@ -222,10 +250,17 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 
 > There is something here that is a bit subtle. CUDA kernels are amenable to model autonomous iteration because they manage to separate enough microarchitectural details from the architectural ISA. If this isn't the case, I suspect LLMs would perform much worse - consider the Groq or Dojo ISA.
 
-- https://parallelprogrammer.substack.com/
-  - The CUDA Handbook
-- NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler. AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
+#### NVIDIA's Open Source Strategy
 
+- https://x.com/SemiAnalysis_/status/1980840184905158712
+
+> Meta has open sourced their CTran library that natively works with AMD & NVIDIA GPUs 🚀. Previously, if u want multiple NVIDIA GPUs to work together on an workload, you must used the NVIDIA NCCL library. Although NCCL's source code is public, it does not have an open governance model, does not have open CI, employs an "code dump" update model, is not GitHub first, and rarely accepts external contributions. Previously, If you want multiple GPUs to work together on an workload, you must used the AMD fork called RCCL library, which is a delayed fork of NVIDIA's NCCL.  With CTran, it is 1 unified library and allows for adding new like Bruck's in an way such that the code can be shared between different AI GPU types.
+>
+> Furthermore, Meta has open sourced NCCLX (NCCL extended) which is their production-tested collective library that powered all Llama training and uses the unified CTran library. Meta is the creator & main maintainer of PyTorch and is well trusted in the open source community.
+>
+> NVIDIA continues to be the leader in collective libraries but Jensen must not taken it for granted given the heavily increased competition in the open source collective communication space. Just like how TRTLLM moved to an GitHub first development when facing heavy competition from SGLang/vLLM, Jensen should seriously consider moving NCCL to GitHub first open development model due to the competition in the collective front too. To draw parallel comparisons to the inference engine world, Collective Communication Libraries are moving from the 2021 "FasterTransformer" era to the 2025 "SGLang/vLLM/TRTLLM" era.
+>
+> The main competitors in the collective library space include China's DeepEP library, AMD's new MORI, AMD's upcoming MORI-CCL, Meta's CTran & NCCLX, NVIDIA's NCCL (which has released their new NCCL Device API, NCCL's new GPU-Initiated Networking, etc). Competition breeds innovation! 🚀
 
 ### ZLUDA
 
@@ -243,21 +278,11 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
   - Hard to say. If you have scalar runahead and a decoupled post-commit vector machine like SiFive does, then this wouldn't buy you much and would make the register space fragmented, making compilation harder
   - But for a SIMT machine where you have in-order vector instruction dispatch and limited opportunity to amortize the cost of multiple RISC instructions, perhaps this would make sense. Allowing physical separation and banking of the RF would be advantageous too from a PD and timing perspective, but it is hard to say what it would buy you for the tradeoff of more spills and compiler complexity.
 
-### NVIDIA's Open Source Strategy
-
-- https://x.com/SemiAnalysis_/status/1980840184905158712
-
-> Meta has open sourced their CTran library that natively works with AMD & NVIDIA GPUs 🚀. Previously, if u want multiple NVIDIA GPUs to work together on an workload, you must used the NVIDIA NCCL library. Although NCCL's source code is public, it does not have an open governance model, does not have open CI, employs an "code dump" update model, is not GitHub first, and rarely accepts external contributions. Previously, If you want multiple GPUs to work together on an workload, you must used the AMD fork called RCCL library, which is a delayed fork of NVIDIA's NCCL.  With CTran, it is 1 unified library and allows for adding new like Bruck's in an way such that the code can be shared between different AI GPU types.
->
-> Furthermore, Meta has open sourced NCCLX (NCCL extended) which is their production-tested collective library that powered all Llama training and uses the unified CTran library. Meta is the creator & main maintainer of PyTorch and is well trusted in the open source community.
->
-> NVIDIA continues to be the leader in collective libraries but Jensen must not taken it for granted given the heavily increased competition in the open source collective communication space. Just like how TRTLLM moved to an GitHub first development when facing heavy competition from SGLang/vLLM, Jensen should seriously consider moving NCCL to GitHub first open development model due to the competition in the collective front too. To draw parallel comparisons to the inference engine world, Collective Communication Libraries are moving from the 2021 "FasterTransformer" era to the 2025 "SGLang/vLLM/TRTLLM" era.
->
-> The main competitors in the collective library space include China's DeepEP library, AMD's new MORI, AMD's upcoming MORI-CCL, Meta's CTran & NCCLX, NVIDIA's NCCL (which has released their new NCCL Device API, NCCL's new GPU-Initiated Networking, etc). Competition breeds innovation! 🚀
-
-## Lunacy on BART
+## SF Hype Cycle Lunacy
 
 {{ gallery(images=[
     "bubble_2.jpg",
     "bubble_1.jpg",
 ], popout=false, caption="We are living in an insane asylum") }}
+
+I think we're near the top.
