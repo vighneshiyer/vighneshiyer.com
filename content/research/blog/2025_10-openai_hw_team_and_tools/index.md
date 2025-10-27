@@ -202,3 +202,17 @@ The podcast has many gems
 > Sama: The AI computing infrastructure buildout right now is “…the biggest joint industrial project in human history.”
 >
 > “This requires a lot of companies, a lot of countries, a lot of industries to come together, and a lot of stuff has to happen at the same time and we’ve all got to invest together… (and given everything we’ve seen) I think the whole industry has decided this is a good bet to take.”
+
+- Dojo stories. No precise exceptions. No step-by-step debugger. No compiler. No pre-silicon emulator. And all these and more led to the failure of Dojo.
+  - The importance of building the entire software stack BEFORE tapeout is so essential. AMD can't do this. Nearly all SW dev only happens after the silicon is back and brought up. The internal uarch is a total mess.
+  - NVIDIA does this all the time. They have a robust chip emulator. Firmware and drivers are nailed down before the silicon is back and it's running full workloads on the power up day.
+
+Dojo exposed the hw redundancy directly in the isa, like the cores were fused off per device and the compiler has to reason about that lol, another reason for failure
+
+The importance of cleanly separating architecture and microarchitectute, this makes all the difference to build a robust compiler, ergonomics are so important, Nvidia did this right
+
+But do LLM generated kernels make this obsolyet thinking? If karpathy is right that llms aren't thinking machines but rather human spirits, then I don't think the spirits would be happy with a broken compiler and exposed uarch details everywhere lol.
+
+> If language models can reason from documentation and code analysis and perhaps the PTX spec alone, then why would examples be a limiting factor (all the libraries you mentioned have their code open source)? What to you appears to be the fundamental limiter for how models can write CUDA code? What are the failure modes you see?
+
+> There is something here that is a bit subtle. CUDA kernels are amenable to model autonomous iteration because they manage to separate enough microarchitectural details from the architectural ISA. If this isn't the case, I suspect LLMs would perform much worse - consider the Groq or Dojo ISA.

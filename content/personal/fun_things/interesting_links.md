@@ -360,6 +360,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Structure and Interpretation of the Chinese Economy](https://yuxi-liu-wired.github.io/essays/posts/structure-interpretation-chinese-economy/)
 - [What role does technology play for China's transition from a "low-trust" society to a potentially high-trust one?](https://www.china-translated.com/p/what-role-does-technology-play-for)
 - [Youthology on China's Vulnerable Generation](https://www.readingthechinadream.com/youthology-on-chinas-vulnerable-generation.html) ([thread](https://x.com/favelaoverlord/status/1976328970246451641))
+- [Exams are everything in China](https://andrewbatson.com/2025/10/18/exams-are-everything-in-china/)
 
 ## Productivity
 

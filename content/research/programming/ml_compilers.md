@@ -125,3 +125,10 @@ baremetal ML compilers:
 - You can try Yufeng's Baremetal-NN setup (https://github.com/ucb-bar/Baremetal-NN) which should be the easiest way to get model inference on RISC-V working assuming all the kernels your model uses have implemented
 - You can hack microTVM (https://tvm.apache.org/docs/v0.9.0/topic/microtvm/index.html), but I have no idea how easy this will be
 - You can try IREE's RISC-V baremetal backend (https://iree.dev/guides/deployment-configurations/bare-metal/), which I think Dima or Miles have played with before
+
+- https://x.com/clattner_llvm/status/1982196673771139466
+
+> Thank you to folks at @metaai for publishing their independent perf analysis comparing CUDA and Mojo against Triton and TileLang DSLs, showing Mojo meeting and beating CUDA, and leaving DSLs in the dust.
+
+The DSL vs custom language war continues. Certainly it seems using Triton or TileLang in production is a bad idea and leaves performance on the table vs CUDA C++.
+

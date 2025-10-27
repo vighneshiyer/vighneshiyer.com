@@ -132,10 +132,18 @@ Now AT&T can deploy a tiny model themselves to service telco-specific token gene
 
 And with that, the panel was over.
 
-### Jensen Always Wins
+## Jensen Always Wins
 
-Looking at what was presented, what does any of it have to do with TensorWave or AMD GPUs specifically?
-Why would anyone bother to use AMD GPUs unless they were penny pinching, which hardly anyone does nowadays, considering how well funded these AI companies are.
+Looking at what was presented, what does any of it really have to do with TensorWave or AMD GPUs?
+Why would anyone bother to use AMD GPUs?
+There are usually 3 arguments:
+
+1. Pricing. TensorWave vs Lambda
+2. Availability.
+3. Negotiating leverage. This is tightly coupled with the pricing argument. The importance of having negotiating leverage mainly applies to hyperscalars or frontier AI labs who continuously purchase massive quantities of GPUs. The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, so I would claim that the importance of leverage against NVIDIA is one-step-removed.
+
+unless they were penny pinching, which hardly anyone does nowadays, considering how well funded these AI companies are.
+When looking at the situation with these 3 points in mind, it makes you wonder, why does anyone bother to use AMD GPUs?
 And using AMD isn't even cheaper once you factor in the opportunity cost of the time spent porting software and getting optimal performance.
 
 In 2024, [Jensen reminded everyone](https://www.youtube.com/watch?v=cEg8cOx7UZk) of this important fact:
@@ -164,7 +172,13 @@ But the content is so lackluster, and honestly laughable, which makes AMD look w
 
 [^4]: AMD has [come a really long way](https://inferencemax.semianalysis.com/) in driver stability and PyTorch support
 
-TensorWave signed up around 250 people for this event, but there were perhaps 50 people who attended, including the TensorWave employees.
+The TensorWave people are actually very competent!
+These kinds of events don't showcase that competence.
+TensorWave is a serious company with good datacenter engineers.
+They [raised a $100M Series A](https://tensorwave.com/blog/series-a) and they have the largest MI325X/MI350X cluster in production.
+Let's hear about the details and benchmarking of the real infrastructure they have built!
+
+Regarding this event, TensorWave signed up around 250 people, but there were perhaps 50 people who attended, including the TensorWave employees.
 I understand it was a free event held during the busy AI Week with many other overlapping events, but still.
 The empty space, with stacks of boxes of uneaten pizza and plenty of wine and White Claw to spare, made the event feel even more lackluster.
 
@@ -176,10 +190,10 @@ From speaking with attendees, it seems that TensorWave is actually *not bad at a
 They've improved their rack and cluster-level networking, and things are now quite reliable and stable for long training runs.
 The telemetry they offer is decent and their provisioning speed is also acceptable.
 It seems they are the *best when it comes to AMD neoclouds*, and their systems can be used just like any other tier-1 GPU cloud.
-I haven't tried the TensorWave cloud myself, but my impression is that it has improved substantially over the past 5 months.
+I haven't tried the TensorWave cloud myself, but my impression is that it has improved substantially over the past 6 months.
 
-However, on AMD's side, things are still not that great.
-I heard that the driver stability and the quality of their software stack is in general poor.
+However, on AMD's side, things are still not that great (compared to NVIDIA).
+I heard that the driver stability and the quality of their software stack is, in general, middling.
 They are slow to respond to bug reports and there are still problems in their [cross-GPU communication library](https://github.com/ROCm/rccl).
 <!--
 - Idk why TensorWave is allowed to host these events anymore. AMD shouldn't allow it. There were 250+ people on the invite but maybe 50 people showed up to the event, counting the TensorWave employees. The space was huge and really could accommodate hundreds of people. Lots of seating was set up. Lots of pizza and poison was ready to go.
@@ -214,7 +228,7 @@ Tons of custom CUDA kernels everywhere and no one will bother to HIP-ify them, u
 
 This is the largest GPU market by revenue so far, but will (or perhaps already has been) be eclipsed by ML inference.
 ML engineers want to write PyTorch and have the compiler handle everything else.
-In practice, after some experimentation, the top labs will have engineers hand-write CUDA kernels (or tune a higher-level compiler) for production training runs &mdash; they will try their best to max out the utilization of each GPU and network resources.
+In practice, after some experimentation, the top labs will have engineers hand-write CUDA kernels (or tune a higher-level compiler such as Triton/Gluon or JAX/Pallas) for production training runs &mdash; they will try their best to max out the utilization of each GPU and network resources.
 
 4. **ML Inference**
 
@@ -270,6 +284,12 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 - AMD has tried to force tier-1 SW companies to HIP-ify their kernels (think Autodesk, Adobe, ...). It has mostly been a failure with billions lost in time alone. A CUDA emulation layer is crucial and the obvious way to get decent software support quickly. Trying to make people rewrite kernels just isn't going to work.
 - On the other hand, even though HIP and so forth for HPC / workstation software won't work logistically, since RoCM has decent support in PyTorch / JAX (?), it should be possible to make porting most DNN workloads easy. Still isn't the case due to custom CUDA kernels everywhere, but technically doable. Especially once they have a working Triton/Gluon backend that is as robust as the NVIDIA one.
 
+- Have to reimplement cuDNN and cuBLAS and other CUDA libraries that are linked in as blobs. Or really? Check the documentation for ZLUDA. Perhaps they can directly emulate the PTX that comes out of these libraries.
+- https://www.phoronix.com/forums/forum/hardware/graphics-cards/1582320-zluda-5-released-with-an-offline-compiler-for-cuda-on-non-nvidia-gpus
+- https://vosen.github.io/ZLUDA/blog/zluda-update-q4-2024/
+- https://vosen.github.io/ZLUDA/blog/zludas-third-life/
+- https://www.techradar.com/pro/a-lone-developer-just-open-sourced-a-tool-that-could-bring-an-end-to-nvidias-ai-hegemony-amd-financed-it-for-months-but-abruptly-ended-its-support-nobody-knows-why
+
 ### Spectral Compute
 
 - The Spectral Compute guys (https://scale-lang.com/) are taking another approach where they target the CUDA frontend directly! But this is mired in difficulty as they need to replicate all the functionality and subtleties of nvcc going down to PTX. And they need to handle the warp size being 64 on AMD but 32 on NVIDIA, which needs hacking at the source level.
@@ -278,6 +298,18 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
   - Hard to say. If you have scalar runahead and a decoupled post-commit vector machine like SiFive does, then this wouldn't buy you much and would make the register space fragmented, making compilation harder
   - But for a SIMT machine where you have in-order vector instruction dispatch and limited opportunity to amortize the cost of multiple RISC instructions, perhaps this would make sense. Allowing physical separation and banking of the RF would be advantageous too from a PD and timing perspective, but it is hard to say what it would buy you for the tradeoff of more spills and compiler complexity.
 
+### DensityAI (OpenNova)
+
+- When Dojo was dismanteled at TEsla, some of the best people left to form OpenNova
+- It came out of stealth and was rebranded DensityAI
+- They claim to do automotive AI training chips, but I think this is misstep. They should just focus on high performance silicon in general
+- They are using all the knowhow from Dojo, which I think was the highest performance, most vertically integrated architecture in the AI chip space (massive power draw, very exotic and new wafer-scale packaging)
+- Take the ideas from Dojo and the people and build the next one, but sell it publicly. Don't focus too much on inference-only workloads
+- OpenNova = wafer-scale integration of reticle sized logic dies that are co-packaged with HBM, and then mounted on a wafer-scale substrate. An ultra-high performance wafer-scale chip with crazy amounts of off-wafer bandwidth, just like Dojo.
+- But unlike Dojo, don't neglect the software., which is what caused its downfall (as docuomented above)
+  - The key is ZLUDA! We suspect that ZLUDA development is being funded by DensityAI. Their chip will ingest PTX and work out of the box using CUDA emulation. That is my suspicion. And then it will have its own programming model which can be targeted using the usual chain of PyTorch -> some IR -> custom backend with backend-specific annotations / transforms.
+
+- [Bloomberg: Former Tesla Executives Create Data Center Firm DensityAI](https://archive.is/v3oeJ#selection-1213.0-1213.57)   intnterline
 ## SF Hype Cycle Lunacy
 
 {{ gallery(images=[

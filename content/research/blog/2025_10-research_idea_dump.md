@@ -37,6 +37,8 @@ Efficient RTL simulation requires 2 things
   - These Baby cores aren't powerful enough to use for RTL emulation. They can have bubbles in their pipelines, limited support for forwarding, but overall okok maybe.
   - Baby cores all access instructions via the L1 scratchpad (1.5 MiB per Tensix core)
 
+## Symbolic Execution of PTX and Validation of Lowerings / LLM codegen
+
 ## Yufeng's Question
 
 > "Principled" way to design CPU / SoC?
