@@ -6,6 +6,15 @@ slug = "openai-hardware-effort"
 description = "XLS, HW design methodology, the supposed imminent tapeout"
 +++
 
+Even at the early stage, when OpenAI just came to be in 2015, their goal was the same as it is today: *artificial general intelligence* (AGI).
+At that time, the idea that language models could eventually produce human-like text was a stretch.
+And even if they believed that language models could get to that point, *general* intelligence would require all kinds of augmentation around it.
+As Greg Brockman put it recently, they thought that AGI was a matter of putting the right pieces in place, and then suddenly, it would emerge.
+
+
+After all, the human brain is remarkably efficient and small.
+Disembodied human. 100s of watts, scaling network size and connectivity to produce a normal brain or an Einstein brain. Ability to do human-like work on a computer autonomously - ability to use digital tools just like a human would to augment its ability to reason.
+
 OpenAI, of course, started off as an AI research lab, but as their userbase has grown and afforded them the ability to raise at insane valuations on expected future profitability, the organization has begun to sprawl out.
 In this context, [Stargate](), their effort to build multiple gigawatt datacenters[^1],
 

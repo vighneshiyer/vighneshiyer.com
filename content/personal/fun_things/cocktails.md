@@ -2,7 +2,7 @@
 title = "Cocktails"
 date = 2024-03-23
 draft = true
-description = "A very important topic"
+description = "A very important topic. Recipe cards and my alcohol reviews."
 +++
 
 It is nice to make cocktails at home to 1) customize them, 2) make them with the specific liquors that you like, 3) enjoy them in your own quiet space, and 4) save money.
@@ -24,28 +24,29 @@ Just buy these things.
 - *Bar spoon*: Just get some cheap bar spoons, the exact model doesn't matter.
 - *Cooler*: I use an insulated bag to hold all my ice and cold liquors, but a proper hard-case insulated cooler would be better.
 - *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget - these are all kind of the same.
-- Toothpicks: The poor man's version of the fancy cocktail pick
+- *Toothpicks*: The poor man's version of the fancy cocktail pick
 
 ## Prep
 
 There is nothing to do except chill all your mixers and liquors.
 Since all the cocktails I like are served chilled, I even chill the liquors that aren't typically chilled (whiskey, vermouth, rum, soju).
 
-## Liquors
+## Enumeration of Poisons
 
 Here are things I've tried and what I think.
-To be clear: I have no actual taste in alcohol.
+*To be clear*: I have no actual taste in alcohol.
+Total amateur opinions to follow.
 
 ### Whiskey
 
-- *Maker's Mark 46*: I like it
-- *Woodford Reserve (Regular)*: Pretty good, but I prefer Maker's 46 over this
-- *Suntory Toki*: I really like it. Ideal for sipping, highballs, and sours
-- *Four Roses Small Batch*: TBD.
+- *Maker's Mark 46* (6/10): I like it. Good enough neat.
+- *Woodford Reserve (Regular)* (4/10): Pretty good, but I prefer Maker's 46 over this. Not so great anymore after having better whiskeys.
+- *Suntory Toki* (6/10): I really like it. Ideal for sipping, highballs, and sours. Not great neat.
+- *Four Roses Small Batch* (8/10): The best so far. Excellent. Very smooth and flavorful. Very enjoyable neat.
 
 ### Rum
 
-- *Diplomatico Reserva Exclusiva*: TBD.
+- *Diplomatico Reserva Exclusiva*: I like it. A few feel it is too harsh, doesn't go down smooth, at least neat.
 
 ### Soju
 
@@ -54,11 +55,52 @@ To be clear: I have no actual taste in alcohol.
 
 ### Cocktail Liquors
 
-- *Dolin Rouge (Sweet) Vermouth*: TBD.
+- *Dolin Rouge (Sweet) Vermouth*: Decent, I have no comparison point.
+- Cointreau: TBD
+- TJ's Limoncello: TBD
+
+### Wines
+
+- Port
+  - Porto Morgado Old Tawny (10 Years). Sits around $10 from Trader Joe's. Hits way way above its price point. We love this.
+  - Porto Morgado Ruby. Not as good. Similar price point, but much worse than above imo.
+  - Fairbanks Cellars California Port (1.5L). Cheap but bad. Stay away.
+  - Warre's Otima 10 Tawny Porto. TBD
+- Reds
+  - Decoy Cabernet. Decent, hits a bit above its price point, but it's better to spend more.
+  - Sean Thackrey Pleiades XXXII. Very good. Fruity and smooth.
+  - Charles Shaw wines (all varieties). Very cheap, but do not buy lol. Get something nicer.
+  - No Es Pituko Carignan 2024. So so smooth, hard to believe there was any alcohol at all. Excellent.
+- Whites
+  - 2021 Virgo Magic Wines 'Disco Lemonade' Riesling. Tastes heavily like brined olives. I think this is an acquired taste, not for a general audience.
+  - Barefoot Moscato. Cheap, mild tasting, and gulpable. Get something nicer.
+  - Risata Moscato d'Asti DOCG. Low alcohol, smooth, sweet, and fruity. A crowd favorite.
+  - 2023 Nickel & Nickel Grand Sky Vineyard Chardonnay. Incredibly good, smooth, bright lime aftertaste.
+- Orange
+  - 2023 Gulp Hablo Orange (1L). TBD.
+  - Pielihueso Naranjo 2024. Very very good. Smooth, slightly fruity, and crisp. Best served cold.
+  - 2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact. Excellent.
+
+### Sake
+
+[Takara Sake](https://www.takarasake.com) has a sake factory in Berkeley, CA!
+I highly recommend visiting them and doing a tasting.
+What follows are all sakes from Takara (some brewed in Berkeley, others in Japan).
+
+- Sho Chiku Bai REI Junmai Daiginjo. One of our favorites. Cheap and good, serve chilled, crisp, fruity, and smooth. If it is too old, it will acquire a mushroom-y flavor.
+- Sho Chiku Bai Organic Nama. Good chilled, but has an earthy flavor. Not suitable for a general audience.
+- Sho Chiku Bai Takara Sierra Cold. This is an insane sake. Serve chilled. 12% ABV but tastes like zero! Very light flavor of slight sweetness and fruit, but mostly tasteless.
+- Sho Chiku Bai Nigori Crème de Sake. Cream sake! One of our favorites. Serve chilled. Flavor is both fruity and earthy, more on the sweet side.
+
+### Meads
+
+- The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
 
 ### Garnishes
 
 - *Luxadro cherries*: TBD. These are so expensive, it better be worth it.
+  - Totally worth it. So delicious and the syrup is great to add to a cocktail.
+- Angostura bitters. It is what it is, pretty good - not many other options.
 
 ## Recipe List
 
@@ -74,8 +116,8 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 ### Sour
 
 - In a cocktail shaker, add ice, 2oz whiskey
-- Add 3oz fresh lemonade (the Trader Joe's refrigerated lemonade works perfect, no need for additional sweetener)
-- Add the juice of about 1/4 of a lemon (use a citrus juicer)
+- Add 3oz fresh lemonade (the Trader Joe's refrigerated unpasteurized lemonade works perfect, no need for additional sweetener)
+- Add the juice of about 1/2 of a lemon (use a citrus juicer)
 - Shake hard for 10 seconds
 - Strain and pour over a large ice cube in a rocks glass. Garnish with cherry.
 - For a *NY Sour*, float 0.5oz of dry red wine (e.g. Malbec) over the back of a spoon
@@ -83,7 +125,7 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 ### Manhattan
 
 - In a mixing tin, add ice, 2oz whiskey, 1oz sweet vermouth, and 2 dashes of Angostura bitters
-- Stir 20-30 seconds until chilled and strain into glass (ice optional). Garnish with cherry.
+- Stir 20-30 seconds until chilled and strain into glass (no ice). Garnish with cherry.
 
 ### Highball
 
@@ -100,3 +142,41 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 
 - Rum, sweet vermouth, orange curacao, grenadine, cherry
 - TBD. I don't have everything for this.
+
+## Plans
+
+OK let's say I want to do a rum/whiskey/Irish cream event.
+
+- Whiskey drinks: Old fashioned, Manhattan (with vermouth or port!), Whiskey sour
+- Rum drinks: Daiquiri, Mai Tai, El Presidente
+- Irish cream: Mudslide (irish cream + Kahlua + vodka)
+
+To buy:
+
+- Whiskey
+  - Four Roses Small Batch / Single Barrel
+  - Angel's Envy
+  - Larceny Small Batch
+  - Michter's US1 Bourbon
+  - Redbreast 12 Yr Irish Whiskey
+  - Rittenhouse 100 (Rye) (manhattan) (probably too spicy for our taste)
+- Rum
+  - Appleton Estate 8 /12
+  - El Dorado 8
+  - Santa Teresa 1796
+  - Diplomático Mantuano
+  - El Pasador de Oro Rum XO
+  - Kaniche XO Artisanal Rum
+- Irish Cream
+  - Kavanagh / Baileys Irish Cream Liqueur
+  - Kahlua Coffee Liqueur
+- Vodka
+  - Vanilla vodka (mudslide)
+- Mead
+  - Oliver Camelot Mead
+- Others
+  - Orgeat
+  - Grenadine
+  - Jack Rudy Demerara Syrup
+  - Lemon + lime bag
+  - Unpasteurized lemonade

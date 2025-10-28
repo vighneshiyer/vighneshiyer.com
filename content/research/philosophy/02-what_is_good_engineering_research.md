@@ -89,3 +89,6 @@ Is extrinsic value the only thing that makes research meaningful? Can research d
 
 - A great analogy to the uselessness of novelty is to look at patents, every new thing must be novel but what does that really mean?
 - Patents measure novelty but are those the measures of impact or value? Think about how this applies to commercial products too, not just academic research
+
+- https://gwern.net/doc/science/1986-hamming
+- https://www.mccurley.org/advice/hamming_advice.html

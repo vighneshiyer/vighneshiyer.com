@@ -238,6 +238,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) (August 2024) ([HN link](news.ycombinator.com/item?id=43736739))
 - [Dynomight: I don't like NumPy](https://dynomight.net/numpy/) ([HN link](https://news.ycombinator.com/item?id=43996431))
 - [AdapTive-LeArning Speculator System (ATLAS): A New Paradigm in LLM Inference via Runtime-Learning Accelerators](https://www.together.ai/blog/adaptive-learning-speculator-system-atlas) ([HN link](https://news.ycombinator.com/item?id=45556474))
+- [Scaling Elections with GPUs and Mojo 🔥](https://ashvardanian.com/posts/scaling-elections/)
 
 ### ML Hardware
 

@@ -135,12 +135,13 @@ And with that, the panel was over.
 ## Jensen Always Wins
 
 Looking at what was presented, what does any of it really have to do with TensorWave or AMD GPUs?
-Why would anyone bother to use AMD GPUs?
-There are usually 3 arguments:
+<!--Why would anyone bother to use AMD GPUs?-->
+Here is my take on why someone would choose to use AMD GPUs:
 
-1. Pricing. TensorWave vs Lambda
-2. Availability.
-3. Negotiating leverage. This is tightly coupled with the pricing argument. The importance of having negotiating leverage mainly applies to hyperscalars or frontier AI labs who continuously purchase massive quantities of GPUs. The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, so I would claim that the importance of leverage against NVIDIA is one-step-removed.
+1. *Pricing*.
+TensorWave offers MI350X  vs Lambda
+2. *Availability*.
+3. *Negotiating leverage*. This is tightly coupled with the pricing argument. The importance of having negotiating leverage mainly applies to hyperscalars or frontier AI labs who continuously purchase massive quantities of GPUs. The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, so I would claim that the importance of leverage against NVIDIA is one-step-removed.
 
 unless they were penny pinching, which hardly anyone does nowadays, considering how well funded these AI companies are.
 When looking at the situation with these 3 points in mind, it makes you wonder, why does anyone bother to use AMD GPUs?
