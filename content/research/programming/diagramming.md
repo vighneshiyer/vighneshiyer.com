@@ -151,3 +151,7 @@ My GPT queries:
   - Fletcher for typst (as an alternative to tikz) seems quite beautiful
   - The line drawing semantics seem really nice: specify arrow directions for every turn and the terminating arrowhead with a label
   - Coordinates are semantic (not explicit), and the coordinate grid can be stretched / compressed
+
+- https://news.ycombinator.com/item?id=45742907
+  - Who needs Graphviz when you can build it yourself?
+  - Nice example of a domain specific layout engine that was actually quite simple to build

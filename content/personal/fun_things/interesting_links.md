@@ -301,6 +301,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [A Student's Guide to Writing with ChatGPT (openai.com)](https://news.ycombinator.com/item?id=42129064)
 - [Why are tech people suddenly so into homeschooling?](https://newsletter.goodtechthings.com/p/why-are-tech-people-suddenly-so-into) ([HN link](https://news.ycombinator.com/item?id=42698737))
 - [Aporia: Asian immigration and the signaling model of education](https://www.aporiamagazine.com/p/asian-immigration-and-the-signaling)
+- [‘Soul-Crushing’: Students Slam Harvard’s Grade Inflation Report](https://www.thecrimson.com/article/2025/10/30/students-react-grading-report/)
+  - In response to: [Harvard College’s Grading System Is ‘Failing,’ Report on Grade Inflation Says](https://www.thecrimson.com/article/2025/10/27/grading-workload-report/)
 
 ## Writing
 
@@ -352,6 +354,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Sapir-Whorf Theory: How Language And Semantics Influence Thought](https://zerocontradictions.net/language/sapir-whorf-theory)
 - [The Great Feminization](https://www.compactmag.com/article/the-great-feminization/) ([X](https://x.com/herandrews/status/1978793394978603116))
 - [The Patel Cartel: Inside the Quiet Motel Monopoly](https://mythosnoir.substack.com/p/the-patel-cartel)
+- [Women's Tears Win in the Marketplace of Ideas](https://www.richardhanania.com/p/womens-tears-win-in-the-marketplace)
 
 ### China
 

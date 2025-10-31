@@ -111,14 +111,14 @@ You may have noticed that this has nothing to do with AMD GPUs, TensorWave, or S
 And now, for the highlight of the panel.
 Behold, the "enterprise" use case for ScalarLM, presented by a data scientist from AT&T.
 
+The enterprise needs AI.
+And the AI needs to be fine-tuned with the domain-specific knowledge required to answer questions.
+In the case of AT&T, that means they need a fine-tuned foundation model with knowledge of 'telco' facts: a *telco-specific LLM*.
+
 {{ gallery(images=[
     "ask_att.jpg",
     "telco_ai_asset.jpg",
 ], popout=false, caption="Just ask the AT&T model") }}
-
-The enterprise needs AI.
-And the AI needs to be fine-tuned with the domain-specific knowledge required to answer questions.
-In the case of AT&T, that means they need a fine-tuned foundation model with knowledge of 'telco' facts: a *telco-specific LLM*.
 
 So they fine-tuned Gemma 4B using ScalarLM on a TensorWave cluster to do a good job at recalling and reasoning about "telco-specific" facts.
 
@@ -131,17 +131,84 @@ Now AT&T can deploy a tiny model themselves to service telco-specific token gene
 {{ image(path="money_saved.jpg", class="inset", padding=false, caption="Money saved! Tokens away!") }}
 
 And with that, the panel was over.
+Now that the panel discussion is out the way, I'll pull together some comments from various attendees and my own thoughts.
+
+## TensorWave and AMD Today
+
+Here is what TensorWave had to say about this event:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last week at Open Source Week in SF was a blast. <br><br>Packed room. Smart questions. Bold ideas.<br><br>Thanks to <a href="https://twitter.com/ATT?ref_src=twsrc%5Etfw">@ATT</a>, ScalarLM, and <a href="https://twitter.com/RelationalAI?ref_src=twsrc%5Etfw">@RelationalAI</a> for an awesome conversation on where open-source AI is headed and how <a href="https://twitter.com/AMD?ref_src=twsrc%5Etfw">@AMD</a> Instinct GPUs unlock what’s next. 🚀 <a href="https://t.co/0G4F7PsRux">pic.twitter.com/0G4F7PsRux</a></p>&mdash; TensorWave (@tensorwave) <a href="https://twitter.com/tensorwave/status/1983208403695513660?ref_src=twsrc%5Etfw">October 28, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+But now my take: first on TensorWave.
+Why do these guys continue to host these kind of events that just degrade confidence in AMD and make their GPUs look like a joke?
+The events are run so professionally with lots of photographers, event planners, and so forth.
+But the content is so lackluster, which makes AMD look way worse than what they deserve.[^4]
+
+[^4]: AMD has [come a really long way](https://inferencemax.semianalysis.com/) in driver stability and PyTorch support
+
+The TensorWave people are actually very competent!
+These kinds of events don't showcase that competence.
+TensorWave is a serious company with good datacenter engineers.
+They [raised a $100M Series A](https://tensorwave.com/blog/series-a) and they have the largest MI325X/MI350X cluster in production.
+Let's hear about the details and benchmarking of the real infrastructure they have built!
+
+Regarding this event, TensorWave signed up around 250 people, but there were perhaps 50 people who attended, including the TensorWave employees.
+I understand it was a free event held during the busy AI Week with many other overlapping events, but still.
+The empty space, with stacks of boxes of uneaten pizza and plenty of wine and White Claw to spare, made the event feel even more lackluster.
+
+<!--
+It is unclear what the relationship between RelationalAI, TensorWave, and ScalarLM is.
+As I understand, TensorWave funds ScalarLM, and RelationalAI uses TensorWave for some fine-tuning.
+They are 3 separate entities, but they also seem to have overlapping employees.
+-->
+
+From speaking with attendees, it seems that TensorWave is actually *not bad at all* from a technical perspective.
+They've improved their rack and cluster-level networking, and things are now quite reliable and stable for long training runs.
+The telemetry they offer is decent and their provisioning speed is also acceptable.
+It seems they are the *best when it comes to AMD neoclouds*, and their systems can be used just like any other tier-1 GPU cloud.
+I haven't tried the TensorWave cloud myself, but my impression is that it has improved substantially over the past 6 months.
+
+However, on AMD's side, things are still not that great (compared to NVIDIA).
+I heard that the driver stability and the quality of their software stack is, in general, middling.
+They are slow to respond to bug reports and there are still problems in their cross-GPU communication / collectives library &mdash; [rccl](https://github.com/ROCm/rccl).
+<!--
+- Idk why TensorWave is allowed to host these events anymore. AMD shouldn't allow it. There were 250+ people on the invite but maybe 50 people showed up to the event, counting the TensorWave employees. The space was huge and really could accommodate hundreds of people. Lots of seating was set up. Lots of pizza and poison was ready to go.
+- The relationship between RelationalAI, TensorWave, and ScalarLM are still unclear. They are 3 separate entities, but they seem to have overlapping employees.
+- TensorWave DC side is not bad actually - the best of the AMD GPU clouds so far. From what we heard, TensorWave has improved their rack and cluster level networking reliability to the point where it can be used like any other tier-1 GPU cloud's systems. They have decent telemetry. They have decent provisioning speed. I haven't tried it myself, but I get the impression that it has improved substantially over the past 6 months.
+- AMD software side isn't great. Kernel drivers are still flaky. Lots of random bugs everywhere, especially in the cross-GPU communication libraries (which are just a fork of NCCL).
+-->
+
 
 ## Jensen Always Wins
 
-Looking at what was presented, what does any of it really have to do with TensorWave or AMD GPUs?
-<!--Why would anyone bother to use AMD GPUs?-->
-Here is my take on why someone would choose to use AMD GPUs:
+Going back to what was presented in the panel, what does any of it really have to do with TensorWave or AMD GPUs?
+Here is my take on why someone would choose to use AMD GPUs today:
 
-1. *Pricing*.
-TensorWave offers MI350X  vs Lambda
-2. *Availability*.
-3. *Negotiating leverage*. This is tightly coupled with the pricing argument. The importance of having negotiating leverage mainly applies to hyperscalars or frontier AI labs who continuously purchase massive quantities of GPUs. The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, so I would claim that the importance of leverage against NVIDIA is one-step-removed.
+1. **Pricing**
+
+On [Lambda](https://lambda.ai/service/gpu-cloud), you can get a H100 for \$2.49/GPU/hr or a GH200 for \$1.49/GPU/hr and a reserved H100 cluster goes for \$1.85-\$2.29 per GPU-hr.
+A B200 HGX reserved cluster goes for $3.79/GPU/hr.
+
+On [TensorWave](https://tensorwave.com/bare-metal), you can get a reserved MI325X/MI350X cluster for \$1.95/\$2.85 per GPU-hr.
+If you're chasing value and short runs, you can get an on-demand MI300X on [Hot Aisle](https://hotaisle.xyz/pricing/) for \$1.99/GPU/hr.
+
+Pricing is basically a wash &mdash; perhaps a slight advantage to AMD.
+However, AMD does have a significant advantage when it comes to HBM capacity per GPU.
+
+2. **Negotiating leverage**
+
+This is tightly coupled with the pricing argument.
+The argument goes, if your application can only run on NVIDIA GPUs, then you are forced to pay whatever tribute Jensen demands.
+Therefore, you should diversify your hardware to build negotiating leverage against NVIDIA.
+
+The importance of having negotiating leverage mainly applies to hyperscalars or frontier AI labs who continuously purchase massive quantities of GPUs.
+The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, or buy such small quantities that leverage is not so important.
+
+3. **Availability**
+
+While NVIDIA GPUs are in very high demand, NVIDIA has far more cloud deployments than AMD.
+I can't comment on the real-life issues getting access to a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA GPU.
+
 
 unless they were penny pinching, which hardly anyone does nowadays, considering how well funded these AI companies are.
 When looking at the situation with these 3 points in mind, it makes you wonder, why does anyone bother to use AMD GPUs?
@@ -162,46 +229,6 @@ This lopsided situation isn't an accident.
 - The panel itself was quite laughable. The AT&T guy presented some Telco-specific fine-tuning of Gemma 4B using ScalarLM on a TensorWave cluster, but I think everyone saw this as a joke. Why would anyone bother to use AMD unless they were penny pinching (which no one has to do today considering how well funded all these AI companies are)? And AMD systems aren't even cheaper once you consider the time spent porting software. As Jensen said, even if his competitors give their hardware away for free, it still isn't enough for them to get traction in the market. I would think he is right.
 -->
 
-Now that the panel discussion is out the way, I'll pull together some comments from various attendees and my own thoughts.
-
-## TensorWave and AMD Today
-
-OK, first on TensorWave.
-Why do these guys continue to host these kind of events that just degrade confidence in AMD and make their GPUs look like a joke?
-The events are run so professionally with lots of photographers, event planners, and so forth.
-But the content is so lackluster, and honestly laughable, which makes AMD look way worse than what they deserve.[^4]
-
-[^4]: AMD has [come a really long way](https://inferencemax.semianalysis.com/) in driver stability and PyTorch support
-
-The TensorWave people are actually very competent!
-These kinds of events don't showcase that competence.
-TensorWave is a serious company with good datacenter engineers.
-They [raised a $100M Series A](https://tensorwave.com/blog/series-a) and they have the largest MI325X/MI350X cluster in production.
-Let's hear about the details and benchmarking of the real infrastructure they have built!
-
-Regarding this event, TensorWave signed up around 250 people, but there were perhaps 50 people who attended, including the TensorWave employees.
-I understand it was a free event held during the busy AI Week with many other overlapping events, but still.
-The empty space, with stacks of boxes of uneaten pizza and plenty of wine and White Claw to spare, made the event feel even more lackluster.
-
-It is unclear what the relationship between RelationalAI, TensorWave, and ScalarLM is.
-As I understand, TensorWave funds ScalarLM, and RelationalAI uses TensorWave for some fine-tuning.
-They are 3 separate entities, but they also seem to have overlapping employees.
-
-From speaking with attendees, it seems that TensorWave is actually *not bad at all* from a technical perspective.
-They've improved their rack and cluster-level networking, and things are now quite reliable and stable for long training runs.
-The telemetry they offer is decent and their provisioning speed is also acceptable.
-It seems they are the *best when it comes to AMD neoclouds*, and their systems can be used just like any other tier-1 GPU cloud.
-I haven't tried the TensorWave cloud myself, but my impression is that it has improved substantially over the past 6 months.
-
-However, on AMD's side, things are still not that great (compared to NVIDIA).
-I heard that the driver stability and the quality of their software stack is, in general, middling.
-They are slow to respond to bug reports and there are still problems in their [cross-GPU communication library](https://github.com/ROCm/rccl).
-<!--
-- Idk why TensorWave is allowed to host these events anymore. AMD shouldn't allow it. There were 250+ people on the invite but maybe 50 people showed up to the event, counting the TensorWave employees. The space was huge and really could accommodate hundreds of people. Lots of seating was set up. Lots of pizza and poison was ready to go.
-- The relationship between RelationalAI, TensorWave, and ScalarLM are still unclear. They are 3 separate entities, but they seem to have overlapping employees.
-- TensorWave DC side is not bad actually - the best of the AMD GPU clouds so far. From what we heard, TensorWave has improved their rack and cluster level networking reliability to the point where it can be used like any other tier-1 GPU cloud's systems. They have decent telemetry. They have decent provisioning speed. I haven't tried it myself, but I get the impression that it has improved substantially over the past 6 months.
-- AMD software side isn't great. Kernel drivers are still flaky. Lots of random bugs everywhere, especially in the cross-GPU communication libraries (which are just a fork of NCCL).
--->
 
 ## The CUDA Moat Today
 
@@ -245,9 +272,19 @@ However, in the high-performance tier (required for robotics and AVs), the NVIDI
 
 ### Why is CUDA Great?
 
-- https://parallelprogrammer.substack.com/
-  - The CUDA Handbook
-- NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler. AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
+[Nicholas Wilt](https://parallelprogrammer.substack.com/), who was on the original CUDA dev team, made [a](https://x.com/CUDAHandbook/status/1871583610035491104) [few](https://x.com/CUDAHandbook/status/1880155715572277344) [tweets](https://x.com/CUDAHandbook/status/1887448356437344332) that summarize why NVIDIA was able to capitalize on all five of these GPU markets.
+In short, they emphasized portability from the very beginning (supporting both Windows and Linux, APIs implemented in pure C), enabled flexible software integration (providing both a driver and runtime API), targeted PTX from CUDA C++ which enables the driver compiler to abstract away the churn of the machine ISA (SASS), and supporting CUDA across *all* product categories (mobile, desktop, and datacenter).
+
+NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler.
+AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
+
+
+<!--
+- The CUDA Handbook
+-->
+
+
+
 
 #### Lessons from Dojo
 
@@ -277,7 +314,19 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 >
 > The main competitors in the collective library space include China's DeepEP library, AMD's new MORI, AMD's upcoming MORI-CCL, Meta's CTran & NCCLX, NVIDIA's NCCL (which has released their new NCCL Device API, NCCL's new GPU-Initiated Networking, etc). Competition breeds innovation! 🚀
 
-### ZLUDA
+#### Future of Kernel Languages
+
+- https://x.com/clattner_llvm/status/1982196673771139466
+
+- 1st gen: CUDA C++
+- 2nd gen: Torch, TensorFlow -> Python eDSLs, eager execution of GPU kernels written in CUDA C++ (CuBLAS, CuDNN)
+- 3rd gen: Triton,
+- 4th gen: Mojo?
+
+- https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers
+- https://x.com/__tinygrad__/status/1982634315520651498
+
+## ZLUDA
 
 - ZLUDA has a revival! After it was shot down by AMD management (don't want to be stuck with the CUDA APIs and let NVIDIA always make the first move) and legal (what if it is illegal to work on PTX directly?), it seems those very smart guys moved out of AMD and kept working thanks to external funding coming online. (https://github.com/vosen/ZLUDA)
   - This might be the future of anything working on AMD
@@ -291,7 +340,7 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 - https://vosen.github.io/ZLUDA/blog/zludas-third-life/
 - https://www.techradar.com/pro/a-lone-developer-just-open-sourced-a-tool-that-could-bring-an-end-to-nvidias-ai-hegemony-amd-financed-it-for-months-but-abruptly-ended-its-support-nobody-knows-why
 
-### Spectral Compute
+## Spectral Compute
 
 - The Spectral Compute guys (https://scale-lang.com/) are taking another approach where they target the CUDA frontend directly! But this is mired in difficulty as they need to replicate all the functionality and subtleties of nvcc going down to PTX. And they need to handle the warp size being 64 on AMD but 32 on NVIDIA, which needs hacking at the source level.
 
@@ -299,7 +348,7 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
   - Hard to say. If you have scalar runahead and a decoupled post-commit vector machine like SiFive does, then this wouldn't buy you much and would make the register space fragmented, making compilation harder
   - But for a SIMT machine where you have in-order vector instruction dispatch and limited opportunity to amortize the cost of multiple RISC instructions, perhaps this would make sense. Allowing physical separation and banking of the RF would be advantageous too from a PD and timing perspective, but it is hard to say what it would buy you for the tradeoff of more spills and compiler complexity.
 
-### DensityAI (OpenNova)
+## DensityAI (OpenNova)
 
 - When Dojo was dismanteled at TEsla, some of the best people left to form OpenNova
 - It came out of stealth and was rebranded DensityAI
@@ -310,7 +359,8 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 - But unlike Dojo, don't neglect the software., which is what caused its downfall (as docuomented above)
   - The key is ZLUDA! We suspect that ZLUDA development is being funded by DensityAI. Their chip will ingest PTX and work out of the box using CUDA emulation. That is my suspicion. And then it will have its own programming model which can be targeted using the usual chain of PyTorch -> some IR -> custom backend with backend-specific annotations / transforms.
 
-- [Bloomberg: Former Tesla Executives Create Data Center Firm DensityAI](https://archive.is/v3oeJ#selection-1213.0-1213.57)   intnterline
+- [Bloomberg: Former Tesla Executives Create Data Center Firm DensityAI](https://archive.is/v3oeJ#selection-1213.0-1213.57)
+
 ## SF Hype Cycle Lunacy
 
 {{ gallery(images=[

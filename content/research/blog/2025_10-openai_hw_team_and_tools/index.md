@@ -225,3 +225,17 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 > If language models can reason from documentation and code analysis and perhaps the PTX spec alone, then why would examples be a limiting factor (all the libraries you mentioned have their code open source)? What to you appears to be the fundamental limiter for how models can write CUDA code? What are the failure modes you see?
 
 > There is something here that is a bit subtle. CUDA kernels are amenable to model autonomous iteration because they manage to separate enough microarchitectural details from the architectural ISA. If this isn't the case, I suspect LLMs would perform much worse - consider the Groq or Dojo ISA.
+
+- https://x.com/AlphaSenseInc/status/1983895917637079310
+
+> A former $AMD employee cautions that OpenAI's financial structure could disrupt the entire AI hardware supply chain ( $NVDA, $AVGO, $AMZN, $GOOGL ):
+>
+> - The expert explained that custom silicon carries a significantly higher risk than GPUs because such chips are typically built for a single customer and cannot be repurposed. While contracts include prepayments for non-recoverable engineering costs, clients can often opt out before manufacturing, leaving the vendor unable to reuse the silicon, as seen with the $AVGO –OpenAI deal, which is exclusive to OpenAI.
+>
+> - According to the expert, OpenAI may choose not to proceed with $AVGO's custom silicon deal if the performance and power-efficiency gains fail to justify the complexity and cost. He noted that companies typically pursue custom ASICs only when they deliver a 10-100x improvement over general-purpose hardware. However, GPUs are evolving so rapidly that they could narrow the performance gap to within 20%–50%, making them an acceptable solution, without requiring entirely new software stacks or operating environments.
+>
+> - The expert explained that $GOOGL's TPUs are primarily optimized for its own applications, such as YouTube and other in-house services, meaning its hardware and software ecosystem is largely self-contained. Unlike $AMZN, whose cloud business relies heavily on third-party developers, roughly 60% of AWS workloads come from external users, while $GOOGL's ecosystem is about 60% internally driven. This distinction affects switching costs and stickiness: $GOOGL's AI hardware is deeply integrated into its own software stack, giving it control but limiting flexibility and third-party adoption. In contrast, $AMZN's custom chips like Inferentia and Trainium benefit from broader applicability across different clients and workloads.
+>
+> - The expert emphasized that the risks surrounding AI chip investments and custom silicon are largely being overlooked, as few outside the semiconductor industry fully grasp how fragile the ecosystem is. He said most investors don't realize that hardware commitments in AI lack the stability seen in traditional semiconductors, where standards are established years in advance. Instead, investors are chasing wherever OpenAI signals it plans to spend, without considering whether those designs will hold value if OpenAI's demand slows.
+>
+> - According to the expert, the main problem in this system lies on the demand side: OpenAI's end customers. Since OpenAI frequently shifts its business model, he warned that without a clear and sustained source of third-party revenue beyond its hardware suppliers and cloud partners, the entire ecosystem risks being propped up by circular investments rather than real, organic demand.
