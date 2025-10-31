@@ -53,6 +53,10 @@ Total amateur opinions to follow.
 - *Hwayo 25 Soju*: Has an initial taste much closer to sake than soju, but still inferior to sake. Good to try, but the aftertaste is still too alcoholic.
 - *Ilpoom Jinro Oak 43 Soju*: TBD.
 
+### Gin
+
+- Citadelle Gin. TBD.
+
 ### Cocktail Liquors
 
 - *Dolin Rouge (Sweet) Vermouth*: Decent, I have no comparison point.
@@ -124,7 +128,7 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 
 ### Manhattan
 
-- In a mixing tin, add ice, 2oz whiskey, 1oz sweet vermouth, and 2 dashes of Angostura bitters
+- In a mixing tin, add ice, 2oz whiskey, 1oz sweet vermouth (sub port), and 2 dashes of Angostura bitters
 - Stir 20-30 seconds until chilled and strain into glass (no ice). Garnish with cherry.
 
 ### Highball
@@ -146,19 +150,14 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 ## Plans
 
 OK let's say I want to do a rum/whiskey/Irish cream event.
-
-- Whiskey drinks: Old fashioned, Manhattan (with vermouth or port!), Whiskey sour
-- Rum drinks: Daiquiri, Mai Tai, El Presidente
-- Irish cream: Mudslide (irish cream + Kahlua + vodka)
-
 To buy:
 
 - Whiskey
   - Four Roses Small Batch / Single Barrel
-  - Angel's Envy
-  - Larceny Small Batch
   - Michter's US1 Bourbon
   - Redbreast 12 Yr Irish Whiskey
+  - Larceny Small Batch
+  - Angel's Envy
   - Rittenhouse 100 (Rye) (manhattan) (probably too spicy for our taste)
 - Rum
   - Appleton Estate 8 /12
@@ -180,3 +179,16 @@ To buy:
   - Jack Rudy Demerara Syrup
   - Lemon + lime bag
   - Unpasteurized lemonade
+  - Chocolate syrup
+
+Bar Card:
+
+- Whiskey
+  - Old Fashioned: 2oz whiskey, 1/2oz simple syrup, Angostura + orange bitters. Stirred.
+  - Manhattan: 2oz whiskey, 1oz sweet vermouth (or port), Angostura bitters. Stirred.
+  - Sour: 2oz whiskey, 3oz lemonade, 1/2oz lemon juice. Shaken.
+- Rum
+  - Daiquiri: 2oz rum, 1oz lime juice, 1/2oz simple syrup. Shaken.
+  - Mai Tai: 2oz rum, 1/2oz cointreau, 1oz lime juice, 1/2oz orgeat, 1/4oz simple syrup. Shaken.
+- Irish cream
+  - Mudslide: 1oz irish cream, 1oz coffee liqueur, 1oz vodka, 1.5oz heavy cream. Shaken.
