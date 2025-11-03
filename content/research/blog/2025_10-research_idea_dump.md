@@ -39,6 +39,19 @@ Efficient RTL simulation requires 2 things
 
 ## Symbolic Execution of PTX and Validation of Lowerings / LLM codegen
 
+Kernel fusion often leads to numerical instability.
+How do you model the FP inaccuracies that pile up just based on accumulation order?
+How do you validate LLM generated CUDA kernels against PyTorch eager code or especially against the oracle function (expressed purely symbolically)?
+
+- https://x.com/rajammanabrolu/status/1984128055078744269
+  - The bf16 vs fp16 RL stability thing has become hysterical recently
+  - https://arxiv.org/abs/2510.26788
+- https://x.com/rajammanabrolu/status/1801637221797400958
+  - ML Systems people need to be stopped. Half of these kernel fusions are not numerically stable 😭
+  - Yes it makes GPU go brr but it also breaks policy gradient theorem and makes me question my life decisions every day
+
+All these custom chip startups doing their own bespoke quantization always claim that it doesn't affect accuracy. They show some marginal loss of accuracy on MMLU to 'prove' this point. It says nothing about what happens when the model is pushed to its limits where quantization-related degradation actually makes a difference. Proof of expected variation from unquantized baseline would be useful, especially when you start stacking all kinds of inference tricks on top such as further quantizing the KV cache.
+
 ## Yufeng's Question
 
 > "Principled" way to design CPU / SoC?

@@ -83,6 +83,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [A catalog of ways to generate SSA](https://bernsteinbear.com/blog/ssa/) ([HN link](https://news.ycombinator.com/item?id=43009952))
 - [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
   - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
+- [2023 EuroLLVM - Tutorial: A whirlwind tour of the LLVM optimizer](https://www.youtube.com/watch?v=7GHXDEIMGIY)
 
 ### Rust
 
@@ -355,6 +356,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Great Feminization](https://www.compactmag.com/article/the-great-feminization/) ([X](https://x.com/herandrews/status/1978793394978603116))
 - [The Patel Cartel: Inside the Quiet Motel Monopoly](https://mythosnoir.substack.com/p/the-patel-cartel)
 - [Women's Tears Win in the Marketplace of Ideas](https://www.richardhanania.com/p/womens-tears-win-in-the-marketplace)
+- [Free Trade](https://baazaa.github.io/2024/10/22/trade.html)
+- [H-1Bs](https://baazaa.github.io/2024/12/27/labour.html)
 
 ### China
 
@@ -365,6 +368,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [What role does technology play for China's transition from a "low-trust" society to a potentially high-trust one?](https://www.china-translated.com/p/what-role-does-technology-play-for)
 - [Youthology on China's Vulnerable Generation](https://www.readingthechinadream.com/youthology-on-chinas-vulnerable-generation.html) ([thread](https://x.com/favelaoverlord/status/1976328970246451641))
 - [Exams are everything in China](https://andrewbatson.com/2025/10/18/exams-are-everything-in-china/)
+- [On Tourism in China](https://anglology.substack.com/p/dont-go-to-beijing)
 
 ## Productivity
 

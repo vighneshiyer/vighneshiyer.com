@@ -41,12 +41,13 @@ Total amateur opinions to follow.
 
 - *Maker's Mark 46* (6/10): I like it. Good enough neat.
 - *Woodford Reserve (Regular)* (4/10): Pretty good, but I prefer Maker's 46 over this. Not so great anymore after having better whiskeys.
-- *Suntory Toki* (6/10): I really like it. Ideal for sipping, highballs, and sours. Not great neat.
-- *Four Roses Small Batch* (8/10): The best so far. Excellent. Very smooth and flavorful. Very enjoyable neat.
+- *Suntory Toki* (6/10): I really like it when mixed. Ideal for highballs and sours. Not great neat.
+- *Four Roses Small Batch* (8/10): The best so far. Excellent. Very smooth and flavorful. Very enjoyable neat. Spending more on bourbon (at least $40 for a 750ml bottle) seems to be worth it.
 
 ### Rum
 
-- *Diplomatico Reserva Exclusiva*: I like it. A few feel it is too harsh, doesn't go down smooth, at least neat.
+- *Diplomatico Reserva Exclusiva*: I like it. A few feel it is too harsh, doesn't go down smooth, at least neat. But I'm a fan.
+- *Appleton Estate 8*. TBD.
 
 ### Soju
 
@@ -55,13 +56,7 @@ Total amateur opinions to follow.
 
 ### Gin
 
-- Citadelle Gin. TBD.
-
-### Cocktail Liquors
-
-- *Dolin Rouge (Sweet) Vermouth*: Decent, I have no comparison point.
-- Cointreau: TBD
-- TJ's Limoncello: TBD
+- *Citadelle Gin*. (9/10). Excellent 'celery'-like, juniper berry, freshness as the final note. Gimlet with this is too good.
 
 ### Wines
 
@@ -85,20 +80,28 @@ Total amateur opinions to follow.
   - Pielihueso Naranjo 2024. Very very good. Smooth, slightly fruity, and crisp. Best served cold.
   - 2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact. Excellent.
 
+### Meads
+
+- The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
+- *Chaucer's Mead*. TBD.
+
 ### Sake
 
 [Takara Sake](https://www.takarasake.com) has a sake factory in Berkeley, CA!
 I highly recommend visiting them and doing a tasting.
 What follows are all sakes from Takara (some brewed in Berkeley, others in Japan).
 
-- Sho Chiku Bai REI Junmai Daiginjo. One of our favorites. Cheap and good, serve chilled, crisp, fruity, and smooth. If it is too old, it will acquire a mushroom-y flavor.
-- Sho Chiku Bai Organic Nama. Good chilled, but has an earthy flavor. Not suitable for a general audience.
-- Sho Chiku Bai Takara Sierra Cold. This is an insane sake. Serve chilled. 12% ABV but tastes like zero! Very light flavor of slight sweetness and fruit, but mostly tasteless.
-- Sho Chiku Bai Nigori Crème de Sake. Cream sake! One of our favorites. Serve chilled. Flavor is both fruity and earthy, more on the sweet side.
+- Sho Chiku Bai REI Junmai Daiginjo. (8/10). One of our favorites. Cheap and good, serve chilled, crisp, fruity, and smooth. If it is too old, it will acquire a mushroom-y flavor.
+- Sho Chiku Bai Organic Nama. (6/10). Good chilled, but has an earthy flavor. Not suitable for a general audience.
+- Sho Chiku Bai Takara Sierra Cold. (7/10). This is an insane sake. Serve chilled. 12% ABV but tastes like zero! Very light flavor of slight sweetness and fruit, but mostly tasteless.
+- Sho Chiku Bai Nigori Crème de Sake. (9/10). Cream sake! One of our favorites. Serve chilled. Flavor is both fruity and earthy, more on the sweet side.
 
-### Meads
+### Cocktail Liquors
 
-- The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
+- *Dolin Rouge (Sweet) Vermouth*: Decent, I have no comparison point.
+- Cointreau. It works, I have no reference point for orange liqueur.
+- Baileys. Sweet, smooth, milky. Nothing bad, but nothing great either.
+- TJ's Limoncello: TBD
 
 ### Garnishes
 
@@ -146,6 +149,16 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 
 - Rum, sweet vermouth, orange curacao, grenadine, cherry
 - TBD. I don't have everything for this.
+
+### Mai Tai
+
+- 2oz rum (can mix while + aged), 1/2oz cointreau, 1oz lime juice, 1/2oz orgeat, 1 barspoon simple syrup.
+- Shake with ice.
+
+### Gimlet
+
+- Gin, fresh lime juice, simple syrup. 2:1:1 ratio. 2oz gin, 1 whole lime, 1oz simple syrup (about 3 barspoons).
+- Shake with ice. Serve into a chilled cocktail glass.
 
 ## Plans
 

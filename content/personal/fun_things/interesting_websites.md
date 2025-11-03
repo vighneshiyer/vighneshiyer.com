@@ -10,6 +10,7 @@ Here are some websites that I generally find interesting.
 
 - Aggregator websites: [HN: Other sites like HN](https://news.ycombinator.com/item?id=37611708), [HN: Other news feeds besides HN](https://news.ycombinator.com/item?id=36175315), [HN Popularity Contest: The highest-ranking personal blogs of Hacker News](https://refactoringenglish.com/tools/hn-popularity/?start=2024-01-01&end=2024-12-31&limit=100) (https://news.ycombinator.com/item?id=43474505)
 - https://github.com/katcipis/sophia/tree/main (A smart person's collection of interesting links / websites)
+- https://eatonphil.com/blogs.html (My favorite technical blogs)
 
 Blogs:
 
@@ -18,13 +19,12 @@ Blogs:
 - https://www.paulgraham.com/articles.html
 - https://danluu.com/
 - https://yosefk.com/blog/
-- john de goes
-- li haoyi
-- https://dynomight.net/numpy/
+- https://degoes.net/
+- https://www.lihaoyi.com/
 - https://zipcpu.com/blog/2024/11/06/not-axi.html
-https://www.compactmag.com/
-https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems.html (a few very high quality technical articles)
-- https://dynomight.net/
+- https://www.compactmag.com/
+- https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems.html (a few very high quality technical articles)
+- https://dynomight.net/ (https://dynomight.net/numpy/)
 - https://herecomesthemoon.net/
 - https://mdickens.me/
 - https://www.wheresyoured.at/
@@ -37,13 +37,15 @@ https://exclusivearchitecture.com/03-technical-articles-CLT-12-autofocus-systems
 - https://www.theconundrumcluster.com/
 - https://claytonwramsey.com/blog/
 - https://outsiderart.substack.com/archive?sort=new
-- garymarcus.substack.com/
+- https://garymarcus.substack.com/
 - https://lukesmith.xyz/articles/consciousness-and-materialism/
 - https://quarter--mile.com/Human
 - https://bronzeagepervert.substack.com/
 - https://zerocontradictions.net/#blogroll
 - https://bitsbytesgates.com/archive.html
-- https://eatonphil.com/blogs.html (My favorite technical blogs)
+- https://baazaa.github.io/ (there are so many good writings here, https://x.com/baazaa9/with_replies, a truly exceptional blog)
+- https://danluu.com/
+- https://www.yosefk.com/blog/simd-simt-smt-parallelism-in-nvidia-gpus.html
 
 China:
 

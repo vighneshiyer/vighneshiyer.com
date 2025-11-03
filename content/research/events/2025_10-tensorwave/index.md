@@ -207,11 +207,9 @@ The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to
 3. **Availability**
 
 While NVIDIA GPUs are in very high demand, NVIDIA has far more cloud deployments than AMD.
-I can't comment on the real-life issues getting access to a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA GPU.
+I can't comment on how easy it is to reserve a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA GPU.
 
-
-unless they were penny pinching, which hardly anyone does nowadays, considering how well funded these AI companies are.
-When looking at the situation with these 3 points in mind, it makes you wonder, why does anyone bother to use AMD GPUs?
+Considering points ⓵, ⓶, and ⓷, unless you were penny-pinching, why would you bother to use AMD GPUs?
 And using AMD isn't even cheaper once you factor in the opportunity cost of the time spent porting software and getting optimal performance.
 
 In 2024, [Jensen reminded everyone](https://www.youtube.com/watch?v=cEg8cOx7UZk) of this important fact:
@@ -228,7 +226,6 @@ This lopsided situation isn't an accident.
 <!--
 - The panel itself was quite laughable. The AT&T guy presented some Telco-specific fine-tuning of Gemma 4B using ScalarLM on a TensorWave cluster, but I think everyone saw this as a joke. Why would anyone bother to use AMD unless they were penny pinching (which no one has to do today considering how well funded all these AI companies are)? And AMD systems aren't even cheaper once you consider the time spent porting software. As Jensen said, even if his competitors give their hardware away for free, it still isn't enough for them to get traction in the market. I would think he is right.
 -->
-
 
 ## The CUDA Moat Today
 
@@ -247,10 +244,11 @@ AMD serves the gaming market just fine with slightly cheaper and more available 
 
 2. **HPC / workstation applications**
 
-Consider the use of GPUs in CAD (AutoCAD, SolidWorks), CAE (FEA / CFD / MBD tools), weather simulation, 3D rendering (Blender, Maya), astrophysics, computational chemistry, data processing, medical imaging, and so forth.
-These applications are quite bespoke and domain-specific, and are also a small fraction of total GPU revenue.
+GPUs are used in all kinds of HPC applications such as, CAD (AutoCAD, SolidWorks), CAE (FEA / CFD / MBD tools), weather simulation, 3D rendering (Blender, Maya), astrophysics, computational chemistry, data processing, medical imaging, and so forth.
+These applications are often bespoke and domain-specific, and are also a small fraction of total GPU revenue.
+
 However, NVIDIA has a strong advantage here.
-Tons of custom CUDA kernels everywhere and no one will bother to HIP-ify them, unless. (keep reading)
+There are tons of custom CUDA kernels in all these pieces of software and the software developers have little incentive to [HIP-ify](https://github.com/ROCm/HIPIFY) them (more on this later).
 
 3. **ML Training**
 
@@ -260,7 +258,9 @@ In practice, after some experimentation, the top labs will have engineers hand-w
 
 4. **ML Inference**
 
-This market resembles the training one, but there are many more chip vendors and hyperscalers getting into the inference game (e.g. Tenstorrent, Groq, Cerebras, d-Matrix, AWS, Microsoft) while still relying on GPUs for training.
+This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, d-Matrix) and hyperscalers (e.g. Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
+
+While NVIDIA still dominates on ML training workloads, since the
 
 5. **Edge**
 
@@ -268,23 +268,24 @@ Think about applications like VR headsets, smart cameras, and autonomous vehicle
 In the low-power domain (sub-10W), there is plenty of competition, but low margins.
 However, in the high-performance tier (required for robotics and AVs), the NVIDIA Jetson series of products completely dominates with basically zero competition.
 
+<!--
 *The question is*: how does AMD's programming model, software stack, and compiler allow them to capture each GPU market?
+-->
 
 ### Why is CUDA Great?
 
 [Nicholas Wilt](https://parallelprogrammer.substack.com/), who was on the original CUDA dev team, made [a](https://x.com/CUDAHandbook/status/1871583610035491104) [few](https://x.com/CUDAHandbook/status/1880155715572277344) [tweets](https://x.com/CUDAHandbook/status/1887448356437344332) that summarize why NVIDIA was able to capitalize on all five of these GPU markets.
-In short, they emphasized portability from the very beginning (supporting both Windows and Linux, APIs implemented in pure C), enabled flexible software integration (providing both a driver and runtime API), targeted PTX from CUDA C++ which enables the driver compiler to abstract away the churn of the machine ISA (SASS), and supporting CUDA across *all* product categories (mobile, desktop, and datacenter).
+In short:
+
+- NVIDIA emphasized portability from the very beginning, supporting both Windows and Linux, and implemented their APIs in pure C
+- CUDA supports flexible software integration, providing both a driver and runtime API
+- NVIDIA supported CUDA across *all* its product categories (mobile, desktop, and datacenter). This is something AMD still doesn't do today, but has promised for the future
+- CUDA C++ device kernels generate PTX, a stable SIMT ISA. PTX enables the driver's JIT compiler to abstract away the churn of the machine ISA (SASS) across GPU generations
 
 NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler.
 AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
 
-
-<!--
-- The CUDA Handbook
--->
-
-
-
+More modern trend of NVIDIA trying to expand CUDA from CUDA C++ into PyCUDA (new frontend language) and CuTile (new abstraction) and new Python CUTLASS (new abstraction and low-level code metaprogramming generator). NVIDIA isn't stopping.
 
 #### Lessons from Dojo
 

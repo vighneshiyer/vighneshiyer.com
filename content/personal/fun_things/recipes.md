@@ -175,6 +175,13 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
 - Dump almost-cooked rigatoni into the sage butter and continue to cook and absorb the remaining liquid. Continue to boil the pasta in the pan and add more water as needed. Add more unsalted butter near the end and emulsify. You want a nice and creamy butter sauce so keep shaking the pan and cooking down the liquid.
 - Spoon the pasta onto a plate. Then add the cheese paste into the pan, some pasta water, and emulsify with the remaining butter. Pour the cheese sauce over the pasta. Top with more microplaned parm.
 
+### Basil Rigatoni
+
+- https://www.youtube.com/shorts/EUrit0U4N1M
+- Finely chop fresh basil and oregano. Sweat in olive oil with chopped garlic too.
+- Add tomato paste and chili flakes and cook until fragrant
+- Add heavy cream. Add cooked pasta with pasta water and grated parm and finish cooking.
+
 ## Soups
 
 ### Tomato Soups
@@ -192,6 +199,11 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
 - Add one shot of vodka, cover and simmer
 - Prepare grilled cheese as normal (butter, nice cheese)
 - Serve with white wine, top soup with heavy cream and chopped basil
+
+- https://www.youtube.com/shorts/OQURgqpYv8w
+  - Roast cherry tomatoes, 1 onion chopped in quarters, one red bell pepper, one whole clove of garlic with bottoms chopped off + salt + pepper + olive oil
+  - Squeeze out garlic, add basil leaves, add heavy cream, blend until smooth
+  - Garnish with olive oil
 
 ### Vegetable Soup
 
@@ -227,6 +239,13 @@ Another great example of Cucina Povera.
 - Simmer and mash some beans
 - Add ditalini pasta, stir until pasta is tender, for 10 minutes, add water as needed
 - Adjust salt and pepper, garnish with grated parm, serve with crusty bread, olive oil, feta, and olives
+
+### Butternut Squash Soup
+
+- https://www.youtube.com/shorts/iR6DHpVnvrQ
+- Roast butternut squash x1, tomatoes x3, red bell pepper x1, onion x1, carrots x2, whole head of garlic with salt, pepper, rosemary sprig, and olive oil
+- Scoop out butternut flesh, squeeze out garlic cloves, add stock, blend into a smooth consistency
+- Add heavy cream and grated parm. Garnish with cream and olive oil.
 
 ## Oriental Foods
 

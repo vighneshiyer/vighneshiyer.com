@@ -39,6 +39,13 @@ The TPU architecture looks very different than the others. Groq is very VLIW, cy
 
 Some of these points are good.
 
+- https://arxiv.org/pdf/2510.20931
+  - Lincoln AI Computing Survey (LAICS) and Trends
+  - These guys did a pretty good job summarizing each and every computing architecture that's commercially available that's even somewhat optimized for running ML workloads
+  - It does show that NVIDIA has total dominance (wrt GOPS/s, and peak power) at the high end even when using more complex datatypes vs the competition
+  - A single TPU's compute density even for the latest generation is relatively worse, although it consumes much less power
+  - I think we should extend their analysis even further. Dig into the architectures of the most competitive and standout chips. Contrast them. The TPU-style large systolic array with a few scalar instruction streams vs the MIMD TT machine vs the NVIDIA SIMT machine (which with CUDA graphs resembles even certain elements of a dataflow architecture) vs Groq (very wide VLIW (144 inst slots per cycle, across 20*16 = 320 lanes), unified issue, all SRAM)
+
 ## Discrete Chips/Cards You can Buy
 
 NVIDIA (of course) (you can buy boxes and racks too)
