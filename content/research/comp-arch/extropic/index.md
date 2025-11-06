@@ -17,3 +17,5 @@ description = "'Thermodynamic computing' from Extropic and Normal Computing is a
 - CMOS subthreshold shot noise - have to keep temperature constant, how many effective control bits after considering the variation per control word and squeezing off things at the ends with low precision (due to the sigmoidal shape). Can run everything in subthreshold, which is good from efficiency perspective, but will be low performance, and have to compensate for Pelgrom variation with upsizing (or else every die will have different per-noise generator characteristics).
   - Can we model this same phenomena using traditional digital CMOS? Certainly yes. And without losing much efficiency (esp area efficiency). Stop reporting total energy or even EDP - this obscures the actual tradeoff which is this thing can only run at 10s of MHz and requires lots of sampling to overcome the time-domain noise correlation
 - Attach Zimmer's slides
+- https://www.zach.be/p/so-i-have-to-talk-about-extropic
+  - Reasonable take. See Trevor's comments too, they should be addressed.

@@ -43,6 +43,8 @@ Total amateur opinions to follow.
 - *Woodford Reserve (Regular)* (4/10): Pretty good, but I prefer Maker's 46 over this. Not so great anymore after having better whiskeys.
 - *Suntory Toki* (6/10): I really like it when mixed. Ideal for highballs and sours. Not great neat.
 - *Four Roses Small Batch* (8/10): The best so far. Excellent. Very smooth and flavorful. Very enjoyable neat. Spending more on bourbon (at least $40 for a 750ml bottle) seems to be worth it.
+- *Redbreast 12*. TBD.
+- *Michter's US1*. TBD.
 
 ### Rum
 
@@ -84,6 +86,7 @@ Total amateur opinions to follow.
 
 - The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
 - *Chaucer's Mead*. TBD.
+- *Sky River Sweet Mead*. TBD.
 
 ### Sake
 
@@ -99,9 +102,10 @@ What follows are all sakes from Takara (some brewed in Berkeley, others in Japan
 ### Cocktail Liquors
 
 - *Dolin Rouge (Sweet) Vermouth*: Decent, I have no comparison point.
-- Cointreau. It works, I have no reference point for orange liqueur.
-- Baileys. Sweet, smooth, milky. Nothing bad, but nothing great either.
-- TJ's Limoncello: TBD
+- *Cointreau*. It works, I have no reference point for orange liqueur.
+- *Baileys*. Sweet, smooth, milky. Nothing bad, but nothing great either.
+- *TJ's Limoncello*. TBD.
+- *Mr. Black Cold Brew Coffee Liqueur*. Decent, good espresso flavor.
 
 ### Garnishes
 
@@ -173,8 +177,8 @@ To buy:
   - Angel's Envy
   - Rittenhouse 100 (Rye) (manhattan) (probably too spicy for our taste)
 - Rum
-  - Appleton Estate 8 /12
-  - El Dorado 8
+  - Appleton Estate 8 / 12
+  - El Dorado 8 / 12
   - Santa Teresa 1796
   - Diplomático Mantuano
   - El Pasador de Oro Rum XO

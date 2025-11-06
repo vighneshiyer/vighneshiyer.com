@@ -132,3 +132,9 @@ We seem to be very far from achieving intelligence with biological-tier power. P
 
 - The grand HCI innovation. Glasses see everything you do. Watch tracks your HR, HRV, sleep patterns, activity, exercise, light exposure, and so forth. Track and correlate every health metric to everything that you do, eat, happens to you, the environment you're in. Gives you the right feedback and summarization of your life as it stands (superficially) without any explicit data entry on the user's part. Maybe, this will nudge people into relinquishing instagram and tiktok, or that may be too hopeful.
 - allergies, the impact of various foods and meal timing, the impact of sunlight exposure, nighttime light and screen usage, ... - all kinds of things can be analyzed on a long time span + data aggregation among many people to figure out trends with mininal noise influence
+
+- https://techcrunch.com/2025/11/05/former-meta-employees-launch-stream-a-smart-ring-that-takes-voice-notes-and-controls-music/
+
+> A raft of voice-based hardware devices have emerged, aimed at companionship, productivity, or personal growth. These include card-shaped devices from Plaud and Pocket; pendants from Friend, Limitless, and Taya; and a wristband from Bee, which is now part of Amazon.
+>
+> Now, two former Meta employees who worked on interface design have launched Sandbar, a startup that has created a ring called Stream for similar purposes. The company calls the ring “a mouse for voice” because it can take notes, help you interact with an AI assistant, and let you control music.

@@ -681,7 +681,7 @@ https://grok.com/share/c2hhcmQtMg%3D%3D_72a6ec7a-c0c3-4b5f-8b5d-f384ea157af6
 ## Addendum
 
 With all the argumentation out of the way, it's time for fun.
-I'll use this section to write about some funny model-isms from Prof. Vijay Janapa Reddi's CS249r (*Architecture 2.0: Agentic AI for Computer Systems Design*) [website](https://harvard-edge.github.io/cs249r_fall2025/).
+I'll use this section to write about some funny model-isms from [Prof. Vijay Janapa Reddi](https://edge.seas.harvard.edu/people/vijay-janapa-reddi)'s CS249r (*Architecture 2.0: Agentic AI for Computer Systems Design*) [website](https://harvard-edge.github.io/cs249r_fall2025/).
 
 ### Reddi's Agents
 
@@ -842,3 +842,31 @@ Consider that the next massive commit from Claude is pushed [just an hour](https
 Of course, nothing is being reviewed.
 We are now also in the era of "vibe writing" &mdash; Mr. Model produces mountains of verbose and meaningless prose that goes into a textbook.
 The undergrads better get used to it.
+
+### Mr. Model, Don't Reveal Yourself
+
+In October 2025, Reddi asked the agents to clean up after themselves both in his [textbook repo](https://github.com/harvard-edge/cs249r_book/commit/aa6dc346f54449b2f80d89e9ce063b3090770da9) and [CS249r website repo](https://github.com/harvard-edge/cs249r_fall2025/commit/5db17a29951cdd3a3a6ebe9a21cd2ac08202b400).
+
+{{ gallery(images=[
+    "reddi-agent_cleanup2.png",
+    "reddi-agent_cleanup1.png",
+], popout=false, caption="Delete `.claude` please, that wasn't supposed to be committed") }}
+
+Of course, that didn't stop the latest Reddi "blog post", ["Week 9: Can AI Master Predictive Reasoning? Designing for Patterns You Can't See"](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/10/29/memory-systems-prediction/) from being completely model generated.
+
+> *How do you design systems to predict the unpredictable?*
+>
+> This isn’t just an engineering challenge. It’s a question about the nature of prediction itself.
+
+Thanks for the insight Mr. Model!
+
+### The Model Won't Listen!
+
+It's been 9 weeks of agentic blog posts, but the model still won't listen to Reddi!
+He has already asked it over and over to quit it with the LLM writing patterns.
+All his prompting didn't work &mdash; he had to request the em dash purge manually.
+
+{{ gallery(images=[
+    "reddi-em_dashes1.png",
+    "reddi-em_dashes2.png",
+], popout=false, caption="Mr. Model, please remove those em dashes again 😞. Let's use parentheses instead.") }}

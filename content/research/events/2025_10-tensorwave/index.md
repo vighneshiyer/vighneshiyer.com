@@ -258,12 +258,13 @@ In practice, after some experimentation, the top labs will have engineers hand-w
 
 4. **ML Inference**
 
-This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, d-Matrix) and hyperscalers (e.g. Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
+This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, d-Matrix) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
 
 While NVIDIA still dominates on ML training workloads, since the
+There is a common belief that since this workload is so large and expensive to run, it is worth exploring cheaper NVIDIA alternatives (most notably AMD, but also TPUs and Trainium/Inferentia), but this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
+
 
 5. **Edge**
-
 Think about applications like VR headsets, smart cameras, and autonomous vehicles.
 In the low-power domain (sub-10W), there is plenty of competition, but low margins.
 However, in the high-performance tier (required for robotics and AVs), the NVIDIA Jetson series of products completely dominates with basically zero competition.
@@ -282,10 +283,14 @@ In short:
 - NVIDIA supported CUDA across *all* its product categories (mobile, desktop, and datacenter). This is something AMD still doesn't do today, but has promised for the future
 - CUDA C++ device kernels generate PTX, a stable SIMT ISA. PTX enables the driver's JIT compiler to abstract away the churn of the machine ISA (SASS) across GPU generations
 
+I wouldn't be able to outdo Wilt when it comes to extolling the virtues of CUDA, so I'll just reference two of his articles that you should read: ["Ten Years Later: Why CUDA Succeeded"](https://parallelprogrammer.substack.com/p/ten-years-later-why-cuda-succeeded), ["Ten Years Later: CUDA Succeeded Despite..."](https://parallelprogrammer.substack.com/p/ten-years-later-cuda-succeeded-despite).
+
 NVIDIA does a great job separating parts of their compilation stack (CUDA C++, PTX, SASS, low level machine code) so they can always make changes in the lowest layer and just make all software compatible via the low-level JIT compiler.
 AMD doesn't seem to know how do to this so kernels just suddenly stop working on future GPU generations - at least NVIDIA kernels always work, albeit with per-architecture performance tuning being necessary.
 
 More modern trend of NVIDIA trying to expand CUDA from CUDA C++ into PyCUDA (new frontend language) and CuTile (new abstraction) and new Python CUTLASS (new abstraction and low-level code metaprogramming generator). NVIDIA isn't stopping.
+CUDA Python, cuTile, Warp, CUTLASS Python, numba-cuda
+- nvidia cuda kernel stack gtc (attach image)
 
 #### Lessons from Dojo
 

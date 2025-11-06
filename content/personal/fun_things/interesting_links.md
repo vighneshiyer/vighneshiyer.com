@@ -148,6 +148,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - Good overview of the DFA (Dataflow Analyzer) simulator in the Appendix
 - [Intel - P6 Family of Processors Hardware Developer’s Manual](https://download.intel.com/design/PentiumII/manuals/24400101.pdf)
 - [/r/riscv: What is the worst ratified RISC-V instruction?](https://www.reddit.com/r/RISCV/comments/1n6hvqr/what_is_the_worst_ratified_riscv_instruction/)
+- [Inside Nvidia GPU: Discussing Blackwell's Limitations and Predicting Rubin's Microarchitecture](https://github.com/zartbot/blog/issues/3)
 
 ### Formal Verification
 
@@ -358,6 +359,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Women's Tears Win in the Marketplace of Ideas](https://www.richardhanania.com/p/womens-tears-win-in-the-marketplace)
 - [Free Trade](https://baazaa.github.io/2024/10/22/trade.html)
 - [H-1Bs](https://baazaa.github.io/2024/12/27/labour.html)
+- [Factories of Ideas? Big Business and the Golden Age of American Innovation](https://pierpaolocreanza.github.io/website/creanza_jmp.pdf) ([X](https://x.com/Ersatz_Solus/status/1985386868356112888), [X](https://x.com/Spergapises/status/1985388782598955111), [X](https://x.com/arpitrage/status/1985345719968874930))
 
 ### China
 
