@@ -231,6 +231,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Modular: Democratizing AI Compute, Part 7: What about Triton and Python eDSLs?](https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls)
   - This entire series by Chris Lattner is excellent
 - [Max Slater: Differentiable Programming from Scratch](https://thenumb.at/Autodiff/) ([HN link](https://news.ycombinator.com/item?id=43713140))
+- [PyTorch and LLVM in 2025 — Keeping up With AI Innovation](https://www.modular.com/blog/pytorch-and-llvm-in-2025-keeping-up-with-ai-innovation)
 
 ### NN Performance Optimization
 
@@ -249,6 +250,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [How to map SIMT model onto tenstorrent device?](https://asplos.dev/wordpress/2025/05/31/how-to-map-simt-model-onto-tenstorrent-device/?utm_source=linkedin&utm_medium=jetpack_social)
 - [Programming Tenstorrent processors](https://clehaxze.tw/gemlog/2025/04-21-programming-tensotrrent-processors.gmi)
 - [tinytpu](https://www.tinytpu.com/)
+- [From silicon to softmax: Inside the Ironwood AI stack](https://cloud.google.com/blog/products/compute/inside-the-ironwood-tpu-codesigned-ai-stack?e=48754805)
 
 ## Mathematics
 

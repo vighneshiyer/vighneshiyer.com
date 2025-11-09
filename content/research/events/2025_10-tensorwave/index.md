@@ -148,9 +148,15 @@ But the content is so lackluster, which makes AMD look way worse than what they 
 
 The TensorWave people are actually very competent!
 These kinds of events don't showcase that competence.
-TensorWave is a serious company with good datacenter engineers.
+TensorWave is a serious company with good datacenter engineers &mdash; they [raised a $100M Series A](https://tensorwave.com/blog/series-a) and they have the largest MI325X/MI350X cluster in production.
+Just recently, SemiAnalysis unveiled their [ClusterMAX 2.0 ratings](https://www.clustermax.ai/v2) which placed TensorWave as a Silver-tier GPU cloud[^5], on par with Google Cloud, AWS, and Lambda.
+
+[^5]: Just 7 months ago, TensorWave was a Bronze-tier GPU cloud on [ClusterMax 1.0](https://www.clustermax.ai/v1) &mdash; rapid progress!
+
+<!--
 They [raised a $100M Series A](https://tensorwave.com/blog/series-a) and they have the largest MI325X/MI350X cluster in production.
 Let's hear about the details and benchmarking of the real infrastructure they have built!
+-->
 
 Regarding this event, TensorWave signed up around 250 people, but there were perhaps 50 people who attended, including the TensorWave employees.
 I understand it was a free event held during the busy AI Week with many other overlapping events, but still.
@@ -207,10 +213,10 @@ The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to
 3. **Availability**
 
 While NVIDIA GPUs are in very high demand, NVIDIA has far more cloud deployments than AMD.
-I can't comment on how easy it is to reserve a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA GPU.
+I can't comment on how easy it is to reserve a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA GPU vs an AMD GPU.
 
 Considering points ⓵, ⓶, and ⓷, unless you were penny-pinching, why would you bother to use AMD GPUs?
-And using AMD isn't even cheaper once you factor in the opportunity cost of the time spent porting software and getting optimal performance.
+Using AMD is often not cheaper once you factor in the opportunity cost of the time spent porting software and getting optimal performance.
 
 In 2024, [Jensen reminded everyone](https://www.youtube.com/watch?v=cEg8cOx7UZk) of this important fact:
 
@@ -258,13 +264,14 @@ In practice, after some experimentation, the top labs will have engineers hand-w
 
 4. **ML Inference**
 
-This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, d-Matrix) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
+This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, SambaNova, d-Matrix) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
 
 While NVIDIA still dominates on ML training workloads, since the
 There is a common belief that since this workload is so large and expensive to run, it is worth exploring cheaper NVIDIA alternatives (most notably AMD, but also TPUs and Trainium/Inferentia), but this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
 
 
 5. **Edge**
+
 Think about applications like VR headsets, smart cameras, and autonomous vehicles.
 In the low-power domain (sub-10W), there is plenty of competition, but low margins.
 However, in the high-performance tier (required for robotics and AVs), the NVIDIA Jetson series of products completely dominates with basically zero competition.

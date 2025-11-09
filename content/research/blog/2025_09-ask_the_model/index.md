@@ -852,7 +852,7 @@ In October 2025, Reddi asked the agents to clean up after themselves both in his
     "reddi-agent_cleanup1.png",
 ], popout=false, caption="Delete `.claude` please, that wasn't supposed to be committed") }}
 
-Of course, that didn't stop the latest Reddi "blog post", ["Week 9: Can AI Master Predictive Reasoning? Designing for Patterns You Can't See"](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/10/29/memory-systems-prediction/) from being completely model generated.
+Of course, that didn't stop the latest "blog post", ["Week 9: Can AI Master Predictive Reasoning? Designing for Patterns You Can't See"](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/10/29/memory-systems-prediction/), from being completely model generated.
 
 > *How do you design systems to predict the unpredictable?*
 >

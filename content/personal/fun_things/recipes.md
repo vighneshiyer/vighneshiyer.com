@@ -43,6 +43,7 @@ A bunch of recipes and cooking information I like or think is interesting.
 - [This Pasta Looks Easy. It’s Not.](https://www.youtube.com/watch?v=W830FdF0yo8) - A masterful execution of cacio e pepe with rigatoni.
 - [The Perfect Cacio e Pepe (No Tricks, Just Technique)](https://www.youtube.com/watch?v=a9iMw0dBJbw) - Another great execution.
   - Finish cooking the pasta in the pan with pepper broth to al dente. Then turn off the heat, wait until cooled a bit, then add cheese (microplaned is good), and emulsify with a touch of starch water.
+  - [The short version](https://youtube.com/shorts/1vB2mwHvkSg?si=PxsLF8TiNWROE05B)
 
 <details>
   <summary>Retrospective after 3/24/2024 preparation</summary>
