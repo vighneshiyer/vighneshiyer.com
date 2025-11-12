@@ -268,6 +268,7 @@ Now, here are more center column blogs, but they have wide (often full-width) im
 - [simonsarris.com](https://simonsarris.com/)
 - [makerain.com](https://www.makerain.com/)
 - [social-impact-capital.com](https://social-impact-capital.com/) (very nice without the scroll hijack)
+- [In Common With](https://www.incommonwith.com/collections/all-lighting) (brilliant light/dark toggle for lamps)
 
 ### Fonts
 

@@ -136,3 +136,9 @@ People who are already good at programming and problem solving will leverage LLM
 > There's very likely a real answer to that question, and that answer should shape the way that engineer should be assessed and hired.
 
 Good point. Ultimately, what an AI may not have is the *desire* to do foundational things. A human with desire, paired with an AI, will outperform massive teams where each person just doesn't really care.
+
+## Can this be goodharted?
+
+- https://en.wikipedia.org/wiki/Goodhart%27s_law
+- Yes, of course. There is always a risk. It can be hacked just like anything else. But I'd argue it's much harder to hack this. Intrinsic interest and ability always manages to come out.
+- But yes, it can fall. What next? Brain scans? I'm sure even those can be hacked. Just have to keep the target moving.

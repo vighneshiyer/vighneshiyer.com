@@ -232,6 +232,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - This entire series by Chris Lattner is excellent
 - [Max Slater: Differentiable Programming from Scratch](https://thenumb.at/Autodiff/) ([HN link](https://news.ycombinator.com/item?id=43713140))
 - [PyTorch and LLVM in 2025 — Keeping up With AI Innovation](https://www.modular.com/blog/pytorch-and-llvm-in-2025-keeping-up-with-ai-innovation)
+- [2023 EuroLLVM - MLIR Dialect Design and Composition for Front-End Compilers](https://www.youtube.com/watch?v=hIt6J1_E21c)
 
 ### NN Performance Optimization
 
@@ -325,6 +326,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Buddha's Teachings on Women's 84 Manners](https://thedailyenlightenment.com/2022/10/the-buddhas-teachings-on-womens-84-manners/)
 - [Jacobin: Christianity Was Always for the Poor](https://jacobin.com/2024/03/christianity-poor-debt-jesus-moses-wealth) ([HN link - flagged](https://news.ycombinator.com/item?id=43745088))
   - I agree with the leftist. Good article about the truth of Christianity, Catholic "adaptations" are not grounded in the Bible but rather ancient pagan principles
+- [21 observations from people watching](https://skincontact.substack.com/p/21-observations-from-people-watching?)
 
 ### Research Philosophies
 
@@ -362,6 +364,9 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Free Trade](https://baazaa.github.io/2024/10/22/trade.html)
 - [H-1Bs](https://baazaa.github.io/2024/12/27/labour.html)
 - [Factories of Ideas? Big Business and the Golden Age of American Innovation](https://pierpaolocreanza.github.io/website/creanza_jmp.pdf) ([X](https://x.com/Ersatz_Solus/status/1985386868356112888), [X](https://x.com/Spergapises/status/1985388782598955111), [X](https://x.com/arpitrage/status/1985345719968874930))
+- [Open Letter To Indians and Liberals Regarding Immigration and Outsourcing](https://www.bronzeagepervert.yoga/p/open-letter-to-indians-and-liberals)
+- [Non-linear Ethnic Niches - The emerging Western caste system](https://www.aporiamagazine.com/p/non-linear-ethnic-niches)
+- [Brain Drain as Geopolitical Strategy - The foreign experts model versus the status quo](https://www.aporiamagazine.com/p/brain-drain-as-geopolitical-strategy)
 
 ### China
 

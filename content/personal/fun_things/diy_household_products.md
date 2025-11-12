@@ -93,6 +93,9 @@ Pour the mixture into your 10oz glass jar. Leave uncovered until fully set at ro
   - 2 parts oxygen bleach (e.g. [Nellie's Oxygen Brightener](https://www.amazon.com/Nellies-All-Natural-Brightener-Scoops-Removes/dp/B00KH4ENE8?th=1), OxiClean White Revive)
   - 1 part borax (e.g. [20 Mule Team Borax](https://www.amazon.com/Detergent-Booster-Multi-Purpose-Household-Cleaner/dp/B01KCJ8514))
   - 1 part washing soda (e.g. [ARM & HAMMER Super Washing Soda](https://www.amazon.com/Arm-Hammer-Super-Washing-Soda/dp/B0029XNTEU))
+- Can treat odors with 1 cup of vinegar during the rinse cycle
+- Can also use Castille soap + baking soda in the detergent mix
+- Use the [Japanese magnesium bag](https://www.amazon.com/Detergent-Fragrance-Alternative-Sensitive-hypoallergenic/dp/B08CZ91TRQ/) (TerraWash Mg+)
 
 ## Lotion
 

@@ -260,13 +260,14 @@ There are tons of custom CUDA kernels in all these pieces of software and the so
 
 This is the largest GPU market by revenue so far, but will (or perhaps already has been) be eclipsed by ML inference.
 ML engineers want to write PyTorch and have the compiler handle everything else.
-In practice, after some experimentation, the top labs will have engineers hand-write CUDA kernels (or tune a higher-level compiler such as Triton/Gluon or JAX/Pallas) for production training runs &mdash; they will try their best to max out the utilization of each GPU and network resources.
+In practice, after some experimentation, the top labs will have engineers hand-write CUDA kernels (or tune a higher-level compiler/DSL such as Triton/Gluon or JAX/Pallas) for production training runs &mdash; they will try their best to max out the utilization of each GPU and network resources.
 
 4. **ML Inference**
 
 This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, SambaNova, d-Matrix) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
 
 While NVIDIA still dominates on ML training workloads, since the
+NVIDIA first. Always. Use inline PTX if you need to. Optimize for B200 first.
 There is a common belief that since this workload is so large and expensive to run, it is worth exploring cheaper NVIDIA alternatives (most notably AMD, but also TPUs and Trainium/Inferentia), but this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
 
 
@@ -360,6 +361,18 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 - Dedicated address registers (with addressing modes encoded in the opcode and direct memory manipulation ISA) + vs unified load/store architecture for SIMT machines...
   - Hard to say. If you have scalar runahead and a decoupled post-commit vector machine like SiFive does, then this wouldn't buy you much and would make the register space fragmented, making compilation harder
   - But for a SIMT machine where you have in-order vector instruction dispatch and limited opportunity to amortize the cost of multiple RISC instructions, perhaps this would make sense. Allowing physical separation and banking of the RF would be advantageous too from a PD and timing perspective, but it is hard to say what it would buy you for the tradeoff of more spills and compiler complexity.
+
+- https://x.com/SpectralCom/status/1987909075015733590
+
+> You can't start a hardware rebellion without funding.
+>
+> So we went and got $6M.
+>
+> Our CEO Michael Søndergaard just broke down our entire plan to end vendor lock-in with @RobertScammell at @BusinessInsider.
+>
+> We're even open-sourcing our battle plans (aka the pitch deck). Read it.
+
+- https://www.businessinsider.com/spectral-compute-funding-pitch-deck-nvidia-cuda-2025-11
 
 ## DensityAI (OpenNova)
 

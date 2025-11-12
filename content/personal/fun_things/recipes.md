@@ -496,6 +496,17 @@ Another great example of Cucina Povera.
 
 ### Potatoes
 
+#### Potatoes Dauphinoise
+
+- https://www.youtube.com/shorts/pTQ14AeXKro
+  - Peel and mandolin 2 large waxy potatoes
+  - Melt 1/2 stick butter, throw in 2 whole garlic cloves with skin, 2 sticks of rosemary, stir until fragrant
+  - Add heavy cream and milk and reduce. Season with salt and pepper.
+  - In a large baking dish, rub butter on surface all over. Fill pan with sliced potatoes stacked like ratatouille
+  - Discard rosemary and garlic cloves. Pour in heavy cream sauce.
+  - Cover with foil and bake until cooked. Top with parmesean cheese, remove foil, and bake again until browned.
+  - Let cool before serving
+
 #### Potato Stacks
 
 - [Potato Stacks with Garlic Herb Butter](https://www.youtube.com/shorts/a8NvbdeNM34)

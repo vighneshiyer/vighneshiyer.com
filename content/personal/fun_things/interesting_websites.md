@@ -46,6 +46,14 @@ Blogs:
 - https://baazaa.github.io/ (there are so many good writings here, https://x.com/baazaa9/with_replies, a truly exceptional blog)
 - https://danluu.com/
 - https://www.yosefk.com/blog/simd-simt-smt-parallelism-in-nvidia-gpus.html
+- https://www.bronzeagepervert.yoga/
+- https://niccolo.substack.com/
+- https://amphora.substack.com/
+- https://www.eugyppius.com/
+- https://thevisafiles.substack.com/
+- https://www.pimlicojournal.co.uk/
+- https://www.medgold.co/
+- https://map.simonsarris.com/
 
 China:
 
