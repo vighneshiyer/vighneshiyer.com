@@ -208,12 +208,12 @@ The argument goes, if your application can only run on NVIDIA GPUs, then you are
 Therefore, you should diversify your hardware to build negotiating leverage against NVIDIA.
 
 The importance of having negotiating leverage mainly applies to hyperscalars or frontier AI labs who continuously purchase massive quantities of GPUs.
-The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, or buy such small quantities that leverage is not so important.
+The *token consumers* and *fine-tuners* (like AT&T) will almost always choose to rent GPUs, or buy such small quantities that their leverage is minimal.
 
 3. **Availability**
 
 While NVIDIA GPUs are in very high demand, NVIDIA has far more cloud deployments than AMD.
-I can't comment on how easy it is to reserve a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA GPU vs an AMD GPU.
+I can't comment on how easy it is to reserve a large NVIDIA Blackwell cluster, but it would seem that the immense volume and large number of NVIDIA hyperscaler clouds and neoclouds makes it easier in practice to rent an NVIDIA cluster vs an AMD one.
 
 Considering points ⓵, ⓶, and ⓷, unless you were penny-pinching, why would you bother to use AMD GPUs?
 Using AMD is often not cheaper once you factor in the opportunity cost of the time spent porting software and getting optimal performance.
@@ -258,18 +258,28 @@ There are tons of custom CUDA kernels in all these pieces of software and the so
 
 3. **ML Training**
 
-This is the largest GPU market by revenue so far, but will (or perhaps already has been) be eclipsed by ML inference.
+This is the largest GPU market by revenue so far, but will be (or perhaps already has been) eclipsed by ML inference.
 ML engineers want to write PyTorch and have the compiler handle everything else.
 In practice, after some experimentation, the top labs will have engineers hand-write CUDA kernels (or tune a higher-level compiler/DSL such as Triton/Gluon or JAX/Pallas) for production training runs &mdash; they will try their best to max out the utilization of each GPU and network resources.
 
+NVIDIA (and TPUs within Google) dominates training because developers will use and optimize for the *most available* platform.
+This is not only a function of what hardware is easy to get, but also the availability of turn-key software.
+When the Chinese AI labs explore new model architectures, they write kernels in CUDA, and never look back.[^6]
+
+[^6]: This may be changing due to Chinese government controls. Chinese kernel devs will be bludgeoned just like the Googlers.
+<!--NVIDIA first. Always. Use inline PTX if you need to. Optimize for B200 first.-->
+
 4. **ML Inference**
 
-This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, SambaNova, d-Matrix) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game while most still rely on GPUs for training.
+This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, SambaNova, d-Matrix, MatX) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game, while most labs still rely on GPUs for training.
 
-While NVIDIA still dominates on ML training workloads, since the
-NVIDIA first. Always. Use inline PTX if you need to. Optimize for B200 first.
-There is a common belief that since this workload is so large and expensive to run, it is worth exploring cheaper NVIDIA alternatives (most notably AMD, but also TPUs and Trainium/Inferentia), but this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
+It is commonly said that since inference is expensive to run, it is worth exploring cheaper NVIDIA alternatives to boost token API margins (most notably AMD, but also TPUs and Inferentia).
+AMD has the best showing as an NVIDIA inference alternative, but their rack-scale compute and cluster-level networking is still behind what NVIDIA offers.
+The most important thing is turn-key inference serving support using [vLLM]() or [SGLang]() or [TensorRT-LLM] or [Modular MAX]()
+InferenceMAX for decode-bound situations ('agentic' workflows)
 
+
+this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
 
 5. **Edge**
 
@@ -334,25 +344,11 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 
 - 1st gen: CUDA C++
 - 2nd gen: Torch, TensorFlow -> Python eDSLs, eager execution of GPU kernels written in CUDA C++ (CuBLAS, CuDNN)
-- 3rd gen: Triton,
-- 4th gen: Mojo?
+- 3rd gen: TVM, Triton + Gluon, JAX + Pallas -> compilers + binding/scheduling DSLs to recover performance with manual interventions
+- 4th gen: Mojo, CUDA Python? back to writing kernels like CUDA C++
 
 - https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers
 - https://x.com/__tinygrad__/status/1982634315520651498
-
-## ZLUDA
-
-- ZLUDA has a revival! After it was shot down by AMD management (don't want to be stuck with the CUDA APIs and let NVIDIA always make the first move) and legal (what if it is illegal to work on PTX directly?), it seems those very smart guys moved out of AMD and kept working thanks to external funding coming online. (https://github.com/vosen/ZLUDA)
-  - This might be the future of anything working on AMD
-  - AMD actually tried to go back on their contract with the ZLUDA people (https://zluda.readthedocs.io/latest/faq.html) and take down their open source repo when AMD said they wouldn't move forward with it (even though that was permitted in their contract). Very insane lawyers who went crazy and sabotaged AMD's future.
-- AMD has tried to force tier-1 SW companies to HIP-ify their kernels (think Autodesk, Adobe, ...). It has mostly been a failure with billions lost in time alone. A CUDA emulation layer is crucial and the obvious way to get decent software support quickly. Trying to make people rewrite kernels just isn't going to work.
-- On the other hand, even though HIP and so forth for HPC / workstation software won't work logistically, since RoCM has decent support in PyTorch / JAX (?), it should be possible to make porting most DNN workloads easy. Still isn't the case due to custom CUDA kernels everywhere, but technically doable. Especially once they have a working Triton/Gluon backend that is as robust as the NVIDIA one.
-
-- Have to reimplement cuDNN and cuBLAS and other CUDA libraries that are linked in as blobs. Or really? Check the documentation for ZLUDA. Perhaps they can directly emulate the PTX that comes out of these libraries.
-- https://www.phoronix.com/forums/forum/hardware/graphics-cards/1582320-zluda-5-released-with-an-offline-compiler-for-cuda-on-non-nvidia-gpus
-- https://vosen.github.io/ZLUDA/blog/zluda-update-q4-2024/
-- https://vosen.github.io/ZLUDA/blog/zludas-third-life/
-- https://www.techradar.com/pro/a-lone-developer-just-open-sourced-a-tool-that-could-bring-an-end-to-nvidias-ai-hegemony-amd-financed-it-for-months-but-abruptly-ended-its-support-nobody-knows-why
 
 ## Spectral Compute
 
@@ -373,6 +369,20 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 > We're even open-sourcing our battle plans (aka the pitch deck). Read it.
 
 - https://www.businessinsider.com/spectral-compute-funding-pitch-deck-nvidia-cuda-2025-11
+
+## ZLUDA
+
+- ZLUDA has a revival! After it was shot down by AMD management (don't want to be stuck with the CUDA APIs and let NVIDIA always make the first move) and legal (what if it is illegal to work on PTX directly?), it seems those very smart guys moved out of AMD and kept working thanks to external funding coming online. (https://github.com/vosen/ZLUDA)
+  - This might be the future of anything working on AMD
+  - AMD actually tried to go back on their contract with the ZLUDA people (https://zluda.readthedocs.io/latest/faq.html) and take down their open source repo when AMD said they wouldn't move forward with it (even though that was permitted in their contract). Very insane lawyers who went crazy and sabotaged AMD's future.
+- AMD has tried to force tier-1 SW companies to HIP-ify their kernels (think Autodesk, Adobe, ...). It has mostly been a failure with billions lost in time alone. A CUDA emulation layer is crucial and the obvious way to get decent software support quickly. Trying to make people rewrite kernels just isn't going to work.
+- On the other hand, even though HIP and so forth for HPC / workstation software won't work logistically, since RoCM has decent support in PyTorch / JAX (?), it should be possible to make porting most DNN workloads easy. Still isn't the case due to custom CUDA kernels everywhere, but technically doable. Especially once they have a working Triton/Gluon backend that is as robust as the NVIDIA one.
+
+- Have to reimplement cuDNN and cuBLAS and other CUDA libraries that are linked in as blobs. Or really? Check the documentation for ZLUDA. Perhaps they can directly emulate the PTX that comes out of these libraries.
+- https://www.phoronix.com/forums/forum/hardware/graphics-cards/1582320-zluda-5-released-with-an-offline-compiler-for-cuda-on-non-nvidia-gpus
+- https://vosen.github.io/ZLUDA/blog/zluda-update-q4-2024/
+- https://vosen.github.io/ZLUDA/blog/zludas-third-life/
+- https://www.techradar.com/pro/a-lone-developer-just-open-sourced-a-tool-that-could-bring-an-end-to-nvidias-ai-hegemony-amd-financed-it-for-months-but-abruptly-ended-its-support-nobody-knows-why
 
 ## DensityAI (OpenNova)
 

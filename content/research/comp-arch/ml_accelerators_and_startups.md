@@ -83,7 +83,7 @@ https://www.etched.com/announcing-etched
 
 NVIDIA’s GPUs
 Google’s TPUs
-Amazon’s Trainium
+Amazon’s Trainium / Inferentia
 AMD’s accelerators
 Graphcore’s IPUs
 SambaNova SN Series

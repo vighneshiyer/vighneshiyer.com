@@ -66,27 +66,30 @@ Total amateur opinions to follow.
   - Porto Morgado Old Tawny (10 Years). Sits around $10 from Trader Joe's. Hits way way above its price point. We love this.
   - Porto Morgado Ruby. Not as good. Similar price point, but much worse than above imo.
   - Fairbanks Cellars California Port (1.5L). Cheap but bad. Stay away.
-  - Warre's Otima 10 Tawny Porto. TBD
+  - Warre's Otima 10 Tawny Porto. TBD.
 - Reds
   - Decoy Cabernet. Decent, hits a bit above its price point, but it's better to spend more.
   - Sean Thackrey Pleiades XXXII. Very good. Fruity and smooth.
   - Charles Shaw wines (all varieties). Very cheap, but do not buy lol. Get something nicer.
   - No Es Pituko Carignan 2024. So so smooth, hard to believe there was any alcohol at all. Excellent.
+  - Chateau Pey-Bonhomme Le-Tours. Merlot. TBD.
+  - Folk Machine Pinot Noir. TBD.
+  - Love Red 2022 - Broc Cellars. TBD.
 - Whites
   - 2021 Virgo Magic Wines 'Disco Lemonade' Riesling. Tastes heavily like brined olives. I think this is an acquired taste, not for a general audience.
   - Barefoot Moscato. Cheap, mild tasting, and gulpable. Get something nicer.
   - Risata Moscato d'Asti DOCG. Low alcohol, smooth, sweet, and fruity. A crowd favorite.
   - 2023 Nickel & Nickel Grand Sky Vineyard Chardonnay. Incredibly good, smooth, bright lime aftertaste.
 - Orange
-  - 2023 Gulp Hablo Orange (1L). TBD.
-  - Pielihueso Naranjo 2024. Very very good. Smooth, slightly fruity, and crisp. Best served cold.
   - 2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact. Excellent.
+  - Pielihueso Naranjo 2024. Very very good. Smooth, slightly fruity, and crisp. Best served cold.
+  - 2023 Gulp Hablo Orange (1L). TBD.
 
 ### Meads
 
 - The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
-- *Chaucer's Mead*. TBD.
-- *Sky River Sweet Mead*. TBD.
+- *Chaucer's Mead*. Very vanilla alcoholic honey flavor, smooth. Nothing objectionable, but nothing special either. Good for the price.
+- *Sky River Sweet Mead*. At $30 it is expensive for what it is. Much more complex mead with a barnyard / wet grass flavor and floral notes. Not appreciated by everyone.
 
 ### Sake
 
@@ -177,7 +180,7 @@ To buy:
   - Angel's Envy
   - Rittenhouse 100 (Rye) (manhattan) (probably too spicy for our taste)
 - Rum
-  - Appleton Estate 8 / 12
+  - Appleton Estate 8 / 12 (Mai Tai)
   - El Dorado 8 / 12
   - Santa Teresa 1796
   - Diplomático Mantuano
@@ -209,3 +212,13 @@ Bar Card:
   - Mai Tai: 2oz rum, 1/2oz cointreau, 1oz lime juice, 1/2oz orgeat, 1/4oz simple syrup. Shaken.
 - Irish cream
   - Mudslide: 1oz irish cream, 1oz coffee liqueur, 1oz vodka, 1.5oz heavy cream. Shaken.
+
+More things:
+
+- White rum
+  - Probitas (Daiquiri)
+  - El Dorado 3
+  - Flor de Cana 4
+  - Diplomatico Planas (El Presidente)
+- Gin
+  - Citadelle
