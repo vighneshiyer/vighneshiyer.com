@@ -54,6 +54,10 @@ Blogs:
 - https://www.pimlicojournal.co.uk/
 - https://www.medgold.co/
 - https://map.simonsarris.com/
+- https://mrstarstack.substack.com/
+- https://minimaxir.com/
+- https://simonwillison.net/
+- https://til.simonwillison.net/
 
 China:
 

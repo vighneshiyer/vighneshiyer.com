@@ -1,37 +1,183 @@
 +++
 title = "Cocktails"
-date = 2024-03-23
-draft = true
-description = "A very important topic. Recipe cards and my alcohol reviews."
+date = 2025-11-13
+draft = false
+description = "My wine, spirit, and liqueur reviews + cocktail recipes"
 +++
 
-It is nice to make cocktails at home to 1) customize them, 2) make them with the specific liquors that you like, 3) enjoy them in your own quiet space, and 4) save money.
-I am by no means an expert on this topic but this is what I've learned so far.
+Making cocktails at home is good because:
 
-## Equipment
+1. You can customize them to your or your guests' liking
+2. You can make cocktails with high-end liquors that you pick out
+3. You can enjoy drinking in your own quiet space
+4. Bartending at home is cost effective
 
-First, there is some basic equipment that you need, that I wish I had from the start.
-Just buy these things.
+I am by no means an expert on this topic but here is what I've learned so far.
 
-- *Large ice cube tray*: I liked these Tovolo "King Cube" silicon trays ([Amazon link](https://www.amazon.com/dp/B01LXF6H2Y))
-- *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1))
-- *Jigger*: There are 2 major varieties (double-ended and angled). You need to be able to measure 0.5-2.0 oz. I think the angled jiggers are way easier to use at home with less spillage than the double-ended kind. I like this one from OXO ([Amazon link](https://www.amazon.com/dp/B00B6LUAPW)).
-- *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find 'rocks' glasses to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). Coupes would be good next additions.
-- *Citrus juicer*: These are cheap, just get any one
-- *Mixing tin*: There are also cocktail mixing glasses, but I prefer a stainless steel mixing vessel. I have this one from American Metalcraft ([Amazon link](https://www.amazon.com/dp/B09QQQGTWY)).
-- *Hawthorne Strainer*: This OXO one is good ([Amazon link](https://www.amazon.com/dp/B0000DAQ93))
-- *Cobbler shaker*: There are also Boston shakers, but a cobbler shaker is far easier to use at home. I got this one from OXO ([Amazon link](https://www.amazon.com/dp/B07JW89TC3)). If I was OK spending $60 on this, I would buy the YETI one.
-- *Bar spoon*: Just get some cheap bar spoons, the exact model doesn't matter.
-- *Cooler*: I use an insulated bag to hold all my ice and cold liquors, but a proper hard-case insulated cooler would be better.
-- *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget - these are all kind of the same.
-- *Toothpicks*: The poor man's version of the fancy cocktail pick
+## Cocktails
 
-## Prep
+These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
 
-There is nothing to do except chill all your mixers and liquors.
-Since all the cocktails I like are served chilled, I even chill the liquors that aren't typically chilled (whiskey, vermouth, rum, soju).
+### Old Fashioned
 
-## Enumeration of Poisons
+There are many variations and you can use any spirit, although whiskey is the classic.
+
+Ingredients
+: - 2oz whiskey / rum
+  - 1/8oz&ndash;1/4oz simple syrup (or demerara syrup / maple syrup / blue agave syrup)
+  - 2 dashes Angostura bitters
+  - 2 dashes orange bitters
+  - (Optional) 1/2oz coffee liqueur
+  - (Optional) 2 dashes Aztec chocolate bitters
+  - (Optional) 2 dashes black walnut bitters
+
+Method
+: Stir in mixing glass with cubed ice. Strain. Pour over ice.
+
+Serving and Garnish
+: Rocks glass, large ice cube, Luxardo cherry, orange peel twist
+
+Good Bottles
+: Four Roses, Maker's 46, Diplomatico Reserva
+
+### Sour
+
+Ingredients
+: - 2oz whiskey / rum
+  - 2&ndash;3oz fresh unpasteurized lemonade[^1]
+  - Quarter of a lemon, juiced fresh
+  - 1/2oz simple / maple / demerara syrup (only if using pure lemon juice)
+
+Method
+: Shake hard with large ice cube (for max foam). Double strain into glass.
+
+Serving and Garnish
+: Cocktail glass, up, Luxardo cherry, float 1/2oz dry red wine for a _NY Sour_
+
+Good Bottles
+: Four Roses
+
+[^1]: The Trader Joe's refrigerated lemonade works perfectly, no need for additional sweetener. Can sub for 1oz pure lemon juice
+
+### Manhattan
+
+Ingredients
+: - 2oz whiskey
+  - 1oz sweet vermouth (or ruby port)
+  - 2 dashes Angostura bitters
+  - (Optional) 1 dash black walnut bitters
+
+Method
+: Stir in mixing glass with cubed ice. Strain.
+
+Serving and Garnish
+: Coupe glass, up, Luxardo cherry
+
+Good Bottles
+: Split Carpano Antica + Carpano Punt E Mes + Cocchi Vermouth Di Torino. Otima 10 Year Port. Rittenhouse.
+
+### Highball
+
+Ingredients
+: - 2oz whiskey / rum / gin
+  - 4&ndash;6oz mixer (club soda, ginger ale, coke, sprite)
+  - 1/2oz fresh lime/lemon juice
+
+Method
+: Combine in glass with ice. Stir.
+
+Serving and Garnish
+: Highball glass, on rocks, Luxardo cherry
+
+Good Bottles
+: Suntory Toki
+
+### Daiquiri
+
+Ingredients
+: - 2oz white rum
+  - 3/4oz&ndash;1oz lime juice (1 lime ≈ 1oz)
+  - 1/2oz&ndash;3/4oz simple syrup
+  - (Optional) dash of absinthe
+
+Method
+: Shake hard with ice. Double strain into glass.
+
+Serving and Garnish
+: Cocktail glass, up
+
+Good Bottles
+: El Dorado 3, Probitas, Planteray 3 Stars, Flor de Cana 4
+
+### El Presidente
+
+Ingredients
+: - 1 1/2oz light rum
+  - 3/4oz blanc or dry vermouth
+  - 1/4oz orange liqueur
+  - 1 barspoon real grenadine
+
+Method
+: Stir in mixing glass with ice. Strain.
+
+Serving and Garnish
+: Cocktail glass, up
+
+Good Bottles
+: Diplomatico Planas, Probitas, El Dorado 3, Plantaray 3 Stars, Lillet Blanc, Dolin Vermouth Blanc
+
+### Mai Tai
+
+Ingredients
+: - 2oz rum
+  - 1oz lime juice
+  - 1/2oz dry curacao
+  - 1/2oz orgeat
+  - 1/8&ndash;1/4oz simple / demerara syrup
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Large rocks glass, ice pebbles, lime peel
+
+Good Bottles
+: Appleton Estate 8 / 12 / 15, El Dorado 8, Smith and Cross. Pierre Ferrand Dry Curacao
+
+### Gimlet
+
+Ingredients
+: - 2oz gin
+  - 1/2&ndash;3/4oz lime juice
+  - 1/2&ndash;3/4oz simple syrup
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Nick and nora or coupe, up, lime wheel garnish
+
+Good Bottles
+: Citadelle, Hendrick's
+
+### Negroni
+
+### Boulevardier
+
+### Sidecar
+
+### Mudslide
+
+- Mudslide: 1oz irish cream, 1oz coffee liqueur, 1oz vodka, 1.5oz heavy cream. Shaken.
+
+### Between the Sheets
+
+### Port of Call
+
+### Japanese Snow Monkey
+
+
+## Poison Reviews
 
 Here are things I've tried and what I think.
 *To be clear*: I have no actual taste in alcohol.
@@ -58,7 +204,8 @@ Total amateur opinions to follow.
 
 ### Gin
 
-- *Citadelle Gin*. (9/10). Excellent 'celery'-like, juniper berry, freshness as the final note. Gimlet with this is too good.
+- *Citadelle Gin*. (9/10). Excellent 'celery'-like + juniper berry flavor, freshness as the final note. Gimlet with this is too good.
+- *Hendrick's Gin.* (8/10). Also very good, but more subtle finish and harsher down the throat vs Citadelle
 
 ### Wines
 
@@ -116,109 +263,108 @@ What follows are all sakes from Takara (some brewed in Berkeley, others in Japan
   - Totally worth it. So delicious and the syrup is great to add to a cocktail.
 - Angostura bitters. It is what it is, pretty good - not many other options.
 
-## Recipe List
+## Equipment
 
-These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
+First, there is some basic equipment that you need, that I wish I had from the start.
+Just buy these things.
 
-### Old Fashioned
+- *Large ice cube tray*: I liked these Tovolo "King Cube" silicon trays ([Amazon link](https://www.amazon.com/dp/B01LXF6H2Y))
+- *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1))
+- *Jigger*: There are 2 major varieties (double-ended and angled). You need to be able to measure volumes from 1/4oz to 2oz. I think the angled jiggers are way easier to use at home with less spillage than the double-ended kind. I like this one from OXO ([Amazon link](https://www.amazon.com/dp/B00B6LUAPW)).
+- *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions.
+- *Citrus juicer*: These are cheap, just get any one. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF))
+- *Mixing tin*: There are also cocktail mixing glasses, but I prefer a stainless steel mixing vessel. I have this one from American Metalcraft ([Amazon link](https://www.amazon.com/dp/B09QQQGTWY)).
+- *Hawthorne Strainer*: This OXO one is good ([Amazon link](https://www.amazon.com/dp/B0000DAQ93))
+- *Cobbler shaker*: There are also Boston shakers, but a cobbler shaker is far easier to use at home. I got this one from OXO ([Amazon link](https://www.amazon.com/dp/B07JW89TC3)). If I was OK spending $60 on this, I would buy the [YETI one](https://www.yeti.com/drinkware/barware/cocktail-shaker-20oz.html).
+- *Fine mesh strainer*: I have a 3" strainer from OXO ([Amazon link](https://www.amazon.com/OXO-Grips-3-Inch-Strainer-Multicolor/dp/B001713L84))
+- *Bar spoon*: Just get some cheap bar spoons, the exact model doesn't matter.
+- *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget - these are all kind of the same.
+- *Toothpicks*: The poor man's version of the fancy cocktail pick. Often too short to place over the rim of a glass
+  - *Cocktail picks*: A substantial upgrade
+- *Cooler*: I use an insulated bag to hold all my ice and cold liquors, but a proper hard-case insulated cooler would be better.
 
-- In a cocktail mixing tin, add 1 bar spoon of simple syrup, 2 dashes of Angostura bitters, 4 dashes of orange bitters, and a splash of water. Stir to combine.
-- Add regular ice, 2oz whiskey, and stir for 20-30 seconds.
-  - Optionally, substitute the whiskey for rum, or split both 1oz:1oz
-- Strain and pour over a large ice cube in a rocks glass. Garnish with a cherry.
+Now, there is nothing to do except chill all your mixers and liquors.
+Since all the cocktails I like are served chilled, I even chill the liquors that aren't typically chilled (whiskey, vermouth, rum, soju).
 
-### Sour
+## My Shelf
 
-- In a cocktail shaker, add ice, 2oz whiskey
-- Add 3oz fresh lemonade (the Trader Joe's refrigerated unpasteurized lemonade works perfect, no need for additional sweetener)
-- Add the juice of about 1/2 of a lemon (use a citrus juicer)
-- Shake hard for 10 seconds
-- Strain and pour over a large ice cube in a rocks glass. Garnish with cherry.
-- For a *NY Sour*, float 0.5oz of dry red wine (e.g. Malbec) over the back of a spoon
-
-### Manhattan
-
-- In a mixing tin, add ice, 2oz whiskey, 1oz sweet vermouth (sub port), and 2 dashes of Angostura bitters
-- Stir 20-30 seconds until chilled and strain into glass (no ice). Garnish with cherry.
-
-### Highball
-
-- Fill a tall glass with ice and pour 2oz whiskey
-- Slowly top with mixer (cherry coke, sprite, whatever) (about 4-6oz)
-- Stir gently a few times. Garnish with cherry.
-
-### Daiquiri
-
-- In a cocktail shaker, add 2oz rum, 1oz lime (or lemon) juice (about 1/2 of a lemon), 1-2 bar spoons of simple syrup. Stir well.
-- Add ice and shake hard until chilled. Strain into a chilled coupe (no ice)
-
-### El Presidente
-
-- Rum, sweet vermouth, orange curacao, grenadine, cherry
-- TBD. I don't have everything for this.
-
-### Mai Tai
-
-- 2oz rum (can mix while + aged), 1/2oz cointreau, 1oz lime juice, 1/2oz orgeat, 1 barspoon simple syrup.
-- Shake with ice.
-
-### Gimlet
-
-- Gin, fresh lime juice, simple syrup. 2:1:1 ratio. 2oz gin, 1 whole lime, 1oz simple syrup (about 3 barspoons).
-- Shake with ice. Serve into a chilled cocktail glass.
-
-## Plans
-
-OK let's say I want to do a rum/whiskey/Irish cream event.
-To buy:
-
+- Wine
+  - Otima 10-Year Tawny Port
+  - Chateau Pey-Bonhomme Le-Tours. Merlot
+  - Folk Machine Pinot Noir
+  - Love Red 2022 - Broc Cellars
 - Whiskey
-  - Four Roses Small Batch / Single Barrel
-  - Michter's US1 Bourbon
-  - Redbreast 12 Yr Irish Whiskey
-  - Larceny Small Batch
-  - Angel's Envy
-  - Rittenhouse 100 (Rye) (manhattan) (probably too spicy for our taste)
+  - Four Roses Small Batch
+  - Mitcher's US*1
+  - Redbreast 12 Year
 - Rum
-  - Appleton Estate 8 / 12 (Mai Tai)
+  - Diplomatico Reserva Exclusiva
+  - Appleton Estate 8
+- Sake
+  - Hakutsuru Sayuri Nigori Sake
+- Soju
+  - Oak 43
+- Gin
+  - Hendricks
+- Liquors
+  - Campari
+  - Sole Vermouth (Extra Dry)
+  - Dolin Vermouth Rouge (Sweet)
+  - TJ's Sicilian Limoncello (x2)
+  - Vanilla vodka
+  - Cointreau
+  - Mr. Black Cold Brew Coffee Liqueur
+  - Baileys Original Irish Cream
+- Extras
+  - _Bitters_: Angostura, Orange
+  - _Syrups_: Simple, Demerara, Grenadine, Orgeat
+  - Luxardo cherries
+  - Limes / lemons
+  - Heavy cream
+  - Chocolate syrup
+
+## To Buy
+
+Bottles I have either bought or want to try.
+
+### Whiskey
+
+- Four Roses Small Batch
+- Four Roses Single Barrel
+- Michter's US1 Bourbon
+- Redbreast 12 Yr Irish Whiskey
+- Larceny Small Batch
+- Angel's Envy
+- Rittenhouse 100
+- Nikka Whisky From The Barrel
+
+### Rum
+
+- White Rum
+  - Probitas
+  - El Dorado 3
+  - Flor de Cana 4
+  - Diplomatico Planas
+- Aged Rum
+  - Appleton Estate 8 / 12
   - El Dorado 8 / 12
   - Santa Teresa 1796
   - Diplomático Mantuano
   - El Pasador de Oro Rum XO
   - Kaniche XO Artisanal Rum
-- Irish Cream
-  - Kavanagh / Baileys Irish Cream Liqueur
-  - Kahlua Coffee Liqueur
-- Vodka
-  - Vanilla vodka (mudslide)
-- Mead
-  - Oliver Camelot Mead
-- Others
-  - Orgeat
-  - Grenadine
-  - Jack Rudy Demerara Syrup
-  - Lemon + lime bag
-  - Unpasteurized lemonade
-  - Chocolate syrup
 
-Bar Card:
+### Gin
 
-- Whiskey
-  - Old Fashioned: 2oz whiskey, 1/2oz simple syrup, Angostura + orange bitters. Stirred.
-  - Manhattan: 2oz whiskey, 1oz sweet vermouth (or port), Angostura bitters. Stirred.
-  - Sour: 2oz whiskey, 3oz lemonade, 1/2oz lemon juice. Shaken.
-- Rum
-  - Daiquiri: 2oz rum, 1oz lime juice, 1/2oz simple syrup. Shaken.
-  - Mai Tai: 2oz rum, 1/2oz cointreau, 1oz lime juice, 1/2oz orgeat, 1/4oz simple syrup. Shaken.
-- Irish cream
-  - Mudslide: 1oz irish cream, 1oz coffee liqueur, 1oz vodka, 1.5oz heavy cream. Shaken.
+- Citadelle Gin
+- Citadelle Jardin D'Ete Gin
 
-More things:
+### Cognac
 
-- White rum
-  - Probitas (Daiquiri)
-  - El Dorado 3
-  - Flor de Cana 4
-  - Diplomatico Planas (El Presidente)
-- Gin
-  - Citadelle
+- ABK6 VSOP Cognac
+
+### Liquors
+
+- Orange liquors
+  - "Traditional" curacao, rum-based: Pierre Ferrand Dry Curacao, Santa Teresa Rhum Orange
+  - Brandy-based curacao: Grand Mariner
+  - Triple secs: Cointreau

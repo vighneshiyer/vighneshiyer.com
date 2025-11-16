@@ -77,3 +77,19 @@ I will point out the ones I like.
 - The Saturn Microarchitecture Manual (https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-215.pdf)
 - Instruction Set Migration at Warehouse Scale (https://arxiv.org/pdf/2510.14928)
   - A great practical paper from Google
+- TurboSAT: Gradient-Guided Boolean Satisfiability Accelerated on GPU-CPU Hybrid System (https://arxiv.org/pdf/2511.07737)
+
+## Hall of Shame
+
+- https://archprisms.talkyard.net/-255/multi-dimensional-ml-pipeline-optimization-in-cost-effective-disaggregated-datacenter
+  - https://www.sigarch.org/from-theory-to-practice-introducing-architectural-prisms-an-experiment-in-ai-first-academic-dialogue/
+  - https://www.sigarch.org/the-reviewer-is-dead-long-live-the-review-re-engineering-peer-review-for-the-age-of-ai/
+  - Embarrassing
+- https://www.sigarch.org/dont-put-all-your-tensors-in-one-basket-hardware-lottery/
+- https://www.sigarch.org/computer-architecture-lessons-from-the-kitchen/
+- https://www.sigarch.org/the-role-of-llms-in-academic-reviewing/
+- https://www.sigarch.org/the-academic-pipeline-stall-why-industry-must-stand-for-academia/
+- https://www.sigarch.org/a-computer-architects-guide-to-designing-abstractions-for-intelligent-systems/
+- https://www.sigarch.org/the-quarch-experiment-crowdsourcing-a-machine-learning-dataset-for-computer-architecture/
+
+Hmm, lots of things should go in here. I usually delete bad things, but I should catalogue them.

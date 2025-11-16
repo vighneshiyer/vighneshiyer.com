@@ -21,6 +21,7 @@ highlight_code = true
 extra_syntaxes_and_themes = ["syntaxes"]
 insert_anchor_links = "heading"
 smart_punctuation = true
+definition_list = true
 
 [extra]
 # Put all your custom variables here

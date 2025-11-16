@@ -1,6 +1,6 @@
 +++
 title = "TensorWave: Massive Scale Training & Inference"
-date = 2025-10-21
+date = 2025-11-13
 draft = false
 description = "How is it looking for AMD in late 2025? ScalarLM, ZLUDA, the CUDA moat, and more!"
 
@@ -233,6 +233,24 @@ This lopsided situation isn't an accident.
 - The panel itself was quite laughable. The AT&T guy presented some Telco-specific fine-tuning of Gemma 4B using ScalarLM on a TensorWave cluster, but I think everyone saw this as a joke. Why would anyone bother to use AMD unless they were penny pinching (which no one has to do today considering how well funded all these AI companies are)? And AMD systems aren't even cheaper once you consider the time spent porting software. As Jensen said, even if his competitors give their hardware away for free, it still isn't enough for them to get traction in the market. I would think he is right.
 -->
 
+### An AMD Cloud Provider Perspective
+
+- https://x.com/HotAisle/status/1990103926465859633
+
+The competent operator of the AMD-only cloud Hot Aisle, made this interesting remark:
+
+> I track @AMD NeoCloud compute pricing closely.
+>
+> What stands out:
+>
+> TW is cheaper than Vultr on MI325x, yet remains 10% more expensive on MI355x. Both clearly have capacity available, which means they’re mostly landing short-term PoCs, small jobs, or deals below list price.
+>
+> TW being sold out of MI300x but not sold out of MI325x (July delivery) or MI355x (August delivery) signals weaker than expected demand for both. They have inventory, and they haven’t locked it down with long-term contracts. Why not?
+>
+> Where's the profit?
+>
+> TW financed those GPUs through DDTL (~$100M+), likely at 8.5–14% interest, along with investor funds. That’s a massive hit over the last five months, one they’re not getting back. Add ~80 employees to the burn, 4 office moves, and sure, revenue comes in… but sustainable long term profit? I know exactly what this stuff costs, not even close.
+
 ## The CUDA Moat Today
 
 To understand NVIDIA's continued dominance, I'll go over the big GPU markets and how they are served by NVIDIA's programming model and software.
@@ -273,13 +291,24 @@ When the Chinese AI labs explore new model architectures, they write kernels in 
 
 This market resembles the training one, but there are many more custom chip startups (e.g Tenstorrent, Groq, Cerebras, SambaNova, d-Matrix, MatX) and hyperscalers (e.g. Meta, Microsoft, AWS, Google) getting into the inference game, while most labs still rely on GPUs for training.
 
-It is commonly said that since inference is expensive to run, it is worth exploring cheaper NVIDIA alternatives to boost token API margins (most notably AMD, but also TPUs and Inferentia).
-AMD has the best showing as an NVIDIA inference alternative, but their rack-scale compute and cluster-level networking is still behind what NVIDIA offers.
-The most important thing is turn-key inference serving support using [vLLM]() or [SGLang]() or [TensorRT-LLM] or [Modular MAX]()
-InferenceMAX for decode-bound situations ('agentic' workflows)
+Since inference is expensive to run, it is worth exploring cheaper NVIDIA alternatives to boost token API margins (most notably AMD, but also TPUs and Inferentia).
+AMD has the best showing, but their rack-level and cluster-level networking is still behind what NVIDIA offers.
+The most important thing is turn-key inference serving with [vLLM](https://github.com/vllm-project/vllm), [SGLang](https://github.com/sgl-project/sglang), [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM), or even [Modular MAX](https://github.com/modular/modular).
+NVIDIA is well supported in every inference serving engine and for every AI model in existence, while AMD still has a way to go.[^7]
 
+[^7]: It may appear that [vLLM has support for ROCm](https://docs.vllm.ai/en/v0.6.5/getting_started/amd-installation.html), but practically, the out-of-the-box experience / performance isn't comparable to NVIDIA (especially for multi-GPU setups)
 
+Recently, SemiAnalysis put out their [InferenceMAX](https://inferencemax.semianalysis.com/) benchmark.
+If we look at decode-bound scenarios (i.e. 'agentic' workflows), AMD is reasonably close to, but still behind NVIDIA, on raw $/token for medium-sized models.
+
+{{ gallery(images=[
+    "inferencemax_1.png",
+    "inferencemax_2.png",
+], popout=true, caption="InferenceMAX results for gpt-oss-120B 1K/8K on November 11, 2025") }}
+
+<!--
 this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
+-->
 
 5. **Edge**
 

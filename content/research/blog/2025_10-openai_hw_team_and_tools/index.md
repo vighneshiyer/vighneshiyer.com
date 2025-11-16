@@ -239,3 +239,6 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 > - The expert emphasized that the risks surrounding AI chip investments and custom silicon are largely being overlooked, as few outside the semiconductor industry fully grasp how fragile the ecosystem is. He said most investors don't realize that hardware commitments in AI lack the stability seen in traditional semiconductors, where standards are established years in advance. Instead, investors are chasing wherever OpenAI signals it plans to spend, without considering whether those designs will hold value if OpenAI's demand slows.
 >
 > - According to the expert, the main problem in this system lies on the demand side: OpenAI's end customers. Since OpenAI frequently shifts its business model, he warned that without a clear and sustained source of third-party revenue beyond its hardware suppliers and cloud partners, the entire ecosystem risks being propped up by circular investments rather than real, organic demand.
+
+- https://blog.cdleary.com/posts/2025/07/20/xlsynth-codegen-option-tour/
+  - This quickly reveals what XLS actually does. Handicapping synthesis from doing proper retiming...

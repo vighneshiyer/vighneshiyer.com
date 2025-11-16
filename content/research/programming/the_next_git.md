@@ -23,3 +23,6 @@ description = ""
 - Remote build server and execution + remote build cache to make git worktrees locally actually viable
 - A repo is its own universe. Proper dependency and universe construction is required. Solutions like docker or Nix are only part of the way there
 - A lot of ideas that Google has in their codebase are quite good in principle: Cider, CitC, Bazel (remote build execution + global build artifact caching)
+
+- https://news.ycombinator.com/item?id=45916196 (Zed is our office (zed.dev))
+  - This collaboration is part of the editor, but something else is needed too...

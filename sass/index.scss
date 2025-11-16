@@ -670,6 +670,40 @@ div.callout {
   }
 }
 
+dl {
+  margin-bottom: var(--space-s);
+  dt {
+    font-weight: 600;
+    margin-bottom: var(--space-2xs);
+    font-style: italic;
+  }
+  dd {
+    font-size: var(--step--1);
+    margin-left: var(--space-l);
+    margin-bottom: var(--space-xs);
+    ul {
+      margin-bottom: 0;
+    }
+    li {
+      font-size: var(--step--1);
+      margin-left: 0;
+      margin-bottom: var(--space-2xs);
+      &:before {
+        content: "⁃";
+        margin-top: 0;
+        font-size: var(--step--1);
+        margin-left: 0;
+        margin-right: var(--space-2xs);
+        position: relative;
+        color: var(--fg);
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .header-container {
   @include u-container;
   @include u-grid;
@@ -1128,6 +1162,9 @@ a.anchor {
     margin-bottom: var(--space-m) !important; // need to override the style that's applied in the HTML
   }
   hr {
+    grid-column: var(--subgrid-content-begin) / var(--subgrid-content-end);
+  }
+  dl {
     grid-column: var(--subgrid-content-begin) / var(--subgrid-content-end);
   }
 }

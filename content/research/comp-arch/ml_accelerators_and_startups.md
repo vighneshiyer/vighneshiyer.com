@@ -109,5 +109,6 @@ Blaize
 
 ## Startups without Commercial Silicon Yet
 
-Taalas AI
-Positron AI
+- Taalas AI
+- Positron AI
+- https://www.businesswire.com/news/home/20251110896482/en/Led-by-Ex-Google-and-Meta-Executives-Majestic-Labs-Emerges-From-Stealth-with-%24100M-To-Redefine-AI-Infrastructure-by-Tearing-Down-the-Memory-Wall
