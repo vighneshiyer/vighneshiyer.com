@@ -5,7 +5,7 @@ draft = false
 description = "My design process, inspirational websites, fonts, colorschemes, layouts, and more"
 
 [extra]
-new = true
+new = false
 +++
 
 My old website contained all the same articles as this current one, but I didn't like how it looked.

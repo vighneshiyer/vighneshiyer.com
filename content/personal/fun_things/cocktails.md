@@ -38,7 +38,7 @@ Serving and Garnish
 : Rocks glass, large ice cube, Luxardo cherry, orange peel twist
 
 Good Bottles
-: Four Roses, Maker's 46, Diplomatico Reserva
+: Four Roses, Maker's 46. Diplomatico Reserva
 
 ### Sour
 
@@ -124,7 +124,7 @@ Serving and Garnish
 : Cocktail glass, up
 
 Good Bottles
-: Diplomatico Planas, Probitas, El Dorado 3, Plantaray 3 Stars, Lillet Blanc, Dolin Vermouth Blanc
+: Diplomatico Planas, Probitas, El Dorado 3, Plantaray 3 Stars. Lillet Blanc, Dolin Vermouth Blanc.
 
 ### Mai Tai
 
@@ -142,7 +142,7 @@ Serving and Garnish
 : Large rocks glass, ice pebbles, lime peel
 
 Good Bottles
-: Appleton Estate 8 / 12 / 15, El Dorado 8, Smith and Cross. Pierre Ferrand Dry Curacao
+: Appleton Estate 8 / 12 / 15, El Dorado 8, Smith and Cross. Pierre Ferrand Dry Curacao.
 
 ### Gimlet
 
@@ -158,24 +158,139 @@ Serving and Garnish
 : Nick and nora or coupe, up, lime wheel garnish
 
 Good Bottles
-: Citadelle, Hendrick's
+: Citadelle, Hendrick's, Tanqueray No. Ten, Tanqueray Rangpur, Bluecoat, Monkey 47, Junipero, Barr Hill, Isle of Harris, Roku Gin (Japanese), Gin Mare (Spanish, exotic, olives), Empress 1908 Indigo
 
 ### Negroni
 
+Ingredients
+: - 1oz gin
+  - 1oz sweet vermouth
+  - 1oz Campari
+
+Method
+: Stir in mixing tin with ice. Strain.
+
+Serving and Garnish
+: Rocks glass, one large ice cube, orange peel garnish
+
+Good Bottles
+: Cocchi Vermouth di Torino, Cinzano Rosso Vermouth, Carpano Antica Formula, Dolin Rouge Sweet. Tanqueray No. 10.
+
 ### Boulevardier
+
+Ingredients
+: - 1 1/2oz bourbon
+  - 1oz Campari
+  - 1oz sweet vermouth
+  - (Optional) small pinch of salt
+
+Method
+: Stir in mixing tin with ice. Strain.
+
+Serving and Garnish
+: Rocks glass or coupe, one large ice cube, orange peel garnish
+
+Good Bottles
+: Same Vermouths as above. Buffalo Trace, Elijah Craig Small Batch.
 
 ### Sidecar
 
-### Mudslide
+Ingredients
+: - 2oz cognac / brandy
+  - 1/2&ndash;3/4oz Cointreau / Grand Mariner
+  - 3/4oz lemon juice
+  - 1/4&ndash;1/2oz simple syrup
 
-- Mudslide: 1oz irish cream, 1oz coffee liqueur, 1oz vodka, 1.5oz heavy cream. Shaken.
+Method:
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Coupe, up, orange and lemon peel garnish
+
+Good Bottles
+: Pierre Ferrand Ambre, Pierre Ferrand 1840 Original Formula, Hennessy VS, Remy Martin VSOP
 
 ### Between the Sheets
 
+Ingredients
+: - 1oz cognac
+  - 1oz light rum
+  - 1oz triple sec (Cointreau)
+  - 1/4oz lemon juice
+  - (Optional) pinch of salt
+  - (Optional) 1/4oz simple syrup
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Cocktail glass, up, express orange peel (no garnish)
+
+Good Bottles
+: Same cognacs as above. Plantaray 3 Stars, Flor De Cana 4, El Dorado 3, Diplomatico Planas.
+
 ### Port of Call
+
+Ingredients
+: - 1oz gin
+  - 1oz ruby port wine
+  - 3/4oz lemon juice
+  - 1/2oz cinnamon syrup
+  - 1 tsp cranberry preserves
+  - (Optional) sub cinnamon syrup / cranberry for: simple / demerara syrup + Angostura bitters + dash of grenadine / raspberry jam
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Rocks glass, crushed ice, mint garnish
+
+Good Bottles
+: I have no idea
+
+### Mudslide
+
+Ingredients
+: - 1oz Irish cream
+  - 1oz coffee liqueur
+  - 1oz vanilla vodka
+  - 1 1/2oz heavy cream
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Rocks glass or coupe, fresh ice OR up, chocolate syrup. Garnish with shaved chocolate.
+
+Good Bottles
+: Baileys, Kahlua
 
 ### Japanese Snow Monkey
 
+I had [this cocktail](https://www.instagram.com/p/C1IcTPbRGz3/?hl=en) at Rumba.
+The spec is given as: "Kiyomi rum, Nigori sake, Bermutto dry vermouth, Campari, raspberry, and lemon".
+"A floral but punchy take on a Negroni to help brighten long winter days."
+There was a particular roasted corn-like and slightly smoky flavor that was hard to pin down, but was very good.
+My attempted reproduction:
+
+Ingredients
+: - 1oz Japanese rum (or 3/4oz white rum + 1/4oz agricole blanc)
+  - 1oz Nigori sake
+  - 3/4oz dry vermouth
+  - 1/2oz Campari
+  - 1/2oz raspberry syrup OR muddled raspberries + 1/4oz simple syrup
+  - 1/2oz lemon juice
+  - Sprinkle of salt
+  - 3-4 drops of mezcal (for slight smoke)
+
+Method
+: Muddle raspberries. Shake with ice. Double strain.
+
+Serving and Garnish
+: Coupe, up.
+
+Good Bottles
+: Probitas (for rum). Tozai Snow Maiden, Sho Chiku Bai Nigori (for sake).
 
 ## Poison Reviews
 
@@ -185,22 +300,22 @@ Total amateur opinions to follow.
 
 ### Whiskey
 
-- *Maker's Mark 46* (6/10): I like it. Good enough neat.
-- *Woodford Reserve (Regular)* (4/10): Pretty good, but I prefer Maker's 46 over this. Not so great anymore after having better whiskeys.
-- *Suntory Toki* (6/10): I really like it when mixed. Ideal for highballs and sours. Not great neat.
-- *Four Roses Small Batch* (8/10): The best so far. Excellent. Very smooth and flavorful. Very enjoyable neat. Spending more on bourbon (at least $40 for a 750ml bottle) seems to be worth it.
+- *Maker's Mark 46*. (6/10). I like it. Good enough neat.
+- *Woodford Reserve (Regular)*. (4/10). Pretty good, but I prefer Maker's 46 over this. Not so great anymore after having better whiskeys.
+- *Suntory Toki*. (6/10). I really like it when mixed. Ideal for highballs and sours. Not great neat.
+- *Four Roses Small Batch*. (8/10). The best so far. Excellent. Very smooth and flavorful. Very enjoyable neat. Spending more on bourbon (at least $40 for a 750ml bottle) seems to be worth it.
 - *Redbreast 12*. TBD.
 - *Michter's US1*. TBD.
 
 ### Rum
 
-- *Diplomatico Reserva Exclusiva*: I like it. A few feel it is too harsh, doesn't go down smooth, at least neat. But I'm a fan.
+- *Diplomatico Reserva Exclusiva*. (7/10). I like it. A few feel it is too harsh and doesn't go down smooth, at least neat. But I'm a fan.
 - *Appleton Estate 8*. TBD.
 
 ### Soju
 
-- *Hwayo 25 Soju*: Has an initial taste much closer to sake than soju, but still inferior to sake. Good to try, but the aftertaste is still too alcoholic.
-- *Ilpoom Jinro Oak 43 Soju*: TBD.
+- *Hwayo 25 Soju*. (5/10). Has an initial taste much closer to sake than soju, but still inferior to sake. Good to try, but the aftertaste is still too alcoholic.
+- *Ilpoom Jinro Oak 43 Soju*. TBD.
 
 ### Gin
 
@@ -210,33 +325,33 @@ Total amateur opinions to follow.
 ### Wines
 
 - Port
-  - Porto Morgado Old Tawny (10 Years). Sits around $10 from Trader Joe's. Hits way way above its price point. We love this.
-  - Porto Morgado Ruby. Not as good. Similar price point, but much worse than above imo.
-  - Fairbanks Cellars California Port (1.5L). Cheap but bad. Stay away.
-  - Warre's Otima 10 Tawny Porto. TBD.
+  - *Porto Morgado Old Tawny (10 Years)*. (7/10). Sits around $10 from Trader Joe's. Hits way way above its price point. We love this.
+  - *Porto Morgado Ruby*. (5/10). Not as good. Similar price point, but much worse than above imo.
+  - *Fairbanks Cellars California Port (1.5L)*. (2/10). Cheap but bad. Stay away.
+  - *Warre's Otima 10 Tawny Porto*. TBD.
 - Reds
-  - Decoy Cabernet. Decent, hits a bit above its price point, but it's better to spend more.
-  - Sean Thackrey Pleiades XXXII. Very good. Fruity and smooth.
-  - Charles Shaw wines (all varieties). Very cheap, but do not buy lol. Get something nicer.
-  - No Es Pituko Carignan 2024. So so smooth, hard to believe there was any alcohol at all. Excellent.
-  - Chateau Pey-Bonhomme Le-Tours. Merlot. TBD.
-  - Folk Machine Pinot Noir. TBD.
-  - Love Red 2022 - Broc Cellars. TBD.
+  - *Decoy Cabernet*. (5/10). Decent, hits a bit above its price point, but it's better to spend more.
+  - *Sean Thackrey Pleiades XXXII*. (9/10) Very good. Fruity and smooth.
+  - *Charles Shaw wines (all varieties)*. (3/10). Very cheap, but do not buy lol. Get something nicer.
+  - *No Es Pituko Carignan 2024*. (8/10). So so smooth, hard to believe there was any alcohol at all. Excellent.
+  - *Chateau Pey-Bonhomme Le-Tours Merlot*. TBD.
+  - *Folk Machine Pinot Noir*. TBD.
+  - *Love Red 2022 - Broc Cellars*. TBD.
 - Whites
-  - 2021 Virgo Magic Wines 'Disco Lemonade' Riesling. Tastes heavily like brined olives. I think this is an acquired taste, not for a general audience.
-  - Barefoot Moscato. Cheap, mild tasting, and gulpable. Get something nicer.
-  - Risata Moscato d'Asti DOCG. Low alcohol, smooth, sweet, and fruity. A crowd favorite.
-  - 2023 Nickel & Nickel Grand Sky Vineyard Chardonnay. Incredibly good, smooth, bright lime aftertaste.
+  - *2021 Virgo Magic Wines 'Disco Lemonade' Riesling*. (5/10). Tastes heavily like brined olives. I think this is an acquired taste, not for a general audience.
+  - *Barefoot Moscato*. (2/10). Cheap, mild tasting, and gulpable. Get something nicer.
+  - *Risata Moscato d'Asti DOCG*. (8/10). Low alcohol, smooth, sweet, and fruity. A crowd favorite.
+  - *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
 - Orange
-  - 2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact. Excellent.
-  - Pielihueso Naranjo 2024. Very very good. Smooth, slightly fruity, and crisp. Best served cold.
-  - 2023 Gulp Hablo Orange (1L). TBD.
+  - *2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact*. (8/10). Excellent.
+  - *Pielihueso Naranjo 2024*. (9/10). Very very good. Smooth, slightly fruity, and crisp. Best served cold.
+  - *2023 Gulp Hablo Orange (1L)*. TBD.
 
 ### Meads
 
 - The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
-- *Chaucer's Mead*. Very vanilla alcoholic honey flavor, smooth. Nothing objectionable, but nothing special either. Good for the price.
-- *Sky River Sweet Mead*. At $30 it is expensive for what it is. Much more complex mead with a barnyard / wet grass flavor and floral notes. Not appreciated by everyone.
+- *Chaucer's Mead*. (6/10). Very vanilla alcoholic honey flavor, smooth. Nothing objectionable, but nothing special either. Good for the price.
+- *Sky River Sweet Mead*. (7/10). At $30 it is expensive for what it is. Much more complex mead with a barnyard / wet grass flavor and floral notes. Not appreciated by everyone.
 
 ### Sake
 
@@ -244,24 +359,24 @@ Total amateur opinions to follow.
 I highly recommend visiting them and doing a tasting.
 What follows are all sakes from Takara (some brewed in Berkeley, others in Japan).
 
-- Sho Chiku Bai REI Junmai Daiginjo. (8/10). One of our favorites. Cheap and good, serve chilled, crisp, fruity, and smooth. If it is too old, it will acquire a mushroom-y flavor.
-- Sho Chiku Bai Organic Nama. (6/10). Good chilled, but has an earthy flavor. Not suitable for a general audience.
-- Sho Chiku Bai Takara Sierra Cold. (7/10). This is an insane sake. Serve chilled. 12% ABV but tastes like zero! Very light flavor of slight sweetness and fruit, but mostly tasteless.
-- Sho Chiku Bai Nigori Crème de Sake. (9/10). Cream sake! One of our favorites. Serve chilled. Flavor is both fruity and earthy, more on the sweet side.
+- *Sho Chiku Bai REI Junmai Daiginjo*. (8/10). One of our favorites. Cheap and good, serve chilled, crisp, fruity, and smooth. If it is too old, it will acquire a mushroom-y flavor.
+- *Sho Chiku Bai Organic Nama*. (6/10). Good chilled, but has an earthy flavor. Not suitable for a general audience.
+- *Sho Chiku Bai Takara Sierra Cold*. (7/10). This is an insane sake. Serve chilled. 12% ABV but tastes like zero! Very light flavor of slight sweetness and fruit, but mostly tasteless.
+- *Sho Chiku Bai Nigori Crème de Sake*. (9/10). Cream sake! One of our favorites. Serve chilled. Flavor is both fruity and earthy, more on the sweet side.
 
 ### Cocktail Liquors
 
-- *Dolin Rouge (Sweet) Vermouth*: Decent, I have no comparison point.
+- *Dolin Rouge (Sweet) Vermouth*. Decent, I have no comparison point.
 - *Cointreau*. It works, I have no reference point for orange liqueur.
 - *Baileys*. Sweet, smooth, milky. Nothing bad, but nothing great either.
-- *TJ's Limoncello*. TBD.
 - *Mr. Black Cold Brew Coffee Liqueur*. Decent, good espresso flavor.
+- *TJ's Limoncello*. TBD.
 
 ### Garnishes
 
-- *Luxadro cherries*: TBD. These are so expensive, it better be worth it.
+- *Luxadro cherries*. TBD. These are so expensive, it better be worth it.
   - Totally worth it. So delicious and the syrup is great to add to a cocktail.
-- Angostura bitters. It is what it is, pretty good - not many other options.
+- *Angostura bitters*. It is what it is, pretty good &mdash; not many other options.
 
 ## Equipment
 
@@ -290,7 +405,7 @@ Since all the cocktails I like are served chilled, I even chill the liquors that
 
 - Wine
   - Otima 10-Year Tawny Port
-  - Chateau Pey-Bonhomme Le-Tours. Merlot
+  - Chateau Pey-Bonhomme Le-Tours
   - Folk Machine Pinot Noir
   - Love Red 2022 - Broc Cellars
 - Whiskey
@@ -361,6 +476,8 @@ Bottles I have either bought or want to try.
 ### Cognac
 
 - ABK6 VSOP Cognac
+- Hennessy VSOP
+- Pierre Ferrand Ambre / Original Formula
 
 ### Liquors
 

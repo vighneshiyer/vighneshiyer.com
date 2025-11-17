@@ -308,6 +308,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Aporia: Asian immigration and the signaling model of education](https://www.aporiamagazine.com/p/asian-immigration-and-the-signaling)
 - [‘Soul-Crushing’: Students Slam Harvard’s Grade Inflation Report](https://www.thecrimson.com/article/2025/10/30/students-react-grading-report/)
   - In response to: [Harvard College’s Grading System Is ‘Failing,’ Report on Grade Inflation Says](https://www.thecrimson.com/article/2025/10/27/grading-workload-report/)
+- [Do I Need to Go to University? - Instead of asking “Is university good?”, ask “Do I have something more compelling to do?”](https://colah.github.io/posts/2020-05-University/)
 
 ## Writing
 
@@ -367,6 +368,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Open Letter To Indians and Liberals Regarding Immigration and Outsourcing](https://www.bronzeagepervert.yoga/p/open-letter-to-indians-and-liberals)
 - [Non-linear Ethnic Niches - The emerging Western caste system](https://www.aporiamagazine.com/p/non-linear-ethnic-niches)
 - [Brain Drain as Geopolitical Strategy - The foreign experts model versus the status quo](https://www.aporiamagazine.com/p/brain-drain-as-geopolitical-strategy)
+- [The Shame of Our Cities: How Minneapolis-Saint Paul became the Medicaid fraud capital of the USA](https://www.countyhighway.com/archive/volume-3/issue-3/the-shame-of-our-cities-rosen)
 
 ### China
 
