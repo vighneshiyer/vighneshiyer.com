@@ -3,6 +3,9 @@ title = "Cocktails"
 date = 2025-11-13
 draft = false
 description = "My wine, spirit, and liqueur reviews + cocktail recipes"
+
+[extra]
+new = true
 +++
 
 Making cocktails at home is good because:
