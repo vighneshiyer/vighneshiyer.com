@@ -20,6 +20,7 @@ These aren't the "true" "official" recipes, but rather my own hacked together ve
 
 <!--
 A sticker with a white border, no backdrop or shadow, and a white background. High resolution. Sketchy, cartoon-like style.
+Use this attached image as reference, but preserve the sketchy/cartoon style from the previous generations.
 
 Whiskey: The sticker should be a bottle of whiskey modeled after the Four Roses Small Batch Bourbon bottle.
 Simple syrup: The sticker should be a glass bottle of clear simple syrup with a label. Just use the words 'Simple Syrup' with perhaps a flourish. Use a glass bottle with a tight metal clasp and rubber gasket (a flip-top metal clasp).
@@ -196,6 +197,20 @@ Good Bottles
 
 ### El Presidente
 
+<figure class="content cocktail-spec">
+  <img src="./white_rum.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./blanc_vermouth.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./dry_curacao.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./grenadine.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="" src="./el_presidente.png"/>
+</figure>
+
 Ingredients
 : - 1 1/2oz light rum
   - 3/4oz blanc or dry vermouth
@@ -212,6 +227,22 @@ Good Bottles
 : Diplomatico Planas, Probitas, El Dorado 3, Plantaray 3 Stars. Lillet Blanc, Dolin Vermouth Blanc.
 
 ### Mai Tai
+
+<figure class="popout cocktail-spec">
+  <img src="./aged_rum.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lime.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./dry_curacao.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./orgeat.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="medium" src="./mai_tai.png"/>
+</figure>
 
 Ingredients
 : - 2oz rum
@@ -231,6 +262,18 @@ Good Bottles
 
 ### Gimlet
 
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lime.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="" src="./gimlet.png"/>
+</figure>
+
 Ingredients
 : - 2oz gin
   - 1/2&ndash;3/4oz lime juice
@@ -247,6 +290,18 @@ Good Bottles
 
 ### Negroni
 
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./sweet_vermouth.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./campari.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./negroni.png"/>
+</figure>
+
 Ingredients
 : - 1oz gin
   - 1oz sweet vermouth
@@ -262,6 +317,18 @@ Good Bottles
 : Cocchi Vermouth di Torino, Cinzano Rosso Vermouth, Carpano Antica Formula, Dolin Rouge Sweet. Tanqueray No. 10.
 
 ### Martini
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./dry_vermouth.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./orange_bitters.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./martini.png"/>
+</figure>
 
 Ingredients
 : - 2oz gin
@@ -280,13 +347,31 @@ Good Bottles
 
 ### Lemon Drop
 
+<figure class="popout cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./cointreau.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./limoncello.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <!--<img class="short" src="./right_arrow.png"/>
+  <img src="./orange_bitters.png"/>-->
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./lemon_drop.png"/>
+</figure>
+
 Ingredients
 : - 1 1/2oz gin
   - 3/4oz lemon juice
   - 1/2oz triple sec (sub 1oz limoncello + 1/4oz triple sec)
   - 1/4&ndash;1/2oz simple syrup
-  - (Optional) pinch of salt
   - (Optional) one dash orange bitters
+  - (Optional) pinch of salt
 
 Method
 : Shake with ice. Double strain.
@@ -298,6 +383,18 @@ Good Bottles
 : Plymouth, Tanqueray No. 10.
 
 ### Boulevardier
+
+<figure class="content cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./campari.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./sweet_vermouth.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="medium" src="./boulevardier.png"/>
+</figure>
 
 Ingredients
 : - 1 1/2oz bourbon
@@ -312,9 +409,23 @@ Serving and Garnish
 : Rocks glass or coupe, one large ice cube, orange peel garnish
 
 Good Bottles
-: Same Vermouths as above. Buffalo Trace, Elijah Craig Small Batch.
+: Same Vermouths as the Negroni. Buffalo Trace, Elijah Craig Small Batch.
 
 ### Sidecar
+
+<figure class="popout cocktail-spec">
+  <img src="./cognac.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./grand_marnier.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="medium" src="./sidecar.png"/>
+</figure>
 
 Ingredients
 : - 2oz cognac / brandy
@@ -333,13 +444,29 @@ Good Bottles
 
 ### Between the Sheets
 
+<figure class="popout cocktail-spec">
+  <img src="./cognac.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./white_rum.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./cointreau.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./between_the_sheets.png"/>
+</figure>
+
 Ingredients
 : - 1oz cognac
   - 1oz light rum
   - 1oz triple sec (Cointreau)
   - 1/4oz lemon juice
-  - (Optional) pinch of salt
   - (Optional) 1/4oz simple syrup
+  - (Optional) pinch of salt
 
 Method
 : Shake with ice. Double strain.
@@ -350,7 +477,55 @@ Serving and Garnish
 Good Bottles
 : Same cognacs as above. Plantaray 3 Stars, Flor De Cana 4, El Dorado 3, Diplomatico Planas.
 
+
+### Mudslide
+
+<figure class="content cocktail-spec">
+  <img src="./baileys.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./coffee_liqueur.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./vodka.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="medium" src="./heavy_cream.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./mudslide.png"/>
+</figure>
+
+Ingredients
+: - 1oz Irish cream
+  - 1oz coffee liqueur
+  - 1oz vanilla vodka
+  - 1 1/2oz heavy cream
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Rocks glass or coupe, fresh ice OR up, chocolate syrup. Garnish with shaved chocolate.
+
+Good Bottles
+: Baileys, Kahlua
+
 ### Port of Call
+
+<figure class="popout cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./ruby_port_wine.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./grenadine.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./port_of_call.png"/>
+</figure>
 
 Ingredients
 : - 1oz gin
@@ -369,30 +544,31 @@ Serving and Garnish
 Good Bottles
 : I have no idea
 
-### Mudslide
-
-Ingredients
-: - 1oz Irish cream
-  - 1oz coffee liqueur
-  - 1oz vanilla vodka
-  - 1 1/2oz heavy cream
-
-Method
-: Shake with ice. Double strain.
-
-Serving and Garnish
-: Rocks glass or coupe, fresh ice OR up, chocolate syrup. Garnish with shaved chocolate.
-
-Good Bottles
-: Baileys, Kahlua
-
 ### Japanese Snow Monkey
 
-I had [this cocktail](https://www.instagram.com/p/C1IcTPbRGz3/?hl=en) at Rumba.
+I had [this cocktail](https://www.instagram.com/p/C1IcTPbRGz3/?hl=en) at [Rumba](https://en.wikipedia.org/wiki/Rumba_(restaurant)).
 The spec is given as: "Kiyomi rum, Nigori sake, Bermutto dry vermouth, Campari, raspberry, and lemon".
 "A floral but punchy take on a Negroni to help brighten long winter days."
 There was a particular roasted corn-like and slightly smoky flavor that was hard to pin down, but was very good.
 My attempted reproduction:
+
+<figure class="popout cocktail-spec">
+  <img src="./white_rum.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./nigori_sake.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./dry_vermouth.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./campari.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./japanese_snow_monkey.png"/>
+</figure>
 
 Ingredients
 : - 1oz Japanese rum (or 3/4oz white rum + 1/4oz agricole blanc)
@@ -441,34 +617,41 @@ Total amateur opinions to follow.
 ### Gin
 
 - *Citadelle Gin*. (9/10). Excellent 'celery'-like + juniper berry flavor, freshness as the final note. Gimlet with this is too good.
-- *Hendrick's Gin.* (8/10). Also very good, but more subtle finish and harsher down the throat vs Citadelle
+- *Hendrick's Gin.* (8/10). Also very good, but more subtle finish and harsher down the throat vs Citadelle.
 
 ### Wines
 
-- Port
-  - *Porto Morgado Old Tawny (10 Years)*. (7/10). Sits around $10 from Trader Joe's. Hits way way above its price point. We love this.
-  - *Porto Morgado Ruby*. (5/10). Not as good. Similar price point, but much worse than above imo.
-  - *Fairbanks Cellars California Port (1.5L)*. (2/10). Cheap but bad. Stay away.
-  - *Warre's Otima 10 Tawny Porto*. TBD.
-- Reds
-  - *Decoy Cabernet*. (5/10). Decent, hits a bit above its price point, but it's better to spend more.
-  - *Sean Thackrey Pleiades XXXII*. (9/10) Very good. Fruity and smooth.
-  - *Charles Shaw wines (all varieties)*. (3/10). Very cheap, but do not buy lol. Get something nicer.
-  - *No Es Pituko Carignan 2024*. (8/10). So so smooth, hard to believe there was any alcohol at all. Excellent.
-  - *Chateau Pey-Bonhomme Le-Tours Merlot*. TBD.
-  - *Folk Machine Pinot Noir*. TBD.
-  - *Love Red 2022 - Broc Cellars*. TBD.
-- Whites
-  - *2021 Virgo Magic Wines 'Disco Lemonade' Riesling*. (5/10). Tastes heavily like brined olives. I think this is an acquired taste, not for a general audience.
-  - *Barefoot Moscato*. (2/10). Cheap, mild tasting, and gulpable. Get something nicer.
-  - *Risata Moscato d'Asti DOCG*. (8/10). Low alcohol, smooth, sweet, and fruity. A crowd favorite.
-  - *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
-- Orange
-  - *2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact*. (8/10). Excellent.
-  - *Pielihueso Naranjo 2024*. (9/10). Very very good. Smooth, slightly fruity, and crisp. Best served cold.
-  - *2023 Gulp Hablo Orange (1L)*. TBD.
+#### Port
 
-### Meads
+- *Porto Morgado Old Tawny (10 Years)*. (7/10). Sits around $10 from Trader Joe's. Hits way way above its price point. We love this.
+- *Porto Morgado Ruby*. (5/10). Not as good. Similar price point, but much worse than above imo.
+- *Fairbanks Cellars California Port (1.5L)*. (2/10). Cheap but bad. Stay away.
+- *Warre's Otima 10 Tawny Porto*. TBD.
+
+#### Reds
+
+- *Decoy Cabernet*. (5/10). Decent, hits a bit above its price point, but it's better to spend more.
+- *Sean Thackrey Pleiades XXXII*. (9/10) Very good. Fruity and smooth.
+- *Charles Shaw wines (all varieties)*. (3/10). Very cheap, but do not buy lol. Get something nicer.
+- *No Es Pituko Carignan 2024*. (8/10). So so smooth, hard to believe there was any alcohol at all. Excellent.
+- *Chateau Pey-Bonhomme Le-Tours Merlot*. TBD.
+- *Folk Machine Pinot Noir*. TBD.
+- *Love Red 2022 - Broc Cellars*. TBD.
+
+#### Whites
+
+- *2021 Virgo Magic Wines 'Disco Lemonade' Riesling*. (5/10). Tastes heavily like brined olives. I think this is an acquired taste, not for a general audience.
+- *Barefoot Moscato*. (2/10). Cheap, mild tasting, and gulpable. Get something nicer.
+- *Risata Moscato d'Asti DOCG*. (8/10). Low alcohol, smooth, sweet, and fruity. A crowd favorite.
+- *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
+
+#### Orange
+
+- *2023 Suisun Valley Assyrtiko, Hydrangea Skin-Contact*. (8/10). Excellent.
+- *Pielihueso Naranjo 2024*. (9/10). Very very good. Smooth, slightly fruity, and crisp. Best served cold.
+- *2023 Gulp Hablo Orange (1L)*. TBD.
+
+#### Meads
 
 - The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
 - *Chaucer's Mead*. (6/10). Very vanilla alcoholic honey flavor, smooth. Nothing objectionable, but nothing special either. Good for the price.
@@ -478,7 +661,7 @@ Total amateur opinions to follow.
 
 [Takara Sake](https://www.takarasake.com) has a sake factory in Berkeley, CA!
 I highly recommend visiting them and doing a tasting.
-What follows are all sakes from Takara (some brewed in Berkeley, others in Japan).
+What follows are all sakes from Takara (brewed in Berkeley).
 
 - *Sho Chiku Bai REI Junmai Daiginjo*. (8/10). One of our favorites. Cheap and good, serve chilled, crisp, fruity, and smooth. If it is too old, it will acquire a mushroom-y flavor.
 - *Sho Chiku Bai Organic Nama*. (6/10). Good chilled, but has an earthy flavor. Not suitable for a general audience.
@@ -501,21 +684,21 @@ What follows are all sakes from Takara (some brewed in Berkeley, others in Japan
 
 ## Equipment
 
-First, there is some basic equipment that you need, that I wish I had from the start.
+There is some basic bar equipment that you need that I wish I had from the start.
 Just buy these things.
 
 - *Large ice cube tray*: I liked these Tovolo "King Cube" silicon trays ([Amazon link](https://www.amazon.com/dp/B01LXF6H2Y))
 - *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1))
 - *Jigger*: There are 2 major varieties (double-ended and angled). You need to be able to measure volumes from 1/4oz to 2oz. I think the angled jiggers are way easier to use at home with less spillage than the double-ended kind. I like this one from OXO ([Amazon link](https://www.amazon.com/dp/B00B6LUAPW)).
 - *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions.
-- *Citrus juicer*: These are cheap, just get any one. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF))
+- *Citrus juicer*: These are cheap, just get any one. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF)).
 - *Mixing tin*: There are also cocktail mixing glasses, but I prefer a stainless steel mixing vessel. I have this one from American Metalcraft ([Amazon link](https://www.amazon.com/dp/B09QQQGTWY)).
 - *Hawthorne Strainer*: This OXO one is good ([Amazon link](https://www.amazon.com/dp/B0000DAQ93))
 - *Cobbler shaker*: There are also Boston shakers, but a cobbler shaker is far easier to use at home. I got this one from OXO ([Amazon link](https://www.amazon.com/dp/B07JW89TC3)). If I was OK spending $60 on this, I would buy the [YETI one](https://www.yeti.com/drinkware/barware/cocktail-shaker-20oz.html).
 - *Fine mesh strainer*: I have a 3" strainer from OXO ([Amazon link](https://www.amazon.com/OXO-Grips-3-Inch-Strainer-Multicolor/dp/B001713L84))
 - *Bar spoon*: Just get some cheap bar spoons, the exact model doesn't matter.
-- *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget - these are all kind of the same.
-- *Toothpicks*: The poor man's version of the fancy cocktail pick. Often too short to place over the rim of a glass
+- *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget &mdash; these are all kind of the same.
+- *Toothpicks*: The poor man's version of the fancy cocktail pick. Unfortunately, they are often too short to place over the rim of a glass.
   - *Cocktail picks*: A substantial upgrade
 - *Cooler*: I use an insulated bag to hold all my ice and cold liquors, but a proper hard-case insulated cooler would be better.
 
@@ -524,26 +707,32 @@ Since all the cocktails I like are served chilled, I even chill the liquors that
 
 ## My Shelf
 
-- Wine
-  - Otima 10-Year Tawny Port
+Wine
+: - Otima 10-Year Tawny Port
   - Chateau Pey-Bonhomme Le-Tours
   - Folk Machine Pinot Noir
   - Love Red 2022 - Broc Cellars
-- Whiskey
-  - Four Roses Small Batch
+
+Whiskey
+: - Four Roses Small Batch
   - Mitcher's US*1
   - Redbreast 12 Year
-- Rum
-  - Diplomatico Reserva Exclusiva
+
+Rum
+: - Diplomatico Reserva Exclusiva
   - Appleton Estate 8
-- Sake
-  - Hakutsuru Sayuri Nigori Sake
-- Soju
-  - Oak 43
-- Gin
-  - Hendricks
-- Liquors
-  - Campari
+
+Sake
+: - Hakutsuru Sayuri Nigori Sake
+
+Soju
+: - Oak 43
+
+Gin
+: - Hendricks
+
+Liquors
+: - Campari
   - Sole Vermouth (Extra Dry)
   - Dolin Vermouth Rouge (Sweet)
   - TJ's Sicilian Limoncello (x2)
@@ -551,8 +740,9 @@ Since all the cocktails I like are served chilled, I even chill the liquors that
   - Cointreau
   - Mr. Black Cold Brew Coffee Liqueur
   - Baileys Original Irish Cream
-- Extras
-  - _Bitters_: Angostura, Orange
+
+Extras
+: - _Bitters_: Angostura, Orange
   - _Syrups_: Simple, Demerara, Grenadine, Orgeat
   - Luxardo cherries
   - Limes / lemons
@@ -561,48 +751,41 @@ Since all the cocktails I like are served chilled, I even chill the liquors that
 
 ## To Buy
 
-Bottles I have either bought or want to try.
+Bottles I want to try.
+Don't look!
 
-### Whiskey
+Whiskey
+: - Four Roses Single Barrel
+  - Larceny Small Batch
+  - Angel's Envy
+  - Rittenhouse 100
+  - Nikka Whisky From The Barrel
 
-- Four Roses Small Batch
-- Four Roses Single Barrel
-- Michter's US1 Bourbon
-- Redbreast 12 Yr Irish Whiskey
-- Larceny Small Batch
-- Angel's Envy
-- Rittenhouse 100
-- Nikka Whisky From The Barrel
-
-### Rum
-
-- White Rum
-  - Probitas
+White Rum
+: - Probitas
   - El Dorado 3
   - Flor de Cana 4
   - Diplomatico Planas
-- Aged Rum
-  - Appleton Estate 8 / 12
+
+Aged Rum
+: - Appleton Estate 8 / 12
   - El Dorado 8 / 12
   - Santa Teresa 1796
   - Diplomático Mantuano
   - El Pasador de Oro Rum XO
   - Kaniche XO Artisanal Rum
 
-### Gin
+Gin
+: - Citadelle Gin
+  - Citadelle Jardin D'Ete Gin
+  - Tanqueray No. 10
+  - Barr Hill
 
-- Citadelle Gin
-- Citadelle Jardin D'Ete Gin
+Cognac
+: - Hennessy VSOP
+  - Pierre Ferrand Ambre / Original Formula
 
-### Cognac
-
-- ABK6 VSOP Cognac
-- Hennessy VSOP
-- Pierre Ferrand Ambre / Original Formula
-
-### Liquors
-
-- Orange liquors
-  - "Traditional" curacao, rum-based: Pierre Ferrand Dry Curacao, Santa Teresa Rhum Orange
+Orange liquors
+: - "Traditional" curacao, rum-based: Pierre Ferrand Dry Curacao, Santa Teresa Rhum Orange
   - Brandy-based curacao: Grand Mariner
   - Triple secs: Cointreau

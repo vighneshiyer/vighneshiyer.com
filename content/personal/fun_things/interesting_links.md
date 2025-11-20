@@ -310,6 +310,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [‘Soul-Crushing’: Students Slam Harvard’s Grade Inflation Report](https://www.thecrimson.com/article/2025/10/30/students-react-grading-report/)
   - In response to: [Harvard College’s Grading System Is ‘Failing,’ Report on Grade Inflation Says](https://www.thecrimson.com/article/2025/10/27/grading-workload-report/)
 - [Do I Need to Go to University? - Instead of asking “Is university good?”, ask “Do I have something more compelling to do?”](https://colah.github.io/posts/2020-05-University/)
+- [When grades stop meaning anything: The UC San Diego math scandal is a warning](https://www.theargumentmag.com/p/when-grades-stop-meaning-anything)
 
 ## Writing
 

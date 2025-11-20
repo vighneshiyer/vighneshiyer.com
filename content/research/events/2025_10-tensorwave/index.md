@@ -1,7 +1,7 @@
 +++
 title = "TensorWave: Massive Scale Training & Inference"
 date = 2025-11-13
-draft = false
+draft = true
 description = "How is it looking for AMD in late 2025? ScalarLM, ZLUDA, the CUDA moat, and more!"
 
 [extra]
