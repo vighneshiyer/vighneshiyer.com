@@ -387,6 +387,16 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 - https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers
 - https://x.com/__tinygrad__/status/1982634315520651498
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">BREAKING: The CUDA moat has just expanded again! PyTorch Compile/Inductor can now target NVIDIA Python CuTeDSL in addition to Triton. This enables 2x faster FlexAttention compared to Triton implementations. We explain below 👇<br><br>As we explained in our April 2025 AMD 2.0 piece,… <a href="https://t.co/sJMLTzylo3">pic.twitter.com/sJMLTzylo3</a></p>&mdash; SemiAnalysis (@SemiAnalysis_) <a href="https://twitter.com/SemiAnalysis_/status/1990997414832906562?ref_src=twsrc%5Etfw">November 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+> BREAKING: The CUDA moat has just expanded again! PyTorch Compile/Inductor can now target NVIDIA Python CuTeDSL in addition to Triton. This enables 2x faster FlexAttention compared to Triton implementations. We explain below 👇
+>
+> As we explained in our April 2025 AMD 2.0 piece, Python DSLs for kernel authoring represent the future—not C++ templates. NVIDIA has been massively supporting their closed-source Python CuTeDSL, cuTile, and TileIR ecosystem. By having Python CuTeDSL/cuTile/TileIR, NVIDIA regains closed-source compiler optimization passes, whereas in Triton, the middle-level IR optimization passes are open source.
+>
+> Furthermore, Triton currently lacks strong Blackwell performance as it doesn't yet support Cluster Launch Control and 2SM MMA with TMA multicast. Triton IR will support be able to target TileIR too. While Gluon attempts to address this, it remains a work in progress.
+>
+> Google has also integrated an experimental backend for TorchInductor to target Pallas for codegen. It's unclear when AMD will release/integrate Wave DSL or ComposableKernel Python DSL into Torch Inductor as a codegen target.
+
 ## Spectral Compute
 
 - The Spectral Compute guys (https://scale-lang.com/) are taking another approach where they target the CUDA frontend directly! But this is mired in difficulty as they need to replicate all the functionality and subtleties of nvcc going down to PTX. And they need to handle the warp size being 64 on AMD but 32 on NVIDIA, which needs hacking at the source level.

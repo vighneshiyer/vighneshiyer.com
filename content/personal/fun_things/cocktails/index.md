@@ -115,15 +115,14 @@ Riffs
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
   <img class="short" src="./plus.png"/>
-  <img src="./vermouth.png"/>
+  <img src="./sweet_vermouth.png"/>
   <img class="short" src="./plus.png"/>
   <img src="./angostura_bitters.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="short" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
   <img class="short" src="./equals.png"/>
-  <img class="medium" src="./manhattan.png"/>
+  <img class="" src="./manhattan.png"/>
 </figure>
-
 
 Ingredients
 : - 2oz whiskey
@@ -142,6 +141,16 @@ Good Bottles
 
 ### Highball
 
+<figure class="content cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./club_soda.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="" src="./highball.png"/>
+</figure>
+
 Ingredients
 : - 2oz whiskey / rum / gin
   - 4&ndash;6oz mixer (club soda, ginger ale, coke, sprite)
@@ -157,6 +166,18 @@ Good Bottles
 : Suntory Toki
 
 ### Daiquiri
+
+<figure class="content cocktail-spec">
+  <img src="./white_rum.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lime.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="" src="./daiquiri.png"/>
+</figure>
 
 Ingredients
 : - 2oz white rum
@@ -256,6 +277,25 @@ Serving and Garnish
 
 Good Bottles
 : Plymouth, Bluecoat. Dolin Dry, Noilly Prat Extra Dry.
+
+### Lemon Drop
+
+Ingredients
+: - 1 1/2oz gin
+  - 3/4oz lemon juice
+  - 1/2oz triple sec (sub 1oz limoncello + 1/4oz triple sec)
+  - 1/4&ndash;1/2oz simple syrup
+  - (Optional) pinch of salt
+  - (Optional) one dash orange bitters
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Coupe glass, up. Lemon twist or lemon wheel for garnish.
+
+Good Bottles
+: Plymouth, Tanqueray No. 10.
 
 ### Boulevardier
 
