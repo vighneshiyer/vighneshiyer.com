@@ -62,3 +62,7 @@ slug = "chinese-comparch-education-research"
   - Random startups doing RISC-V core development in China, but they seem fishy. NoC, PCIe, periphery, software support startups are not so popular. (e.g. wechat doesn't support all architectures).
 - zhihu - Q&A website for Chinese in all domains (not just engineering)
   - The prof himself responded to the question, very insane
+
+- https://ysyx.oscc.cc/docs/en/
+- https://ysyx.oscc.cc/docs/en/2407/f/1.html
+- Made it to top of HN (11/17/2025)

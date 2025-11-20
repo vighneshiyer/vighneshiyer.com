@@ -149,6 +149,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Intel - P6 Family of Processors Hardware Developer’s Manual](https://download.intel.com/design/PentiumII/manuals/24400101.pdf)
 - [/r/riscv: What is the worst ratified RISC-V instruction?](https://www.reddit.com/r/RISCV/comments/1n6hvqr/what_is_the_worst_ratified_riscv_instruction/)
 - [Inside Nvidia GPU: Discussing Blackwell's Limitations and Predicting Rubin's Microarchitecture](https://github.com/zartbot/blog/issues/3)
+- [Nicholas Wilt - Perennial Technical Reads: Books, articles, and blogs I keep returning to](https://parallelprogrammer.substack.com/p/a-reading-list-for-metalheads)
 
 ### Formal Verification
 
@@ -369,6 +370,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Non-linear Ethnic Niches - The emerging Western caste system](https://www.aporiamagazine.com/p/non-linear-ethnic-niches)
 - [Brain Drain as Geopolitical Strategy - The foreign experts model versus the status quo](https://www.aporiamagazine.com/p/brain-drain-as-geopolitical-strategy)
 - [The Shame of Our Cities: How Minneapolis-Saint Paul became the Medicaid fraud capital of the USA](https://www.countyhighway.com/archive/volume-3/issue-3/the-shame-of-our-cities-rosen)
+- [The riddle of the niggardly billionaires](https://graymirror.substack.com/p/the-riddle-of-the-niggardly-billionaires)
 
 ### China
 

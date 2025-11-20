@@ -235,9 +235,15 @@ This lopsided situation isn't an accident.
 
 ### An AMD Cloud Provider Perspective
 
-- https://x.com/HotAisle/status/1990103926465859633
+The competent operator of the AMD-only cloud Hot Aisle, made this interesting remark about TensorWave (TW):
 
-The competent operator of the AMD-only cloud Hot Aisle, made this interesting remark:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I track <a href="https://twitter.com/AMD?ref_src=twsrc%5Etfw">@AMD</a> NeoCloud compute pricing closely.<br><br>What stands out:<br><br>TW is cheaper than Vultr on MI325x, yet remains 10% more expensive on MI355x. Both clearly have capacity available, which means they’re mostly landing short-term PoCs, small jobs, or deals below list price.<br><br>TW… <a href="https://t.co/SFNcMNYVMC">pic.twitter.com/SFNcMNYVMC</a></p>&mdash; Hot Aisle (@HotAisle) <a href="https://twitter.com/HotAisle/status/1990103926465859633?ref_src=twsrc%5Etfw">November 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!--
+- https://x.com/HotAisle/status/1990103926465859633
+-->
+
+Here's the full quote:
 
 > I track @AMD NeoCloud compute pricing closely.
 >
@@ -250,6 +256,8 @@ The competent operator of the AMD-only cloud Hot Aisle, made this interesting re
 > Where's the profit?
 >
 > TW financed those GPUs through DDTL (~$100M+), likely at 8.5–14% interest, along with investor funds. That’s a massive hit over the last five months, one they’re not getting back. Add ~80 employees to the burn, 4 office moves, and sure, revenue comes in… but sustainable long term profit? I know exactly what this stuff costs, not even close.
+
+The business model of TensorWave is fishy, but not that different than the other neoclouds.
 
 ## The CUDA Moat Today
 

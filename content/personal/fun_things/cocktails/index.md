@@ -14,22 +14,52 @@ Making cocktails at home is good because:
 
 I am by no means an expert on this topic but here is what I've learned so far.
 
-## Cocktails
+## Specs
 
 These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
+
+<!--
+A sticker with a white border, no backdrop or shadow, and a white background. High resolution. Sketchy, cartoon-like style.
+
+Whiskey: The sticker should be a bottle of whiskey modeled after the Four Roses Small Batch Bourbon bottle.
+Simple syrup: The sticker should be a glass bottle of clear simple syrup with a label. Just use the words 'Simple Syrup' with perhaps a flourish. Use a glass bottle with a tight metal clasp and rubber gasket (a flip-top metal clasp).
+Plus: The sticker should be a thick black solid plus (+) sign. Keep the sign no larger than 50% of the vertical and horizontal space you have to work with.
+Angostura bitters: The sticker should be a bottle of Angostura bitters. Use the classic design. Reference how it looks via image search.
+Orange bitters: The sticker should be a bottle of Angostura orange bitters. Use the classic design. Reference how it looks via image search.
+Right arrow: The sticker should be a thick black right arrow (->) sign. Keep the sign no larger than 50% of the vertical and horizontal space you have to work with.
+Mixing glass: The sticker should be a cocktail mixing glass that's filled halfway with cubed ice, with a barspoon angled inside the mixing glass.
+Equals: The sticker should be a thick black equals (=) sign. Keep the sign no larger than 50% of the vertical and horizontal space you have to work with.
+Lemonade: The sticker should be a glass bottle of lemonade with a label and flourish.
+Lemon: The sticker should be a single lemon.
+Shaker: The sticker should be a cobbler shaker for cocktails.
+
+Old Fashioned: The sticker should be an Old Fashioned cocktail inside a rocks glass with a gridded glass pattern. The rocks glass should contain one large ice cube and a garnish of an orange peel, twisted and one-half placed in the glass, with the rest hanging on the rim.
+I want the orange peel to be on the rim. I want the rocks glass to have vertical sides And I want the ice cube to be as large as the glass diameter.
+-->
 
 ### Old Fashioned
 
 There are many variations and you can use any spirit, although whiskey is the classic.
 
+<figure class="content cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./angostura_bitters.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./orange_bitters.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="medium" src="./old_fashioned.png"/>
+</figure>
+
 Ingredients
-: - 2oz whiskey / rum
-  - 1/8oz&ndash;1/4oz simple syrup (or demerara syrup / maple syrup / blue agave syrup)
+: - 2oz whiskey
+  - 1/8oz&ndash;1/4oz simple syrup
   - 2 dashes Angostura bitters
   - 2 dashes orange bitters
-  - (Optional) 1/2oz coffee liqueur
-  - (Optional) 2 dashes Aztec chocolate bitters
-  - (Optional) 2 dashes black walnut bitters
 
 Method
 : Stir in mixing glass with cubed ice. Strain. Pour over ice.
@@ -40,26 +70,60 @@ Serving and Garnish
 Good Bottles
 : Four Roses, Maker's 46. Diplomatico Reserva
 
+Riffs
+: - *Swap spirits*: 2oz aged rum for whiskey
+  - *Swap sweetener*: swap demerara / maple / blue agave syrup for simple syrup
+  - *Add coffee depth*: 1/2oz coffee liqueur
+  - *Exotic bitters*: choose &mdash; 2 dashes Aztec chocolate bitters, 2 dashes black walnut bitters
+
 ### Sour
+
+<figure class="content cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./lemonade.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lemon.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="medium" src="./whiskey_sour.png"/>
+</figure>
 
 Ingredients
 : - 2oz whiskey / rum
   - 2&ndash;3oz fresh unpasteurized lemonade[^1]
   - Quarter of a lemon, juiced fresh
-  - 1/2oz simple / maple / demerara syrup (only if using pure lemon juice)
 
 Method
 : Shake hard with large ice cube (for max foam). Double strain into glass.
 
 Serving and Garnish
-: Cocktail glass, up, Luxardo cherry, float 1/2oz dry red wine for a _NY Sour_
+: Rocks glass or cocktail glass, up, Luxardo cherry
 
 Good Bottles
 : Four Roses
 
-[^1]: The Trader Joe's refrigerated lemonade works perfectly, no need for additional sweetener. Can sub for 1oz pure lemon juice
+Riffs
+: - *Classic*: Use 1oz fresh lemon juice instead of lemonade. Add 1/2oz of simple / maple / demerara syrup.
+  - *NY Sour*: Float 0.5oz dry red wine
+
+[^1]: The Trader Joe's refrigerated lemonade works perfectly, no need for additional sweetener
 
 ### Manhattan
+
+<figure class="content cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./vermouth.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./angostura_bitters.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="medium" src="./manhattan.png"/>
+</figure>
+
 
 Ingredients
 : - 2oz whiskey
@@ -175,6 +239,23 @@ Serving and Garnish
 
 Good Bottles
 : Cocchi Vermouth di Torino, Cinzano Rosso Vermouth, Carpano Antica Formula, Dolin Rouge Sweet. Tanqueray No. 10.
+
+### Martini
+
+Ingredients
+: - 2oz gin
+  - 1/2&ndash;3/4oz dry vermouth
+  - 1 dash orange bitters
+  - (Optional) 1/2&ndash;3/4oz sweet vermouth (for a 'perfect martini')
+
+Method
+: Stir in mixing tin with ice. Strain. (Optionally shake)
+
+Serving and Garnish
+: Martini glass, up, lemon peel / green olive garnish
+
+Good Bottles
+: Plymouth, Bluecoat. Dolin Dry, Noilly Prat Extra Dry.
 
 ### Boulevardier
 

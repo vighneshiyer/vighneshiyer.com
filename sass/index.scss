@@ -1196,3 +1196,30 @@ a.anchor {
   padding-right: var(--space-2xs);
   font-size: var(--step--1);
 }
+
+figure.cocktail-spec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  column-gap: var(--space-s);
+  row-gap: var(--space-s);
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: var(--space-s);
+  width: fit-content;
+  img {
+    max-height: 150px;
+    margin: 0;
+    display: block;
+  }
+  img.short {
+    max-height: 30px;
+  }
+  img.middle {
+    max-height: 65px;
+  }
+  img.medium {
+    max-height: 100px;
+  }
+}
