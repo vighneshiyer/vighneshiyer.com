@@ -150,6 +150,9 @@ Here are a bunch of things from around the internet that I find interesting.
 - [/r/riscv: What is the worst ratified RISC-V instruction?](https://www.reddit.com/r/RISCV/comments/1n6hvqr/what_is_the_worst_ratified_riscv_instruction/)
 - [Inside Nvidia GPU: Discussing Blackwell's Limitations and Predicting Rubin's Microarchitecture](https://github.com/zartbot/blog/issues/3)
 - [Nicholas Wilt - Perennial Technical Reads: Books, articles, and blogs I keep returning to](https://parallelprogrammer.substack.com/p/a-reading-list-for-metalheads)
+- [CUDA ontology](https://jamesakl.com/posts/cuda-ontology/) ([HN link](https://news.ycombinator.com/item?id=45947437))
+- [The CUDA Handbook](https://www.cudahandbook.com/) (it is not 'up to date' but that's irrelevant since the concepts covered are mostly universal, a must read)
+- [Discussing Blackwell’s drawbacks and dissecting its architecture - Translation](x.com/Jukanlosreve/status/1992531045485531164) ([Original Chinese thread](https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247496740&idx=1&sn=c9403138fa59d126fe6cfda19d9b2f76&scene=21&poc_token=HJFzI2mjybYKIv_tSNu4PiMciSREnpOIo4UavqiH)) ([archive](archive.is/ztwGl))
 
 ### Formal Verification
 
@@ -372,6 +375,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Brain Drain as Geopolitical Strategy - The foreign experts model versus the status quo](https://www.aporiamagazine.com/p/brain-drain-as-geopolitical-strategy)
 - [The Shame of Our Cities: How Minneapolis-Saint Paul became the Medicaid fraud capital of the USA](https://www.countyhighway.com/archive/volume-3/issue-3/the-shame-of-our-cities-rosen)
 - [The riddle of the niggardly billionaires](https://graymirror.substack.com/p/the-riddle-of-the-niggardly-billionaires)
+- [The India Menace - Discussion on Izzat](https://archive.is/5EROu#selection-11877.103-11877.108)
 
 ### China
 
@@ -399,6 +403,8 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Bryan Johnson – The World’s Most Expensive Eating Disorder](https://desmolysium.com/bryan-johnson-the-worlds-most-expensive-eating-disorder/)
 - [What I learned gathering thousands of nootropic ratings](https://troof.blog/posts/nootropics/)
+- [Matthew Walker's "Why We Sleep" Is Riddled with Scientific and Factual Errors](https://guzey.com/books/why-we-sleep/)
+- [Wine and (my) Sleep](https://ja3k.com/blog/wine) (drink up to 1 glass per day in the afternoon, common sense)
 
 ## History
 

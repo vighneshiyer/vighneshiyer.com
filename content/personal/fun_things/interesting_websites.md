@@ -58,6 +58,7 @@ Blogs:
 - https://minimaxir.com/
 - https://simonwillison.net/
 - https://til.simonwillison.net/
+- https://policysphere.com/
 
 China:
 

@@ -431,6 +431,11 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 - https://vosen.github.io/ZLUDA/blog/zludas-third-life/
 - https://www.techradar.com/pro/a-lone-developer-just-open-sourced-a-tool-that-could-bring-an-end-to-nvidias-ai-hegemony-amd-financed-it-for-months-but-abruptly-ended-its-support-nobody-knows-why
 
+- https://eliovp.com/why-cuda-translation-wont-unlock-amds-real-potential/
+  - Why “CUDA” Translation Won’t Unlock AMD’s Real Potential
+  - A contrary take. Worth reading. From a company building dedicated ROCm kernels for LLMs - they are biased in their approach of course
+  - HN thread: https://news.ycombinator.com/item?id=45904178
+
 ## DensityAI (OpenNova)
 
 - When Dojo was dismanteled at TEsla, some of the best people left to form OpenNova
