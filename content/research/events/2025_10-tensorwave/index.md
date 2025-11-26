@@ -417,6 +417,40 @@ But do LLM generated kernels make this obsolyet thinking? If karpathy is right t
 
 - https://www.businessinsider.com/spectral-compute-funding-pitch-deck-nvidia-cuda-2025-11
 
+- https://x.com/SpectralCom/status/1993289178130661838
+
+> A great question we've been asked a lot at #SC25 is "Why does #NVIDIA not sue you to oblivion?". Well, this is due to many reasons.
+>
+> We *don’t* reverse engineer nvcc or violate EULAs.
+> We implement our compiler on the latest LLVM backend and Clang frontend. We strictly rely on public API documentation, we don't use any proprietary header files or source code as reference.
+>
+> Google v. Oracle protects computer programs and software libraries "developed by recreating the functionality of APIs from commercial or competing products to aid developers in interoperability between different systems or platforms." - https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc .
+>
+> We implement SCALE via black-box testing. Our unit tests validate that our operations match CUDA outputs within floating-point tolerances, so that we get mathematical equivalence without inspecting implementation logic.
+>
+> We validate our assumptions by testing SCALE against third-party open source CUDA projects. You can [check them here](https://github.com/spectral-compute/scale-validation) - though we're in the process of updating the repo, as compatibility has improved a lot lately.
+>
+> And then there's a commercial point to be made. SCALE allows developers to stay in CUDA while retaining the option to deploy elsewhere. This safety net encourages new projects to start - and stay - in CUDA.
+>
+> And then there's a commercial point to be made. SCALE allows devs to *stay* in CUDA while retaining the option to deploy elsewhere. Rather than being a competitive threat, SCALE is actually a complementary ecosystem enabler.
+>
+> We built this the hard way so you don't have to worry about it.
+>
+> Judge for yourself at http://scale-lang.com.
+>
+> Replies are open for questions, technical deep-dives, or armchair legal analysis. 👇
+
+- https://x.com/__tinygrad__/status/1993365249098170626
+
+> This isn't why. Trying to "compile" CUDA for AMD is nonsense; NVIDIA loves when people try. CUDA will never be fast on AMD (how do you compile if the shared memory / tensor cores are a different size?). It's the wrong layer to do this at.
+
+> > HIP is literally clang-dialect CUDA: it isn't a different programmnig language, so there's no difference there.
+> > NVIDIA currently sell GPUs with at least 5 different shared memory sizes, and at least 3 different tensor core sizes. CUDA already has features for modelling these types of difference: we're doing the compiler R&D to take it further to work well on AMD.
+> >
+> > NVIDIA have done a superb job of convincing the world that CUDA is somehow magically optimised for their hardware. Is C "optimised for Intel CPUs"? Is Rust "optimised for AMD CPUs"? Of course not: this is a compiler problem, not a programming language problem.
+> >
+> > Btw, if you'd like to read about some examples of us hiding hardware differences optimally across platforms, [this is our latest whitepaper:](https://docs.google.com/document/d/1JkENO54Kc7AfvLn3bFxGVHko9tp9Gft5OL7SGRlN6jA/edit?tab=t.0#heading=h.hoxcy8fabcfm) ("Optimizing CUDA Shuffles with SCALE")
+
 ## ZLUDA
 
 - ZLUDA has a revival! After it was shot down by AMD management (don't want to be stuck with the CUDA APIs and let NVIDIA always make the first move) and legal (what if it is illegal to work on PTX directly?), it seems those very smart guys moved out of AMD and kept working thanks to external funding coming online. (https://github.com/vosen/ZLUDA)

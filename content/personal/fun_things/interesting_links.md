@@ -376,6 +376,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The Shame of Our Cities: How Minneapolis-Saint Paul became the Medicaid fraud capital of the USA](https://www.countyhighway.com/archive/volume-3/issue-3/the-shame-of-our-cities-rosen)
 - [The riddle of the niggardly billionaires](https://graymirror.substack.com/p/the-riddle-of-the-niggardly-billionaires)
 - [The India Menace - Discussion on Izzat](https://archive.is/5EROu#selection-11877.103-11877.108)
+- [Part 1: My Life Is a Lie: How a Broken Benchmark Quietly Broke America](https://www.yesigiveafig.com/p/part-1-my-life-is-a-lie)
 
 ### China
 

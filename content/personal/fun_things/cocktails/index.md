@@ -17,6 +17,71 @@ Making cocktails at home is good because:
 
 I am by no means an expert on this topic but here is what I've learned so far.
 
+## Philosophy
+
+The history of alcohol consumption predates humanity.
+There is nothing squirrels love more than fermented fruit.
+
+<figure class="content">
+  <iframe width="620" height="349" src="https://www.youtube.com/embed/2bbXICmvSUs" title="Drunk squirrel, because...2020." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption><p>Observe. The joy of poison.</p></figcaption>
+</figure>
+
+The alcohol we consume is *ethanol*.
+When it enters the bloodstream, it is metabolized by the liver into *acetaldehyde*, which is *toxic*.
+It is further metabolized into *acetate* which is easily handled by the body.
+The longer our body experiences elevated levels of acetaldehyde, the more we suffer from acute alcohol toxicity.
+
+<!--
+https://xcancel.com/RandomSprint/status/1991614207897559137#m
+-->
+
+The liver can metabolize about 7-10g of ethanol per hour, while a standard drink contains around 14g of ethanol.
+The lesson here is that binge drinking is very harmful as it spikes both Cmax and AUC to a much greater degree than even light drinking done frequently.
+
+Alcohol is controversial.
+Prohibition had lots of political power and was passed almost unanimously.
+The temperance movement, Henry D Cogswell (A very interesting man who also installed a statue of Benjamin Franklin which is today located in Washington Square in SF. Check it out!), temperance fountains. ["To temperance, I'll drink to that!"](https://en.wikipedia.org/wiki/Cogswell_Society)
+Now once again, the anti-alcohol movement is in vogue.
+
+While people nowadays emphasize the negative health effects of alcohol, there are also many countervailing benefits.
+Arguably, alcohol is, on net, a positive for the highest-order of humanity. (I have changed my position on this from before. I used to be strongly anti-alcohol.)
+It's benefits are vast, social lubrication, truth seeking, beautiful flavors, relaxation and leisure. In vino veritas. Alcohol allows the mind to smoothen and enter a flow state, the Ballmer peak (this isn't a myth, try it yourself)
+Even if we think about health, light alcohol has no consequence wrt all-cause mortality, and it may even be cardioprotective due to its blood thinning effects, although it may increase risks for particular cancers.
+
+In order to consume alcohol in a manner that maximizes its benefits while mitigating its downsides, one must turn to the Greeks (of course, no matter the question, one must always look towards the Greeks, this is common sense).
+
+We find that as we worship Dionysus, we must also pay respect to [Sophrosyne](https://en.wikipedia.org/wiki/Sophrosyne).
+
+In ancient greece, we find the Symposium: Not a drinking party, but similar to a French salon - a talking party, aided by poison.
+The Symposium was led by a Symposiarch and the amphora wine was diluted in the krater and then served in the kylix.
+The wine in the krater was often diluted in a ratio of 1:3 water:wine and since a kylix held 250-300ml of liquid, each drained kylix is about 0.6 "standard" drinks.
+Now note:
+
+<!--
+Add stickers for Kylix, Krater, Amphora
+Amphora (wine) + Water -> Krater -> Kylix
+-->
+
+> For sensible men I prepare only three kraters: one for health (which they drink first), the second for love and pleasure, and the third for sleep. After the third one is drained, wise men go home. The fourth krater is not mine any more – it belongs to bad behaviour; the fifth is for shouting; ... the tenth is for madness and unconsciousness.
+
+3 kraters!
+For a party of 30 perhaps.
+And this was for Greek Symposia, designed for the alcohol-resistant Greek men.
+This would amount to 10-ish kylixes per person, which means about 6 "standard" drinks, spread out over many hours and with high dilution.
+
+Remember the original point of the symposium.
+Discussion among intelligent men.
+To enable this we must not dip too far into the hysteria of Dionysus.
+
+Here are some rules a wise Greek might enforce today:
+
+1. 2-3 cocktails per person, roughly one drink per hour with water to dilute alcohol in the stomach
+1. Avoid mixing base spirits or alcohols! Choose to only serve wine / sake or if serving cocktails, keep the base spirit the same (gin, whiskey, Irish cream, etc.) for each individual. Do not mix!
+1. Aim for midday drinking where the alcohol will be metabolized by the time one is asleep. Drinking small amounts throughout the week is far better than binge drinking.
+1. Take electrolytes and DHM and other cures before drinking. Put my electrolyte recipe here
+1. Don't go to sleep later than midnight, disrupting the sleep time and adding poison to the mix has a doubly devastating consequence
+
 ## Specs
 
 These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
@@ -263,6 +328,9 @@ Serving and Garnish
 Good Bottles
 : Appleton Estate 8 / 12 / 15, El Dorado 8, Smith and Cross. Pierre Ferrand Dry Curacao.
 
+Riffs
+: - [*"Hotel" Mai Tai*](https://www.youtube.com/shorts/p66qPFQG-wY) (from the NoMad Cocktail Book): small lime wedge, 1oz lime juice, 3/4oz orgeat, 1/2oz creole shrubb (orange liqueur), 1/2oz rhum agricole (Rhum J.M Blanc Agricole Martinique 100 Proof), 3/4oz Appleton Signature (4 year blend), 3/4oz El Dorado 15 (highly aged dark rum)
+
 ### Gimlet
 
 <figure class="content cocktail-spec">
@@ -432,7 +500,7 @@ Good Bottles
 
 Ingredients
 : - 2oz cognac / brandy
-  - 1/2&ndash;3/4oz Cointreau / Grand Mariner
+  - 1/2&ndash;3/4oz Cointreau / Grand Marnier
   - 3/4oz lemon juice
   - 1/4&ndash;1/2oz simple syrup
 
@@ -670,6 +738,8 @@ What follows are all sakes from Takara (brewed in Berkeley).
 - *Sho Chiku Bai Organic Nama*. (6/10). Good chilled, but has an earthy flavor. Not suitable for a general audience.
 - *Sho Chiku Bai Takara Sierra Cold*. (7/10). This is an insane sake. Serve chilled. 12% ABV but tastes like zero! Very light flavor of slight sweetness and fruit, but mostly tasteless.
 - *Sho Chiku Bai Nigori Crème de Sake*. (9/10). Cream sake! One of our favorites. Serve chilled. Flavor is both fruity and earthy, more on the sweet side.
+- *Sho Chiku Bai Premium Ginjo*. (6/10). An acquired taste. Earthy, mushroom-y, not suitable for everyone.
+- *Sho Chiku Bai Mio Sparkling Sake*. (10/10). Low 5% ABV, crisp flavor, fruity. Everyone will love this.
 
 ### Cocktail Liquors
 
@@ -677,7 +747,8 @@ What follows are all sakes from Takara (brewed in Berkeley).
 - *Cointreau*. It works, I have no reference point for orange liqueur.
 - *Baileys*. Sweet, smooth, milky. Nothing bad, but nothing great either.
 - *Mr. Black Cold Brew Coffee Liqueur*. Decent, good espresso flavor.
-- *TJ's Limoncello*. TBD.
+- *TJ's Limoncello*. (8/10). Excellent, great in a lemon drop.
+- *Grand Marnier*. It works, great in a sidecar.
 
 ### Garnishes
 
@@ -727,6 +798,8 @@ Rum
 
 Sake
 : - Hakutsuru Sayuri Nigori Sake
+  - Sho Chiku Bai Premium Ginjo
+  - Sho Chiku Bai Mio Sparkling Sake
 
 Soju
 : - Oak 43
@@ -738,9 +811,11 @@ Liquors
 : - Campari
   - Sole Vermouth (Extra Dry)
   - Dolin Vermouth Rouge (Sweet)
+  - Dolin Vermouth (Dry)
   - TJ's Sicilian Limoncello (x2)
   - Vanilla vodka
   - Cointreau
+  - Grand Marnier
   - Mr. Black Cold Brew Coffee Liqueur
   - Baileys Original Irish Cream
 
@@ -751,6 +826,9 @@ Extras
   - Limes / lemons
   - Heavy cream
   - Chocolate syrup
+
+Books
+: - Cocktail Codex
 
 ## To Buy
 
@@ -790,5 +868,9 @@ Cognac
 
 Orange liquors
 : - "Traditional" curacao, rum-based: Pierre Ferrand Dry Curacao, Santa Teresa Rhum Orange
-  - Brandy-based curacao: Grand Mariner
+  - Brandy-based curacao: Grand Marnier
   - Triple secs: Cointreau
+
+Books
+: - The NoMad Cocktail Book
+  - Death & Co: Modern Classic Cocktails
