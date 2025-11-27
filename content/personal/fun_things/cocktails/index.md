@@ -82,6 +82,18 @@ Here are some rules a wise Greek might enforce today:
 1. Take electrolytes and DHM and other cures before drinking. Put my electrolyte recipe here
 1. Don't go to sleep later than midnight, disrupting the sleep time and adding poison to the mix has a doubly devastating consequence
 
+<!--
+https://en.wikipedia.org/wiki/Krater
+https://bmcr.brynmawr.edu/1991/1991.05.13/?utm_source=chatgpt.com (Sympotica: A Symposium on the Symposion)
+https://en.wikipedia.org/wiki/Salon_(France)
+https://en.wikipedia.org/wiki/Symposium
+https://en.wikipedia.org/wiki/Temperance_(virtue)
+https://chatgpt.com/c/6925080f-7940-8331-9741-c5e1190f61a4
+https://chatgpt.com/c/6925ed6c-e968-8332-8a22-facd170e6e69
+https://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)
+https://en.wikipedia.org/wiki/History_of_alcoholic_beverages
+-->
+
 ## Specs
 
 These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.

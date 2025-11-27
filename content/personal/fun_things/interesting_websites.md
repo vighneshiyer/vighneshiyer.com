@@ -59,6 +59,7 @@ Blogs:
 - https://simonwillison.net/
 - https://til.simonwillison.net/
 - https://policysphere.com/
+- https://parallelprogrammer.substack.com/
 
 China:
 
