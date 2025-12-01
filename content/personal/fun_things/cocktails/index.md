@@ -560,7 +560,6 @@ Serving and Garnish
 Good Bottles
 : Same cognacs as above. Plantaray 3 Stars, Flor De Cana 4, El Dorado 3, Diplomatico Planas.
 
-
 ### Mudslide
 
 <figure class="content cocktail-spec">
@@ -654,11 +653,11 @@ My attempted reproduction:
 </figure>
 
 Ingredients
-: - 1oz Japanese rum (or 3/4oz white rum + 1/4oz agricole blanc)
+: - 1oz Japanese rum (consider 1/2oz Probitas + 1/4oz El Dorado 3 + 1/4oz agricole blanc)
   - 1oz Nigori sake
   - 3/4oz dry vermouth
   - 1/2oz Campari
-  - 1/2oz raspberry syrup OR muddled raspberries + 1/4oz simple syrup
+  - 1/2oz raspberry syrup OR muddle 6-8 raspberries with 1/4oz simple syrup
   - 1/2oz lemon juice
   - Sprinkle of salt
   - 3-4 drops of mezcal (for slight smoke)
@@ -717,9 +716,10 @@ Total amateur opinions to follow.
 - *Sean Thackrey Pleiades XXXII*. (9/10) Very good. Fruity and smooth.
 - *Charles Shaw wines (all varieties)*. (3/10). Very cheap, but do not buy lol. Get something nicer.
 - *No Es Pituko Carignan 2024*. (8/10). So so smooth, hard to believe there was any alcohol at all. Excellent.
+- *Domaine de la Patience, Red (2023)*. (8/10). Another smooth and gulpable red.
+- *Love Red 2022 - Broc Cellars*. (7/10). Similar to the other smooth red wines. Light flavor, very smooth, hardly any taste of alcohol. I think I need something more flavorful next time.
 - *Chateau Pey-Bonhomme Le-Tours Merlot*. TBD.
 - *Folk Machine Pinot Noir*. TBD.
-- *Love Red 2022 - Broc Cellars*. TBD.
 
 #### Whites
 
@@ -727,6 +727,7 @@ Total amateur opinions to follow.
 - *Barefoot Moscato*. (2/10). Cheap, mild tasting, and gulpable. Get something nicer.
 - *Risata Moscato d'Asti DOCG*. (8/10). Low alcohol, smooth, sweet, and fruity. A crowd favorite.
 - *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
+- *2024 Elio Perrone Moscato d'Asti Sourgal*. TBD.
 
 #### Orange
 
@@ -797,7 +798,12 @@ Wine
 : - Otima 10-Year Tawny Port
   - Chateau Pey-Bonhomme Le-Tours
   - Folk Machine Pinot Noir
-  - Love Red 2022 - Broc Cellars
+  - 2024 Elio Perrone Moscato d'Asti Sourgal
+
+Mead
+: - Chaucer's Mead
+  - Carroll's Mead
+  - Oliver Winery Camelot Mead Orange Blossom
 
 Whiskey
 : - Four Roses Small Batch
@@ -807,23 +813,30 @@ Whiskey
 Rum
 : - Diplomatico Reserva Exclusiva
   - Appleton Estate 8
+  - El Dorado 3
+  - Clement Rhum Agricole
+  - Probitas
+
+Cognac
+: - Kirkland XO Cognac
 
 Sake
 : - Hakutsuru Sayuri Nigori Sake
-  - Sho Chiku Bai Premium Ginjo
-  - Sho Chiku Bai Mio Sparkling Sake
 
 Soju
 : - Oak 43
 
 Gin
 : - Hendricks
+  - Citadelle
+  - Barr Hill
 
 Liquors
 : - Campari
   - Sole Vermouth (Extra Dry)
   - Dolin Vermouth Rouge (Sweet)
   - Dolin Vermouth (Dry)
+  - Dolin Vermouth (Blanc)
   - TJ's Sicilian Limoncello (x2)
   - Vanilla vodka
   - Cointreau
@@ -859,6 +872,7 @@ White Rum
   - El Dorado 3
   - Flor de Cana 4
   - Diplomatico Planas
+  - **Planteray 3 Stars**
 
 Aged Rum
 : - Appleton Estate 8 / 12
@@ -873,15 +887,20 @@ Gin
   - Citadelle Jardin D'Ete Gin
   - Tanqueray No. 10
   - Barr Hill
+  - Monkey 47
 
 Cognac
 : - Hennessy VSOP
   - Pierre Ferrand Ambre / Original Formula
 
 Orange liquors
-: - "Traditional" curacao, rum-based: Pierre Ferrand Dry Curacao, Santa Teresa Rhum Orange
+: - "Traditional" curacao, rum-based: **Pierre Ferrand Dry Curacao**, Santa Teresa Rhum Orange
   - Brandy-based curacao: Grand Marnier
   - Triple secs: Cointreau
+
+Extras
+: - Raspberry syrup
+  - Castelvetrano olives
 
 Books
 : - The NoMad Cocktail Book
