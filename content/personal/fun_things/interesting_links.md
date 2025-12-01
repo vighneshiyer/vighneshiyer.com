@@ -95,6 +95,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Scala 3 Migration: Report from the Field](https://blog.pierre-ricadat.com/scala-3-migration-report-from-the-field) ([HN link](https://news.ycombinator.com/item?id=42964773))
 - [Rust from a Scala Perspective: Advent of Code 2024](https://medium.com/@w.pitula/rust-from-a-scala-perspective-advent-of-code-2024-a5060f8beda3)
+- [The Origins of Scala: A Conversation with Martin Odersky, Part I](https://www.artima.com/articles/the-origins-of-scala) ([HN link](https://news.ycombinator.com/item?id=46090294))
 
 ### Data Processing
 
@@ -193,6 +194,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Anthropic: Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model) ([HN link](https://news.ycombinator.com/item?id=43495617))
 - [Frequently Asked Questions (And Answers) About AI Evals](https://hamel.dev/blog/posts/evals-faq/) ([HN link](https://news.ycombinator.com/item?id=44430117))
 - [Sergey Levine: Sporks of AGI](https://sergeylevine.substack.com/p/sporks-of-agi)
+- [Dwarkesh: RL is even more information inefficient than you thought - And implications for RLVR progress](https://www.dwarkesh.com/p/bits-per-sample) ([HN link](https://news.ycombinator.com/item?id=46067011))
 
 ### Applications
 
