@@ -671,6 +671,81 @@ Serving and Garnish
 Good Bottles
 : Probitas (for rum). Tozai Snow Maiden, Sho Chiku Bai Nigori (for sake).
 
+### Last Word
+
+**TBD** IMAGE!
+
+Ingredients
+: - 3/4oz gin
+  - 3/4oz green Chartreuse
+  - 3/4oz maraschino liqueur
+  - 3/4oz lime juice
+
+### Bee's Knees
+
+**TBD** IMAGE!
+
+Ingredients
+: - 2oz gin
+  - 3/4oz lemon juice
+  - 3/4oz honey syrup (mix 1 tbsp honey with 1 tbsp of warm water and stir until mixed and cool)
+  - (Optional) splash of fresh lemonade
+
+### Jasmine
+
+Ingredients
+: - 1 1/2oz gin
+  - 1/4oz Campari
+  - 1/4oz orange liqueur
+  - 3/4oz lemon juice
+
+### Monkey Gland
+
+Ingredients
+: - 1 1/2oz gin
+  - 1 1/2oz fresh orange juice
+  - 1 tablespoon absinthe
+  - 1 tablespoon grenadine
+
+### Corpse Reviver \#2
+
+Ingredients
+: - 3/4oz gin
+  - 3/4oz Lillet Blanc
+  - 3/4oz orange liqueur
+  - 3/4oz lemon juice
+  - 1 dash absinthe for rinsing the glass
+
+### Martinez
+
+Ingredients
+: - 1 1/2oz gin
+  - 1 1/2oz sweet vermouth
+  - 1/4oz Luxardo maraschino liqueur
+  - 2 dashes Angostura bitters
+
+### Tom Collins
+
+Ingredients
+: - 2oz gin
+  - 1oz lemon juice
+  - 1/2&ndash;1oz simple syrup
+  - Club soda to top (highball glass)
+
+Garnish: lemon wheel, maraschino cherry
+
+### Gin and Tonic
+
+- 2oz gin, 2oz tonic water, can add squeeze of lime and a dash of grenadine. Hendricks is ideal.
+
+### Bijou
+
+Ingredients
+: - 1 1/2oz gin
+  - 1oz sweet vermouth
+  - 3/4oz green Chartreuse
+  - 2 dashes orange bitters
+
 ## Poison Reviews
 
 Here are things I've tried and what I think.
@@ -898,9 +973,20 @@ Orange liquors
   - Brandy-based curacao: Grand Marnier
   - Triple secs: Cointreau
 
+Absinthe
+: - St George Absinthe Verte
+  - La Clandestine Absinthe Superieure Liqueur
+
+Chartreuse
+: - Chartreuse Green Liqueur (very difficult to find nowadays, can possibly find at K&L Wine Merchants)
+  - Chartreuse Vegetal de Grande Liqueur (a higher proof alternative)
+  - Dolin Genepy Le Chamois Liqueur (easier to find, combine with Chartreuse Vegetal to make a Last Word)
+  - Izarra Verte Basque Liqueur (Green Chartreuse Substitute) 
+
 Extras
 : - Raspberry syrup
   - Castelvetrano olives
+  - Luxardo Maraschino Liqueur (essential to make a Last Word)
 
 Books
 : - The NoMad Cocktail Book

@@ -169,7 +169,7 @@ There has been a lot said over the past two decades about how electronics can sa
 When humans lose the ability to *be bored* and produce something from nothing, their mental faculties decay.
 I believe Cal Newport put this phenomena into the public consciousness with his book "Deep Work"[^3] where he discusses how electronics, especially phones, have put humans in an unprecedented situation where they can go through life and *never* be bored.
 
-[^3]: I started hearing about the importance of boredom from 2016 or so when Newport's book was published
+[^3]: I started hearing about the importance of boredom from 2016 or so when Newport's book was published. A counterpoint can [be found here](https://lindynewsletter.beehiiv.com/p/notes-on-boredom).
 
 In the past two years, in addition to the phone, which can prevent even a few seconds of boredom from setting in, we now have "the model".
 Whatever attention span degradation phones have caused, has been or will soon be, dwarfed by the advent of the model.
