@@ -173,6 +173,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Another Periodic Suggestion to Try, Just Try, Switching to Kagi for Search](https://daringfireball.net/2025/04/try_switching_to_kagi) ([HN link](https://news.ycombinator.com/item?id=43829490))
 - [Why I Ditched Spotify, and How I Set Up My Own Music Stack](https://leshicodes.github.io/blog/spotify-migration/) ([HN link](https://news.ycombinator.com/item?id=45133109))
 - [Alibaba cloud FPGA: the 200$ Kintex UltraScale+](https://essenceia.github.io/projects/alibaba_cloud_fpga/) ([HN link](https://news.ycombinator.com/item?id=45471136))
+- [On becoming competitive when joining a new company](https://ludwigabap.com/posts/on-becoming-competitive-when-joining-a-new-company/)
 
 ## Hardware
 

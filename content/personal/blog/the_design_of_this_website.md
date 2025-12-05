@@ -231,6 +231,7 @@ Here are some more nice center column blogs, but they are more _vanilla_ than th
 - [noelwelsh.com](https://noelwelsh.com/posts/codata-interpreter-terminal/) (simple typography, minimal but nice)
 - [jackhopkins.github.io](https://jackhopkins.github.io/factorio-learning-environment/) (wide figures, clean)
 - [fleetwood.dev](https://fleetwood.dev/posts/you-could-have-designed-SOTA-positional-encoding)
+- [enbao.me](https://www.enbao.me/posts/tk) (very nice code blocks, callouts)
 - [hntrbrk.com](https://hntrbrk.com/schrodinger/) (nice font, wide hero header)
 - [coreyjmahler.com](https://coreyjmahler.com/the-28-theses-of-the-german-christians/) (good typography)
 - [michael.stapelberg.ch](https://michael.stapelberg.ch/posts/2017-12-11-dell-up3218k/)
