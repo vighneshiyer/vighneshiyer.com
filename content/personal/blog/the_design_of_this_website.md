@@ -195,6 +195,7 @@ First, here are the Tufte-style ones.
 - [rachit.pl](https://rachit.pl/post/personal-infrastructure/)
 - [martinfowler.com](https://martinfowler.com/articles/lmax.html)
 - [fi-le.net](https://fi-le.net/oss/)
+- [entropicthoughts.com](https://entropicthoughts.com/feynman-vs-computer) (nice typography, tight text column, ideal width)
 
 And now here are blogs that have just a center column.
 Here are the ones I consider somewhat _unique_ and _special_.
@@ -221,6 +222,7 @@ Here are some more nice center column blogs, but they are more _vanilla_ than th
 
 - [burntsushi.net](https://burntsushi.net/bstr/)
 - [Anand Bhattad's Blog](https://anandbhattad.github.io/blogs/jr_grads.html) (Crimson Text font is nice, figure captions, short blockquotes, nice clean typography)
+- [currentaffairs.org](https://www.currentaffairs.org/news/ai-is-destroying-the-university-and-learning-itself) (nice typography, pink accents, clean center column with paragraph indents &mdash; unusual, nice heading margins and typography)
 - [fly.io](https://fly.io/blog/youre-all-nuts/) (nice callouts, good typography)
 - [fromjason.xys](https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/) (very nice single column, nice headings and typography)
 - [dansinker.com](https://dansinker.com/posts/2025-05-23-who-cares/) (nice typography, fonts, subscription callout)

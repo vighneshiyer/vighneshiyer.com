@@ -96,7 +96,22 @@ https://en.wikipedia.org/wiki/History_of_alcoholic_beverages
 
 ## Specs
 
+<!--
 These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
+-->
+
+According to [Cocktail Codex](https://www.deathandcompanymarket.com/products/cocktail-codex), there are 6 fundamental recipes that are at the root of every cocktail.
+
+The Six Cocktails
+: - label: Old Fashioned (spirit + sugar + bitters)
+  - label: Martini
+
+There are a bunch of base spirits to use too. And many cocktails can be made with a split-base.
+The bases that are used in the specs below are:
+
+The Base Spirits
+: - label: Whiskey (this is a very broad category encompassing Bourbon - smooth, Wheat whiskey - light and full-bodied, Rye Whiskey - spicy, Irish Whiskey, and Scottish Whiskey)
+  - label: Rum (also many varieties, unaged white, aged white, aged, highly aged and dark and from various countries: Jamaica (funky), ... )
 
 <!--
 A sticker with a white border, no backdrop or shadow, and a white background. High resolution. Sketchy, cartoon-like style.
@@ -156,6 +171,7 @@ Riffs
   - *Swap sweetener*: swap demerara / maple / blue agave syrup for simple syrup
   - *Add coffee depth*: 1/2oz coffee liqueur
   - *Exotic bitters*: choose &mdash; 2 dashes Aztec chocolate bitters, 2 dashes black walnut bitters
+  - *Port old fashioned*: 2oz bourbon, 3/4oz 10-year Tawny port, 1/4oz maple syrup, 2 dashes Angostura bitters
 
 ### Sour
 
@@ -218,7 +234,11 @@ Serving and Garnish
 : Coupe glass, up, Luxardo cherry
 
 Good Bottles
-: Split Carpano Antica + Carpano Punt E Mes + Cocchi Vermouth Di Torino. Otima 10 Year Port. Rittenhouse.
+: Carpano Antica, Carpano Punt E Mes, Cocchi Vermouth Di Torino. Otima 10 Year Port. Rittenhouse 100.
+
+Riffs
+: - *Perfect Manhattan*: Use split of 1/2oz sweet vermouth + 1/2oz dry vermouth
+  - [*Perfect Summit Manhattan*](https://www.diffordsguide.com/cocktails/recipe/3064/perfect-summit-manhattan): 2 1/2oz bourbon, 3/4oz dry vermouth, 3/4oz Muscat wine, 1/6oz curacao, 2 dashes bitters
 
 ### Highball
 
@@ -262,18 +282,22 @@ Good Bottles
 
 Ingredients
 : - 2oz white rum
-  - 3/4oz&ndash;1oz lime juice (1 lime ≈ 1oz)
-  - 1/2oz&ndash;3/4oz simple syrup
-  - (Optional) dash of absinthe
+  - 3/4oz lime juice
+  - 3/4oz simple syrup
 
 Method
-: Shake hard with ice. Double strain into glass.
+: Shake very hard with ice for a full 15 seconds. Double strain into glass.
 
 Serving and Garnish
-: Cocktail glass, up
+: Coupe or Nick and Nora glass (chill the glass in the freezer), up
 
 Good Bottles
 : El Dorado 3, Probitas, Planteray 3 Stars, Flor de Cana 4
+
+Riffs
+: - *Herbal enhancement*: add a dash of absinthe before shaking
+  - *Grassy funk enhancement*: according to Cocktail Codex, the ideal daiquiri is 1 3/4oz white rum + 1/4oz *rhum agricole* + a full 1oz of lime juice
+  - *Difford's version: Daiquiri No. 1*: 1 2/3oz filtered white rum, 1/2oz lime juice, 1/3oz *2:1* sugar syrup (thicker syrup prevents overdilution)
 
 ### El Presidente
 
@@ -304,7 +328,7 @@ Serving and Garnish
 : Cocktail glass, up
 
 Good Bottles
-: Diplomatico Planas, Probitas, El Dorado 3, Plantaray 3 Stars. Lillet Blanc, Dolin Vermouth Blanc.
+: Diplomatico Planas, Probitas, El Dorado 3, Planteray 3 Stars. Lillet Blanc, Dolin Vermouth Blanc.
 
 ### Mai Tai
 
@@ -417,7 +441,6 @@ Ingredients
 : - 2oz gin
   - 1/2&ndash;3/4oz dry vermouth
   - 1 dash orange bitters
-  - (Optional) 1/2&ndash;3/4oz sweet vermouth (for a 'perfect martini')
 
 Method
 : Stir in mixing tin with ice. Strain. (Optionally shake)
@@ -427,6 +450,9 @@ Serving and Garnish
 
 Good Bottles
 : Plymouth, Bluecoat. Dolin Dry, Noilly Prat Extra Dry.
+
+Riffs
+: - *Perfect Martini*: add 1/2&ndash;3/4oz sweet vermouth to the tin
 
 ### Lemon Drop
 
@@ -558,7 +584,7 @@ Serving and Garnish
 : Cocktail glass, up, express orange peel (no garnish)
 
 Good Bottles
-: Same cognacs as above. Plantaray 3 Stars, Flor De Cana 4, El Dorado 3, Diplomatico Planas.
+: Same cognacs as above. Planteray 3 Stars, Flor De Cana 4, El Dorado 3, Diplomatico Planas.
 
 ### Mudslide
 
@@ -669,7 +695,7 @@ Serving and Garnish
 : Coupe, up.
 
 Good Bottles
-: Probitas (for rum). Tozai Snow Maiden, Sho Chiku Bai Nigori (for sake).
+: Probitas. Tozai Snow Maiden, Sho Chiku Bai Nigori.
 
 ### Last Word
 
@@ -745,6 +771,23 @@ Ingredients
   - 1oz sweet vermouth
   - 3/4oz green Chartreuse
   - 2 dashes orange bitters
+
+### Aviation
+
+Ingredients
+: - 1 3/4oz gin
+  - 1/2oz Luxardo Maraschino liqueur
+  - 1/4oz Creme de Violette Liqueur
+  - 1/2oz lemon juice
+  - 1/4oz cold water (omit if using wet ice)
+
+### Paper Plane
+
+TBD!
+
+### Aperol Spritz
+
+TBD!
 
 ## Poison Reviews
 
@@ -850,18 +893,18 @@ There is some basic bar equipment that you need that I wish I had from the start
 Just buy these things.
 
 - *Large ice cube tray*: I liked these Tovolo "King Cube" silicon trays ([Amazon link](https://www.amazon.com/dp/B01LXF6H2Y))
-- *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1))
+- *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2))
 - *Jigger*: There are 2 major varieties (double-ended and angled). You need to be able to measure volumes from 1/4oz to 2oz. I think the angled jiggers are way easier to use at home with less spillage than the double-ended kind. I like this one from OXO ([Amazon link](https://www.amazon.com/dp/B00B6LUAPW)).
-- *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions.
-- *Citrus juicer*: These are cheap, just get any one. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF)).
+- *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](https://en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions.
+- *Citrus juicer*: I recommend the NorPro 523 Stainless Steel Juicer ([Amazon link](https://www.amazon.com/Norpro-Stainless-Steel-Citrus-Juice-Press/dp/B0002IBOAK)) &mdash; for longevity and to avoid aluminum flaking, you should get a solid stainless steel juicer. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF)).
 - *Mixing tin*: There are also cocktail mixing glasses, but I prefer a stainless steel mixing vessel. I have this one from American Metalcraft ([Amazon link](https://www.amazon.com/dp/B09QQQGTWY)).
 - *Hawthorne Strainer*: This OXO one is good ([Amazon link](https://www.amazon.com/dp/B0000DAQ93))
-- *Cobbler shaker*: There are also Boston shakers, but a cobbler shaker is far easier to use at home. I got this one from OXO ([Amazon link](https://www.amazon.com/dp/B07JW89TC3)). If I was OK spending $60 on this, I would buy the [YETI one](https://www.yeti.com/drinkware/barware/cocktail-shaker-20oz.html).
+- *Cobbler shaker*: Bartenders usually use Boston shakers, but a cobbler shaker is far easier to use at home. I got this one from OXO ([Amazon link](https://www.amazon.com/dp/B07JW89TC3)). If I was OK spending $60 on this, I would buy the [YETI one](https://www.yeti.com/drinkware/barware/cocktail-shaker-20oz.html).
 - *Fine mesh strainer*: I have a 3" strainer from OXO ([Amazon link](https://www.amazon.com/OXO-Grips-3-Inch-Strainer-Multicolor/dp/B001713L84))
 - *Bar spoon*: Just get some cheap bar spoons, the exact model doesn't matter.
-- *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget &mdash; these are all kind of the same.
-- *Toothpicks*: The poor man's version of the fancy cocktail pick. Unfortunately, they are often too short to place over the rim of a glass.
-  - *Cocktail picks*: A substantial upgrade
+- *Corkscrew*: You need to be able to pull corks. Buy whatever is within your budget &mdash; these are all kind of the same. I have an OXO SteeL Winged Corkscrew ([Amazon link](https://www.amazon.com/OXO-Winged-Corkscrew-Removable-Cutter/dp/B074V7FG49))
+- *Toothpicks*: The poor man's version of the fancy cocktail pick &mdash; used to pick up cherries placed in the glass. Unfortunately, they are often too short to place over the rim of a glass.
+  - *Cocktail picks*: A substantial upgrade. Get stainless steel picks.
 - *Cooler*: I use an insulated bag to hold all my ice and cold liquors, but a proper hard-case insulated cooler would be better.
 
 Now, there is nothing to do except chill all your mixers and liquors.
@@ -889,8 +932,8 @@ Rum
 : - Diplomatico Reserva Exclusiva
   - Appleton Estate 8
   - El Dorado 3
-  - Clement Rhum Agricole
   - Probitas
+  - Clement Rhum Agricole
 
 Cognac
 : - Kirkland XO Cognac
@@ -908,12 +951,12 @@ Gin
 
 Liquors
 : - Campari
-  - Sole Vermouth (Extra Dry)
   - Dolin Vermouth Rouge (Sweet)
-  - Dolin Vermouth (Dry)
   - Dolin Vermouth (Blanc)
+  - Dolin Vermouth (Dry)
+  - Sole Vermouth (Extra Dry)
   - TJ's Sicilian Limoncello (x2)
-  - Vanilla vodka
+  - Absolut Vanilla Vodka
   - Cointreau
   - Grand Marnier
   - Mr. Black Cold Brew Coffee Liqueur
@@ -969,9 +1012,9 @@ Cognac
   - Pierre Ferrand Ambre / Original Formula
 
 Orange liquors
-: - "Traditional" curacao, rum-based: **Pierre Ferrand Dry Curacao**, Santa Teresa Rhum Orange
-  - Brandy-based curacao: Grand Marnier
-  - Triple secs: Cointreau
+: - Rum-based curacao (dry): **Pierre Ferrand Dry Curacao**, Santa Teresa Rhum Orange
+  - Brandy-based curacao (sweet): Grand Marnier
+  - Triple secs (neutral): Cointreau
 
 Absinthe
 : - St George Absinthe Verte
@@ -982,6 +1025,11 @@ Chartreuse
   - Chartreuse Vegetal de Grande Liqueur (a higher proof alternative)
   - Dolin Genepy Le Chamois Liqueur (easier to find, combine with Chartreuse Vegetal to make a Last Word)
   - Izarra Verte Basque Liqueur (Green Chartreuse Substitute) 
+
+Amaro
+: - Aperol
+  - Amaro Nonino
+  - Amaro Montenegro
 
 Extras
 : - Raspberry syrup
