@@ -60,6 +60,7 @@ Blogs:
 - https://til.simonwillison.net/
 - https://policysphere.com/
 - https://parallelprogrammer.substack.com/
+- https://www.brendangregg.com/overview.html
 
 China:
 
