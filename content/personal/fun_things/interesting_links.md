@@ -196,6 +196,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Frequently Asked Questions (And Answers) About AI Evals](https://hamel.dev/blog/posts/evals-faq/) ([HN link](https://news.ycombinator.com/item?id=44430117))
 - [Sergey Levine: Sporks of AGI](https://sergeylevine.substack.com/p/sporks-of-agi)
 - [Dwarkesh: RL is even more information inefficient than you thought - And implications for RLVR progress](https://www.dwarkesh.com/p/bits-per-sample) ([HN link](https://news.ycombinator.com/item?id=46067011))
+- [Ben Recht: Lore Laundering Machines](https://www.argmin.net/p/lore-laundering-machines)
 
 ### Applications
 
@@ -313,10 +314,14 @@ Here are a bunch of things from around the internet that I find interesting.
 - [A Student's Guide to Writing with ChatGPT (openai.com)](https://news.ycombinator.com/item?id=42129064)
 - [Why are tech people suddenly so into homeschooling?](https://newsletter.goodtechthings.com/p/why-are-tech-people-suddenly-so-into) ([HN link](https://news.ycombinator.com/item?id=42698737))
 - [Aporia: Asian immigration and the signaling model of education](https://www.aporiamagazine.com/p/asian-immigration-and-the-signaling)
+
+### Academia
+
 - [‘Soul-Crushing’: Students Slam Harvard’s Grade Inflation Report](https://www.thecrimson.com/article/2025/10/30/students-react-grading-report/)
   - In response to: [Harvard College’s Grading System Is ‘Failing,’ Report on Grade Inflation Says](https://www.thecrimson.com/article/2025/10/27/grading-workload-report/)
 - [Do I Need to Go to University? - Instead of asking “Is university good?”, ask “Do I have something more compelling to do?”](https://colah.github.io/posts/2020-05-University/)
 - [When grades stop meaning anything: The UC San Diego math scandal is a warning](https://www.theargumentmag.com/p/when-grades-stop-meaning-anything)
+- [Ben Recht: The DOI Directorate](https://www.argmin.net/p/the-doi-directorate)
 
 ## Writing
 
