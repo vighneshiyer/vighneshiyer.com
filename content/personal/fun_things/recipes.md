@@ -183,6 +183,14 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
 - Add tomato paste and chili flakes and cook until fragrant
 - Add heavy cream. Add cooked pasta with pasta water and grated parm and finish cooking.
 
+### Spinach and Ricotta Pasta
+
+- https://youtube.com/shorts/yFL2GZLsbZ8?si=5rkrYdBXRh_SySHJ
+- Blanch spinach, finely chop with sundried tomatoes, pan olive oil, add tomatoes and spinach, and fry for 2-3 min
+- Fresh ricotta in another pot, lemon zest, parm cheese microplaned, add spinach/tomato fry, salt, pepper, olive oil, mix thoroughly
+- Cook penne pasta, add some pasta water to the cheese
+- Drain cooked pasta, spoon in ricotta, add pasta water to loosen to make a creamy sauce, heat until ready
+
 ## Soups
 
 ### Tomato Soups
@@ -205,6 +213,10 @@ The only thing I don't like about this recipe is the lack of toasted peppercorns
   - Roast cherry tomatoes, 1 onion chopped in quarters, one red bell pepper, one whole clove of garlic with bottoms chopped off + salt + pepper + olive oil
   - Squeeze out garlic, add basil leaves, add heavy cream, blend until smooth
   - Garnish with olive oil
+
+- Fill 2/3 of a baking sheet with tomatoes sliced in half + 1 onion quartered + a few large slabs of bell pepper and 2 heads of garlic cut in half
+- Cover with olive oil and generous salt
+- Bake at 400F for 35-40 minutes. Squeeze out the garlic and scrape the pan until all fond is picked up. Add everything to a pot and blend until smooth + fresh basil. Finish with heavy cream and season to taste.
 
 ### Vegetable Soup
 

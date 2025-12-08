@@ -780,14 +780,35 @@ Ingredients
   - 1/4oz Creme de Violette Liqueur
   - 1/2oz lemon juice
   - 1/4oz cold water (omit if using wet ice)
+- Can use 1/4oz simple syrup
+- Creme Yvette
 
 ### Paper Plane
 
 TBD!
+- Can use Montenegro too instead of Nonino
 
 ### Aperol Spritz
 
 TBD!
+
+### Montenegroni
+
+- Add as a riff
+- Add other Montenegro riffs (e.g. Rum variant)
+
+### Gin Fix
+
+### Alpine Negroni
+
+- 1oz gin
+- 3/4oz Cocchi Americano
+- 3/4oz Suze Gentian
+- 1/2oz Genepy des alpes
+- 1 bar spoon White Creme de Menthe
+- 3 dashes lemon bitters
+- 5 drops 20% saline solution
+- Garnish with rosemary sprig
 
 ## Poison Reviews
 
