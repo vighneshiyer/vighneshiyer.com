@@ -77,6 +77,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [My Top 7 Performance Books for Engineers](https://www.jabperf.com/my-top-7-performance-books-for-engineers/)
   - 1. The Every Computer Performance Book, 3. Understanding Software Dynamics, 4. Systems Performance: Enterprise and the Cloud, 6. The Art of Writing Efficient Programs
 - [Brendan Gregg: Performance Analysis Methodology](https://www.brendangregg.com/methodology.html)
+- [Andrew Kelley: Practical Data Oriented Design](https://www.youtube.com/watch?v=IroPQ150F6c)
 
 ### Compilers
 
