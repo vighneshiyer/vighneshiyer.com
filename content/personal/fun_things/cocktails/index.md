@@ -807,7 +807,16 @@ Total amateur opinions to follow.
 ### Rum
 
 - *Diplomatico Reserva Exclusiva*. (7/10). I like it. A few feel it is too harsh and doesn't go down smooth, at least neat. But I'm a fan.
+- *El Dorado 3*. (6/10). Slight hint of fruity/tropical flavor but overpowered by a pure alcohol aftertaste. Reasonably OK in daiquiris, but not my favorite.
+- *Clement Rhum Agricole Blanc.* (9/10). Absolutely essential for a daiquiri. A great flavor enhancer with notes of banana and tropical fruits + sweetness.
+- *Probitas*. (9/10). This goes very well in a daiquiri. Strong flavors of ripe banana and pineapple. Strong at 48%: I recommend some explicit dilution of 1/4oz chilled water in a daiquiri + a touch more than 3/4oz simple syrup.
+- *Planteray 3 Stars*. TBD.
 - *Appleton Estate 8*. TBD.
+
+<!--
+- [x] El Dorado needs agricole for sure, not a very rum-forward flavor though - mostly alcohol
+- [x] Probitas is excellent, nice banana and tropical flavors, especially with agricole it gets even better. however it is a bit too harsh, i would add a bit over 3/4oz syrup and a bit (maybe 1/4oz) of chilled water to tame the alcohol burn. the flavor however is excellent and this is a great daiquiri
+-->
 
 ### Soju
 
@@ -818,6 +827,7 @@ Total amateur opinions to follow.
 
 - *Citadelle Gin*. (9/10). Excellent 'celery'-like + juniper berry flavor, freshness as the final note. Gimlet with this is too good.
 - *Hendrick's Gin.* (8/10). Also very good, but more subtle finish and harsher down the throat vs Citadelle.
+- *Barr Hill Gin*. TBD.
 
 ### Wines
 
@@ -845,7 +855,8 @@ Total amateur opinions to follow.
 - *Barefoot Moscato*. (2/10). Cheap, mild tasting, and gulpable. Get something nicer.
 - *Risata Moscato d'Asti DOCG*. (8/10). Low alcohol, smooth, sweet, and fruity. A crowd favorite.
 - *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
-- *2024 Elio Perrone Moscato d'Asti Sourgal*. TBD.
+- *2024 Elio Perrone Moscato d'Asti Sourgal*. (6/10). Sparkling, sweet, honeyed, light. A bit too low alcohol, and perhaps too smooth. No complex flavors.
+- *Belvino Prosecco Extra Dry*. TBD. (cheap, designed for mixers)
 
 #### Orange
 
@@ -858,6 +869,7 @@ Total amateur opinions to follow.
 - The [Remeadies](https://www.remeadies.com/) meadery near Sequoia National Park is very good. Go there if nearby. Unfortunately, their meads aren't easily available in NorCal.
 - *Chaucer's Mead*. (6/10). Very vanilla alcoholic honey flavor, smooth. Nothing objectionable, but nothing special either. Good for the price.
 - *Sky River Sweet Mead*. (7/10). At $30 it is expensive for what it is. Much more complex mead with a barnyard / wet grass flavor and floral notes. Not appreciated by everyone.
+- *Carroll's Mead*. (7/10). A bit more honeyed vs Chaucer's, but still relatively cheap. Smooth and tasty.
 
 ### Sake
 
@@ -916,11 +928,10 @@ Wine
 : - Otima 10-Year Tawny Port
   - Chateau Pey-Bonhomme Le-Tours
   - Folk Machine Pinot Noir
-  - 2024 Elio Perrone Moscato d'Asti Sourgal
+  - Belvino Prosecco Extra Dry
 
 Mead
 : - Chaucer's Mead
-  - Carroll's Mead
   - Oliver Winery Camelot Mead Orange Blossom
 
 Whiskey
@@ -934,6 +945,7 @@ Rum
   - El Dorado 3
   - Probitas
   - Clement Rhum Agricole
+  - Planteray 3 Stars
 
 Cognac
 : - Kirkland XO Cognac
@@ -961,6 +973,7 @@ Liquors
   - Grand Marnier
   - Mr. Black Cold Brew Coffee Liqueur
   - Baileys Original Irish Cream
+  - Amaro Montenegro
 
 Extras
 : - _Bitters_: Angostura, Orange
@@ -990,7 +1003,7 @@ White Rum
   - El Dorado 3
   - Flor de Cana 4
   - Diplomatico Planas
-  - **Planteray 3 Stars**
+  - Planteray 3 Stars
 
 Aged Rum
 : - Appleton Estate 8 / 12
@@ -1024,7 +1037,7 @@ Chartreuse
 : - Chartreuse Green Liqueur (very difficult to find nowadays, can possibly find at K&L Wine Merchants)
   - Chartreuse Vegetal de Grande Liqueur (a higher proof alternative)
   - Dolin Genepy Le Chamois Liqueur (easier to find, combine with Chartreuse Vegetal to make a Last Word)
-  - Izarra Verte Basque Liqueur (Green Chartreuse Substitute) 
+  - Izarra Verte Basque Liqueur (Green Chartreuse Substitute)
 
 Amaro
 : - Aperol
