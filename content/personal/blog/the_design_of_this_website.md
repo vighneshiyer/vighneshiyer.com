@@ -230,6 +230,7 @@ Here are some more nice center column blogs, but they are more _vanilla_ than th
 - [richardcsuwandi.github.io](https://richardcsuwandi.github.io/blog/2025/dgm/) (nice left-side TOC, right-side figure captions)
 - [noelwelsh.com](https://noelwelsh.com/posts/codata-interpreter-terminal/) (simple typography, minimal but nice)
 - [jackhopkins.github.io](https://jackhopkins.github.io/factorio-learning-environment/) (wide figures, clean)
+- [jepsen.io](https://jepsen.io/analyses/nats-2.12.1) (very nice heading/body typography, good vertical rhythm and article prelude formatting)
 - [fleetwood.dev](https://fleetwood.dev/posts/you-could-have-designed-SOTA-positional-encoding)
 - [enbao.me](https://www.enbao.me/posts/tk) (very nice code blocks, callouts)
 - [hntrbrk.com](https://hntrbrk.com/schrodinger/) (nice font, wide hero header)
