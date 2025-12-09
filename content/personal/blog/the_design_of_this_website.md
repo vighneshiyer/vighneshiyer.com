@@ -222,6 +222,7 @@ Here are some more nice center column blogs, but they are more _vanilla_ than th
 
 - [burntsushi.net](https://burntsushi.net/bstr/)
 - [Anand Bhattad's Blog](https://anandbhattad.github.io/blogs/jr_grads.html) (Crimson Text font is nice, figure captions, short blockquotes, nice clean typography)
+- [richardeaglespoon.com](https://www.richardeaglespoon.com/articles/how-to-pizza) (excellent serif typography and headings, great images + captions)
 - [currentaffairs.org](https://www.currentaffairs.org/news/ai-is-destroying-the-university-and-learning-itself) (nice typography, pink accents, clean center column with paragraph indents &mdash; unusual, nice heading margins and typography)
 - [fly.io](https://fly.io/blog/youre-all-nuts/) (nice callouts, good typography)
 - [fromjason.xys](https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/) (very nice single column, nice headings and typography)
