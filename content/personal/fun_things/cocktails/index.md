@@ -786,11 +786,23 @@ Ingredients
 ### Paper Plane
 
 TBD!
-- Can use Montenegro too instead of Nonino
+- Can use Montenegro or Averna too instead of Nonino
 
-### Aperol Spritz
+3/4oz bourbon
+3/4oz Aperol
+3/4oz Amaro Nonino
+3/4oz lemon juice
 
-TBD!
+### Aperol / Amaro Spritz
+
+3-2-1 spritz formula
+
+    2ounces amaro
+    3ounces dry sparkling wine
+    1ounce soda water
+    Lime wheel
+
+First wine, then ice, then amaro and then soda water. Add the lime wheel into the glass
 
 ### Montenegroni
 
