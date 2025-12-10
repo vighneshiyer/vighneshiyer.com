@@ -46,6 +46,7 @@ description = "Hardly anyone realizes how far ahead Tesla is"
   - But they don't own the automotive stack. They retrofit cars. This doesn't scale easily. Tesla has factories churning out 10000+ cars per month. Waymo can't do that.
   - Waymo has to sink a huge cost into every car. Expensive sensors and Lidar. Breakeven is hard to achieve.
   - They rely on HD maps, pre-mapped routes, and sensor fusion. They exhibit failure modes that Teslas don't. They are geofenced - they can't drive on highways.
+  - https://waymo.com/blog/2025/12/demonstrably-safe-ai-for-autonomous-driving (recent update where they claim a end-to-end self-driving stack, doesn't reflect my experience)
 - https://www.youtube.com/watch?v=mz8dOCboDz8 ( Comparison of Tesla FSD with 7 Chinese ADAS Systems. | Tesla FSD in China )
   - There is no doubt that even in a geofenced market like China where Tesla can't export any Chinese training data to America for model refinement, Tesla is still far ahead
 - https://www.youtube.com/watch?v=s5IVI3OpVVs ( I Forgot How Good Tesla FSD Actually Is... )

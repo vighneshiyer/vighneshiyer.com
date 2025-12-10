@@ -785,7 +785,6 @@ Ingredients
 
 ### Paper Plane
 
-TBD!
 - Can use Montenegro or Averna too instead of Nonino
 
 3/4oz bourbon
@@ -797,17 +796,19 @@ TBD!
 
 3-2-1 spritz formula
 
-    2ounces amaro
-    3ounces dry sparkling wine
-    1ounce soda water
-    Lime wheel
+3oz dry sparkling wine
+2oz amaro
+1oz soda water
+Lime / orange wheel
+0.25oz lemon juice (optional)
 
-First wine, then ice, then amaro and then soda water. Add the lime wheel into the glass
+First wine, then ice, then amaro and then soda water. Stir once. Add the lime wheel into the glass
 
 ### Montenegroni
 
 - Add as a riff
 - Add other Montenegro riffs (e.g. Rum variant)
+- Rum Monte Sour
 
 ### Gin Fix
 
@@ -821,6 +822,22 @@ First wine, then ice, then amaro and then soda water. Add the lime wheel into th
 - 3 dashes lemon bitters
 - 5 drops 20% saline solution
 - Garnish with rosemary sprig
+
+### White Negroni
+
+TBD.
+
+### Black Manhattan
+
+Add as riff.
+
+### Jasmine
+
+- 1 1/2oz gin
+- 1/4oz Campari
+- 1/4oz Cointreau
+- 3/4oz lemon juice
+- 1/8&ndash;1/4oz simple syrup
 
 ## Poison Reviews
 
