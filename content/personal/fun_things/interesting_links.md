@@ -175,6 +175,9 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Why I Ditched Spotify, and How I Set Up My Own Music Stack](https://leshicodes.github.io/blog/spotify-migration/) ([HN link](https://news.ycombinator.com/item?id=45133109))
 - [Alibaba cloud FPGA: the 200$ Kintex UltraScale+](https://essenceia.github.io/projects/alibaba_cloud_fpga/) ([HN link](https://news.ycombinator.com/item?id=45471136))
 - [On becoming competitive when joining a new company](https://ludwigabap.com/posts/on-becoming-competitive-when-joining-a-new-company/)
+- [neal.fun: Size of Life](https://neal.fun/size-of-life/) ([HN link](https://news.ycombinator.com/item?id=46219346))
+- [neal.fun: Space Elevator](https://news.ycombinator.com/item?id=45640226) ([HN link](https://news.ycombinator.com/item?id=45640226))
+- [neal.fun: The Deep Sea](https://news.ycombinator.com/item?id=21850527) ([HN link](https://news.ycombinator.com/item?id=21850527))
 
 ## Hardware
 
