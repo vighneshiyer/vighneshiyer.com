@@ -178,6 +178,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [neal.fun: Size of Life](https://neal.fun/size-of-life/) ([HN link](https://news.ycombinator.com/item?id=46219346))
 - [neal.fun: Space Elevator](https://news.ycombinator.com/item?id=45640226) ([HN link](https://news.ycombinator.com/item?id=45640226))
 - [neal.fun: The Deep Sea](https://news.ycombinator.com/item?id=21850527) ([HN link](https://news.ycombinator.com/item?id=21850527))
+- [Auto-grading decade-old Hacker News discussions with hindsight](https://karpathy.bearblog.dev/auto-grade-hn/), [HN Time Capsule](https://karpathy.ai/hncapsule/index.html) ([HN link](https://news.ycombinator.com/item?id=46220540))
 
 ## Hardware
 
