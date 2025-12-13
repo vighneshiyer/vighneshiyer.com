@@ -839,6 +839,17 @@ Add as riff.
 - 3/4oz lemon juice
 - 1/8&ndash;1/4oz simple syrup
 
+### Elk's Own
+
+- 1oz whiskey
+- 3/4oz Ruby Port
+- 3/4oz lemon juice
+- 1/2oz demerara syrup
+- Egg white / Fee foam
+- 1&ndash;2 dashes chocolate / orange bitters
+
+- Type: Winter
+
 ## Poison Reviews
 
 Here are things I've tried and what I think.
