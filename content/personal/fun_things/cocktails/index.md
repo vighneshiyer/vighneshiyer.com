@@ -142,9 +142,9 @@ There are many variations and you can use any spirit, although whiskey is the cl
   <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
   <img class="plus" src="./plus.png"/>
-  <img src="./angostura_bitters.png"/>
+  <img class="size-2" src="./angostura_bitters.png"/>
   <img class="plus" src="./plus.png"/>
-  <img src="./orange_bitters.png"/>
+  <img class="size-2" src="./orange_bitters.png"/>
   <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
   <img class="equals" src="./equals.png"/>
@@ -214,7 +214,7 @@ Riffs
   <img class="plus" src="./plus.png"/>
   <img src="./sweet_vermouth.png"/>
   <img class="plus" src="./plus.png"/>
-  <img src="./angostura_bitters.png"/>
+  <img class="size-2" src="./angostura_bitters.png"/>
   <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
   <img class="equals" src="./equals.png"/>
@@ -265,6 +265,10 @@ Serving and Garnish
 
 Good Bottles
 : Suntory Toki
+
+Riffs
+: - *Tom Collins*: 2oz gin, 1oz lemon juice, 1/2&ndash;1oz simple syrup, club soda to top in highball glass. Garnish with lemon wheel and a maraschino cherry.
+  - *Gin and Tonic*: 2oz gin, 2oz tonic water, a squeeze of lime, and a dash of grenadine. Hendrick's gin is nice.
 
 ### Daiquiri
 
@@ -433,7 +437,7 @@ Riffs
   <img class="plus" src="./plus.png"/>
   <img src="./dry_vermouth.png"/>
   <img class="plus" src="./plus.png"/>
-  <img src="./orange_bitters.png"/>
+  <img class="size-2" src="./orange_bitters.png"/>
   <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
   <img class="equals" src="./equals.png"/>
@@ -787,10 +791,10 @@ Serving and Garnish
 
 ### Monkey Gland
 
-<figure class="content cocktail-spec">
+<figure class="popout cocktail-spec">
   <img src="./gin.png"/>
   <img class="plus" src="./plus.png"/>
-  <img src="./orange_juice.png"/>
+  <img class="size-1" src="./orange_juice.png"/>
   <img class="plus" src="./plus.png"/>
   <img src="./grenadine.png"/>
   <img class="plus" src="./plus.png"/>
@@ -815,14 +819,50 @@ Serving and Garnish
 
 ### Corpse Reviver \#2
 
+<figure class="popout cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-1" src="./cointreau.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./lillet_blanc.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./absinthe.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./corpse_reviver_2.png"/>
+</figure>
+
 Ingredients
 : - 3/4oz gin
+  - 3/4oz orange liqueur (Cointreau)
   - 3/4oz Lillet Blanc
-  - 3/4oz orange liqueur
   - 3/4oz lemon juice
   - 1 dash absinthe for rinsing the glass
 
+Method
+: Spray the glass with absinthe. Shake ingredients with ice for 15 seconds. Double strain.
+
+Serving and Garnish
+: Coupe, up. Garnish with lemon or orange twist.
+
 ### Martinez
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./sweet_vermouth.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./maraschino_liqueur.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-2" src="./angostura_bitters.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./martinez.png"/>
+</figure>
 
 Ingredients
 : - 1 1/2oz gin
@@ -830,26 +870,32 @@ Ingredients
   - 1/4oz Luxardo maraschino liqueur
   - 2 dashes Angostura bitters
 
-### Tom Collins
+Method
+: Stir over ice until chilled, 30-45 seconds. Strain.
 
-Ingredients
-: - 2oz gin
-  - 1oz lemon juice
-  - 1/2&ndash;1oz simple syrup
-  - Club soda to top (highball glass)
-
-Garnish: lemon wheel, maraschino cherry
-
-### Gin and Tonic
-
-- 2oz gin, 2oz tonic water, can add squeeze of lime and a dash of grenadine. Hendricks is ideal.
+Serving and Garnish
+: Coupe, up. Garnish with lemon twist.
 
 ### Bijou
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./sweet_vermouth.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./green_chartreuse.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-2" src="./orange_bitters.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./martinez.png"/>
+</figure>
 
 Ingredients
 : - 1 1/2oz gin
   - 1oz sweet vermouth
-  - 3/4oz green Chartreuse
+  - 3/4oz Green Chartreuse
   - 2 dashes orange bitters
 
 ### Aviation
