@@ -423,6 +423,9 @@ Serving and Garnish
 Good Bottles
 : Cocchi Vermouth di Torino, Cinzano Rosso Vermouth, Carpano Antica Formula, Dolin Rouge Sweet. Tanqueray No. 10.
 
+Riffs
+: - *MonteNegroni*: swap 
+
 ### Martini
 
 <figure class="content cocktail-spec">
@@ -699,7 +702,19 @@ Good Bottles
 
 ### Last Word
 
-**TBD** IMAGE!
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./green_chartreuse.png"/>
+  <img class="short" src="./plus.png"/>
+  <img src="./maraschino_liqueur.png"/>
+  <img class="short" src="./plus.png"/>
+  <img class="middle" src="./lime.png"/>
+  <img class="short" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="short" src="./equals.png"/>
+  <img class="large" src="./last_word.png"/>
+</figure>
 
 Ingredients
 : - 3/4oz gin
@@ -722,8 +737,9 @@ Ingredients
 Ingredients
 : - 1 1/2oz gin
   - 1/4oz Campari
-  - 1/4oz orange liqueur
+  - 1/4oz orange liqueur (Cointreau)
   - 3/4oz lemon juice
+  - 1/8&ndash;1/4oz simple syrup
 
 ### Monkey Gland
 
@@ -830,14 +846,6 @@ TBD.
 ### Black Manhattan
 
 Add as riff.
-
-### Jasmine
-
-- 1 1/2oz gin
-- 1/4oz Campari
-- 1/4oz Cointreau
-- 3/4oz lemon juice
-- 1/8&ndash;1/4oz simple syrup
 
 ### Elk's Own
 
