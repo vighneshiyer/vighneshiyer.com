@@ -1209,20 +1209,23 @@ figure.cocktail-spec {
   margin-bottom: var(--space-s);
   width: fit-content;
   img {
-    max-height: 150px;
+    max-height: 150px; // default height
     margin: 0;
     display: block;
   }
-  img.short {
+  img.size-4, img.plus, img.arrow, img.equals {
     max-height: 30px;
   }
-  img.middle {
+  img.citrus {
+    max-height: 50px;
+  }
+  img.size-3 {
     max-height: 65px;
   }
-  img.medium {
+  img.size-2 {
     max-height: 100px;
   }
-  img.large {
+  img.size-1 {
     max-height: 125px;
   }
 }

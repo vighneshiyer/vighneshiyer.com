@@ -139,16 +139,16 @@ There are many variations and you can use any spirit, although whiskey is the cl
 
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./angostura_bitters.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./orange_bitters.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="medium" src="./old_fashioned.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-2" src="./old_fashioned.png"/>
 </figure>
 
 Ingredients
@@ -173,18 +173,18 @@ Riffs
   - *Exotic bitters*: choose &mdash; 2 dashes Aztec chocolate bitters, 2 dashes black walnut bitters
   - *Port old fashioned*: 2oz bourbon, 3/4oz 10-year Tawny port, 1/4oz maple syrup, 2 dashes Angostura bitters
 
-### Sour
+### Whiskey Sour
 
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./lemonade.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="medium" src="./whiskey_sour.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-2" src="./whiskey_sour.png"/>
 </figure>
 
 Ingredients
@@ -211,14 +211,14 @@ Riffs
 
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./sweet_vermouth.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./angostura_bitters.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="" src="./manhattan.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./manhattan.png"/>
 </figure>
 
 Ingredients
@@ -240,16 +240,16 @@ Riffs
 : - *Perfect Manhattan*: Use split of 1/2oz sweet vermouth + 1/2oz dry vermouth
   - [*Perfect Summit Manhattan*](https://www.diffordsguide.com/cocktails/recipe/3064/perfect-summit-manhattan): 2 1/2oz bourbon, 3/4oz dry vermouth, 3/4oz Muscat wine, 1/6oz curacao, 2 dashes bitters
 
-### Highball
+### Whiskey Highball
 
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./club_soda.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="" src="./highball.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./highball.png"/>
 </figure>
 
 Ingredients
@@ -270,14 +270,14 @@ Good Bottles
 
 <figure class="content cocktail-spec">
   <img src="./white_rum.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lime.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lime.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="" src="./daiquiri.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./daiquiri.png"/>
 </figure>
 
 Ingredients
@@ -303,16 +303,16 @@ Riffs
 
 <figure class="content cocktail-spec">
   <img src="./white_rum.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./blanc_vermouth.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./dry_curacao.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./grenadine.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="" src="./el_presidente.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./el_presidente.png"/>
 </figure>
 
 Ingredients
@@ -334,18 +334,18 @@ Good Bottles
 
 <figure class="popout cocktail-spec">
   <img src="./aged_rum.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lime.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lime.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./dry_curacao.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./orgeat.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="medium" src="./mai_tai.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./mai_tai.png"/>
 </figure>
 
 Ingredients
@@ -371,14 +371,14 @@ Riffs
 
 <figure class="content cocktail-spec">
   <img src="./gin.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lime.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lime.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="" src="./gimlet.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./gimlet.png"/>
 </figure>
 
 Ingredients
@@ -399,14 +399,14 @@ Good Bottles
 
 <figure class="content cocktail-spec">
   <img src="./gin.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./sweet_vermouth.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./campari.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./negroni.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./negroni.png"/>
 </figure>
 
 Ingredients
@@ -430,14 +430,14 @@ Riffs
 
 <figure class="content cocktail-spec">
   <img src="./gin.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./dry_vermouth.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./orange_bitters.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./martini.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./martini.png"/>
 </figure>
 
 Ingredients
@@ -461,20 +461,18 @@ Riffs
 
 <figure class="popout cocktail-spec">
   <img src="./gin.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./plus.png"/>
-  <img src="./cointreau.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-1" src="./cointreau.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./limoncello.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <!--<img class="short" src="./right_arrow.png"/>
-  <img src="./orange_bitters.png"/>-->
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./lemon_drop.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./lemon_drop.png"/>
 </figure>
 
 Ingredients
@@ -498,14 +496,14 @@ Good Bottles
 
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./campari.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./sweet_vermouth.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./mixing_glass.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="medium" src="./boulevardier.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-2" src="./boulevardier.png"/>
 </figure>
 
 Ingredients
@@ -527,16 +525,16 @@ Good Bottles
 
 <figure class="popout cocktail-spec">
   <img src="./cognac.png"/>
-  <img class="short" src="./plus.png"/>
-  <img src="./grand_marnier.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-1" src="./grand_marnier.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="medium" src="./sidecar.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./sidecar.png"/>
 </figure>
 
 Ingredients
@@ -558,18 +556,18 @@ Good Bottles
 
 <figure class="popout cocktail-spec">
   <img src="./cognac.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./white_rum.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./cointreau.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./between_the_sheets.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./between_the_sheets.png"/>
 </figure>
 
 Ingredients
@@ -593,16 +591,16 @@ Good Bottles
 
 <figure class="content cocktail-spec">
   <img src="./baileys.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./coffee_liqueur.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./vodka.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="medium" src="./heavy_cream.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-2" src="./heavy_cream.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./mudslide.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./mudslide.png"/>
 </figure>
 
 Ingredients
@@ -624,18 +622,18 @@ Good Bottles
 
 <figure class="popout cocktail-spec">
   <img src="./gin.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./ruby_port_wine.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./grenadine.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./port_of_call.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./port_of_call.png"/>
 </figure>
 
 Ingredients
@@ -644,7 +642,6 @@ Ingredients
   - 3/4oz lemon juice
   - 1/2oz cinnamon syrup
   - 1 tsp cranberry preserves
-  - (Optional) sub cinnamon syrup / cranberry for: simple / demerara syrup + Angostura bitters + dash of grenadine / raspberry jam
 
 Method
 : Shake with ice. Double strain.
@@ -654,6 +651,9 @@ Serving and Garnish
 
 Good Bottles
 : I have no idea
+
+Riffs
+: - If cinnamon syrup / cramberries aren't available, sub with: 1/2oz simple syrup + 1 dash Angostura bitters + dash of grenadine
 
 ### Japanese Snow Monkey
 
@@ -665,31 +665,31 @@ My attempted reproduction:
 
 <figure class="popout cocktail-spec">
   <img src="./white_rum.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./nigori_sake.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./dry_vermouth.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./campari.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./simple_syrup.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lemon.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./japanese_snow_monkey.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./japanese_snow_monkey.png"/>
 </figure>
 
 Ingredients
-: - 1oz Japanese rum (consider 1/2oz Probitas + 1/4oz El Dorado 3 + 1/4oz agricole blanc)
+: - 1oz Japanese rum (substitute with: 1/2oz Probitas + 1/4oz El Dorado 3 + 1/4oz agricole blanc)
   - 1oz Nigori sake
   - 3/4oz dry vermouth
   - 1/2oz Campari
-  - 1/2oz raspberry syrup OR muddle 6-8 raspberries with 1/4oz simple syrup
+  - 1/2oz raspberry syrup **OR** muddle 6-8 raspberries with 1/4oz simple syrup
   - 1/2oz lemon juice
   - Sprinkle of salt
-  - 3-4 drops of mezcal (for slight smoke)
+  - (Optional) 3-4 drops of mezcal (for slight smoke)
 
 Method
 : Muddle raspberries. Shake with ice. Double strain.
@@ -704,35 +704,73 @@ Good Bottles
 
 <figure class="content cocktail-spec">
   <img src="./gin.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./green_chartreuse.png"/>
-  <img class="short" src="./plus.png"/>
+  <img class="plus" src="./plus.png"/>
   <img src="./maraschino_liqueur.png"/>
-  <img class="short" src="./plus.png"/>
-  <img class="middle" src="./lime.png"/>
-  <img class="short" src="./right_arrow.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lime.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
   <img src="./cocktail_shaker.png"/>
-  <img class="short" src="./equals.png"/>
-  <img class="large" src="./last_word.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./last_word.png"/>
 </figure>
 
 Ingredients
 : - 3/4oz gin
-  - 3/4oz green Chartreuse
-  - 3/4oz maraschino liqueur
+  - 3/4oz Green Chartreuse
+  - 3/4oz Maraschino liqueur
   - 3/4oz lime juice
+
+Method
+: Shake with ice for 20-30 seconds. Double strain.
+
+Serving and Garnish
+: Coupe / nick and nora, up. Garnish with Luxardo cherry + lime twist.
 
 ### Bee's Knees
 
-**TBD** IMAGE!
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-2" src="./honey_syrup.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./bees_knees.png"/>
+</figure>
 
 Ingredients
 : - 2oz gin
+  - 3/4oz honey syrup (equal parts honey and warm water, stir until mixed and cool)
   - 3/4oz lemon juice
-  - 3/4oz honey syrup (mix 1 tbsp honey with 1 tbsp of warm water and stir until mixed and cool)
   - (Optional) splash of fresh lemonade
 
+Method
+: Shake with ice for 15 seconds. Double strain.
+
+Serving and Garnish
+: Coupe / nick and nora, up. Garnish with lemon twist.
+
 ### Jasmine
+
+<figure class="popout cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./campari.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-1" src="./cointreau.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./jasmine.png"/>
+</figure>
 
 Ingredients
 : - 1 1/2oz gin
@@ -741,13 +779,39 @@ Ingredients
   - 3/4oz lemon juice
   - 1/8&ndash;1/4oz simple syrup
 
+Method
+: Shake with ice for 15-20 seconds. Double strain.
+
+Serving and Garnish
+: Coupe, up. Garnish with lemon twist.
+
 ### Monkey Gland
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./orange_juice.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./grenadine.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./absinthe.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./monkey_gland.png"/>
+</figure>
 
 Ingredients
 : - 1 1/2oz gin
-  - 1 1/2oz fresh orange juice
-  - 1 tablespoon absinthe
-  - 1 tablespoon grenadine
+  - 1oz fresh orange juice
+  - 1/4oz grenadine
+  - 1 dash absinthe
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Martini glass or coupe, up. Garnish with orange twist or wheel.
 
 ### Corpse Reviver \#2
 
@@ -857,6 +921,8 @@ Add as riff.
 - 1&ndash;2 dashes chocolate / orange bitters
 
 - Type: Winter
+
+### Jungle Bird
 
 ## Poison Reviews
 
@@ -1112,6 +1178,8 @@ Amaro
 : - Aperol
   - Amaro Nonino
   - Amaro Montenegro
+  - Suze
+  - Lillet Blanc
 
 Extras
 : - Raspberry syrup
