@@ -19,8 +19,15 @@ Research ideas
 - Diagramming using gradient descent, maybe first an overview of what exists already in the world of diagramming
 - HDL design
 - Look at the picture that me and joonho drew on the whiteboard a long time ago - consolidation and linkages of all fundamental projects that could be done
+
+## Profiling / Tracing Things
+
 - Full stack, simulation-driven profiling
   - See "hello world" profiling article by Richard Sites
+- https://news.ycombinator.com/item?id=46263530
+  - it seems there is a lot of room for improving llvm-mca if you have knowledge of the uarch and other cpu components (caches, BP, prefetch)
+  - but it would be better to do this in cranelift
+  - egraph extraction with a more detailed perf model for some small kernels and even cross-function analysis would be very cool
 
 ## RTL Simulation with TT Blackhole
 

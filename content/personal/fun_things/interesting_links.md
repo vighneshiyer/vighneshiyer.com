@@ -78,6 +78,8 @@ Here are a bunch of things from around the internet that I find interesting.
   - 1. The Every Computer Performance Book, 3. Understanding Software Dynamics, 4. Systems Performance: Enterprise and the Cloud, 6. The Art of Writing Efficient Programs
 - [Brendan Gregg: Performance Analysis Methodology](https://www.brendangregg.com/methodology.html)
 - [Andrew Kelley: Practical Data Oriented Design](https://www.youtube.com/watch?v=IroPQ150F6c)
+- [Illuminating the processor core with llvm-mca](https://abseil.io/fast/99) ([HN link](https://news.ycombinator.com/item?id=46263530))
+- [Godbolt: Introducing the Advent of Compiler Optimisations 2025](https://xania.org/202511/advent-of-compiler-optimisation)
 
 ### Compilers
 
@@ -85,6 +87,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Building a baseline JIT for Lua automatically](https://sillycross.github.io/2023/05/12/2023-05-12/)
   - Same author as [Copy-and-patch compilation: a fast compilation algorithm for high-level languages and bytecode](https://dl.acm.org/doi/abs/10.1145/3485513), highly competent person
 - [2023 EuroLLVM - Tutorial: A whirlwind tour of the LLVM optimizer](https://www.youtube.com/watch?v=7GHXDEIMGIY)
+- [Compiler Engineering in Practice](https://chisophugis.github.io/2025/12/08/compiler-engineering-in-practice-part-1-what-is-a-compiler.html) ([HN link](https://news.ycombinator.com/item?id=46261452))
 
 ### Rust
 
