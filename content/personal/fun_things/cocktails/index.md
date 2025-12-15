@@ -1227,12 +1227,18 @@ What follows are all sakes from Takara (brewed in Berkeley).
 
 ### Cocktail Liquors
 
-- *Dolin Rouge (Sweet) Vermouth*. Decent, I have no comparison point.
 - *Cointreau*. It works, I have no reference point for orange liqueur.
+- *Grand Marnier*. It works, great in a sidecar.
 - *Baileys*. Sweet, smooth, milky. Nothing bad, but nothing great either.
 - *Mr. Black Cold Brew Coffee Liqueur*. Decent, good espresso flavor.
 - *TJ's Limoncello*. (8/10). Excellent, great in a lemon drop.
-- *Grand Marnier*. It works, great in a sidecar.
+
+### Amaro + Fortified Wines
+
+- *Dolin Rouge (Sweet) Vermouth*. (8/10). Decent, I have no comparison point. Great to drink on its own too.
+- *Campari*. (7/10). Hard for a beginner to get used to its bitterness. Ease into it with ample dilution and sweeteners.
+- *Aperol*. (9/10). Works great in a spritz and really boosts appetite before a meal.
+- *Amaro Montenegro*. (10/10). The best thing I've ever tasted. Notes of vanilla and cola. Excellent in a spritz or just mixed with club soda (2oz amaro + 3oz soda water). This is a must buy.
 
 ### Garnishes
 
@@ -1249,7 +1255,7 @@ Just buy these things.
 - *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2))
 - *Jigger*: There are 2 major varieties (double-ended and angled). You need to be able to measure volumes from 1/4oz to 2oz. I think the angled jiggers are way easier to use at home with less spillage than the double-ended kind. I like this one from OXO ([Amazon link](https://www.amazon.com/dp/B00B6LUAPW)).
 - *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](https://en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions.
-- *Citrus juicer*: I recommend the NorPro 523 Stainless Steel Juicer ([Amazon link](https://www.amazon.com/Norpro-Stainless-Steel-Citrus-Juice-Press/dp/B0002IBOAK)) &mdash; for longevity and to avoid aluminum flaking, you should get a solid stainless steel juicer. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF)).
+- *Citrus juicer*: I recommend a manual wood citrus reamer &mdash; I got one from OXO ([Amazon link](https://www.amazon.com/OXO-Good-Grips-Wooden-Reamer/dp/B0007VO0DA?)). Bulk juice citrus into a measuring jar and pour into your jigger. I *no longer* recommend the NorPro 523 Stainless Steel Juicer ([Amazon link](https://www.amazon.com/Norpro-Stainless-Steel-Citrus-Juice-Press/dp/B0002IBOAK)) &mdash; it doesn't squeeze the citrus completely and leaves plenty of juice behind. For longevity and to avoid aluminum flaking, I lean towards a solid stainless steel juicer. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF)).
 - *Mixing tin*: There are also cocktail mixing glasses, but I prefer a stainless steel mixing vessel. I have this one from American Metalcraft ([Amazon link](https://www.amazon.com/dp/B09QQQGTWY)).
 - *Hawthorne Strainer*: This OXO one is good ([Amazon link](https://www.amazon.com/dp/B0000DAQ93))
 - *Cobbler shaker*: Bartenders usually use Boston shakers, but a cobbler shaker is far easier to use at home. I got this one from OXO ([Amazon link](https://www.amazon.com/dp/B07JW89TC3)). If I was OK spending $60 on this, I would buy the [YETI one](https://www.yeti.com/drinkware/barware/cocktail-shaker-20oz.html).
@@ -1390,11 +1396,16 @@ Amaro
 : - Aperol
   - Amaro Nonino
   - Amaro Montenegro
+  - Cynar
   - Campari
   - Ramazzotti
   - Suze
   - Lillet Blanc
   - Cocchi Americano
+  - Benedictine
+  - Grappa wine
+  - Ouzo
+  - Mastiha
 
 Extras
 : - Raspberry syrup
