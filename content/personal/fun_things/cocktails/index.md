@@ -551,7 +551,7 @@ Good Bottles
 <figure class="popout cocktail-spec">
   <img src="./cognac.png"/>
   <img class="plus" src="./plus.png"/>
-  <img class="size-1" src="./grand_marnier.png"/>
+  <img class="size-1" src="./cointreau.png"/>
   <img class="plus" src="./plus.png"/>
   <img class="citrus" src="./lemon.png"/>
   <img class="plus" src="./plus.png"/>
@@ -563,19 +563,24 @@ Good Bottles
 </figure>
 
 Ingredients
-: - 2oz cognac / brandy
-  - 1/2&ndash;3/4oz Cointreau / Grand Marnier
+: - 1 1/2&ndash;2oz Cognac / brandy
+  - 1/2oz Cointreau
   - 3/4oz lemon juice
-  - 1/4&ndash;1/2oz simple syrup
+  - 1/4&ndash;1/3oz simple syrup
+  - Tiny pinch of salt
 
 Method:
 : Shake with ice. Double strain.
 
 Serving and Garnish
-: Coupe, up, orange and lemon peel garnish
+: Coupe, up. Garnish with an orange or lemon twist.
 
 Good Bottles
 : Pierre Ferrand Ambre, Pierre Ferrand 1840 Original Formula, Hennessy VS, Remy Martin VSOP
+
+Riffs
+: - *Gennaro's sidecar*: 1oz Cognac, 3/4oz Cointreau, 1/2oz limoncello, 1/2oz lemon juice
+  - *Champs-Elysees*: 2oz Cognac, 1/2oz Green Chartreuse, 3/4oz lemon juice, 1/4&ndash;1/2oz simple syrup, 2 dashes Angostura bitters
 
 ### Between the Sheets
 
@@ -1437,7 +1442,9 @@ Chartreuse
 : - Chartreuse Green Liqueur (very difficult to find nowadays, can possibly find at K&L Wine Merchants)
   - Chartreuse Vegetal de Grande Liqueur (a higher proof alternative)
   - Dolin Genepy Le Chamois Liqueur (easier to find, combine with Chartreuse Vegetal to make a Last Word)
-  - Izarra Verte Basque Liqueur (Green Chartreuse Substitute)
+  - Izarra Verte Basque Liqueur (Green Chartreuse "substitute")
+  - Faccia Brutto Centerbe (another potential Chartreuse "substitute")
+  - L'Excuse Herbal Liqueur (yet another potential "substitute")
 
 Amaro
 : - Aperol
