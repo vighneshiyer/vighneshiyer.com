@@ -94,15 +94,11 @@ https://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)
 https://en.wikipedia.org/wiki/History_of_alcoholic_beverages
 -->
 
-## Specs
-
-<!--
-These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
--->
+## Taxonomies
 
 According to [Cocktail Codex](https://www.deathandcompanymarket.com/products/cocktail-codex), there are 6 fundamental recipes that are at the root of every cocktail.
 
-The Six Cocktails
+The Six Root Recipes
 : - label: Old Fashioned (spirit + sugar + bitters)
   - label: Martini
 
@@ -112,6 +108,19 @@ The bases that are used in the specs below are:
 The Base Spirits
 : - label: Whiskey (this is a very broad category encompassing Bourbon - smooth, Wheat whiskey - light and full-bodied, Rye Whiskey - spicy, Irish Whiskey, and Scottish Whiskey)
   - label: Rum (also many varieties, unaged white, aged white, aged, highly aged and dark and from various countries: Jamaica (funky), ... )
+
+The attribute (function / occasion / style)
+: - aperetif
+  - digestifs
+  - Winter oriented
+  - Summer oriented
+  - Tiki
+
+With this out of the way, let's get onto the recipes.
+
+## Specs
+
+These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.
 
 <!--
 A sticker with a white border, no backdrop or shadow, and a white background. High resolution. Sketchy, cartoon-like style.
@@ -239,6 +248,7 @@ Good Bottles
 Riffs
 : - *Perfect Manhattan*: Use split of 1/2oz sweet vermouth + 1/2oz dry vermouth
   - [*Perfect Summit Manhattan*](https://www.diffordsguide.com/cocktails/recipe/3064/perfect-summit-manhattan): 2 1/2oz bourbon, 3/4oz dry vermouth, 3/4oz Muscat wine, 1/6oz curacao, 2 dashes bitters
+  - *Black Manhattan*: 2oz bourbon, 1oz Amaro Averna (or other Amaro such as Montenegro, Ramazzotti, or Nonino), 2 dashes Angostura bitters, 2 dashes orange bitters
 
 ### Whiskey Highball
 
@@ -428,7 +438,7 @@ Good Bottles
 : Cocchi Vermouth di Torino, Cinzano Rosso Vermouth, Carpano Antica Formula, Dolin Rouge Sweet. Tanqueray No. 10.
 
 Riffs
-: - *MonteNegroni*: swap 
+: - *MonteNegroni*: swap Campari for Amaro Montenegro. 2oz Amaro Montenegro, 1oz gin, 1oz sweet vermouth, 2 dashes Angostura bitters.
 
 ### Martini
 
@@ -859,7 +869,7 @@ Serving and Garnish
   <img class="plus" src="./plus.png"/>
   <img class="size-2" src="./angostura_bitters.png"/>
   <img class="arrow" src="./right_arrow.png"/>
-  <img src="./cocktail_shaker.png"/>
+  <img src="./mixing_glass.png"/>
   <img class="equals" src="./equals.png"/>
   <img class="size-1" src="./martinez.png"/>
 </figure>
@@ -887,9 +897,9 @@ Serving and Garnish
   <img class="plus" src="./plus.png"/>
   <img class="size-2" src="./orange_bitters.png"/>
   <img class="arrow" src="./right_arrow.png"/>
-  <img src="./cocktail_shaker.png"/>
+  <img src="./mixing_glass.png"/>
   <img class="equals" src="./equals.png"/>
-  <img class="size-1" src="./martinez.png"/>
+  <img class="size-1" src="./bijou.png"/>
 </figure>
 
 Ingredients
@@ -898,7 +908,27 @@ Ingredients
   - 3/4oz Green Chartreuse
   - 2 dashes orange bitters
 
+Method
+: Stir over ice until chilled, 20-30 seconds. Strain.
+
+Serving and Garnish
+: Nick and nora, up. Garnish with cherry.
+
 ### Aviation
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./maraschino_liqueur.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./creme_de_violette.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./aviation.png"/>
+</figure>
 
 Ingredients
 : - 1 3/4oz gin
@@ -906,69 +936,199 @@ Ingredients
   - 1/4oz Creme de Violette Liqueur
   - 1/2oz lemon juice
   - 1/4oz cold water (omit if using wet ice)
+
+Method
+: Shake with ice until chilled, 10-15 seconds. Double strain.
+
+Serving and Garnish
+: Nick and nora or martini glass, up. Garnish with cherry or lemon twist.
+
+<!--
 - Can use 1/4oz simple syrup
 - Creme Yvette
+-->
 
 ### Paper Plane
 
-- Can use Montenegro or Averna too instead of Nonino
+<figure class="content cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./aperol.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./amaro_montenegro.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./paper_plane.png"/>
+</figure>
 
-3/4oz bourbon
-3/4oz Aperol
-3/4oz Amaro Nonino
-3/4oz lemon juice
+Ingredients
+: - 3/4oz bourbon
+  - 3/4oz Aperol
+  - 3/4oz Amaro Montenegro (typically Amaro Nonino is used)
+  - 3/4oz lemon juice
 
-### Aperol / Amaro Spritz
+Method
+: Shake with ice until chilled, 10-15 seconds. Double strain.
 
-3-2-1 spritz formula
+Serving and Garnish
+: Nick and nora or coupe glass, up.
 
-3oz dry sparkling wine
-2oz amaro
-1oz soda water
-Lime / orange wheel
-0.25oz lemon juice (optional)
+Riffs
+: - Use a different amaro (e.g. Nonino, Averna)
 
-First wine, then ice, then amaro and then soda water. Stir once. Add the lime wheel into the glass
+### Spritz
 
-### Montenegroni
+<figure class="content cocktail-spec">
+  <img src="./prosecco.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./amaro_montenegro.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./club_soda.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="" src="./spritz.png"/>
+</figure>
 
-- Add as a riff
-- Add other Montenegro riffs (e.g. Rum variant)
-- Rum Monte Sour
+Ingredients
+: - 3oz dry sparkling wine (e.g. Prosecco)
+  - 2oz amaro (e.g. Aperol, Amaro Montenegro, Campari)
+  - 1oz soda water
+  - (Optional) 1/4oz lemon juice
+
+Method
+: Use the classic 3-2-1 spritz formula and improvise the ingredients! In the glass, first add wine, then slowly drop in ice, then amaro, and finally soda water. Stir once.
+
+Serving and Garnish
+: Serve in a wine glass. Garnish with a slice of orange.
 
 ### Gin Fix
 
-### Alpine Negroni
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./gin_fix.png"/>
+</figure>
 
-- 1oz gin
-- 3/4oz Cocchi Americano
-- 3/4oz Suze Gentian
-- 1/2oz Genepy des alpes
-- 1 bar spoon White Creme de Menthe
-- 3 dashes lemon bitters
-- 5 drops 20% saline solution
-- Garnish with rosemary sprig
+Ingredients
+: - 2oz gin
+  - 1/2oz simple syrup
+  - 1oz lemon juice
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Highball or rocks glass, fill glass with crushed ice. Stir after pouring. Garnish with lemon peel.
+
+<!--
+Occasion: summer, midday-spritz
+-->
 
 ### White Negroni
 
-TBD.
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./lillet_blanc.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./suze.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./white_negroni.png"/>
+</figure>
 
-### Black Manhattan
+Ingredients
+: - 1 1/2oz gin
+  - 1oz Lillet Blanc
+  - 1/2oz Suze
 
-Add as riff.
+Method
+: Stir over ice. Strain.
+
+Serving and Garnish
+: Rocks glass. Garnish with a lemon twist.
+
+Riffs
+: - *Alpine Negroni*: 1oz gin, 3/4oz Cocchi Americano, 3/4oz Suze, 1/2oz Dolin Genepy, 1 barspoon White Creme de Menthe, 3 dashes lemon bitters, sprinkle of salt.
 
 ### Elk's Own
 
-- 1oz whiskey
-- 3/4oz Ruby Port
-- 3/4oz lemon juice
-- 1/2oz demerara syrup
-- Egg white / Fee foam
-- 1&ndash;2 dashes chocolate / orange bitters
+<figure class="popout cocktail-spec">
+  <img src="./bourbon.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./ruby_port_wine.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-2" src="./orange_bitters.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./elks_own.png"/>
+</figure>
 
-- Type: Winter
+Ingredients
+: - 1oz whiskey
+  - 3/4oz Ruby Port
+  - 3/4oz lemon juice
+  - 1/2oz demerara syrup
+  - 1&ndash;2 dashes chocolate / orange bitters
+  - Egg white / Fee foam
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Nick and Nora glass.
+
+<!--
+Occasion: Winter
+-->
 
 ### Jungle Bird
+
+<figure class="popout cocktail-spec">
+  <img src="./aged_rum.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./campari.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-1" src="./pineapple.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lime.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./jungle_bird.png"/>
+</figure>
+
+Ingredients
+: - 1 1/2oz dark rum
+  - 1/2oz Campari (or Aperol for less bitterness)
+  - 1 1/2oz pineapple juice
+  - 1/2oz lime juice
+  - 1/2oz simple syrup
+
+Method
+: Shake hard with pebble ice. Ungated pour into glass.
+
+Serving and Garnish
+: Fill a rocks glass with pebble ice and pour. Garnish with slices of lime and orange.
+
+Good Bottles
+: Rhum Barbancourt, Smith and Cross, Appleton Estate 8/12
 
 ## Poison Reviews
 
@@ -1008,7 +1168,7 @@ Total amateur opinions to follow.
 
 - *Citadelle Gin*. (9/10). Excellent 'celery'-like + juniper berry flavor, freshness as the final note. Gimlet with this is too good.
 - *Hendrick's Gin.* (8/10). Also very good, but more subtle finish and harsher down the throat vs Citadelle.
-- *Barr Hill Gin*. TBD.
+- *Barr Hill Gin*. (8/10). This is a very classic gin with mainly juniper notes. There is a hint of honey, but it needs a honeyed cocktail to make it stand out.
 
 ### Wines
 
@@ -1037,7 +1197,7 @@ Total amateur opinions to follow.
 - *Risata Moscato d'Asti DOCG*. (8/10). Low alcohol, smooth, sweet, and fruity. A crowd favorite.
 - *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
 - *2024 Elio Perrone Moscato d'Asti Sourgal*. (6/10). Sparkling, sweet, honeyed, light. A bit too low alcohol, and perhaps too smooth. No complex flavors.
-- *Belvino Prosecco Extra Dry*. TBD. (cheap, designed for mixers)
+- *Belvino Prosecco Extra Dry*. (5/10). Cheap and just OK. Good for mixing in a spritz.
 
 #### Orange
 
@@ -1100,10 +1260,9 @@ Just buy these things.
   - *Cocktail picks*: A substantial upgrade. Get stainless steel picks.
 - *Cooler*: I use an insulated bag to hold all my ice and cold liquors, but a proper hard-case insulated cooler would be better.
 
-Now, there is nothing to do except chill all your mixers and liquors.
-Since all the cocktails I like are served chilled, I even chill the liquors that aren't typically chilled (whiskey, vermouth, rum, soju).
-
 ## My Shelf
+
+I keep the fortified wines, meads, and cream liqueurs in my fridge, and the rest in a cabinet.
 
 Wine
 : - Otima 10-Year Tawny Port
@@ -1142,19 +1301,24 @@ Gin
   - Citadelle
   - Barr Hill
 
-Liquors
+Orange Liqueurs
+: - Cointreau
+  - Grand Marnier
+
+Amaro / Fortified Wines
 : - Campari
+  - Aperol
+  - Amaro Montenegro
   - Dolin Vermouth Rouge (Sweet)
   - Dolin Vermouth (Blanc)
   - Dolin Vermouth (Dry)
   - Sole Vermouth (Extra Dry)
-  - TJ's Sicilian Limoncello (x2)
+
+Other Liqueurs
+: - TJ's Sicilian Limoncello (x2) (stored in the freezer)
   - Absolut Vanilla Vodka
-  - Cointreau
-  - Grand Marnier
   - Mr. Black Cold Brew Coffee Liqueur
   - Baileys Original Irish Cream
-  - Amaro Montenegro
 
 Extras
 : - _Bitters_: Angostura, Orange
@@ -1189,6 +1353,8 @@ White Rum
 Aged Rum
 : - Appleton Estate 8 / 12
   - El Dorado 8 / 12
+  - Smith and Cross
+  - Rhum Barbancourt
   - Santa Teresa 1796
   - Diplomático Mantuano
   - El Pasador de Oro Rum XO
@@ -1224,8 +1390,11 @@ Amaro
 : - Aperol
   - Amaro Nonino
   - Amaro Montenegro
+  - Campari
+  - Ramazzotti
   - Suze
   - Lillet Blanc
+  - Cocchi Americano
 
 Extras
 : - Raspberry syrup
