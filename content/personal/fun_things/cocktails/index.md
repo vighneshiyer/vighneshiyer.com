@@ -2,7 +2,7 @@
 title = "Cocktails"
 date = 2025-11-13
 draft = false
-description = "My wine, spirit, and liqueur reviews + cocktail recipes"
+description = "The importance of alcohol consumption. A taxonomy of cocktails + recipes + bartending tips. My wine, spirit, and liqueur reviews."
 
 [extra]
 new = true
@@ -20,17 +20,22 @@ I am by no means an expert on this topic but here is what I've learned so far.
 ## Philosophy
 
 The history of alcohol consumption predates humanity.
-There is nothing squirrels love more than fermented fruit.
+All creatures love alcohol.
 
 <figure class="content">
   <iframe width="620" height="349" src="https://www.youtube.com/embed/2bbXICmvSUs" title="Drunk squirrel, because...2020." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <figcaption><p>Observe. The joy of poison.</p></figcaption>
 </figure>
 
-The alcohol we consume is *ethanol*.
-When it enters the bloodstream, it is metabolized by the liver into *acetaldehyde*, which is *toxic*.
-It is further metabolized into *acetate* which is easily handled by the body.
-The longer our body experiences elevated levels of acetaldehyde, the more we suffer from acute alcohol toxicity.
+### Alcohol as Poison
+
+The alcohol we consume is [*ethanol*](https://en.wikipedia.org/wiki/Ethanol).
+When it enters the bloodstream, it is metabolized by the liver into [*acetaldehyde*](https://en.wikipedia.org/wiki/Acetaldehyde), which is toxic.
+It is further metabolized into *acetate* which is easily handled and removed by the body.
+
+The longer our body experiences elevated levels of acetaldehyde, the more we will suffer from acute alcohol toxicity.
+There are two factors to consider:
+⓵  C<sub>max</sub>
 
 <!--
 https://xcancel.com/RandomSprint/status/1991614207897559137#m
@@ -39,15 +44,21 @@ https://xcancel.com/RandomSprint/status/1991614207897559137#m
 The liver can metabolize about 7-10g of ethanol per hour, while a standard drink contains around 14g of ethanol.
 The lesson here is that binge drinking is very harmful as it spikes both Cmax and AUC to a much greater degree than even light drinking done frequently.
 
+### Alcohol as Social Ill
+
 Alcohol is controversial.
 Prohibition had lots of political power and was passed almost unanimously.
 The temperance movement, Henry D Cogswell (A very interesting man who also installed a statue of Benjamin Franklin which is today located in Washington Square in SF. Check it out!), temperance fountains. ["To temperance, I'll drink to that!"](https://en.wikipedia.org/wiki/Cogswell_Society)
 Now once again, the anti-alcohol movement is in vogue.
 
+### Alcohol as Social Boon
+
 While people nowadays emphasize the negative health effects of alcohol, there are also many countervailing benefits.
 Arguably, alcohol is, on net, a positive for the highest-order of humanity. (I have changed my position on this from before. I used to be strongly anti-alcohol.)
 It's benefits are vast, social lubrication, truth seeking, beautiful flavors, relaxation and leisure. In vino veritas. Alcohol allows the mind to smoothen and enter a flow state, the Ballmer peak (this isn't a myth, try it yourself)
 Even if we think about health, light alcohol has no consequence wrt all-cause mortality, and it may even be cardioprotective due to its blood thinning effects, although it may increase risks for particular cancers.
+
+### Alcohol According to the Greeks
 
 In order to consume alcohol in a manner that maximizes its benefits while mitigating its downsides, one must turn to the Greeks (of course, no matter the question, one must always look towards the Greeks, this is common sense).
 
