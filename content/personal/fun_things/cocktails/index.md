@@ -35,10 +35,12 @@ It is further metabolized into *acetate* which is easily handled and removed by 
 
 The longer our body experiences elevated levels of acetaldehyde, the more we will suffer from acute alcohol toxicity.
 There are two factors to consider:
-⓵  C<sub>max</sub>
+⓵  C<sub>max</sub> ⓶
 
 <!--
 https://xcancel.com/RandomSprint/status/1991614207897559137#m
+https://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)
+https://en.wikipedia.org/wiki/History_of_alcoholic_beverages
 -->
 
 The liver can metabolize about 7-10g of ethanol per hour, while a standard drink contains around 14g of ethanol.
@@ -101,8 +103,6 @@ https://en.wikipedia.org/wiki/Symposium
 https://en.wikipedia.org/wiki/Temperance_(virtue)
 https://chatgpt.com/c/6925080f-7940-8331-9741-c5e1190f61a4
 https://chatgpt.com/c/6925ed6c-e968-8332-8a22-facd170e6e69
-https://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)
-https://en.wikipedia.org/wiki/History_of_alcoholic_beverages
 -->
 
 ## Taxonomies
@@ -209,23 +209,22 @@ Riffs
 
 Ingredients
 : - 2oz whiskey / rum
-  - 2&ndash;3oz fresh unpasteurized lemonade[^1]
-  - Quarter of a lemon, juiced fresh
+  - 3/4oz lemon juice
+  - 1/2oz maple / 2:1 demerara syrup **OR** 3/4oz 1:1 simple syrup
+  - (Optional) Fee Foam or 1 egg white
 
 Method
 : Shake hard with large ice cube (for max foam). Double strain into glass.
 
 Serving and Garnish
-: Rocks glass or cocktail glass, up, Luxardo cherry
+: Rocks glass (over one large ice cube) or cocktail glass (up). Garnish with a Luxardo cherry and a few drops of Angostura bitters on top of the foam.
 
 Good Bottles
-: Four Roses
+: Four Roses, Wild Turkey 101
 
 Riffs
-: - *Classic*: Use 1oz fresh lemon juice instead of lemonade. Add 1/2oz of simple / maple / demerara syrup.
-  - *NY Sour*: Float 0.5oz dry red wine
-
-[^1]: The Trader Joe's refrigerated lemonade works perfectly, no need for additional sweetener
+: - *Quick version with lemonade*: Swap lemon juice and sweetener for 2&ndash;3oz of fresh unpasteurized lemonade + a quarter of a lemon, juiced fresh. The Trader Joe's refrigerated lemonade works perfectly, no need for additional sweetener.
+  - *New York Sour*: Float 1/2oz dry red wine (e.g. Merlot, Malbec) or port on top over the back of a barspoon
 
 ### Manhattan
 
@@ -260,6 +259,7 @@ Riffs
 : - *Perfect Manhattan*: Use split of 1/2oz sweet vermouth + 1/2oz dry vermouth
   - [*Perfect Summit Manhattan*](https://www.diffordsguide.com/cocktails/recipe/3064/perfect-summit-manhattan): 2 1/2oz bourbon, 3/4oz dry vermouth, 3/4oz Muscat wine, 1/6oz curacao, 2 dashes bitters
   - *Black Manhattan*: 2oz bourbon, 1oz Amaro Averna (or other Amaro such as Montenegro, Ramazzotti, or Nonino), 2 dashes Angostura bitters, 2 dashes orange bitters
+  - *Monte Carlo*: 2oz rye, 1/2oz Benedictine, 1-2 dashes Angostura bitters
 
 ### Whiskey Highball
 
@@ -1141,6 +1141,42 @@ Serving and Garnish
 Good Bottles
 : Rhum Barbancourt, Smith and Cross, Appleton Estate 8/12
 
+### French 75
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./simple_syrup.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="citrus" src="./lemon.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./champagne.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="" src="./french_75.png"/>
+</figure>
+
+Ingredients
+: - 1oz gin
+  - 1/2oz simple syrup
+  - 1/2oz lemon juice
+  - 3&ndash;4oz Brut Champagne / dry sparkling wine
+
+Method
+: Shake gin + syrup + lemon juice with ice. Pour into flute. Top off with Champagne.
+
+Serving and Garnish
+: Serve in Champagne flute, up. Garnish with lemon twist
+
+Good bottles
+: Empress 1908 Elderflower Rose Gin, Empress 1908 Indigo Gin
+
+Riffs
+: - *French 125*: Sub gin with cognac.
+  - *French 95*: Sub gin with bourbon.
+  - Other interesting riffs can be [found here](https://www.reddit.com/r/cocktails/comments/cfi4m8/anyone_have_a_detailed_recipe_for_a_french_75/)
+
 ## Poison Reviews
 
 Here are things I've tried and what I think.
@@ -1265,7 +1301,7 @@ Just buy these things.
 - *Large ice cube tray*: I liked these Tovolo "King Cube" silicon trays ([Amazon link](https://www.amazon.com/dp/B01LXF6H2Y))
 - *Regular ice cube tray*: I bought some "no-spill" trays from OXO ([Amazon link](https://www.amazon.com/dp/B007U256D2))
 - *Jigger*: There are 2 major varieties (double-ended and angled). You need to be able to measure volumes from 1/4oz to 2oz. I think the angled jiggers are way easier to use at home with less spillage than the double-ended kind. I like this one from OXO ([Amazon link](https://www.amazon.com/dp/B00B6LUAPW)).
-- *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](https://en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions.
+- *Rocks Glasses*: Of course you need glasses to serve cocktails in. Of all the varieties, I find [rocks glasses](https://en.wikipedia.org/wiki/Old_fashioned_glass) to be the most versatile, albeit not the prettiest. I bought these ones from Anchor Hocking ([Amazon link](https://www.amazon.com/dp/B00BC3MI5O)). [Coupes](https://en.wikipedia.org/wiki/Champagne_glass#Coupe) or [nick and noras](https://en.wikipedia.org/wiki/Nick_%26_Nora_(glass)) would be good next additions. If you want to splurge, [RIEDEL](https://www.riedel.com/en-us/shop/barware#sort=bestSeller) glasses are the best.
 - *Citrus juicer*: I recommend a manual wood citrus reamer &mdash; I got one from OXO ([Amazon link](https://www.amazon.com/OXO-Good-Grips-Wooden-Reamer/dp/B0007VO0DA?)). Bulk juice citrus into a measuring jar and pour into your jigger. I *no longer* recommend the NorPro 523 Stainless Steel Juicer ([Amazon link](https://www.amazon.com/Norpro-Stainless-Steel-Citrus-Juice-Press/dp/B0002IBOAK)) &mdash; it doesn't squeeze the citrus completely and leaves plenty of juice behind. For longevity and to avoid aluminum flaking, I lean towards a solid stainless steel juicer. I want to try the Barfly Large Manual Juicer sometime ([Amazon link](https://www.amazon.com/Barfly-Large-Manual-Juicer-Aluminum/dp/B0B14PYCRF)).
 - *Mixing tin*: There are also cocktail mixing glasses, but I prefer a stainless steel mixing vessel. I have this one from American Metalcraft ([Amazon link](https://www.amazon.com/dp/B09QQQGTWY)).
 - *Hawthorne Strainer*: This OXO one is good ([Amazon link](https://www.amazon.com/dp/B0000DAQ93))
@@ -1409,6 +1445,7 @@ Amaro
   - Amaro Montenegro
   - Cynar
   - Campari
+  - Luxardo Aperitivo
   - Ramazzotti
   - Suze
   - Lillet Blanc
