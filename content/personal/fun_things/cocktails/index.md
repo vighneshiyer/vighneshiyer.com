@@ -758,6 +758,9 @@ Method
 Serving and Garnish
 : Coupe / nick and nora, up. Garnish with Luxardo cherry + lime twist.
 
+Riffs
+: - It seems widely recognized that it is better to go lower on Maraschino and up on gin for better balance: 1oz gin + 1/2oz Maraschino liqueur.
+
 ### Bee's Knees
 
 <figure class="content cocktail-spec">
@@ -1019,6 +1022,9 @@ Method
 Serving and Garnish
 : Serve in a wine glass. Garnish with a slice of orange.
 
+Riffs
+: - *Hugo spritz*: Muddle 8-10 mint leaves with 1 lime wedge and 1.5oz Elderflower liqueur. Top with ice. Pour 2&ndash;3oz Prosecco + 2oz sparkling water.
+
 ### Gin Fix
 
 <figure class="content cocktail-spec">
@@ -1175,11 +1181,12 @@ Serving and Garnish
 : Serve in Champagne flute, up. Garnish with lemon twist
 
 Good bottles
-: Empress 1908 Elderflower Rose Gin, Empress 1908 Indigo Gin
+: Empress 1908 Elderflower Rose Gin, Empress 1908 Indigo Gin, Hendrick's
 
 Riffs
 : - *French 125*: Sub gin with cognac.
   - *French 95*: Sub gin with bourbon.
+  - Sub simple syrup for Elderflower liqueur
   - Other interesting riffs can be [found here](https://www.reddit.com/r/cocktails/comments/cfi4m8/anyone_have_a_detailed_recipe_for_a_french_75/)
 
 ## Poison Reviews
