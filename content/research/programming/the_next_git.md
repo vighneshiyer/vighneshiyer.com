@@ -26,3 +26,9 @@ description = ""
 
 - https://news.ycombinator.com/item?id=45916196 (Zed is our office (zed.dev))
   - This collaboration is part of the editor, but something else is needed too...
+
+- https://news.ycombinator.com/item?id=46225803 (https://newsletter.squishy.computer/p/natures-many-attempts-to-evolve-a)
+  - Federation, P2P, Relays
+  - I do think the next git needs to serve as a continuous file sync tool in addition to regular source control duties
+  - Mixing ideas from fossil and jj is needed
+  - Subsuming webapps like Notion, Overleaf, and Typst Web must be possible
