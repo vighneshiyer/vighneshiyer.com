@@ -31,6 +31,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Protobuffers Are Wrong](https://reasonablypolymorphic.com/blog/protos-are-wrong/) ([HN link](https://news.ycombinator.com/item?id=45139656)) (a classic)
   - [typical: Data interchange with algebraic data types.](https://github.com/stepchowfun/typical)
 - [Rating 26 years of Java changes](https://neilmadden.blog/2025/09/12/rating-26-years-of-java-changes/) ([HN link](https://news.ycombinator.com/item?id=45551450))
+- [Sebastian Aaltonen - No Graphics API](https://www.sebastianaaltonen.com/blog/no-graphics-api) ([HN link](https://news.ycombinator.com/item?id=46293062))
+  - A deep historical review of graphics APIs and a call for a greatly simplified, cruft-free, graphics API
 
 ### Functional Programming
 
