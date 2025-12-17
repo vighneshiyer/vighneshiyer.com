@@ -53,11 +53,27 @@ Prohibition had lots of political power and was passed almost unanimously.
 The temperance movement, Henry D Cogswell (A very interesting man who also installed a statue of Benjamin Franklin which is today located in Washington Square in SF. Check it out!), temperance fountains. ["To temperance, I'll drink to that!"](https://en.wikipedia.org/wiki/Cogswell_Society)
 Now once again, the anti-alcohol movement is in vogue.
 
+- The Absinthe Drinker by Viktor Oliva (1861–1928)
+- The Drunkard's Progress (1846) by Nathaniel Currier warns that moderate drinking may lead to suicide step by step. (https://en.wikipedia.org/wiki/Temperance_movement)
+- https://en.wikipedia.org/wiki/The_Drunkard%27s_Progress
+- https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.thoughtco.com%2Ftemperance-movement-prohibition-timeline-3530548&ved=0CBUQjRxqFwoTCNjIy_WRw5EDFQAAAAAdAAAAABAH&opi=89978449
+- https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fsocialwelfare.library.vcu.edu%2Freligious%2Fthe-temperance-movement%2F&ved=0CBUQjRxqFwoTCNjIy_WRw5EDFQAAAAAdAAAAABA9&opi=89978449 (LMAO there are so many good temperance propaganda posters)
+- https://preview.redd.it/6hr7nqo6uky41.jpg?width=640&crop=smart&auto=webp&s=a20449bb55b5e56ac9a9cbee749ec0e3dfa337f9
+
+- "Woman's Holy War. Grand Charge on the Enemy's Works". An allegorical 1874 political cartoon print, which shows temperance campaigners as virtuous armoured women warriors, wielding axes to destroy barrels of Beer, Whisky, Gin, Rum, Brandy, Wine and Liquors, under the banners of "In the name of God and humanity" and the "Temperance League". (https://en.wikipedia.org/wiki/Temperance_movement)
+- La fin de la fée verte ("The End of the Green Fairy"): Swiss poster criticizing the country's prohibition of absinthe in 1910 (https://en.wikipedia.org/wiki/Absinthe)
+
 ### Alcohol as Social Boon
 
 While people nowadays emphasize the negative health effects of alcohol, there are also many countervailing benefits.
 Arguably, alcohol is, on net, a positive for the highest-order of humanity. (I have changed my position on this from before. I used to be strongly anti-alcohol.)
 It's benefits are vast, social lubrication, truth seeking, beautiful flavors, relaxation and leisure. In vino veritas. Alcohol allows the mind to smoothen and enter a flow state, the Ballmer peak (this isn't a myth, try it yourself)
+
+- Henri Privat-Livemont's 1896 poster (https://en.wikipedia.org/wiki/Absinthe)
+- https://images.wisconsinhistory.org/700012070003/1207000055-l.jpg
+
+### Alcohol as Medicine
+
 Even if we think about health, light alcohol has no consequence wrt all-cause mortality, and it may even be cardioprotective due to its blood thinning effects, although it may increase risks for particular cancers.
 
 ### Alcohol According to the Greeks
@@ -106,6 +122,19 @@ https://chatgpt.com/c/6925ed6c-e968-8332-8a22-facd170e6e69
 -->
 
 ## Taxonomies
+
+- https://www.reddit.com/r/cocktails/comments/1hd0f9h/i_boiled_down_cocktail_codex_for_my_staff_and_im/
+  - Should make an HTML version of this! Very nice illustration, albeit a bit wrong. This must have come from the model.
+
+>  Copy pasting a comment I wrote on this subreddit almost a month ago. Seems we're on the same page:
+> 
+> Going through Cocktail Codex right now. Something that I realized kinda bothers me, why don't they call the Daiquiri category the Sour category with the Daiquiri as the first character introduced? I get that they like the idea of here's a drink and now we make adjustments, but they can still do that with calling the chapters/categories by something more descriptive like Sours.
+> 
+> Like the Sidecar chapter. Literally not once in the entire chapter do they ever call any of the drinks a daisy or even mention daisy at all. Wouldn't that be useful information to include? But in the Daiquiri chapter they make a reference to Sours vs Daisies and say that margaritas (in the Sidecar chapter) are firmly daisies. They say they'll talk about Sours vs Daisies more in the Sidecar chapter, but they don't, instead they talk about Daiquiris vs Sidecars in that chapter.
+> 
+> I almost suspect they initially were going to have a more general categorization (Sours, Daisies, etc), but when they got further into writing the book, they preferred to focus more and more on their 'root cocktail' taxonomy (daiquiri, sidecar, etc) which I think is a bit unfortunate. 
+
+I agree. The "root recipes" ought to not be cocktails themselves, but categories (sour, daisy, ...).
 
 According to [Cocktail Codex](https://www.deathandcompanymarket.com/products/cocktail-codex), there are 6 fundamental recipes that are at the root of every cocktail.
 
@@ -276,16 +305,25 @@ Riffs
 Ingredients
 : - 2oz whiskey / rum / gin
   - 4&ndash;6oz mixer (club soda, ginger ale, coke, sprite)
-  - 1/2oz fresh lime/lemon juice
+  - 1/4oz&ndash;1/2oz fresh lime/lemon juice
 
 Method
-: Combine in glass with ice. Stir.
+: Add ice to glass and stir until glass is frosted. Pour out melted water. Pour in spirit and citrus and top with the mixer. Stir once. *Note*: some suggest to pour mixer first, then spirit &mdash; experiment with it.
 
 Serving and Garnish
-: Highball glass, on rocks, Luxardo cherry
+: Highball glass, on rocks. Luxardo cherry, lemon twist.
 
 Good Bottles
-: Suntory Toki
+: Suntory Toki.
+
+Note on Mixers
+: - *Sparkling water*: filtered, sometimes un-mineralized, tap water with added carbonation
+  - *Spring water with added carbonation*: mineralized still spring water + added carbonation (e.g. San Pellegrino, Mountain Valley)
+  - *Naturally sparkling spring water*: naturally carbonated and mineralized water from a spring, often with some added carbonation (e.g. Topo Chico, Perrier, Gerolsteiner)
+  - *Club soda*: filtered tap water + carbonation + sodium bicarbonate (adds a slight salty flavor) (e.g. Fever-Tree Club Soda)
+  - *Tonic water*: filtered tap water + carbonation + quinine (slightly bitter taste) + sugar/sweeteners (can contain HFCS, offsets bitterness from quinine)
+  - *Seltzer*: be careful! This actually means nothing today. Identify which of the above categories the water actually falls in.
+  - *For highballs*: club soda is often the best choice since the slight bit of saltiness enhances the spirit's flavor
 
 Riffs
 : - *Tom Collins*: 2oz gin, 1oz lemon juice, 1/2&ndash;1oz simple syrup, club soda to top in highball glass. Garnish with lemon wheel and a maraschino cherry.
@@ -420,6 +458,9 @@ Serving and Garnish
 Good Bottles
 : Citadelle, Hendrick's, Tanqueray No. Ten, Tanqueray Rangpur, Bluecoat, Monkey 47, Junipero, Barr Hill, Isle of Harris, Roku Gin (Japanese), Gin Mare (Spanish, exotic, olives), Empress 1908 Indigo
 
+Riffs
+: - *Gimlet highball*: 1 1/2oz gin, 1/2oz lime juice, 1/4&ndash;1/2oz simple syrup. Shake and pour. Top with 3&ndash;4oz club soda.
+
 ### Negroni
 
 <figure class="content cocktail-spec">
@@ -450,6 +491,7 @@ Good Bottles
 
 Riffs
 : - *MonteNegroni*: swap Campari for Amaro Montenegro. 2oz Amaro Montenegro, 1oz gin, 1oz sweet vermouth, 2 dashes Angostura bitters.
+  - *Kingston Negroni*: 1oz Jamaican rum (Smith and Cross), 1oz sweet vermouth, 1oz Campari
 
 ### Martini
 
@@ -533,12 +575,12 @@ Good Bottles
 
 Ingredients
 : - 1 1/2oz bourbon
-  - 1oz Campari
-  - 1oz sweet vermouth
+  - 3/4&ndash;1oz Campari
+  - 3/4&ndash;1oz sweet vermouth
   - (Optional) small pinch of salt
 
 Method
-: Stir in mixing tin with ice. Strain.
+: Stir in mixing tin with ice. Strain. The classic recipe uses 1oz Campari and vermouth, but using 3/4oz Campari and vermouth may be better.
 
 Serving and Garnish
 : Rocks glass or coupe, one large ice cube, orange peel garnish

@@ -49,6 +49,7 @@ This would be a good use for the model.
 - Makimoto's Wave https://www.computer.org/csdl/magazine/co/2013/12/mco2013120032/13rRUwhpBTy
 - Architecture of the IBM System/360 https://www.ece.ucdavis.edu/~vojin/CLASSES/EEC272/S2005/Papers/IBM360-Amdahl_april64.pdf
 - http://harry-lewis.blogspot.com/2016/12/classics-of-computer-science.html
+- https://research.cs.wisc.edu/vertical/papers/2014/wddd-sim-harmful.pdf
 
 > 1.     Overview and responsibilities
 > 2.     Infrastructure
