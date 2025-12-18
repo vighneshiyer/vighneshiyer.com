@@ -324,6 +324,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [A Student's Guide to Writing with ChatGPT (openai.com)](https://news.ycombinator.com/item?id=42129064)
 - [Why are tech people suddenly so into homeschooling?](https://newsletter.goodtechthings.com/p/why-are-tech-people-suddenly-so-into) ([HN link](https://news.ycombinator.com/item?id=42698737))
 - [Aporia: Asian immigration and the signaling model of education](https://www.aporiamagazine.com/p/asian-immigration-and-the-signaling)
+- [College English majors can't read](https://www.adorableandharmless.com/p/college-english-majors-cant-read)
 
 ### Academia
 
