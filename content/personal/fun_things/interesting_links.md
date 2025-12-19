@@ -325,6 +325,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Why are tech people suddenly so into homeschooling?](https://newsletter.goodtechthings.com/p/why-are-tech-people-suddenly-so-into) ([HN link](https://news.ycombinator.com/item?id=42698737))
 - [Aporia: Asian immigration and the signaling model of education](https://www.aporiamagazine.com/p/asian-immigration-and-the-signaling)
 - [College English majors can't read](https://www.adorableandharmless.com/p/college-english-majors-cant-read)
+- [How the Phone Ban Saved High School](https://nymag.com/intelligencer/article/how-new-york-public-school-phone-ban-saved-high-school.html) ([Archive](https://archive.is/KC1SH))
 
 ### Academia
 
@@ -433,6 +434,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Second Sophistic - Greek cultural movement of the second and third century CE](https://www.livius.org/articles/concept/second-sophistic/)
   - [Synesius, Eulogy of Baldness](https://www.livius.org/sources/content/synesius/synesius-eulogy-of-baldness/)
 - [The Highly Probable Future: 83 Assumptions About the Year 2025 (written in 1994 by Joseph F. Coates)](https://www.uscg.mil/Portals/0/Strategy/Article%20Highly%20Probable%20Future%202025%201994.pdf?ver=2018-10-18-145610-687&ref=newslttrs.com)
+- [Dissolution of the monasteries](https://en.wikipedia.org/wiki/Dissolution_of_the_monasteries)
 
 ## Music
 
