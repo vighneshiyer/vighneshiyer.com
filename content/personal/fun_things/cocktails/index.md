@@ -1231,6 +1231,91 @@ Riffs
   - Sub simple syrup for Elderflower liqueur
   - Other interesting riffs can be [found here](https://www.reddit.com/r/cocktails/comments/cfi4m8/anyone_have_a_detailed_recipe_for_a_french_75/)
 
+### Poet's Dream
+
+<figure class="content cocktail-spec">
+  <img src="./gin.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./benedictine.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./dry_vermouth.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./mixing_glass.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./poets_dream.png"/>
+</figure>
+
+Ingredients
+: - 3/4oz gin
+  - 1/2oz Benedictine
+  - 3/4oz dry vermouth
+  - (Optional) touch of dry curacao
+
+Method
+: Stir on ice. Double strain into chilled glass.
+
+Serving and Garnish
+: Nick and Nora glass, up. Garnish with lemon peel
+
+<!-- Ideal aperitif -->
+
+### Adriatique
+
+<figure class="content cocktail-spec">
+  <img src="./amaro_montenegro.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./aperol.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img class="size-1" src="./orange_juice.png"/>
+  <img class="arrow" src="./right_arrow.png"/>
+  <img src="./cocktail_shaker.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="size-1" src="./adriatique.png"/>
+</figure>
+
+Ingredients
+: - 1oz Amaro Montenegro
+  - 1/2oz Aperol
+  - 1oz orange juice
+
+Method
+: Shake with ice. Double strain.
+
+Serving and Garnish
+: Nick and Nora glass, up. Orange peel garnish.
+
+Riffs
+: - *A more balanced version*: (1) Add 1/4oz lemon juice to boost the acidity of the orange juice. (2) Replace the Aperol with Campari. (3) Add 1/8oz of simple syrup.
+  - *Spritz version*: Top off the base cocktail with 3&ndash;4oz of dry sparkling white wine (e.g. Prosecco) or seltzer
+
+<!-- Ideal aperitif -->
+
+### Americano
+
+<figure class="content cocktail-spec">
+  <img src="./campari.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./sweet_vermouth.png"/>
+  <img class="plus" src="./plus.png"/>
+  <img src="./club_soda.png"/>
+  <img class="equals" src="./equals.png"/>
+  <img class="" src="./americano.png"/>
+</figure>
+
+Ingredients
+: - 1 1/2oz Amaro (e.g. Campari, Amaro Montenegro, Aperol &mdash; if sweetness is desired)
+  - 1 1/2oz sweet vermouth
+  - 2&ndash;3oz seltzer
+  - (Optional) 1&ndash;2 dashes orange bitters
+
+Method
+: Pour Amaro and vermouth over ice in glass. Stir until chilled. Top with seltzer. One final stir.
+
+Serving and Garnish
+: Highball glass, filled with large cubed ice. Garnish with orange wheel / lemon twist.
+
+<!-- Another very ideal aperitif - pair with Castelvetrano olives, Parmigiano Reggiano shards, Warm focaccia -->
+
 ## Poison Reviews
 
 Here are things I've tried and what I think.
