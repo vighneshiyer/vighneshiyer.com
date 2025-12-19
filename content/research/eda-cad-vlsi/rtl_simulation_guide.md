@@ -16,6 +16,23 @@ slug = "complete-guide-to-rtl-simulation"
   - Update rule skipping with partial event driven simulation semantics
   - Use specialized hardware: ASIC-based boolean processor grid, FPGAs (direct and decoupled mappings), manycore architectures (Cyclist, TT Blackhole)
 
+### Analysis
+
+For fundamental analysis of a LUT-based straight full cycle RTL simulator, there are several costs to take into account
+
+- Initial reads
+- Fanouts
+- Lookups
+- Concatenations
+- Broadcast / communication
+- Final writes
+- Synchronization
+- Host communication overhead
+
+Try to understand the impact of these on several platforms. ARM multicores, x86 multicore, FPGAs with direct mapping, Palladium-style architectures, Groq LPU, TT Blackhole, and so forth.
+Each platform has a different memory capacity per core, ability to handle control flow divergence, and so forth.
+Then extend this analysis to more general RTL simulation schemes: word-level simulation, logic cloud skipping ala ESSENT, FAME-5-like execution.
+
 ### Multi-Level, Incrementally Refined and Sampled, Simulation
 
 - [An Integrated Multi-Level Simulation Infrastructure for Fast and Accurate Evaluation of Complex Workloads](https://docs.google.com/document/d/1ZIl1rExD4e5BkUvhTFgKjWBVJPtYICGU_o3SSJVmypI/edit)
