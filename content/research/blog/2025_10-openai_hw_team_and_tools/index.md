@@ -16,7 +16,7 @@ After all, the human brain is remarkably efficient and small.
 Disembodied human. 100s of watts, scaling network size and connectivity to produce a normal brain or an Einstein brain. Ability to do human-like work on a computer autonomously - ability to use digital tools just like a human would to augment its ability to reason.
 
 OpenAI, of course, started off as an AI research lab, but as their userbase has grown and afforded them the ability to raise at insane valuations on expected future profitability, the organization has begun to sprawl out.
-In this context, [Stargate](), their effort to build multiple gigawatt datacenters[^1],
+In this context, Stargate, their effort to build multiple gigawatt datacenters[^1],
 
 [^1]: What Jensen would term "AI factories"
 One of the largest sprawl efforts

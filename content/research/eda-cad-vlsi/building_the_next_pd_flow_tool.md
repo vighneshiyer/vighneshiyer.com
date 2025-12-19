@@ -6,7 +6,7 @@ draft = true
 slug = "the-next-pd-flow-tool"
 +++
 
-I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/reviews/dac_2022.md#cad-flow-tools) and what I think the good parts of each tool are.
+I've already written about SiliconCompiler and mflowgen in my [DAC 2022 review](@/research/events/2022-06-dac/index.md#open-cad-flow-tools-session) and what I think the good parts of each tool are.
 In this document I'll try to integrate those good parts into what the next API iteration for Hammer (or a VLSI CAD build flow tool in general) should look like.
 To be clear, Hammer's code base as it exists is valuable and nearly all the core code has to be preserved, however I think the 'wrapper' around that core should incorporate learnings from these other CAD flow tools.
 

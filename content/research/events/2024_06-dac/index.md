@@ -19,7 +19,7 @@ To kick off the 61st DAC, we had the classic panel of EDA CAD executives put tog
 This panel was way more fun than the one I saw in 2022.
 You can watch [the recording here](https://www.youtube.com/watch?v=r0vWASJYbFY).
 
-{{ image(path="cooley_panel.jpg", width="50%") }}
+{{ image(path="cooley_panel.jpg", class="inset") }}
 
 Sitting on the panel were: Prakash Narain of [Real Intent](https://www.realintent.com/), Paul Cunningham of Cadence, Dean Drako of [IC Manage](https://www.icmanage.com/) (and [Drako Motors](https://www.drakomotors.com/)), Tony Hemmelgarn of Siemens, Shankar Krishnamoorthy of Synopsys, and Joe Costello of [Metrics](https://altair.com/newsroom/news-releases/altair-signs-agreement-to-acquire-metrics-design-automation-inc).
 
@@ -336,7 +336,7 @@ Here's a flyer.
 
 <!-- (looking back from 2025, this was quite early, along with Agnisys) -->
 
-{{ image(path="primis_ai.jpg", width="50%") }}
+{{ image(path="primis_ai.jpg", class="inset") }}
 
 In 2025, undoubtedly, one could use Cursor or Windsurf out-of-the-box to do the same things.
 
@@ -495,7 +495,7 @@ The Hua-Pro P2E supports waveform dumping, switching between prototyping and emu
 
 - UCIe IP is popular, AlphaWave among many others showcasing it
 
-{{ image(path="alphawave_ucie_d2d.jpg", width="50%") }}
+{{ image(path="alphawave_ucie_d2d.jpg", class="inset") }}
 
 #### Exostiv
 
@@ -512,24 +512,24 @@ The Hua-Pro P2E supports waveform dumping, switching between prototyping and emu
 
 #### Scientific Analog
 
-{{ image(path="scientific_analog.jpg", width="50%") }}
+{{ image(path="scientific_analog.jpg", class="inset") }}
 
 #### Siemens
 
 - Try to email Siemens, they have had students try to get rtl running in emulation and report how it goes to them lol
 - Veloce
 
-{{ image(path="siemens_veloce.jpg", width="50%") }}
+{{ image(path="siemens_veloce.jpg", class="inset") }}
 
 #### Sigasi
 
-{{ image(path="sigasi.jpg", width="50%") }}
+{{ image(path="sigasi.jpg", class="inset") }}
 
 #### Intel Foundry
 
 - 18A image from synopsys
 
-{{ image(path="synopsys_intel_18a.jpg", width="50%") }}
+{{ image(path="synopsys_intel_18a.jpg", class="inset") }}
 
 ### NoC Startups
 
