@@ -1584,11 +1584,14 @@ Amaro
 : - Aperol
   - Amaro Nonino
   - Amaro Montenegro
+  - Atost California Aperitif
   - Cynar
   - Campari
+  - Cappelletti Aperitivo
   - Luxardo Aperitivo
   - Ramazzotti
   - Suze
+  - St George Bruto Americano
   - Lillet Blanc
   - Cocchi Americano
   - Benedictine

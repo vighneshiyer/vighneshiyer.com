@@ -207,6 +207,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Sergey Levine: Sporks of AGI](https://sergeylevine.substack.com/p/sporks-of-agi)
 - [Dwarkesh: RL is even more information inefficient than you thought - And implications for RLVR progress](https://www.dwarkesh.com/p/bits-per-sample) ([HN link](https://news.ycombinator.com/item?id=46067011))
 - [Ben Recht: Lore Laundering Machines](https://www.argmin.net/p/lore-laundering-machines)
+- [Karpathy: 2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/)
 
 ### Applications
 
@@ -427,6 +428,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [What I learned gathering thousands of nootropic ratings](https://troof.blog/posts/nootropics/)
 - [Matthew Walker's "Why We Sleep" Is Riddled with Scientific and Factual Errors](https://guzey.com/books/why-we-sleep/)
 - [Wine and (my) Sleep](https://ja3k.com/blog/wine) (drink up to 1 glass per day in the afternoon, common sense)
+- [Karpathy: Chemical hygiene](https://karpathy.bearblog.dev/chemical-hygiene/)
 
 ## History
 
