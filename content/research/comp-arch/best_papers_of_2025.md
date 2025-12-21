@@ -78,6 +78,7 @@ I will point out the ones I like.
 - Instruction Set Migration at Warehouse Scale (https://arxiv.org/pdf/2510.14928)
   - A great practical paper from Google
 - TurboSAT: Gradient-Guided Boolean Satisfiability Accelerated on GPU-CPU Hybrid System (https://arxiv.org/pdf/2511.07737)
+- https://people.csail.mit.edu/yuka/pdf/exo-gpu_pldi2026_full.pdf
 
 ## Hall of Shame
 

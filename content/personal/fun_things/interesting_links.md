@@ -399,6 +399,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The India Menace - Discussion on Izzat](https://archive.is/5EROu#selection-11877.103-11877.108)
 - [Part 1: My Life Is a Lie: How a Broken Benchmark Quietly Broke America](https://www.yesigiveafig.com/p/part-1-my-life-is-a-lie)
 - [Compact Mag: The Lost Generation - Jacob Savage](https://www.compactmag.com/article/the-lost-generation/)
+  - [Compact "Lost Generation" DEI article: too little, too late](https://www.bronzeagepervert.yoga/p/compact-lost-generation-dei-article)
 
 ### China
 
