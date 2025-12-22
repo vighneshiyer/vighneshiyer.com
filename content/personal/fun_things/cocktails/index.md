@@ -289,6 +289,7 @@ Riffs
   - [*Perfect Summit Manhattan*](https://www.diffordsguide.com/cocktails/recipe/3064/perfect-summit-manhattan): 2 1/2oz bourbon, 3/4oz dry vermouth, 3/4oz Muscat wine, 1/6oz curacao, 2 dashes bitters
   - *Black Manhattan*: 2oz bourbon, 1oz Amaro Averna (or other Amaro such as Montenegro, Ramazzotti, or Nonino), 2 dashes Angostura bitters, 2 dashes orange bitters
   - *Monte Carlo*: 2oz rye, 1/2oz Benedictine, 1-2 dashes Angostura bitters
+  - [*Winter Holiday*](https://www.reddit.com/r/cocktails/comments/1psslh1/winter_holiday_manhattan/): 2oz rye, 3/4oz tawny port, 1/4oz dark creme de cacao, 1 dash Angostura bitters, 1 dash chocolate bitters
 
 ### Whiskey Highball
 
