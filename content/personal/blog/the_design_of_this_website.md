@@ -217,6 +217,7 @@ Here are the ones I consider somewhat _unique_ and _special_.
 - [htmlforpeople.com](https://htmlforpeople.com/adding-an-about-page/) (great typography)
 - [joshwcomeau.com](https://www.joshwcomeau.com/css/interactive-guide-to-grid/) (rightside TOC, just beautiful)
 - [dmodel.ai](https://dmodel.ai/nullability-gentle/) (nice code blocks)
+- [blog.kierangill.xyz](https://blog.kierangill.xyz/oversight-and-guidance) (nice typography, figures, code / verbatim blocks, aside blocks)
 
 Here are some more nice center column blogs, but they are more _vanilla_ than the previous selection.
 
