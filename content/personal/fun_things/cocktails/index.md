@@ -227,7 +227,7 @@ Riffs
 <figure class="content cocktail-spec">
   <img src="./bourbon.png"/>
   <img class="plus" src="./plus.png"/>
-  <img src="./lemonade.png"/>
+  <img src="./simple_syrup.png"/>
   <img class="plus" src="./plus.png"/>
   <img class="citrus" src="./lemon.png"/>
   <img class="arrow" src="./right_arrow.png"/>
@@ -238,8 +238,8 @@ Riffs
 
 Ingredients
 : - 2oz whiskey / rum
-  - 3/4oz lemon juice
   - 1/2oz maple / 2:1 demerara syrup **OR** 3/4oz 1:1 simple syrup
+  - 3/4oz lemon juice
   - (Optional) Fee Foam or 1 egg white
 
 Method

@@ -79,6 +79,7 @@ I will point out the ones I like.
   - A great practical paper from Google
 - TurboSAT: Gradient-Guided Boolean Satisfiability Accelerated on GPU-CPU Hybrid System (https://arxiv.org/pdf/2511.07737)
 - https://people.csail.mit.edu/yuka/pdf/exo-gpu_pldi2026_full.pdf
+- https://arxiv.org/pdf/2512.15679 (A High-level Synthesis Toolchain for the Julia Language)
 
 ## Hall of Shame
 
