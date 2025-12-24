@@ -132,6 +132,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Youtube: Yifan&GPU](https://www.youtube.com/@yifangpu/videos)
   - The channel of [Prof. Yifan Sun](https://sarchlab.org/syifan/teaching). Lectures on GPU programming (AMD HIP), computer architecture (introductory class).
 - [Has Machine Learning for Systems Reached an Inflection Point? - Martin Maas - ASPLOS 2025 Keynote](https://www.asplos-conference.org/asplos2025/wp-content/uploads/2025/05/maas-asplos25-keynote.pdf)
+- [Matt Godbolt - Microarchitecture: What Happens Beneath](https://www.youtube.com/watch?v=BVVNtG5dgks)
 
 ### Articles / Posts
 
@@ -327,6 +328,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Aporia: Asian immigration and the signaling model of education](https://www.aporiamagazine.com/p/asian-immigration-and-the-signaling)
 - [College English majors can't read](https://www.adorableandharmless.com/p/college-english-majors-cant-read)
 - [How the Phone Ban Saved High School](https://nymag.com/intelligencer/article/how-new-york-public-school-phone-ban-saved-high-school.html) ([Archive](https://archive.is/KC1SH))
+- [The “Napolas” - A 1941 Essay by Julius Evola, Newly Translated with Notes](https://chadcrowley.substack.com/p/the-napolas)
 
 ### Academia
 

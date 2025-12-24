@@ -413,7 +413,7 @@ Good Bottles
 </figure>
 
 Ingredients
-: - 2oz rum
+: - 2oz rum (often split: 1oz Jamaican funky rum + 1/2oz agricole blanc + 1/2oz aged dark rum)
   - 1oz lime juice
   - 1/2oz dry curacao
   - 1/2oz orgeat
@@ -430,6 +430,7 @@ Good Bottles
 
 Riffs
 : - [*"Hotel" Mai Tai*](https://www.youtube.com/shorts/p66qPFQG-wY) (from the NoMad Cocktail Book): small lime wedge, 1oz lime juice, 3/4oz orgeat, 1/2oz creole shrubb (orange liqueur), 1/2oz rhum agricole (Rhum J.M Blanc Agricole Martinique 100 Proof), 3/4oz Appleton Signature (4 year blend), 3/4oz El Dorado 15 (highly aged dark rum)
+  - *Trader Vic's spec*: 1 1/2oz Smith and Cross, 1/2oz Agricole Blanc, 1/2oz Pierre Ferrand Dry Curacao, 3/4oz lime juice, 1/2oz orgeat
 
 ### Gimlet
 
