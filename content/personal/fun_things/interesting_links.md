@@ -402,6 +402,10 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Part 1: My Life Is a Lie: How a Broken Benchmark Quietly Broke America](https://www.yesigiveafig.com/p/part-1-my-life-is-a-lie)
 - [Compact Mag: The Lost Generation - Jacob Savage](https://www.compactmag.com/article/the-lost-generation/)
   - [Compact "Lost Generation" DEI article: too little, too late](https://www.bronzeagepervert.yoga/p/compact-lost-generation-dei-article)
+- [Not Enough Good Men: Gender Integration and the Collapse of the Virginia Military Institute](https://dc.claremont.org/not-enough-good-men-gender-integration-and-the-collapse-of-the-virginia-military-institute/)
+  - [VMI's Original Code of Honor](http://www.confederatecolonel.com/2010/05/vmis-code-of-honor/)
+  - [The New "Code of a Cadet"](https://cadetnewspaper.com/news/415/the-tradition-of-a-code-of-a-cadet/)
+  - [United States v. Virginia](https://en.wikipedia.org/wiki/United_States_v._Virginia) ("VMI had failed to show "exceedingly persuasive justification" for its sex-based admissions policy")
 
 ### China
 

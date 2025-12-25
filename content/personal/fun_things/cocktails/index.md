@@ -158,6 +158,11 @@ The attribute (function / occasion / style)
 
 With this out of the way, let's get onto the recipes.
 
+## Methodologies
+
+- https://punchdrink.com/articles/hack-your-drink-regal-shake-cocktail-recipe-technique/
+  - The "Regal Shake": citrus (orange or lime) peel in shaker -> extraction of oils in the drink -> drying effect
+
 ## Specs
 
 These aren't the "true" "official" recipes, but rather my own hacked together versions that I like.

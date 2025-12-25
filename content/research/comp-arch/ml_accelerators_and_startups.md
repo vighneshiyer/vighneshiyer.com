@@ -100,6 +100,7 @@ MatX
 NextSilicon
 Neuchips
 Blaize
+NextSilicon
 
 ## Hosted Services
 
