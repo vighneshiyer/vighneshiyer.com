@@ -32,3 +32,7 @@ description = ""
   - I do think the next git needs to serve as a continuous file sync tool in addition to regular source control duties
   - Mixing ideas from fossil and jj is needed
   - Subsuming webapps like Notion, Overleaf, and Typst Web must be possible
+
+- https://news.ycombinator.com/item?id=46391514
+  - Package managers keep using Git as a database, it never works out (nesbitt.io)
+  - The fact that git doesn't work well for this usecase simply due to technical reasons that can be overcome, is a sign that there is something to do next that combines the virtues of P2P torrent-like filesharing, git-like VCS, live collaboration, and software / binary distribution (even having to split the binary distribution platform and the code platform are already suspect - Github has tried to merge them via CI and releases, but not using git itself)
