@@ -39,7 +39,7 @@ Let's examine each one.
 
 ### The End of Moore's Law
 
-I dare you to find a computer architecture paper that doesn't begin with the platitude: "Due to the end of Moore's Law...".
+I challenge you to find a computer architecture paper that doesn't begin with the platitude: "Due to the end of Moore's Law...".
 Consider this language from a Groq Whitepaper: ["What is a Language Processing Unit?"](https://groq.sa/wp-content/uploads/2024/07/GroqThoughts_WhatIsALPU-vF.pdf).
 
 > For decades computer software was the beneficiary of Moore’s law, Gordon Moore’s self-fulfilling 1965 prophecy that the processing power of a chip would double roughly every two years while keeping costs steady.
@@ -52,19 +52,28 @@ I claim there are 3 aspects to Moore's Law (as it is used colloquially):
 
 {{ image(path="integration_complexity_over_time.svg", class="popout", caption="I created this plot using data from [this Wikipedia article](https://en.wikipedia.org/wiki/Transistor_count) + data from various presentations and papers.") }}
 
-As the plot shows, this trend is strong, and will continue for the foreseeable future, driven mostly by packaging innovations (e.g. CoWoS).
-The outliers (Cerebras WSE and Tesla Dojo) demonstrate that the most extreme forms of integration (panel-level packaging / wafer-scale integration) are doable, but are still in their early stages.
-So it's reasonable to conclude that *this aspect of Moore's Law is still alive*, although it is increasingly expensive to move further up in integration complexity.
+As the plot shows, this trend is strong, and will continue for the foreseeable future, driven mostly by packaging innovations (e.g. CoWoS), but also by transistor scaling.
+The outliers (Cerebras WSE and Tesla Dojo) demonstrate that the most extreme forms of integration (panel-level packaging / wafer-scale integration) are feasible, but are still in their early stages of deployment.
+It is reasonable to conclude that *this aspect* of Moore's Law is still alive, although it is increasingly expensive to move further up in integration complexity.
 
-2. *Logic and memory density scaling*: the density (millions of transistors per mm<sup>2</sup> of silicon area) of logic and memory on a single die
+2. *Logic and memory density scaling*: the number of transistors per mm<sup>2</sup> of silicon area
 
 The future-looking trends here are mixed.
-While logic scaling may continue to improve due to continued transistor length scaling, new transistor technologies, backside power delivery, 
+*Logic scaling* continues to improve *slowly* from continued transistor scaling (enabled by new transistor device architectures: GAAFETs, forksheet FETs, CFETs) and new process features (e.g. backside power delivery, TSVs, finer wire pitch, standard cells with track heights of 3&ndash;4).
+*SRAM scaling* is stagnant and high-density SRAM macros probably won't get more 
 
+Another note is that 3D logic / memory die stacking
 
 3. *Density scaling at lowest cost per transistor*
 
+This has been finished for at least 5 years now. The latest nodes are increasingly expensive - wafers get more and more expensive.
+
 ### The End of Dennard Scaling
+
+The next most common platitude you'll hear is: "Due to the end of Dennard scaling...".
+Dennard scaling 
+Power density is 
+Dark silicon
 
 ### The Memory Wall and Von Neumann Bottleneck
 
@@ -150,9 +159,12 @@ Traditionally arch drives the microarch which drives the floorplan
 Googlers in TPU world designed the ISA around the floorplan 'viability'
 The Groq-ers went all the way and designed even the uarch around the floorplan, throwing away all software / compiler / ISA concerns
 
-### Pleisochronious Global Clock
+### Pleisochronious Global Virtual Clock
 
-used in Palladium systems. Actually an albatross for Groq. They are building a throughput machine (even though they say otherwise, ML is a throughput bound workload if you aren't memory bound due to on-chip memory and aggressive model sharding and batch size 1). In contrast, RTL emulation is truly a latency bound workload where shaving off even a few host cycles using fully synchronous rack-scale integration is worth it.
+Also implemented in Palladium emulators.
+Actually an albatross for Groq.
+They are building a throughput machine (even though they say otherwise, ML is a throughput bound workload if you aren't memory bound due to on-chip memory and aggressive model sharding and batch size 1 and if you aren't communication-bound if you're running with low-latency links and no dynamic switching).
+In contrast, RTL emulation is truly a latency bound workload where shaving off even a few host cycles using fully synchronous rack-scale integration is worth it.
 
 ## The Groq Programming Model
 
