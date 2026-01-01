@@ -33,6 +33,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Rating 26 years of Java changes](https://neilmadden.blog/2025/09/12/rating-26-years-of-java-changes/) ([HN link](https://news.ycombinator.com/item?id=45551450))
 - [Sebastian Aaltonen - No Graphics API](https://www.sebastianaaltonen.com/blog/no-graphics-api) ([HN link](https://news.ycombinator.com/item?id=46293062))
   - A deep historical review of graphics APIs and a call for a greatly simplified, cruft-free, graphics API
+- [How does image compression work?](https://leerob.com/compression)
 
 ### Functional Programming
 
@@ -209,6 +210,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Dwarkesh: RL is even more information inefficient than you thought - And implications for RLVR progress](https://www.dwarkesh.com/p/bits-per-sample) ([HN link](https://news.ycombinator.com/item?id=46067011))
 - [Ben Recht: Lore Laundering Machines](https://www.argmin.net/p/lore-laundering-machines)
 - [Karpathy: 2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/)
+- [Simon Willison - 2025: The year in LLMs](https://simonwillison.net/2025/Dec/31/the-year-in-llms/) ([HN link](https://news.ycombinator.com/item?id=46449643))
 
 ### Applications
 

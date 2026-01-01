@@ -50,23 +50,37 @@ I claim there are 3 aspects to Moore's Law (as it is used colloquially):
 
 1. *Total integration complexity scaling*: the total number of transistors that can act as a single system with system-level latencies and bandwidths on par with an arbitrarily sized silicon die
 
-{{ image(path="integration_complexity_over_time.svg", class="popout", caption="I created this plot using data from [this Wikipedia article](https://en.wikipedia.org/wiki/Transistor_count) + data from various presentations and papers.") }}
+{{ image(path="integration_complexity_over_time.svg", class="popout", caption="I created this plot using data from [this Wikipedia article](https://en.wikipedia.org/wiki/Transistor_count) + data from various presentations and papers.", width=1407, height=687) }}
 
 As the plot shows, this trend is strong, and will continue for the foreseeable future, driven mostly by packaging innovations (e.g. CoWoS), but also by transistor scaling.
 The outliers (Cerebras WSE and Tesla Dojo) demonstrate that the most extreme forms of integration (panel-level packaging / wafer-scale integration) are feasible, but are still in their early stages of deployment.
 It is reasonable to conclude that *this aspect* of Moore's Law is still alive, although it is increasingly expensive to move further up in integration complexity.
 
+{{ image(path="tsmc_iedm_2023.png", class="inset", caption="A slide presented by TSMC at IEDM 2023 https://www.tomshardware.com/tech-industry/manufacturing/tsmc-charts-a-course-to-trillion-transistor-chips-eyes-monolithic-chips-with-200-billion-transistors-built-on-1nm-node ") }}
+
 2. *Logic and memory density scaling*: the number of transistors per mm<sup>2</sup> of silicon area
 
 The future-looking trends here are mixed.
 *Logic scaling* continues to improve *slowly* from continued transistor scaling (enabled by new transistor device architectures: GAAFETs, forksheet FETs, CFETs) and new process features (e.g. backside power delivery, TSVs, finer wire pitch, standard cells with track heights of 3&ndash;4).
+
+{{ gallery(images=[
+    "imec_logic_scaling1.webp",
+    "imec_logic_scaling2.webp",
+], popout=false, caption="Imec 2023 ITF World, from this article: https://spectrum.ieee.org/stco-system-technology-cooptimization") }}
+
 *SRAM scaling* is stagnant and high-density SRAM macros probably won't get more 
 
-Another note is that 3D logic / memory die stacking
+{{ gallery(images=[
+    "imec_logic_scaling1.webp",
+    "imec_logic_scaling2.webp",
+], popout=false, caption="INTERNATIONAL ROADMAP FOR DEVICES AND SYSTEMS™ 2024 UPDATE MORE MOORE") }}
+
+Another note is that 3D logic / memory die stacking continues to push things forward, but in 3D (transistors / mm3) (trends captured in section 1).
 
 3. *Density scaling at lowest cost per transistor*
 
-This has been finished for at least 5 years now. The latest nodes are increasingly expensive - wafers get more and more expensive.
+This trend has been dead for at least 5 years now (around when processes shifted to EUV and sub-5nm nodes).
+All the features described above are - latest nodes are increasingly expensive - wafers get more and more expensive.
 
 ### The End of Dennard Scaling
 
@@ -112,8 +126,25 @@ Groq was early though. At the time they were still discussing CNNs. Even BERT wa
 - https://groq.sa/wp-content/uploads/2024/07/GroqThoughts_WhatIsALPU-vF.pdf?utm_source=chatgpt.com
 - LPU design principles
 
-https://x.com/chamath/status/2003946644531040740/photo/4
-Insert Chamath's tweet.
+- https://x.com/chamath/status/2003946644531040740/photo/4
+
+> Taken Sep 1, 2016 when @JonathanRoss321 convinced me we could take on the giants, build new silicon and that AI was coming. In typical SV fashion, we didn’t even have a company yet - just a term sheet from me to invest and the three of us. I spent the next month recruiting as many of the TPU team from Google Wisconsin as I could. “Welcome to chips”, I thought. 
+> 
+> The company, as with all important companies, went through its own trials and tribulations including promoting Jonathan from CTO to CEO and the inevitable falling out and repair of his and my relationship.  Anyways, it all happened for a reason. 
+> 
+> Today we close this almost decade chapter and Jonathan starts a new one with nVidia. 
+> 
+> I can’t thank him enough. 
+> 
+> Sometimes it’s simply better to be lucky than good and be fortunate enough to work with great people and follow them into battle. That is me here.
+> 
+> Jonathan was not only the father of TPU when he was at Google but he is a technical genius of biblical proportions. He also assembled a great team with folks like @sundeep and @GavinSherry to back him up. They will also do incredible things at nvidia. 
+> 
+> Separately, whenever something I’m involved in either crashes or wins, I reread my thoughts when I first did it. Was it luck? Was it skill? What did I learn? What do I do now?
+> 
+> YMMV, but I am attaching the original investment memo I wrote a decade ago.
+> 
+> I’ll do a more substantive view on why this deal matters and what my guess is about the future of AI silicon from here on an upcoming episode of the pod.
 
 {{ gallery(images=[
     "groq_investment_memo1.jpg",
@@ -140,24 +171,29 @@ At this point, let me just enumerate all the players I can think of and what the
 https://zscc.ai/
 Other players like SambaNova, Graphcore, NextSilicon, Etched, Fractile, Hailo, Korean players (Furiosa, Rebellions), MatX, DeepX, HyperAccel, and even new guys (PositronAI, Unconventional AI, Normal Computing, Extropic) are quite secretive.
 Dead players like Mythic, Rivos, Blumind, Ventana are even more secretive.
+The others who can match them are d-Matrix and Tenstorrent (they are the best), and to a lesser extent Cerebras.
 
 ## The LPU Architecture
 
 First, I want to acknowledge Groq for their openness and transparency, which is rare in today's hardware startup world. The papers they produced give confidence that their product was at least intentionally designed 
 
-The others who can match them are d-Matrix and Tenstorrent (they are the best), and to a lesser extent Cerebras.
+### Floorplan-Driven Architecture
 
+Common among TPU googlers
+See richard ho at reddi's class (lmao)
+Traditionally arch drives the microarch which drives the floorplan
+Googlers in TPU world designed the ISA around the floorplan 'viability'
+The Groq-ers went all the way and designed even the uarch around the floorplan, throwing away all software / compiler / ISA concerns
+
+Attach the evolution of TPU paper. While they tried to go all the way with dataflow, they eventually moved back to a more programmable model with a VRF and matrix RF and accumulator SRAM and so forth. Single core. VLIW dispatch just to make sure instruction issue doesn't become a bottleneck, but otherwise no reason not to do traditional large frontend with assumption of easily predictable branches and regular ROB OoO dynamic dispatch.
+
+Compare the TPU with the LPU. Remove the HBM. Make the datapaths even more fixed. Scale things up (vector length = 320 elements). Make all latencies deterministic. Add C2C links which are also deterministic. Go all the way with floorplan-driven archiccture. As I said, extreme vision of floorplan-driven arch.
+
+### The Superlane
 
 Attach my paper and analysis here
 Arch = microarch - practically no distinction
 
-### Floorplan-Driven Architecture
-
-Common among TPU googlers
-See richard ho at reddi's class
-Traditionally arch drives the microarch which drives the floorplan
-Googlers in TPU world designed the ISA around the floorplan 'viability'
-The Groq-ers went all the way and designed even the uarch around the floorplan, throwing away all software / compiler / ISA concerns
 
 ### Pleisochronious Global Virtual Clock
 

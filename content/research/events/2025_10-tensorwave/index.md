@@ -314,6 +314,8 @@ If we look at decode-bound scenarios (i.e. 'agentic' workflows), AMD is reasonab
     "inferencemax_2.png",
 ], popout=true, caption="InferenceMAX results for gpt-oss-120B 1K/8K on November 11, 2025") }}
 
+**TODO**: comment on this (https://signal65.com/research/ai/from-dense-to-mixture-of-experts-the-new-economics-of-ai-inference/)
+
 <!--
 this comes at a cost of porting, and opportunity cost for not spending more time optimizing MFU on NVIDIA hardware in lieu of trying to chase lower inference costs with other hardware.
 -->

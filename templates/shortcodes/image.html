@@ -4,7 +4,7 @@
   {% set image_raw_path = page.colocated_path ~ path %}
   {% set meta = get_image_metadata(path=image_raw_path) %}
   <div id="{{ gallery_id }}">
-    <a href="{{ image_real_path | safe }}" data-pswp-width="{{ meta.width }}" data-pswp-height="{{ meta.height }}" target="_blank">
+    <a href="{{ image_real_path | safe }}" data-pswp-width="{% if width %}{{width}}{% else %}{{ meta.width }}{% endif %}" data-pswp-height="{% if height %}{{height}}{% else %}{{ meta.height }}{% endif %}" target="_blank">
       <img src="{{ image_real_path }}" {% if padding %}class="padding"{% endif %} />
     </a>
   </div>
