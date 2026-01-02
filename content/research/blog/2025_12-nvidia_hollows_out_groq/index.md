@@ -50,37 +50,54 @@ I claim there are 3 aspects to Moore's Law (as it is used colloquially):
 
 1. *Total integration complexity scaling*: the total number of transistors that can act as a single system with system-level latencies and bandwidths on par with an arbitrarily sized silicon die
 
-{{ image(path="integration_complexity_over_time.svg", class="popout", caption="I created this plot using data from [this Wikipedia article](https://en.wikipedia.org/wiki/Transistor_count) + data from various presentations and papers.", width=1407, height=687) }}
+{{ image(path="integration_complexity_over_time.svg", class="popout", caption="A strong historical trend of exponentially increasing integration complexity. (Source: ['Transistor Count' Wikipedia article](https://en.wikipedia.org/wiki/Transistor_count) + manually scraped transistor counts for recently released chips in 2024&ndash;2025)", width=1407, height=687, padding=true) }}
 
 As the plot shows, this trend is strong, and will continue for the foreseeable future, driven mostly by packaging innovations (e.g. CoWoS), but also by transistor scaling.
 The outliers (Cerebras WSE and Tesla Dojo) demonstrate that the most extreme forms of integration (panel-level packaging / wafer-scale integration) are feasible, but are still in their early stages of deployment.
+
+{{ image(path="tsmc_iedm_2023.png", class="content", caption="Monolithic and packaging/stacking scaling trends are expected to continue (Source: [TSMC at IEDM 2023](https://www.tomshardware.com/tech-industry/manufacturing/tsmc-charts-a-course-to-trillion-transistor-chips-eyes-monolithic-chips-with-200-billion-transistors-built-on-1nm-node))") }}
+
 It is reasonable to conclude that *this aspect* of Moore's Law is still alive, although it is increasingly expensive to move further up in integration complexity.
 
-{{ image(path="tsmc_iedm_2023.png", class="inset", caption="A slide presented by TSMC at IEDM 2023 https://www.tomshardware.com/tech-industry/manufacturing/tsmc-charts-a-course-to-trillion-transistor-chips-eyes-monolithic-chips-with-200-billion-transistors-built-on-1nm-node ") }}
+2. *Transistor density scaling*: the number of transistors per mm<sup>2</sup> of silicon area
 
-2. *Logic and memory density scaling*: the number of transistors per mm<sup>2</sup> of silicon area
-
-The future-looking trends here are mixed.
-*Logic scaling* continues to improve *slowly* from continued transistor scaling (enabled by new transistor device architectures: GAAFETs, forksheet FETs, CFETs) and new process features (e.g. backside power delivery, TSVs, finer wire pitch, standard cells with track heights of 3&ndash;4).
+<!--The future-looking trends here are mixed.-->
+*Logic* density scaling continues to improve *slowly* from continued transistor scaling (enabled by new transistor device architectures: GAAFETs, forksheet FETs, CFETs) and [new process features](https://en.wikipedia.org/wiki/2_nm_process#Beyond_2_nm) (e.g. backside power delivery, TSVs, finer wire pitch, denser standard cells with track heights of 3&ndash;4).
 
 {{ gallery(images=[
     "imec_logic_scaling1.webp",
     "imec_logic_scaling2.webp",
-], popout=false, caption="Imec 2023 ITF World, from this article: https://spectrum.ieee.org/stco-system-technology-cooptimization") }}
+], popout=false, caption="Left: Logic scaling from device, interconnect, and power delivery improvements. Right: Predictions for device evolution into the next decade. (Source: [ITF World 2023 - imec](https://spectrum.ieee.org/stco-system-technology-cooptimization))") }}
 
-*SRAM scaling* is stagnant and high-density SRAM macros probably won't get more 
+*SRAM* density scaling has been tepid in the past few nodes, and has few signs of improving without revolutionary process changes.
 
 {{ gallery(images=[
-    "imec_logic_scaling1.webp",
-    "imec_logic_scaling2.webp",
-], popout=false, caption="INTERNATIONAL ROADMAP FOR DEVICES AND SYSTEMS™ 2024 UPDATE MORE MOORE") }}
+    "irds.png",
+], popout=false, caption="Density scaling projections for logic and SRAM. (Source: [IRDS 2024 Update - 'More Moore'](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MM.pdf))") }}
 
-Another note is that 3D logic / memory die stacking continues to push things forward, but in 3D (transistors / mm3) (trends captured in section 1).
+In the projection above, the sudden jump in SRAM density from 2029 to 2031 is attributed to the transition from GAAFETs to CFETs and the fabrication of active devices on the backside; whether this will actually happen, on time, with high-volume manufacturing, is *very suspect*.
+Another note is that 3D die stacking will continue to push densities up so long as power density issues can be mitigated.
+Alternative memory technologies (ReRAM, PCRAM, eDRAM) that promise higher density / lower energy vs SRAM are still immature, but may play a role in the next decade.
 
 3. *Density scaling at lowest cost per transistor*
 
-This trend has been dead for at least 5 years now (around when processes shifted to EUV and sub-5nm nodes).
+The original formulation of Moore's Law was that the maximum transistor count at the minimum cost point ($/transistor) would double every year.
+That doubling slowed down from every year to every two years, and now, perhaps every 3&ndash;4 years.
+
+This specific formulation of Moore's Law *has been dead* for at least 5 years now (around when processes shifted to EUV and sub-5nm nodes).
+To get the greatest integration complexity (both monolithically and from packaging / stacking), one must invest in increasingly expensive manufacturing processes.
+<!--
 All the features described above are - latest nodes are increasingly expensive - wafers get more and more expensive.
+-->
+
+#### So What?
+
+Consider that exploiting cutting-edge CMOS scaling and innovations in packaging requires massive up-front capital investment.
+Whatever a ML accelerator startup proposes, must 
+<!--
+ML hardware startups often misrepresent how 'dire' the 'end' of process scaling actually is.
+If they propose something exotic, they will have to cope with the continued 
+-->
 
 ### The End of Dennard Scaling
 
@@ -92,6 +109,10 @@ Dark silicon
 ### The Memory Wall and Von Neumann Bottleneck
 
 ### The Overhead of General Purpose Computing
+
+[EECS Colloquium: Bill Dally - Trends in Deep Learning Hardware](https://www.youtube.com/watch?v=4u8iMr3iXR4)
+
+[NVIDIA: Hardware for Deep Learning (Hot Chips 2023)](https://hc2023.hotchips.org/assets/program/conference/day2/Keynote%202/Keynote-NVIDIA_Hardware-for-Deep-Learning.pdf)
 
 And then the energy overhead of general compute 
 The VC pitch: the pie chart.
@@ -177,6 +198,9 @@ The others who can match them are d-Matrix and Tenstorrent (they are the best), 
 
 First, I want to acknowledge Groq for their openness and transparency, which is rare in today's hardware startup world. The papers they produced give confidence that their product was at least intentionally designed 
 
+Their 2 papers:
+  - [A Software-defined Tensor Streaming Multiprocessor for Large-scale Machine Learning](cdn.sanity.io/files/chol0sk5/production/81d0c45ed70a10f1804bbd82f2d0076af1186ff0.pdf)
+
 ### Floorplan-Driven Architecture
 
 Common among TPU googlers
@@ -184,6 +208,7 @@ See richard ho at reddi's class (lmao)
 Traditionally arch drives the microarch which drives the floorplan
 Googlers in TPU world designed the ISA around the floorplan 'viability'
 The Groq-ers went all the way and designed even the uarch around the floorplan, throwing away all software / compiler / ISA concerns
+https://old.hotchips.org/hc31/HC31_T3_Cloud_TPU_Codesign.pdf?referrer=grok.com
 
 Attach the evolution of TPU paper. While they tried to go all the way with dataflow, they eventually moved back to a more programmable model with a VRF and matrix RF and accumulator SRAM and so forth. Single core. VLIW dispatch just to make sure instruction issue doesn't become a bottleneck, but otherwise no reason not to do traditional large frontend with assumption of easily predictable branches and regular ROB OoO dynamic dispatch.
 
