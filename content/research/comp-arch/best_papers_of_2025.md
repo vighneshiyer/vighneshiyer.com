@@ -81,6 +81,10 @@ I will point out the ones I like.
 - https://people.csail.mit.edu/yuka/pdf/exo-gpu_pldi2026_full.pdf
 - https://arxiv.org/pdf/2512.15679 (A High-level Synthesis Toolchain for the Julia Language)
 - https://arxiv.org/pdf/2512.06177 (From PyTorch to Calyx: An Open-Source Compiler Toolchain for ML Accelerators)
+- https://arxiv.org/pdf/2512.22390 (Eliminate Branches by Melding IR Instructions)
+- https://ieeexplore.ieee.org/abstract/document/11240632 (CTDM: Resource-Efficient FPGA-Accelerated Simulation of Large-Scale NPU Designs)
+  - https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11240632&casa_token=omnN5HFvWOcAAAAA:PM2y9aHkiAKdpAyayD3DKCTCuXOvKiDv6x00vcO9inHlY45hzTa8DiCliLBUMGnH-I--pYuO&tag=1 (PDF link)
+- https://arxiv.org/pdf/2512.22168 (TL: Automatic End-to-End Compiler of Tile-Based Languages for Spatial Dataflow Architectures)
 
 ## Hall of Shame
 

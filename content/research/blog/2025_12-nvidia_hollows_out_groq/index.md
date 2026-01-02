@@ -231,6 +231,9 @@ Attach the evolution of TPU paper. While they tried to go all the way with dataf
 
 Compare the TPU with the LPU. Remove the HBM. Make the datapaths even more fixed. Scale things up (vector length = 320 elements). Make all latencies deterministic. Add C2C links which are also deterministic. Go all the way with floorplan-driven archiccture. As I said, extreme vision of floorplan-driven arch.
 
+In the traditional architecture view, you start with a principled architecture that is designed to bridge applications via a compiler to the arch. Then the uArch and floorplan / physical design makes the human-engineered arch feasible.
+In the Brave New World of "co-designed" architectures, you ideally go backwards: first the floorplan and feasibility checks and then the uArch and then the arch only supports what is physically feasible and the compiler handles the rest.
+
 ### The Superlane
 
 Attach my paper and analysis here
