@@ -92,8 +92,8 @@ All the features described above are - latest nodes are increasingly expensive -
 
 #### So What?
 
-Consider that exploiting cutting-edge CMOS scaling and innovations in packaging requires massive up-front capital investment.
-Whatever a ML accelerator startup proposes, must 
+Exploiting cutting-edge CMOS scaling and innovations in packaging requires massive up-front capital investment.
+Any ML accelerator pitch that requires outbidding NVIDIA, AMD, Apple, Google, etc. and leveraging process and packaging innovations is inherently suspect.
 <!--
 ML hardware startups often misrepresent how 'dire' the 'end' of process scaling actually is.
 If they propose something exotic, they will have to cope with the continued 
@@ -101,12 +101,29 @@ If they propose something exotic, they will have to cope with the continued
 
 ### The End of Dennard Scaling
 
-The next most common platitude you'll hear is: "Due to the end of Dennard scaling...".
-Dennard scaling 
-Power density is 
-Dark silicon
+After "due to the end of Moore's Law...", the next most common platitude you'll hear is: "Due to the end of Dennard scaling...".
+In short, [Dennard scaling](https://en.wikipedia.org/wiki/Dennard_scaling) is about: transistors shrink → supply voltage can be lowered → propagation delay also goes down → per-transistor power consumption falls → power density (W/mm<sup>2</sup>) stays constant.
+But Dennard scaling died even before Moore's Law did.
+
+{{ image(path="50_years_of_microprocessor_trend_data.png", class="inset", caption="The classic plot of stagnating microprocessor frequency. The inability to push down threshold voltage while keeping leakage current controlled in deep submicron nodes, led to the failure of continued voltage scaling (Source: [Karl Rupp](https://github.com/karlrupp/microprocessor-trend-data))") }}
+
+#### So What?
+
+Practically, this means you can't run a modern chip at its peak frequency, with all its components active, without running into thermal density limits.
+Startups that pitch chips with higher arithmetic density vs GPUs or 3D logic die stacking (i.e. going beyond the limits of current cooling technologies) are suspect.[^rubin]
+
+[^rubin]: Consider that Rubin Ultra has a package TDP in the range 2.5&ndash;3.5 kW. A newcomer promising even higher thermal density is suspect.
+
+<!-- Dark silicon -->
 
 ### The Memory Wall and Von Neumann Bottleneck
+
+As LLMs grew in size, another talking point became popular: "the memory wall".
+
+https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck
+
+The proposed solution: Streaming dataflow architectures. CIM / PIM / near-memory compute. Exotic memory technologies (e.g. Optane). SRAM-only architectures (wafer-scale or otherwise).
+
 
 ### The Overhead of General Purpose Computing
 
@@ -117,7 +134,7 @@ Dark silicon
 And then the energy overhead of general compute 
 The VC pitch: the pie chart.
 
-- https://gwern.net/doc/cs/hardware/2014-horowitz-2.pdf?utm_source=chatgpt.com
+- https://gwern.net/doc/cs/hardware/2014-horowitz-2.pdf
   - Computing’s Energy Problem (and what we can do about it) - Horowitz ISSCC 2014
 
 ### The Golden Age of Architecture
@@ -127,20 +144,6 @@ Specialization, ASICs, whatever
 They created the TSP (tensor streaming processor). I shall discuss the arch below.
 
 Groq was early though. At the time they were still discussing CNNs. Even BERT was early. Early TPU days were like this too.
-
-- https://x.com/aakashg0/status/2004105278627963168
-
-> Social Capital put $10M into Groq’s seed round in April 2017 when the company was worth roughly $30M post-money. That single check bought about 33% of the company. Then they doubled down with $52.3M in a 2018 convertible note.
-> 
-> Total deployed: $62.3M.
-> 
-> Here’s where it gets interesting. Groq raised $300M at $1.1B in 2021, then $640M at $2.8B in 2024, then $750M at $6.9B in September 2025. Each round diluted early investors. But Social Capital had board seats and likely maintained some pro-rata through the convertible.
-> 
-> Conservative math: They own somewhere between 15-20% of Groq today. At $20B, that’s $3B to $4B in value.
-> 
-> $62M in. $3-4B out. That’s a 50-65x return in 8 years.
-> 
-> For context, this single investment is worth more than Social Capital’s entire fund size in 2015 ($1.1B). One bet. Eight years. 50x.
 
 ## Groq's Pitch
 
@@ -172,6 +175,20 @@ Groq was early though. At the time they were still discussing CNNs. Even BERT wa
     "groq_investment_memo2.jpg",
     "groq_investment_memo3.jpg",
 ], popout=false) }}
+
+- https://x.com/aakashg0/status/2004105278627963168
+
+> Social Capital put $10M into Groq’s seed round in April 2017 when the company was worth roughly $30M post-money. That single check bought about 33% of the company. Then they doubled down with $52.3M in a 2018 convertible note.
+> 
+> Total deployed: $62.3M.
+> 
+> Here’s where it gets interesting. Groq raised $300M at $1.1B in 2021, then $640M at $2.8B in 2024, then $750M at $6.9B in September 2025. Each round diluted early investors. But Social Capital had board seats and likely maintained some pro-rata through the convertible.
+> 
+> Conservative math: They own somewhere between 15-20% of Groq today. At $20B, that’s $3B to $4B in value.
+> 
+> $62M in. $3-4B out. That’s a 50-65x return in 8 years.
+> 
+> For context, this single investment is worth more than Social Capital’s entire fund size in 2015 ($1.1B). One bet. Eight years. 50x.
 
 ## Groq's Numbers
 
