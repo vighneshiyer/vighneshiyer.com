@@ -76,6 +76,8 @@ It's benefits are vast, social lubrication, truth seeking, beautiful flavors, re
 
 Even if we think about health, light alcohol has no consequence wrt all-cause mortality, and it may even be cardioprotective due to its blood thinning effects, although it may increase risks for particular cancers.
 
+- https://www.nytimes.com/2025/12/16/health/alcohol-heart-disease-cancer.html
+
 ### Alcohol According to the Greeks
 
 In order to consume alcohol in a manner that maximizes its benefits while mitigating its downsides, one must turn to the Greeks (of course, no matter the question, one must always look towards the Greeks, this is common sense).

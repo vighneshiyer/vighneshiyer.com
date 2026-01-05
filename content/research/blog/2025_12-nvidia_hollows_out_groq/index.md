@@ -118,12 +118,17 @@ Startups that pitch chips with higher arithmetic density vs GPUs or 3D logic die
 
 ### The Memory Wall and Von Neumann Bottleneck
 
-As LLMs grew in size, another talking point became popular: "the memory wall".
+As LLMs grew in size to the point where multi-GPU setups were required for inference, another talking point became popular: "the memory wall".
 
-https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck
+{{ gallery(images=[
+    "memory_wall1.png",
+], popout=false, caption="asdf") }}
+
+[AI and Memory Wall](https://arxiv.org/pdf/2403.14123)
+
+[Von Neumann bottleneck](https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck)
 
 The proposed solution: Streaming dataflow architectures. CIM / PIM / near-memory compute. Exotic memory technologies (e.g. Optane). SRAM-only architectures (wafer-scale or otherwise).
-
 
 ### The Overhead of General Purpose Computing
 
