@@ -408,6 +408,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [VMI's Original Code of Honor](http://www.confederatecolonel.com/2010/05/vmis-code-of-honor/)
   - [The New "Code of a Cadet"](https://cadetnewspaper.com/news/415/the-tradition-of-a-code-of-a-cadet/)
   - [United States v. Virginia](https://en.wikipedia.org/wiki/United_States_v._Virginia) ("VMI had failed to show "exceedingly persuasive justification" for its sex-based admissions policy")
+- [Sterile Polygamy](https://www.aporiamagazine.com/p/sterile-polygamy)
 
 ### China
 
