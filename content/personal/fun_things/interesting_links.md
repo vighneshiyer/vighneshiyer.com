@@ -409,6 +409,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [The New "Code of a Cadet"](https://cadetnewspaper.com/news/415/the-tradition-of-a-code-of-a-cadet/)
   - [United States v. Virginia](https://en.wikipedia.org/wiki/United_States_v._Virginia) ("VMI had failed to show "exceedingly persuasive justification" for its sex-based admissions policy")
 - [Sterile Polygamy](https://www.aporiamagazine.com/p/sterile-polygamy)
+- [From the memory hole: Rolling Stone's Wachowski piece](https://grahamlinehan.substack.com/p/from-the-memory-hole-rolling-stones?utm_source=publication-search)
 
 ### China
 
