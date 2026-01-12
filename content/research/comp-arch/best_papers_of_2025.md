@@ -100,3 +100,5 @@ I will point out the ones I like.
 - https://www.sigarch.org/the-quarch-experiment-crowdsourcing-a-machine-learning-dataset-for-computer-architecture/
 
 Hmm, lots of things should go in here. I usually delete bad things, but I should catalogue them.
+
+- Challenges and Research Directions for Large Language Model Inference Hardware (https://arxiv.org/pdf/2601.05047) - Xiaoyu Ma and David Patterson, Google
