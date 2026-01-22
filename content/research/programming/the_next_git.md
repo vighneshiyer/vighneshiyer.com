@@ -36,3 +36,14 @@ description = ""
 - https://news.ycombinator.com/item?id=46391514
   - Package managers keep using Git as a database, it never works out (nesbitt.io)
   - The fact that git doesn't work well for this usecase simply due to technical reasons that can be overcome, is a sign that there is something to do next that combines the virtues of P2P torrent-like filesharing, git-like VCS, live collaboration, and software / binary distribution (even having to split the binary distribution platform and the code platform are already suspect - Github has tried to merge them via CI and releases, but not using git itself)
+
+- https://x.com/HSVSphere/status/2012556663945842745
+> It feels like jj treats a repository like an *actual tree* whereas git treats a repository like a pile of branches
+>
+> You actually get to visualize *all* the branches and how they interact with the trunk (primary branch) and each other
+>
+> Huge improvement for collaborative codebases
+>
+> > jj represents the data clearly (a DAG). Git does not. jj is simpler and can do more as a result of correct abstraction. jj wins.
+
+I'm a bit skeptical of this framing.

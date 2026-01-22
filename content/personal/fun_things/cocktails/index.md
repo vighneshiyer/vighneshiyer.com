@@ -734,7 +734,7 @@ Good Bottles
 : I have no idea
 
 Riffs
-: - If cinnamon syrup / cramberries aren't available, sub with: 1/2oz simple syrup + 1 dash Angostura bitters + dash of grenadine
+: - If cinnamon syrup / cranberries aren't available, sub with: 1/2oz simple syrup + 1 dash Angostura bitters + dash of grenadine
 
 ### Japanese Snow Monkey
 
