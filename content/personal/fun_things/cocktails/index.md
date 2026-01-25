@@ -1364,6 +1364,7 @@ Total amateur opinions to follow.
 - *Citadelle Gin*. (9/10). Excellent 'celery'-like + juniper berry flavor, freshness as the final note. Gimlet with this is too good.
 - *Hendrick's Gin.* (8/10). Also very good, but more subtle finish and harsher down the throat vs Citadelle.
 - *Barr Hill Gin*. (8/10). This is a very classic gin with mainly juniper notes. There is a hint of honey, but it needs a honeyed cocktail to make it stand out.
+- *Tanqueray No. 10  Gin*. (9/10). Strong and lime-forward flavor. Great in a gimlet.
 
 ### Wines
 
@@ -1406,6 +1407,7 @@ Total amateur opinions to follow.
 - *Chaucer's Mead*. (6/10). Very vanilla alcoholic honey flavor, smooth. Nothing objectionable, but nothing special either. Good for the price.
 - *Sky River Sweet Mead*. (7/10). At $30 it is expensive for what it is. Much more complex mead with a barnyard / wet grass flavor and floral notes. Not appreciated by everyone.
 - *Carroll's Mead*. (7/10). A bit more honeyed vs Chaucer's, but still relatively cheap. Smooth and tasty.
+- *Oliver Winery Camelot Mead Orange Blossom*. (8/10). Hits a bit above the slightly cheaper meads. Excellent honeyed and fruity flavor.
 
 ### Sake
 
@@ -1469,16 +1471,16 @@ Wine
 : - Otima 10-Year Tawny Port
   - Chateau Pey-Bonhomme Le-Tours
   - Folk Machine Pinot Noir
-  - Belvino Prosecco Extra Dry
+  - Ca'Belli Extra Dry Prosecco
 
 Mead
-: - Chaucer's Mead
-  - Oliver Winery Camelot Mead Orange Blossom
+: - Oliver Winery Camelot Mead Orange Blossom
 
 Whiskey
 : - Four Roses Small Batch
   - Mitcher's US*1
   - Redbreast 12 Year
+  - Glenlivet 14 Single Malt Scotch (Cognac cask)
 
 Rum
 : - Diplomatico Reserva Exclusiva
@@ -1501,25 +1503,41 @@ Gin
 : - Hendricks
   - Citadelle
   - Barr Hill
+  - Tanqueray No. 10
+  - Jaisalmer
 
 Orange Liqueurs
 : - Cointreau
   - Grand Marnier
+  - Classica triple sec (low-end)
 
-Amaro / Fortified Wines
+Amari / Fortified Wines
 : - Campari
   - Aperol
   - Amaro Montenegro
-  - Dolin Vermouth Rouge (Sweet)
-  - Dolin Vermouth (Blanc)
+  - Dolin Vermouth Rouge (Sweet) (x1.5)
+  - Dolin Vermouth (Blanc) (375ml)
   - Dolin Vermouth (Dry)
   - Sole Vermouth (Extra Dry)
+  - Cocchi Americano
+  - Martini and Rossi (Extra Dry) (1/2 bottle)
+  - Suze
+  - Lillet Blanc
+  - Dolin Génépy le Chamois Liqueur
 
 Other Liqueurs
 : - TJ's Sicilian Limoncello (x2) (stored in the freezer)
   - Absolut Vanilla Vodka
+  - Tito's Vodka
   - Mr. Black Cold Brew Coffee Liqueur
   - Baileys Original Irish Cream
+  - Benedictine
+  - Chinola Passionfruit Liqueur
+
+Mixers
+: - Fever Free tonic water
+  - Club soda
+  - Pineapple juice
 
 Extras
 : - _Bitters_: Angostura, Orange
@@ -1560,6 +1578,9 @@ Aged Rum
   - Diplomático Mantuano
   - El Pasador de Oro Rum XO
   - Kaniche XO Artisanal Rum
+  - Smith and Cross Jamaican Rum
+  - Gosling's Black Seal Rum
+  - Planteray OFTD
 
 Gin
 : - Citadelle Gin
@@ -1572,7 +1593,7 @@ Cognac
 : - Hennessy VSOP
   - Pierre Ferrand Ambre / Original Formula
 
-Orange liquors
+Orange Liquors
 : - Rum-based curacao (dry): **Pierre Ferrand Dry Curacao**, Santa Teresa Rhum Orange
   - Brandy-based curacao (sweet): Grand Marnier
   - Triple secs (neutral): Cointreau
@@ -1581,15 +1602,23 @@ Absinthe
 : - St George Absinthe Verte
   - La Clandestine Absinthe Superieure Liqueur
 
-Chartreuse
+Chartreuse / Vegetal / Alpine Herbal
 : - Chartreuse Green Liqueur (very difficult to find nowadays, can possibly find at K&L Wine Merchants)
   - Chartreuse Vegetal de Grande Liqueur (a higher proof alternative)
   - Dolin Genepy Le Chamois Liqueur (easier to find, combine with Chartreuse Vegetal to make a Last Word)
   - Izarra Verte Basque Liqueur (Green Chartreuse "substitute")
   - Faccia Brutto Centerbe (another potential Chartreuse "substitute")
   - L'Excuse Herbal Liqueur (yet another potential "substitute")
+  - Luxardo Maraschino Liqueur
 
-Amaro
+Other Liquors
+: - Chinola Passionfruit Liqueur
+  - Licor 43
+  - St. Germains Elderflower liqueur
+  - Falernum
+  - Tempus Fugit Creme De Banane Liqueur / Giffard Banane du Brésil liqueur
+
+Amari
 : - Aperol
   - Amaro Nonino
   - Amaro Montenegro
@@ -1608,10 +1637,12 @@ Amaro
   - Ouzo
   - Mastiha
 
-Extras
+Garnishes / Juices / Syrups
 : - Raspberry syrup
   - Castelvetrano olives
-  - Luxardo Maraschino Liqueur (essential to make a Last Word)
+  - Ginger beer
+  - Demerara sugar
+  - Pineapple juice
 
 Books
 : - The NoMad Cocktail Book
