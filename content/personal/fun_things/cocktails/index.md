@@ -77,6 +77,9 @@ It's benefits are vast, social lubrication, truth seeking, beautiful flavors, re
 Even if we think about health, light alcohol has no consequence wrt all-cause mortality, and it may even be cardioprotective due to its blood thinning effects, although it may increase risks for particular cancers.
 
 - https://www.nytimes.com/2025/12/16/health/alcohol-heart-disease-cancer.html
+- https://www.reddit.com/r/PeterAttia/comments/1qnefwy/lifetime_alcohol_use_linked_to_higher_risk_of/
+  >  “Current drinkers averaging from seven to less than 14 drinks compared with less than one drink per week had a lower risk of CRC (HR, 0.79; 95% CI, 0.64–0.97), especially distal colon cancer (HR, 0.64; 95% CI, 0.42–1.00).” From the study
+  - The J-curve is a real thing. Alcohol is only naively a strict poison - the totality of its effects go beyond acute reactions, and even cover broader social phenomena that are underappreciated.
 
 ### Alcohol According to the Greeks
 
