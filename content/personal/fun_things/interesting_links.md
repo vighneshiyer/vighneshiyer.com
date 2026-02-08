@@ -34,6 +34,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Sebastian Aaltonen - No Graphics API](https://www.sebastianaaltonen.com/blog/no-graphics-api) ([HN link](https://news.ycombinator.com/item?id=46293062))
   - A deep historical review of graphics APIs and a call for a greatly simplified, cruft-free, graphics API
 - [How does image compression work?](https://leerob.com/compression)
+- [Reflections on Trusting Trust - Ken Thompson's Turing Lecture](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
 
 ### Functional Programming
 
@@ -238,6 +239,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Ontologies in the era of large language models by Fabian Neuhaus - Youtube](https://www.youtube.com/watch?v=rLOmAzkqIts)
 - [Pedro Domingos on the Symbolist Approach to AI](https://www.youtube.com/watch?v=ogaCzVoRpZs) (Pedro defends symbolic AI approaches)
 - [On the foolishness of "natural language programming".](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html)
+- [Wolfram: What Is Ruliology?](https://writings.stephenwolfram.com/2026/01/what-is-ruliology/)
 
 ### Neuromorphic Algorithms and HW Architectures
 
@@ -332,6 +334,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [College English majors can't read](https://www.adorableandharmless.com/p/college-english-majors-cant-read)
 - [How the Phone Ban Saved High School](https://nymag.com/intelligencer/article/how-new-york-public-school-phone-ban-saved-high-school.html) ([Archive](https://archive.is/KC1SH))
 - [The “Napolas” - A 1941 Essay by Julius Evola, Newly Translated with Notes](https://chadcrowley.substack.com/p/the-napolas)
+- [Why do Asians Outscore Whites on the SAT?](https://www.technotheoria.org/p/why-do-asians-outscore-whites-on)
 
 ### Academia
 
