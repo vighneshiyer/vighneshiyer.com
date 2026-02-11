@@ -5,6 +5,9 @@ draft = true
 slug = "landscape-of-ai-accelerator-offerings-and-startups"
 +++
 
+**NEED TO TURN THIS ARTICLE INTO AN ARCHITECTURE ANALYSIS**
+- The startup enumeration has moved into the "how to pitch a chip startup" article
+
 Axes to consider:
 
 - Tokens / second
