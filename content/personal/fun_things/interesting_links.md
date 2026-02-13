@@ -164,6 +164,8 @@ Here are a bunch of things from around the internet that I find interesting.
 - [The CUDA Handbook](https://www.cudahandbook.com/) (it is not 'up to date' but that's irrelevant since the concepts covered are mostly universal, a must read)
 - [Discussing Blackwell’s drawbacks and dissecting its architecture - Translation](x.com/Jukanlosreve/status/1992531045485531164) ([Original Chinese thread](https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247496740&idx=1&sn=c9403138fa59d126fe6cfda19d9b2f76&scene=21&poc_token=HJFzI2mjybYKIv_tSNu4PiMciSREnpOIo4UavqiH)) ([archive](archive.is/ztwGl))
 - [Raph Levien: I want a good parallel computer](https://raphlinus.github.io/gpu/2025/03/21/good-parallel-computer.html) ([short response](https://x.com/AgileJebrim/status/2021251553483472911))
+- [riscv-vector-primer](https://github.com/simplex-micro/riscv-vector-primer/blob/main/index.md) ([HN link](https://news.ycombinator.com/item?id=46923051))
+  - [RISC-V Vector Quick Intro](https://blog.timhutt.co.uk/riscv-vector/) (another good article)
 
 ### Formal Verification
 
