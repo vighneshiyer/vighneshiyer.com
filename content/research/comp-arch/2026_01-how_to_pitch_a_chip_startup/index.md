@@ -112,9 +112,9 @@ As LLMs grew in size to the point where multi-GPU setups were required for infer
     "memory_wall1.png",
 ], popout=false, caption="asdf") }}
 
-[AI and Memory Wall](https://arxiv.org/pdf/2403.14123)
+- [AI and Memory Wall](https://arxiv.org/pdf/2403.14123)
 
-[Von Neumann bottleneck](https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck)
+- [Von Neumann bottleneck](https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck)
 
 The proposed solution: Streaming dataflow architectures. CIM / PIM / near-memory compute. Exotic memory technologies (e.g. Optane). SRAM-only architectures (wafer-scale or otherwise).
 
@@ -127,8 +127,25 @@ The proposed solution: Streaming dataflow architectures. CIM / PIM / near-memory
 And then the energy overhead of general compute 
 The VC pitch: the pie chart.
 
+- https://old.hotchips.org/hc31/HC31_T3_Cloud_TPU_Codesign.pdf?referrer=grok.com
+
 - https://gwern.net/doc/cs/hardware/2014-horowitz-2.pdf
   - Computing’s Energy Problem (and what we can do about it) - Horowitz ISSCC 2014
+
+- https://gemini.google.com/app/8fa52e3a2f72b890
+
+> energy used in a cpu by function to execute one instruction i know there are some pie charts and relative energy comparisons of various things (memory fetch vs actually doing an add) can you find some sources?
+> Sure can you get some PDF links / images from the internet. Also consider things from NVIDIA and Groq's marketing / technical materials
+> Can you dig through more hotchips slides that could be making the same point about energy usage being disproportionately in control logic and memory vs compute? A pie chart is what I'm looking for from one of these sources. I'm trying to show examples of the arguments that these exotic ml arch companies bring up such as groq or cerebras to show an advantage over GPUs 
+
+- https://grok.com/c/ae4be3dd-4828-479e-a856-d5905dafbd3f?rid=265703b4-c63f-4248-8642-05a88cf618b0
+
+> energy used in a cpu by function to execute one instruction i know there are some pie charts and relative energy comparisons of various things (memory fetch vs actually doing an add) can you find some sources?
+> Sure can you get some PDF links / images from the internet. Also consider things from NVIDIA and Groq's marketing / technical materials
+> Can you dig through more hotchips slides that could be making the same point about energy usage being disproportionately in control logic and memory vs compute? A pie chart is what I'm looking for from one of these sources. I'm trying to show examples of the arguments that these exotic ml arch companies bring up such as groq or cerebras to show an advantage over GPUs
+> Can you find other marketing / pitch / keynote talk / technical talk materials that quantify how much energy usage comes from various parts of performing a computation on a regular cpu (ifetch, decode, execute (the actual work), commit, dcache write, etc....) or area usage is split between control logic, memory, and the actual arithmetic execution units? I want some more sources regardless of whether they come from papers, presentations, or pitched
+
+- https://chatgpt.com/c/694dc6c4-a048-8333-9720-875dd4e68de2
 
 ## The Golden Age of Architecture
 
@@ -139,6 +156,10 @@ They created the TSP (tensor streaming processor). I shall discuss the arch belo
 Groq was early though. At the time they were still discussing CNNs. Even BERT was early. Early TPU days were like this too.
 
 ## Chip Startup Shootout
+
+- Refer to Openai article: Nothing new under the sun
+- Refer to ml accelerator article: enumeration of companies
+- Scour this again: https://github.com/aolofsson/awesome-semiconductor-startups?tab=readme-ov-file
 
 - HBM machines
   - MatX?
