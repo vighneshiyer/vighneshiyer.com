@@ -44,6 +44,7 @@ Here are a bunch of things from around the internet that I find interesting.
   - [Unison: The Big Idea](https://www.unison-lang.org/docs/the-big-idea/)
   - [Abilities for the monadically inclined](https://www.unison-lang.org/docs/fundamentals/abilities/for-monadically-inclined/)
 - [Algebraic Effects in Practice with Flix](https://www.relax.software/blog/flix-effects-intro/) ([HN link](https://news.ycombinator.com/item?id=45157466))
+- [Fun with Algebraic Effects - from Toy Examples to Hardcaml Simulations](https://blog.janestreet.com/fun-with-algebraic-effects-hardcaml/)
 
 ### Concurrent Programming
 
