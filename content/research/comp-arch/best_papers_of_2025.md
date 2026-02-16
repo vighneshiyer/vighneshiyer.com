@@ -86,6 +86,10 @@ I will point out the ones I like.
   - https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11240632&casa_token=omnN5HFvWOcAAAAA:PM2y9aHkiAKdpAyayD3DKCTCuXOvKiDv6x00vcO9inHlY45hzTa8DiCliLBUMGnH-I--pYuO&tag=1 (PDF link)
 - https://arxiv.org/pdf/2512.22168 (TL: Automatic End-to-End Compiler of Tile-Based Languages for Spatial Dataflow Architectures)
 
+- Lockstep Execution of gem5 and Spike for ISA-Level Verification (https://upcommons.upc.edu/server/api/core/bitstreams/485022b4-8748-4570-8707-3f31eacc74c7/content)
+  - Very practical work. Essential for people interested in co-simulation and the spectrum of verification.
+- Microarchitectural Techniques for Instruction-driven Specialization - Jerry Zhao (https://escholarship.org/content/qt0gj0q1cz/qt0gj0q1cz.pdf)
+
 ## Hall of Shame
 
 - https://archprisms.talkyard.net/-255/multi-dimensional-ml-pipeline-optimization-in-cost-effective-disaggregated-datacenter
