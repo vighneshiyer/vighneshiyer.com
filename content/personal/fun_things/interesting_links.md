@@ -205,6 +205,7 @@ Here are a bunch of things from around the internet that I find interesting.
 
 - [Full Stack Optimization of Transformer Inference: a Survey (Feb 2023)](https://arxiv.org/abs/2302.14017)
 - [A Review on Edge Large Language Models: Design, Execution, and Applications (Feb 2025)](https://arxiv.org/pdf/2410.11845v20)
+- [frontier model training methodologies](https://djdumpling.github.io/2026/01/31/frontier_training.html)
 
 ### Reflections
 
@@ -273,6 +274,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [Dynomight: I don't like NumPy](https://dynomight.net/numpy/) ([HN link](https://news.ycombinator.com/item?id=43996431))
 - [AdapTive-LeArning Speculator System (ATLAS): A New Paradigm in LLM Inference via Runtime-Learning Accelerators](https://www.together.ai/blog/adaptive-learning-speculator-system-atlas) ([HN link](https://news.ycombinator.com/item?id=45556474))
 - [Scaling Elections with GPUs and Mojo 🔥](https://ashvardanian.com/posts/scaling-elections/)
+- [ThunderKittens 2.0: Even Faster Kernels for Your GPUs](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2)
 
 ### ML Hardware
 
