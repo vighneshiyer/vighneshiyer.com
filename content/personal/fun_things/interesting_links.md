@@ -36,6 +36,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [How does image compression work?](https://leerob.com/compression)
 - [Reflections on Trusting Trust - Ken Thompson's Turing Lecture](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
 - [Zig: io_uring and Grand Central Dispatch std.Io implementations landed](https://ziglang.org/devlog/2026/#2026-02-13) ([HN link](https://news.ycombinator.com/item?id=47012717))
+- [The Cathedral and the Bazaar](https://users.ece.utexas.edu/~perry/education/382v-s08/papers/raymond.pdf)
 
 ### Functional Programming
 
