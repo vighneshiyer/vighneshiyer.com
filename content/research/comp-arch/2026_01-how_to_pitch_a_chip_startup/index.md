@@ -179,3 +179,4 @@ Groq was early though. At the time they were still discussing CNNs. Even BERT wa
 
 - Groq, Taalas, Positron, Etched, d-Matrix, Tenstorrent, Sambanova, Cerebras, Mythic, FuriosaAI, Rebellions, HyperAccel, Blaize, MatX, Cambricon, Huawei Ascend 910C, TPU, MAIA, MTIA, Trainium / Inferentia
 - Big companies / hyperscalars are one thing - they just want sovereignty - don't need to actually compete on cost or performance per-se. The startups are something else.
+- Mythic (recent raise), Sambanova (recent raise), MatX (another recent raise) - https://x.com/reinerpope/status/2026351870852358492
