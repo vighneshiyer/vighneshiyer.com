@@ -61,6 +61,7 @@ My GPT queries:
 ## Excalidraw
 
 - The sketch style is very common to see nowadays
+- https://www.tldraw.com/ (another similar variant)
 
 ## Figma
 
