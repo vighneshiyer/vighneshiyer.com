@@ -177,6 +177,18 @@ Groq was early though. At the time they were still discussing CNNs. Even BERT wa
   - Normal Computing
   - Unconventional AI
 
-- Groq, Taalas, Positron, Etched, d-Matrix, Tenstorrent, Sambanova, Cerebras, Mythic, FuriosaAI, Rebellions, HyperAccel, Blaize, MatX, Cambricon, Huawei Ascend 910C, TPU, MAIA, MTIA, Trainium / Inferentia
+- Groq, Taalas, Positron, Etched, d-Matrix, Tenstorrent, Sambanova, Cerebras, Mythic, FuriosaAI, Rebellions, HyperAccel, Blaize, MatX, Cambricon, Huawei Ascend 910C, TPU, MAIA, MTIA, Trainium / Inferentia, Graphcore
 - Big companies / hyperscalars are one thing - they just want sovereignty - don't need to actually compete on cost or performance per-se. The startups are something else.
 - Mythic (recent raise), Sambanova (recent raise), MatX (another recent raise) - https://x.com/reinerpope/status/2026351870852358492
+
+- https://cheekypint.substack.com/p/reiner-pope-of-matx-on-accelerating
+
+> The mixture of expert layer maps really well, but the attention does not. What we came up with, which is quite different than some of the other startups in this space, is say, take a really large historical array, but have a way to split it up into pieces without losing efficiency. That is the core of the design for us.
+
+After this interview I'm very bearish on MatX - they have nothing special. They have no wedge.
+
+- https://x.com/IanCutress/status/2028099202912534837
+  - See nvidia_earnings_call.jpg - Jensen says some good stuff, then veers into nonsense territory about Groq
+
+> NVIDIA saying that they want as big of a die as possible to reduce inefficiency.
+> And saying "wait for GTC" for more Groq news
