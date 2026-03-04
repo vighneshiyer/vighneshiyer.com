@@ -40,6 +40,7 @@ In this article, I will eviscerate (and sometimes praise) startups I've heard ab
   - Advanced packaging: MZ technologies
   - https://www.linkedin.com/company/chip-inventor/
   - A lot of these seem very fishy, but there are few good ones (motivo)
+  - https://www.tattvamlabs.ai/
 
 ## PCBs
 
