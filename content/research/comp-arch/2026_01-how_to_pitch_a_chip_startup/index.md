@@ -192,3 +192,5 @@ After this interview I'm very bearish on MatX - they have nothing special. They 
 
 > NVIDIA saying that they want as big of a die as possible to reduce inefficiency.
 > And saying "wait for GTC" for more Groq news
+
+- Fractile (https://www.fractile.ai/)
