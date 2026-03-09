@@ -1386,8 +1386,8 @@ Total amateur opinions to follow.
 - *No Es Pituko Carignan 2024*. (8/10). So so smooth, hard to believe there was any alcohol at all. Excellent.
 - *Domaine de la Patience, Red (2023)*. (8/10). Another smooth and gulpable red.
 - *Love Red 2022 - Broc Cellars*. (7/10). Similar to the other smooth red wines. Light flavor, very smooth, hardly any taste of alcohol. I think I need something more flavorful next time.
+- *Folk Machine Pinot Noir*. (7/10). Very very smooth, can hardly tell there is any alcohol. I would get something more bold next time.
 - *Chateau Pey-Bonhomme Le-Tours Merlot*. TBD.
-- *Folk Machine Pinot Noir*. TBD.
 
 #### Whites
 
@@ -1397,6 +1397,8 @@ Total amateur opinions to follow.
 - *2023 Nickel & Nickel Grand Sky Vineyard Chardonnay*. (9/10) Incredibly good, smooth, bright lime aftertaste.
 - *2024 Elio Perrone Moscato d'Asti Sourgal*. (6/10). Sparkling, sweet, honeyed, light. A bit too low alcohol, and perhaps too smooth. No complex flavors.
 - *Belvino Prosecco Extra Dry*. (5/10). Cheap and just OK. Good for mixing in a spritz.
+- *Ca'Belli Extra Dry Prosecco* (7/10). Not bad at all, very good in a spritz. A good value option.
+- *La Marca Prosecco*. (9/10). For mid-range prosecco, this is as good as it gets. Crisp, refreshing, and very bubbly.
 
 #### Orange
 
@@ -1473,11 +1475,7 @@ I keep the fortified wines, meads, and cream liqueurs in my fridge, and the rest
 Wine
 : - Otima 10-Year Tawny Port
   - Chateau Pey-Bonhomme Le-Tours
-  - Folk Machine Pinot Noir
   - Ca'Belli Extra Dry Prosecco
-
-Mead
-: - Oliver Winery Camelot Mead Orange Blossom
 
 Whiskey
 : - Four Roses Small Batch
@@ -1538,12 +1536,15 @@ Other Liqueurs
   - Chinola Passionfruit Liqueur
 
 Mixers
-: - Fever Free tonic water
-  - Club soda
+: - Fever Tree Tonic Water
+  - Fever Tree Club Soda
   - Pineapple juice
+  - Carrot juice
+  - Orange juice
+  - Limade / lemonade
 
 Extras
-: - _Bitters_: Angostura, Orange
+: - _Bitters_: Angostura, Orange, Peychaud's
   - _Syrups_: Simple, Demerara, Grenadine, Orgeat
   - Luxardo cherries
   - Limes / lemons
@@ -1552,6 +1553,7 @@ Extras
 
 Books
 : - Cocktail Codex
+  - Smuggler's Cove
 
 ## To Buy
 
