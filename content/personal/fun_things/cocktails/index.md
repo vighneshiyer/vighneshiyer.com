@@ -1652,3 +1652,48 @@ Garnishes / Juices / Syrups
 Books
 : - The NoMad Cocktail Book
   - Death & Co: Modern Classic Cocktails
+
+<!--
+## To Buy
+
+- Amaro Montenegro
+- Campari
+- Sweet vermouth
+- Midori
+- Mead (Oliver Camelot)
+- Rye whiskey (Rittenhouse 100 / Mitcher's Rye)
+- Ginger beer
+- Cynar / Averna
+- Licor 43 (vanilla)
+- Banana liqueur (tiki and rum drinks)
+  - Tempus Fugit Creme De Banane Liqueur / Giffard Banane du Brésil liqueur
+- Pierre Ferrand Dry Curacao (tiki essential)
+- Lightly aged Jamaican rum: Smith and Cross
+- Overproof black rum: Planteray OFTD
+- Demerara aged rum: Hamilton 86 / Lemon Hart 151 / El Dorado 12
+
+## Potential Others
+
+- Whiskey
+  - Rye Whiskey (not a bourbon or sour mash) (Rittenhouse or Mitcher's)
+- Rum
+  - Smith and Cross
+  - Black Seal Rum
+  - Ginger beer
+  - Planteray OFTD
+- Brandy
+  - Something cheaper than Kirkland Cognac XO for mixing
+- Amari
+  - Cynar (Bitter Giuseppe cocktail)
+  - Ramazzotti
+- Liqueurs
+  - Licor 43 (Carajillo Old fashioned)
+  - Banana liqueur (Banana Cow, Banana daiquiri)
+    - Tempus Fugit Creme De Banane Liqueur / Giffard Banane du Brésil liqueur
+  - Ginger liqueur (What's Up Doc - carrot juice cocktail, Penicillin - scotch cocktail)
+  - Galliano L'Autentico Liqueur (Snoopy cocktail)
+  - Absinthe - St George Absinthe Verte, La Clandestine Absinthe Superieure Liqueur
+  - St Germain's Elderflower Liqueur
+  - Pierre Ferrand Dry Curacao
+  - Luxardo Maraschino liqueur
+-->
