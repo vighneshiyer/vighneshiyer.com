@@ -176,6 +176,9 @@ Groq was early though. At the time they were still discussing CNNs. Even BERT wa
   - Extropic
   - Normal Computing
   - Unconventional AI
+- Optical computing
+  - Neurophos (https://www.neurophos.com/) (https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing/)
+  - https://x.com/MartinShkreli/status/2029936664429183319 (QCLS, very fishy I must say)
 
 - Groq, Taalas, Positron, Etched, d-Matrix, Tenstorrent, Sambanova, Cerebras, Mythic, FuriosaAI, Rebellions, HyperAccel, Blaize, MatX, Cambricon, Huawei Ascend 910C, TPU, MAIA, MTIA, Trainium / Inferentia, Graphcore
 - Big companies / hyperscalars are one thing - they just want sovereignty - don't need to actually compete on cost or performance per-se. The startups are something else.
@@ -194,3 +197,8 @@ After this interview I'm very bearish on MatX - they have nothing special. They 
 > And saying "wait for GTC" for more Groq news
 
 - Fractile (https://www.fractile.ai/)
+
+- https://x.com/Midnight_Captl/status/2029945363512316026
+  - Broadly agree, details are unclear
+
+> In my piece, “The TPU Tax,” I argued that $GOOG ‘s TPU strategy could eventually become a strategic disadvantage as $NVDA kept widening the gap across both hardware and software. At the time, that view was well outside consensus.

@@ -275,6 +275,7 @@ Here are a bunch of things from around the internet that I find interesting.
 - [AdapTive-LeArning Speculator System (ATLAS): A New Paradigm in LLM Inference via Runtime-Learning Accelerators](https://www.together.ai/blog/adaptive-learning-speculator-system-atlas) ([HN link](https://news.ycombinator.com/item?id=45556474))
 - [Scaling Elections with GPUs and Mojo 🔥](https://ashvardanian.com/posts/scaling-elections/)
 - [ThunderKittens 2.0: Even Faster Kernels for Your GPUs](https://hazyresearch.stanford.edu/blog/2026-02-19-tk-2)
+- [FlashAttention 4](https://x.com/tri_dao/status/2029569881151263082) (interesting that everything was written in Cute-DSL)
 
 ### ML Hardware
 
