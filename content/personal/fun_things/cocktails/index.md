@@ -1476,20 +1476,28 @@ Wine
 : - Otima 10-Year Tawny Port
   - Chateau Pey-Bonhomme Le-Tours
   - Ca'Belli Extra Dry Prosecco
+  - Orange Spritz by Tarongino
+  - Oliver Camelot Mead
+  - Terre di Talamo Vento Vermentino (white Italian wine, notes of peaches)
+  - Santa Margherita Prosecco DOCG (crisp prosecco)
+  - Sera Fiore Black (deep red Italian wine, notes of berries and black fruits)
+  - L'Auratae Nero d'Avola (light red wine, ideal with tomato pasta)
 
 Whiskey
 : - Four Roses Small Batch
   - Mitcher's US*1
   - Redbreast 12 Year
   - Glenlivet 14 Single Malt Scotch (Cognac cask)
+  - Rittenhouse Rye 100 proof
 
 Rum
-: - Diplomatico Reserva Exclusiva
+: - Diplomatico Reserva Exclusiva (nearly done)
   - Appleton Estate 8
   - El Dorado 3
   - Probitas
   - Clement Rhum Agricole
   - Planteray 3 Stars
+  - Smith and Cross
 
 Cognac
 : - Kirkland XO Cognac
@@ -1502,7 +1510,8 @@ Soju
 
 Gin
 : - Hendricks
-  - Citadelle
+  - Citadelle (original)
+  - Citadelle Jardin d'Ete
   - Barr Hill
   - Tanqueray No. 10
   - Jaisalmer
@@ -1513,9 +1522,11 @@ Orange Liqueurs
   - Classica triple sec (low-end)
 
 Amari / Fortified Wines
-: - Campari
+: - Campari (x1.5)
   - Aperol
-  - Amaro Montenegro
+  - Amaro Montenegro (x1.5)
+  - Cocchi Vermouth di Torino
+  - Cynar 33 proof (1L)
   - Dolin Vermouth Rouge (Sweet) (x1.5)
   - Dolin Vermouth (Blanc) (375ml)
   - Dolin Vermouth (Dry)
@@ -1532,19 +1543,26 @@ Other Liqueurs
   - Tito's Vodka
   - Mr. Black Cold Brew Coffee Liqueur
   - Baileys Original Irish Cream
-  - Benedictine
+  - Benedictine DOM
   - Chinola Passionfruit Liqueur
+  - Midori Melon Liqueur (375ml)
+  - Domaine de Canton Ginger Liqueur
+  - Disaronno Originale (amaretto liqueur) (375ml)
+  - Licor 43
 
 Mixers
-: - Fever Tree Tonic Water
-  - Fever Tree Club Soda
+: - Fever Tree Tonic Water (x6)
+  - Fever Tree Club Soda (x16)
+  - Fever Tree Ginger Beer (x8)
+  - Bundaberg Ginger Beer 200ml (x4)
   - Pineapple juice
   - Carrot juice
   - Orange juice
+  - Sparkling apple juice
   - Limade / lemonade
 
 Extras
-: - _Bitters_: Angostura, Orange, Peychaud's
+: - _Bitters_: Angostura, Orange, Peychaud's, Aztec Chocolate (Fee Brothers)
   - _Syrups_: Simple, Demerara, Grenadine, Orgeat
   - Luxardo cherries
   - Limes / lemons
